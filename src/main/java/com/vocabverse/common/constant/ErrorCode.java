@@ -139,6 +139,16 @@ public enum ErrorCode {
             "Typing question has already been answered",
             HttpStatus.CONFLICT
     ),
+    NOTIFICATION_NOT_FOUND(
+            "NOTIFICATION_NOT_FOUND",
+            "Notification not found",
+            HttpStatus.NOT_FOUND
+    ),
+    NOTIFICATION_ALREADY_EXISTS(
+            "NOTIFICATION_ALREADY_EXISTS",
+            "Notification already exists for today",
+            HttpStatus.CONFLICT
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",
