@@ -1,7 +1,10 @@
 package com.vocabverse;
 
 import com.vocabverse.auth.repository.RefreshTokenRepository;
+import com.vocabverse.collection.repository.CollectionRepository;
 import com.vocabverse.user.repository.UserRepository;
+import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
+import com.vocabverse.vocabulary.repository.VocabularyRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -18,6 +21,15 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private RefreshTokenRepository refreshTokenRepository;
+
+    @MockBean
+    private CollectionRepository collectionRepository;
+
+    @MockBean
+    private VocabularyRepository vocabularyRepository;
+
+    @MockBean
+    private CollectionVocabularyRepository collectionVocabularyRepository;
 
     @Test
     void contextLoads() {
