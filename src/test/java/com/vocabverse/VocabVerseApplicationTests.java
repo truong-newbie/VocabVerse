@@ -9,6 +9,7 @@ import com.vocabverse.learning.quiz.repository.QuizQuestionRepository;
 import com.vocabverse.learning.quiz.repository.QuizSessionRepository;
 import com.vocabverse.learning.typing.repository.TypingQuestionRepository;
 import com.vocabverse.learning.typing.repository.TypingSessionRepository;
+import com.vocabverse.notification.repository.NotificationRepository;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
@@ -20,7 +21,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest(properties = {
         "spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,"
                 + "org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration,"
-                + "org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration"
+                + "org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration",
+        "notification.email.listener.enabled=false"
 })
 class VocabVerseApplicationTests {
 
@@ -62,6 +64,9 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private TypingQuestionRepository typingQuestionRepository;
+
+    @MockBean
+    private NotificationRepository notificationRepository;
 
     @Test
     void contextLoads() {
