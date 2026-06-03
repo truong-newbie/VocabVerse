@@ -35,8 +35,8 @@ server:
     context-path: /api/v1
 
 jwt:
-  secret: ${JWT_SECRET:}
-  access-token-expiration-minutes: ${JWT_ACCESS_TOKEN_EXPIRATION_MINUTES:60}
+  secret: ${JWT_SECRET:local-development-jwt-secret-key-change-before-production-123456}
+  access-token-expiration: ${JWT_ACCESS_TOKEN_EXPIRATION:3600}
   refresh-token-expiration-days: ${JWT_REFRESH_TOKEN_EXPIRATION_DAYS:30}
 
 ai:
