@@ -69,6 +69,11 @@ public enum ErrorCode {
             "Collection not found",
             HttpStatus.NOT_FOUND
     ),
+    COLLECTION_SYSTEM_FORBIDDEN(
+            "COLLECTION_SYSTEM_FORBIDDEN",
+            "System collection cannot be managed from user API",
+            HttpStatus.FORBIDDEN
+    ),
     VOCABULARY_NOT_FOUND(
             "VOCABULARY_NOT_FOUND",
             "Vocabulary not found",
