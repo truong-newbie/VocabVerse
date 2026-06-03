@@ -74,6 +74,11 @@ public enum ErrorCode {
             "Vocabulary not found",
             HttpStatus.NOT_FOUND
     ),
+    LEARNING_PROGRESS_NOT_FOUND(
+            "LEARNING_PROGRESS_NOT_FOUND",
+            "Learning progress not found",
+            HttpStatus.NOT_FOUND
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",

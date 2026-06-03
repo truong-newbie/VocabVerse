@@ -2,6 +2,7 @@ package com.vocabverse;
 
 import com.vocabverse.auth.repository.RefreshTokenRepository;
 import com.vocabverse.collection.repository.CollectionRepository;
+import com.vocabverse.learning.progress.repository.LearningProgressRepository;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
@@ -30,6 +31,9 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private CollectionVocabularyRepository collectionVocabularyRepository;
+
+    @MockBean
+    private LearningProgressRepository learningProgressRepository;
 
     @Test
     void contextLoads() {
