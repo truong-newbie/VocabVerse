@@ -6,6 +6,7 @@ import com.vocabverse.roleplay.dto.response.RoleplayAiScenario;
 import com.vocabverse.roleplay.entity.RoleplayCorrection;
 import com.vocabverse.roleplay.entity.RoleplayMessageEntity;
 import com.vocabverse.roleplay.entity.RoleplaySessionEntity;
+import com.vocabverse.roleplay.enums.RoleplayMessageSender;
 import com.vocabverse.roleplay.prompt.RoleplayPromptBuilder;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -38,7 +39,7 @@ public class RoleplayAiService {
     public RoleplayAiReport report(RoleplaySessionEntity session, List<RoleplayMessageEntity> messages) {
         promptBuilder.buildReportPrompt(session, messages);
         long userMessageCount = messages.stream()
-                .filter(message -> message.getSender().name().equals("USER"))
+                .filter(message -> message.getSender() == RoleplayMessageSender.USER)
                 .count();
         int score = Math.min(95, 65 + (int) userMessageCount * 5);
 

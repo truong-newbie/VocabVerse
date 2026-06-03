@@ -14,6 +14,8 @@ public interface CollectionRepository extends JpaRepository<CollectionEntity, UU
 
     Optional<CollectionEntity> findByIdAndOwnerIdAndDeletedAtIsNull(UUID id, UUID ownerId);
 
+    Page<CollectionEntity> findAllByOwnerIdAndDeletedAtIsNull(UUID ownerId, Pageable pageable);
+
     Optional<CollectionEntity> findByIdAndOwnerIdAndVisibilityInAndDeletedAtIsNull(
             UUID id,
             UUID ownerId,

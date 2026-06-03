@@ -101,7 +101,7 @@ public class RoleplayService {
         }
 
         String userMessageText = request.message().trim();
-        RoleplayMessageEntity userMessage = roleplayMessageRepository.save(RoleplayMessageEntity.builder()
+        roleplayMessageRepository.save(RoleplayMessageEntity.builder()
                 .session(session)
                 .sender(RoleplayMessageSender.USER)
                 .content(userMessageText)
