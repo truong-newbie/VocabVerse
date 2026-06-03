@@ -16,5 +16,7 @@ public interface CollectionVocabularyRepository extends JpaRepository<Collection
 
     Page<CollectionVocabularyEntity> findAllByCollectionIdAndVocabularyDeletedAtIsNull(UUID collectionId, Pageable pageable);
 
+    List<CollectionVocabularyEntity> findAllByCollectionIdAndVocabularyDeletedAtIsNull(UUID collectionId);
+
     List<CollectionVocabularyEntity> findAllByVocabularyId(UUID vocabularyId);
 }
