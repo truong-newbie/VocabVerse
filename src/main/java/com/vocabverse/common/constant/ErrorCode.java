@@ -99,6 +99,26 @@ public enum ErrorCode {
             "Flashcard card has already been answered",
             HttpStatus.CONFLICT
     ),
+    QUIZ_SESSION_NOT_FOUND(
+            "QUIZ_SESSION_NOT_FOUND",
+            "Quiz session not found",
+            HttpStatus.NOT_FOUND
+    ),
+    QUIZ_QUESTION_NOT_FOUND(
+            "QUIZ_QUESTION_NOT_FOUND",
+            "Quiz question not found in session",
+            HttpStatus.NOT_FOUND
+    ),
+    QUIZ_SESSION_COMPLETED(
+            "QUIZ_SESSION_COMPLETED",
+            "Quiz session is already completed",
+            HttpStatus.CONFLICT
+    ),
+    QUIZ_QUESTION_ALREADY_ANSWERED(
+            "QUIZ_QUESTION_ALREADY_ANSWERED",
+            "Quiz question has already been answered",
+            HttpStatus.CONFLICT
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",
