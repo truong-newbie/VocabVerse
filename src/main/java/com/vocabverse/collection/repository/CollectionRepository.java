@@ -12,4 +12,6 @@ public interface CollectionRepository extends JpaRepository<CollectionEntity, UU
     Optional<CollectionEntity> findByIdAndOwnerIdAndDeletedAtIsNull(UUID id, UUID ownerId);
 
     List<CollectionEntity> findAllByIdInAndOwnerIdAndDeletedAtIsNull(Collection<UUID> ids, UUID ownerId);
+
+    long countByOwnerIdAndDeletedAtIsNull(UUID ownerId);
 }
