@@ -1,6 +1,7 @@
 package com.vocabverse.learning.progress.repository;
 
 import com.vocabverse.learning.progress.entity.LearningProgressEntity;
+import com.vocabverse.learning.progress.entity.LearningStatus;
 import com.vocabverse.user.entity.UserEntity;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -18,13 +19,41 @@ public interface LearningProgressRepository extends JpaRepository<LearningProgre
 
     Optional<LearningProgressEntity> findByUserIdAndVocabularyId(UUID userId, UUID vocabularyId);
 
+    @Query("""
+            select count(lp)
+            from LearningProgressEntity lp
+            where lp.user.id = :userId
+              and lp.status = :status
+              and lp.vocabulary.deletedAt is null
+            """)
+    long countByUserIdAndStatus(@Param("userId") UUID userId, @Param("status") LearningStatus status);
+
+    @Query("""
+            select lp
+            from LearningProgressEntity lp
+            where lp.user.id = :userId
+              and lp.nextReviewAt is not null
+              and lp.nextReviewAt <= :now
+              and lp.vocabulary.deletedAt is null
+            """)
     Page<LearningProgressEntity> findAllByUserIdAndNextReviewAtLessThanEqual(
-            UUID userId,
-            LocalDateTime now,
+            @Param("userId") UUID userId,
+            @Param("now") LocalDateTime now,
             Pageable pageable
     );
 
-    List<LearningProgressEntity> findAllByUserIdAndNextReviewAtLessThanEqual(UUID userId, LocalDateTime now);
+    @Query("""
+            select lp
+            from LearningProgressEntity lp
+            where lp.user.id = :userId
+              and lp.nextReviewAt is not null
+              and lp.nextReviewAt <= :now
+              and lp.vocabulary.deletedAt is null
+            """)
+    List<LearningProgressEntity> findAllByUserIdAndNextReviewAtLessThanEqual(
+            @Param("userId") UUID userId,
+            @Param("now") LocalDateTime now
+    );
 
     @Query("""
             select distinct lp.user

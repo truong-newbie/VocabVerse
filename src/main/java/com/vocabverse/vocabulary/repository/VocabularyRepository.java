@@ -15,4 +15,6 @@ public interface VocabularyRepository extends JpaRepository<VocabularyEntity, UU
     List<VocabularyEntity> findAllByOwnerIdAndDeletedAtIsNull(UUID ownerId);
 
     Optional<VocabularyEntity> findByIdAndOwnerIdAndDeletedAtIsNull(UUID id, UUID ownerId);
+
+    long countByOwnerIdAndDeletedAtIsNull(UUID ownerId);
 }
