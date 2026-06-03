@@ -10,6 +10,9 @@ import com.vocabverse.learning.quiz.repository.QuizSessionRepository;
 import com.vocabverse.learning.typing.repository.TypingQuestionRepository;
 import com.vocabverse.learning.typing.repository.TypingSessionRepository;
 import com.vocabverse.notification.repository.NotificationRepository;
+import com.vocabverse.roleplay.repository.RoleplayMessageRepository;
+import com.vocabverse.roleplay.repository.RoleplayReportRepository;
+import com.vocabverse.roleplay.repository.RoleplaySessionRepository;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
@@ -67,6 +70,15 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private NotificationRepository notificationRepository;
+
+    @MockBean
+    private RoleplaySessionRepository roleplaySessionRepository;
+
+    @MockBean
+    private RoleplayMessageRepository roleplayMessageRepository;
+
+    @MockBean
+    private RoleplayReportRepository roleplayReportRepository;
 
     @Test
     void contextLoads() {

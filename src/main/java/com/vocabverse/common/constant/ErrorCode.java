@@ -149,6 +149,16 @@ public enum ErrorCode {
             "Notification already exists for today",
             HttpStatus.CONFLICT
     ),
+    ROLEPLAY_SESSION_NOT_FOUND(
+            "ROLEPLAY_SESSION_NOT_FOUND",
+            "Roleplay session not found",
+            HttpStatus.NOT_FOUND
+    ),
+    ROLEPLAY_SESSION_COMPLETED(
+            "ROLEPLAY_SESSION_COMPLETED",
+            "Roleplay session is already completed",
+            HttpStatus.CONFLICT
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",
