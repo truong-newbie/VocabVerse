@@ -1,5 +1,7 @@
 package com.vocabverse.auth.controller;
 
+import com.vocabverse.auth.dto.LoginRequest;
+import com.vocabverse.auth.dto.LoginResponse;
 import com.vocabverse.auth.dto.RegisterRequest;
 import com.vocabverse.auth.dto.RegisterResponse;
 import com.vocabverse.auth.service.AuthService;
@@ -23,6 +25,14 @@ public class AuthController {
         return ApiResponse.success(
                 "Register successfully",
                 authService.register(request)
+        );
+    }
+
+    @PostMapping("/login")
+    public ApiResponse<LoginResponse> login(@Valid @RequestBody LoginRequest request) {
+        return ApiResponse.success(
+                "Login successfully",
+                authService.login(request)
         );
     }
 }

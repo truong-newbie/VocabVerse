@@ -1,5 +1,7 @@
 package com.vocabverse.auth.service;
 
+import com.vocabverse.auth.dto.LoginRequest;
+import com.vocabverse.auth.dto.LoginResponse;
 import com.vocabverse.auth.dto.RegisterRequest;
 import com.vocabverse.auth.dto.RegisterResponse;
 import com.vocabverse.common.constant.ErrorCode;
@@ -43,6 +45,28 @@ public class AuthService {
                 savedUser.getEmail(),
                 savedUser.getFullName(),
                 savedUser.getRole()
+        );
+    }
+
+    @Transactional(readOnly = true)
+    public LoginResponse login(LoginRequest request) {
+        UserEntity user = userRepository.findByEmail(request.email())
+                .orElseThrow(() -> new BusinessException(ErrorCode.AUTH_INVALID_CREDENTIAL));
+
+        if (!passwordEncoder.matches(request.password(), user.getPassword())) {
+            throw new BusinessException(ErrorCode.AUTH_INVALID_CREDENTIAL);
+        }
+
+        if (user.getStatus() != UserStatus.ACTIVE) {
+            throw new BusinessException(ErrorCode.ACCESS_DENIED);
+        }
+
+        return new LoginResponse(
+                user.getId(),
+                user.getEmail(),
+                user.getFullName(),
+                user.getRole(),
+                user.getStatus()
         );
     }
 }
