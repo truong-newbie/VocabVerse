@@ -1,6 +1,7 @@
 package com.vocabverse.learning.progress.repository;
 
 import com.vocabverse.learning.progress.entity.LearningProgressEntity;
+import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
@@ -12,4 +13,10 @@ public interface LearningProgressRepository extends JpaRepository<LearningProgre
     Page<LearningProgressEntity> findAllByUserId(UUID userId, Pageable pageable);
 
     Optional<LearningProgressEntity> findByUserIdAndVocabularyId(UUID userId, UUID vocabularyId);
+
+    Page<LearningProgressEntity> findAllByUserIdAndNextReviewAtLessThanEqual(
+            UUID userId,
+            LocalDateTime now,
+            Pageable pageable
+    );
 }
