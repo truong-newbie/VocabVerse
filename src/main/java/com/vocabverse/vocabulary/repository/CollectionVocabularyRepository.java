@@ -1,5 +1,6 @@
 package com.vocabverse.vocabulary.repository;
 
+import com.vocabverse.collection.enums.CollectionVisibility;
 import com.vocabverse.vocabulary.entity.CollectionVocabularyEntity;
 import java.util.List;
 import java.util.Optional;
@@ -17,6 +18,12 @@ public interface CollectionVocabularyRepository extends JpaRepository<Collection
     Page<CollectionVocabularyEntity> findAllByCollectionIdAndVocabularyDeletedAtIsNull(UUID collectionId, Pageable pageable);
 
     List<CollectionVocabularyEntity> findAllByCollectionIdAndVocabularyDeletedAtIsNull(UUID collectionId);
+
+    Page<CollectionVocabularyEntity> findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+            UUID collectionId,
+            CollectionVisibility visibility,
+            Pageable pageable
+    );
 
     List<CollectionVocabularyEntity> findAllByVocabularyId(UUID vocabularyId);
 }
