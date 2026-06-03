@@ -89,6 +89,11 @@ public enum ErrorCode {
             "AI processing failed",
             HttpStatus.INTERNAL_SERVER_ERROR
     ),
+    AI_PROVIDER_UNAVAILABLE(
+            "AI_PROVIDER_UNAVAILABLE",
+            "AI service is temporarily unavailable",
+            HttpStatus.SERVICE_UNAVAILABLE
+    ),
     VIDEO_PROCESSING_FAILED(
             "VIDEO_PROCESSING_FAILED",
             "Video processing failed",
