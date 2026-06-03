@@ -34,6 +34,11 @@ public enum ErrorCode {
             "Authentication token has expired",
             HttpStatus.UNAUTHORIZED
     ),
+    AUTH_EMAIL_ALREADY_EXISTS(
+            "AUTH_EMAIL_ALREADY_EXISTS",
+            "Email already exists",
+            HttpStatus.CONFLICT
+    ),
     USER_NOT_FOUND(
             "USER_NOT_FOUND",
             "User not found",
