@@ -34,6 +34,31 @@ public enum ErrorCode {
             "Authentication token has expired",
             HttpStatus.UNAUTHORIZED
     ),
+    AUTH_EMAIL_ALREADY_EXISTS(
+            "AUTH_EMAIL_ALREADY_EXISTS",
+            "Email already exists",
+            HttpStatus.CONFLICT
+    ),
+    UNAUTHORIZED(
+            "UNAUTHORIZED",
+            "Unauthorized",
+            HttpStatus.UNAUTHORIZED
+    ),
+    REFRESH_TOKEN_INVALID(
+            "REFRESH_TOKEN_INVALID",
+            "Refresh token is invalid",
+            HttpStatus.UNAUTHORIZED
+    ),
+    REFRESH_TOKEN_EXPIRED(
+            "REFRESH_TOKEN_EXPIRED",
+            "Refresh token has expired",
+            HttpStatus.UNAUTHORIZED
+    ),
+    REFRESH_TOKEN_REVOKED(
+            "REFRESH_TOKEN_REVOKED",
+            "Refresh token has been revoked",
+            HttpStatus.UNAUTHORIZED
+    ),
     USER_NOT_FOUND(
             "USER_NOT_FOUND",
             "User not found",
@@ -63,6 +88,11 @@ public enum ErrorCode {
             "AI_PROCESSING_FAILED",
             "AI processing failed",
             HttpStatus.INTERNAL_SERVER_ERROR
+    ),
+    AI_PROVIDER_UNAVAILABLE(
+            "AI_PROVIDER_UNAVAILABLE",
+            "AI service is temporarily unavailable",
+            HttpStatus.SERVICE_UNAVAILABLE
     ),
     VIDEO_PROCESSING_FAILED(
             "VIDEO_PROCESSING_FAILED",

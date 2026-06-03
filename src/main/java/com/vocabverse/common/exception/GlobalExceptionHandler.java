@@ -4,6 +4,7 @@ import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.response.ApiResponse;
 import com.vocabverse.common.response.FieldErrorResponse;
 import java.util.List;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -38,6 +39,14 @@ public class GlobalExceptionHandler {
         return ResponseEntity
                 .status(errorCode.getHttpStatus())
                 .body(ApiResponse.error(errorCode.getMessage(), errorCode.getCode(), errors));
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    public ResponseEntity<ApiResponse<Void>> handleHttpMessageNotReadableException() {
+        ErrorCode errorCode = ErrorCode.INVALID_INPUT;
+        return ResponseEntity
+                .status(errorCode.getHttpStatus())
+                .body(ApiResponse.error(errorCode.getMessage(), errorCode.getCode()));
     }
 
     @ExceptionHandler(AccessDeniedException.class)
