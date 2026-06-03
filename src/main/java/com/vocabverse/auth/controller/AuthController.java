@@ -2,8 +2,11 @@ package com.vocabverse.auth.controller;
 
 import com.vocabverse.auth.dto.LoginRequest;
 import com.vocabverse.auth.dto.LoginResponse;
+import com.vocabverse.auth.dto.RefreshTokenRequest;
+import com.vocabverse.auth.dto.RefreshTokenResponse;
 import com.vocabverse.auth.dto.RegisterRequest;
 import com.vocabverse.auth.dto.RegisterResponse;
+import com.vocabverse.auth.service.RefreshTokenService;
 import com.vocabverse.auth.service.AuthService;
 import com.vocabverse.common.response.ApiResponse;
 import jakarta.validation.Valid;
@@ -19,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class AuthController {
 
     private final AuthService authService;
+    private final RefreshTokenService refreshTokenService;
 
     @PostMapping("/register")
     public ApiResponse<RegisterResponse> register(@Valid @RequestBody RegisterRequest request) {
@@ -34,5 +38,16 @@ public class AuthController {
                 "Login successfully",
                 authService.login(request)
         );
+    }
+
+    @PostMapping("/refresh")
+    public ApiResponse<RefreshTokenResponse> refresh(@Valid @RequestBody RefreshTokenRequest request) {
+        return ApiResponse.success(refreshTokenService.refresh(request.refreshToken()));
+    }
+
+    @PostMapping("/logout")
+    public ApiResponse<Void> logout(@Valid @RequestBody RefreshTokenRequest request) {
+        refreshTokenService.logout(request.refreshToken());
+        return ApiResponse.success("Logout successfully", null);
     }
 }

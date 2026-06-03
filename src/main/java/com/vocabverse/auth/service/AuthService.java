@@ -2,6 +2,7 @@ package com.vocabverse.auth.service;
 
 import com.vocabverse.auth.dto.LoginRequest;
 import com.vocabverse.auth.dto.LoginResponse;
+import com.vocabverse.auth.entity.RefreshTokenEntity;
 import com.vocabverse.auth.dto.RegisterRequest;
 import com.vocabverse.auth.dto.RegisterResponse;
 import com.vocabverse.common.constant.ErrorCode;
@@ -23,6 +24,7 @@ public class AuthService {
     private final UserRepository userRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtTokenProvider jwtTokenProvider;
+    private final RefreshTokenService refreshTokenService;
 
     @Transactional
     public RegisterResponse register(RegisterRequest request) {
@@ -62,11 +64,13 @@ public class AuthService {
         }
 
         String accessToken = jwtTokenProvider.generateAccessToken(user);
+        RefreshTokenEntity refreshToken = refreshTokenService.createRefreshToken(user);
 
         return new LoginResponse(
                 accessToken,
                 "Bearer",
                 jwtTokenProvider.getAccessTokenExpirationSeconds(),
+                refreshToken.getToken(),
                 new LoginResponse.UserInfo(
                         user.getId(),
                         user.getEmail(),
