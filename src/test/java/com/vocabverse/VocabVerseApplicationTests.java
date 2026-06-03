@@ -7,6 +7,8 @@ import com.vocabverse.learning.flashcard.repository.FlashcardSessionRepository;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
 import com.vocabverse.learning.quiz.repository.QuizQuestionRepository;
 import com.vocabverse.learning.quiz.repository.QuizSessionRepository;
+import com.vocabverse.learning.typing.repository.TypingQuestionRepository;
+import com.vocabverse.learning.typing.repository.TypingSessionRepository;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
@@ -54,6 +56,12 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private QuizQuestionRepository quizQuestionRepository;
+
+    @MockBean
+    private TypingSessionRepository typingSessionRepository;
+
+    @MockBean
+    private TypingQuestionRepository typingQuestionRepository;
 
     @Test
     void contextLoads() {

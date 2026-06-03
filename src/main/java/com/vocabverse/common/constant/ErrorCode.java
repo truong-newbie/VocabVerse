@@ -119,6 +119,26 @@ public enum ErrorCode {
             "Quiz question has already been answered",
             HttpStatus.CONFLICT
     ),
+    TYPING_SESSION_NOT_FOUND(
+            "TYPING_SESSION_NOT_FOUND",
+            "Typing session not found",
+            HttpStatus.NOT_FOUND
+    ),
+    TYPING_QUESTION_NOT_FOUND(
+            "TYPING_QUESTION_NOT_FOUND",
+            "Typing question not found in session",
+            HttpStatus.NOT_FOUND
+    ),
+    TYPING_SESSION_COMPLETED(
+            "TYPING_SESSION_COMPLETED",
+            "Typing session is already completed",
+            HttpStatus.CONFLICT
+    ),
+    TYPING_QUESTION_ALREADY_ANSWERED(
+            "TYPING_QUESTION_ALREADY_ANSWERED",
+            "Typing question has already been answered",
+            HttpStatus.CONFLICT
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",
