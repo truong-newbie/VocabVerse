@@ -79,6 +79,26 @@ public enum ErrorCode {
             "Learning progress not found",
             HttpStatus.NOT_FOUND
     ),
+    FLASHCARD_SESSION_NOT_FOUND(
+            "FLASHCARD_SESSION_NOT_FOUND",
+            "Flashcard session not found",
+            HttpStatus.NOT_FOUND
+    ),
+    FLASHCARD_CARD_NOT_FOUND(
+            "FLASHCARD_CARD_NOT_FOUND",
+            "Flashcard card not found in session",
+            HttpStatus.NOT_FOUND
+    ),
+    FLASHCARD_SESSION_COMPLETED(
+            "FLASHCARD_SESSION_COMPLETED",
+            "Flashcard session is already completed",
+            HttpStatus.CONFLICT
+    ),
+    FLASHCARD_CARD_ALREADY_ANSWERED(
+            "FLASHCARD_CARD_ALREADY_ANSWERED",
+            "Flashcard card has already been answered",
+            HttpStatus.CONFLICT
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",

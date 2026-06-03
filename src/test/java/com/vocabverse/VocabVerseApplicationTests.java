@@ -2,6 +2,8 @@ package com.vocabverse;
 
 import com.vocabverse.auth.repository.RefreshTokenRepository;
 import com.vocabverse.collection.repository.CollectionRepository;
+import com.vocabverse.learning.flashcard.repository.FlashcardSessionItemRepository;
+import com.vocabverse.learning.flashcard.repository.FlashcardSessionRepository;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.user.repository.UserRepository;
@@ -38,6 +40,12 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private ReviewHistoryRepository reviewHistoryRepository;
+
+    @MockBean
+    private FlashcardSessionRepository flashcardSessionRepository;
+
+    @MockBean
+    private FlashcardSessionItemRepository flashcardSessionItemRepository;
 
     @Test
     void contextLoads() {
