@@ -199,6 +199,21 @@ public enum ErrorCode {
             "AI service is temporarily unavailable",
             HttpStatus.SERVICE_UNAVAILABLE
     ),
+    AI_PROVIDER_NOT_AVAILABLE(
+            "AI_PROVIDER_NOT_AVAILABLE",
+            "AI provider is not available",
+            HttpStatus.SERVICE_UNAVAILABLE
+    ),
+    AI_NORMALIZE_FAILED(
+            "AI_NORMALIZE_FAILED",
+            "AI normalization failed",
+            HttpStatus.INTERNAL_SERVER_ERROR
+    ),
+    AI_RESPONSE_INVALID(
+            "AI_RESPONSE_INVALID",
+            "AI response is invalid",
+            HttpStatus.BAD_GATEWAY
+    ),
     VIDEO_PROCESSING_FAILED(
             "VIDEO_PROCESSING_FAILED",
             "Video processing failed",

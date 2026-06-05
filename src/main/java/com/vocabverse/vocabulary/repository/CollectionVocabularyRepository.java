@@ -16,6 +16,11 @@ public interface CollectionVocabularyRepository extends JpaRepository<Collection
             UUID vocabularyId
     );
 
+    boolean existsByCollectionIdAndVocabularyNormalizedWordAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+            UUID collectionId,
+            String normalizedWord
+    );
+
     Optional<CollectionVocabularyEntity> findByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
             UUID collectionId,
             UUID vocabularyId
