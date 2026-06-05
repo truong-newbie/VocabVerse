@@ -32,5 +32,9 @@ public interface CollectionRepository extends JpaRepository<CollectionEntity, UU
             Pageable pageable
     );
 
+    Page<CollectionEntity> findAllByVisibilityAndDeletedAtIsNull(CollectionVisibility visibility, Pageable pageable);
+
+    Optional<CollectionEntity> findByIdAndDeletedAtIsNull(UUID id);
+
     Optional<CollectionEntity> findByIdAndVisibilityAndDeletedAtIsNull(UUID id, CollectionVisibility visibility);
 }

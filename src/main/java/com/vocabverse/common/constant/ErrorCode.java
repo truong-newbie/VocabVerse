@@ -69,6 +69,26 @@ public enum ErrorCode {
             "Collection not found",
             HttpStatus.NOT_FOUND
     ),
+    PUBLIC_COLLECTION_NOT_FOUND(
+            "PUBLIC_COLLECTION_NOT_FOUND",
+            "Public collection not found",
+            HttpStatus.NOT_FOUND
+    ),
+    PUBLIC_COLLECTION_ACCESS_DENIED(
+            "PUBLIC_COLLECTION_ACCESS_DENIED",
+            "Access to public collection is denied",
+            HttpStatus.FORBIDDEN
+    ),
+    COLLECTION_NOT_PUBLIC(
+            "COLLECTION_NOT_PUBLIC",
+            "Collection is not public",
+            HttpStatus.NOT_FOUND
+    ),
+    PUBLIC_COLLECTION_CLONE_FAILED(
+            "PUBLIC_COLLECTION_CLONE_FAILED",
+            "Failed to clone public collection",
+            HttpStatus.INTERNAL_SERVER_ERROR
+    ),
     VOCABULARY_NOT_FOUND(
             "VOCABULARY_NOT_FOUND",
             "Vocabulary not found",

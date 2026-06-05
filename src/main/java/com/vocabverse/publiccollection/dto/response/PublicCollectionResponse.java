@@ -9,12 +9,9 @@ public record PublicCollectionResponse(
         String title,
         String description,
         CollectionVisibility visibility,
-        String thumbnailUrl,
-        int totalWords,
-        boolean featured,
         UUID ownerId,
-        String ownerFullName,
-        String ownerAvatarUrl,
+        String ownerName,
+        int vocabularyCount,
         LocalDateTime createdAt,
         LocalDateTime updatedAt
 ) {
