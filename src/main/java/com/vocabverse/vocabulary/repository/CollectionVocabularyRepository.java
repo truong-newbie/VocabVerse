@@ -11,13 +11,24 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CollectionVocabularyRepository extends JpaRepository<CollectionVocabularyEntity, UUID> {
 
-    boolean existsByCollectionIdAndVocabularyId(UUID collectionId, UUID vocabularyId);
+    boolean existsByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+            UUID collectionId,
+            UUID vocabularyId
+    );
 
-    Optional<CollectionVocabularyEntity> findByCollectionIdAndVocabularyId(UUID collectionId, UUID vocabularyId);
+    Optional<CollectionVocabularyEntity> findByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+            UUID collectionId,
+            UUID vocabularyId
+    );
 
-    Page<CollectionVocabularyEntity> findAllByCollectionIdAndVocabularyDeletedAtIsNull(UUID collectionId, Pageable pageable);
+    Page<CollectionVocabularyEntity> findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+            UUID collectionId,
+            Pageable pageable
+    );
 
-    List<CollectionVocabularyEntity> findAllByCollectionIdAndVocabularyDeletedAtIsNull(UUID collectionId);
+    List<CollectionVocabularyEntity> findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+            UUID collectionId
+    );
 
     Page<CollectionVocabularyEntity> findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
             UUID collectionId,
@@ -26,4 +37,6 @@ public interface CollectionVocabularyRepository extends JpaRepository<Collection
     );
 
     List<CollectionVocabularyEntity> findAllByVocabularyId(UUID vocabularyId);
+
+    long countByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(UUID collectionId);
 }

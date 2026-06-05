@@ -82,7 +82,7 @@ public class PublicCollectionService {
         UserEntity user = getCurrentUser();
         CollectionEntity source = getPublicCollection(collectionId);
         List<CollectionVocabularyEntity> sourceItems = collectionVocabularyRepository
-                .findAllByCollectionIdAndVocabularyDeletedAtIsNull(source.getId());
+                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(source.getId());
 
         CollectionEntity clonedCollection = CollectionEntity.builder()
                 .owner(user)

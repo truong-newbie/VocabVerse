@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: optional:file:.env[.properties]
   application:
     name: vocabverse
   profiles:
@@ -55,6 +57,25 @@ storage:
   secret-key: ${STORAGE_SECRET_KEY:}
   bucket: ${STORAGE_BUCKET:}
 
+notification:
+  review-link: ${NOTIFICATION_REVIEW_LINK:/reviews/today}
+  email:
+    listener:
+      enabled: ${NOTIFICATION_EMAIL_LISTENER_ENABLED:true}
+
 app:
   cors:
     allowed-origins: ${APP_CORS_ALLOWED_ORIGINS:http://localhost:3000,http://localhost:5173}
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operations-sorter: method
+    tags-sorter: alpha
+
+management:
+  health:
+    mail:
+      enabled: ${MAIL_HEALTH_ENABLED:false}
