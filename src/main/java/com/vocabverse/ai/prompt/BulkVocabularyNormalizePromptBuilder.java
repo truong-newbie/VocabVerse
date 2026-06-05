@@ -8,20 +8,15 @@ public class BulkVocabularyNormalizePromptBuilder {
 
     public String build(List<String> terms) {
         return """
-                Normalize these English vocabulary terms into JSON.
+                Normalize these English vocabulary terms into one strict JSON array.
 
-                Rules:
+                Output rules:
                 Return JSON only.
                 Do not use markdown.
-                Do not include explanation.
                 Do not wrap output in a code block.
+                Do not include explanation outside JSON.
+                Do not include conversational text.
                 Return exactly one JSON array.
-                Keep meanings concise and learner-friendly.
-                Use Vietnamese for vietnameseMeaning.
-                If pronunciation is unknown, return an empty string.
-                If partOfSpeech is uncertain, return an empty string.
-                If exampleSentence is unavailable, create a simple natural English sentence.
-                Always include note as an empty string unless there is a useful warning.
 
                 Expected structure:
                 [
@@ -32,9 +27,24 @@ public class BulkVocabularyNormalizePromptBuilder {
                     "pronunciation": "",
                     "partOfSpeech": "",
                     "exampleSentence": "",
-                    "note": ""
+                    "synonyms": [],
+                    "antonyms": [],
+                    "difficulty": "",
+                    "aiExplanation": ""
                   }
                 ]
+
+                Field rules:
+                term: normalized English headword or phrase.
+                meaning: concise English learner-friendly definition.
+                vietnameseMeaning: clear, natural Vietnamese meaning for learners.
+                pronunciation: IPA pronunciation, for example "/əˈbændən/".
+                partOfSpeech: common part of speech such as noun, verb, adjective, adverb, phrase.
+                exampleSentence: one natural, simple, educational English sentence.
+                synonyms: JSON array of short English synonyms; empty array if none.
+                antonyms: JSON array of short English antonyms; empty array if none.
+                difficulty: exactly one of BEGINNER, INTERMEDIATE, ADVANCED based on common English usage.
+                aiExplanation: one concise sentence explaining normalization choices.
 
                 Terms:
                 %s

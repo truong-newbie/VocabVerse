@@ -7,6 +7,9 @@ public record NormalizeBulkVocabularyItemResponse(
         String pronunciation,
         String partOfSpeech,
         String exampleSentence,
-        String note
+        java.util.List<String> synonyms,
+        java.util.List<String> antonyms,
+        String difficulty,
+        String aiExplanation
 ) {
 }

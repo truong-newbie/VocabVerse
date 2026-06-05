@@ -234,6 +234,16 @@ public enum ErrorCode {
             "AI response is invalid",
             HttpStatus.BAD_GATEWAY
     ),
+    AI_TIMEOUT(
+            "AI_TIMEOUT",
+            "AI request timed out",
+            HttpStatus.GATEWAY_TIMEOUT
+    ),
+    AI_RATE_LIMITED(
+            "AI_RATE_LIMITED",
+            "AI provider rate limit exceeded",
+            HttpStatus.TOO_MANY_REQUESTS
+    ),
     VIDEO_PROCESSING_FAILED(
             "VIDEO_PROCESSING_FAILED",
             "Video processing failed",

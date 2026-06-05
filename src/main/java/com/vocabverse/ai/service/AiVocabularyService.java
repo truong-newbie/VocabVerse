@@ -8,6 +8,7 @@ import com.vocabverse.ai.dto.request.NormalizeVocabularyRequest;
 import com.vocabverse.ai.dto.response.NormalizeBulkVocabularyResponse;
 import com.vocabverse.ai.dto.response.NormalizeVocabularyResponse;
 import com.vocabverse.ai.parser.BulkVocabularyJsonParser;
+import com.vocabverse.ai.parser.VocabularyNormalizeJsonParser;
 import com.vocabverse.ai.prompt.BulkVocabularyNormalizePromptBuilder;
 import com.vocabverse.ai.prompt.VocabularyNormalizePromptBuilder;
 import com.vocabverse.common.constant.ErrorCode;
@@ -29,6 +30,8 @@ public class AiVocabularyService {
     private final VocabularyNormalizePromptBuilder promptBuilder;
     private final BulkVocabularyNormalizePromptBuilder bulkPromptBuilder;
     private final BulkVocabularyJsonParser bulkVocabularyJsonParser;
+    private final VocabularyNormalizeJsonParser vocabularyNormalizeJsonParser;
+    private final boolean legacyAiClientMode;
 
     @Value("${ai.groq.api-key:}")
     private String systemGroqApiKey;
@@ -39,22 +42,28 @@ public class AiVocabularyService {
             GroqVocabularyClient groqVocabularyClient,
             VocabularyNormalizePromptBuilder promptBuilder,
             BulkVocabularyNormalizePromptBuilder bulkPromptBuilder,
-            BulkVocabularyJsonParser bulkVocabularyJsonParser
+            BulkVocabularyJsonParser bulkVocabularyJsonParser,
+            VocabularyNormalizeJsonParser vocabularyNormalizeJsonParser
     ) {
         this.aiClient = aiClient;
         this.groqVocabularyClient = groqVocabularyClient;
         this.promptBuilder = promptBuilder;
         this.bulkPromptBuilder = bulkPromptBuilder;
         this.bulkVocabularyJsonParser = bulkVocabularyJsonParser;
+        this.vocabularyNormalizeJsonParser = vocabularyNormalizeJsonParser;
+        this.legacyAiClientMode = false;
     }
 
     public AiVocabularyService(AiClient aiClient, VocabularyNormalizePromptBuilder promptBuilder) {
         ObjectMapper objectMapper = new ObjectMapper();
+        VocabularyNormalizeJsonParser parser = new VocabularyNormalizeJsonParser(objectMapper);
         this.aiClient = aiClient;
         this.groqVocabularyClient = new GroqVocabularyClient(objectMapper);
         this.promptBuilder = promptBuilder;
         this.bulkPromptBuilder = new BulkVocabularyNormalizePromptBuilder();
-        this.bulkVocabularyJsonParser = new BulkVocabularyJsonParser(objectMapper);
+        this.vocabularyNormalizeJsonParser = parser;
+        this.bulkVocabularyJsonParser = new BulkVocabularyJsonParser(parser);
+        this.legacyAiClientMode = true;
     }
 
     public NormalizeVocabularyResponse normalize(NormalizeVocabularyRequest request) {
@@ -63,14 +72,29 @@ public class AiVocabularyService {
             throw new BusinessException(ErrorCode.INVALID_INPUT);
         }
 
-        try {
-            String prompt = promptBuilder.build(rawText);
-            return aiClient.normalizeVocabulary(rawText, prompt);
-        } catch (BusinessException exception) {
-            throw exception;
-        } catch (Exception exception) {
-            return fallbackNormalize(rawText);
+        String prompt = promptBuilder.build(rawText);
+        if (legacyAiClientMode) {
+            try {
+                return aiClient.normalizeVocabulary(rawText, prompt);
+            } catch (BusinessException exception) {
+                throw exception;
+            } catch (Exception exception) {
+                return fallbackNormalize(rawText);
+            }
         }
+
+        String provider = resolveProvider(request.provider());
+        if (!"GROQ".equals(provider)) {
+            throw new BusinessException(ErrorCode.AI_PROVIDER_NOT_AVAILABLE);
+        }
+
+        String apiKey = resolveApiKey(request.userApiKey());
+        if (apiKey == null) {
+            throw new BusinessException(ErrorCode.AI_PROVIDER_NOT_AVAILABLE);
+        }
+
+        String aiContent = groqVocabularyClient.completeJson(prompt, apiKey);
+        return vocabularyNormalizeJsonParser.parseSingle(aiContent);
     }
 
     public NormalizeBulkVocabularyResponse normalizeBulk(NormalizeBulkVocabularyRequest request) {
@@ -79,9 +103,7 @@ public class AiVocabularyService {
             throw new BusinessException(ErrorCode.INVALID_INPUT);
         }
 
-        String provider = request.provider() == null || request.provider().isBlank()
-                ? "GROQ"
-                : request.provider().trim().toUpperCase(Locale.ROOT);
+        String provider = resolveProvider(request.provider());
         if (!"GROQ".equals(provider)) {
             throw new BusinessException(ErrorCode.AI_PROVIDER_NOT_AVAILABLE);
         }
@@ -94,6 +116,12 @@ public class AiVocabularyService {
         String prompt = bulkPromptBuilder.build(terms);
         String aiContent = groqVocabularyClient.completeJson(prompt, apiKey);
         return new NormalizeBulkVocabularyResponse(bulkVocabularyJsonParser.parse(aiContent));
+    }
+
+    private String resolveProvider(String provider) {
+        return provider == null || provider.isBlank()
+                ? "GROQ"
+                : provider.trim().toUpperCase(Locale.ROOT);
     }
 
     private List<String> normalizeRawTerms(String rawText) {
@@ -124,11 +152,11 @@ public class AiVocabularyService {
                 "Suggested meaning for \"" + rawText + "\". AI enrichment is temporarily unavailable.",
                 "",
                 "",
-                "Example usage for \"" + rawText + "\" should be reviewed before saving.",
                 "",
+                "Example usage for \"" + rawText + "\" should be reviewed before saving.",
                 List.of(),
                 List.of(),
-                "MEDIUM",
+                "INTERMEDIATE",
                 "Fallback normalization was used because the AI provider failed."
         );
     }
