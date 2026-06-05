@@ -89,6 +89,26 @@ public enum ErrorCode {
             "Failed to clone public collection",
             HttpStatus.INTERNAL_SERVER_ERROR
     ),
+    COLLECTION_REVIEW_SETTING_NOT_FOUND(
+            "COLLECTION_REVIEW_SETTING_NOT_FOUND",
+            "Collection review setting not found",
+            HttpStatus.NOT_FOUND
+    ),
+    INVALID_REVIEW_INTERVALS(
+            "INVALID_REVIEW_INTERVALS",
+            "Review intervals are invalid",
+            HttpStatus.BAD_REQUEST
+    ),
+    REVIEW_SETTINGS_DISABLED(
+            "REVIEW_SETTINGS_DISABLED",
+            "Review settings are disabled",
+            HttpStatus.CONFLICT
+    ),
+    COLLECTION_REVIEW_RESET_FAILED(
+            "COLLECTION_REVIEW_RESET_FAILED",
+            "Failed to reset collection review schedule",
+            HttpStatus.INTERNAL_SERVER_ERROR
+    ),
     VOCABULARY_NOT_FOUND(
             "VOCABULARY_NOT_FOUND",
             "Vocabulary not found",

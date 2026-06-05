@@ -1,5 +1,7 @@
 package com.vocabverse.review.service;
 
+import com.vocabverse.collection.entity.CollectionReviewSettingEntity;
+import com.vocabverse.collection.repository.CollectionReviewSettingRepository;
 import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.exception.BusinessException;
 import com.vocabverse.learning.progress.entity.LearningProgressEntity;
@@ -16,9 +18,11 @@ import com.vocabverse.review.strategy.ReviewIntervalStrategy;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.entity.VocabularyEntity;
+import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -37,6 +41,8 @@ public class ReviewService {
     private final LearningProgressRepository learningProgressRepository;
     private final ReviewHistoryRepository reviewHistoryRepository;
     private final VocabularyRepository vocabularyRepository;
+    private final CollectionVocabularyRepository collectionVocabularyRepository;
+    private final CollectionReviewSettingRepository collectionReviewSettingRepository;
     private final UserRepository userRepository;
     private final ReviewIntervalStrategy reviewIntervalStrategy;
     private final ReviewMapper reviewMapper;
@@ -123,7 +129,33 @@ public class ReviewService {
             ReviewResult result,
             LocalDateTime reviewedAt
     ) {
+        List<UUID> collectionIds = collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId(
+                progress.getUser().getId(),
+                progress.getVocabulary().getId()
+        );
+        if (!collectionIds.isEmpty()) {
+            return collectionReviewSettingRepository
+                    .findFirstByUserIdAndCollectionIdInAndEnabledTrue(progress.getUser().getId(), collectionIds)
+                    .map(setting -> reviewedAt.plusDays(resolveCollectionIntervalDays(setting, progress, result)))
+                    .orElseGet(() -> reviewIntervalStrategy.calculateNextReviewDate(progress, result, reviewedAt));
+        }
         return reviewIntervalStrategy.calculateNextReviewDate(progress, result, reviewedAt);
+    }
+
+    private int resolveCollectionIntervalDays(
+            CollectionReviewSettingEntity setting,
+            LearningProgressEntity progress,
+            ReviewResult result
+    ) {
+        List<Integer> intervals = setting.getIntervalsJson();
+        if (intervals == null || intervals.isEmpty()) {
+            return 1;
+        }
+        if (result == ReviewResult.AGAIN) {
+            return intervals.get(0);
+        }
+        int index = Math.max(0, progress.getRepetitionCount() - 1);
+        return intervals.get(Math.min(index, intervals.size() - 1));
     }
 
     private LearningStatus updateLearningStatus(LearningProgressEntity progress, ReviewResult result) {
