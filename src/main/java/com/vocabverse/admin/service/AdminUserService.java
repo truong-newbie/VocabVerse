@@ -23,8 +23,11 @@ public class AdminUserService {
     private final UserRepository userRepository;
 
     @Transactional(readOnly = true)
-    public AdminPageResponse<AdminUserResponse> listUsers(Pageable pageable) {
-        Page<AdminUserResponse> page = userRepository.findAll(pageable).map(this::toResponse);
+    public AdminPageResponse<AdminUserResponse> listUsers(String keyword, Pageable pageable) {
+        Page<UserEntity> users = keyword == null || keyword.isBlank()
+                ? userRepository.findAll(pageable)
+                : userRepository.searchUsers(keyword.trim(), pageable);
+        Page<AdminUserResponse> page = users.map(this::toResponse);
         return toPageResponse(page);
     }
 

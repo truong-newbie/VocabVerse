@@ -17,6 +17,7 @@ import com.vocabverse.roleplay.repository.RoleplayReportRepository;
 import com.vocabverse.roleplay.repository.RoleplaySessionRepository;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.shadowing.repository.ShadowingLessonRepository;
+import com.vocabverse.shadowing.repository.ShadowingLessonSubtitleRepository;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
@@ -94,6 +95,9 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private ShadowingLessonRepository shadowingLessonRepository;
+
+    @MockBean
+    private ShadowingLessonSubtitleRepository shadowingLessonSubtitleRepository;
 
     @MockBean
     private DataSource dataSource;

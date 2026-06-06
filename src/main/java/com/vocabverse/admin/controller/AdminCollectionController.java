@@ -1,9 +1,13 @@
 package com.vocabverse.admin.controller;
 
+import com.vocabverse.admin.dto.request.AdminModerateCollectionRequest;
 import com.vocabverse.admin.dto.request.AdminHidePublicCollectionRequest;
 import com.vocabverse.admin.dto.request.AdminUpdateCollectionVisibilityRequest;
+import com.vocabverse.admin.dto.response.AdminCollectionModerationResponse;
 import com.vocabverse.admin.dto.response.AdminCollectionResponse;
 import com.vocabverse.admin.dto.response.AdminPageResponse;
+import com.vocabverse.admin.dto.response.AdminPublicCollectionHideResponse;
+import com.vocabverse.admin.dto.response.AdminPublicVocabularyResponse;
 import com.vocabverse.admin.service.AdminCollectionService;
 import com.vocabverse.collection.enums.CollectionVisibility;
 import com.vocabverse.common.response.ApiResponse;
@@ -16,6 +20,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -51,6 +56,14 @@ public class AdminCollectionController {
         return ApiResponse.success(adminCollectionService.updateVisibility(collectionId, request));
     }
 
+    @PostMapping("/collections/{collectionId}/moderate")
+    public ApiResponse<AdminCollectionModerationResponse> moderateCollection(
+            @PathVariable UUID collectionId,
+            @Valid @RequestBody AdminModerateCollectionRequest request
+    ) {
+        return ApiResponse.success(adminCollectionService.moderateCollection(collectionId, request));
+    }
+
     @DeleteMapping("/collections/{collectionId}")
     public ApiResponse<Void> deleteCollection(@PathVariable UUID collectionId) {
         adminCollectionService.deleteCollection(collectionId);
@@ -69,6 +82,22 @@ public class AdminCollectionController {
             @PathVariable UUID collectionId,
             @Valid @RequestBody AdminHidePublicCollectionRequest request
     ) {
+        return ApiResponse.success(adminCollectionService.hidePublicCollectionAsCollection(collectionId, request));
+    }
+
+    @PostMapping("/public-collections/{collectionId}/hide")
+    public ApiResponse<AdminPublicCollectionHideResponse> postHidePublicCollection(
+            @PathVariable UUID collectionId,
+            @Valid @RequestBody AdminHidePublicCollectionRequest request
+    ) {
         return ApiResponse.success(adminCollectionService.hidePublicCollection(collectionId, request));
+    }
+
+    @GetMapping("/public-collections/{collectionId}/vocabularies")
+    public ApiResponse<AdminPageResponse<AdminPublicVocabularyResponse>> getPublicCollectionVocabularies(
+            @PathVariable UUID collectionId,
+            @PageableDefault(page = 0, size = 5) Pageable pageable
+    ) {
+        return ApiResponse.success(adminCollectionService.getPublicCollectionVocabularies(collectionId, pageable));
     }
 }

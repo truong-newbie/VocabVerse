@@ -1,9 +1,13 @@
 package com.vocabverse.admin.service;
 
+import com.vocabverse.admin.dto.request.AdminModerateCollectionRequest;
 import com.vocabverse.admin.dto.request.AdminHidePublicCollectionRequest;
 import com.vocabverse.admin.dto.request.AdminUpdateCollectionVisibilityRequest;
+import com.vocabverse.admin.dto.response.AdminCollectionModerationResponse;
 import com.vocabverse.admin.dto.response.AdminCollectionResponse;
 import com.vocabverse.admin.dto.response.AdminPageResponse;
+import com.vocabverse.admin.dto.response.AdminPublicCollectionHideResponse;
+import com.vocabverse.admin.dto.response.AdminPublicVocabularyResponse;
 import com.vocabverse.admin.entity.PublicCollectionModerationEntity;
 import com.vocabverse.admin.repository.PublicCollectionModerationRepository;
 import com.vocabverse.collection.entity.CollectionEntity;
@@ -13,7 +17,11 @@ import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.exception.BusinessException;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
+import com.vocabverse.vocabulary.entity.CollectionVocabularyEntity;
+import com.vocabverse.vocabulary.entity.VocabularyEntity;
+import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import java.time.LocalDateTime;
+import java.util.Locale;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -30,6 +38,7 @@ public class AdminCollectionService {
     private final CollectionRepository collectionRepository;
     private final PublicCollectionModerationRepository moderationRepository;
     private final UserRepository userRepository;
+    private final CollectionVocabularyRepository collectionVocabularyRepository;
 
     @Transactional(readOnly = true)
     public AdminPageResponse<AdminCollectionResponse> listCollections(
@@ -59,6 +68,33 @@ public class AdminCollectionService {
     }
 
     @Transactional
+    public AdminCollectionModerationResponse moderateCollection(
+            UUID collectionId,
+            AdminModerateCollectionRequest request
+    ) {
+        CollectionEntity collection = findCollection(collectionId);
+        String action = request.action().trim().toUpperCase(Locale.ROOT);
+        if ("APPROVE".equals(action)) {
+            collection.setVisibility(CollectionVisibility.PUBLIC);
+            collectionRepository.save(collection);
+            return new AdminCollectionModerationResponse(collection.getId(), "APPROVED", collection.getVisibility());
+        }
+        if ("HIDE".equals(action) || "REJECT".equals(action)) {
+            collection.setVisibility(CollectionVisibility.PRIVATE);
+            collectionRepository.save(collection);
+            moderationRepository.save(PublicCollectionModerationEntity.builder()
+                    .collection(collection)
+                    .moderatedBy(getCurrentAdmin())
+                    .reason(request.reason() == null || request.reason().isBlank()
+                            ? action
+                            : request.reason().trim())
+                    .build());
+            return new AdminCollectionModerationResponse(collection.getId(), "HIDDEN", collection.getVisibility());
+        }
+        throw new BusinessException(ErrorCode.INVALID_INPUT, "Unsupported moderation action");
+    }
+
+    @Transactional
     public void deleteCollection(UUID collectionId) {
         CollectionEntity collection = findCollection(collectionId);
         if (collection.getVisibility() == CollectionVisibility.SYSTEM) {
@@ -75,7 +111,16 @@ public class AdminCollectionService {
     }
 
     @Transactional
-    public AdminCollectionResponse hidePublicCollection(
+    public AdminCollectionResponse hidePublicCollectionAsCollection(
+            UUID collectionId,
+            AdminHidePublicCollectionRequest request
+    ) {
+        hidePublicCollection(collectionId, request);
+        return toResponse(findCollection(collectionId));
+    }
+
+    @Transactional
+    public AdminPublicCollectionHideResponse hidePublicCollection(
             UUID collectionId,
             AdminHidePublicCollectionRequest request
     ) {
@@ -90,7 +135,33 @@ public class AdminCollectionService {
                 .reason(request.reason().trim())
                 .build());
 
-        return toResponse(collectionRepository.save(collection));
+        collectionRepository.save(collection);
+        return new AdminPublicCollectionHideResponse(collection.getId(), "HIDDEN", request.reason().trim());
+    }
+
+    @Transactional(readOnly = true)
+    public AdminPageResponse<AdminPublicVocabularyResponse> getPublicCollectionVocabularies(
+            UUID collectionId,
+            Pageable pageable
+    ) {
+        collectionRepository.findByIdAndVisibilityAndDeletedAtIsNull(collectionId, CollectionVisibility.PUBLIC)
+                .orElseThrow(() -> new BusinessException(ErrorCode.PUBLIC_COLLECTION_NOT_FOUND));
+
+        Page<AdminPublicVocabularyResponse> page = collectionVocabularyRepository
+                .findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+                        collectionId,
+                        CollectionVisibility.PUBLIC,
+                        pageable
+                )
+                .map(CollectionVocabularyEntity::getVocabulary)
+                .map(this::toPublicVocabularyResponse);
+        return new AdminPageResponse<>(
+                page.getContent(),
+                page.getNumber(),
+                page.getSize(),
+                page.getTotalElements(),
+                page.getTotalPages()
+        );
     }
 
     private CollectionEntity findCollection(UUID collectionId) {
@@ -113,10 +184,13 @@ public class AdminCollectionService {
                 collection.getId(),
                 owner == null ? null : owner.getId(),
                 owner == null ? null : owner.getEmail(),
+                owner == null ? null : owner.getFullName(),
                 collection.getTitle(),
                 collection.getDescription(),
                 collection.getVisibility(),
+                collection.getVisibility().name(),
                 collection.getThumbnailUrl(),
+                collection.getTotalWords(),
                 collection.getTotalWords(),
                 collection.isFeatured(),
                 collection.getCreatedAt(),
@@ -131,6 +205,14 @@ public class AdminCollectionService {
                 page.getSize(),
                 page.getTotalElements(),
                 page.getTotalPages()
+        );
+    }
+
+    private AdminPublicVocabularyResponse toPublicVocabularyResponse(VocabularyEntity vocabulary) {
+        return new AdminPublicVocabularyResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                vocabulary.getMeaningEn()
         );
     }
 }

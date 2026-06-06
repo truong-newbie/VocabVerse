@@ -47,17 +47,38 @@ public class ShadowingLessonEntity {
     @Column(name = "title", length = 200)
     private String title;
 
+    @Column(name = "description", columnDefinition = "TEXT")
+    private String description;
+
     @Column(name = "original_filename", length = 255)
     private String originalFilename;
 
     @Column(name = "youtube_url", columnDefinition = "TEXT")
     private String youtubeUrl;
 
+    @Column(name = "cloudinary_public_id", length = 500)
+    private String cloudinaryPublicId;
+
+    @Column(name = "video_url", columnDefinition = "TEXT")
+    private String videoUrl;
+
+    @Column(name = "thumbnail_url", columnDefinition = "TEXT")
+    private String thumbnailUrl;
+
+    @Column(name = "storage_provider", length = 50)
+    private String storageProvider;
+
     @Column(name = "content_type", length = 100)
     private String contentType;
 
     @Column(name = "file_size")
     private Long fileSize;
+
+    @Column(name = "duration", length = 20)
+    private String duration;
+
+    @Column(name = "progress", nullable = false)
+    private int progress;
 
     @Column(name = "error_message", columnDefinition = "TEXT")
     private String errorMessage;

@@ -1,5 +1,6 @@
 package com.vocabverse.admin.service;
 
+import com.vocabverse.admin.dto.response.AdminHealthComponentResponse;
 import com.vocabverse.admin.dto.response.AdminSystemHealthResponse;
 import javax.sql.DataSource;
 import lombok.RequiredArgsConstructor;
@@ -18,9 +19,9 @@ public class AdminSystemService {
 
     public AdminSystemHealthResponse getHealth() {
         return new AdminSystemHealthResponse(
-                checkDatabase(),
-                checkRedis(),
-                checkRabbitMq()
+                new AdminHealthComponentResponse(checkDatabase()),
+                new AdminHealthComponentResponse(checkRedis()),
+                new AdminHealthComponentResponse(checkRabbitMq())
         );
     }
 

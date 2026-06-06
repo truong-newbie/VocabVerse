@@ -14,9 +14,11 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -29,9 +31,11 @@ public class AdminUserController {
 
     @GetMapping
     public ApiResponse<AdminPageResponse<AdminUserResponse>> listUsers(
+            @RequestParam(required = false) String search,
+            @RequestParam(required = false) String q,
             @PageableDefault(page = 0, size = 20) Pageable pageable
     ) {
-        return ApiResponse.success(adminUserService.listUsers(pageable));
+        return ApiResponse.success(adminUserService.listUsers(resolveKeyword(search, q), pageable));
     }
 
     @GetMapping("/{userId}")
@@ -47,11 +51,37 @@ public class AdminUserController {
         return ApiResponse.success(adminUserService.updateStatus(userId, request));
     }
 
+    @PatchMapping("/{userId}/status")
+    public ApiResponse<AdminUserResponse> patchStatus(
+            @PathVariable UUID userId,
+            @Valid @RequestBody AdminUpdateUserStatusRequest request
+    ) {
+        return ApiResponse.success(adminUserService.updateStatus(userId, request));
+    }
+
     @PutMapping("/{userId}/role")
     public ApiResponse<AdminUserResponse> updateRole(
             @PathVariable UUID userId,
             @Valid @RequestBody AdminUpdateUserRoleRequest request
     ) {
         return ApiResponse.success(adminUserService.updateRole(userId, request));
+    }
+
+    @PatchMapping("/{userId}/role")
+    public ApiResponse<AdminUserResponse> patchRole(
+            @PathVariable UUID userId,
+            @Valid @RequestBody AdminUpdateUserRoleRequest request
+    ) {
+        return ApiResponse.success(adminUserService.updateRole(userId, request));
+    }
+
+    private String resolveKeyword(String search, String q) {
+        if (search != null && !search.isBlank()) {
+            return search.trim();
+        }
+        if (q != null && !q.isBlank()) {
+            return q.trim();
+        }
+        return null;
     }
 }

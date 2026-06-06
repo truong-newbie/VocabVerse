@@ -31,6 +31,10 @@ spring:
     port: ${MAIL_PORT:587}
     username: ${MAIL_USERNAME:}
     password: ${MAIL_PASSWORD:}
+  servlet:
+    multipart:
+      max-file-size: ${MAX_UPLOAD_FILE_SIZE:200MB}
+      max-request-size: ${MAX_UPLOAD_REQUEST_SIZE:220MB}
 
 server:
   servlet:
@@ -59,6 +63,18 @@ storage:
   access-key: ${STORAGE_ACCESS_KEY:}
   secret-key: ${STORAGE_SECRET_KEY:}
   bucket: ${STORAGE_BUCKET:}
+  cloudinary:
+    cloud-name: ${CLOUDINARY_CLOUD_NAME:}
+    api-key: ${CLOUDINARY_API_KEY:}
+    api-secret: ${CLOUDINARY_API_SECRET:}
+    upload-folder: ${CLOUDINARY_UPLOAD_FOLDER:vocabverse/shadowing}
+
+shadowing:
+  ai:
+    subtitle:
+      enabled: ${SHADOWING_AI_SUBTITLE_ENABLED:true}
+      transcription-model: ${SHADOWING_AI_TRANSCRIPTION_MODEL:whisper-large-v3-turbo}
+      translation-model: ${SHADOWING_AI_TRANSLATION_MODEL:llama-3.1-8b-instant}
 
 notification:
   review-link: ${NOTIFICATION_REVIEW_LINK:/reviews/today}

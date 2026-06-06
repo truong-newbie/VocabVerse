@@ -7,6 +7,8 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 
 public interface UserRepository extends JpaRepository<UserEntity, UUID> {
 
@@ -19,4 +21,15 @@ public interface UserRepository extends JpaRepository<UserEntity, UUID> {
     long countByRole(UserRole role);
 
     long countByCreatedAtBetween(LocalDateTime start, LocalDateTime end);
+
+    @Query("""
+            select u
+            from UserEntity u
+            where lower(u.email) like lower(concat('%', :keyword, '%'))
+               or lower(coalesce(u.fullName, '')) like lower(concat('%', :keyword, '%'))
+            """)
+    org.springframework.data.domain.Page<UserEntity> searchUsers(
+            @Param("keyword") String keyword,
+            org.springframework.data.domain.Pageable pageable
+    );
 }
