@@ -72,4 +72,18 @@ public interface CollectionVocabularyRepository extends JpaRepository<Collection
             @Param("userId") UUID userId,
             @Param("collectionId") UUID collectionId
     );
+
+    @Query("""
+            select cv.collection.title
+            from CollectionVocabularyEntity cv
+            where cv.vocabulary.id = :vocabularyId
+              and cv.collection.owner.id = :userId
+              and cv.collection.deletedAt is null
+              and cv.vocabulary.deletedAt is null
+            order by cv.createdAt asc
+            """)
+    List<String> findOwnedCollectionTitlesByVocabularyId(
+            @Param("userId") UUID userId,
+            @Param("vocabularyId") UUID vocabularyId
+    );
 }

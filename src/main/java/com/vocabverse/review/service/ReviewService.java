@@ -8,11 +8,12 @@ import com.vocabverse.learning.progress.entity.LearningProgressEntity;
 import com.vocabverse.learning.progress.entity.LearningStatus;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
 import com.vocabverse.review.dto.response.ReviewDuePageResponse;
+import com.vocabverse.review.dto.response.ReviewDueItemResponse;
+import com.vocabverse.review.dto.response.ReviewHistoryResponse;
 import com.vocabverse.review.dto.response.ReviewHistoryPageResponse;
 import com.vocabverse.review.dto.response.ReviewSubmitResponse;
 import com.vocabverse.review.entity.ReviewHistoryEntity;
 import com.vocabverse.review.entity.ReviewResult;
-import com.vocabverse.review.mapper.ReviewMapper;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.review.strategy.ReviewIntervalStrategy;
 import com.vocabverse.user.entity.UserEntity;
@@ -45,7 +46,6 @@ public class ReviewService {
     private final CollectionReviewSettingRepository collectionReviewSettingRepository;
     private final UserRepository userRepository;
     private final ReviewIntervalStrategy reviewIntervalStrategy;
-    private final ReviewMapper reviewMapper;
 
     @Transactional
     public ReviewSubmitResponse submitReview(UUID vocabularyId, ReviewResult result) {
@@ -72,7 +72,7 @@ public class ReviewService {
                 .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now(), pageable);
 
         return new ReviewDuePageResponse(
-                duePage.map(reviewMapper::toDueItemResponse).getContent(),
+                duePage.map(progress -> toDueItemResponse(userId, progress)).getContent(),
                 duePage.getNumber(),
                 duePage.getSize(),
                 duePage.getTotalElements(),
@@ -87,7 +87,7 @@ public class ReviewService {
                 .findAllByUserIdOrderByReviewedAtDesc(userId, pageable);
 
         return new ReviewHistoryPageResponse(
-                historyPage.map(reviewMapper::toHistoryResponse).getContent(),
+                historyPage.map(this::toHistoryResponse).getContent(),
                 historyPage.getNumber(),
                 historyPage.getSize(),
                 historyPage.getTotalElements(),
@@ -185,6 +185,47 @@ public class ReviewService {
                 .build();
 
         reviewHistoryRepository.save(history);
+    }
+
+    private ReviewDueItemResponse toDueItemResponse(UUID userId, LearningProgressEntity progress) {
+        VocabularyEntity vocabulary = progress.getVocabulary();
+        return new ReviewDueItemResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                vocabulary.getMeaningEn(),
+                vocabulary.getMeaningVi(),
+                vocabulary.getPartOfSpeech(),
+                firstExampleSentence(vocabulary),
+                progress.getStatus(),
+                progress.getNextReviewAt(),
+                progress.getRepetitionCount(),
+                firstCollectionName(userId, vocabulary.getId())
+        );
+    }
+
+    private ReviewHistoryResponse toHistoryResponse(ReviewHistoryEntity history) {
+        VocabularyEntity vocabulary = history.getVocabulary();
+        return new ReviewHistoryResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                history.getResult(),
+                history.getReviewedAt(),
+                history.getNextReviewAt(),
+                history.getPreviousStatus(),
+                history.getNewStatus()
+        );
+    }
+
+    private String firstExampleSentence(VocabularyEntity vocabulary) {
+        if (vocabulary.getExamples() == null || vocabulary.getExamples().isEmpty()) {
+            return null;
+        }
+        return vocabulary.getExamples().get(0).getEn();
+    }
+
+    private String firstCollectionName(UUID userId, UUID vocabularyId) {
+        List<String> titles = collectionVocabularyRepository.findOwnedCollectionTitlesByVocabularyId(userId, vocabularyId);
+        return titles.isEmpty() ? null : titles.get(0);
     }
 
     private UserEntity getCurrentUser() {

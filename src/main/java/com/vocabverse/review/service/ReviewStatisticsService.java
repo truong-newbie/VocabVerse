@@ -73,7 +73,11 @@ public class ReviewStatisticsService {
     }
 
     private long calculateCurrentStreak(java.util.UUID userId, LocalDate today) {
-        Set<LocalDate> reviewDates = new HashSet<>(reviewHistoryRepository.findDistinctReviewDatesByUserId(userId));
+        Set<LocalDate> reviewDates = new HashSet<>(reviewHistoryRepository
+                .findReviewedAtByUserIdOrderByReviewedAtDesc(userId)
+                .stream()
+                .map(LocalDateTime::toLocalDate)
+                .toList());
         LocalDate cursor = reviewDates.contains(today) ? today : today.minusDays(1);
         long streak = 0;
         while (reviewDates.contains(cursor)) {
