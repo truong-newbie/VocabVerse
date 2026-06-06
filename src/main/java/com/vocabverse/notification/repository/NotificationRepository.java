@@ -26,4 +26,6 @@ public interface NotificationRepository extends JpaRepository<NotificationEntity
             Collection<NotificationStatus> statuses,
             Pageable pageable
     );
+
+    long countByStatusAndCreatedAtBetween(NotificationStatus status, LocalDateTime start, LocalDateTime end);
 }

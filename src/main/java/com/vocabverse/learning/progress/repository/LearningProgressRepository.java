@@ -88,4 +88,13 @@ public interface LearningProgressRepository extends JpaRepository<LearningProgre
             @Param("userId") UUID userId,
             @Param("endOfDay") LocalDateTime endOfDay
     );
+
+    @Query("""
+            select count(lp)
+            from LearningProgressEntity lp
+            where lp.nextReviewAt is not null
+              and lp.nextReviewAt <= :endOfDay
+              and lp.vocabulary.deletedAt is null
+            """)
+    long countDueReviewsUntil(@Param("endOfDay") LocalDateTime endOfDay);
 }

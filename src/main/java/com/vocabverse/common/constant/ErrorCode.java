@@ -219,6 +219,16 @@ public enum ErrorCode {
             "Roleplay session is already completed",
             HttpStatus.CONFLICT
     ),
+    ADMIN_LAST_ADMIN_REMOVAL_NOT_ALLOWED(
+            "ADMIN_LAST_ADMIN_REMOVAL_NOT_ALLOWED",
+            "Cannot remove the last admin",
+            HttpStatus.CONFLICT
+    ),
+    SHADOWING_LESSON_NOT_FOUND(
+            "SHADOWING_LESSON_NOT_FOUND",
+            "Shadowing lesson not found",
+            HttpStatus.NOT_FOUND
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",
