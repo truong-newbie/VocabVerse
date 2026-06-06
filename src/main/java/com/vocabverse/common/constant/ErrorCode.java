@@ -274,6 +274,11 @@ public enum ErrorCode {
             "AI provider rate limit exceeded",
             HttpStatus.TOO_MANY_REQUESTS
     ),
+    AI_DAILY_LIMIT_REACHED(
+            "AI_DAILY_LIMIT_REACHED",
+            "Daily AI normalize trial limit reached",
+            HttpStatus.TOO_MANY_REQUESTS
+    ),
     VIDEO_PROCESSING_FAILED(
             "VIDEO_PROCESSING_FAILED",
             "Video processing failed",

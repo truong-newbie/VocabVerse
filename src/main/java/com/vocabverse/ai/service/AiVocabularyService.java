@@ -31,6 +31,7 @@ public class AiVocabularyService {
     private final BulkVocabularyNormalizePromptBuilder bulkPromptBuilder;
     private final BulkVocabularyJsonParser bulkVocabularyJsonParser;
     private final VocabularyNormalizeJsonParser vocabularyNormalizeJsonParser;
+    private final AiNormalizeQuotaService aiNormalizeQuotaService;
     private final boolean legacyAiClientMode;
 
     @Value("${ai.groq.api-key:}")
@@ -43,7 +44,8 @@ public class AiVocabularyService {
             VocabularyNormalizePromptBuilder promptBuilder,
             BulkVocabularyNormalizePromptBuilder bulkPromptBuilder,
             BulkVocabularyJsonParser bulkVocabularyJsonParser,
-            VocabularyNormalizeJsonParser vocabularyNormalizeJsonParser
+            VocabularyNormalizeJsonParser vocabularyNormalizeJsonParser,
+            AiNormalizeQuotaService aiNormalizeQuotaService
     ) {
         this.aiClient = aiClient;
         this.groqVocabularyClient = groqVocabularyClient;
@@ -51,6 +53,7 @@ public class AiVocabularyService {
         this.bulkPromptBuilder = bulkPromptBuilder;
         this.bulkVocabularyJsonParser = bulkVocabularyJsonParser;
         this.vocabularyNormalizeJsonParser = vocabularyNormalizeJsonParser;
+        this.aiNormalizeQuotaService = aiNormalizeQuotaService;
         this.legacyAiClientMode = false;
     }
 
@@ -63,6 +66,7 @@ public class AiVocabularyService {
         this.bulkPromptBuilder = new BulkVocabularyNormalizePromptBuilder();
         this.vocabularyNormalizeJsonParser = parser;
         this.bulkVocabularyJsonParser = new BulkVocabularyJsonParser(parser);
+        this.aiNormalizeQuotaService = null;
         this.legacyAiClientMode = true;
     }
 
@@ -91,6 +95,9 @@ public class AiVocabularyService {
         String apiKey = resolveApiKey(request.userApiKey());
         if (apiKey == null) {
             throw new BusinessException(ErrorCode.AI_PROVIDER_NOT_AVAILABLE);
+        }
+        if (aiNormalizeQuotaService.shouldApplySystemTrialQuota(request.userApiKey())) {
+            aiNormalizeQuotaService.consumeTrialQuota();
         }
 
         String aiContent = groqVocabularyClient.completeJson(prompt, apiKey);

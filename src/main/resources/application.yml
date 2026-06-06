@@ -46,6 +46,9 @@ ai:
     api-key: ${GROQ_API_KEY:}
   gemini:
     api-key: ${GEMINI_API_KEY:}
+  normalize:
+    trial:
+      daily-limit: ${AI_NORMALIZE_TRIAL_DAILY_LIMIT:3}
 
 dictionary:
   api:
