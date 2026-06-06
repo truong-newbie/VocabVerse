@@ -114,6 +114,26 @@ public enum ErrorCode {
             "Vocabulary not found",
             HttpStatus.NOT_FOUND
     ),
+    DICTIONARY_WORD_NOT_FOUND(
+            "DICTIONARY_WORD_NOT_FOUND",
+            "Dictionary word not found",
+            HttpStatus.NOT_FOUND
+    ),
+    DICTIONARY_PROVIDER_UNAVAILABLE(
+            "DICTIONARY_PROVIDER_UNAVAILABLE",
+            "Dictionary provider is temporarily unavailable",
+            HttpStatus.SERVICE_UNAVAILABLE
+    ),
+    DICTIONARY_TIMEOUT(
+            "DICTIONARY_TIMEOUT",
+            "Dictionary request timed out",
+            HttpStatus.GATEWAY_TIMEOUT
+    ),
+    DICTIONARY_INVALID_RESPONSE(
+            "DICTIONARY_INVALID_RESPONSE",
+            "Dictionary provider response is invalid",
+            HttpStatus.BAD_GATEWAY
+    ),
     LEARNING_PROGRESS_NOT_FOUND(
             "LEARNING_PROGRESS_NOT_FOUND",
             "Learning progress not found",
