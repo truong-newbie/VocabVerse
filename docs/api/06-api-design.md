@@ -95,7 +95,7 @@ POST /api/v1/auth/register
 ```json
 {
   "email": "user@gmail.com",
-  "password": "12345678",
+  "password": "<password>",
   "fullName": "Nguyen Van A"
 }
 ```
@@ -128,7 +128,7 @@ POST /api/v1/auth/login
 ```json
 {
   "email": "user@gmail.com",
-  "password": "12345678"
+  "password": "<password>"
 }
 ```
 

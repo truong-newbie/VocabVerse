@@ -18,13 +18,17 @@ import com.vocabverse.learning.typing.entity.TypingSessionStatus;
 import com.vocabverse.learning.typing.repository.TypingSessionRepository;
 import com.vocabverse.notification.mapper.NotificationMapper;
 import com.vocabverse.notification.repository.NotificationRepository;
+import com.vocabverse.review.dto.response.ReviewDueItemResponse;
+import com.vocabverse.review.dto.response.ReviewHistoryResponse;
 import com.vocabverse.review.entity.ReviewHistoryEntity;
-import com.vocabverse.review.mapper.ReviewMapper;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
+import com.vocabverse.vocabulary.entity.VocabularyEntity;
+import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -50,7 +54,7 @@ public class DashboardService {
     private final TypingSessionRepository typingSessionRepository;
     private final NotificationRepository notificationRepository;
     private final UserRepository userRepository;
-    private final ReviewMapper reviewMapper;
+    private final CollectionVocabularyRepository collectionVocabularyRepository;
     private final NotificationMapper notificationMapper;
 
     @Transactional(readOnly = true)
@@ -87,7 +91,7 @@ public class DashboardService {
 
         return new ReviewDueResponse(
                 learningProgressRepository.countDueReviewsByUserId(userId, now),
-                duePage.map(reviewMapper::toDueItemResponse).getContent(),
+                duePage.map(progress -> toDueItemResponse(userId, progress)).getContent(),
                 duePage.getNumber(),
                 duePage.getSize(),
                 duePage.getTotalElements(),
@@ -103,7 +107,7 @@ public class DashboardService {
                 .findAllByUserIdOrderByReviewedAtDesc(userId, recentPage);
 
         return new RecentActivityResponse(
-                reviewHistory.map(reviewMapper::toHistoryResponse).getContent(),
+                reviewHistory.map(this::toHistoryResponse).getContent(),
                 notificationRepository.findAllByUserIdOrderByCreatedAtDesc(userId, recentPage)
                         .map(notificationMapper::toResponse)
                         .getContent()
@@ -117,6 +121,47 @@ public class DashboardService {
                 learningProgressRepository.countByUserIdAndStatus(userId, LearningStatus.REVIEWING),
                 learningProgressRepository.countByUserIdAndStatus(userId, LearningStatus.MASTERED)
         );
+    }
+
+    private ReviewDueItemResponse toDueItemResponse(UUID userId, LearningProgressEntity progress) {
+        VocabularyEntity vocabulary = progress.getVocabulary();
+        return new ReviewDueItemResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                vocabulary.getMeaningEn(),
+                vocabulary.getMeaningVi(),
+                vocabulary.getPartOfSpeech(),
+                firstExampleSentence(vocabulary),
+                progress.getStatus(),
+                progress.getNextReviewAt(),
+                progress.getRepetitionCount(),
+                firstCollectionName(userId, vocabulary.getId())
+        );
+    }
+
+    private ReviewHistoryResponse toHistoryResponse(ReviewHistoryEntity history) {
+        VocabularyEntity vocabulary = history.getVocabulary();
+        return new ReviewHistoryResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                history.getResult(),
+                history.getReviewedAt(),
+                history.getNextReviewAt(),
+                history.getPreviousStatus(),
+                history.getNewStatus()
+        );
+    }
+
+    private String firstExampleSentence(VocabularyEntity vocabulary) {
+        if (vocabulary.getExamples() == null || vocabulary.getExamples().isEmpty()) {
+            return null;
+        }
+        return vocabulary.getExamples().get(0).getEn();
+    }
+
+    private String firstCollectionName(UUID userId, UUID vocabularyId) {
+        List<String> titles = collectionVocabularyRepository.findOwnedCollectionTitlesByVocabularyId(userId, vocabularyId);
+        return titles.isEmpty() ? null : titles.get(0);
     }
 
     private UserEntity getCurrentUser() {

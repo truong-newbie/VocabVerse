@@ -1,0 +1,13 @@
+.git
+.idea
+.codegraph
+target
+build
+.gradle
+*.iml
+*.log
+.env
+.env.*
+!.env.example
+README.md~
+HELP.md

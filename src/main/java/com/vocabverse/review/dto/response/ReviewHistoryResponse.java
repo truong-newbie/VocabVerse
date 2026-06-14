@@ -6,9 +6,8 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 public record ReviewHistoryResponse(
-        UUID id,
         UUID vocabularyId,
-        String word,
+        String term,
         ReviewResult result,
         LocalDateTime reviewedAt,
         LocalDateTime nextReviewAt,

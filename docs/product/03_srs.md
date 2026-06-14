@@ -129,7 +129,7 @@ Input:
 ```json
 {
   "email": "user@gmail.com",
-  "password": "12345678"
+  "password": "<password>"
 }
 ```
 
@@ -150,7 +150,7 @@ Input:
 ```json
 {
   "email": "user@gmail.com",
-  "password": "12345678"
+  "password": "<password>"
 }
 ```
 
