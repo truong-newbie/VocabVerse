@@ -12,6 +12,7 @@ import com.vocabverse.learning.progress.entity.LearningProgressEntity;
 import com.vocabverse.learning.progress.entity.LearningStatus;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
 import com.vocabverse.learning.progress.service.LearningProgressService;
+import com.vocabverse.review.strategy.ReviewSchedulerType;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.entity.VocabularyEntity;
@@ -70,6 +71,9 @@ public class CollectionReviewSettingService {
         if (request.emailEnabled() != null) {
             setting.setEmailEnabled(request.emailEnabled());
         }
+        if (request.schedulerType() != null) {
+            setting.setSchedulerType(validateSchedulerType(request.schedulerType()));
+        }
         if (request.intervals() != null) {
             setting.setIntervalsJson(validateIntervals(request.intervals()));
         }
@@ -108,7 +112,7 @@ public class CollectionReviewSettingService {
                     collectionId
             );
             if (!vocabularyIds.isEmpty()) {
-                resetProgressRows(user, vocabularyIds, firstInterval(setting));
+                resetProgressRows(user, vocabularyIds, resetInitialIntervalDays(setting));
             }
             setting.setLastResetAt(LocalDateTime.now());
             return toResponse(collectionReviewSettingRepository.save(setting));
@@ -150,6 +154,9 @@ public class CollectionReviewSettingService {
             progress.setStatus(LearningStatus.NEW);
             progress.setRepetitionCount(0);
             progress.setEaseFactor(DEFAULT_EASE_FACTOR);
+            progress.setLastIntervalDays(0);
+            progress.setLapseCount(0);
+            progress.setReviewCount(0);
             progress.setLastReviewedAt(null);
             progress.setNextReviewAt(nextReviewAt);
             progressRows.add(progress);
@@ -164,6 +171,7 @@ public class CollectionReviewSettingService {
                         .collection(collection)
                         .enabled(true)
                         .emailEnabled(true)
+                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL)
                         .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS)
                         .reminderTime(DEFAULT_REMINDER_TIME)
                         .timezone(DEFAULT_TIMEZONE)
@@ -187,6 +195,13 @@ public class CollectionReviewSettingService {
         return List.copyOf(intervals);
     }
 
+    private ReviewSchedulerType validateSchedulerType(ReviewSchedulerType schedulerType) {
+        if (schedulerType == ReviewSchedulerType.FSRS) {
+            throw new BusinessException(ErrorCode.SCHEDULER_NOT_SUPPORTED);
+        }
+        return schedulerType;
+    }
+
     private String validateTimezone(String timezone) {
         if (timezone == null || timezone.isBlank()) {
             return DEFAULT_TIMEZONE;
@@ -204,12 +219,28 @@ public class CollectionReviewSettingService {
         return intervals.get(0);
     }
 
+    private int resetInitialIntervalDays(CollectionReviewSettingEntity setting) {
+        ReviewSchedulerType schedulerType = resolveSchedulerType(setting);
+        if (schedulerType == ReviewSchedulerType.FSRS) {
+            throw new BusinessException(ErrorCode.SCHEDULER_NOT_SUPPORTED);
+        }
+        if (schedulerType == ReviewSchedulerType.SM2) {
+            return 1;
+        }
+        return firstInterval(setting);
+    }
+
+    private ReviewSchedulerType resolveSchedulerType(CollectionReviewSettingEntity setting) {
+        return setting.getSchedulerType() == null ? ReviewSchedulerType.FIXED_INTERVAL : setting.getSchedulerType();
+    }
+
     private CollectionReviewSettingResponse toResponse(CollectionReviewSettingEntity setting) {
         return new CollectionReviewSettingResponse(
                 setting.getId(),
                 setting.getCollection().getId(),
                 setting.isEnabled(),
                 setting.isEmailEnabled(),
+                resolveSchedulerType(setting),
                 setting.getIntervalsJson(),
                 setting.getReminderTime(),
                 setting.getTimezone(),

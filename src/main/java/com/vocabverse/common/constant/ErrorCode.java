@@ -109,6 +109,11 @@ public enum ErrorCode {
             "Failed to reset collection review schedule",
             HttpStatus.INTERNAL_SERVER_ERROR
     ),
+    SCHEDULER_NOT_SUPPORTED(
+            "SCHEDULER_NOT_SUPPORTED",
+            "Review scheduler is not supported yet",
+            HttpStatus.BAD_REQUEST
+    ),
     VOCABULARY_NOT_FOUND(
             "VOCABULARY_NOT_FOUND",
             "Vocabulary not found",

@@ -63,6 +63,15 @@ public class LearningProgressEntity {
     @Column(name = "ease_factor", nullable = false, precision = 4, scale = 2)
     private BigDecimal easeFactor;
 
+    @Column(name = "last_interval_days", nullable = false)
+    private int lastIntervalDays;
+
+    @Column(name = "lapse_count", nullable = false)
+    private int lapseCount;
+
+    @Column(name = "review_count", nullable = false)
+    private int reviewCount;
+
     @Column(name = "next_review_at")
     private LocalDateTime nextReviewAt;
 
