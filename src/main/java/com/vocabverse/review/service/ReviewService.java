@@ -150,6 +150,9 @@ public class ReviewService {
         progress.setLastIntervalDays(schedule.lastIntervalDays());
         progress.setLapseCount(schedule.lapseCount());
         progress.setReviewCount(schedule.reviewCount());
+        progress.setFsrsDifficulty(schedule.fsrsDifficulty());
+        progress.setFsrsStability(schedule.fsrsStability());
+        progress.setFsrsRetrievability(schedule.fsrsRetrievability());
         progress.setLastReviewedAt(reviewedAt);
         progress.setNextReviewAt(schedule.nextReviewAt());
     }

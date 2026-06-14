@@ -72,6 +72,15 @@ public class LearningProgressEntity {
     @Column(name = "review_count", nullable = false)
     private int reviewCount;
 
+    @Column(name = "fsrs_difficulty", precision = 6, scale = 3)
+    private BigDecimal fsrsDifficulty;
+
+    @Column(name = "fsrs_stability", precision = 8, scale = 3)
+    private BigDecimal fsrsStability;
+
+    @Column(name = "fsrs_retrievability", precision = 6, scale = 4)
+    private BigDecimal fsrsRetrievability;
+
     @Column(name = "next_review_at")
     private LocalDateTime nextReviewAt;
 

@@ -11,6 +11,9 @@ public record ReviewScheduleResult(
         int lastIntervalDays,
         int lapseCount,
         int reviewCount,
+        BigDecimal fsrsDifficulty,
+        BigDecimal fsrsStability,
+        BigDecimal fsrsRetrievability,
         LocalDateTime nextReviewAt
 ) {
 }
