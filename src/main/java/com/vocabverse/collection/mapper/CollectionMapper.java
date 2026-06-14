@@ -21,7 +21,24 @@ public interface CollectionMapper {
     CollectionEntity toEntity(CreateCollectionRequest request);
 
     @Mapping(target = "ownerId", source = "owner.id")
+    @Mapping(target = "vocabularyCount", source = "totalWords")
     CollectionResponse toResponse(CollectionEntity entity);
+
+    default CollectionResponse toResponse(CollectionEntity entity, int vocabularyCount) {
+        return new CollectionResponse(
+                entity.getId(),
+                entity.getOwner() == null ? null : entity.getOwner().getId(),
+                entity.getTitle(),
+                entity.getDescription(),
+                entity.getVisibility(),
+                vocabularyCount,
+                entity.getThumbnailUrl(),
+                entity.getTotalWords(),
+                entity.isFeatured(),
+                entity.getCreatedAt(),
+                entity.getUpdatedAt()
+        );
+    }
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "owner", ignore = true)

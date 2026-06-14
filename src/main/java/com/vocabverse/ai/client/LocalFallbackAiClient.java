@@ -15,11 +15,11 @@ public class LocalFallbackAiClient implements AiClient {
                 "Suggested meaning for \"" + term + "\". Configure an AI provider for enriched output.",
                 "",
                 "",
-                "Example usage for \"" + term + "\" should be reviewed before saving.",
                 "",
+                "Example usage for \"" + term + "\" should be reviewed before saving.",
                 List.of(),
                 List.of(),
-                "MEDIUM",
+                "INTERMEDIATE",
                 "Fallback normalization was used because no external AI provider is configured."
         );
     }

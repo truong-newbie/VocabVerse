@@ -4,8 +4,10 @@ import com.vocabverse.common.response.ApiResponse;
 import com.vocabverse.review.dto.request.SubmitReviewRequest;
 import com.vocabverse.review.dto.response.ReviewDuePageResponse;
 import com.vocabverse.review.dto.response.ReviewHistoryPageResponse;
+import com.vocabverse.review.dto.response.ReviewStatisticsResponse;
 import com.vocabverse.review.dto.response.ReviewSubmitResponse;
 import com.vocabverse.review.service.ReviewService;
+import com.vocabverse.review.service.ReviewStatisticsService;
 import jakarta.validation.Valid;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
@@ -24,6 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ReviewController {
 
     private final ReviewService reviewService;
+    private final ReviewStatisticsService reviewStatisticsService;
 
     @PostMapping("/{vocabularyId}")
     public ApiResponse<ReviewSubmitResponse> submitReview(
@@ -45,5 +48,10 @@ public class ReviewController {
             @PageableDefault(page = 0, size = 10) Pageable pageable
     ) {
         return ApiResponse.success(reviewService.getReviewHistory(pageable));
+    }
+
+    @GetMapping("/stats")
+    public ApiResponse<ReviewStatisticsResponse> getReviewStats() {
+        return ApiResponse.success(reviewStatisticsService.getCurrentUserStats());
     }
 }

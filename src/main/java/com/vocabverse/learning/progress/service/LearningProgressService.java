@@ -4,6 +4,7 @@ import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.exception.BusinessException;
 import com.vocabverse.learning.progress.dto.LearningProgressPageResponse;
 import com.vocabverse.learning.progress.dto.LearningProgressResponse;
+import com.vocabverse.learning.progress.dto.LearningProgressSummaryResponse;
 import com.vocabverse.learning.progress.entity.LearningProgressEntity;
 import com.vocabverse.learning.progress.entity.LearningStatus;
 import com.vocabverse.learning.progress.mapper.LearningProgressMapper;
@@ -34,6 +35,17 @@ public class LearningProgressService {
     private final VocabularyRepository vocabularyRepository;
     private final UserRepository userRepository;
     private final LearningProgressMapper learningProgressMapper;
+
+    @Transactional(readOnly = true)
+    public LearningProgressSummaryResponse getCurrentUserProgressSummary() {
+        UUID userId = getCurrentUser().getId();
+        return new LearningProgressSummaryResponse(
+                learningProgressRepository.countByUserIdAndStatus(userId, LearningStatus.NEW),
+                learningProgressRepository.countByUserIdAndStatus(userId, LearningStatus.LEARNING),
+                learningProgressRepository.countByUserIdAndStatus(userId, LearningStatus.REVIEWING),
+                learningProgressRepository.countByUserIdAndStatus(userId, LearningStatus.MASTERED)
+        );
+    }
 
     @Transactional(readOnly = true)
     public LearningProgressPageResponse getCurrentUserProgress(Pageable pageable) {

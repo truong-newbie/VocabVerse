@@ -50,7 +50,7 @@ public class PdfExportService {
                 .orElseThrow(() -> new BusinessException(ErrorCode.COLLECTION_NOT_FOUND));
 
         List<ExportVocabularyRow> rows = collectionVocabularyRepository
-                .findAllByCollectionIdAndVocabularyDeletedAtIsNull(collection.getId())
+                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())
                 .stream()
                 .map(CollectionVocabularyEntity::getVocabulary)
                 .map(this::toExportRow)

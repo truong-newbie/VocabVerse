@@ -21,9 +21,13 @@ public interface NotificationRepository extends JpaRepository<NotificationEntity
 
     Page<NotificationEntity> findAllByUserIdOrderByCreatedAtDesc(UUID userId, Pageable pageable);
 
+    Page<NotificationEntity> findAllByOrderByCreatedAtDesc(Pageable pageable);
+
     Page<NotificationEntity> findAllByUserIdAndStatusInOrderByCreatedAtDesc(
             UUID userId,
             Collection<NotificationStatus> statuses,
             Pageable pageable
     );
+
+    long countByStatusAndCreatedAtBetween(NotificationStatus status, LocalDateTime start, LocalDateTime end);
 }

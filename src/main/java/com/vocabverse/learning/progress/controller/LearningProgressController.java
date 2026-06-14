@@ -3,6 +3,7 @@ package com.vocabverse.learning.progress.controller;
 import com.vocabverse.common.response.ApiResponse;
 import com.vocabverse.learning.progress.dto.LearningProgressPageResponse;
 import com.vocabverse.learning.progress.dto.LearningProgressResponse;
+import com.vocabverse.learning.progress.dto.LearningProgressSummaryResponse;
 import com.vocabverse.learning.progress.service.LearningProgressService;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,11 @@ public class LearningProgressController {
     private final LearningProgressService learningProgressService;
 
     @GetMapping
+    public ApiResponse<LearningProgressSummaryResponse> getCurrentUserProgressSummary() {
+        return ApiResponse.success(learningProgressService.getCurrentUserProgressSummary());
+    }
+
+    @GetMapping("/items")
     public ApiResponse<LearningProgressPageResponse> getCurrentUserProgress(
             @PageableDefault(page = 0, size = 10) Pageable pageable
     ) {

@@ -97,7 +97,11 @@ public class VocabularyService {
         CollectionEntity collection = getOwnedCollection(collectionId, currentUser.getId());
         VocabularyEntity vocabulary = getOwnedVocabulary(vocabularyId, currentUser.getId());
 
-        if (collectionVocabularyRepository.existsByCollectionIdAndVocabularyId(collectionId, vocabularyId)) {
+        if (collectionVocabularyRepository
+                .existsByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+                        collectionId,
+                        vocabularyId
+                )) {
             throw new BusinessException(ErrorCode.DUPLICATE_WORD);
         }
 
@@ -117,10 +121,12 @@ public class VocabularyService {
     public void removeVocabularyFromCollection(UUID collectionId, UUID vocabularyId) {
         UserEntity currentUser = getCurrentUser();
         CollectionEntity collection = getOwnedCollection(collectionId, currentUser.getId());
-        getOwnedVocabulary(vocabularyId, currentUser.getId());
 
         CollectionVocabularyEntity relation = collectionVocabularyRepository
-                .findByCollectionIdAndVocabularyId(collectionId, vocabularyId)
+                .findByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(
+                        collectionId,
+                        vocabularyId
+                )
                 .orElseThrow(() -> new BusinessException(ErrorCode.VOCABULARY_NOT_FOUND));
 
         collectionVocabularyRepository.delete(relation);
@@ -133,7 +139,7 @@ public class VocabularyService {
         getOwnedCollection(collectionId, ownerId);
 
         Page<VocabularyResponse> vocabularies = collectionVocabularyRepository
-                .findAllByCollectionIdAndVocabularyDeletedAtIsNull(collectionId, pageable)
+                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collectionId, pageable)
                 .map(CollectionVocabularyEntity::getVocabulary)
                 .map(vocabularyMapper::toResponse);
 

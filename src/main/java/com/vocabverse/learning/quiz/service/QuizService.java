@@ -235,7 +235,7 @@ public class QuizService {
         return switch (request.source()) {
             case ALL -> vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull(userId);
             case COLLECTION -> collectionVocabularyRepository
-                    .findAllByCollectionIdAndVocabularyDeletedAtIsNull(collection.getId())
+                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())
                     .stream()
                     .map(CollectionVocabularyEntity::getVocabulary)
                     .toList();

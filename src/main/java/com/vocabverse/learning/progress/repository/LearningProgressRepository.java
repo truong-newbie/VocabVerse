@@ -19,6 +19,8 @@ public interface LearningProgressRepository extends JpaRepository<LearningProgre
 
     Optional<LearningProgressEntity> findByUserIdAndVocabularyId(UUID userId, UUID vocabularyId);
 
+    List<LearningProgressEntity> findAllByUserIdAndVocabularyIdIn(UUID userId, List<UUID> vocabularyIds);
+
     @Query("""
             select count(lp)
             from LearningProgressEntity lp
@@ -73,4 +75,26 @@ public interface LearningProgressRepository extends JpaRepository<LearningProgre
               and lp.vocabulary.deletedAt is null
             """)
     long countDueReviewsByUserId(@Param("userId") UUID userId, @Param("now") LocalDateTime now);
+
+    @Query("""
+            select count(lp)
+            from LearningProgressEntity lp
+            where lp.user.id = :userId
+              and lp.nextReviewAt is not null
+              and lp.nextReviewAt <= :endOfDay
+              and lp.vocabulary.deletedAt is null
+            """)
+    long countDueReviewsByUserIdUntil(
+            @Param("userId") UUID userId,
+            @Param("endOfDay") LocalDateTime endOfDay
+    );
+
+    @Query("""
+            select count(lp)
+            from LearningProgressEntity lp
+            where lp.nextReviewAt is not null
+              and lp.nextReviewAt <= :endOfDay
+              and lp.vocabulary.deletedAt is null
+            """)
+    long countDueReviewsUntil(@Param("endOfDay") LocalDateTime endOfDay);
 }
