@@ -37,6 +37,7 @@ spring:
       max-request-size: ${MAX_UPLOAD_REQUEST_SIZE:220MB}
 
 server:
+  port: ${PORT:8080}
   servlet:
     context-path: /api/v1
 
