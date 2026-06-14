@@ -19,6 +19,7 @@ import com.vocabverse.vocabulary.entity.VocabularyEntity;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
@@ -39,6 +40,8 @@ import org.springframework.transaction.annotation.Transactional;
 public class CollectionReviewSettingService {
 
     private static final BigDecimal DEFAULT_EASE_FACTOR = BigDecimal.valueOf(2.50);
+    private static final BigDecimal DEFAULT_FSRS_DESIRED_RETENTION = BigDecimal.valueOf(0.900);
+    private static final int DEFAULT_FSRS_MAX_INTERVAL_DAYS = 3650;
     private static final String DEFAULT_TIMEZONE = "Asia/Ho_Chi_Minh";
     private static final LocalTime DEFAULT_REMINDER_TIME = LocalTime.of(8, 0);
 
@@ -72,7 +75,7 @@ public class CollectionReviewSettingService {
             setting.setEmailEnabled(request.emailEnabled());
         }
         if (request.schedulerType() != null) {
-            setting.setSchedulerType(validateSchedulerType(request.schedulerType()));
+            setting.setSchedulerType(request.schedulerType());
         }
         if (request.intervals() != null) {
             setting.setIntervalsJson(validateIntervals(request.intervals()));
@@ -82,6 +85,12 @@ public class CollectionReviewSettingService {
         }
         if (request.timezone() != null) {
             setting.setTimezone(validateTimezone(request.timezone()));
+        }
+        if (request.fsrsDesiredRetention() != null) {
+            setting.setFsrsDesiredRetention(validateDesiredRetention(request.fsrsDesiredRetention()));
+        }
+        if (request.fsrsMaxIntervalDays() != null) {
+            setting.setFsrsMaxIntervalDays(validateMaxIntervalDays(request.fsrsMaxIntervalDays()));
         }
 
         return toResponse(collectionReviewSettingRepository.save(setting));
@@ -157,6 +166,9 @@ public class CollectionReviewSettingService {
             progress.setLastIntervalDays(0);
             progress.setLapseCount(0);
             progress.setReviewCount(0);
+            progress.setFsrsDifficulty(null);
+            progress.setFsrsStability(null);
+            progress.setFsrsRetrievability(null);
             progress.setLastReviewedAt(null);
             progress.setNextReviewAt(nextReviewAt);
             progressRows.add(progress);
@@ -175,6 +187,8 @@ public class CollectionReviewSettingService {
                         .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS)
                         .reminderTime(DEFAULT_REMINDER_TIME)
                         .timezone(DEFAULT_TIMEZONE)
+                        .fsrsDesiredRetention(DEFAULT_FSRS_DESIRED_RETENTION)
+                        .fsrsMaxIntervalDays(DEFAULT_FSRS_MAX_INTERVAL_DAYS)
                         .build()));
     }
 
@@ -195,13 +209,6 @@ public class CollectionReviewSettingService {
         return List.copyOf(intervals);
     }
 
-    private ReviewSchedulerType validateSchedulerType(ReviewSchedulerType schedulerType) {
-        if (schedulerType == ReviewSchedulerType.FSRS) {
-            throw new BusinessException(ErrorCode.SCHEDULER_NOT_SUPPORTED);
-        }
-        return schedulerType;
-    }
-
     private String validateTimezone(String timezone) {
         if (timezone == null || timezone.isBlank()) {
             return DEFAULT_TIMEZONE;
@@ -214,6 +221,21 @@ public class CollectionReviewSettingService {
         }
     }
 
+    private BigDecimal validateDesiredRetention(BigDecimal desiredRetention) {
+        if (desiredRetention.compareTo(BigDecimal.valueOf(0.70)) < 0
+                || desiredRetention.compareTo(BigDecimal.valueOf(0.98)) > 0) {
+            throw new BusinessException(ErrorCode.INVALID_INPUT);
+        }
+        return desiredRetention.setScale(3, RoundingMode.HALF_UP);
+    }
+
+    private int validateMaxIntervalDays(Integer maxIntervalDays) {
+        if (maxIntervalDays < 1 || maxIntervalDays > DEFAULT_FSRS_MAX_INTERVAL_DAYS) {
+            throw new BusinessException(ErrorCode.INVALID_INPUT);
+        }
+        return maxIntervalDays;
+    }
+
     private int firstInterval(CollectionReviewSettingEntity setting) {
         List<Integer> intervals = validateIntervals(setting.getIntervalsJson());
         return intervals.get(0);
@@ -221,10 +243,7 @@ public class CollectionReviewSettingService {
 
     private int resetInitialIntervalDays(CollectionReviewSettingEntity setting) {
         ReviewSchedulerType schedulerType = resolveSchedulerType(setting);
-        if (schedulerType == ReviewSchedulerType.FSRS) {
-            throw new BusinessException(ErrorCode.SCHEDULER_NOT_SUPPORTED);
-        }
-        if (schedulerType == ReviewSchedulerType.SM2) {
+        if (schedulerType == ReviewSchedulerType.SM2 || schedulerType == ReviewSchedulerType.FSRS) {
             return 1;
         }
         return firstInterval(setting);
@@ -244,6 +263,8 @@ public class CollectionReviewSettingService {
                 setting.getIntervalsJson(),
                 setting.getReminderTime(),
                 setting.getTimezone(),
+                setting.getFsrsDesiredRetention(),
+                setting.getFsrsMaxIntervalDays(),
                 setting.getLastResetAt(),
                 setting.getCreatedAt(),
                 setting.getUpdatedAt()

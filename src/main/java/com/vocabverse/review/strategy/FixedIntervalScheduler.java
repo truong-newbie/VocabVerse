@@ -37,6 +37,9 @@ public class FixedIntervalScheduler implements ReviewScheduler {
                 intervalDays,
                 progress.getLapseCount() + (result == ReviewResult.AGAIN ? 1 : 0),
                 progress.getReviewCount() + 1,
+                progress.getFsrsDifficulty(),
+                progress.getFsrsStability(),
+                progress.getFsrsRetrievability(),
                 reviewedAt.plusDays(intervalDays)
         );
     }

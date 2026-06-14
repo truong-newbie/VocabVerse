@@ -14,6 +14,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
@@ -75,6 +76,12 @@ public class CollectionReviewSettingEntity {
 
     @Column(name = "timezone", length = 100)
     private String timezone;
+
+    @Column(name = "fsrs_desired_retention", nullable = false, precision = 4, scale = 3)
+    private BigDecimal fsrsDesiredRetention;
+
+    @Column(name = "fsrs_max_interval_days", nullable = false)
+    private int fsrsMaxIntervalDays;
 
     @Column(name = "last_reset_at")
     private LocalDateTime lastResetAt;

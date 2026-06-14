@@ -7,6 +7,7 @@ import com.vocabverse.common.response.ApiResponse;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -16,7 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/collections/{collectionId}/review-settings")
+@RequestMapping({
+        "/collections/{collectionId}/review-settings",
+        "/collections/{collectionId}/review-setting"
+})
 public class CollectionReviewSettingController {
 
     private final CollectionReviewSettingService collectionReviewSettingService;
@@ -28,6 +32,14 @@ public class CollectionReviewSettingController {
 
     @PutMapping
     public ApiResponse<CollectionReviewSettingResponse> updateSettings(
+            @PathVariable UUID collectionId,
+            @RequestBody UpdateCollectionReviewSettingRequest request
+    ) {
+        return ApiResponse.success(collectionReviewSettingService.updateSettings(collectionId, request));
+    }
+
+    @PatchMapping
+    public ApiResponse<CollectionReviewSettingResponse> patchSettings(
             @PathVariable UUID collectionId,
             @RequestBody UpdateCollectionReviewSettingRequest request
     ) {

@@ -1,6 +1,7 @@
 package com.vocabverse.collection.dto.response;
 
 import com.vocabverse.review.strategy.ReviewSchedulerType;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
@@ -15,6 +16,8 @@ public record CollectionReviewSettingResponse(
         List<Integer> intervals,
         LocalTime reminderTime,
         String timezone,
+        BigDecimal fsrsDesiredRetention,
+        int fsrsMaxIntervalDays,
         LocalDateTime lastResetAt,
         LocalDateTime createdAt,
         LocalDateTime updatedAt

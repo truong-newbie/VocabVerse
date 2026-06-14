@@ -14,10 +14,16 @@ class ReviewSchedulerResolverTest {
     void resolvesRegisteredSchedulers() {
         FixedIntervalScheduler fixedIntervalScheduler = new FixedIntervalScheduler();
         Sm2Scheduler sm2Scheduler = new Sm2Scheduler();
-        ReviewSchedulerResolver resolver = new ReviewSchedulerResolver(List.of(fixedIntervalScheduler, sm2Scheduler));
+        FsrsScheduler fsrsScheduler = new FsrsScheduler();
+        ReviewSchedulerResolver resolver = new ReviewSchedulerResolver(List.of(
+                fixedIntervalScheduler,
+                sm2Scheduler,
+                fsrsScheduler
+        ));
 
         assertThat(resolver.resolve(ReviewSchedulerType.FIXED_INTERVAL)).isSameAs(fixedIntervalScheduler);
         assertThat(resolver.resolve(ReviewSchedulerType.SM2)).isSameAs(sm2Scheduler);
+        assertThat(resolver.resolve(ReviewSchedulerType.FSRS)).isSameAs(fsrsScheduler);
     }
 
     @Test

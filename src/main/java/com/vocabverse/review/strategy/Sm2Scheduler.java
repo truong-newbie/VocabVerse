@@ -51,6 +51,9 @@ public class Sm2Scheduler implements ReviewScheduler {
                 intervalDays,
                 lapseCount,
                 reviewCount,
+                progress.getFsrsDifficulty(),
+                progress.getFsrsStability(),
+                progress.getFsrsRetrievability(),
                 reviewedAt.plusDays(intervalDays)
         );
     }
