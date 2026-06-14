@@ -1,8 +1,11 @@
 package com.vocabverse.collection.entity;
 
 import com.vocabverse.user.entity.UserEntity;
+import com.vocabverse.review.strategy.ReviewSchedulerType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -58,6 +61,10 @@ public class CollectionReviewSettingEntity {
 
     @Column(name = "email_enabled", nullable = false)
     private boolean emailEnabled;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "scheduler_type", nullable = false, length = 30)
+    private ReviewSchedulerType schedulerType;
 
     @JdbcTypeCode(SqlTypes.JSON)
     @Column(name = "intervals_json", nullable = false, columnDefinition = "jsonb")

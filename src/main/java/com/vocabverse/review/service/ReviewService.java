@@ -15,7 +15,10 @@ import com.vocabverse.review.dto.response.ReviewSubmitResponse;
 import com.vocabverse.review.entity.ReviewHistoryEntity;
 import com.vocabverse.review.entity.ReviewResult;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
-import com.vocabverse.review.strategy.ReviewIntervalStrategy;
+import com.vocabverse.review.strategy.ReviewScheduleResult;
+import com.vocabverse.review.strategy.ReviewScheduler;
+import com.vocabverse.review.strategy.ReviewSchedulerResolver;
+import com.vocabverse.review.strategy.ReviewSchedulerType;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.entity.VocabularyEntity;
@@ -24,6 +27,7 @@ import com.vocabverse.vocabulary.repository.VocabularyRepository;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -45,7 +49,7 @@ public class ReviewService {
     private final CollectionVocabularyRepository collectionVocabularyRepository;
     private final CollectionReviewSettingRepository collectionReviewSettingRepository;
     private final UserRepository userRepository;
-    private final ReviewIntervalStrategy reviewIntervalStrategy;
+    private final ReviewSchedulerResolver reviewSchedulerResolver;
 
     @Transactional
     public ReviewSubmitResponse submitReview(UUID vocabularyId, ReviewResult result) {
@@ -54,7 +58,10 @@ public class ReviewService {
         LearningStatus previousStatus = progress.getStatus();
         LocalDateTime reviewedAt = LocalDateTime.now();
 
-        updateProgress(progress, result, reviewedAt);
+        Optional<CollectionReviewSettingEntity> setting = findEnabledReviewSetting(user.getId(), vocabularyId);
+        ReviewScheduler scheduler = reviewSchedulerResolver.resolve(resolveSchedulerType(setting));
+        ReviewScheduleResult schedule = scheduler.schedule(progress, result, reviewedAt, setting.orElse(null));
+        applyScheduleResult(progress, schedule, reviewedAt);
         learningProgressRepository.save(progress);
         createReviewHistory(progress, result, reviewedAt, previousStatus);
 
@@ -108,64 +115,43 @@ public class ReviewService {
                         .status(LearningStatus.NEW)
                         .repetitionCount(0)
                         .easeFactor(DEFAULT_EASE_FACTOR)
+                        .lastIntervalDays(0)
+                        .lapseCount(0)
+                        .reviewCount(0)
                         .build()));
     }
 
-    private void updateProgress(LearningProgressEntity progress, ReviewResult result, LocalDateTime reviewedAt) {
-        if (result == ReviewResult.AGAIN) {
-            progress.setRepetitionCount(0);
-            progress.setStatus(LearningStatus.LEARNING);
-        } else {
-            progress.setRepetitionCount(progress.getRepetitionCount() + 1);
-            progress.setStatus(updateLearningStatus(progress, result));
+    private Optional<CollectionReviewSettingEntity> findEnabledReviewSetting(UUID userId, UUID vocabularyId) {
+        List<UUID> collectionIds = collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId(
+                userId,
+                vocabularyId
+        );
+        if (collectionIds.isEmpty()) {
+            return Optional.empty();
         }
-
-        progress.setLastReviewedAt(reviewedAt);
-        progress.setNextReviewAt(calculateNextReviewDate(progress, result, reviewedAt));
+        return collectionReviewSettingRepository.findFirstByUserIdAndCollectionIdInAndEnabledTrue(userId, collectionIds);
     }
 
-    private LocalDateTime calculateNextReviewDate(
+    private ReviewSchedulerType resolveSchedulerType(Optional<CollectionReviewSettingEntity> setting) {
+        if (setting.isEmpty() || setting.get().getSchedulerType() == null) {
+            return ReviewSchedulerType.FIXED_INTERVAL;
+        }
+        return setting.get().getSchedulerType();
+    }
+
+    private void applyScheduleResult(
             LearningProgressEntity progress,
-            ReviewResult result,
+            ReviewScheduleResult schedule,
             LocalDateTime reviewedAt
     ) {
-        List<UUID> collectionIds = collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId(
-                progress.getUser().getId(),
-                progress.getVocabulary().getId()
-        );
-        if (!collectionIds.isEmpty()) {
-            return collectionReviewSettingRepository
-                    .findFirstByUserIdAndCollectionIdInAndEnabledTrue(progress.getUser().getId(), collectionIds)
-                    .map(setting -> reviewedAt.plusDays(resolveCollectionIntervalDays(setting, progress, result)))
-                    .orElseGet(() -> reviewIntervalStrategy.calculateNextReviewDate(progress, result, reviewedAt));
-        }
-        return reviewIntervalStrategy.calculateNextReviewDate(progress, result, reviewedAt);
-    }
-
-    private int resolveCollectionIntervalDays(
-            CollectionReviewSettingEntity setting,
-            LearningProgressEntity progress,
-            ReviewResult result
-    ) {
-        List<Integer> intervals = setting.getIntervalsJson();
-        if (intervals == null || intervals.isEmpty()) {
-            return 1;
-        }
-        if (result == ReviewResult.AGAIN) {
-            return intervals.get(0);
-        }
-        int index = Math.max(0, progress.getRepetitionCount() - 1);
-        return intervals.get(Math.min(index, intervals.size() - 1));
-    }
-
-    private LearningStatus updateLearningStatus(LearningProgressEntity progress, ReviewResult result) {
-        if (result == ReviewResult.EASY && progress.getRepetitionCount() >= 5) {
-            return LearningStatus.MASTERED;
-        }
-        if (progress.getRepetitionCount() >= 2) {
-            return LearningStatus.REVIEWING;
-        }
-        return LearningStatus.LEARNING;
+        progress.setStatus(schedule.status());
+        progress.setRepetitionCount(schedule.repetitionCount());
+        progress.setEaseFactor(schedule.easeFactor());
+        progress.setLastIntervalDays(schedule.lastIntervalDays());
+        progress.setLapseCount(schedule.lapseCount());
+        progress.setReviewCount(schedule.reviewCount());
+        progress.setLastReviewedAt(reviewedAt);
+        progress.setNextReviewAt(schedule.nextReviewAt());
     }
 
     private void createReviewHistory(

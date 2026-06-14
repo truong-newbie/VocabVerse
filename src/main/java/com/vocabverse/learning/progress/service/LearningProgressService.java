@@ -94,6 +94,9 @@ public class LearningProgressService {
                 .status(LearningStatus.NEW)
                 .repetitionCount(0)
                 .easeFactor(DEFAULT_EASE_FACTOR)
+                .lastIntervalDays(0)
+                .lapseCount(0)
+                .reviewCount(0)
                 .build();
 
         return learningProgressRepository.save(progress);
