@@ -1,8 +1,11 @@
 package com.vocabverse.vocabulary.controller;
 
 import com.vocabverse.common.response.ApiResponse;
+import com.vocabverse.vocabulary.dto.request.BulkCreateVocabularyRequest;
+import com.vocabverse.vocabulary.dto.response.BulkCreateVocabularyResponse;
 import com.vocabverse.vocabulary.dto.response.VocabularyPageResponse;
 import com.vocabverse.vocabulary.dto.response.VocabularyResponse;
+import com.vocabverse.vocabulary.service.BulkVocabularyService;
 import com.vocabverse.vocabulary.service.VocabularyService;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
@@ -12,6 +15,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +25,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class CollectionVocabularyController {
 
     private final VocabularyService vocabularyService;
+    private final BulkVocabularyService bulkVocabularyService;
+
+    @PostMapping("/bulk")
+    public ApiResponse<BulkCreateVocabularyResponse> bulkCreateVocabularies(
+            @PathVariable UUID collectionId,
+            @RequestBody BulkCreateVocabularyRequest request
+    ) {
+        return ApiResponse.success(bulkVocabularyService.bulkCreate(collectionId, request));
+    }
 
     @PostMapping("/{vocabularyId}")
     public ApiResponse<VocabularyResponse> addVocabularyToCollection(

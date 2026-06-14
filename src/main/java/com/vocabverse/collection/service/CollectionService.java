@@ -12,6 +12,7 @@ import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.exception.BusinessException;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
+import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import java.time.LocalDateTime;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
@@ -27,6 +28,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class CollectionService {
 
     private final CollectionRepository collectionRepository;
+    private final CollectionVocabularyRepository collectionVocabularyRepository;
     private final UserRepository userRepository;
     private final CollectionMapper collectionMapper;
 
@@ -55,7 +57,10 @@ public class CollectionService {
 
     @Transactional(readOnly = true)
     public CollectionResponse getCollectionDetail(UUID collectionId) {
-        return collectionMapper.toResponse(getOwnedCollection(collectionId));
+        CollectionEntity collection = getOwnedCollection(collectionId);
+        int vocabularyCount = (int) collectionVocabularyRepository
+                .countByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collectionId);
+        return collectionMapper.toResponse(collection, vocabularyCount);
     }
 
     @Transactional

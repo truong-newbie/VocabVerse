@@ -1,0 +1,1658 @@
+{
+  "info": {
+    "name": "VocabVerse API",
+    "description": "Postman collection generated from VocabVerse Spring Boot controllers. Base URL includes context path /api/v1. Most endpoints require Bearer token; call Auth/Login first to populate {{accessToken}} and {{refreshToken}}.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{accessToken}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8080/api/v1",
+      "type": "string"
+    },
+    {
+      "key": "accessToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "refreshToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "collectionId",
+      "value": "00000000-0000-0000-0000-000000000000",
+      "type": "string"
+    },
+    {
+      "key": "vocabularyId",
+      "value": "00000000-0000-0000-0000-000000000000",
+      "type": "string"
+    },
+    {
+      "key": "sessionId",
+      "value": "00000000-0000-0000-0000-000000000000",
+      "type": "string"
+    },
+    {
+      "key": "questionId",
+      "value": "00000000-0000-0000-0000-000000000000",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "register"
+              ]
+            },
+            "description": "Create a new user account. Public endpoint.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"<password>\",\n  \"fullName\": \"Test User\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            },
+            "description": "Login and save accessToken/refreshToken into collection variables.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"codex-check@example.com\",\n  \"password\": \"<password>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json && json.data) {",
+                  "  if (json.data.accessToken) pm.collectionVariables.set('accessToken', json.data.accessToken);",
+                  "  if (json.data.refreshToken) pm.collectionVariables.set('refreshToken', json.data.refreshToken);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/refresh",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "refresh"
+              ]
+            },
+            "description": "Refresh JWT access token and save new tokens.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const json = pm.response.json();",
+                  "if (json && json.data) {",
+                  "  if (json.data.accessToken) pm.collectionVariables.set('accessToken', json.data.accessToken);",
+                  "  if (json.data.refreshToken) pm.collectionVariables.set('refreshToken', json.data.refreshToken);",
+                  "}"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/auth/logout",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "auth",
+                "logout"
+              ]
+            },
+            "description": "Invalidate refresh token.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"refreshToken\": \"{{refreshToken}}\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "auth": {
+              "type": "noauth"
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/users/me",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "users",
+                "me"
+              ]
+            },
+            "description": "Return current authenticated user."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Collections",
+      "item": [
+        {
+          "name": "Create Collection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/collections",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections"
+              ]
+            },
+            "description": "visibility enum: PRIVATE, PUBLIC, SYSTEM.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"My English Collection\",\n  \"description\": \"Words for daily practice\",\n  \"visibility\": \"PRIVATE\",\n  \"thumbnailUrl\": \"https://example.com/thumbnail.png\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Collections",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/collections",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "List current user collections. Query: page, size, sort."
+          },
+          "response": []
+        },
+        {
+          "name": "List My Collections",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/collections/my",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "my"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "20"
+                }
+              ]
+            },
+            "description": "Alias for current user collections."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Collection Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/collections/{{collectionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "{{collectionId}}"
+              ]
+            },
+            "description": "Get one collection by ID."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Collection",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/collections/{{collectionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "{{collectionId}}"
+              ]
+            },
+            "description": "Update collection by ID.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"title\": \"Updated Collection\",\n  \"description\": \"Updated description\",\n  \"visibility\": \"PUBLIC\",\n  \"thumbnailUrl\": \"https://example.com/updated.png\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Collection",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/collections/{{collectionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "{{collectionId}}"
+              ]
+            },
+            "description": "Delete collection by ID."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Vocabularies",
+      "item": [
+        {
+          "name": "Create Vocabulary",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/vocabularies",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "vocabularies"
+              ]
+            },
+            "description": "Create vocabulary. collectionIds may be empty or omitted.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"word\": \"serendipity\",\n  \"phonetic\": \"/serendipity/\",\n  \"audioUrl\": \"https://example.com/audio.mp3\",\n  \"partOfSpeech\": \"noun\",\n  \"meaningVi\": \"su tinh co may man\",\n  \"meaningEn\": \"the occurrence of pleasant discoveries by chance\",\n  \"synonyms\": [\"chance\", \"fortune\"],\n  \"antonyms\": [],\n  \"examples\": [{\"sentence\": \"Finding that book was pure serendipity.\", \"translation\": \"Tim thay cuon sach do la mot su tinh co may man.\"}],\n  \"collectionIds\": [\"{{collectionId}}\"]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List My Vocabularies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/vocabularies",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "vocabularies"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List current user vocabularies."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Vocabulary Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/vocabularies/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "vocabularies",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "Get one vocabulary by ID."
+          },
+          "response": []
+        },
+        {
+          "name": "Update Vocabulary",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/vocabularies/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "vocabularies",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "Update vocabulary by ID.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"word\": \"serendipity\",\n  \"phonetic\": \"/serendipity/\",\n  \"audioUrl\": \"https://example.com/audio.mp3\",\n  \"partOfSpeech\": \"noun\",\n  \"meaningVi\": \"su tinh co may man\",\n  \"meaningEn\": \"pleasant discovery by chance\",\n  \"synonyms\": [\"fortune\"],\n  \"antonyms\": [],\n  \"examples\": []\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Vocabulary",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/vocabularies/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "vocabularies",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "Delete vocabulary by ID."
+          },
+          "response": []
+        },
+        {
+          "name": "Add Vocabulary To Collection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/collections/{{collectionId}}/vocabularies/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "{{collectionId}}",
+                "vocabularies",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "Attach existing vocabulary to collection."
+          },
+          "response": []
+        },
+        {
+          "name": "Remove Vocabulary From Collection",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/collections/{{collectionId}}/vocabularies/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "{{collectionId}}",
+                "vocabularies",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "Detach vocabulary from collection."
+          },
+          "response": []
+        },
+        {
+          "name": "List Collection Vocabularies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/collections/{{collectionId}}/vocabularies",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "collections",
+                "{{collectionId}}",
+                "vocabularies"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List vocabularies in a collection."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Public Collections",
+      "item": [
+        {
+          "name": "List Public Collections",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/public/collections",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "public",
+                "collections"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List public collections."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Public Collection Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/public/collections/{{collectionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "public",
+                "collections",
+                "{{collectionId}}"
+              ]
+            },
+            "description": "Get public collection by ID."
+          },
+          "response": []
+        },
+        {
+          "name": "List Public Collection Vocabularies",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/public/collections/{{collectionId}}/vocabularies",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "public",
+                "collections",
+                "{{collectionId}}",
+                "vocabularies"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List vocabularies of public collection."
+          },
+          "response": []
+        },
+        {
+          "name": "Clone Public Collection",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/public/collections/{{collectionId}}/clone",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "public",
+                "collections",
+                "{{collectionId}}",
+                "clone"
+              ]
+            },
+            "description": "Clone public collection into current user account."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Learning - Progress",
+      "item": [
+        {
+          "name": "List Learning Progress",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/learning/progress",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "learning",
+                "progress"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List progress records."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Progress Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/learning/progress/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "learning",
+                "progress",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "Get progress by vocabulary ID."
+          },
+          "response": []
+        },
+        {
+          "name": "Initialize Progress",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/learning/progress/{{vocabularyId}}/initialize",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "learning",
+                "progress",
+                "{{vocabularyId}}",
+                "initialize"
+              ]
+            },
+            "description": "Create initial progress for a vocabulary."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Learning - Flashcards",
+      "item": [
+        {
+          "name": "Create Flashcard Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/flashcards/sessions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "flashcards",
+                "sessions"
+              ]
+            },
+            "description": "source enum: ALL, COLLECTION, REVIEW_DUE. Use collectionId when source=COLLECTION.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"source\": \"ALL\",\n  \"collectionId\": null\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Flashcard Session",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/flashcards/sessions/{{sessionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "flashcards",
+                "sessions",
+                "{{sessionId}}"
+              ]
+            },
+            "description": "Get flashcard session detail."
+          },
+          "response": []
+        },
+        {
+          "name": "List Flashcard Cards",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/flashcards/sessions/{{sessionId}}/cards",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "flashcards",
+                "sessions",
+                "{{sessionId}}",
+                "cards"
+              ]
+            },
+            "description": "Get session cards."
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Flashcard Answer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/flashcards/sessions/{{sessionId}}/cards/{{vocabularyId}}/answer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "flashcards",
+                "sessions",
+                "{{sessionId}}",
+                "cards",
+                "{{vocabularyId}}",
+                "answer"
+              ]
+            },
+            "description": "result enum: AGAIN, HARD, GOOD, EASY.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"result\": \"GOOD\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Learning - Quizzes",
+      "item": [
+        {
+          "name": "Create Quiz Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/quizzes/sessions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "quizzes",
+                "sessions"
+              ]
+            },
+            "description": "source enum: ALL, COLLECTION, REVIEW_DUE. Use collectionId when source=COLLECTION.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"source\": \"ALL\",\n  \"collectionId\": null\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Quiz Session",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/quizzes/sessions/{{sessionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "quizzes",
+                "sessions",
+                "{{sessionId}}"
+              ]
+            },
+            "description": "Get quiz session detail."
+          },
+          "response": []
+        },
+        {
+          "name": "List Quiz Questions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/quizzes/sessions/{{sessionId}}/questions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "quizzes",
+                "sessions",
+                "{{sessionId}}",
+                "questions"
+              ]
+            },
+            "description": "Get quiz questions."
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Quiz Answer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/quizzes/sessions/{{sessionId}}/questions/{{questionId}}/answer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "quizzes",
+                "sessions",
+                "{{sessionId}}",
+                "questions",
+                "{{questionId}}",
+                "answer"
+              ]
+            },
+            "description": "Submit answer text.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"answer\": \"serendipity\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Learning - Typing",
+      "item": [
+        {
+          "name": "Create Typing Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/typing/sessions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "typing",
+                "sessions"
+              ]
+            },
+            "description": "source enum: ALL, COLLECTION, REVIEW_DUE. Use collectionId when source=COLLECTION.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"source\": \"ALL\",\n  \"collectionId\": null\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Typing Session",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/typing/sessions/{{sessionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "typing",
+                "sessions",
+                "{{sessionId}}"
+              ]
+            },
+            "description": "Get typing session detail."
+          },
+          "response": []
+        },
+        {
+          "name": "List Typing Questions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/typing/sessions/{{sessionId}}/questions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "typing",
+                "sessions",
+                "{{sessionId}}",
+                "questions"
+              ]
+            },
+            "description": "Get typing questions."
+          },
+          "response": []
+        },
+        {
+          "name": "Submit Typing Answer",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/typing/sessions/{{sessionId}}/questions/{{questionId}}/answer",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "typing",
+                "sessions",
+                "{{sessionId}}",
+                "questions",
+                "{{questionId}}",
+                "answer"
+              ]
+            },
+            "description": "Submit typed answer.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"answer\": \"serendipity\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Reviews",
+      "item": [
+        {
+          "name": "Submit Review",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/reviews/{{vocabularyId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "reviews",
+                "{{vocabularyId}}"
+              ]
+            },
+            "description": "result enum: AGAIN, HARD, GOOD, EASY.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"result\": \"GOOD\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Today Reviews",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/reviews/today",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "reviews",
+                "today"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List vocabularies due today."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Review History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/reviews/history",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "reviews",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List review history."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Dashboard",
+      "item": [
+        {
+          "name": "Get Summary",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard/summary",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard",
+                "summary"
+              ]
+            },
+            "description": "Dashboard summary stats."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Learning Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard/learning-status",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard",
+                "learning-status"
+              ]
+            },
+            "description": "Learning status statistics."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Review Due",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard/review-due",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard",
+                "review-due"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Due review page."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Recent Activity",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/dashboard/recent-activity",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "dashboard",
+                "recent-activity"
+              ]
+            },
+            "description": "Recent notifications/activity."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Notifications",
+      "item": [
+        {
+          "name": "List Notifications",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/notifications",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "notifications"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Current user notifications."
+          },
+          "response": []
+        },
+        {
+          "name": "Notification History",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/notifications/history",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "notifications",
+                "history"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "Sent/failed notification history."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "AI Vocabulary",
+      "item": [
+        {
+          "name": "Normalize Vocabulary",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/ai/vocabulary/normalize",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "ai",
+                "vocabulary",
+                "normalize"
+              ]
+            },
+            "description": "Normalize raw vocabulary text using configured AI provider.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"rawText\": \"serendipity\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Roleplay",
+      "item": [
+        {
+          "name": "Create Roleplay Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/roleplay/sessions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "roleplay",
+                "sessions"
+              ]
+            },
+            "description": "difficulty enum: EASY, MEDIUM, HARD.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"topic\": \"Ordering coffee\",\n  \"difficulty\": \"EASY\",\n  \"persona\": \"barista\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Roleplay Sessions",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/roleplay/sessions",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "roleplay",
+                "sessions"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "0"
+                },
+                {
+                  "key": "size",
+                  "value": "10"
+                }
+              ]
+            },
+            "description": "List current user roleplay sessions."
+          },
+          "response": []
+        },
+        {
+          "name": "Get Roleplay Session",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/roleplay/sessions/{{sessionId}}",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "roleplay",
+                "sessions",
+                "{{sessionId}}"
+              ]
+            },
+            "description": "Get roleplay session detail."
+          },
+          "response": []
+        },
+        {
+          "name": "Send Roleplay Message",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/roleplay/sessions/{{sessionId}}/messages",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "roleplay",
+                "sessions",
+                "{{sessionId}}",
+                "messages"
+              ]
+            },
+            "description": "Send a message in a roleplay session.",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"message\": \"Hello, I would like a cup of coffee.\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "End Roleplay Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/roleplay/sessions/{{sessionId}}/end",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "roleplay",
+                "sessions",
+                "{{sessionId}}",
+                "end"
+              ]
+            },
+            "description": "End session and generate report."
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "item": [
+        {
+          "name": "Export Collection PDF",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export/collections/{{collectionId}}/pdf",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "export",
+                "collections",
+                "{{collectionId}}",
+                "pdf"
+              ]
+            },
+            "description": "Download collection PDF."
+          },
+          "response": []
+        },
+        {
+          "name": "Export All Vocabularies PDF",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/export/vocabularies/pdf",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "export",
+                "vocabularies",
+                "pdf"
+              ]
+            },
+            "description": "Download all current user vocabularies as PDF."
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

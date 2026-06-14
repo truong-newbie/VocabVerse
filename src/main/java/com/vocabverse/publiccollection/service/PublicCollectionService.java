@@ -14,6 +14,7 @@ import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.entity.CollectionVocabularyEntity;
 import com.vocabverse.vocabulary.entity.VocabularyEntity;
+import com.vocabverse.vocabulary.entity.VocabularyExample;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import java.util.List;
 import java.util.UUID;
@@ -35,10 +36,8 @@ public class PublicCollectionService {
 
     @Transactional(readOnly = true)
     public PublicCollectionPageResponse getPublicCollections(Pageable pageable) {
-        UUID currentUserId = getCurrentUser().getId();
-        Page<CollectionEntity> page = collectionRepository.findAllByVisibilityAndOwnerIdNotAndDeletedAtIsNull(
+        Page<CollectionEntity> page = collectionRepository.findAllByVisibilityAndDeletedAtIsNull(
                 CollectionVisibility.PUBLIC,
-                currentUserId,
                 pageable
         );
 
@@ -81,79 +80,101 @@ public class PublicCollectionService {
     public CloneCollectionResponse clonePublicCollection(UUID collectionId) {
         UserEntity user = getCurrentUser();
         CollectionEntity source = getPublicCollection(collectionId);
-        List<CollectionVocabularyEntity> sourceItems = collectionVocabularyRepository
-                .findAllByCollectionIdAndVocabularyDeletedAtIsNull(source.getId());
+        try {
+            List<CollectionVocabularyEntity> sourceItems = collectionVocabularyRepository
+                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(source.getId());
 
-        CollectionEntity clonedCollection = CollectionEntity.builder()
-                .owner(user)
-                .title(source.getTitle())
-                .description(source.getDescription())
-                .visibility(CollectionVisibility.PRIVATE)
-                .thumbnailUrl(source.getThumbnailUrl())
-                .totalWords(sourceItems.size())
-                .featured(false)
-                .build();
+            CollectionEntity clonedCollection = CollectionEntity.builder()
+                    .owner(user)
+                    .title(source.getTitle())
+                    .description(source.getDescription())
+                    .visibility(CollectionVisibility.PRIVATE)
+                    .thumbnailUrl(source.getThumbnailUrl())
+                    .totalWords(sourceItems.size())
+                    .featured(false)
+                    .build();
 
-        CollectionEntity savedCollection = collectionRepository.save(clonedCollection);
-        List<CollectionVocabularyEntity> clonedItems = sourceItems.stream()
-                .map(sourceItem -> CollectionVocabularyEntity.builder()
-                        .collection(savedCollection)
-                        .vocabulary(sourceItem.getVocabulary())
-                        .addedBy(user)
-                        .position(sourceItem.getPosition())
-                        .build())
-                .toList();
-        collectionVocabularyRepository.saveAll(clonedItems);
+            CollectionEntity savedCollection = collectionRepository.save(clonedCollection);
+            List<CollectionVocabularyEntity> clonedItems = sourceItems.stream()
+                    .map(sourceItem -> CollectionVocabularyEntity.builder()
+                            .collection(savedCollection)
+                            .vocabulary(sourceItem.getVocabulary())
+                            .addedBy(user)
+                            .position(sourceItem.getPosition())
+                            .build())
+                    .toList();
+            collectionVocabularyRepository.saveAll(clonedItems);
 
-        return new CloneCollectionResponse(
-                source.getId(),
-                savedCollection.getId(),
-                savedCollection.getTitle(),
-                savedCollection.getVisibility(),
-                savedCollection.getTotalWords()
-        );
+            return new CloneCollectionResponse(
+                    savedCollection.getId(),
+                    savedCollection.getTitle(),
+                    savedCollection.getDescription(),
+                    savedCollection.getVisibility(),
+                    sourceItems.size()
+            );
+        } catch (RuntimeException exception) {
+            if (exception instanceof BusinessException businessException) {
+                throw businessException;
+            }
+            throw new BusinessException(
+                    ErrorCode.PUBLIC_COLLECTION_CLONE_FAILED,
+                    ErrorCode.PUBLIC_COLLECTION_CLONE_FAILED.getMessage(),
+                    exception
+            );
+        }
     }
 
     private CollectionEntity getPublicCollection(UUID collectionId) {
-        return collectionRepository.findByIdAndVisibilityAndDeletedAtIsNull(
-                        collectionId,
-                        CollectionVisibility.PUBLIC
-                )
-                .orElseThrow(() -> new BusinessException(ErrorCode.COLLECTION_NOT_FOUND));
+        CollectionEntity collection = collectionRepository.findByIdAndDeletedAtIsNull(collectionId)
+                .orElseThrow(() -> new BusinessException(ErrorCode.PUBLIC_COLLECTION_NOT_FOUND));
+        if (collection.getVisibility() != CollectionVisibility.PUBLIC) {
+            throw new BusinessException(ErrorCode.COLLECTION_NOT_PUBLIC);
+        }
+        return collection;
     }
 
     private PublicCollectionResponse toCollectionResponse(CollectionEntity collection) {
         UserEntity owner = collection.getOwner();
+        int vocabularyCount = (int) collectionVocabularyRepository
+                .countByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId());
         return new PublicCollectionResponse(
                 collection.getId(),
                 collection.getTitle(),
                 collection.getDescription(),
                 collection.getVisibility(),
-                collection.getThumbnailUrl(),
-                collection.getTotalWords(),
-                collection.isFeatured(),
                 owner == null ? null : owner.getId(),
-                owner == null ? null : owner.getFullName(),
-                owner == null ? null : owner.getAvatarUrl(),
+                safeOwnerName(owner),
+                vocabularyCount,
                 collection.getCreatedAt(),
                 collection.getUpdatedAt()
         );
     }
 
     private PublicVocabularyResponse toVocabularyResponse(VocabularyEntity vocabulary) {
+        VocabularyExample example = firstExample(vocabulary);
         return new PublicVocabularyResponse(
                 vocabulary.getId(),
                 vocabulary.getWord(),
-                vocabulary.getNormalizedWord(),
-                vocabulary.getPhonetic(),
-                vocabulary.getAudioUrl(),
-                vocabulary.getPartOfSpeech(),
-                vocabulary.getMeaningVi(),
                 vocabulary.getMeaningEn(),
-                vocabulary.getSynonyms(),
-                vocabulary.getAntonyms(),
-                vocabulary.getExamples()
+                vocabulary.getMeaningVi(),
+                vocabulary.getPhonetic(),
+                vocabulary.getPartOfSpeech(),
+                example == null ? null : example.getEn()
         );
+    }
+
+    private String safeOwnerName(UserEntity owner) {
+        if (owner == null || owner.getFullName() == null || owner.getFullName().isBlank()) {
+            return null;
+        }
+        return owner.getFullName();
+    }
+
+    private VocabularyExample firstExample(VocabularyEntity vocabulary) {
+        if (vocabulary.getExamples() == null || vocabulary.getExamples().isEmpty()) {
+            return null;
+        }
+        return vocabulary.getExamples().get(0);
     }
 
     private UserEntity getCurrentUser() {

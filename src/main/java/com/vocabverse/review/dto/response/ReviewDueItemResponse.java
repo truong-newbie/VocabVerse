@@ -6,10 +6,14 @@ import java.util.UUID;
 
 public record ReviewDueItemResponse(
         UUID vocabularyId,
-        String word,
-        LearningStatus status,
-        int repetitionCount,
+        String term,
+        String meaning,
+        String vietnameseMeaning,
+        String partOfSpeech,
+        String exampleSentence,
+        LearningStatus currentLearningStatus,
         LocalDateTime nextReviewAt,
-        LocalDateTime lastReviewedAt
+        int repetitionCount,
+        String collectionName
 ) {
 }

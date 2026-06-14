@@ -1,24 +1,29 @@
 package com.vocabverse.review.service;
 
+import com.vocabverse.collection.entity.CollectionReviewSettingEntity;
+import com.vocabverse.collection.repository.CollectionReviewSettingRepository;
 import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.exception.BusinessException;
 import com.vocabverse.learning.progress.entity.LearningProgressEntity;
 import com.vocabverse.learning.progress.entity.LearningStatus;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
 import com.vocabverse.review.dto.response.ReviewDuePageResponse;
+import com.vocabverse.review.dto.response.ReviewDueItemResponse;
+import com.vocabverse.review.dto.response.ReviewHistoryResponse;
 import com.vocabverse.review.dto.response.ReviewHistoryPageResponse;
 import com.vocabverse.review.dto.response.ReviewSubmitResponse;
 import com.vocabverse.review.entity.ReviewHistoryEntity;
 import com.vocabverse.review.entity.ReviewResult;
-import com.vocabverse.review.mapper.ReviewMapper;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
 import com.vocabverse.review.strategy.ReviewIntervalStrategy;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.entity.VocabularyEntity;
+import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -37,9 +42,10 @@ public class ReviewService {
     private final LearningProgressRepository learningProgressRepository;
     private final ReviewHistoryRepository reviewHistoryRepository;
     private final VocabularyRepository vocabularyRepository;
+    private final CollectionVocabularyRepository collectionVocabularyRepository;
+    private final CollectionReviewSettingRepository collectionReviewSettingRepository;
     private final UserRepository userRepository;
     private final ReviewIntervalStrategy reviewIntervalStrategy;
-    private final ReviewMapper reviewMapper;
 
     @Transactional
     public ReviewSubmitResponse submitReview(UUID vocabularyId, ReviewResult result) {
@@ -66,7 +72,7 @@ public class ReviewService {
                 .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now(), pageable);
 
         return new ReviewDuePageResponse(
-                duePage.map(reviewMapper::toDueItemResponse).getContent(),
+                duePage.map(progress -> toDueItemResponse(userId, progress)).getContent(),
                 duePage.getNumber(),
                 duePage.getSize(),
                 duePage.getTotalElements(),
@@ -81,7 +87,7 @@ public class ReviewService {
                 .findAllByUserIdOrderByReviewedAtDesc(userId, pageable);
 
         return new ReviewHistoryPageResponse(
-                historyPage.map(reviewMapper::toHistoryResponse).getContent(),
+                historyPage.map(this::toHistoryResponse).getContent(),
                 historyPage.getNumber(),
                 historyPage.getSize(),
                 historyPage.getTotalElements(),
@@ -123,7 +129,33 @@ public class ReviewService {
             ReviewResult result,
             LocalDateTime reviewedAt
     ) {
+        List<UUID> collectionIds = collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId(
+                progress.getUser().getId(),
+                progress.getVocabulary().getId()
+        );
+        if (!collectionIds.isEmpty()) {
+            return collectionReviewSettingRepository
+                    .findFirstByUserIdAndCollectionIdInAndEnabledTrue(progress.getUser().getId(), collectionIds)
+                    .map(setting -> reviewedAt.plusDays(resolveCollectionIntervalDays(setting, progress, result)))
+                    .orElseGet(() -> reviewIntervalStrategy.calculateNextReviewDate(progress, result, reviewedAt));
+        }
         return reviewIntervalStrategy.calculateNextReviewDate(progress, result, reviewedAt);
+    }
+
+    private int resolveCollectionIntervalDays(
+            CollectionReviewSettingEntity setting,
+            LearningProgressEntity progress,
+            ReviewResult result
+    ) {
+        List<Integer> intervals = setting.getIntervalsJson();
+        if (intervals == null || intervals.isEmpty()) {
+            return 1;
+        }
+        if (result == ReviewResult.AGAIN) {
+            return intervals.get(0);
+        }
+        int index = Math.max(0, progress.getRepetitionCount() - 1);
+        return intervals.get(Math.min(index, intervals.size() - 1));
     }
 
     private LearningStatus updateLearningStatus(LearningProgressEntity progress, ReviewResult result) {
@@ -153,6 +185,47 @@ public class ReviewService {
                 .build();
 
         reviewHistoryRepository.save(history);
+    }
+
+    private ReviewDueItemResponse toDueItemResponse(UUID userId, LearningProgressEntity progress) {
+        VocabularyEntity vocabulary = progress.getVocabulary();
+        return new ReviewDueItemResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                vocabulary.getMeaningEn(),
+                vocabulary.getMeaningVi(),
+                vocabulary.getPartOfSpeech(),
+                firstExampleSentence(vocabulary),
+                progress.getStatus(),
+                progress.getNextReviewAt(),
+                progress.getRepetitionCount(),
+                firstCollectionName(userId, vocabulary.getId())
+        );
+    }
+
+    private ReviewHistoryResponse toHistoryResponse(ReviewHistoryEntity history) {
+        VocabularyEntity vocabulary = history.getVocabulary();
+        return new ReviewHistoryResponse(
+                vocabulary.getId(),
+                vocabulary.getWord(),
+                history.getResult(),
+                history.getReviewedAt(),
+                history.getNextReviewAt(),
+                history.getPreviousStatus(),
+                history.getNewStatus()
+        );
+    }
+
+    private String firstExampleSentence(VocabularyEntity vocabulary) {
+        if (vocabulary.getExamples() == null || vocabulary.getExamples().isEmpty()) {
+            return null;
+        }
+        return vocabulary.getExamples().get(0).getEn();
+    }
+
+    private String firstCollectionName(UUID userId, UUID vocabularyId) {
+        List<String> titles = collectionVocabularyRepository.findOwnedCollectionTitlesByVocabularyId(userId, vocabularyId);
+        return titles.isEmpty() ? null : titles.get(0);
     }
 
     private UserEntity getCurrentUser() {

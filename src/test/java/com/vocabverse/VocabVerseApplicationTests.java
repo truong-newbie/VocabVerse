@@ -1,7 +1,9 @@
 package com.vocabverse;
 
 import com.vocabverse.auth.repository.RefreshTokenRepository;
+import com.vocabverse.admin.repository.PublicCollectionModerationRepository;
 import com.vocabverse.collection.repository.CollectionRepository;
+import com.vocabverse.collection.repository.CollectionReviewSettingRepository;
 import com.vocabverse.learning.flashcard.repository.FlashcardSessionItemRepository;
 import com.vocabverse.learning.flashcard.repository.FlashcardSessionRepository;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
@@ -14,12 +16,17 @@ import com.vocabverse.roleplay.repository.RoleplayMessageRepository;
 import com.vocabverse.roleplay.repository.RoleplayReportRepository;
 import com.vocabverse.roleplay.repository.RoleplaySessionRepository;
 import com.vocabverse.review.repository.ReviewHistoryRepository;
+import com.vocabverse.shadowing.repository.ShadowingLessonRepository;
+import com.vocabverse.shadowing.repository.ShadowingLessonSubtitleRepository;
 import com.vocabverse.user.repository.UserRepository;
 import com.vocabverse.vocabulary.repository.CollectionVocabularyRepository;
 import com.vocabverse.vocabulary.repository.VocabularyRepository;
+import javax.sql.DataSource;
 import org.junit.jupiter.api.Test;
+import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.StringRedisTemplate;
 
 @SpringBootTest(properties = {
         "spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,"
@@ -37,6 +44,9 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private CollectionRepository collectionRepository;
+
+    @MockBean
+    private CollectionReviewSettingRepository collectionReviewSettingRepository;
 
     @MockBean
     private VocabularyRepository vocabularyRepository;
@@ -79,6 +89,24 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private RoleplayReportRepository roleplayReportRepository;
+
+    @MockBean
+    private PublicCollectionModerationRepository publicCollectionModerationRepository;
+
+    @MockBean
+    private ShadowingLessonRepository shadowingLessonRepository;
+
+    @MockBean
+    private ShadowingLessonSubtitleRepository shadowingLessonSubtitleRepository;
+
+    @MockBean
+    private DataSource dataSource;
+
+    @MockBean
+    private StringRedisTemplate stringRedisTemplate;
+
+    @MockBean
+    private ConnectionFactory connectionFactory;
 
     @Test
     void contextLoads() {

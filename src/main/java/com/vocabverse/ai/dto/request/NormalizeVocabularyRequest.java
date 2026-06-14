@@ -6,6 +6,14 @@ import jakarta.validation.constraints.Size;
 public record NormalizeVocabularyRequest(
         @NotBlank
         @Size(max = 500)
-        String rawText
+        String rawText,
+
+        String provider,
+
+        @Size(max = 500)
+        String userApiKey
 ) {
+    public NormalizeVocabularyRequest(String rawText) {
+        this(rawText, null, null);
+    }
 }

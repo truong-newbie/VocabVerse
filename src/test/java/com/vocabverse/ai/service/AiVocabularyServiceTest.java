@@ -21,13 +21,13 @@ class AiVocabularyServiceTest {
         NormalizeVocabularyResponse providerResponse = new NormalizeVocabularyResponse(
                 "abandon",
                 "to leave permanently",
+                "tu bo",
                 "/uh-BAN-duhn/",
                 "verb",
                 "He abandoned the project.",
-                "tu bo",
                 List.of("leave"),
                 List.of("continue"),
-                "MEDIUM",
+                "INTERMEDIATE",
                 "Normalized by provider"
         );
         AiClient aiClient = (rawText, prompt) -> providerResponse;
@@ -61,7 +61,7 @@ class AiVocabularyServiceTest {
         NormalizeVocabularyResponse response = service.normalize(new NormalizeVocabularyRequest("abandon"));
 
         assertThat(response.term()).isEqualTo("abandon");
-        assertThat(response.difficulty()).isEqualTo("MEDIUM");
+        assertThat(response.difficulty()).isEqualTo("INTERMEDIATE");
         assertThat(response.aiExplanation()).contains("Fallback normalization");
     }
 }

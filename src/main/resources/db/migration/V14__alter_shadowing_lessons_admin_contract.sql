@@ -1,0 +1,4 @@
+ALTER TABLE shadowing_lessons
+    ADD COLUMN IF NOT EXISTS description TEXT,
+    ADD COLUMN IF NOT EXISTS duration VARCHAR(20),
+    ADD COLUMN IF NOT EXISTS progress INT NOT NULL DEFAULT 0;

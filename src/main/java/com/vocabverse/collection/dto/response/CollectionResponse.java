@@ -10,6 +10,7 @@ public record CollectionResponse(
         String title,
         String description,
         CollectionVisibility visibility,
+        int vocabularyCount,
         String thumbnailUrl,
         int totalWords,
         boolean featured,

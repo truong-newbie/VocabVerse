@@ -69,10 +69,70 @@ public enum ErrorCode {
             "Collection not found",
             HttpStatus.NOT_FOUND
     ),
+    PUBLIC_COLLECTION_NOT_FOUND(
+            "PUBLIC_COLLECTION_NOT_FOUND",
+            "Public collection not found",
+            HttpStatus.NOT_FOUND
+    ),
+    PUBLIC_COLLECTION_ACCESS_DENIED(
+            "PUBLIC_COLLECTION_ACCESS_DENIED",
+            "Access to public collection is denied",
+            HttpStatus.FORBIDDEN
+    ),
+    COLLECTION_NOT_PUBLIC(
+            "COLLECTION_NOT_PUBLIC",
+            "Collection is not public",
+            HttpStatus.NOT_FOUND
+    ),
+    PUBLIC_COLLECTION_CLONE_FAILED(
+            "PUBLIC_COLLECTION_CLONE_FAILED",
+            "Failed to clone public collection",
+            HttpStatus.INTERNAL_SERVER_ERROR
+    ),
+    COLLECTION_REVIEW_SETTING_NOT_FOUND(
+            "COLLECTION_REVIEW_SETTING_NOT_FOUND",
+            "Collection review setting not found",
+            HttpStatus.NOT_FOUND
+    ),
+    INVALID_REVIEW_INTERVALS(
+            "INVALID_REVIEW_INTERVALS",
+            "Review intervals are invalid",
+            HttpStatus.BAD_REQUEST
+    ),
+    REVIEW_SETTINGS_DISABLED(
+            "REVIEW_SETTINGS_DISABLED",
+            "Review settings are disabled",
+            HttpStatus.CONFLICT
+    ),
+    COLLECTION_REVIEW_RESET_FAILED(
+            "COLLECTION_REVIEW_RESET_FAILED",
+            "Failed to reset collection review schedule",
+            HttpStatus.INTERNAL_SERVER_ERROR
+    ),
     VOCABULARY_NOT_FOUND(
             "VOCABULARY_NOT_FOUND",
             "Vocabulary not found",
             HttpStatus.NOT_FOUND
+    ),
+    DICTIONARY_WORD_NOT_FOUND(
+            "DICTIONARY_WORD_NOT_FOUND",
+            "Dictionary word not found",
+            HttpStatus.NOT_FOUND
+    ),
+    DICTIONARY_PROVIDER_UNAVAILABLE(
+            "DICTIONARY_PROVIDER_UNAVAILABLE",
+            "Dictionary provider is temporarily unavailable",
+            HttpStatus.SERVICE_UNAVAILABLE
+    ),
+    DICTIONARY_TIMEOUT(
+            "DICTIONARY_TIMEOUT",
+            "Dictionary request timed out",
+            HttpStatus.GATEWAY_TIMEOUT
+    ),
+    DICTIONARY_INVALID_RESPONSE(
+            "DICTIONARY_INVALID_RESPONSE",
+            "Dictionary provider response is invalid",
+            HttpStatus.BAD_GATEWAY
     ),
     LEARNING_PROGRESS_NOT_FOUND(
             "LEARNING_PROGRESS_NOT_FOUND",
@@ -159,6 +219,16 @@ public enum ErrorCode {
             "Roleplay session is already completed",
             HttpStatus.CONFLICT
     ),
+    ADMIN_LAST_ADMIN_REMOVAL_NOT_ALLOWED(
+            "ADMIN_LAST_ADMIN_REMOVAL_NOT_ALLOWED",
+            "Cannot remove the last admin",
+            HttpStatus.CONFLICT
+    ),
+    SHADOWING_LESSON_NOT_FOUND(
+            "SHADOWING_LESSON_NOT_FOUND",
+            "Shadowing lesson not found",
+            HttpStatus.NOT_FOUND
+    ),
     DUPLICATE_WORD(
             "DUPLICATE_WORD",
             "Word already exists in the collection",
@@ -178,6 +248,36 @@ public enum ErrorCode {
             "AI_PROVIDER_UNAVAILABLE",
             "AI service is temporarily unavailable",
             HttpStatus.SERVICE_UNAVAILABLE
+    ),
+    AI_PROVIDER_NOT_AVAILABLE(
+            "AI_PROVIDER_NOT_AVAILABLE",
+            "AI provider is not available",
+            HttpStatus.SERVICE_UNAVAILABLE
+    ),
+    AI_NORMALIZE_FAILED(
+            "AI_NORMALIZE_FAILED",
+            "AI normalization failed",
+            HttpStatus.INTERNAL_SERVER_ERROR
+    ),
+    AI_RESPONSE_INVALID(
+            "AI_RESPONSE_INVALID",
+            "AI response is invalid",
+            HttpStatus.BAD_GATEWAY
+    ),
+    AI_TIMEOUT(
+            "AI_TIMEOUT",
+            "AI request timed out",
+            HttpStatus.GATEWAY_TIMEOUT
+    ),
+    AI_RATE_LIMITED(
+            "AI_RATE_LIMITED",
+            "AI provider rate limit exceeded",
+            HttpStatus.TOO_MANY_REQUESTS
+    ),
+    AI_DAILY_LIMIT_REACHED(
+            "AI_DAILY_LIMIT_REACHED",
+            "Daily AI normalize trial limit reached",
+            HttpStatus.TOO_MANY_REQUESTS
     ),
     VIDEO_PROCESSING_FAILED(
             "VIDEO_PROCESSING_FAILED",
