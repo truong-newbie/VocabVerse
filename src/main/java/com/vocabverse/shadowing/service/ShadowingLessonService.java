@@ -24,8 +24,11 @@ import org.springframework.transaction.annotation.Transactional;
 @RequiredArgsConstructor
 public class ShadowingLessonService {
 
+    private static final String MISSING_MEDIA_MESSAGE = "Shadowing lesson media URL is missing";
+
     private final ShadowingLessonRepository shadowingLessonRepository;
     private final ShadowingLessonSubtitleRepository subtitleRepository;
+    private final CloudinaryVideoStorageService cloudinaryVideoStorageService;
 
     @Transactional(readOnly = true)
     public ShadowingLessonPageResponse listLessons(Pageable pageable) {
@@ -58,16 +61,33 @@ public class ShadowingLessonService {
                 .stream()
                 .map(this::toSubtitleResponse)
                 .toList();
+        String mediaUrl = resolveMediaUrl(lesson);
+        if (!hasText(mediaUrl)) {
+            throw new BusinessException(
+                    ErrorCode.VIDEO_PROCESSING_FAILED,
+                    MISSING_MEDIA_MESSAGE
+            );
+        }
+        String thumbnailUrl = resolveThumbnailUrl(lesson);
 
         return new ShadowingLessonDetailResponse(
                 lesson.getId(),
-                lesson.getStatus(),
+                lesson.getSource(),
+                resolvePublicStatus(lesson),
                 lesson.getTitle(),
                 lesson.getDescription(),
-                lesson.getVideoUrl(),
-                lesson.getThumbnailUrl(),
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                thumbnailUrl,
                 lesson.getDuration(),
                 lesson.getProgress(),
+                lesson.getErrorMessage(),
                 subtitles,
                 lesson.getCreatedAt(),
                 lesson.getUpdatedAt()
@@ -75,18 +95,72 @@ public class ShadowingLessonService {
     }
 
     private ShadowingLessonSummaryResponse toSummaryResponse(ShadowingLessonEntity lesson) {
+        String mediaUrl = resolveMediaUrl(lesson);
         return new ShadowingLessonSummaryResponse(
                 lesson.getId(),
-                lesson.getStatus(),
+                lesson.getSource(),
+                resolvePublicStatus(lesson),
                 lesson.getTitle(),
                 lesson.getDescription(),
-                lesson.getVideoUrl(),
-                lesson.getThumbnailUrl(),
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                mediaUrl,
+                resolveThumbnailUrl(lesson),
                 lesson.getDuration(),
                 subtitleRepository.countByLessonId(lesson.getId()),
+                resolveErrorMessage(lesson),
                 lesson.getCreatedAt(),
                 lesson.getUpdatedAt()
         );
+    }
+
+    private String resolveMediaUrl(ShadowingLessonEntity lesson) {
+        if (hasText(lesson.getVideoUrl())) {
+            return lesson.getVideoUrl();
+        }
+        if (hasText(lesson.getYoutubeUrl())) {
+            return lesson.getYoutubeUrl();
+        }
+        if (hasText(lesson.getCloudinaryPublicId())) {
+            return cloudinaryVideoStorageService.buildVideoUrl(lesson.getCloudinaryPublicId());
+        }
+        return null;
+    }
+
+    private String resolveThumbnailUrl(ShadowingLessonEntity lesson) {
+        if (hasText(lesson.getThumbnailUrl())) {
+            return lesson.getThumbnailUrl();
+        }
+        if (hasText(lesson.getCloudinaryPublicId())) {
+            return cloudinaryVideoStorageService.buildThumbnailUrl(lesson.getCloudinaryPublicId());
+        }
+        return null;
+    }
+
+    private boolean hasText(String value) {
+        return value != null && !value.isBlank();
+    }
+
+    private ShadowingLessonStatus resolvePublicStatus(ShadowingLessonEntity lesson) {
+        if (lesson.getStatus() == ShadowingLessonStatus.COMPLETED && !hasText(resolveMediaUrl(lesson))) {
+            return ShadowingLessonStatus.FAILED;
+        }
+        return lesson.getStatus();
+    }
+
+    private String resolveErrorMessage(ShadowingLessonEntity lesson) {
+        if (hasText(lesson.getErrorMessage())) {
+            return lesson.getErrorMessage();
+        }
+        if (lesson.getStatus() == ShadowingLessonStatus.COMPLETED && !hasText(resolveMediaUrl(lesson))) {
+            return MISSING_MEDIA_MESSAGE;
+        }
+        return null;
     }
 
     private ShadowingSubtitleResponse toSubtitleResponse(ShadowingLessonSubtitleEntity subtitle) {

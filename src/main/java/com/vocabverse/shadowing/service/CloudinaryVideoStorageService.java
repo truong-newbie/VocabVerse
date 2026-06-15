@@ -87,7 +87,17 @@ public class CloudinaryVideoStorageService {
         }
     }
 
-    private String buildThumbnailUrl(String publicId) {
+    public String buildVideoUrl(String publicId) {
+        if (!StringUtils.hasText(cloudName) || !StringUtils.hasText(publicId)) {
+            return null;
+        }
+        return "https://res.cloudinary.com/" + cloudName + "/video/upload/" + publicId;
+    }
+
+    public String buildThumbnailUrl(String publicId) {
+        if (!StringUtils.hasText(cloudName) || !StringUtils.hasText(publicId)) {
+            return null;
+        }
         return "https://res.cloudinary.com/" + cloudName + "/video/upload/so_0/" + publicId + ".jpg";
     }
 
