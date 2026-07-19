@@ -1,0 +1,2608 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "type": "file",
+      "name": "AdminUserController.java",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "summary": "AdminUserController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 7 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:AdminUserController",
+      "type": "class",
+      "name": "AdminUserController",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        24,
+        87
+      ],
+      "summary": "AdminUserController định nghĩa cấu trúc hoặc hành vi chính trong AdminUserController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:listUsers",
+      "type": "function",
+      "name": "listUsers",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        32,
+        39
+      ],
+      "summary": "listUsers triển khai một thao tác đáng chú ý trong AdminUserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:getUser",
+      "type": "function",
+      "name": "getUser",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        41,
+        44
+      ],
+      "summary": "getUser triển khai một thao tác đáng chú ý trong AdminUserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:updateStatus",
+      "type": "function",
+      "name": "updateStatus",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        46,
+        52
+      ],
+      "summary": "updateStatus triển khai một thao tác đáng chú ý trong AdminUserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:patchStatus",
+      "type": "function",
+      "name": "patchStatus",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        54,
+        60
+      ],
+      "summary": "patchStatus triển khai một thao tác đáng chú ý trong AdminUserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:updateRole",
+      "type": "function",
+      "name": "updateRole",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        62,
+        68
+      ],
+      "summary": "updateRole triển khai một thao tác đáng chú ý trong AdminUserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:patchRole",
+      "type": "function",
+      "name": "patchRole",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "lineRange": [
+        70,
+        76
+      ],
+      "summary": "patchRole triển khai một thao tác đáng chú ý trong AdminUserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "type": "file",
+      "name": "AdminUpdateUserRoleRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "summary": "AdminUpdateUserRoleRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "type": "file",
+      "name": "AdminUpdateUserStatusRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "summary": "AdminUpdateUserStatusRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "file",
+      "name": "AdminPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "summary": "AdminPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "type": "file",
+      "name": "AdminUserResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "summary": "AdminUserResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "type": "file",
+      "name": "AdminUserService.java",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "summary": "AdminUserService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 7 function, 9 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/service/AdminUserService.java:AdminUserService",
+      "type": "class",
+      "name": "AdminUserService",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "lineRange": [
+        19,
+        84
+      ],
+      "summary": "AdminUserService định nghĩa cấu trúc hoặc hành vi chính trong AdminUserService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:listUsers",
+      "type": "function",
+      "name": "listUsers",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "lineRange": [
+        25,
+        32
+      ],
+      "summary": "listUsers triển khai một thao tác đáng chú ý trong AdminUserService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:getUser",
+      "type": "function",
+      "name": "getUser",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "lineRange": [
+        34,
+        37
+      ],
+      "summary": "getUser triển khai một thao tác đáng chú ý trong AdminUserService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:updateStatus",
+      "type": "function",
+      "name": "updateStatus",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "lineRange": [
+        39,
+        44
+      ],
+      "summary": "updateStatus triển khai một thao tác đáng chú ý trong AdminUserService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:updateRole",
+      "type": "function",
+      "name": "updateRole",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "lineRange": [
+        46,
+        57
+      ],
+      "summary": "updateRole triển khai một thao tác đáng chú ý trong AdminUserService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:toResponse",
+      "type": "function",
+      "name": "toResponse",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "lineRange": [
+        64,
+        73
+      ],
+      "summary": "toResponse triển khai một thao tác đáng chú ý trong AdminUserService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "type": "file",
+      "name": "AiNormalizeQuotaResponse.java",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "summary": "AiNormalizeQuotaResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "type": "file",
+      "name": "AiNormalizeQuotaService.java",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "summary": "AiNormalizeQuotaService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 7 function, 5 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:AiNormalizeQuotaService",
+      "type": "class",
+      "name": "AiNormalizeQuotaService",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "lineRange": [
+        20,
+        110
+      ],
+      "summary": "AiNormalizeQuotaService định nghĩa cấu trúc hoặc hành vi chính trong AiNormalizeQuotaService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:shouldApplySystemTrialQuota",
+      "type": "function",
+      "name": "shouldApplySystemTrialQuota",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "lineRange": [
+        32,
+        34
+      ],
+      "summary": "shouldApplySystemTrialQuota triển khai một thao tác đáng chú ý trong AiNormalizeQuotaService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:consumeTrialQuota",
+      "type": "function",
+      "name": "consumeTrialQuota",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "lineRange": [
+        36,
+        59
+      ],
+      "summary": "consumeTrialQuota triển khai một thao tác đáng chú ý trong AiNormalizeQuotaService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:getCurrentQuota",
+      "type": "function",
+      "name": "getCurrentQuota",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "lineRange": [
+        61,
+        70
+      ],
+      "summary": "getCurrentQuota triển khai một thao tác đáng chú ý trong AiNormalizeQuotaService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:readUsed",
+      "type": "function",
+      "name": "readUsed",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "lineRange": [
+        72,
+        91
+      ],
+      "summary": "readUsed triển khai một thao tác đáng chú ý trong AiNormalizeQuotaService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "type": "file",
+      "name": "AuthController.java",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "summary": "AuthController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 9 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/auth/controller/AuthController.java:AuthController",
+      "type": "class",
+      "name": "AuthController",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "lineRange": [
+        19,
+        53
+      ],
+      "summary": "AuthController định nghĩa cấu trúc hoặc hành vi chính trong AuthController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:register",
+      "type": "function",
+      "name": "register",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "lineRange": [
+        27,
+        33
+      ],
+      "summary": "register triển khai một thao tác đáng chú ý trong AuthController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "lineRange": [
+        35,
+        41
+      ],
+      "summary": "login triển khai một thao tác đáng chú ý trong AuthController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:refresh",
+      "type": "function",
+      "name": "refresh",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "lineRange": [
+        43,
+        46
+      ],
+      "summary": "refresh triển khai một thao tác đáng chú ý trong AuthController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:logout",
+      "type": "function",
+      "name": "logout",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "lineRange": [
+        48,
+        52
+      ],
+      "summary": "logout triển khai một thao tác đáng chú ý trong AuthController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "type": "file",
+      "name": "LoginRequest.java",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "summary": "LoginRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "type": "file",
+      "name": "LoginResponse.java",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "summary": "LoginResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+      "type": "file",
+      "name": "RefreshTokenRequest.java",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+      "summary": "RefreshTokenRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "type": "file",
+      "name": "RefreshTokenResponse.java",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "summary": "RefreshTokenResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "type": "file",
+      "name": "RegisterRequest.java",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "summary": "RegisterRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "type": "file",
+      "name": "RegisterResponse.java",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "summary": "RegisterResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "type": "file",
+      "name": "RefreshTokenEntity.java",
+      "filePath": "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "summary": "RefreshTokenEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java:RefreshTokenEntity",
+      "type": "class",
+      "name": "RefreshTokenEntity",
+      "filePath": "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "lineRange": [
+        19,
+        49
+      ],
+      "summary": "RefreshTokenEntity định nghĩa cấu trúc hoặc hành vi chính trong RefreshTokenEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "type": "file",
+      "name": "RefreshTokenRepository.java",
+      "filePath": "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "summary": "RefreshTokenRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java:RefreshTokenRepository",
+      "type": "class",
+      "name": "RefreshTokenRepository",
+      "filePath": "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "RefreshTokenRepository định nghĩa cấu trúc hoặc hành vi chính trong RefreshTokenRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "type": "file",
+      "name": "AuthService.java",
+      "filePath": "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "summary": "AuthService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 12 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/auth/service/AuthService.java:AuthService",
+      "type": "class",
+      "name": "AuthService",
+      "filePath": "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "lineRange": [
+        20,
+        82
+      ],
+      "summary": "AuthService định nghĩa cấu trúc hoặc hành vi chính trong AuthService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/service/AuthService.java:register",
+      "type": "function",
+      "name": "register",
+      "filePath": "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "lineRange": [
+        29,
+        51
+      ],
+      "summary": "register triển khai một thao tác đáng chú ý trong AuthService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/service/AuthService.java:login",
+      "type": "function",
+      "name": "login",
+      "filePath": "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "lineRange": [
+        53,
+        81
+      ],
+      "summary": "login triển khai một thao tác đáng chú ý trong AuthService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "type": "file",
+      "name": "RefreshTokenService.java",
+      "filePath": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "summary": "RefreshTokenService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:RefreshTokenService",
+      "type": "class",
+      "name": "RefreshTokenService",
+      "filePath": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "lineRange": [
+        18,
+        82
+      ],
+      "summary": "RefreshTokenService định nghĩa cấu trúc hoặc hành vi chính trong RefreshTokenService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:createRefreshToken",
+      "type": "function",
+      "name": "createRefreshToken",
+      "filePath": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "lineRange": [
+        29,
+        39
+      ],
+      "summary": "createRefreshToken triển khai một thao tác đáng chú ý trong RefreshTokenService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:refresh",
+      "type": "function",
+      "name": "refresh",
+      "filePath": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "lineRange": [
+        41,
+        58
+      ],
+      "summary": "refresh triển khai một thao tác đáng chú ý trong RefreshTokenService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:logout",
+      "type": "function",
+      "name": "logout",
+      "filePath": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "lineRange": [
+        60,
+        66
+      ],
+      "summary": "logout triển khai một thao tác đáng chú ý trong RefreshTokenService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:getValidRefreshToken",
+      "type": "function",
+      "name": "getValidRefreshToken",
+      "filePath": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "lineRange": [
+        68,
+        81
+      ],
+      "summary": "getValidRefreshToken triển khai một thao tác đáng chú ý trong RefreshTokenService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "type": "file",
+      "name": "CustomUserDetailsService.java",
+      "filePath": "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "summary": "CustomUserDetailsService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "security",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java:CustomUserDetailsService",
+      "type": "class",
+      "name": "CustomUserDetailsService",
+      "filePath": "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "lineRange": [
+        14,
+        31
+      ],
+      "summary": "CustomUserDetailsService định nghĩa cấu trúc hoặc hành vi chính trong CustomUserDetailsService.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java:loadUserByUsername",
+      "type": "function",
+      "name": "loadUserByUsername",
+      "filePath": "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "lineRange": [
+        20,
+        30
+      ],
+      "summary": "loadUserByUsername triển khai một thao tác đáng chú ý trong CustomUserDetailsService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "type": "file",
+      "name": "JwtTokenProvider.java",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "summary": "JwtTokenProvider.java là file mã nguồn java trong VocabVerse, gồm 1 class, 8 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "security",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:JwtTokenProvider",
+      "type": "class",
+      "name": "JwtTokenProvider",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        15,
+        75
+      ],
+      "summary": "JwtTokenProvider định nghĩa cấu trúc hoặc hành vi chính trong JwtTokenProvider.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:JwtTokenProvider",
+      "type": "function",
+      "name": "JwtTokenProvider",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        21,
+        27
+      ],
+      "summary": "JwtTokenProvider triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:generateAccessToken",
+      "type": "function",
+      "name": "generateAccessToken",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        29,
+        41
+      ],
+      "summary": "generateAccessToken triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:validateToken",
+      "type": "function",
+      "name": "validateToken",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        43,
+        50
+      ],
+      "summary": "validateToken triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractEmail",
+      "type": "function",
+      "name": "extractEmail",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        52,
+        54
+      ],
+      "summary": "extractEmail triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractUserId",
+      "type": "function",
+      "name": "extractUserId",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        56,
+        58
+      ],
+      "summary": "extractUserId triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractRole",
+      "type": "function",
+      "name": "extractRole",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        60,
+        62
+      ],
+      "summary": "extractRole triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:getAccessTokenExpirationSeconds",
+      "type": "function",
+      "name": "getAccessTokenExpirationSeconds",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "lineRange": [
+        64,
+        66
+      ],
+      "summary": "getAccessTokenExpirationSeconds triển khai một thao tác đáng chú ý trong JwtTokenProvider.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "type": "file",
+      "name": "UserController.java",
+      "filePath": "src/main/java/com/vocabverse/user/controller/UserController.java",
+      "summary": "UserController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/user/controller/UserController.java:UserController",
+      "type": "class",
+      "name": "UserController",
+      "filePath": "src/main/java/com/vocabverse/user/controller/UserController.java",
+      "lineRange": [
+        11,
+        22
+      ],
+      "summary": "UserController định nghĩa cấu trúc hoặc hành vi chính trong UserController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/user/controller/UserController.java:getCurrentUser",
+      "type": "function",
+      "name": "getCurrentUser",
+      "filePath": "src/main/java/com/vocabverse/user/controller/UserController.java",
+      "lineRange": [
+        18,
+        21
+      ],
+      "summary": "getCurrentUser triển khai một thao tác đáng chú ý trong UserController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "type": "file",
+      "name": "UserResponse.java",
+      "filePath": "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "summary": "UserResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "file",
+      "name": "UserEntity.java",
+      "filePath": "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "summary": "UserEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/user/entity/UserEntity.java:UserEntity",
+      "type": "class",
+      "name": "UserEntity",
+      "filePath": "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "lineRange": [
+        22,
+        70
+      ],
+      "summary": "UserEntity định nghĩa cấu trúc hoặc hành vi chính trong UserEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "file",
+      "name": "UserRole.java",
+      "filePath": "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "summary": "UserRole.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "file",
+      "name": "UserStatus.java",
+      "filePath": "src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "summary": "UserStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "type": "file",
+      "name": "UserMapper.java",
+      "filePath": "src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "summary": "UserMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/user/mapper/UserMapper.java:UserMapper",
+      "type": "class",
+      "name": "UserMapper",
+      "filePath": "src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "lineRange": [
+        7,
+        11
+      ],
+      "summary": "UserMapper định nghĩa cấu trúc hoặc hành vi chính trong UserMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "file",
+      "name": "UserRepository.java",
+      "filePath": "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "summary": "UserRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/user/repository/UserRepository.java:UserRepository",
+      "type": "class",
+      "name": "UserRepository",
+      "filePath": "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "lineRange": [
+        13,
+        35
+      ],
+      "summary": "UserRepository định nghĩa cấu trúc hoặc hành vi chính trong UserRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "type": "file",
+      "name": "UserService.java",
+      "filePath": "src/main/java/com/vocabverse/user/service/UserService.java",
+      "summary": "UserService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/user/service/UserService.java:UserService",
+      "type": "class",
+      "name": "UserService",
+      "filePath": "src/main/java/com/vocabverse/user/service/UserService.java",
+      "lineRange": [
+        15,
+        39
+      ],
+      "summary": "UserService định nghĩa cấu trúc hoặc hành vi chính trong UserService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/user/service/UserService.java:getCurrentUser",
+      "type": "function",
+      "name": "getCurrentUser",
+      "filePath": "src/main/java/com/vocabverse/user/service/UserService.java",
+      "lineRange": [
+        22,
+        30
+      ],
+      "summary": "getCurrentUser triển khai một thao tác đáng chú ý trong UserService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "type": "file",
+      "name": "AiNormalizeQuotaServiceTest.java",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "summary": "AiNormalizeQuotaServiceTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 5 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "test",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:AiNormalizeQuotaServiceTest",
+      "type": "class",
+      "name": "AiNormalizeQuotaServiceTest",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "lineRange": [
+        27,
+        118
+      ],
+      "summary": "AiNormalizeQuotaServiceTest định nghĩa cấu trúc hoặc hành vi chính trong AiNormalizeQuotaServiceTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:consumeTrialQuotaAllowsUsageWithinDailyLimit",
+      "type": "function",
+      "name": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "lineRange": [
+        37,
+        48
+      ],
+      "summary": "consumeTrialQuotaAllowsUsageWithinDailyLimit triển khai một thao tác đáng chú ý trong AiNormalizeQuotaServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:consumeTrialQuotaRejectsUsageOverDailyLimit",
+      "type": "function",
+      "name": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "lineRange": [
+        50,
+        61
+      ],
+      "summary": "consumeTrialQuotaRejectsUsageOverDailyLimit triển khai một thao tác đáng chú ý trong AiNormalizeQuotaServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:getCurrentQuotaReturnsRemainingUsage",
+      "type": "function",
+      "name": "getCurrentQuotaReturnsRemainingUsage",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "lineRange": [
+        63,
+        75
+      ],
+      "summary": "getCurrentQuotaReturnsRemainingUsage triển khai một thao tác đáng chú ý trong AiNormalizeQuotaServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:AdminUserController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:AdminUserController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:listUsers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:listUsers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:getUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:getUser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:updateStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:updateStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:patchStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:patchStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:updateRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:updateRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:patchRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminUserController.java:patchRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminUserService.java:AdminUserService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminUserService.java:AdminUserService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:listUsers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:listUsers",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:getUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:getUser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:updateStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:updateStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:updateRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:updateRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminUserService.java:toResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "class:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:AiNormalizeQuotaService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "class:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:AiNormalizeQuotaService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:shouldApplySystemTrialQuota",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:shouldApplySystemTrialQuota",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:consumeTrialQuota",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:consumeTrialQuota",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:getCurrentQuota",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:getCurrentQuota",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java:readUsed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "class:src/main/java/com/vocabverse/auth/controller/AuthController.java:AuthController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "class:src/main/java/com/vocabverse/auth/controller/AuthController.java:AuthController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:register",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:register",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:login",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:refresh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:refresh",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:logout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "function:src/main/java/com/vocabverse/auth/controller/AuthController.java:logout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "target": "class:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java:RefreshTokenEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "target": "class:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java:RefreshTokenEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "target": "class:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java:RefreshTokenRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "target": "class:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java:RefreshTokenRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "target": "file:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "class:src/main/java/com/vocabverse/auth/service/AuthService.java:AuthService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "class:src/main/java/com/vocabverse/auth/service/AuthService.java:AuthService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/AuthService.java:register",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/AuthService.java:register",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/AuthService.java:login",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/AuthService.java:login",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "class:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:RefreshTokenService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "class:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:RefreshTokenService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:createRefreshToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:createRefreshToken",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:refresh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:refresh",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:logout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:logout",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "function:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java:getValidRefreshToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "target": "class:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java:CustomUserDetailsService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "target": "class:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java:CustomUserDetailsService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java:loadUserByUsername",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java:loadUserByUsername",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "class:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:JwtTokenProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "class:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:JwtTokenProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:JwtTokenProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:JwtTokenProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:generateAccessToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:generateAccessToken",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:validateToken",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:validateToken",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractEmail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractEmail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractUserId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractUserId",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractRole",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:extractRole",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:getAccessTokenExpirationSeconds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java:getAccessTokenExpirationSeconds",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "class:src/main/java/com/vocabverse/user/controller/UserController.java:UserController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "class:src/main/java/com/vocabverse/user/controller/UserController.java:UserController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "function:src/main/java/com/vocabverse/user/controller/UserController.java:getCurrentUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "function:src/main/java/com/vocabverse/user/controller/UserController.java:getCurrentUser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "file:src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/controller/UserController.java",
+      "target": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "target": "class:src/main/java/com/vocabverse/user/entity/UserEntity.java:UserEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "target": "class:src/main/java/com/vocabverse/user/entity/UserEntity.java:UserEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "target": "class:src/main/java/com/vocabverse/user/mapper/UserMapper.java:UserMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "target": "class:src/main/java/com/vocabverse/user/mapper/UserMapper.java:UserMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "target": "file:src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "target": "class:src/main/java/com/vocabverse/user/repository/UserRepository.java:UserRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "target": "class:src/main/java/com/vocabverse/user/repository/UserRepository.java:UserRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "class:src/main/java/com/vocabverse/user/service/UserService.java:UserService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "class:src/main/java/com/vocabverse/user/service/UserService.java:UserService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "function:src/main/java/com/vocabverse/user/service/UserService.java:getCurrentUser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "function:src/main/java/com/vocabverse/user/service/UserService.java:getCurrentUser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/user/service/UserService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "class:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:AiNormalizeQuotaServiceTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:consumeTrialQuotaAllowsUsageWithinDailyLimit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:consumeTrialQuotaRejectsUsageOverDailyLimit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java:getCurrentQuotaReturnsRemainingUsage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

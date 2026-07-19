@@ -1,0 +1,946 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/collection/repository/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/service/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/specification/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/config/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 107,
+      "nonEmptyLines": 95,
+      "functions": [
+        {
+          "name": "vocabVerseOpenApi",
+          "startLine": 19,
+          "endLine": 36,
+          "params": []
+        },
+        {
+          "name": "authApi",
+          "startLine": 38,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "userApi",
+          "startLine": 46,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "collectionApi",
+          "startLine": 54,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "vocabularyApi",
+          "startLine": 62,
+          "endLine": 68,
+          "params": []
+        },
+        {
+          "name": "learningApi",
+          "startLine": 70,
+          "endLine": 82,
+          "params": []
+        },
+        {
+          "name": "notificationApi",
+          "startLine": 84,
+          "endLine": 90,
+          "params": []
+        },
+        {
+          "name": "aiApi",
+          "startLine": 92,
+          "endLine": 98,
+          "params": []
+        },
+        {
+          "name": "exportApi",
+          "startLine": 100,
+          "endLine": 106,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "OpenApiConfig",
+          "startLine": 14,
+          "endLine": 107,
+          "methods": [
+            "vocabVerseOpenApi",
+            "authApi",
+            "userApi",
+            "collectionApi",
+            "vocabularyApi",
+            "learningApi",
+            "notificationApi",
+            "aiApi",
+            "exportApi"
+          ],
+          "properties": [
+            "BEARER_AUTH"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "vocabVerseOpenApi",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "authApi",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "userApi",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "collectionApi",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "vocabularyApi",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "learningApi",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "notificationApi",
+          "line": 84,
+          "isDefault": false
+        },
+        {
+          "name": "aiApi",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "exportApi",
+          "line": 100,
+          "isDefault": false
+        },
+        {
+          "name": "OpenApiConfig",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new OpenAPI()\r\n                .servers(List.of(new Server()\r\n                        .url(\"/api/v1\")\r\n                        .description(\"VocabVerse API v1\")))\r\n                .info(new Info()\r\n                        .title(\"VocabVerse API\")\r\n                        .description(\"VocabVerse Backend REST API\")\r\n                        .version(\"v1\"))\r\n                .components(new Components()\r\n                        .addSecuritySchemes(BEARER_AUTH, new SecurityScheme()\r\n                                .name(BEARER_AUTH)\r\n                                .type(SecurityScheme.Type.HTTP)\r\n                                .scheme(\"bearer\")\r\n                                .bearerFormat(\"JWT\"))).addSecurityItem",
+          "lineNumber": 21
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new OpenAPI()\r\n                .servers(List.of(new Server()\r\n                        .url(\"/api/v1\")\r\n                        .description(\"VocabVerse API v1\")))\r\n                .info(new Info()\r\n                        .title(\"VocabVerse API\")\r\n                        .description(\"VocabVerse Backend REST API\")\r\n                        .version(\"v1\")).components",
+          "lineNumber": 21
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new OpenAPI()\r\n                .servers(List.of(new Server()\r\n                        .url(\"/api/v1\")\r\n                        .description(\"VocabVerse API v1\"))).info",
+          "lineNumber": 21
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new OpenAPI().servers",
+          "lineNumber": 21
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new OpenAPI",
+          "lineNumber": 21
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "List.of",
+          "lineNumber": 22
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Server()\r\n                        .url(\"/api/v1\").description",
+          "lineNumber": 22
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Server().url",
+          "lineNumber": 22
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Server",
+          "lineNumber": 22
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Info()\r\n                        .title(\"VocabVerse API\")\r\n                        .description(\"VocabVerse Backend REST API\").version",
+          "lineNumber": 25
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Info()\r\n                        .title(\"VocabVerse API\").description",
+          "lineNumber": 25
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Info().title",
+          "lineNumber": 25
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Info",
+          "lineNumber": 25
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Components().addSecuritySchemes",
+          "lineNumber": 29
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new Components",
+          "lineNumber": 29
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityScheme()\r\n                                .name(BEARER_AUTH)\r\n                                .type(SecurityScheme.Type.HTTP)\r\n                                .scheme(\"bearer\").bearerFormat",
+          "lineNumber": 30
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityScheme()\r\n                                .name(BEARER_AUTH)\r\n                                .type(SecurityScheme.Type.HTTP).scheme",
+          "lineNumber": 30
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityScheme()\r\n                                .name(BEARER_AUTH).type",
+          "lineNumber": 30
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityScheme().name",
+          "lineNumber": 30
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityScheme",
+          "lineNumber": 30
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityRequirement().addList",
+          "lineNumber": 35
+        },
+        {
+          "caller": "vocabVerseOpenApi",
+          "callee": "new SecurityRequirement",
+          "lineNumber": 35
+        },
+        {
+          "caller": "authApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"auth\")\r\n                .pathsToMatch(\"/auth/**\").build",
+          "lineNumber": 40
+        },
+        {
+          "caller": "authApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"auth\").pathsToMatch",
+          "lineNumber": 40
+        },
+        {
+          "caller": "authApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 40
+        },
+        {
+          "caller": "authApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 40
+        },
+        {
+          "caller": "userApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"user\")\r\n                .pathsToMatch(\"/users/**\").build",
+          "lineNumber": 48
+        },
+        {
+          "caller": "userApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"user\").pathsToMatch",
+          "lineNumber": 48
+        },
+        {
+          "caller": "userApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 48
+        },
+        {
+          "caller": "userApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 48
+        },
+        {
+          "caller": "collectionApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"collection\")\r\n                .pathsToMatch(\"/collections/**\", \"/public/collections/**\").build",
+          "lineNumber": 56
+        },
+        {
+          "caller": "collectionApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"collection\").pathsToMatch",
+          "lineNumber": 56
+        },
+        {
+          "caller": "collectionApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 56
+        },
+        {
+          "caller": "collectionApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 56
+        },
+        {
+          "caller": "vocabularyApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"vocabulary\")\r\n                .pathsToMatch(\"/vocabularies/**\", \"/collections/*/vocabularies/**\").build",
+          "lineNumber": 64
+        },
+        {
+          "caller": "vocabularyApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"vocabulary\").pathsToMatch",
+          "lineNumber": 64
+        },
+        {
+          "caller": "vocabularyApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 64
+        },
+        {
+          "caller": "vocabularyApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 64
+        },
+        {
+          "caller": "learningApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"learning\")\r\n                .pathsToMatch(\r\n                        \"/learning/**\",\r\n                        \"/reviews/**\",\r\n                        \"/flashcards/**\",\r\n                        \"/quizzes/**\",\r\n                        \"/typing/**\"\r\n                ).build",
+          "lineNumber": 72
+        },
+        {
+          "caller": "learningApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"learning\").pathsToMatch",
+          "lineNumber": 72
+        },
+        {
+          "caller": "learningApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 72
+        },
+        {
+          "caller": "learningApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 72
+        },
+        {
+          "caller": "notificationApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"notification\")\r\n                .pathsToMatch(\"/notifications/**\").build",
+          "lineNumber": 86
+        },
+        {
+          "caller": "notificationApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"notification\").pathsToMatch",
+          "lineNumber": 86
+        },
+        {
+          "caller": "notificationApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 86
+        },
+        {
+          "caller": "notificationApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 86
+        },
+        {
+          "caller": "aiApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"ai\")\r\n                .pathsToMatch(\"/ai/**\", \"/roleplay/**\").build",
+          "lineNumber": 94
+        },
+        {
+          "caller": "aiApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"ai\").pathsToMatch",
+          "lineNumber": 94
+        },
+        {
+          "caller": "aiApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 94
+        },
+        {
+          "caller": "aiApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 94
+        },
+        {
+          "caller": "exportApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"export\")\r\n                .pathsToMatch(\"/export/**\").build",
+          "lineNumber": 102
+        },
+        {
+          "caller": "exportApi",
+          "callee": "GroupedOpenApi.builder()\r\n                .group(\"export\").pathsToMatch",
+          "lineNumber": 102
+        },
+        {
+          "caller": "exportApi",
+          "callee": "GroupedOpenApi.builder().group",
+          "lineNumber": 102
+        },
+        {
+          "caller": "exportApi",
+          "callee": "GroupedOpenApi.builder",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 65,
+      "functions": [
+        {
+          "name": "securityFilterChain",
+          "startLine": 31,
+          "endLine": 53,
+          "params": [
+            "http"
+          ]
+        },
+        {
+          "name": "passwordEncoder",
+          "startLine": 55,
+          "endLine": 58,
+          "params": []
+        },
+        {
+          "name": "corsConfigurationSource",
+          "startLine": 60,
+          "endLine": 72,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "SecurityConfig",
+          "startLine": 21,
+          "endLine": 73,
+          "methods": [
+            "securityFilterChain",
+            "passwordEncoder",
+            "corsConfigurationSource"
+          ],
+          "properties": [
+            "jwtAuthenticationFilter",
+            "allowedOrigins"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "securityFilterChain",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "passwordEncoder",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "corsConfigurationSource",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "SecurityConfig",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "securityFilterChain",
+          "callee": "http\r\n                .csrf(AbstractHttpConfigurer::disable)\r\n                .cors(cors -> cors.configurationSource(corsConfigurationSource()))\r\n                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))\r\n                .authorizeHttpRequests(auth -> auth\r\n                        .requestMatchers(\r\n                                \"/auth/register\",\r\n                                \"/auth/login\",\r\n                                \"/auth/refresh\",\r\n                                \"/auth/logout\",\r\n                                \"/swagger-ui.html\",\r\n                                \"/swagger-ui/**\",\r\n                                \"/v3/api-docs\",\r\n                                \"/v3/api-docs/**\",\r\n                                \"/actuator/health\"\r\n                        ).permitAll()\r\n                        .anyRequest().authenticated()\r\n                )\r\n                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class).build",
+          "lineNumber": 33
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "http\r\n                .csrf(AbstractHttpConfigurer::disable)\r\n                .cors(cors -> cors.configurationSource(corsConfigurationSource()))\r\n                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))\r\n                .authorizeHttpRequests(auth -> auth\r\n                        .requestMatchers(\r\n                                \"/auth/register\",\r\n                                \"/auth/login\",\r\n                                \"/auth/refresh\",\r\n                                \"/auth/logout\",\r\n                                \"/swagger-ui.html\",\r\n                                \"/swagger-ui/**\",\r\n                                \"/v3/api-docs\",\r\n                                \"/v3/api-docs/**\",\r\n                                \"/actuator/health\"\r\n                        ).permitAll()\r\n                        .anyRequest().authenticated()\r\n                ).addFilterBefore",
+          "lineNumber": 33
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "http\r\n                .csrf(AbstractHttpConfigurer::disable)\r\n                .cors(cors -> cors.configurationSource(corsConfigurationSource()))\r\n                .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS)).authorizeHttpRequests",
+          "lineNumber": 33
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "http\r\n                .csrf(AbstractHttpConfigurer::disable)\r\n                .cors(cors -> cors.configurationSource(corsConfigurationSource())).sessionManagement",
+          "lineNumber": 33
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "http\r\n                .csrf(AbstractHttpConfigurer::disable).cors",
+          "lineNumber": 33
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "http.csrf",
+          "lineNumber": 33
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "cors.configurationSource",
+          "lineNumber": 35
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "corsConfigurationSource",
+          "lineNumber": 35
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "session.sessionCreationPolicy",
+          "lineNumber": 36
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "auth\r\n                        .requestMatchers(\r\n                                \"/auth/register\",\r\n                                \"/auth/login\",\r\n                                \"/auth/refresh\",\r\n                                \"/auth/logout\",\r\n                                \"/swagger-ui.html\",\r\n                                \"/swagger-ui/**\",\r\n                                \"/v3/api-docs\",\r\n                                \"/v3/api-docs/**\",\r\n                                \"/actuator/health\"\r\n                        ).permitAll()\r\n                        .anyRequest().authenticated",
+          "lineNumber": 37
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "auth\r\n                        .requestMatchers(\r\n                                \"/auth/register\",\r\n                                \"/auth/login\",\r\n                                \"/auth/refresh\",\r\n                                \"/auth/logout\",\r\n                                \"/swagger-ui.html\",\r\n                                \"/swagger-ui/**\",\r\n                                \"/v3/api-docs\",\r\n                                \"/v3/api-docs/**\",\r\n                                \"/actuator/health\"\r\n                        ).permitAll().anyRequest",
+          "lineNumber": 37
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "auth\r\n                        .requestMatchers(\r\n                                \"/auth/register\",\r\n                                \"/auth/login\",\r\n                                \"/auth/refresh\",\r\n                                \"/auth/logout\",\r\n                                \"/swagger-ui.html\",\r\n                                \"/swagger-ui/**\",\r\n                                \"/v3/api-docs\",\r\n                                \"/v3/api-docs/**\",\r\n                                \"/actuator/health\"\r\n                        ).permitAll",
+          "lineNumber": 37
+        },
+        {
+          "caller": "securityFilterChain",
+          "callee": "auth.requestMatchers",
+          "lineNumber": 37
+        },
+        {
+          "caller": "passwordEncoder",
+          "callee": "new BCryptPasswordEncoder",
+          "lineNumber": 57
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "new CorsConfiguration",
+          "lineNumber": 62
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "configuration.setAllowedOrigins",
+          "lineNumber": 63
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "configuration.setAllowedMethods",
+          "lineNumber": 64
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "List.of",
+          "lineNumber": 64
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "configuration.setAllowedHeaders",
+          "lineNumber": 65
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "List.of",
+          "lineNumber": 65
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "configuration.setExposedHeaders",
+          "lineNumber": 66
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "List.of",
+          "lineNumber": 66
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "configuration.setAllowCredentials",
+          "lineNumber": 67
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "new UrlBasedCorsConfigurationSource",
+          "lineNumber": 69
+        },
+        {
+          "caller": "corsConfigurationSource",
+          "callee": "source.registerCorsConfiguration",
+          "lineNumber": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/constant/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/mapper/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/response/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 59,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "doFilterInternal",
+          "startLine": 26,
+          "endLine": 50,
+          "params": [
+            "request",
+            "response",
+            "filterChain"
+          ]
+        },
+        {
+          "name": "resolveToken",
+          "startLine": 52,
+          "endLine": 58,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "JwtAuthenticationFilter",
+          "startLine": 16,
+          "endLine": 59,
+          "methods": [
+            "doFilterInternal",
+            "resolveToken"
+          ],
+          "properties": [
+            "AUTHORIZATION_HEADER",
+            "BEARER_PREFIX",
+            "jwtTokenProvider",
+            "customUserDetailsService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "JwtAuthenticationFilter",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "doFilterInternal",
+          "callee": "resolveToken",
+          "lineNumber": 32
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "jwtTokenProvider.validateToken",
+          "lineNumber": 35
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 36
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 36
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "jwtTokenProvider.extractEmail",
+          "lineNumber": 37
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "customUserDetailsService.loadUserByUsername",
+          "lineNumber": 38
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "new UsernamePasswordAuthenticationToken",
+          "lineNumber": 40
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "userDetails.getAuthorities",
+          "lineNumber": 43
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "authentication.setDetails",
+          "lineNumber": 45
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "new WebAuthenticationDetailsSource().buildDetails",
+          "lineNumber": 45
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "new WebAuthenticationDetailsSource",
+          "lineNumber": 45
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "SecurityContextHolder.getContext().setAuthentication",
+          "lineNumber": 46
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 46
+        },
+        {
+          "caller": "doFilterInternal",
+          "callee": "filterChain.doFilter",
+          "lineNumber": 49
+        },
+        {
+          "caller": "resolveToken",
+          "callee": "request.getHeader",
+          "lineNumber": 53
+        },
+        {
+          "caller": "resolveToken",
+          "callee": "bearerToken.startsWith",
+          "lineNumber": 54
+        },
+        {
+          "caller": "resolveToken",
+          "callee": "bearerToken.substring",
+          "lineNumber": 55
+        },
+        {
+          "caller": "resolveToken",
+          "callee": "BEARER_PREFIX.length",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/util/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/validator/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/client/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/service/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/controller/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/dto/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/entity/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/exception/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/mapper/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

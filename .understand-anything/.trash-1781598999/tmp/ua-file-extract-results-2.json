@@ -1,0 +1,2991 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 30,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 87,
+      "nonEmptyLines": 77,
+      "functions": [
+        {
+          "name": "listUsers",
+          "startLine": 32,
+          "endLine": 39,
+          "params": [
+            "search",
+            "q",
+            "pageable"
+          ]
+        },
+        {
+          "name": "getUser",
+          "startLine": 41,
+          "endLine": 44,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "updateStatus",
+          "startLine": 46,
+          "endLine": 52,
+          "params": [
+            "userId",
+            "request"
+          ]
+        },
+        {
+          "name": "patchStatus",
+          "startLine": 54,
+          "endLine": 60,
+          "params": [
+            "userId",
+            "request"
+          ]
+        },
+        {
+          "name": "updateRole",
+          "startLine": 62,
+          "endLine": 68,
+          "params": [
+            "userId",
+            "request"
+          ]
+        },
+        {
+          "name": "patchRole",
+          "startLine": 70,
+          "endLine": 76,
+          "params": [
+            "userId",
+            "request"
+          ]
+        },
+        {
+          "name": "resolveKeyword",
+          "startLine": 78,
+          "endLine": 86,
+          "params": [
+            "search",
+            "q"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminUserController",
+          "startLine": 24,
+          "endLine": 87,
+          "methods": [
+            "listUsers",
+            "getUser",
+            "updateStatus",
+            "patchStatus",
+            "updateRole",
+            "patchRole",
+            "resolveKeyword"
+          ],
+          "properties": [
+            "adminUserService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listUsers",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "getUser",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "updateStatus",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "patchStatus",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "updateRole",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "patchRole",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "AdminUserController",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listUsers",
+          "callee": "ApiResponse.success",
+          "lineNumber": 38
+        },
+        {
+          "caller": "listUsers",
+          "callee": "adminUserService.listUsers",
+          "lineNumber": 38
+        },
+        {
+          "caller": "listUsers",
+          "callee": "resolveKeyword",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getUser",
+          "callee": "ApiResponse.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getUser",
+          "callee": "adminUserService.getUser",
+          "lineNumber": 43
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "ApiResponse.success",
+          "lineNumber": 51
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "adminUserService.updateStatus",
+          "lineNumber": 51
+        },
+        {
+          "caller": "patchStatus",
+          "callee": "ApiResponse.success",
+          "lineNumber": 59
+        },
+        {
+          "caller": "patchStatus",
+          "callee": "adminUserService.updateStatus",
+          "lineNumber": 59
+        },
+        {
+          "caller": "updateRole",
+          "callee": "ApiResponse.success",
+          "lineNumber": 67
+        },
+        {
+          "caller": "updateRole",
+          "callee": "adminUserService.updateRole",
+          "lineNumber": 67
+        },
+        {
+          "caller": "patchRole",
+          "callee": "ApiResponse.success",
+          "lineNumber": 75
+        },
+        {
+          "caller": "patchRole",
+          "callee": "adminUserService.updateRole",
+          "lineNumber": 75
+        },
+        {
+          "caller": "resolveKeyword",
+          "callee": "search.isBlank",
+          "lineNumber": 79
+        },
+        {
+          "caller": "resolveKeyword",
+          "callee": "search.trim",
+          "lineNumber": 80
+        },
+        {
+          "caller": "resolveKeyword",
+          "callee": "q.isBlank",
+          "lineNumber": 82
+        },
+        {
+          "caller": "resolveKeyword",
+          "callee": "q.trim",
+          "lineNumber": 83
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 7,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 73,
+      "functions": [
+        {
+          "name": "listUsers",
+          "startLine": 25,
+          "endLine": 32,
+          "params": [
+            "keyword",
+            "pageable"
+          ]
+        },
+        {
+          "name": "getUser",
+          "startLine": 34,
+          "endLine": 37,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "updateStatus",
+          "startLine": 39,
+          "endLine": 44,
+          "params": [
+            "userId",
+            "request"
+          ]
+        },
+        {
+          "name": "updateRole",
+          "startLine": 46,
+          "endLine": 57,
+          "params": [
+            "userId",
+            "request"
+          ]
+        },
+        {
+          "name": "findUser",
+          "startLine": 59,
+          "endLine": 62,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "toResponse",
+          "startLine": 64,
+          "endLine": 73,
+          "params": [
+            "user"
+          ]
+        },
+        {
+          "name": "toPageResponse",
+          "startLine": 75,
+          "endLine": 83,
+          "params": [
+            "page"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminUserService",
+          "startLine": 19,
+          "endLine": 84,
+          "methods": [
+            "listUsers",
+            "getUser",
+            "updateStatus",
+            "updateRole",
+            "findUser",
+            "toResponse",
+            "toPageResponse"
+          ],
+          "properties": [
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listUsers",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "getUser",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "updateStatus",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "updateRole",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "AdminUserService",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listUsers",
+          "callee": "keyword.isBlank",
+          "lineNumber": 27
+        },
+        {
+          "caller": "listUsers",
+          "callee": "userRepository.findAll",
+          "lineNumber": 28
+        },
+        {
+          "caller": "listUsers",
+          "callee": "userRepository.searchUsers",
+          "lineNumber": 29
+        },
+        {
+          "caller": "listUsers",
+          "callee": "keyword.trim",
+          "lineNumber": 29
+        },
+        {
+          "caller": "listUsers",
+          "callee": "users.map",
+          "lineNumber": 30
+        },
+        {
+          "caller": "listUsers",
+          "callee": "toPageResponse",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getUser",
+          "callee": "toResponse",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getUser",
+          "callee": "findUser",
+          "lineNumber": 36
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "findUser",
+          "lineNumber": 41
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "user.setStatus",
+          "lineNumber": 42
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "request.status",
+          "lineNumber": 42
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "toResponse",
+          "lineNumber": 43
+        },
+        {
+          "caller": "updateStatus",
+          "callee": "userRepository.save",
+          "lineNumber": 43
+        },
+        {
+          "caller": "updateRole",
+          "callee": "findUser",
+          "lineNumber": 48
+        },
+        {
+          "caller": "updateRole",
+          "callee": "user.getRole",
+          "lineNumber": 49
+        },
+        {
+          "caller": "updateRole",
+          "callee": "request.role",
+          "lineNumber": 50
+        },
+        {
+          "caller": "updateRole",
+          "callee": "userRepository.countByRole",
+          "lineNumber": 51
+        },
+        {
+          "caller": "updateRole",
+          "callee": "new BusinessException",
+          "lineNumber": 52
+        },
+        {
+          "caller": "updateRole",
+          "callee": "user.setRole",
+          "lineNumber": 55
+        },
+        {
+          "caller": "updateRole",
+          "callee": "request.role",
+          "lineNumber": 55
+        },
+        {
+          "caller": "updateRole",
+          "callee": "toResponse",
+          "lineNumber": 56
+        },
+        {
+          "caller": "updateRole",
+          "callee": "userRepository.save",
+          "lineNumber": 56
+        },
+        {
+          "caller": "findUser",
+          "callee": "userRepository.findById(userId).orElseThrow",
+          "lineNumber": 60
+        },
+        {
+          "caller": "findUser",
+          "callee": "userRepository.findById",
+          "lineNumber": 60
+        },
+        {
+          "caller": "findUser",
+          "callee": "new BusinessException",
+          "lineNumber": 61
+        },
+        {
+          "caller": "toResponse",
+          "callee": "new AdminUserResponse",
+          "lineNumber": 65
+        },
+        {
+          "caller": "toResponse",
+          "callee": "user.getId",
+          "lineNumber": 66
+        },
+        {
+          "caller": "toResponse",
+          "callee": "user.getEmail",
+          "lineNumber": 67
+        },
+        {
+          "caller": "toResponse",
+          "callee": "user.getFullName",
+          "lineNumber": 68
+        },
+        {
+          "caller": "toResponse",
+          "callee": "user.getRole",
+          "lineNumber": 69
+        },
+        {
+          "caller": "toResponse",
+          "callee": "user.getStatus",
+          "lineNumber": 70
+        },
+        {
+          "caller": "toResponse",
+          "callee": "user.getCreatedAt",
+          "lineNumber": 71
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "new AdminPageResponse<>",
+          "lineNumber": 76
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getContent",
+          "lineNumber": 77
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getNumber",
+          "lineNumber": 78
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getSize",
+          "lineNumber": 79
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalElements",
+          "lineNumber": 80
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalPages",
+          "lineNumber": 81
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 5,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 110,
+      "nonEmptyLines": 96,
+      "functions": [
+        {
+          "name": "shouldApplySystemTrialQuota",
+          "startLine": 32,
+          "endLine": 34,
+          "params": [
+            "userApiKey"
+          ]
+        },
+        {
+          "name": "consumeTrialQuota",
+          "startLine": 36,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "getCurrentQuota",
+          "startLine": 61,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "readUsed",
+          "startLine": 72,
+          "endLine": 91,
+          "params": [
+            "key"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 93,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "cacheKey",
+          "startLine": 103,
+          "endLine": 105,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "resetAt",
+          "startLine": 107,
+          "endLine": 109,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AiNormalizeQuotaService",
+          "startLine": 20,
+          "endLine": 110,
+          "methods": [
+            "shouldApplySystemTrialQuota",
+            "consumeTrialQuota",
+            "getCurrentQuota",
+            "readUsed",
+            "getCurrentUser",
+            "cacheKey",
+            "resetAt"
+          ],
+          "properties": [
+            "KEY_PREFIX",
+            "stringRedisTemplate",
+            "userRepository",
+            "dailyLimit"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "shouldApplySystemTrialQuota",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "consumeTrialQuota",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentQuota",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "AiNormalizeQuotaService",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "shouldApplySystemTrialQuota",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 33
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "getCurrentUser",
+          "lineNumber": 37
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "cacheKey",
+          "lineNumber": 38
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "user.getId",
+          "lineNumber": 38
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "stringRedisTemplate.opsForValue().increment",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "stringRedisTemplate.expire",
+          "lineNumber": 44
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "Duration.between",
+          "lineNumber": 44
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 44
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "resetAt",
+          "lineNumber": 44
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "new BusinessException",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "new BusinessException",
+          "lineNumber": 54
+        },
+        {
+          "caller": "consumeTrialQuota",
+          "callee": "new BusinessException",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "getCurrentUser",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "readUsed",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "cacheKey",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "user.getId",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "new AiNormalizeQuotaResponse",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "Math.max",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getCurrentQuota",
+          "callee": "resetAt",
+          "lineNumber": 68
+        },
+        {
+          "caller": "readUsed",
+          "callee": "stringRedisTemplate.opsForValue().get",
+          "lineNumber": 75
+        },
+        {
+          "caller": "readUsed",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 75
+        },
+        {
+          "caller": "readUsed",
+          "callee": "new BusinessException",
+          "lineNumber": 77
+        },
+        {
+          "caller": "readUsed",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 83
+        },
+        {
+          "caller": "readUsed",
+          "callee": "Math.max",
+          "lineNumber": 87
+        },
+        {
+          "caller": "readUsed",
+          "callee": "Integer.parseInt",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(authentication.getName()).orElseThrow",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "authentication.getName",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 100
+        },
+        {
+          "caller": "cacheKey",
+          "callee": "LocalDate.now",
+          "lineNumber": 104
+        },
+        {
+          "caller": "resetAt",
+          "callee": "LocalDate.now().plusDays(1).atStartOfDay",
+          "lineNumber": 108
+        },
+        {
+          "caller": "resetAt",
+          "callee": "LocalDate.now().plusDays",
+          "lineNumber": 108
+        },
+        {
+          "caller": "resetAt",
+          "callee": "LocalDate.now",
+          "lineNumber": 108
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 4,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "register",
+          "startLine": 27,
+          "endLine": 33,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "login",
+          "startLine": 35,
+          "endLine": 41,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "refresh",
+          "startLine": 43,
+          "endLine": 46,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 48,
+          "endLine": 52,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthController",
+          "startLine": 19,
+          "endLine": 53,
+          "methods": [
+            "register",
+            "login",
+            "refresh",
+            "logout"
+          ],
+          "properties": [
+            "authService",
+            "refreshTokenService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "register",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "login",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "refresh",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "logout",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "AuthController",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "register",
+          "callee": "ApiResponse.success",
+          "lineNumber": 29
+        },
+        {
+          "caller": "register",
+          "callee": "authService.register",
+          "lineNumber": 31
+        },
+        {
+          "caller": "login",
+          "callee": "ApiResponse.success",
+          "lineNumber": 37
+        },
+        {
+          "caller": "login",
+          "callee": "authService.login",
+          "lineNumber": 39
+        },
+        {
+          "caller": "refresh",
+          "callee": "ApiResponse.success",
+          "lineNumber": 45
+        },
+        {
+          "caller": "refresh",
+          "callee": "refreshTokenService.refresh",
+          "lineNumber": 45
+        },
+        {
+          "caller": "refresh",
+          "callee": "request.refreshToken",
+          "lineNumber": 45
+        },
+        {
+          "caller": "logout",
+          "callee": "refreshTokenService.logout",
+          "lineNumber": 50
+        },
+        {
+          "caller": "logout",
+          "callee": "request.refreshToken",
+          "lineNumber": 50
+        },
+        {
+          "caller": "logout",
+          "callee": "ApiResponse.success",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 41,
+      "classes": [
+        {
+          "name": "RefreshTokenEntity",
+          "startLine": 19,
+          "endLine": 49,
+          "methods": [],
+          "properties": [
+            "id",
+            "userId",
+            "token",
+            "expiredAt",
+            "createdAt",
+            "revoked"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RefreshTokenEntity",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "RefreshTokenRepository",
+          "startLine": 8,
+          "endLine": 11,
+          "methods": [
+            "findByToken"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RefreshTokenRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 70,
+      "functions": [
+        {
+          "name": "register",
+          "startLine": 29,
+          "endLine": 51,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "login",
+          "startLine": 53,
+          "endLine": 81,
+          "params": [
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AuthService",
+          "startLine": 20,
+          "endLine": 82,
+          "methods": [
+            "register",
+            "login"
+          ],
+          "properties": [
+            "userRepository",
+            "passwordEncoder",
+            "jwtTokenProvider",
+            "refreshTokenService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "register",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "login",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "AuthService",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "register",
+          "callee": "userRepository.existsByEmail",
+          "lineNumber": 31
+        },
+        {
+          "caller": "register",
+          "callee": "request.email",
+          "lineNumber": 31
+        },
+        {
+          "caller": "register",
+          "callee": "new BusinessException",
+          "lineNumber": 32
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder()\r\n                .email(request.email())\r\n                .password(passwordEncoder.encode(request.password()))\r\n                .fullName(request.fullName())\r\n                .role(UserRole.USER)\r\n                .status(UserStatus.ACTIVE).build",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder()\r\n                .email(request.email())\r\n                .password(passwordEncoder.encode(request.password()))\r\n                .fullName(request.fullName())\r\n                .role(UserRole.USER).status",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder()\r\n                .email(request.email())\r\n                .password(passwordEncoder.encode(request.password()))\r\n                .fullName(request.fullName()).role",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder()\r\n                .email(request.email())\r\n                .password(passwordEncoder.encode(request.password())).fullName",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder()\r\n                .email(request.email()).password",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder().email",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "UserEntity.builder",
+          "lineNumber": 35
+        },
+        {
+          "caller": "register",
+          "callee": "request.email",
+          "lineNumber": 36
+        },
+        {
+          "caller": "register",
+          "callee": "passwordEncoder.encode",
+          "lineNumber": 37
+        },
+        {
+          "caller": "register",
+          "callee": "request.password",
+          "lineNumber": 37
+        },
+        {
+          "caller": "register",
+          "callee": "request.fullName",
+          "lineNumber": 38
+        },
+        {
+          "caller": "register",
+          "callee": "userRepository.save",
+          "lineNumber": 43
+        },
+        {
+          "caller": "register",
+          "callee": "new RegisterResponse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "register",
+          "callee": "savedUser.getId",
+          "lineNumber": 46
+        },
+        {
+          "caller": "register",
+          "callee": "savedUser.getEmail",
+          "lineNumber": 47
+        },
+        {
+          "caller": "register",
+          "callee": "savedUser.getFullName",
+          "lineNumber": 48
+        },
+        {
+          "caller": "register",
+          "callee": "savedUser.getRole",
+          "lineNumber": 49
+        },
+        {
+          "caller": "login",
+          "callee": "userRepository.findByEmail(request.email()).orElseThrow",
+          "lineNumber": 55
+        },
+        {
+          "caller": "login",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 55
+        },
+        {
+          "caller": "login",
+          "callee": "request.email",
+          "lineNumber": 55
+        },
+        {
+          "caller": "login",
+          "callee": "new BusinessException",
+          "lineNumber": 56
+        },
+        {
+          "caller": "login",
+          "callee": "passwordEncoder.matches",
+          "lineNumber": 58
+        },
+        {
+          "caller": "login",
+          "callee": "request.password",
+          "lineNumber": 58
+        },
+        {
+          "caller": "login",
+          "callee": "user.getPassword",
+          "lineNumber": 58
+        },
+        {
+          "caller": "login",
+          "callee": "new BusinessException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "login",
+          "callee": "user.getStatus",
+          "lineNumber": 62
+        },
+        {
+          "caller": "login",
+          "callee": "new BusinessException",
+          "lineNumber": 63
+        },
+        {
+          "caller": "login",
+          "callee": "jwtTokenProvider.generateAccessToken",
+          "lineNumber": 66
+        },
+        {
+          "caller": "login",
+          "callee": "refreshTokenService.createRefreshToken",
+          "lineNumber": 67
+        },
+        {
+          "caller": "login",
+          "callee": "new LoginResponse",
+          "lineNumber": 69
+        },
+        {
+          "caller": "login",
+          "callee": "jwtTokenProvider.getAccessTokenExpirationSeconds",
+          "lineNumber": 72
+        },
+        {
+          "caller": "login",
+          "callee": "refreshToken.getToken",
+          "lineNumber": 73
+        },
+        {
+          "caller": "login",
+          "callee": "new LoginResponse.UserInfo",
+          "lineNumber": 74
+        },
+        {
+          "caller": "login",
+          "callee": "user.getId",
+          "lineNumber": 75
+        },
+        {
+          "caller": "login",
+          "callee": "user.getEmail",
+          "lineNumber": 76
+        },
+        {
+          "caller": "login",
+          "callee": "user.getFullName",
+          "lineNumber": 77
+        },
+        {
+          "caller": "login",
+          "callee": "user.getRole",
+          "lineNumber": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 82,
+      "nonEmptyLines": 67,
+      "functions": [
+        {
+          "name": "createRefreshToken",
+          "startLine": 29,
+          "endLine": 39,
+          "params": [
+            "user"
+          ]
+        },
+        {
+          "name": "refresh",
+          "startLine": 41,
+          "endLine": 58,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "logout",
+          "startLine": 60,
+          "endLine": 66,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "getValidRefreshToken",
+          "startLine": 68,
+          "endLine": 81,
+          "params": [
+            "token"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RefreshTokenService",
+          "startLine": 18,
+          "endLine": 82,
+          "methods": [
+            "createRefreshToken",
+            "refresh",
+            "logout",
+            "getValidRefreshToken"
+          ],
+          "properties": [
+            "refreshTokenRepository",
+            "userRepository",
+            "jwtTokenProvider",
+            "refreshTokenExpirationDays"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createRefreshToken",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "refresh",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "logout",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "RefreshTokenService",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createRefreshToken",
+          "callee": "RefreshTokenEntity.builder()\r\n                .userId(user.getId())\r\n                .token(UUID.randomUUID().toString())\r\n                .expiredAt(LocalDateTime.now().plusDays(refreshTokenExpirationDays))\r\n                .revoked(false).build",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "RefreshTokenEntity.builder()\r\n                .userId(user.getId())\r\n                .token(UUID.randomUUID().toString())\r\n                .expiredAt(LocalDateTime.now().plusDays(refreshTokenExpirationDays)).revoked",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "RefreshTokenEntity.builder()\r\n                .userId(user.getId())\r\n                .token(UUID.randomUUID().toString()).expiredAt",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "RefreshTokenEntity.builder()\r\n                .userId(user.getId()).token",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "RefreshTokenEntity.builder().userId",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "RefreshTokenEntity.builder",
+          "lineNumber": 31
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "user.getId",
+          "lineNumber": 32
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "UUID.randomUUID().toString",
+          "lineNumber": 33
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "UUID.randomUUID",
+          "lineNumber": 33
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "LocalDateTime.now().plusDays",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createRefreshToken",
+          "callee": "refreshTokenRepository.save",
+          "lineNumber": 38
+        },
+        {
+          "caller": "refresh",
+          "callee": "getValidRefreshToken",
+          "lineNumber": 43
+        },
+        {
+          "caller": "refresh",
+          "callee": "userRepository.findById(refreshToken.getUserId()).orElseThrow",
+          "lineNumber": 44
+        },
+        {
+          "caller": "refresh",
+          "callee": "userRepository.findById",
+          "lineNumber": 44
+        },
+        {
+          "caller": "refresh",
+          "callee": "refreshToken.getUserId",
+          "lineNumber": 44
+        },
+        {
+          "caller": "refresh",
+          "callee": "new BusinessException",
+          "lineNumber": 45
+        },
+        {
+          "caller": "refresh",
+          "callee": "refreshToken.setRevoked",
+          "lineNumber": 47
+        },
+        {
+          "caller": "refresh",
+          "callee": "refreshTokenRepository.save",
+          "lineNumber": 48
+        },
+        {
+          "caller": "refresh",
+          "callee": "createRefreshToken",
+          "lineNumber": 50
+        },
+        {
+          "caller": "refresh",
+          "callee": "jwtTokenProvider.generateAccessToken",
+          "lineNumber": 51
+        },
+        {
+          "caller": "refresh",
+          "callee": "new RefreshTokenResponse",
+          "lineNumber": 53
+        },
+        {
+          "caller": "refresh",
+          "callee": "newRefreshToken.getToken",
+          "lineNumber": 55
+        },
+        {
+          "caller": "refresh",
+          "callee": "jwtTokenProvider.getAccessTokenExpirationSeconds",
+          "lineNumber": 56
+        },
+        {
+          "caller": "logout",
+          "callee": "refreshTokenRepository.findByToken(token).orElseThrow",
+          "lineNumber": 62
+        },
+        {
+          "caller": "logout",
+          "callee": "refreshTokenRepository.findByToken",
+          "lineNumber": 62
+        },
+        {
+          "caller": "logout",
+          "callee": "new BusinessException",
+          "lineNumber": 63
+        },
+        {
+          "caller": "logout",
+          "callee": "refreshToken.setRevoked",
+          "lineNumber": 64
+        },
+        {
+          "caller": "logout",
+          "callee": "refreshTokenRepository.save",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "refreshTokenRepository.findByToken(token).orElseThrow",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "refreshTokenRepository.findByToken",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "new BusinessException",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "refreshToken.isRevoked",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "new BusinessException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "refreshToken.getExpiredAt().isBefore",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "refreshToken.getExpiredAt",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getValidRefreshToken",
+          "callee": "new BusinessException",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 31,
+      "nonEmptyLines": 26,
+      "functions": [
+        {
+          "name": "loadUserByUsername",
+          "startLine": 20,
+          "endLine": 30,
+          "params": [
+            "email"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CustomUserDetailsService",
+          "startLine": 14,
+          "endLine": 31,
+          "methods": [
+            "loadUserByUsername"
+          ],
+          "properties": [
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "loadUserByUsername",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "CustomUserDetailsService",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "loadUserByUsername",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 22
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 22
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "new UsernameNotFoundException",
+          "lineNumber": 23
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "new User",
+          "lineNumber": 25
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "user.getEmail",
+          "lineNumber": 26
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "user.getPassword",
+          "lineNumber": 27
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "Collections.singletonList",
+          "lineNumber": 28
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "new SimpleGrantedAuthority",
+          "lineNumber": 28
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "user.getRole().name",
+          "lineNumber": 28
+        },
+        {
+          "caller": "loadUserByUsername",
+          "callee": "user.getRole",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "JwtTokenProvider",
+          "startLine": 21,
+          "endLine": 27,
+          "params": [
+            "secret",
+            "accessTokenExpirationSeconds"
+          ]
+        },
+        {
+          "name": "generateAccessToken",
+          "startLine": 29,
+          "endLine": 41,
+          "params": [
+            "user"
+          ]
+        },
+        {
+          "name": "validateToken",
+          "startLine": 43,
+          "endLine": 50,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "extractEmail",
+          "startLine": 52,
+          "endLine": 54,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "extractUserId",
+          "startLine": 56,
+          "endLine": 58,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "extractRole",
+          "startLine": 60,
+          "endLine": 62,
+          "params": [
+            "token"
+          ]
+        },
+        {
+          "name": "getAccessTokenExpirationSeconds",
+          "startLine": 64,
+          "endLine": 66,
+          "params": []
+        },
+        {
+          "name": "parseClaims",
+          "startLine": 68,
+          "endLine": 74,
+          "params": [
+            "token"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "JwtTokenProvider",
+          "startLine": 15,
+          "endLine": 75,
+          "methods": [
+            "JwtTokenProvider",
+            "generateAccessToken",
+            "validateToken",
+            "extractEmail",
+            "extractUserId",
+            "extractRole",
+            "getAccessTokenExpirationSeconds",
+            "parseClaims"
+          ],
+          "properties": [
+            "signingKey",
+            "accessTokenExpirationSeconds"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "JwtTokenProvider",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "generateAccessToken",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "validateToken",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "extractEmail",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "extractUserId",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "extractRole",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "getAccessTokenExpirationSeconds",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "JwtTokenProvider",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "JwtTokenProvider",
+          "callee": "Keys.hmacShaKeyFor",
+          "lineNumber": 25
+        },
+        {
+          "caller": "JwtTokenProvider",
+          "callee": "secret.getBytes",
+          "lineNumber": 25
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Instant.now",
+          "lineNumber": 30
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "now.plusSeconds",
+          "lineNumber": 31
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder()\r\n                .subject(user.getEmail())\r\n                .claim(\"userId\", user.getId().toString())\r\n                .claim(\"role\", user.getRole().name())\r\n                .issuedAt(Date.from(now))\r\n                .expiration(Date.from(expiresAt))\r\n                .signWith(signingKey).compact",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder()\r\n                .subject(user.getEmail())\r\n                .claim(\"userId\", user.getId().toString())\r\n                .claim(\"role\", user.getRole().name())\r\n                .issuedAt(Date.from(now))\r\n                .expiration(Date.from(expiresAt)).signWith",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder()\r\n                .subject(user.getEmail())\r\n                .claim(\"userId\", user.getId().toString())\r\n                .claim(\"role\", user.getRole().name())\r\n                .issuedAt(Date.from(now)).expiration",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder()\r\n                .subject(user.getEmail())\r\n                .claim(\"userId\", user.getId().toString())\r\n                .claim(\"role\", user.getRole().name()).issuedAt",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder()\r\n                .subject(user.getEmail())\r\n                .claim(\"userId\", user.getId().toString()).claim",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder()\r\n                .subject(user.getEmail()).claim",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder().subject",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Jwts.builder",
+          "lineNumber": 33
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "user.getEmail",
+          "lineNumber": 34
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "user.getId().toString",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "user.getId",
+          "lineNumber": 35
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "user.getRole().name",
+          "lineNumber": 36
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "user.getRole",
+          "lineNumber": 36
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Date.from",
+          "lineNumber": 37
+        },
+        {
+          "caller": "generateAccessToken",
+          "callee": "Date.from",
+          "lineNumber": 38
+        },
+        {
+          "caller": "validateToken",
+          "callee": "parseClaims",
+          "lineNumber": 45
+        },
+        {
+          "caller": "extractEmail",
+          "callee": "parseClaims(token).getSubject",
+          "lineNumber": 53
+        },
+        {
+          "caller": "extractEmail",
+          "callee": "parseClaims",
+          "lineNumber": 53
+        },
+        {
+          "caller": "extractUserId",
+          "callee": "UUID.fromString",
+          "lineNumber": 57
+        },
+        {
+          "caller": "extractUserId",
+          "callee": "parseClaims(token).get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "extractUserId",
+          "callee": "parseClaims",
+          "lineNumber": 57
+        },
+        {
+          "caller": "extractRole",
+          "callee": "parseClaims(token).get",
+          "lineNumber": 61
+        },
+        {
+          "caller": "extractRole",
+          "callee": "parseClaims",
+          "lineNumber": 61
+        },
+        {
+          "caller": "parseClaims",
+          "callee": "Jwts.parser()\r\n                .setSigningKey(signingKey)\r\n                .build()\r\n                .parseClaimsJws(token).getBody",
+          "lineNumber": 69
+        },
+        {
+          "caller": "parseClaims",
+          "callee": "Jwts.parser()\r\n                .setSigningKey(signingKey)\r\n                .build().parseClaimsJws",
+          "lineNumber": 69
+        },
+        {
+          "caller": "parseClaims",
+          "callee": "Jwts.parser()\r\n                .setSigningKey(signingKey).build",
+          "lineNumber": 69
+        },
+        {
+          "caller": "parseClaims",
+          "callee": "Jwts.parser().setSigningKey",
+          "lineNumber": 69
+        },
+        {
+          "caller": "parseClaims",
+          "callee": "Jwts.parser",
+          "lineNumber": 69
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 8,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/controller/UserController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "getCurrentUser",
+          "startLine": 18,
+          "endLine": 21,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserController",
+          "startLine": 11,
+          "endLine": 22,
+          "methods": [
+            "getCurrentUser"
+          ],
+          "properties": [
+            "userService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getCurrentUser",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "UserController",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getCurrentUser",
+          "callee": "ApiResponse.success",
+          "lineNumber": 20
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userService.getCurrentUser",
+          "lineNumber": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 70,
+      "nonEmptyLines": 57,
+      "classes": [
+        {
+          "name": "UserEntity",
+          "startLine": 22,
+          "endLine": 70,
+          "methods": [],
+          "properties": [
+            "id",
+            "email",
+            "password",
+            "fullName",
+            "avatarUrl",
+            "role",
+            "status",
+            "createdAt",
+            "updatedAt",
+            "createdBy",
+            "updatedBy"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserEntity",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "UserMapper",
+          "startLine": 7,
+          "endLine": 11,
+          "methods": [
+            "toResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserMapper",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 35,
+      "nonEmptyLines": 27,
+      "classes": [
+        {
+          "name": "UserRepository",
+          "startLine": 13,
+          "endLine": 35,
+          "methods": [
+            "findByEmail",
+            "existsByEmail",
+            "countByStatus",
+            "countByRole",
+            "countByCreatedAtBetween",
+            "searchUsers"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "UserRepository",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/service/UserService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 32,
+      "functions": [
+        {
+          "name": "getCurrentUser",
+          "startLine": 22,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 32,
+          "endLine": 38,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "UserService",
+          "startLine": 15,
+          "endLine": 39,
+          "methods": [
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "userRepository",
+            "userMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getCurrentUser",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "UserService",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 26
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userMapper.toResponse",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 37
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "tearDown",
+          "startLine": 32,
+          "endLine": 35,
+          "params": []
+        },
+        {
+          "name": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "startLine": 37,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "startLine": 50,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "getCurrentQuotaReturnsRemainingUsage",
+          "startLine": 63,
+          "endLine": 75,
+          "params": []
+        },
+        {
+          "name": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "startLine": 77,
+          "endLine": 84,
+          "params": []
+        },
+        {
+          "name": "newService",
+          "startLine": 86,
+          "endLine": 91,
+          "params": [
+            "redisTemplate",
+            "userRepository"
+          ]
+        },
+        {
+          "name": "mockUserRepository",
+          "startLine": 93,
+          "endLine": 101,
+          "params": []
+        },
+        {
+          "name": "mockRedisTemplate",
+          "startLine": 103,
+          "endLine": 111,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "setAuthentication",
+          "startLine": 113,
+          "endLine": 117,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AiNormalizeQuotaServiceTest",
+          "startLine": 27,
+          "endLine": 118,
+          "methods": [
+            "tearDown",
+            "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+            "consumeTrialQuotaRejectsUsageOverDailyLimit",
+            "getCurrentQuotaReturnsRemainingUsage",
+            "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+            "newService",
+            "mockUserRepository",
+            "mockRedisTemplate",
+            "setAuthentication"
+          ],
+          "properties": [
+            "USER_ID",
+            "EMAIL"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "tearDown",
+          "callee": "SecurityContextHolder.clearContext",
+          "lineNumber": 34
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 39
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "mockUserRepository",
+          "lineNumber": 40
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "newService",
+          "lineNumber": 41
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "when(redisTemplate.opsForValue().increment(anyString())).thenReturn",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "when",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "redisTemplate.opsForValue().increment",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "anyString",
+          "lineNumber": 42
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "service.consumeTrialQuota",
+          "lineNumber": 44
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "verify(redisTemplate.opsForValue()).increment",
+          "lineNumber": 46
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "verify",
+          "lineNumber": 46
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 46
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "anyString",
+          "lineNumber": 46
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "verify(redisTemplate).expire",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "verify",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "anyString",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consumeTrialQuotaAllowsUsageWithinDailyLimit",
+          "callee": "any",
+          "lineNumber": 47
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 52
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "mockUserRepository",
+          "lineNumber": 53
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "newService",
+          "lineNumber": 54
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "when(redisTemplate.opsForValue().increment(anyString())).thenReturn",
+          "lineNumber": 55
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "when",
+          "lineNumber": 55
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "redisTemplate.opsForValue().increment",
+          "lineNumber": 55
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 55
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "anyString",
+          "lineNumber": 55
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "assertThatThrownBy(service::consumeTrialQuota)\r\n                .isInstanceOf(BusinessException.class)\r\n                .extracting(\"errorCode\").isEqualTo",
+          "lineNumber": 57
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "assertThatThrownBy(service::consumeTrialQuota)\r\n                .isInstanceOf(BusinessException.class).extracting",
+          "lineNumber": 57
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "assertThatThrownBy(service::consumeTrialQuota).isInstanceOf",
+          "lineNumber": 57
+        },
+        {
+          "caller": "consumeTrialQuotaRejectsUsageOverDailyLimit",
+          "callee": "assertThatThrownBy",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "mockUserRepository",
+          "lineNumber": 66
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "newService",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "service.getCurrentQuota",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat(response.dailyLimit()).isEqualTo",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "response.dailyLimit",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat(response.used()).isEqualTo",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "response.used",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat(response.remaining()).isEqualTo",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "response.remaining",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat(response.resetAt()).isNotNull",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "assertThat",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getCurrentQuotaReturnsRemainingUsage",
+          "callee": "response.resetAt",
+          "lineNumber": 74
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "newService",
+          "lineNumber": 79
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 79
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "mockUserRepository",
+          "lineNumber": 79
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "assertThat(service.shouldApplySystemTrialQuota(null)).isTrue",
+          "lineNumber": 81
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "assertThat",
+          "lineNumber": 81
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "service.shouldApplySystemTrialQuota",
+          "lineNumber": 81
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "assertThat(service.shouldApplySystemTrialQuota(\"   \")).isTrue",
+          "lineNumber": 82
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "assertThat",
+          "lineNumber": 82
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "service.shouldApplySystemTrialQuota",
+          "lineNumber": 82
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "assertThat(service.shouldApplySystemTrialQuota(\"gsk_user_key\")).isFalse",
+          "lineNumber": 83
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "assertThat",
+          "lineNumber": 83
+        },
+        {
+          "caller": "shouldApplySystemTrialQuotaOnlyWhenUserApiKeyIsBlank",
+          "callee": "service.shouldApplySystemTrialQuota",
+          "lineNumber": 83
+        },
+        {
+          "caller": "newService",
+          "callee": "setAuthentication",
+          "lineNumber": 87
+        },
+        {
+          "caller": "newService",
+          "callee": "new AiNormalizeQuotaService",
+          "lineNumber": 88
+        },
+        {
+          "caller": "newService",
+          "callee": "ReflectionTestUtils.setField",
+          "lineNumber": 89
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "mock",
+          "lineNumber": 94
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "UserEntity.builder()\r\n                .id(USER_ID)\r\n                .email(EMAIL).build",
+          "lineNumber": 95
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "UserEntity.builder()\r\n                .id(USER_ID).email",
+          "lineNumber": 95
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "UserEntity.builder().id",
+          "lineNumber": 95
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "UserEntity.builder",
+          "lineNumber": 95
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "when(userRepository.findByEmail(EMAIL)).thenReturn",
+          "lineNumber": 99
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "when",
+          "lineNumber": 99
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 99
+        },
+        {
+          "caller": "mockUserRepository",
+          "callee": "Optional.of",
+          "lineNumber": 99
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "mock",
+          "lineNumber": 105
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "mock",
+          "lineNumber": 106
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when(redisTemplate.opsForValue()).thenReturn",
+          "lineNumber": 107
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when",
+          "lineNumber": 107
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 107
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when(valueOperations.get(anyString())).thenReturn",
+          "lineNumber": 108
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when",
+          "lineNumber": 108
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "valueOperations.get",
+          "lineNumber": 108
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "anyString",
+          "lineNumber": 108
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when(redisTemplate.expire(anyString(), any(Duration.class))).thenReturn",
+          "lineNumber": 109
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when",
+          "lineNumber": 109
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "redisTemplate.expire",
+          "lineNumber": 109
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "anyString",
+          "lineNumber": 109
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "any",
+          "lineNumber": 109
+        },
+        {
+          "caller": "setAuthentication",
+          "callee": "SecurityContextHolder.getContext().setAuthentication",
+          "lineNumber": 114
+        },
+        {
+          "caller": "setAuthentication",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 114
+        },
+        {
+          "caller": "setAuthentication",
+          "callee": "new UsernamePasswordAuthenticationToken",
+          "lineNumber": 115
+        },
+        {
+          "caller": "setAuthentication",
+          "callee": "java.util.List.of",
+          "lineNumber": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 0,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    }
+  ]
+}

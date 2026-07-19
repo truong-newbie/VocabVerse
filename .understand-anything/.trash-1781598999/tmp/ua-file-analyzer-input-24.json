@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/export/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/export/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/flashcard/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/quiz/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/dto/.gitkeep": []
+  }
+}

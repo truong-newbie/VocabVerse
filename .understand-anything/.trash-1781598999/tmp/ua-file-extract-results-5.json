@@ -1,0 +1,2945 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "getSettings",
+          "startLine": 28,
+          "endLine": 31,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "updateSettings",
+          "startLine": 33,
+          "endLine": 39,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "patchSettings",
+          "startLine": 41,
+          "endLine": 47,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "disableSettings",
+          "startLine": 49,
+          "endLine": 52,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "resetSchedule",
+          "startLine": 54,
+          "endLine": 57,
+          "params": [
+            "collectionId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectionReviewSettingController",
+          "startLine": 18,
+          "endLine": 58,
+          "methods": [
+            "getSettings",
+            "updateSettings",
+            "patchSettings",
+            "disableSettings",
+            "resetSchedule"
+          ],
+          "properties": [
+            "collectionReviewSettingService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSettings",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "updateSettings",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "patchSettings",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "disableSettings",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "resetSchedule",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionReviewSettingController",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSettings",
+          "callee": "ApiResponse.success",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getSettings",
+          "callee": "collectionReviewSettingService.getSettings",
+          "lineNumber": 30
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "ApiResponse.success",
+          "lineNumber": 38
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "collectionReviewSettingService.updateSettings",
+          "lineNumber": 38
+        },
+        {
+          "caller": "patchSettings",
+          "callee": "ApiResponse.success",
+          "lineNumber": 46
+        },
+        {
+          "caller": "patchSettings",
+          "callee": "collectionReviewSettingService.updateSettings",
+          "lineNumber": 46
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "ApiResponse.success",
+          "lineNumber": 51
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "collectionReviewSettingService.disableSettings",
+          "lineNumber": 51
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "ApiResponse.success",
+          "lineNumber": 56
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "collectionReviewSettingService.resetSchedule",
+          "lineNumber": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 25,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 96,
+      "nonEmptyLines": 80,
+      "classes": [
+        {
+          "name": "CollectionReviewSettingEntity",
+          "startLine": 32,
+          "endLine": 96,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "collection",
+            "enabled",
+            "emailEnabled",
+            "schedulerType",
+            "intervalsJson",
+            "reminderTime",
+            "timezone",
+            "fsrsDesiredRetention",
+            "fsrsMaxIntervalDays",
+            "lastResetAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionReviewSettingEntity",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "CollectionReviewSettingRepository",
+          "startLine": 10,
+          "endLine": 20,
+          "methods": [
+            "findByUserIdAndCollectionId",
+            "findFirstByUserIdAndCollectionIdInAndEnabledTrue",
+            "findAllByUserIdAndCollectionIdIn"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionReviewSettingRepository",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 287,
+      "nonEmptyLines": 262,
+      "functions": [
+        {
+          "name": "getSettings",
+          "startLine": 55,
+          "endLine": 60,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "updateSettings",
+          "startLine": 62,
+          "endLine": 97,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "disableSettings",
+          "startLine": 99,
+          "endLine": 107,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "resetSchedule",
+          "startLine": 109,
+          "endLine": 137,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "resetProgressRows",
+          "startLine": 139,
+          "endLine": 177,
+          "params": [
+            "user",
+            "vocabularyIds",
+            "firstIntervalDays"
+          ]
+        },
+        {
+          "name": "findOrDefault",
+          "startLine": 179,
+          "endLine": 193,
+          "params": [
+            "user",
+            "collection"
+          ]
+        },
+        {
+          "name": "getOwnedCollection",
+          "startLine": 195,
+          "endLine": 198,
+          "params": [
+            "collectionId",
+            "userId"
+          ]
+        },
+        {
+          "name": "validateIntervals",
+          "startLine": 200,
+          "endLine": 210,
+          "params": [
+            "intervals"
+          ]
+        },
+        {
+          "name": "validateTimezone",
+          "startLine": 212,
+          "endLine": 222,
+          "params": [
+            "timezone"
+          ]
+        },
+        {
+          "name": "validateDesiredRetention",
+          "startLine": 224,
+          "endLine": 230,
+          "params": [
+            "desiredRetention"
+          ]
+        },
+        {
+          "name": "validateMaxIntervalDays",
+          "startLine": 232,
+          "endLine": 237,
+          "params": [
+            "maxIntervalDays"
+          ]
+        },
+        {
+          "name": "firstInterval",
+          "startLine": 239,
+          "endLine": 242,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "resetInitialIntervalDays",
+          "startLine": 244,
+          "endLine": 250,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "resolveSchedulerType",
+          "startLine": 252,
+          "endLine": 254,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "toResponse",
+          "startLine": 256,
+          "endLine": 272,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 274,
+          "endLine": 278,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 280,
+          "endLine": 286,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectionReviewSettingService",
+          "startLine": 38,
+          "endLine": 287,
+          "methods": [
+            "getSettings",
+            "updateSettings",
+            "disableSettings",
+            "resetSchedule",
+            "resetProgressRows",
+            "findOrDefault",
+            "getOwnedCollection",
+            "validateIntervals",
+            "validateTimezone",
+            "validateDesiredRetention",
+            "validateMaxIntervalDays",
+            "firstInterval",
+            "resetInitialIntervalDays",
+            "resolveSchedulerType",
+            "toResponse",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "DEFAULT_EASE_FACTOR",
+            "DEFAULT_FSRS_DESIRED_RETENTION",
+            "DEFAULT_FSRS_MAX_INTERVAL_DAYS",
+            "DEFAULT_TIMEZONE",
+            "DEFAULT_REMINDER_TIME",
+            "collectionRepository",
+            "collectionReviewSettingRepository",
+            "collectionVocabularyRepository",
+            "learningProgressRepository",
+            "vocabularyRepository",
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSettings",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "updateSettings",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "disableSettings",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "resetSchedule",
+          "line": 109,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionReviewSettingService",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSettings",
+          "callee": "getCurrentUser",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getSettings",
+          "callee": "getOwnedCollection",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getSettings",
+          "callee": "user.getId",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getSettings",
+          "callee": "toResponse",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getSettings",
+          "callee": "findOrDefault",
+          "lineNumber": 59
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "getCurrentUser",
+          "lineNumber": 67
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "getOwnedCollection",
+          "lineNumber": 68
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "user.getId",
+          "lineNumber": 68
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "findOrDefault",
+          "lineNumber": 69
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.enabled",
+          "lineNumber": 71
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setEnabled",
+          "lineNumber": 72
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.enabled",
+          "lineNumber": 72
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.emailEnabled",
+          "lineNumber": 74
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setEmailEnabled",
+          "lineNumber": 75
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.emailEnabled",
+          "lineNumber": 75
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.schedulerType",
+          "lineNumber": 77
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setSchedulerType",
+          "lineNumber": 78
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.schedulerType",
+          "lineNumber": 78
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.intervals",
+          "lineNumber": 80
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setIntervalsJson",
+          "lineNumber": 81
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "validateIntervals",
+          "lineNumber": 81
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.intervals",
+          "lineNumber": 81
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.reminderTime",
+          "lineNumber": 83
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setReminderTime",
+          "lineNumber": 84
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.reminderTime",
+          "lineNumber": 84
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.timezone",
+          "lineNumber": 86
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setTimezone",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "validateTimezone",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.timezone",
+          "lineNumber": 87
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.fsrsDesiredRetention",
+          "lineNumber": 89
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setFsrsDesiredRetention",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "validateDesiredRetention",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.fsrsDesiredRetention",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.fsrsMaxIntervalDays",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "setting.setFsrsMaxIntervalDays",
+          "lineNumber": 93
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "validateMaxIntervalDays",
+          "lineNumber": 93
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "request.fsrsMaxIntervalDays",
+          "lineNumber": 93
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "toResponse",
+          "lineNumber": 96
+        },
+        {
+          "caller": "updateSettings",
+          "callee": "collectionReviewSettingRepository.save",
+          "lineNumber": 96
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "getCurrentUser",
+          "lineNumber": 101
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "getOwnedCollection",
+          "lineNumber": 102
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "user.getId",
+          "lineNumber": 102
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "findOrDefault",
+          "lineNumber": 103
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "setting.setEnabled",
+          "lineNumber": 104
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "setting.setEmailEnabled",
+          "lineNumber": 105
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "toResponse",
+          "lineNumber": 106
+        },
+        {
+          "caller": "disableSettings",
+          "callee": "collectionReviewSettingRepository.save",
+          "lineNumber": 106
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "getCurrentUser",
+          "lineNumber": 111
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "getOwnedCollection",
+          "lineNumber": 112
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "user.getId",
+          "lineNumber": 112
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "findOrDefault",
+          "lineNumber": 113
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "setting.isEnabled",
+          "lineNumber": 114
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "new BusinessException",
+          "lineNumber": 115
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "collectionVocabularyRepository.findVocabularyIdsByOwnedCollectionId",
+          "lineNumber": 119
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "user.getId",
+          "lineNumber": 120
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "vocabularyIds.isEmpty",
+          "lineNumber": 123
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "resetProgressRows",
+          "lineNumber": 124
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "resetInitialIntervalDays",
+          "lineNumber": 124
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "setting.setLastResetAt",
+          "lineNumber": 126
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 126
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "toResponse",
+          "lineNumber": 127
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "collectionReviewSettingRepository.save",
+          "lineNumber": 127
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "new BusinessException",
+          "lineNumber": 131
+        },
+        {
+          "caller": "resetSchedule",
+          "callee": "ErrorCode.COLLECTION_REVIEW_RESET_FAILED.getMessage",
+          "lineNumber": 133
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "learningProgressRepository\r\n                .findAllByUserIdAndVocabularyIdIn(user.getId(), vocabularyIds)\r\n                .stream().collect",
+          "lineNumber": 140
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "learningProgressRepository\r\n                .findAllByUserIdAndVocabularyIdIn(user.getId(), vocabularyIds).stream",
+          "lineNumber": 140
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "learningProgressRepository.findAllByUserIdAndVocabularyIdIn",
+          "lineNumber": 140
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "user.getId",
+          "lineNumber": 141
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "Collectors.toMap",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.getVocabulary().getId",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.getVocabulary",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "Function.identity",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "vocabularyRepository.findAllById(vocabularyIds)\r\n                .stream().collect",
+          "lineNumber": 144
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "vocabularyRepository.findAllById(vocabularyIds).stream",
+          "lineNumber": 144
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "vocabularyRepository.findAllById",
+          "lineNumber": 144
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "Collectors.toMap",
+          "lineNumber": 146
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "Function.identity",
+          "lineNumber": 146
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "new ArrayList<>",
+          "lineNumber": 148
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LocalDateTime.now().plusDays",
+          "lineNumber": 149
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 149
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "vocabularies.get",
+          "lineNumber": 151
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "vocabulary.getDeletedAt",
+          "lineNumber": 152
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "existingProgress.get",
+          "lineNumber": 155
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .easeFactor(DEFAULT_EASE_FACTOR).build",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary).easeFactor",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user).vocabulary",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LearningProgressEntity.builder().user",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "LearningProgressEntity.builder",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setStatus",
+          "lineNumber": 163
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setRepetitionCount",
+          "lineNumber": 164
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setEaseFactor",
+          "lineNumber": 165
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setLastIntervalDays",
+          "lineNumber": 166
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setLapseCount",
+          "lineNumber": 167
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setReviewCount",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setFsrsDifficulty",
+          "lineNumber": 169
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setFsrsStability",
+          "lineNumber": 170
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setFsrsRetrievability",
+          "lineNumber": 171
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setLastReviewedAt",
+          "lineNumber": 172
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progress.setNextReviewAt",
+          "lineNumber": 173
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "progressRows.add",
+          "lineNumber": 174
+        },
+        {
+          "caller": "resetProgressRows",
+          "callee": "learningProgressRepository.saveAll",
+          "lineNumber": 176
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "collectionReviewSettingRepository.findByUserIdAndCollectionId(user.getId(), collection.getId()).orElseGet",
+          "lineNumber": 180
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "collectionReviewSettingRepository.findByUserIdAndCollectionId",
+          "lineNumber": 180
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "user.getId",
+          "lineNumber": 180
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "collection.getId",
+          "lineNumber": 180
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "collectionReviewSettingRepository.save",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true)\r\n                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL)\r\n                        .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS)\r\n                        .reminderTime(DEFAULT_REMINDER_TIME)\r\n                        .timezone(DEFAULT_TIMEZONE)\r\n                        .fsrsDesiredRetention(DEFAULT_FSRS_DESIRED_RETENTION)\r\n                        .fsrsMaxIntervalDays(DEFAULT_FSRS_MAX_INTERVAL_DAYS).build",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true)\r\n                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL)\r\n                        .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS)\r\n                        .reminderTime(DEFAULT_REMINDER_TIME)\r\n                        .timezone(DEFAULT_TIMEZONE)\r\n                        .fsrsDesiredRetention(DEFAULT_FSRS_DESIRED_RETENTION).fsrsMaxIntervalDays",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true)\r\n                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL)\r\n                        .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS)\r\n                        .reminderTime(DEFAULT_REMINDER_TIME)\r\n                        .timezone(DEFAULT_TIMEZONE).fsrsDesiredRetention",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true)\r\n                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL)\r\n                        .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS)\r\n                        .reminderTime(DEFAULT_REMINDER_TIME).timezone",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true)\r\n                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL)\r\n                        .intervalsJson(LearningProgressService.DEFAULT_REVIEW_INTERVAL_DAYS).reminderTime",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true)\r\n                        .schedulerType(ReviewSchedulerType.FIXED_INTERVAL).intervalsJson",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true)\r\n                        .emailEnabled(true).schedulerType",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection)\r\n                        .enabled(true).emailEnabled",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user)\r\n                        .collection(collection).enabled",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                        .user(user).collection",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder().user",
+          "lineNumber": 181
+        },
+        {
+          "caller": "findOrDefault",
+          "callee": "CollectionReviewSettingEntity.builder",
+          "lineNumber": 181
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(collectionId, userId).orElseThrow",
+          "lineNumber": 196
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 196
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 197
+        },
+        {
+          "caller": "validateIntervals",
+          "callee": "intervals.isEmpty",
+          "lineNumber": 201
+        },
+        {
+          "caller": "validateIntervals",
+          "callee": "new BusinessException",
+          "lineNumber": 202
+        },
+        {
+          "caller": "validateIntervals",
+          "callee": "new BusinessException",
+          "lineNumber": 206
+        },
+        {
+          "caller": "validateIntervals",
+          "callee": "List.copyOf",
+          "lineNumber": 209
+        },
+        {
+          "caller": "validateTimezone",
+          "callee": "timezone.isBlank",
+          "lineNumber": 213
+        },
+        {
+          "caller": "validateTimezone",
+          "callee": "ZoneId.of",
+          "lineNumber": 217
+        },
+        {
+          "caller": "validateTimezone",
+          "callee": "timezone.trim",
+          "lineNumber": 217
+        },
+        {
+          "caller": "validateTimezone",
+          "callee": "timezone.trim",
+          "lineNumber": 218
+        },
+        {
+          "caller": "validateTimezone",
+          "callee": "new BusinessException",
+          "lineNumber": 220
+        },
+        {
+          "caller": "validateDesiredRetention",
+          "callee": "desiredRetention.compareTo",
+          "lineNumber": 225
+        },
+        {
+          "caller": "validateDesiredRetention",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 225
+        },
+        {
+          "caller": "validateDesiredRetention",
+          "callee": "desiredRetention.compareTo",
+          "lineNumber": 226
+        },
+        {
+          "caller": "validateDesiredRetention",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 226
+        },
+        {
+          "caller": "validateDesiredRetention",
+          "callee": "new BusinessException",
+          "lineNumber": 227
+        },
+        {
+          "caller": "validateDesiredRetention",
+          "callee": "desiredRetention.setScale",
+          "lineNumber": 229
+        },
+        {
+          "caller": "validateMaxIntervalDays",
+          "callee": "new BusinessException",
+          "lineNumber": 234
+        },
+        {
+          "caller": "firstInterval",
+          "callee": "validateIntervals",
+          "lineNumber": 240
+        },
+        {
+          "caller": "firstInterval",
+          "callee": "setting.getIntervalsJson",
+          "lineNumber": 240
+        },
+        {
+          "caller": "firstInterval",
+          "callee": "intervals.get",
+          "lineNumber": 241
+        },
+        {
+          "caller": "resetInitialIntervalDays",
+          "callee": "resolveSchedulerType",
+          "lineNumber": 245
+        },
+        {
+          "caller": "resetInitialIntervalDays",
+          "callee": "firstInterval",
+          "lineNumber": 249
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.getSchedulerType",
+          "lineNumber": 253
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.getSchedulerType",
+          "lineNumber": 253
+        },
+        {
+          "caller": "toResponse",
+          "callee": "new CollectionReviewSettingResponse",
+          "lineNumber": 257
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getId",
+          "lineNumber": 258
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getCollection().getId",
+          "lineNumber": 259
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getCollection",
+          "lineNumber": 259
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.isEnabled",
+          "lineNumber": 260
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.isEmailEnabled",
+          "lineNumber": 261
+        },
+        {
+          "caller": "toResponse",
+          "callee": "resolveSchedulerType",
+          "lineNumber": 262
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getIntervalsJson",
+          "lineNumber": 263
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getReminderTime",
+          "lineNumber": 264
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getTimezone",
+          "lineNumber": 265
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getFsrsDesiredRetention",
+          "lineNumber": 266
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getFsrsMaxIntervalDays",
+          "lineNumber": 267
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getLastResetAt",
+          "lineNumber": 268
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getCreatedAt",
+          "lineNumber": 269
+        },
+        {
+          "caller": "toResponse",
+          "callee": "setting.getUpdatedAt",
+          "lineNumber": 270
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 275
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 276
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 276
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 277
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 281
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 281
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 282
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 283
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 285
+        }
+      ],
+      "metrics": {
+        "importCount": 18,
+        "exportCount": 5,
+        "functionCount": 17,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 44,
+      "nonEmptyLines": 37,
+      "functions": [
+        {
+          "name": "getSummary",
+          "startLine": 23,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "getLearningStatus",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "getReviewDue",
+          "startLine": 33,
+          "endLine": 38,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getRecentActivity",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardController",
+          "startLine": 16,
+          "endLine": 44,
+          "methods": [
+            "getSummary",
+            "getLearningStatus",
+            "getReviewDue",
+            "getRecentActivity"
+          ],
+          "properties": [
+            "dashboardService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSummary",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "getLearningStatus",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getReviewDue",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "getRecentActivity",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "DashboardController",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSummary",
+          "callee": "ApiResponse.success",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getSummary",
+          "callee": "dashboardService.getSummary",
+          "lineNumber": 25
+        },
+        {
+          "caller": "getLearningStatus",
+          "callee": "ApiResponse.success",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getLearningStatus",
+          "callee": "dashboardService.getLearningStatus",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "ApiResponse.success",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "dashboardService.getReviewDue",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "ApiResponse.success",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "dashboardService.getRecentActivity",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 180,
+      "nonEmptyLines": 162,
+      "functions": [
+        {
+          "name": "getSummary",
+          "startLine": 60,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "getLearningStatus",
+          "startLine": 80,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "getReviewDue",
+          "startLine": 85,
+          "endLine": 100,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getRecentActivity",
+          "startLine": 102,
+          "endLine": 115,
+          "params": []
+        },
+        {
+          "name": "getLearningStatusStats",
+          "startLine": 117,
+          "endLine": 124,
+          "params": [
+            "userId"
+          ]
+        },
+        {
+          "name": "toDueItemResponse",
+          "startLine": 126,
+          "endLine": 140,
+          "params": [
+            "userId",
+            "progress"
+          ]
+        },
+        {
+          "name": "toHistoryResponse",
+          "startLine": 142,
+          "endLine": 153,
+          "params": [
+            "history"
+          ]
+        },
+        {
+          "name": "firstExampleSentence",
+          "startLine": 155,
+          "endLine": 160,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "firstCollectionName",
+          "startLine": 162,
+          "endLine": 165,
+          "params": [
+            "userId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 167,
+          "endLine": 171,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 173,
+          "endLine": 179,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DashboardService",
+          "startLine": 42,
+          "endLine": 180,
+          "methods": [
+            "getSummary",
+            "getLearningStatus",
+            "getReviewDue",
+            "getRecentActivity",
+            "getLearningStatusStats",
+            "toDueItemResponse",
+            "toHistoryResponse",
+            "firstExampleSentence",
+            "firstCollectionName",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "RECENT_ACTIVITY_LIMIT",
+            "vocabularyRepository",
+            "collectionRepository",
+            "learningProgressRepository",
+            "reviewHistoryRepository",
+            "flashcardSessionRepository",
+            "quizSessionRepository",
+            "typingSessionRepository",
+            "notificationRepository",
+            "userRepository",
+            "collectionVocabularyRepository",
+            "notificationMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getSummary",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "getLearningStatus",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "getReviewDue",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "getRecentActivity",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "DashboardService",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getSummary",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getSummary",
+          "callee": "getCurrentUser",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getSummary",
+          "callee": "getLearningStatusStats",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getSummary",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getSummary",
+          "callee": "new DashboardSummaryResponse",
+          "lineNumber": 66
+        },
+        {
+          "caller": "getSummary",
+          "callee": "vocabularyRepository.countByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getSummary",
+          "callee": "collectionRepository.countByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getSummary",
+          "callee": "learningStatusStats.newCount",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getSummary",
+          "callee": "learningStatusStats.learningCount",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getSummary",
+          "callee": "learningStatusStats.reviewingCount",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getSummary",
+          "callee": "learningStatusStats.masteredCount",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getSummary",
+          "callee": "learningProgressRepository.countDueReviewsByUserId",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getSummary",
+          "callee": "flashcardSessionRepository.countByUserIdAndStatus",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getSummary",
+          "callee": "quizSessionRepository.countByUserIdAndStatus",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getSummary",
+          "callee": "typingSessionRepository.countByUserIdAndStatus",
+          "lineNumber": 76
+        },
+        {
+          "caller": "getLearningStatus",
+          "callee": "getLearningStatusStats",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getLearningStatus",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getLearningStatus",
+          "callee": "getCurrentUser",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "getCurrentUser",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "new ReviewDueResponse",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "learningProgressRepository.countDueReviewsByUserId",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "duePage.map(progress -> toDueItemResponse(userId, progress)).getContent",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "duePage.map",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "toDueItemResponse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "duePage.getNumber",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "duePage.getSize",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "duePage.getTotalElements",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getReviewDue",
+          "callee": "duePage.getTotalPages",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "getCurrentUser",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "PageRequest.of",
+          "lineNumber": 105
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "reviewHistoryRepository.findAllByUserIdOrderByReviewedAtDesc",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "new RecentActivityResponse",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "reviewHistory.map(this::toHistoryResponse).getContent",
+          "lineNumber": 110
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "reviewHistory.map",
+          "lineNumber": 110
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "notificationRepository.findAllByUserIdOrderByCreatedAtDesc(userId, recentPage)\r\n                        .map(notificationMapper::toResponse).getContent",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "notificationRepository.findAllByUserIdOrderByCreatedAtDesc(userId, recentPage).map",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getRecentActivity",
+          "callee": "notificationRepository.findAllByUserIdOrderByCreatedAtDesc",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getLearningStatusStats",
+          "callee": "new LearningStatusStatsResponse",
+          "lineNumber": 118
+        },
+        {
+          "caller": "getLearningStatusStats",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 119
+        },
+        {
+          "caller": "getLearningStatusStats",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 120
+        },
+        {
+          "caller": "getLearningStatusStats",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 121
+        },
+        {
+          "caller": "getLearningStatusStats",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 122
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getVocabulary",
+          "lineNumber": 127
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "new ReviewDueItemResponse",
+          "lineNumber": 128
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 129
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 130
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 131
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 132
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getPartOfSpeech",
+          "lineNumber": 133
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "firstExampleSentence",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getStatus",
+          "lineNumber": 135
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getNextReviewAt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 137
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "firstCollectionName",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getVocabulary",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "new ReviewHistoryResponse",
+          "lineNumber": 144
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 145
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 146
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getResult",
+          "lineNumber": 147
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getReviewedAt",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getNextReviewAt",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getPreviousStatus",
+          "lineNumber": 150
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getNewStatus",
+          "lineNumber": 151
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 156
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples().isEmpty",
+          "lineNumber": 156
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 156
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples().get(0).getEn",
+          "lineNumber": 159
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples().get",
+          "lineNumber": 159
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 159
+        },
+        {
+          "caller": "firstCollectionName",
+          "callee": "collectionVocabularyRepository.findOwnedCollectionTitlesByVocabularyId",
+          "lineNumber": 163
+        },
+        {
+          "caller": "firstCollectionName",
+          "callee": "titles.isEmpty",
+          "lineNumber": 164
+        },
+        {
+          "caller": "firstCollectionName",
+          "callee": "titles.get",
+          "lineNumber": 164
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 168
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 169
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 169
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 170
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 174
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 174
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 175
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 176
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 178
+        }
+      ],
+      "metrics": {
+        "importCount": 27,
+        "exportCount": 5,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "getCurrentUserProgressSummary",
+          "startLine": 25,
+          "endLine": 28,
+          "params": []
+        },
+        {
+          "name": "getCurrentUserProgress",
+          "startLine": 30,
+          "endLine": 35,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getProgressDetail",
+          "startLine": 37,
+          "endLine": 40,
+          "params": [
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "initializeProgress",
+          "startLine": 42,
+          "endLine": 45,
+          "params": [
+            "vocabularyId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LearningProgressController",
+          "startLine": 18,
+          "endLine": 46,
+          "methods": [
+            "getCurrentUserProgressSummary",
+            "getCurrentUserProgress",
+            "getProgressDetail",
+            "initializeProgress"
+          ],
+          "properties": [
+            "learningProgressService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getCurrentUserProgressSummary",
+          "line": 25,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentUserProgress",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getProgressDetail",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "initializeProgress",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "LearningProgressController",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "ApiResponse.success",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "learningProgressService.getCurrentUserProgressSummary",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "ApiResponse.success",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "learningProgressService.getCurrentUserProgress",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "learningProgressService.getProgressDetail",
+          "lineNumber": 39
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "ApiResponse.success",
+          "lineNumber": 44
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressService.initializeProgress",
+          "lineNumber": 44
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 25,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 79,
+      "classes": [
+        {
+          "name": "LearningProgressEntity",
+          "startLine": 28,
+          "endLine": 97,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "vocabulary",
+            "status",
+            "repetitionCount",
+            "easeFactor",
+            "lastIntervalDays",
+            "lapseCount",
+            "reviewCount",
+            "fsrsDifficulty",
+            "fsrsStability",
+            "fsrsRetrievability",
+            "nextReviewAt",
+            "lastReviewedAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "LearningProgressEntity",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "LearningProgressMapper",
+          "startLine": 8,
+          "endLine": 15,
+          "methods": [
+            "toResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LearningProgressMapper",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 100,
+      "nonEmptyLines": 88,
+      "classes": [
+        {
+          "name": "LearningProgressRepository",
+          "startLine": 16,
+          "endLine": 100,
+          "methods": [
+            "findAllByUserId",
+            "findByUserIdAndVocabularyId",
+            "findAllByUserIdAndVocabularyIdIn",
+            "countByUserIdAndStatus",
+            "findAllByUserIdAndNextReviewAtLessThanEqual",
+            "findAllByUserIdAndNextReviewAtLessThanEqual",
+            "findDistinctUsersWithDueReviews",
+            "countDueReviewsByUserId",
+            "countDueReviewsByUserIdUntil",
+            "countDueReviewsUntil"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "LearningProgressRepository",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 118,
+      "nonEmptyLines": 102,
+      "functions": [
+        {
+          "name": "getCurrentUserProgressSummary",
+          "startLine": 39,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "getCurrentUserProgress",
+          "startLine": 50,
+          "endLine": 64,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getProgressDetail",
+          "startLine": 66,
+          "endLine": 74,
+          "params": [
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "initializeProgress",
+          "startLine": 76,
+          "endLine": 88,
+          "params": [
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "createInitialProgress",
+          "startLine": 90,
+          "endLine": 103,
+          "params": [
+            "user",
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 105,
+          "endLine": 109,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 111,
+          "endLine": 117,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "LearningProgressService",
+          "startLine": 27,
+          "endLine": 118,
+          "methods": [
+            "getCurrentUserProgressSummary",
+            "getCurrentUserProgress",
+            "getProgressDetail",
+            "initializeProgress",
+            "createInitialProgress",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "DEFAULT_REVIEW_INTERVAL_DAYS",
+            "DEFAULT_EASE_FACTOR",
+            "learningProgressRepository",
+            "vocabularyRepository",
+            "userRepository",
+            "learningProgressMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DEFAULT_REVIEW_INTERVAL_DAYS",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentUserProgressSummary",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "getCurrentUserProgress",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getProgressDetail",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "initializeProgress",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "LearningProgressService",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "getCurrentUser",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "new LearningProgressSummaryResponse",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getCurrentUserProgressSummary",
+          "callee": "learningProgressRepository.countByUserIdAndStatus",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "getCurrentUser",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "learningProgressRepository\r\n                .findAllByUserId(userId, pageable).map",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "learningProgressRepository.findAllByUserId",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "new LearningProgressPageResponse",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "progressPage.getContent",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "progressPage.getNumber",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "progressPage.getSize",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "progressPage.getTotalElements",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getCurrentUserProgress",
+          "callee": "progressPage.getTotalPages",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "getCurrentUser",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "learningProgressRepository\r\n                .findByUserIdAndVocabularyId(userId, vocabularyId).orElseThrow",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "learningProgressRepository.findByUserIdAndVocabularyId",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "new BusinessException",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getProgressDetail",
+          "callee": "learningProgressMapper.toResponse",
+          "lineNumber": 73
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "getCurrentUser",
+          "lineNumber": 78
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "vocabularyRepository\r\n                .findByIdAndOwnerIdAndDeletedAtIsNull(vocabularyId, user.getId()).orElseThrow",
+          "lineNumber": 79
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "vocabularyRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 79
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "user.getId",
+          "lineNumber": 80
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "new BusinessException",
+          "lineNumber": 81
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressRepository\r\n                .findByUserIdAndVocabularyId(user.getId(), vocabularyId).orElseGet",
+          "lineNumber": 83
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressRepository.findByUserIdAndVocabularyId",
+          "lineNumber": 83
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "user.getId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "createInitialProgress",
+          "lineNumber": 85
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressMapper.toResponse",
+          "lineNumber": 87
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary)\r\n                .status(LearningStatus.NEW)\r\n                .repetitionCount(0)\r\n                .easeFactor(DEFAULT_EASE_FACTOR)\r\n                .lastIntervalDays(0)\r\n                .lapseCount(0)\r\n                .reviewCount(0).build",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary)\r\n                .status(LearningStatus.NEW)\r\n                .repetitionCount(0)\r\n                .easeFactor(DEFAULT_EASE_FACTOR)\r\n                .lastIntervalDays(0)\r\n                .lapseCount(0).reviewCount",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary)\r\n                .status(LearningStatus.NEW)\r\n                .repetitionCount(0)\r\n                .easeFactor(DEFAULT_EASE_FACTOR)\r\n                .lastIntervalDays(0).lapseCount",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary)\r\n                .status(LearningStatus.NEW)\r\n                .repetitionCount(0)\r\n                .easeFactor(DEFAULT_EASE_FACTOR).lastIntervalDays",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary)\r\n                .status(LearningStatus.NEW)\r\n                .repetitionCount(0).easeFactor",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary)\r\n                .status(LearningStatus.NEW).repetitionCount",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user)\r\n                .vocabulary(vocabulary).status",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                .user(user).vocabulary",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder().user",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "LearningProgressEntity.builder",
+          "lineNumber": 91
+        },
+        {
+          "caller": "createInitialProgress",
+          "callee": "learningProgressRepository.save",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 106
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 107
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 107
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 108
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 113
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 114
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 13,
+        "exportCount": 6,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 57,
+      "nonEmptyLines": 50,
+      "functions": [
+        {
+          "name": "submitReview",
+          "startLine": 31,
+          "endLine": 37,
+          "params": [
+            "vocabularyId",
+            "request"
+          ]
+        },
+        {
+          "name": "getTodayReviews",
+          "startLine": 39,
+          "endLine": 44,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getReviewHistory",
+          "startLine": 46,
+          "endLine": 51,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getReviewStats",
+          "startLine": 53,
+          "endLine": 56,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReviewController",
+          "startLine": 23,
+          "endLine": 57,
+          "methods": [
+            "submitReview",
+            "getTodayReviews",
+            "getReviewHistory",
+            "getReviewStats"
+          ],
+          "properties": [
+            "reviewService",
+            "reviewStatisticsService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "submitReview",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "getTodayReviews",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "getReviewHistory",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "getReviewStats",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "ReviewController",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "submitReview",
+          "callee": "ApiResponse.success",
+          "lineNumber": 36
+        },
+        {
+          "caller": "submitReview",
+          "callee": "reviewService.submitReview",
+          "lineNumber": 36
+        },
+        {
+          "caller": "submitReview",
+          "callee": "request.result",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "ApiResponse.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "reviewService.getTodayReviews",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "ApiResponse.success",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "reviewService.getReviewHistory",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getReviewStats",
+          "callee": "ApiResponse.success",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getReviewStats",
+          "callee": "reviewStatisticsService.getCurrentUserStats",
+          "lineNumber": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/collection/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/config/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "language": "java",
+      "sizeLines": 107,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "language": "java",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/constant/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/response/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "language": "java",
+      "sizeLines": 59,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/util/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/validator/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/client/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/collection/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/collection/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/collection/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/config/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/config/OpenApiConfig.java": [],
+    "src/main/java/com/vocabverse/common/config/SecurityConfig.java": [
+      "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java"
+    ],
+    "src/main/java/com/vocabverse/common/constant/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/response/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/security/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java": [],
+    "src/main/java/com/vocabverse/common/util/.gitkeep": [],
+    "src/main/java/com/vocabverse/common/validator/.gitkeep": [],
+    "src/main/java/com/vocabverse/dictionary/.gitkeep": [],
+    "src/main/java/com/vocabverse/dictionary/client/.gitkeep": [],
+    "src/main/java/com/vocabverse/dictionary/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/dictionary/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/export/mapper/.gitkeep": []
+  }
+}

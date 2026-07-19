@@ -1,0 +1,2371 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "type": "file",
+      "name": "AdminCollectionController.java",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "summary": "AdminCollectionController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 11 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:AdminCollectionController",
+      "type": "class",
+      "name": "AdminCollectionController",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        30,
+        103
+      ],
+      "summary": "AdminCollectionController định nghĩa cấu trúc hoặc hành vi chính trong AdminCollectionController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:listCollections",
+      "type": "function",
+      "name": "listCollections",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "listCollections triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:getCollection",
+      "type": "function",
+      "name": "getCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        46,
+        49
+      ],
+      "summary": "getCollection triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:updateVisibility",
+      "type": "function",
+      "name": "updateVisibility",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        51,
+        57
+      ],
+      "summary": "updateVisibility triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:moderateCollection",
+      "type": "function",
+      "name": "moderateCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        59,
+        65
+      ],
+      "summary": "moderateCollection triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:deleteCollection",
+      "type": "function",
+      "name": "deleteCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        67,
+        71
+      ],
+      "summary": "deleteCollection triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:listPublicCollections",
+      "type": "function",
+      "name": "listPublicCollections",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        73,
+        78
+      ],
+      "summary": "listPublicCollections triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:hidePublicCollection",
+      "type": "function",
+      "name": "hidePublicCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        80,
+        86
+      ],
+      "summary": "hidePublicCollection triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:postHidePublicCollection",
+      "type": "function",
+      "name": "postHidePublicCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        88,
+        94
+      ],
+      "summary": "postHidePublicCollection triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:getPublicCollectionVocabularies",
+      "type": "function",
+      "name": "getPublicCollectionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "lineRange": [
+        96,
+        102
+      ],
+      "summary": "getPublicCollectionVocabularies triển khai một thao tác đáng chú ý trong AdminCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "type": "file",
+      "name": "AdminHidePublicCollectionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "summary": "AdminHidePublicCollectionRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "type": "file",
+      "name": "AdminModerateCollectionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "summary": "AdminModerateCollectionRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "type": "file",
+      "name": "AdminUpdateCollectionVisibilityRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "summary": "AdminUpdateCollectionVisibilityRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "type": "file",
+      "name": "AdminCollectionModerationResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "summary": "AdminCollectionModerationResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "type": "file",
+      "name": "AdminCollectionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "summary": "AdminCollectionResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "type": "file",
+      "name": "AdminPublicCollectionHideResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "summary": "AdminPublicCollectionHideResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "type": "file",
+      "name": "AdminPublicVocabularyResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "summary": "AdminPublicVocabularyResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "type": "file",
+      "name": "PublicCollectionModerationEntity.java",
+      "filePath": "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "summary": "PublicCollectionModerationEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java:PublicCollectionModerationEntity",
+      "type": "class",
+      "name": "PublicCollectionModerationEntity",
+      "filePath": "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "lineRange": [
+        23,
+        51
+      ],
+      "summary": "PublicCollectionModerationEntity định nghĩa cấu trúc hoặc hành vi chính trong PublicCollectionModerationEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "type": "file",
+      "name": "PublicCollectionModerationRepository.java",
+      "filePath": "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "summary": "PublicCollectionModerationRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java:PublicCollectionModerationRepository",
+      "type": "class",
+      "name": "PublicCollectionModerationRepository",
+      "filePath": "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "lineRange": [
+        7,
+        8
+      ],
+      "summary": "PublicCollectionModerationRepository định nghĩa cấu trúc hoặc hành vi chính trong PublicCollectionModerationRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "type": "file",
+      "name": "AdminCollectionService.java",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "summary": "AdminCollectionService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 14 function, 20 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:AdminCollectionService",
+      "type": "class",
+      "name": "AdminCollectionService",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        34,
+        218
+      ],
+      "summary": "AdminCollectionService định nghĩa cấu trúc hoặc hành vi chính trong AdminCollectionService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:listCollections",
+      "type": "function",
+      "name": "listCollections",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        43,
+        53
+      ],
+      "summary": "listCollections triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:getCollection",
+      "type": "function",
+      "name": "getCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        55,
+        58
+      ],
+      "summary": "getCollection triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:updateVisibility",
+      "type": "function",
+      "name": "updateVisibility",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        60,
+        68
+      ],
+      "summary": "updateVisibility triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:moderateCollection",
+      "type": "function",
+      "name": "moderateCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        70,
+        95
+      ],
+      "summary": "moderateCollection triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:deleteCollection",
+      "type": "function",
+      "name": "deleteCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        97,
+        106
+      ],
+      "summary": "deleteCollection triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:listPublicCollections",
+      "type": "function",
+      "name": "listPublicCollections",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        108,
+        111
+      ],
+      "summary": "listPublicCollections triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:hidePublicCollectionAsCollection",
+      "type": "function",
+      "name": "hidePublicCollectionAsCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        113,
+        120
+      ],
+      "summary": "hidePublicCollectionAsCollection triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:hidePublicCollection",
+      "type": "function",
+      "name": "hidePublicCollection",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        122,
+        140
+      ],
+      "summary": "hidePublicCollection triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:getPublicCollectionVocabularies",
+      "type": "function",
+      "name": "getPublicCollectionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        142,
+        165
+      ],
+      "summary": "getPublicCollectionVocabularies triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:toResponse",
+      "type": "function",
+      "name": "toResponse",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "lineRange": [
+        181,
+        199
+      ],
+      "summary": "toResponse triển khai một thao tác đáng chú ý trong AdminCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "type": "file",
+      "name": "CollectionController.java",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "summary": "CollectionController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/controller/CollectionController.java:CollectionController",
+      "type": "class",
+      "name": "CollectionController",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        23,
+        69
+      ],
+      "summary": "CollectionController định nghĩa cấu trúc hoặc hành vi chính trong CollectionController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:createCollection",
+      "type": "function",
+      "name": "createCollection",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        30,
+        35
+      ],
+      "summary": "createCollection triển khai một thao tác đáng chú ý trong CollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getCollections",
+      "type": "function",
+      "name": "getCollections",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        37,
+        42
+      ],
+      "summary": "getCollections triển khai một thao tác đáng chú ý trong CollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getMyCollections",
+      "type": "function",
+      "name": "getMyCollections",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        44,
+        49
+      ],
+      "summary": "getMyCollections triển khai một thao tác đáng chú ý trong CollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getCollectionDetail",
+      "type": "function",
+      "name": "getCollectionDetail",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        51,
+        54
+      ],
+      "summary": "getCollectionDetail triển khai một thao tác đáng chú ý trong CollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:updateCollection",
+      "type": "function",
+      "name": "updateCollection",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        56,
+        62
+      ],
+      "summary": "updateCollection triển khai một thao tác đáng chú ý trong CollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:deleteCollection",
+      "type": "function",
+      "name": "deleteCollection",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "lineRange": [
+        64,
+        68
+      ],
+      "summary": "deleteCollection triển khai một thao tác đáng chú ý trong CollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "type": "file",
+      "name": "CreateCollectionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "summary": "CreateCollectionRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "type": "file",
+      "name": "UpdateCollectionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "summary": "UpdateCollectionRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "type": "file",
+      "name": "CollectionPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "summary": "CollectionPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "type": "file",
+      "name": "CollectionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "summary": "CollectionResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "file",
+      "name": "CollectionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "summary": "CollectionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java:CollectionEntity",
+      "type": "class",
+      "name": "CollectionEntity",
+      "filePath": "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "lineRange": [
+        26,
+        73
+      ],
+      "summary": "CollectionEntity định nghĩa cấu trúc hoặc hành vi chính trong CollectionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "file",
+      "name": "CollectionVisibility.java",
+      "filePath": "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "summary": "CollectionVisibility.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "type": "file",
+      "name": "CollectionMapper.java",
+      "filePath": "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "summary": "CollectionMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java:CollectionMapper",
+      "type": "class",
+      "name": "CollectionMapper",
+      "filePath": "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "lineRange": [
+        11,
+        51
+      ],
+      "summary": "CollectionMapper định nghĩa cấu trúc hoặc hành vi chính trong CollectionMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "file",
+      "name": "CollectionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "summary": "CollectionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java:CollectionRepository",
+      "type": "class",
+      "name": "CollectionRepository",
+      "filePath": "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "lineRange": [
+        13,
+        46
+      ],
+      "summary": "CollectionRepository định nghĩa cấu trúc hoặc hành vi chính trong CollectionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "type": "file",
+      "name": "CollectionService.java",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "summary": "CollectionService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 10 function, 13 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/service/CollectionService.java:CollectionService",
+      "type": "class",
+      "name": "CollectionService",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "lineRange": [
+        26,
+        125
+      ],
+      "summary": "CollectionService định nghĩa cấu trúc hoặc hành vi chính trong CollectionService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:createCollection",
+      "type": "function",
+      "name": "createCollection",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "lineRange": [
+        35,
+        46
+      ],
+      "summary": "createCollection triển khai một thao tác đáng chú ý trong CollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:getMyCollections",
+      "type": "function",
+      "name": "getMyCollections",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "lineRange": [
+        48,
+        56
+      ],
+      "summary": "getMyCollections triển khai một thao tác đáng chú ý trong CollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:getCollectionDetail",
+      "type": "function",
+      "name": "getCollectionDetail",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "lineRange": [
+        58,
+        64
+      ],
+      "summary": "getCollectionDetail triển khai một thao tác đáng chú ý trong CollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:updateCollection",
+      "type": "function",
+      "name": "updateCollection",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "lineRange": [
+        66,
+        77
+      ],
+      "summary": "updateCollection triển khai một thao tác đáng chú ý trong CollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:deleteCollection",
+      "type": "function",
+      "name": "deleteCollection",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "lineRange": [
+        79,
+        88
+      ],
+      "summary": "deleteCollection triển khai một thao tác đáng chú ý trong CollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "type": "file",
+      "name": "ExportController.java",
+      "filePath": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "summary": "ExportController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/export/controller/ExportController.java:ExportController",
+      "type": "class",
+      "name": "ExportController",
+      "filePath": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "lineRange": [
+        16,
+        45
+      ],
+      "summary": "ExportController định nghĩa cấu trúc hoặc hành vi chính trong ExportController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:exportCollectionPdf",
+      "type": "function",
+      "name": "exportCollectionPdf",
+      "filePath": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "lineRange": [
+        23,
+        26
+      ],
+      "summary": "exportCollectionPdf triển khai một thao tác đáng chú ý trong ExportController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:exportAllVocabulariesPdf",
+      "type": "function",
+      "name": "exportAllVocabulariesPdf",
+      "filePath": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": "exportAllVocabulariesPdf triển khai một thao tác đáng chú ý trong ExportController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:pdfResponse",
+      "type": "function",
+      "name": "pdfResponse",
+      "filePath": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "lineRange": [
+        33,
+        44
+      ],
+      "summary": "pdfResponse triển khai một thao tác đáng chú ý trong ExportController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "type": "file",
+      "name": "ExportVocabularyRow.java",
+      "filePath": "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "summary": "ExportVocabularyRow.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "type": "file",
+      "name": "PdfExportResult.java",
+      "filePath": "src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "summary": "PdfExportResult.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "type": "file",
+      "name": "PdfExportService.java",
+      "filePath": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "summary": "PdfExportService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 15 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/export/service/PdfExportService.java:PdfExportService",
+      "type": "class",
+      "name": "PdfExportService",
+      "filePath": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "lineRange": [
+        26,
+        131
+      ],
+      "summary": "PdfExportService định nghĩa cấu trúc hoặc hành vi chính trong PdfExportService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:exportCollection",
+      "type": "function",
+      "name": "exportCollection",
+      "filePath": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "lineRange": [
+        41,
+        60
+      ],
+      "summary": "exportCollection triển khai một thao tác đáng chú ý trong PdfExportService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:exportAllVocabularies",
+      "type": "function",
+      "name": "exportAllVocabularies",
+      "filePath": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "lineRange": [
+        62,
+        71
+      ],
+      "summary": "exportAllVocabularies triển khai một thao tác đáng chú ý trong PdfExportService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:toExportRow",
+      "type": "function",
+      "name": "toExportRow",
+      "filePath": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "lineRange": [
+        81,
+        92
+      ],
+      "summary": "toExportRow triển khai một thao tác đáng chú ý trong PdfExportService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:AdminCollectionController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:AdminCollectionController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:listCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:listCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:getCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:getCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:updateVisibility",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:updateVisibility",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:moderateCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:moderateCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:deleteCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:deleteCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:listPublicCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:listPublicCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:hidePublicCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:hidePublicCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:postHidePublicCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:postHidePublicCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:getPublicCollectionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java:getPublicCollectionVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "target": "class:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java:PublicCollectionModerationEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "target": "class:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java:PublicCollectionModerationEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "target": "class:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java:PublicCollectionModerationRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "target": "class:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java:PublicCollectionModerationRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "target": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:AdminCollectionService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:AdminCollectionService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:listCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:listCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:getCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:getCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:updateVisibility",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:updateVisibility",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:moderateCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:moderateCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:deleteCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:deleteCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:listPublicCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:listPublicCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:hidePublicCollectionAsCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:hidePublicCollectionAsCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:hidePublicCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:hidePublicCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:getPublicCollectionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:getPublicCollectionVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java:toResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "class:src/main/java/com/vocabverse/collection/controller/CollectionController.java:CollectionController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "class:src/main/java/com/vocabverse/collection/controller/CollectionController.java:CollectionController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:createCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:createCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getMyCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getMyCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getCollectionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:getCollectionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:updateCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:updateCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:deleteCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionController.java:deleteCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java:CollectionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java:CollectionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "target": "class:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java:CollectionMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "target": "class:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java:CollectionMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java:CollectionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java:CollectionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "class:src/main/java/com/vocabverse/collection/service/CollectionService.java:CollectionService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "class:src/main/java/com/vocabverse/collection/service/CollectionService.java:CollectionService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:createCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:createCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:getMyCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:getMyCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:getCollectionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:getCollectionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:updateCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:updateCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:deleteCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionService.java:deleteCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "class:src/main/java/com/vocabverse/export/controller/ExportController.java:ExportController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "class:src/main/java/com/vocabverse/export/controller/ExportController.java:ExportController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:exportCollectionPdf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:exportCollectionPdf",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:exportAllVocabulariesPdf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:exportAllVocabulariesPdf",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "function:src/main/java/com/vocabverse/export/controller/ExportController.java:pdfResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "file:src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "target": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "class:src/main/java/com/vocabverse/export/service/PdfExportService.java:PdfExportService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "class:src/main/java/com/vocabverse/export/service/PdfExportService.java:PdfExportService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:exportCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:exportCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:exportAllVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:exportAllVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "function:src/main/java/com/vocabverse/export/service/PdfExportService.java:toExportRow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

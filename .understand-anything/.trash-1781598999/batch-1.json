@@ -1,0 +1,3122 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "type": "file",
+      "name": "AiClient.java",
+      "filePath": "src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "summary": "AiClient.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/client/AiClient.java:AiClient",
+      "type": "class",
+      "name": "AiClient",
+      "filePath": "src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "lineRange": [
+        5,
+        8
+      ],
+      "summary": "AiClient định nghĩa cấu trúc hoặc hành vi chính trong AiClient.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "type": "file",
+      "name": "GroqVocabularyClient.java",
+      "filePath": "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "summary": "GroqVocabularyClient.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:GroqVocabularyClient",
+      "type": "class",
+      "name": "GroqVocabularyClient",
+      "filePath": "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "lineRange": [
+        20,
+        101
+      ],
+      "summary": "GroqVocabularyClient định nghĩa cấu trúc hoặc hành vi chính trong GroqVocabularyClient.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:GroqVocabularyClient",
+      "type": "function",
+      "name": "GroqVocabularyClient",
+      "filePath": "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "lineRange": [
+        32,
+        37
+      ],
+      "summary": "GroqVocabularyClient triển khai một thao tác đáng chú ý trong GroqVocabularyClient.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:completeJson",
+      "type": "function",
+      "name": "completeJson",
+      "filePath": "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "lineRange": [
+        39,
+        100
+      ],
+      "summary": "completeJson triển khai một thao tác đáng chú ý trong GroqVocabularyClient.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "type": "file",
+      "name": "LocalFallbackAiClient.java",
+      "filePath": "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "summary": "LocalFallbackAiClient.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java:LocalFallbackAiClient",
+      "type": "class",
+      "name": "LocalFallbackAiClient",
+      "filePath": "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "lineRange": [
+        7,
+        26
+      ],
+      "summary": "LocalFallbackAiClient định nghĩa cấu trúc hoặc hành vi chính trong LocalFallbackAiClient.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java:normalizeVocabulary",
+      "type": "function",
+      "name": "normalizeVocabulary",
+      "filePath": "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "lineRange": [
+        10,
+        25
+      ],
+      "summary": "normalizeVocabulary triển khai một thao tác đáng chú ý trong LocalFallbackAiClient.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "type": "file",
+      "name": "AiVocabularyController.java",
+      "filePath": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "summary": "AiVocabularyController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:AiVocabularyController",
+      "type": "class",
+      "name": "AiVocabularyController",
+      "filePath": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "lineRange": [
+        19,
+        45
+      ],
+      "summary": "AiVocabularyController định nghĩa cấu trúc hoặc hành vi chính trong AiVocabularyController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:normalize",
+      "type": "function",
+      "name": "normalize",
+      "filePath": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "lineRange": [
+        27,
+        32
+      ],
+      "summary": "normalize triển khai một thao tác đáng chú ý trong AiVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:normalizeBulk",
+      "type": "function",
+      "name": "normalizeBulk",
+      "filePath": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "lineRange": [
+        34,
+        39
+      ],
+      "summary": "normalizeBulk triển khai một thao tác đáng chú ý trong AiVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:getNormalizeQuota",
+      "type": "function",
+      "name": "getNormalizeQuota",
+      "filePath": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "lineRange": [
+        41,
+        44
+      ],
+      "summary": "getNormalizeQuota triển khai một thao tác đáng chú ý trong AiVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "type": "file",
+      "name": "NormalizeBulkVocabularyRequest.java",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "summary": "NormalizeBulkVocabularyRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "type": "file",
+      "name": "NormalizeVocabularyRequest.java",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "summary": "NormalizeVocabularyRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "type": "file",
+      "name": "NormalizeBulkVocabularyItemResponse.java",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "summary": "NormalizeBulkVocabularyItemResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "type": "file",
+      "name": "NormalizeBulkVocabularyResponse.java",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "summary": "NormalizeBulkVocabularyResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "file",
+      "name": "NormalizeVocabularyResponse.java",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "summary": "NormalizeVocabularyResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "type": "file",
+      "name": "BulkVocabularyJsonParser.java",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "summary": "BulkVocabularyJsonParser.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:BulkVocabularyJsonParser",
+      "type": "class",
+      "name": "BulkVocabularyJsonParser",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "lineRange": [
+        7,
+        19
+      ],
+      "summary": "BulkVocabularyJsonParser định nghĩa cấu trúc hoặc hành vi chính trong BulkVocabularyJsonParser.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:BulkVocabularyJsonParser",
+      "type": "function",
+      "name": "BulkVocabularyJsonParser",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "lineRange": [
+        12,
+        14
+      ],
+      "summary": "BulkVocabularyJsonParser triển khai một thao tác đáng chú ý trong BulkVocabularyJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:parse",
+      "type": "function",
+      "name": "parse",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "lineRange": [
+        16,
+        18
+      ],
+      "summary": "parse triển khai một thao tác đáng chú ý trong BulkVocabularyJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "type": "file",
+      "name": "VocabularyNormalizeJsonParser.java",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "summary": "VocabularyNormalizeJsonParser.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:VocabularyNormalizeJsonParser",
+      "type": "class",
+      "name": "VocabularyNormalizeJsonParser",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        14,
+        200
+      ],
+      "summary": "VocabularyNormalizeJsonParser định nghĩa cấu trúc hoặc hành vi chính trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:VocabularyNormalizeJsonParser",
+      "type": "function",
+      "name": "VocabularyNormalizeJsonParser",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        19,
+        21
+      ],
+      "summary": "VocabularyNormalizeJsonParser triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:parseSingle",
+      "type": "function",
+      "name": "parseSingle",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        23,
+        35
+      ],
+      "summary": "parseSingle triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:parseBulk",
+      "type": "function",
+      "name": "parseBulk",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        37,
+        70
+      ],
+      "summary": "parseBulk triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:toSingleResponse",
+      "type": "function",
+      "name": "toSingleResponse",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        72,
+        98
+      ],
+      "summary": "toSingleResponse triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:extractJson",
+      "type": "function",
+      "name": "extractJson",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        100,
+        126
+      ],
+      "summary": "extractJson triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:trimToBalancedJson",
+      "type": "function",
+      "name": "trimToBalancedJson",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        128,
+        162
+      ],
+      "summary": "trimToBalancedJson triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:textArray",
+      "type": "function",
+      "name": "textArray",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "lineRange": [
+        172,
+        190
+      ],
+      "summary": "textArray triển khai một thao tác đáng chú ý trong VocabularyNormalizeJsonParser.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "type": "file",
+      "name": "BulkVocabularyNormalizePromptBuilder.java",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "summary": "BulkVocabularyNormalizePromptBuilder.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java:BulkVocabularyNormalizePromptBuilder",
+      "type": "class",
+      "name": "BulkVocabularyNormalizePromptBuilder",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "lineRange": [
+        6,
+        53
+      ],
+      "summary": "BulkVocabularyNormalizePromptBuilder định nghĩa cấu trúc hoặc hành vi chính trong BulkVocabularyNormalizePromptBuilder.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java:build",
+      "type": "function",
+      "name": "build",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "lineRange": [
+        9,
+        52
+      ],
+      "summary": "build triển khai một thao tác đáng chú ý trong BulkVocabularyNormalizePromptBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "type": "file",
+      "name": "VocabularyNormalizePromptBuilder.java",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "summary": "VocabularyNormalizePromptBuilder.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java:VocabularyNormalizePromptBuilder",
+      "type": "class",
+      "name": "VocabularyNormalizePromptBuilder",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "lineRange": [
+        5,
+        49
+      ],
+      "summary": "VocabularyNormalizePromptBuilder định nghĩa cấu trúc hoặc hành vi chính trong VocabularyNormalizePromptBuilder.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java:build",
+      "type": "function",
+      "name": "build",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "lineRange": [
+        8,
+        48
+      ],
+      "summary": "build triển khai một thao tác đáng chú ý trong VocabularyNormalizePromptBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "type": "file",
+      "name": "AiVocabularyService.java",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "summary": "AiVocabularyService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 8 function, 12 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "class",
+      "name": "AiVocabularyService",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        25,
+        170
+      ],
+      "summary": "AiVocabularyService định nghĩa cấu trúc hoặc hành vi chính trong AiVocabularyService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "function",
+      "name": "AiVocabularyService",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        40,
+        58
+      ],
+      "summary": "AiVocabularyService triển khai một thao tác đáng chú ý trong AiVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "function",
+      "name": "AiVocabularyService",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        60,
+        71
+      ],
+      "summary": "AiVocabularyService triển khai một thao tác đáng chú ý trong AiVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalize",
+      "type": "function",
+      "name": "normalize",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        73,
+        105
+      ],
+      "summary": "normalize triển khai một thao tác đáng chú ý trong AiVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalizeBulk",
+      "type": "function",
+      "name": "normalizeBulk",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        107,
+        126
+      ],
+      "summary": "normalizeBulk triển khai một thao tác đáng chú ý trong AiVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalizeRawTerms",
+      "type": "function",
+      "name": "normalizeRawTerms",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        134,
+        144
+      ],
+      "summary": "normalizeRawTerms triển khai một thao tác đáng chú ý trong AiVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:fallbackNormalize",
+      "type": "function",
+      "name": "fallbackNormalize",
+      "filePath": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "lineRange": [
+        156,
+        169
+      ],
+      "summary": "fallbackNormalize triển khai một thao tác đáng chú ý trong AiVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "file",
+      "name": "ErrorCode.java",
+      "filePath": "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "summary": "ErrorCode.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "type": "file",
+      "name": "BaseException.java",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "summary": "BaseException.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "class",
+      "name": "BaseException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "lineRange": [
+        5,
+        27
+      ],
+      "summary": "BaseException định nghĩa cấu trúc hoặc hành vi chính trong BaseException.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "function",
+      "name": "BaseException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "lineRange": [
+        9,
+        12
+      ],
+      "summary": "BaseException triển khai một thao tác đáng chú ý trong BaseException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "function",
+      "name": "BaseException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "lineRange": [
+        14,
+        17
+      ],
+      "summary": "BaseException triển khai một thao tác đáng chú ý trong BaseException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "function",
+      "name": "BaseException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "lineRange": [
+        19,
+        22
+      ],
+      "summary": "BaseException triển khai một thao tác đáng chú ý trong BaseException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:getErrorCode",
+      "type": "function",
+      "name": "getErrorCode",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "lineRange": [
+        24,
+        26
+      ],
+      "summary": "getErrorCode triển khai một thao tác đáng chú ý trong BaseException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "file",
+      "name": "BusinessException.java",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "summary": "BusinessException.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "class",
+      "name": "BusinessException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "lineRange": [
+        5,
+        18
+      ],
+      "summary": "BusinessException định nghĩa cấu trúc hoặc hành vi chính trong BusinessException.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "function",
+      "name": "BusinessException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "lineRange": [
+        7,
+        9
+      ],
+      "summary": "BusinessException triển khai một thao tác đáng chú ý trong BusinessException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "function",
+      "name": "BusinessException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "lineRange": [
+        11,
+        13
+      ],
+      "summary": "BusinessException triển khai một thao tác đáng chú ý trong BusinessException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "function",
+      "name": "BusinessException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "lineRange": [
+        15,
+        17
+      ],
+      "summary": "BusinessException triển khai một thao tác đáng chú ý trong BusinessException.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "type": "file",
+      "name": "DictionaryController.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "summary": "DictionaryController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java:DictionaryController",
+      "type": "class",
+      "name": "DictionaryController",
+      "filePath": "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "lineRange": [
+        12,
+        23
+      ],
+      "summary": "DictionaryController định nghĩa cấu trúc hoặc hành vi chính trong DictionaryController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java:search",
+      "type": "function",
+      "name": "search",
+      "filePath": "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "lineRange": [
+        19,
+        22
+      ],
+      "summary": "search triển khai một thao tác đáng chú ý trong DictionaryController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+      "type": "file",
+      "name": "DictionaryDefinitionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+      "summary": "DictionaryDefinitionResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "type": "file",
+      "name": "DictionaryMeaningResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "summary": "DictionaryMeaningResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "file",
+      "name": "DictionaryWordResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "summary": "DictionaryWordResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "type": "file",
+      "name": "DictionaryMapper.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "summary": "DictionaryMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 5 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:DictionaryMapper",
+      "type": "class",
+      "name": "DictionaryMapper",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        16,
+        147
+      ],
+      "summary": "DictionaryMapper định nghĩa cấu trúc hoặc hành vi chính trong DictionaryMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toResponse",
+      "type": "function",
+      "name": "toResponse",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        19,
+        31
+      ],
+      "summary": "toResponse triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:resolveEntry",
+      "type": "function",
+      "name": "resolveEntry",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        33,
+        44
+      ],
+      "summary": "resolveEntry triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:resolvePhonetic",
+      "type": "function",
+      "name": "resolvePhonetic",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        46,
+        63
+      ],
+      "summary": "resolvePhonetic triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:resolveAudioUrl",
+      "type": "function",
+      "name": "resolveAudioUrl",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        65,
+        77
+      ],
+      "summary": "resolveAudioUrl triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toMeanings",
+      "type": "function",
+      "name": "toMeanings",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        79,
+        93
+      ],
+      "summary": "toMeanings triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toDefinitions",
+      "type": "function",
+      "name": "toDefinitions",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        95,
+        120
+      ],
+      "summary": "toDefinitions triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toTextList",
+      "type": "function",
+      "name": "toTextList",
+      "filePath": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "lineRange": [
+        129,
+        142
+      ],
+      "summary": "toTextList triển khai một thao tác đáng chú ý trong DictionaryMapper.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "type": "file",
+      "name": "DictionaryProvider.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "summary": "DictionaryProvider.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java:DictionaryProvider",
+      "type": "class",
+      "name": "DictionaryProvider",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "lineRange": [
+        5,
+        8
+      ],
+      "summary": "DictionaryProvider định nghĩa cấu trúc hoặc hành vi chính trong DictionaryProvider.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "type": "file",
+      "name": "DictionaryProviderImpl.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "summary": "DictionaryProviderImpl.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:DictionaryProviderImpl",
+      "type": "class",
+      "name": "DictionaryProviderImpl",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "lineRange": [
+        24,
+        133
+      ],
+      "summary": "DictionaryProviderImpl định nghĩa cấu trúc hoặc hành vi chính trong DictionaryProviderImpl.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:DictionaryProviderImpl",
+      "type": "function",
+      "name": "DictionaryProviderImpl",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "DictionaryProviderImpl triển khai một thao tác đáng chú ý trong DictionaryProviderImpl.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:search",
+      "type": "function",
+      "name": "search",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "lineRange": [
+        46,
+        115
+      ],
+      "summary": "search triển khai một thao tác đáng chú ý trong DictionaryProviderImpl.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:buildUri",
+      "type": "function",
+      "name": "buildUri",
+      "filePath": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "lineRange": [
+        117,
+        132
+      ],
+      "summary": "buildUri triển khai một thao tác đáng chú ý trong DictionaryProviderImpl.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "type": "file",
+      "name": "DictionaryService.java",
+      "filePath": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "summary": "DictionaryService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 5 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:DictionaryService",
+      "type": "class",
+      "name": "DictionaryService",
+      "filePath": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "lineRange": [
+        18,
+        84
+      ],
+      "summary": "DictionaryService định nghĩa cấu trúc hoặc hành vi chính trong DictionaryService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:search",
+      "type": "function",
+      "name": "search",
+      "filePath": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "lineRange": [
+        31,
+        43
+      ],
+      "summary": "search triển khai một thao tác đáng chú ý trong DictionaryService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:normalizeWord",
+      "type": "function",
+      "name": "normalizeWord",
+      "filePath": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "lineRange": [
+        45,
+        58
+      ],
+      "summary": "normalizeWord triển khai một thao tác đáng chú ý trong DictionaryService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:readCache",
+      "type": "function",
+      "name": "readCache",
+      "filePath": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "lineRange": [
+        60,
+        71
+      ],
+      "summary": "readCache triển khai một thao tác đáng chú ý trong DictionaryService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "type": "file",
+      "name": "ReviewSchedulerResolver.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "summary": "ReviewSchedulerResolver.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:ReviewSchedulerResolver",
+      "type": "class",
+      "name": "ReviewSchedulerResolver",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "lineRange": [
+        11,
+        28
+      ],
+      "summary": "ReviewSchedulerResolver định nghĩa cấu trúc hoặc hành vi chính trong ReviewSchedulerResolver.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:ReviewSchedulerResolver",
+      "type": "function",
+      "name": "ReviewSchedulerResolver",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "lineRange": [
+        16,
+        19
+      ],
+      "summary": "ReviewSchedulerResolver triển khai một thao tác đáng chú ý trong ReviewSchedulerResolver.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:resolve",
+      "type": "function",
+      "name": "resolve",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "lineRange": [
+        21,
+        27
+      ],
+      "summary": "resolve triển khai một thao tác đáng chú ý trong ReviewSchedulerResolver.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "type": "file",
+      "name": "CloudinaryVideoStorageService.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "summary": "CloudinaryVideoStorageService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 5 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:CloudinaryVideoStorageService",
+      "type": "class",
+      "name": "CloudinaryVideoStorageService",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "lineRange": [
+        17,
+        120
+      ],
+      "summary": "CloudinaryVideoStorageService định nghĩa cấu trúc hoặc hành vi chính trong CloudinaryVideoStorageService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:uploadMp4",
+      "type": "function",
+      "name": "uploadMp4",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "lineRange": [
+        35,
+        82
+      ],
+      "summary": "uploadMp4 triển khai một thao tác đáng chú ý trong CloudinaryVideoStorageService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:formatDuration",
+      "type": "function",
+      "name": "formatDuration",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "lineRange": [
+        94,
+        106
+      ],
+      "summary": "formatDuration triển khai một thao tác đáng chú ý trong CloudinaryVideoStorageService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "type": "file",
+      "name": "AiVocabularyServiceTest.java",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "summary": "AiVocabularyServiceTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "test",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:AiVocabularyServiceTest",
+      "type": "class",
+      "name": "AiVocabularyServiceTest",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "lineRange": [
+        15,
+        67
+      ],
+      "summary": "AiVocabularyServiceTest định nghĩa cấu trúc hoặc hành vi chính trong AiVocabularyServiceTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:normalizeReturnsProviderResult",
+      "type": "function",
+      "name": "normalizeReturnsProviderResult",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "lineRange": [
+        19,
+        39
+      ],
+      "summary": "normalizeReturnsProviderResult triển khai một thao tác đáng chú ý trong AiVocabularyServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:normalizeRejectsBlankRawText",
+      "type": "function",
+      "name": "normalizeRejectsBlankRawText",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "lineRange": [
+        41,
+        52
+      ],
+      "summary": "normalizeRejectsBlankRawText triển khai một thao tác đáng chú ý trong AiVocabularyServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:normalizeFallsBackWhenProviderFails",
+      "type": "function",
+      "name": "normalizeFallsBackWhenProviderFails",
+      "filePath": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "lineRange": [
+        54,
+        66
+      ],
+      "summary": "normalizeFallsBackWhenProviderFails triển khai một thao tác đáng chú ý trong AiVocabularyServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "type": "file",
+      "name": "DictionaryMapperTest.java",
+      "filePath": "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "summary": "DictionaryMapperTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "test",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java:DictionaryMapperTest",
+      "type": "class",
+      "name": "DictionaryMapperTest",
+      "filePath": "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "lineRange": [
+        10,
+        60
+      ],
+      "summary": "DictionaryMapperTest định nghĩa cấu trúc hoặc hành vi chính trong DictionaryMapperTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java:mapsDictionaryApiDevResponseToUnifiedResponse",
+      "type": "function",
+      "name": "mapsDictionaryApiDevResponseToUnifiedResponse",
+      "filePath": "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "lineRange": [
+        15,
+        59
+      ],
+      "summary": "mapsDictionaryApiDevResponseToUnifiedResponse triển khai một thao tác đáng chú ý trong DictionaryMapperTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "type": "file",
+      "name": "DictionaryServiceTest.java",
+      "filePath": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "summary": "DictionaryServiceTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 5 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "test",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:DictionaryServiceTest",
+      "type": "class",
+      "name": "DictionaryServiceTest",
+      "filePath": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "lineRange": [
+        24,
+        93
+      ],
+      "summary": "DictionaryServiceTest định nghĩa cấu trúc hoặc hành vi chính trong DictionaryServiceTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:searchNormalizesWordAndCachesProviderResponse",
+      "type": "function",
+      "name": "searchNormalizesWordAndCachesProviderResponse",
+      "filePath": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "lineRange": [
+        28,
+        52
+      ],
+      "summary": "searchNormalizesWordAndCachesProviderResponse triển khai một thao tác đáng chú ý trong DictionaryServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:searchReturnsCachedResponseWhenAvailable",
+      "type": "function",
+      "name": "searchReturnsCachedResponseWhenAvailable",
+      "filePath": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "lineRange": [
+        54,
+        70
+      ],
+      "summary": "searchReturnsCachedResponseWhenAvailable triển khai một thao tác đáng chú ý trong DictionaryServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:searchRejectsInvalidWord",
+      "type": "function",
+      "name": "searchRejectsInvalidWord",
+      "filePath": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "lineRange": [
+        72,
+        83
+      ],
+      "summary": "searchRejectsInvalidWord triển khai một thao tác đáng chú ý trong DictionaryServiceTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "type": "file",
+      "name": "ReviewSchedulerResolverTest.java",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "summary": "ReviewSchedulerResolverTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "test",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java:ReviewSchedulerResolverTest",
+      "type": "class",
+      "name": "ReviewSchedulerResolverTest",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "lineRange": [
+        11,
+        38
+      ],
+      "summary": "ReviewSchedulerResolverTest định nghĩa cấu trúc hoặc hành vi chính trong ReviewSchedulerResolverTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java:resolvesRegisteredSchedulers",
+      "type": "function",
+      "name": "resolvesRegisteredSchedulers",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "lineRange": [
+        13,
+        27
+      ],
+      "summary": "resolvesRegisteredSchedulers triển khai một thao tác đáng chú ý trong ReviewSchedulerResolverTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "target": "class:src/main/java/com/vocabverse/ai/client/AiClient.java:AiClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "target": "class:src/main/java/com/vocabverse/ai/client/AiClient.java:AiClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "class:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:GroqVocabularyClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "class:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:GroqVocabularyClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "function:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:GroqVocabularyClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "function:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:GroqVocabularyClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "function:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:completeJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "function:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java:completeJson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "target": "class:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java:LocalFallbackAiClient",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "target": "class:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java:LocalFallbackAiClient",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "target": "function:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java:normalizeVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "target": "function:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java:normalizeVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "class:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:AiVocabularyController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "class:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:AiVocabularyController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:normalize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:normalize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:normalizeBulk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:normalizeBulk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:getNormalizeQuota",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java:getNormalizeQuota",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "class:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:BulkVocabularyJsonParser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "class:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:BulkVocabularyJsonParser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:BulkVocabularyJsonParser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:BulkVocabularyJsonParser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:parse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java:parse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "class:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:VocabularyNormalizeJsonParser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "class:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:VocabularyNormalizeJsonParser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:VocabularyNormalizeJsonParser",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:VocabularyNormalizeJsonParser",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:parseSingle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:parseSingle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:parseBulk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:parseBulk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:toSingleResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:extractJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:trimToBalancedJson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "function:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java:textArray",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java:BulkVocabularyNormalizePromptBuilder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java:BulkVocabularyNormalizePromptBuilder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java:build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java:build",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java:VocabularyNormalizePromptBuilder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java:VocabularyNormalizePromptBuilder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java:build",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java:build",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "class:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "class:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:AiVocabularyService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalize",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalizeBulk",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalizeBulk",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:normalizeRawTerms",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java:fallbackNormalize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "class:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "class:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:BaseException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:getErrorCode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BaseException.java:getErrorCode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "class:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "class:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/BusinessException.java:BusinessException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java:DictionaryController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java:DictionaryController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java:search",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java:search",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:DictionaryMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:DictionaryMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:resolveEntry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:resolvePhonetic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:resolveAudioUrl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toMeanings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toDefinitions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java:toTextList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java:DictionaryProvider",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java:DictionaryProvider",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:DictionaryProviderImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:DictionaryProviderImpl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:DictionaryProviderImpl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:DictionaryProviderImpl",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:search",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:search",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java:buildUri",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:DictionaryService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "class:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:DictionaryService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:search",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:search",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:normalizeWord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "function:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java:readCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:ReviewSchedulerResolver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:ReviewSchedulerResolver",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:ReviewSchedulerResolver",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:ReviewSchedulerResolver",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:resolve",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java:resolve",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:CloudinaryVideoStorageService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:CloudinaryVideoStorageService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:uploadMp4",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:uploadMp4",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java:formatDuration",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "class:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:AiVocabularyServiceTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:normalizeReturnsProviderResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:normalizeRejectsBlankRawText",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java:normalizeFallsBackWhenProviderFails",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "target": "class:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java:DictionaryMapperTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "target": "function:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java:mapsDictionaryApiDevResponseToUnifiedResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "class:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:DictionaryServiceTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:searchNormalizesWordAndCachesProviderResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:searchReturnsCachedResponseWhenAvailable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "function:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java:searchRejectsInvalidWord",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "target": "file:src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "target": "class:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java:ReviewSchedulerResolverTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java:resolvesRegisteredSchedulers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

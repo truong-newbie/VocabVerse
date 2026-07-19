@@ -1,0 +1,252 @@
+{
+  "nodes": [
+    {
+      "id": "schema:src/main/resources/db/migration/V10__create_notifications_table.sql",
+      "type": "schema",
+      "name": "V10__create_notifications_table.sql",
+      "filePath": "src/main/resources/db/migration/V10__create_notifications_table.sql",
+      "summary": "V10__create_notifications_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V11__create_roleplay_tables.sql",
+      "type": "schema",
+      "name": "V11__create_roleplay_tables.sql",
+      "filePath": "src/main/resources/db/migration/V11__create_roleplay_tables.sql",
+      "summary": "V11__create_roleplay_tables.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V12__create_collection_review_settings_table.sql",
+      "type": "schema",
+      "name": "V12__create_collection_review_settings_table.sql",
+      "filePath": "src/main/resources/db/migration/V12__create_collection_review_settings_table.sql",
+      "summary": "V12__create_collection_review_settings_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V13__create_admin_shadowing_tables.sql",
+      "type": "schema",
+      "name": "V13__create_admin_shadowing_tables.sql",
+      "filePath": "src/main/resources/db/migration/V13__create_admin_shadowing_tables.sql",
+      "summary": "V13__create_admin_shadowing_tables.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V14__alter_shadowing_lessons_admin_contract.sql",
+      "type": "schema",
+      "name": "V14__alter_shadowing_lessons_admin_contract.sql",
+      "filePath": "src/main/resources/db/migration/V14__alter_shadowing_lessons_admin_contract.sql",
+      "summary": "V14__alter_shadowing_lessons_admin_contract.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V15__shadowing_cloudinary_subtitles.sql",
+      "type": "schema",
+      "name": "V15__shadowing_cloudinary_subtitles.sql",
+      "filePath": "src/main/resources/db/migration/V15__shadowing_cloudinary_subtitles.sql",
+      "summary": "V15__shadowing_cloudinary_subtitles.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V16__add_review_scheduler_type.sql",
+      "type": "schema",
+      "name": "V16__add_review_scheduler_type.sql",
+      "filePath": "src/main/resources/db/migration/V16__add_review_scheduler_type.sql",
+      "summary": "V16__add_review_scheduler_type.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V17__add_sm2_progress_fields.sql",
+      "type": "schema",
+      "name": "V17__add_sm2_progress_fields.sql",
+      "filePath": "src/main/resources/db/migration/V17__add_sm2_progress_fields.sql",
+      "summary": "V17__add_sm2_progress_fields.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V18__add_fsrs_progress_fields.sql",
+      "type": "schema",
+      "name": "V18__add_fsrs_progress_fields.sql",
+      "filePath": "src/main/resources/db/migration/V18__add_fsrs_progress_fields.sql",
+      "summary": "V18__add_fsrs_progress_fields.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V19__add_fsrs_review_settings.sql",
+      "type": "schema",
+      "name": "V19__add_fsrs_review_settings.sql",
+      "filePath": "src/main/resources/db/migration/V19__add_fsrs_review_settings.sql",
+      "summary": "V19__add_fsrs_review_settings.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V1__create_users_table.sql",
+      "type": "schema",
+      "name": "V1__create_users_table.sql",
+      "filePath": "src/main/resources/db/migration/V1__create_users_table.sql",
+      "summary": "V1__create_users_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V2__create_refresh_tokens_table.sql",
+      "type": "schema",
+      "name": "V2__create_refresh_tokens_table.sql",
+      "filePath": "src/main/resources/db/migration/V2__create_refresh_tokens_table.sql",
+      "summary": "V2__create_refresh_tokens_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V3__create_collections_table.sql",
+      "type": "schema",
+      "name": "V3__create_collections_table.sql",
+      "filePath": "src/main/resources/db/migration/V3__create_collections_table.sql",
+      "summary": "V3__create_collections_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V4__create_vocabularies_table.sql",
+      "type": "schema",
+      "name": "V4__create_vocabularies_table.sql",
+      "filePath": "src/main/resources/db/migration/V4__create_vocabularies_table.sql",
+      "summary": "V4__create_vocabularies_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V5__create_learning_progress_table.sql",
+      "type": "schema",
+      "name": "V5__create_learning_progress_table.sql",
+      "filePath": "src/main/resources/db/migration/V5__create_learning_progress_table.sql",
+      "summary": "V5__create_learning_progress_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V6__create_review_history_table.sql",
+      "type": "schema",
+      "name": "V6__create_review_history_table.sql",
+      "filePath": "src/main/resources/db/migration/V6__create_review_history_table.sql",
+      "summary": "V6__create_review_history_table.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V7__create_flashcard_tables.sql",
+      "type": "schema",
+      "name": "V7__create_flashcard_tables.sql",
+      "filePath": "src/main/resources/db/migration/V7__create_flashcard_tables.sql",
+      "summary": "V7__create_flashcard_tables.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V8__create_quiz_tables.sql",
+      "type": "schema",
+      "name": "V8__create_quiz_tables.sql",
+      "filePath": "src/main/resources/db/migration/V8__create_quiz_tables.sql",
+      "summary": "V8__create_quiz_tables.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "schema:src/main/resources/db/migration/V9__create_typing_tables.sql",
+      "type": "schema",
+      "name": "V9__create_typing_tables.sql",
+      "filePath": "src/main/resources/db/migration/V9__create_typing_tables.sql",
+      "summary": "V9__create_typing_tables.sql là file dữ liệu/schema sql trong VocabVerse.",
+      "tags": [
+        "sql",
+        "data",
+        "migration"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

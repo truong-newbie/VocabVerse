@@ -1,0 +1,2927 @@
+{
+    "projectRoot":  "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+    "files":  [
+                  {
+                      "path":  ".dockerignore",
+                      "language":  "unknown",
+                      "sizeLines":  13,
+                      "fileCategory":  "infra"
+                  },
+                  {
+                      "path":  ".env.example",
+                      "language":  "config",
+                      "sizeLines":  52,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  ".gitattributes",
+                      "language":  "unknown",
+                      "sizeLines":  2,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/checksums/md5-checksums.bin",
+                      "language":  "bin",
+                      "sizeLines":  64,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/checksums/sha1-checksums.bin",
+                      "language":  "bin",
+                      "sizeLines":  271,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/executionHistory/executionHistory.bin",
+                      "language":  "bin",
+                      "sizeLines":  296,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/fileChanges/last-build.bin",
+                      "language":  "bin",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/fileHashes/fileHashes.bin",
+                      "language":  "bin",
+                      "sizeLines":  102,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/fileHashes/resourceHashesCache.bin",
+                      "language":  "bin",
+                      "sizeLines":  76,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/9.3.0/gc.properties",
+                      "language":  "properties",
+                      "sizeLines":  0,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  ".gradle/buildOutputCleanup/cache.properties",
+                      "language":  "properties",
+                      "sizeLines":  2,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  ".gradle/buildOutputCleanup/outputFiles.bin",
+                      "language":  "bin",
+                      "sizeLines":  2,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/file-system.probe",
+                      "language":  "probe",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".gradle/vcs-1/gc.properties",
+                      "language":  "properties",
+                      "sizeLines":  0,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  ".mvn/wrapper/maven-wrapper.properties",
+                      "language":  "properties",
+                      "sizeLines":  3,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  ".understand-anything/.understandignore",
+                      "language":  "unknown",
+                      "sizeLines":  43,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  ".understand-anything/config.json",
+                      "language":  "json",
+                      "sizeLines":  3,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "build.gradle",
+                      "language":  "gradle",
+                      "sizeLines":  54,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "docker-compose.yml",
+                      "language":  "yaml",
+                      "sizeLines":  89,
+                      "fileCategory":  "infra"
+                  },
+                  {
+                      "path":  "Dockerfile",
+                      "language":  "dockerfile",
+                      "sizeLines":  26,
+                      "fileCategory":  "infra"
+                  },
+                  {
+                      "path":  "docs/ai/13-prompt-engineering-design.md",
+                      "language":  "markdown",
+                      "sizeLines":  605,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/ai/AI_RULES.md",
+                      "language":  "markdown",
+                      "sizeLines":  292,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/ai/ARCHITECTURE_LOCK.md",
+                      "language":  "markdown",
+                      "sizeLines":  130,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/ai/BUSINESS_RULES.md",
+                      "language":  "markdown",
+                      "sizeLines":  148,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/ai/TASK_TEMPLATE.md",
+                      "language":  "markdown",
+                      "sizeLines":  127,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/api/06-api-design.md",
+                      "language":  "markdown",
+                      "sizeLines":  956,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/api/API_DOCUMENTATION_FE.md",
+                      "language":  "markdown",
+                      "sizeLines":  479,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/architecture/04_database_design.md",
+                      "language":  "markdown",
+                      "sizeLines":  1075,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/architecture/05-system-architecture.md",
+                      "language":  "markdown",
+                      "sizeLines":  1026,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/architecture/12-erd-diagram.md",
+                      "language":  "markdown",
+                      "sizeLines":  147,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/engineering/08-non-functional-requirements.md",
+                      "language":  "markdown",
+                      "sizeLines":  470,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/engineering/09-backend-project-structure.md",
+                      "language":  "markdown",
+                      "sizeLines":  793,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/openapi-current.json",
+                      "language":  "json",
+                      "sizeLines":  4614,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "docs/product/01_Product_Overview.md",
+                      "language":  "markdown",
+                      "sizeLines":  459,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/product/02_prd.md",
+                      "language":  "markdown",
+                      "sizeLines":  774,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "docs/product/03_srs.md",
+                      "language":  "markdown",
+                      "sizeLines":  767,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "fsrs.md",
+                      "language":  "markdown",
+                      "sizeLines":  1007,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "gradle/wrapper/gradle-wrapper.jar",
+                      "language":  "jar",
+                      "sizeLines":  147,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "gradle/wrapper/gradle-wrapper.properties",
+                      "language":  "properties",
+                      "sizeLines":  7,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "gradlew",
+                      "language":  "unknown",
+                      "sizeLines":  248,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "gradlew.bat",
+                      "language":  "batch",
+                      "sizeLines":  93,
+                      "fileCategory":  "script"
+                  },
+                  {
+                      "path":  "mvnw",
+                      "language":  "unknown",
+                      "sizeLines":  295,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "mvnw.cmd",
+                      "language":  "batch",
+                      "sizeLines":  189,
+                      "fileCategory":  "script"
+                  },
+                  {
+                      "path":  "pom.xml",
+                      "language":  "xml",
+                      "sizeLines":  154,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "README.md",
+                      "language":  "markdown",
+                      "sizeLines":  173,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "settings.gradle",
+                      "language":  "gradle",
+                      "sizeLines":  15,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "Sm2.md",
+                      "language":  "markdown",
+                      "sizeLines":  1193,
+                      "fileCategory":  "docs"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+                      "language":  "java",
+                      "sizeLines":  103,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+                      "language":  "java",
+                      "sizeLines":  24,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+                      "language":  "java",
+                      "sizeLines":  34,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+                      "language":  "java",
+                      "sizeLines":  102,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+                      "language":  "java",
+                      "sizeLines":  24,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+                      "language":  "java",
+                      "sizeLines":  87,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+                      "language":  "java",
+                      "sizeLines":  26,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  23,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+                      "language":  "java",
+                      "sizeLines":  29,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+                      "language":  "java",
+                      "sizeLines":  51,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+                      "language":  "java",
+                      "sizeLines":  218,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+                      "language":  "java",
+                      "sizeLines":  43,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+                      "language":  "java",
+                      "sizeLines":  71,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+                      "language":  "java",
+                      "sizeLines":  308,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+                      "language":  "java",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+                      "language":  "java",
+                      "sizeLines":  84,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/client/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/client/AiClient.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+                      "language":  "java",
+                      "sizeLines":  101,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+                      "language":  "java",
+                      "sizeLines":  26,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+                      "language":  "java",
+                      "sizeLines":  45,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+                      "language":  "java",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+                      "language":  "java",
+                      "sizeLines":  17,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/parser/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+                      "language":  "java",
+                      "sizeLines":  200,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/prompt/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+                      "language":  "java",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+                      "language":  "java",
+                      "sizeLines":  49,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+                      "language":  "java",
+                      "sizeLines":  110,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+                      "language":  "java",
+                      "sizeLines":  170,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+                      "language":  "java",
+                      "sizeLines":  62,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/consumer/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+                      "language":  "java",
+                      "sizeLines":  23,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/event/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/job/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/producer/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+                      "language":  "java",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+                      "language":  "java",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+                      "language":  "java",
+                      "sizeLines":  49,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/service/AuthService.java",
+                      "language":  "java",
+                      "sizeLines":  82,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+                      "language":  "java",
+                      "sizeLines":  82,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/auth/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+                      "language":  "java",
+                      "sizeLines":  69,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+                      "language":  "java",
+                      "sizeLines":  58,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  20,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+                      "language":  "java",
+                      "sizeLines":  25,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  73,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+                      "language":  "java",
+                      "sizeLines":  96,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+                      "language":  "java",
+                      "sizeLines":  51,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  46,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+                      "language":  "java",
+                      "sizeLines":  20,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+                      "language":  "java",
+                      "sizeLines":  287,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+                      "language":  "java",
+                      "sizeLines":  125,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/collection/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/config/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+                      "language":  "java",
+                      "sizeLines":  107,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+                      "language":  "java",
+                      "sizeLines":  73,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/constant/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+                      "language":  "java",
+                      "sizeLines":  319,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/exception/BaseException.java",
+                      "language":  "java",
+                      "sizeLines":  27,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+                      "language":  "java",
+                      "sizeLines":  103,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/response/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+                      "language":  "java",
+                      "sizeLines":  65,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+                      "language":  "java",
+                      "sizeLines":  20,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/security/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+                      "language":  "java",
+                      "sizeLines":  31,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+                      "language":  "java",
+                      "sizeLines":  59,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+                      "language":  "java",
+                      "sizeLines":  75,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/util/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/common/validator/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+                      "language":  "java",
+                      "sizeLines":  44,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+                      "language":  "java",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+                      "language":  "java",
+                      "sizeLines":  180,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/client/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+                      "language":  "java",
+                      "sizeLines":  23,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+                      "language":  "java",
+                      "sizeLines":  147,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+                      "language":  "java",
+                      "sizeLines":  133,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+                      "language":  "java",
+                      "sizeLines":  84,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/controller/ExportController.java",
+                      "language":  "java",
+                      "sizeLines":  45,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+                      "language":  "java",
+                      "sizeLines":  131,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+                      "language":  "java",
+                      "sizeLines":  196,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+                      "language":  "java",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  75,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+                      "language":  "java",
+                      "sizeLines":  69,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+                      "language":  "java",
+                      "sizeLines":  24,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+                      "language":  "java",
+                      "sizeLines":  196,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/flashcard/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+                      "language":  "java",
+                      "sizeLines":  46,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+                      "language":  "java",
+                      "sizeLines":  27,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+                      "language":  "java",
+                      "sizeLines":  97,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+                      "language":  "java",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+                      "language":  "java",
+                      "sizeLines":  100,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+                      "language":  "java",
+                      "sizeLines":  118,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+                      "language":  "java",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  80,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  78,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+                      "language":  "java",
+                      "sizeLines":  274,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/quiz/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+                      "language":  "java",
+                      "sizeLines":  53,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+                      "language":  "java",
+                      "sizeLines":  24,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  71,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  78,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+                      "language":  "java",
+                      "sizeLines":  264,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/learning/typing/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/browser/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+                      "language":  "java",
+                      "sizeLines":  33,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/email/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/email/EmailSender.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/email/EmailService.java",
+                      "language":  "java",
+                      "sizeLines":  34,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+                      "language":  "java",
+                      "sizeLines":  30,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+                      "language":  "java",
+                      "sizeLines":  61,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+                      "language":  "java",
+                      "sizeLines":  5,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+                      "language":  "java",
+                      "sizeLines":  33,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/scheduler/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+                      "language":  "java",
+                      "sizeLines":  103,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+                      "language":  "java",
+                      "sizeLines":  144,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+                      "language":  "java",
+                      "sizeLines":  50,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+                      "language":  "java",
+                      "sizeLines":  193,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+                      "language":  "java",
+                      "sizeLines":  57,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+                      "language":  "java",
+                      "sizeLines":  17,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+                      "language":  "java",
+                      "sizeLines":  64,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+                      "language":  "java",
+                      "sizeLines":  26,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/service/ReviewService.java",
+                      "language":  "java",
+                      "sizeLines":  233,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+                      "language":  "java",
+                      "sizeLines":  103,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+                      "language":  "java",
+                      "sizeLines":  102,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+                      "language":  "java",
+                      "sizeLines":  174,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/ReviewScheduleResult.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+                      "language":  "java",
+                      "sizeLines":  28,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+                      "language":  "java",
+                      "sizeLines":  39,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+                      "language":  "java",
+                      "sizeLines":  104,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+                      "language":  "java",
+                      "sizeLines":  61,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+                      "language":  "java",
+                      "sizeLines":  20,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+                      "language":  "java",
+                      "sizeLines":  23,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+                      "language":  "java",
+                      "sizeLines":  58,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+                      "language":  "java",
+                      "sizeLines":  66,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+                      "language":  "java",
+                      "sizeLines":  75,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+                      "language":  "java",
+                      "sizeLines":  7,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+                      "language":  "java",
+                      "sizeLines":  38,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+                      "language":  "java",
+                      "sizeLines":  93,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+                      "language":  "java",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+                      "language":  "java",
+                      "sizeLines":  79,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+                      "language":  "java",
+                      "sizeLines":  189,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/roleplay/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+                      "language":  "java",
+                      "sizeLines":  34,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+                      "language":  "java",
+                      "sizeLines":  21,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+                      "language":  "java",
+                      "sizeLines":  19,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+                      "language":  "java",
+                      "sizeLines":  13,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+                      "language":  "java",
+                      "sizeLines":  97,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+                      "language":  "java",
+                      "sizeLines":  62,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+                      "language":  "java",
+                      "sizeLines":  18,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+                      "language":  "java",
+                      "sizeLines":  120,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+                      "language":  "java",
+                      "sizeLines":  254,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+                      "language":  "java",
+                      "sizeLines":  102,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/shadowing/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/storage/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/storage/local/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/storage/r2/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/storage/s3/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/controller/UserController.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+                      "language":  "java",
+                      "sizeLines":  15,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+                      "language":  "java",
+                      "sizeLines":  70,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/entity/UserRole.java",
+                      "language":  "java",
+                      "sizeLines":  6,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/entity/UserStatus.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+                      "language":  "java",
+                      "sizeLines":  11,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+                      "language":  "java",
+                      "sizeLines":  35,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/service/UserService.java",
+                      "language":  "java",
+                      "sizeLines":  39,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/user/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/controller/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+                      "language":  "java",
+                      "sizeLines":  62,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+                      "language":  "java",
+                      "sizeLines":  62,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+                      "language":  "java",
+                      "sizeLines":  38,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+                      "language":  "java",
+                      "sizeLines":  34,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+                      "language":  "java",
+                      "sizeLines":  8,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+                      "language":  "java",
+                      "sizeLines":  10,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+                      "language":  "java",
+                      "sizeLines":  12,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+                      "language":  "java",
+                      "sizeLines":  26,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/entity/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+                      "language":  "java",
+                      "sizeLines":  62,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+                      "language":  "java",
+                      "sizeLines":  93,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+                      "language":  "java",
+                      "sizeLines":  16,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+                      "language":  "java",
+                      "sizeLines":  9,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/exception/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/mapper/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+                      "language":  "java",
+                      "sizeLines":  34,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/repository/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+                      "language":  "java",
+                      "sizeLines":  89,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+                      "language":  "java",
+                      "sizeLines":  22,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/service/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+                      "language":  "java",
+                      "sizeLines":  192,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+                      "language":  "java",
+                      "sizeLines":  223,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/vocabulary/specification/.gitkeep",
+                      "language":  "unknown",
+                      "sizeLines":  0,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/java/com/vocabverse/VocabVerseApplication.java",
+                      "language":  "java",
+                      "sizeLines":  14,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/main/resources/application-dev.yml",
+                      "language":  "yaml",
+                      "sizeLines":  10,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "src/main/resources/application-local.yml",
+                      "language":  "yaml",
+                      "sizeLines":  10,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "src/main/resources/application-prod.yml",
+                      "language":  "yaml",
+                      "sizeLines":  10,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "src/main/resources/application-staging.yml",
+                      "language":  "yaml",
+                      "sizeLines":  10,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "src/main/resources/application.yml",
+                      "language":  "yaml",
+                      "sizeLines":  103,
+                      "fileCategory":  "config"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V1__create_users_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  16,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V10__create_notifications_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  17,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V11__create_roleplay_tables.sql",
+                      "language":  "sql",
+                      "sizeLines":  39,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V12__create_collection_review_settings_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  20,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V13__create_admin_shadowing_tables.sql",
+                      "language":  "sql",
+                      "sizeLines":  27,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V14__alter_shadowing_lessons_admin_contract.sql",
+                      "language":  "sql",
+                      "sizeLines":  4,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V15__shadowing_cloudinary_subtitles.sql",
+                      "language":  "sql",
+                      "sizeLines":  20,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V16__add_review_scheduler_type.sql",
+                      "language":  "sql",
+                      "sizeLines":  6,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V17__add_sm2_progress_fields.sql",
+                      "language":  "sql",
+                      "sizeLines":  4,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V18__add_fsrs_progress_fields.sql",
+                      "language":  "sql",
+                      "sizeLines":  4,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V19__add_fsrs_review_settings.sql",
+                      "language":  "sql",
+                      "sizeLines":  3,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V2__create_refresh_tokens_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  11,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V3__create_collections_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  17,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V4__create_vocabularies_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  35,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V5__create_learning_progress_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  19,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V6__create_review_history_table.sql",
+                      "language":  "sql",
+                      "sizeLines":  15,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V7__create_flashcard_tables.sql",
+                      "language":  "sql",
+                      "sizeLines":  31,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V8__create_quiz_tables.sql",
+                      "language":  "sql",
+                      "sizeLines":  35,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/main/resources/db/migration/V9__create_typing_tables.sql",
+                      "language":  "sql",
+                      "sizeLines":  34,
+                      "fileCategory":  "data"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+                      "language":  "java",
+                      "sizeLines":  118,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+                      "language":  "java",
+                      "sizeLines":  67,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+                      "language":  "java",
+                      "sizeLines":  60,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+                      "language":  "java",
+                      "sizeLines":  93,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+                      "language":  "java",
+                      "sizeLines":  89,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+                      "language":  "java",
+                      "sizeLines":  117,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+                      "language":  "java",
+                      "sizeLines":  38,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+                      "language":  "java",
+                      "sizeLines":  130,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+                      "language":  "java",
+                      "sizeLines":  114,
+                      "fileCategory":  "code"
+                  },
+                  {
+                      "path":  "VocabVerse.postman_collection.json",
+                      "language":  "json",
+                      "sizeLines":  1658,
+                      "fileCategory":  "config"
+                  }
+              ]
+}

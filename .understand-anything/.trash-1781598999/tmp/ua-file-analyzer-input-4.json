@@ -1,0 +1,280 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "language": "java",
+      "sizeLines": 196,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "language": "java",
+      "sizeLines": 80,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "language": "java",
+      "sizeLines": 274,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "language": "java",
+      "sizeLines": 50,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "language": "java",
+      "sizeLines": 193,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "language": "java",
+      "sizeLines": 89,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java": [
+      "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java": [
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java": [],
+    "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java": [
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java": [
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java": [
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java": [
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java": [],
+    "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java": [],
+    "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java": [],
+    "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java": [
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java": [
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java": [
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java"
+    ],
+    "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java": [],
+    "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java": [],
+    "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java": [],
+    "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java"
+    ]
+  }
+}

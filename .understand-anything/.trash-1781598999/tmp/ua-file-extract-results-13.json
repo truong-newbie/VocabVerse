@@ -1,0 +1,1148 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "getDashboard",
+          "startLine": 20,
+          "endLine": 23,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminDashboardController",
+          "startLine": 12,
+          "endLine": 24,
+          "methods": [
+            "getDashboard"
+          ],
+          "properties": [
+            "adminDashboardService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDashboard",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "AdminDashboardController",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getDashboard",
+          "callee": "ApiResponse.success",
+          "lineNumber": 22
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "adminDashboardService.getDashboard",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "getHealth",
+          "startLine": 20,
+          "endLine": 23,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminSystemController",
+          "startLine": 12,
+          "endLine": 24,
+          "methods": [
+            "getHealth"
+          ],
+          "properties": [
+            "adminSystemService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getHealth",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "AdminSystemController",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getHealth",
+          "callee": "ApiResponse.success",
+          "lineNumber": 22
+        },
+        {
+          "caller": "getHealth",
+          "callee": "adminSystemService.getHealth",
+          "lineNumber": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 38,
+      "functions": [
+        {
+          "name": "getDashboard",
+          "startLine": 27,
+          "endLine": 42,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminDashboardService",
+          "startLine": 17,
+          "endLine": 43,
+          "methods": [
+            "getDashboard"
+          ],
+          "properties": [
+            "userRepository",
+            "collectionRepository",
+            "vocabularyRepository",
+            "shadowingLessonRepository",
+            "learningProgressRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getDashboard",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "AdminDashboardService",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getDashboard",
+          "callee": "LocalDate.now().atStartOfDay",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "LocalDate.now",
+          "lineNumber": 29
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "startOfDay.plusDays(1).minusNanos",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "startOfDay.plusDays",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "new AdminDashboardResponse",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "userRepository.count",
+          "lineNumber": 33
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "userRepository.countByStatus",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "collectionRepository.countByDeletedAtIsNull",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "collectionRepository.countByVisibilityAndDeletedAtIsNull",
+          "lineNumber": 36
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "vocabularyRepository.countByDeletedAtIsNull",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "shadowingLessonRepository.count",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "learningProgressRepository.countDueReviewsUntil",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getDashboard",
+          "callee": "userRepository.countByCreatedAtBetween",
+          "lineNumber": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "getHealth",
+          "startLine": 20,
+          "endLine": 26,
+          "params": []
+        },
+        {
+          "name": "checkDatabase",
+          "startLine": 28,
+          "endLine": 34,
+          "params": []
+        },
+        {
+          "name": "checkRedis",
+          "startLine": 36,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "checkRabbitMq",
+          "startLine": 45,
+          "endLine": 52,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminSystemService",
+          "startLine": 12,
+          "endLine": 53,
+          "methods": [
+            "getHealth",
+            "checkDatabase",
+            "checkRedis",
+            "checkRabbitMq"
+          ],
+          "properties": [
+            "dataSource",
+            "stringRedisTemplate",
+            "rabbitConnectionFactory"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getHealth",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "AdminSystemService",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getHealth",
+          "callee": "new AdminSystemHealthResponse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "getHealth",
+          "callee": "new AdminHealthComponentResponse",
+          "lineNumber": 22
+        },
+        {
+          "caller": "getHealth",
+          "callee": "checkDatabase",
+          "lineNumber": 22
+        },
+        {
+          "caller": "getHealth",
+          "callee": "new AdminHealthComponentResponse",
+          "lineNumber": 23
+        },
+        {
+          "caller": "getHealth",
+          "callee": "checkRedis",
+          "lineNumber": 23
+        },
+        {
+          "caller": "getHealth",
+          "callee": "new AdminHealthComponentResponse",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getHealth",
+          "callee": "checkRabbitMq",
+          "lineNumber": 24
+        },
+        {
+          "caller": "checkDatabase",
+          "callee": "dataSource.getConnection",
+          "lineNumber": 29
+        },
+        {
+          "caller": "checkDatabase",
+          "callee": "connection.isValid",
+          "lineNumber": 30
+        },
+        {
+          "caller": "checkRedis",
+          "callee": "stringRedisTemplate.getConnectionFactory().getConnection",
+          "lineNumber": 37
+        },
+        {
+          "caller": "checkRedis",
+          "callee": "stringRedisTemplate.getConnectionFactory",
+          "lineNumber": 37
+        },
+        {
+          "caller": "checkRedis",
+          "callee": "connection.ping",
+          "lineNumber": 38
+        },
+        {
+          "caller": "checkRedis",
+          "callee": "response.isBlank",
+          "lineNumber": 39
+        },
+        {
+          "caller": "checkRabbitMq",
+          "callee": "rabbitConnectionFactory.createConnection",
+          "lineNumber": 47
+        },
+        {
+          "caller": "checkRabbitMq",
+          "callee": "connection.isOpen",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "handleBaseException",
+          "startLine": 21,
+          "endLine": 27,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "handleValidationException",
+          "startLine": 29,
+          "endLine": 46,
+          "params": [
+            "exception"
+          ]
+        },
+        {
+          "name": "handleHttpMessageNotReadableException",
+          "startLine": 48,
+          "endLine": 54,
+          "params": []
+        },
+        {
+          "name": "handleMethodArgumentTypeMismatchException",
+          "startLine": 56,
+          "endLine": 62,
+          "params": []
+        },
+        {
+          "name": "handleMaxUploadSizeExceededException",
+          "startLine": 64,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "handleMultipartException",
+          "startLine": 72,
+          "endLine": 78,
+          "params": []
+        },
+        {
+          "name": "handleMissingServletRequestPartException",
+          "startLine": 80,
+          "endLine": 86,
+          "params": []
+        },
+        {
+          "name": "handleAccessDeniedException",
+          "startLine": 88,
+          "endLine": 94,
+          "params": []
+        },
+        {
+          "name": "handleException",
+          "startLine": 96,
+          "endLine": 102,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "GlobalExceptionHandler",
+          "startLine": 18,
+          "endLine": 103,
+          "methods": [
+            "handleBaseException",
+            "handleValidationException",
+            "handleHttpMessageNotReadableException",
+            "handleMethodArgumentTypeMismatchException",
+            "handleMaxUploadSizeExceededException",
+            "handleMultipartException",
+            "handleMissingServletRequestPartException",
+            "handleAccessDeniedException",
+            "handleException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "handleBaseException",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "handleValidationException",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "handleHttpMessageNotReadableException",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "handleMethodArgumentTypeMismatchException",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "handleMaxUploadSizeExceededException",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "handleMultipartException",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "handleMissingServletRequestPartException",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "handleAccessDeniedException",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "handleException",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "GlobalExceptionHandler",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "handleBaseException",
+          "callee": "exception.getErrorCode",
+          "lineNumber": 23
+        },
+        {
+          "caller": "handleBaseException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleBaseException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 24
+        },
+        {
+          "caller": "handleBaseException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 25
+        },
+        {
+          "caller": "handleBaseException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleBaseException",
+          "callee": "exception.getMessage",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleBaseException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 26
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "exception.getBindingResult()\r\n                .getFieldErrors()\r\n                .stream()\r\n                .map(fieldError -> new FieldErrorResponse(\r\n                        fieldError.getField(),\r\n                        fieldError.getDefaultMessage()\r\n                )).toList",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "exception.getBindingResult()\r\n                .getFieldErrors()\r\n                .stream().map",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "exception.getBindingResult()\r\n                .getFieldErrors().stream",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "exception.getBindingResult().getFieldErrors",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "exception.getBindingResult",
+          "lineNumber": 33
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "new FieldErrorResponse",
+          "lineNumber": 36
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "fieldError.getField",
+          "lineNumber": 37
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "fieldError.getDefaultMessage",
+          "lineNumber": 38
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 43
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 44
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "errorCode.getMessage",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handleValidationException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 45
+        },
+        {
+          "caller": "handleHttpMessageNotReadableException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handleHttpMessageNotReadableException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 51
+        },
+        {
+          "caller": "handleHttpMessageNotReadableException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 52
+        },
+        {
+          "caller": "handleHttpMessageNotReadableException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleHttpMessageNotReadableException",
+          "callee": "errorCode.getMessage",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleHttpMessageNotReadableException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 53
+        },
+        {
+          "caller": "handleMethodArgumentTypeMismatchException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 59
+        },
+        {
+          "caller": "handleMethodArgumentTypeMismatchException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 59
+        },
+        {
+          "caller": "handleMethodArgumentTypeMismatchException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 60
+        },
+        {
+          "caller": "handleMethodArgumentTypeMismatchException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleMethodArgumentTypeMismatchException",
+          "callee": "errorCode.getMessage",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleMethodArgumentTypeMismatchException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 61
+        },
+        {
+          "caller": "handleMaxUploadSizeExceededException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleMaxUploadSizeExceededException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 67
+        },
+        {
+          "caller": "handleMaxUploadSizeExceededException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 68
+        },
+        {
+          "caller": "handleMaxUploadSizeExceededException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 69
+        },
+        {
+          "caller": "handleMaxUploadSizeExceededException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 69
+        },
+        {
+          "caller": "handleMultipartException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 75
+        },
+        {
+          "caller": "handleMultipartException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 75
+        },
+        {
+          "caller": "handleMultipartException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 76
+        },
+        {
+          "caller": "handleMultipartException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 77
+        },
+        {
+          "caller": "handleMultipartException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 77
+        },
+        {
+          "caller": "handleMissingServletRequestPartException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 83
+        },
+        {
+          "caller": "handleMissingServletRequestPartException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 83
+        },
+        {
+          "caller": "handleMissingServletRequestPartException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 84
+        },
+        {
+          "caller": "handleMissingServletRequestPartException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 85
+        },
+        {
+          "caller": "handleMissingServletRequestPartException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 85
+        },
+        {
+          "caller": "handleAccessDeniedException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 91
+        },
+        {
+          "caller": "handleAccessDeniedException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 91
+        },
+        {
+          "caller": "handleAccessDeniedException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 92
+        },
+        {
+          "caller": "handleAccessDeniedException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 93
+        },
+        {
+          "caller": "handleAccessDeniedException",
+          "callee": "errorCode.getMessage",
+          "lineNumber": 93
+        },
+        {
+          "caller": "handleAccessDeniedException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 93
+        },
+        {
+          "caller": "handleException",
+          "callee": "ResponseEntity\r\n                .status(errorCode.getHttpStatus()).body",
+          "lineNumber": 99
+        },
+        {
+          "caller": "handleException",
+          "callee": "ResponseEntity.status",
+          "lineNumber": 99
+        },
+        {
+          "caller": "handleException",
+          "callee": "errorCode.getHttpStatus",
+          "lineNumber": 100
+        },
+        {
+          "caller": "handleException",
+          "callee": "ApiResponse.error",
+          "lineNumber": 101
+        },
+        {
+          "caller": "handleException",
+          "callee": "errorCode.getMessage",
+          "lineNumber": 101
+        },
+        {
+          "caller": "handleException",
+          "callee": "errorCode.getCode",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 52,
+      "functions": [
+        {
+          "name": "ApiResponse",
+          "startLine": 16,
+          "endLine": 22,
+          "params": [
+            "success",
+            "message",
+            "data",
+            "errorCode",
+            "errors"
+          ]
+        },
+        {
+          "name": "success",
+          "startLine": 24,
+          "endLine": 26,
+          "params": [
+            "data"
+          ]
+        },
+        {
+          "name": "success",
+          "startLine": 28,
+          "endLine": 30,
+          "params": [
+            "message",
+            "data"
+          ]
+        },
+        {
+          "name": "error",
+          "startLine": 32,
+          "endLine": 34,
+          "params": [
+            "message",
+            "errorCode"
+          ]
+        },
+        {
+          "name": "error",
+          "startLine": 36,
+          "endLine": 44,
+          "params": [
+            "message",
+            "errorCode",
+            "errors"
+          ]
+        },
+        {
+          "name": "isSuccess",
+          "startLine": 46,
+          "endLine": 48,
+          "params": []
+        },
+        {
+          "name": "getMessage",
+          "startLine": 50,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "getData",
+          "startLine": 54,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "getErrorCode",
+          "startLine": 58,
+          "endLine": 60,
+          "params": []
+        },
+        {
+          "name": "getErrors",
+          "startLine": 62,
+          "endLine": 64,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ApiResponse",
+          "startLine": 7,
+          "endLine": 65,
+          "methods": [
+            "ApiResponse",
+            "success",
+            "success",
+            "error",
+            "error",
+            "isSuccess",
+            "getMessage",
+            "getData",
+            "getErrorCode",
+            "getErrors"
+          ],
+          "properties": [
+            "success",
+            "message",
+            "data",
+            "errorCode",
+            "errors"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "success",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "success",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "error",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "error",
+          "line": 36,
+          "isDefault": false
+        },
+        {
+          "name": "isSuccess",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "getMessage",
+          "line": 50,
+          "isDefault": false
+        },
+        {
+          "name": "getData",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "getErrorCode",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "getErrors",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "ApiResponse",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "success",
+          "callee": "new ApiResponse<>",
+          "lineNumber": 25
+        },
+        {
+          "caller": "success",
+          "callee": "new ApiResponse<>",
+          "lineNumber": 29
+        },
+        {
+          "caller": "error",
+          "callee": "new ApiResponse<>",
+          "lineNumber": 33
+        },
+        {
+          "caller": "error",
+          "callee": "Collections.emptyList",
+          "lineNumber": 33
+        },
+        {
+          "caller": "error",
+          "callee": "new ApiResponse<>",
+          "lineNumber": 37
+        },
+        {
+          "caller": "error",
+          "callee": "Collections.emptyList",
+          "lineNumber": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 15,
+      "functions": [
+        {
+          "name": "FieldErrorResponse",
+          "startLine": 8,
+          "endLine": 11,
+          "params": [
+            "field",
+            "message"
+          ]
+        },
+        {
+          "name": "getField",
+          "startLine": 13,
+          "endLine": 15,
+          "params": []
+        },
+        {
+          "name": "getMessage",
+          "startLine": 17,
+          "endLine": 19,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FieldErrorResponse",
+          "startLine": 3,
+          "endLine": 20,
+          "methods": [
+            "FieldErrorResponse",
+            "getField",
+            "getMessage"
+          ],
+          "properties": [
+            "field",
+            "message"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FieldErrorResponse",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "getField",
+          "line": 13,
+          "isDefault": false
+        },
+        {
+          "name": "getMessage",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "FieldErrorResponse",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    }
+  ]
+}

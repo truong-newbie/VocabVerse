@@ -1,0 +1,146 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".dockerignore",
+      "language": "unknown",
+      "fileCategory": "infra",
+      "totalLines": 13,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    },
+    {
+      "path": "docker-compose.yml",
+      "language": "yaml",
+      "fileCategory": "infra",
+      "totalLines": 89,
+      "nonEmptyLines": 85,
+      "sections": [
+        {
+          "heading": "services",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "volumes",
+          "level": 1,
+          "line": 86
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "Dockerfile",
+      "language": "dockerfile",
+      "fileCategory": "infra",
+      "totalLines": 26,
+      "nonEmptyLines": 15,
+      "services": [
+        {
+          "name": "build",
+          "image": "eclipse-temurin:21-jdk-alpine",
+          "ports": [],
+          "startLine": 3,
+          "endLine": 13
+        },
+        {
+          "name": "eclipse-temurin",
+          "image": "eclipse-temurin:21-jre-alpine",
+          "ports": [
+            8080
+          ],
+          "startLine": 14,
+          "endLine": 27
+        }
+      ],
+      "steps": [
+        {
+          "name": "FROM eclipse-temurin:21-jdk-alpine AS build",
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "name": "COPY .mvn .mvn",
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "COPY mvnw pom.xml ./",
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "name": "RUN chmod +x mvnw && ./mvnw -q -DskipTests dependency:go-offline",
+          "startLine": 9,
+          "endLine": 9
+        },
+        {
+          "name": "COPY src src",
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "name": "RUN ./mvnw -q -DskipTests package",
+          "startLine": 12,
+          "endLine": 12
+        },
+        {
+          "name": "FROM eclipse-temurin:21-jre-alpine",
+          "startLine": 14,
+          "endLine": 14
+        },
+        {
+          "name": "WORKDIR /app",
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "RUN addgroup -S vocabverse && adduser -S vocabverse -G vocabvers",
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "name": "COPY --from=build /app/target/*.jar app.jar",
+          "startLine": 20,
+          "endLine": 20
+        },
+        {
+          "name": "USER vocabverse",
+          "startLine": 22,
+          "endLine": 22
+        },
+        {
+          "name": "EXPOSE 8080",
+          "startLine": 24,
+          "endLine": 24
+        },
+        {
+          "name": "ENTRYPOINT [\"java\", \"-jar\", \"/app/app.jar\"]",
+          "startLine": 26,
+          "endLine": 26
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "serviceCount": 2,
+        "stepCount": 14
+      }
+    }
+  ]
+}

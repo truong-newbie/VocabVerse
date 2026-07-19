@@ -1,0 +1,1036 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 19,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/resources/db/migration/V10__create_notifications_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "definitions": [
+        {
+          "name": "notifications",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "type",
+            "status",
+            "sent_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 9
+        },
+        {
+          "name": "idx_notifications_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "name": "idx_notifications_type",
+          "kind": "index",
+          "fields": [],
+          "startLine": 12,
+          "endLine": 12
+        },
+        {
+          "name": "idx_notifications_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 13,
+          "endLine": 13
+        },
+        {
+          "name": "idx_notifications_created_at",
+          "kind": "index",
+          "fields": [],
+          "startLine": 14,
+          "endLine": 14
+        },
+        {
+          "name": "uq_notifications_user_type_created_date",
+          "kind": "index",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 6
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V11__create_roleplay_tables.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 39,
+      "nonEmptyLines": 36,
+      "definitions": [
+        {
+          "name": "roleplay_sessions",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "topic",
+            "difficulty",
+            "persona",
+            "scenario",
+            "status",
+            "started_at",
+            "ended_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 13
+        },
+        {
+          "name": "roleplay_messages",
+          "kind": "table",
+          "fields": [
+            "id",
+            "session_id",
+            "sender",
+            "content",
+            "correction",
+            "created_at"
+          ],
+          "startLine": 15,
+          "endLine": 22
+        },
+        {
+          "name": "roleplay_reports",
+          "kind": "table",
+          "fields": [
+            "id",
+            "session_id",
+            "summary",
+            "strengths",
+            "weaknesses",
+            "suggested_vocabulary",
+            "grammar_feedback",
+            "overall_score",
+            "created_at"
+          ],
+          "startLine": 24,
+          "endLine": 34
+        },
+        {
+          "name": "idx_roleplay_sessions_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 36,
+          "endLine": 36
+        },
+        {
+          "name": "idx_roleplay_sessions_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 37,
+          "endLine": 37
+        },
+        {
+          "name": "idx_roleplay_messages_session_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 38,
+          "endLine": 38
+        },
+        {
+          "name": "idx_roleplay_reports_session_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 39,
+          "endLine": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 7
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V12__create_collection_review_settings_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 20,
+      "nonEmptyLines": 18,
+      "definitions": [
+        {
+          "name": "collection_review_settings",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "collection_id",
+            "enabled",
+            "email_enabled",
+            "intervals_json",
+            "reminder_time",
+            "timezone",
+            "last_reset_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 15
+        },
+        {
+          "name": "idx_collection_review_settings_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 17,
+          "endLine": 17
+        },
+        {
+          "name": "idx_collection_review_settings_collection_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "name": "idx_collection_review_settings_enabled",
+          "kind": "index",
+          "fields": [],
+          "startLine": 19,
+          "endLine": 19
+        },
+        {
+          "name": "idx_collection_review_settings_email_enabled",
+          "kind": "index",
+          "fields": [],
+          "startLine": 20,
+          "endLine": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 5
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V13__create_admin_shadowing_tables.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 27,
+      "nonEmptyLines": 24,
+      "definitions": [
+        {
+          "name": "shadowing_lessons",
+          "kind": "table",
+          "fields": [
+            "id",
+            "source",
+            "status",
+            "title",
+            "original_filename",
+            "youtube_url",
+            "content_type",
+            "file_size",
+            "error_message",
+            "created_by",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 14
+        },
+        {
+          "name": "public_collection_moderations",
+          "kind": "table",
+          "fields": [
+            "id",
+            "collection_id",
+            "moderated_by",
+            "reason",
+            "created_at"
+          ],
+          "startLine": 19,
+          "endLine": 25
+        },
+        {
+          "name": "idx_shadowing_lessons_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "idx_shadowing_lessons_created_at",
+          "kind": "index",
+          "fields": [],
+          "startLine": 17,
+          "endLine": 17
+        },
+        {
+          "name": "idx_public_collection_moderations_collection_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 27,
+          "endLine": 27
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 5
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V14__alter_shadowing_lessons_admin_contract.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V15__shadowing_cloudinary_subtitles.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 20,
+      "nonEmptyLines": 18,
+      "definitions": [
+        {
+          "name": "shadowing_lesson_subtitles",
+          "kind": "table",
+          "fields": [
+            "id",
+            "lesson_id",
+            "start_time_ms",
+            "end_time_ms",
+            "english_text",
+            "vietnamese_text",
+            "order_index",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 7,
+          "endLine": 17
+        },
+        {
+          "name": "idx_shadowing_subtitles_lesson_order",
+          "kind": "index",
+          "fields": [],
+          "startLine": 19,
+          "endLine": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 2
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V16__add_review_scheduler_type.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V17__add_sm2_progress_fields.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V18__add_fsrs_progress_fields.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 4,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V19__add_fsrs_review_settings.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 0
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V1__create_users_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 16,
+      "nonEmptyLines": 15,
+      "definitions": [
+        {
+          "name": "users",
+          "kind": "table",
+          "fields": [
+            "id",
+            "email",
+            "password_hash",
+            "full_name",
+            "avatar_url",
+            "role",
+            "status",
+            "created_at",
+            "updated_at",
+            "created_by",
+            "updated_by"
+          ],
+          "startLine": 1,
+          "endLine": 13
+        },
+        {
+          "name": "idx_users_email",
+          "kind": "index",
+          "fields": [],
+          "startLine": 15,
+          "endLine": 15
+        },
+        {
+          "name": "idx_users_role",
+          "kind": "index",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 3
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V2__create_refresh_tokens_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "definitions": [
+        {
+          "name": "refresh_tokens",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "token",
+            "expired_at",
+            "created_at",
+            "is_revoked"
+          ],
+          "startLine": 1,
+          "endLine": 8
+        },
+        {
+          "name": "idx_refresh_tokens_token",
+          "kind": "index",
+          "fields": [],
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "name": "idx_refresh_tokens_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 11,
+          "endLine": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 3
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V3__create_collections_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 17,
+      "nonEmptyLines": 16,
+      "definitions": [
+        {
+          "name": "collections",
+          "kind": "table",
+          "fields": [
+            "id",
+            "owner_id",
+            "title",
+            "description",
+            "visibility",
+            "thumbnail_url",
+            "total_words",
+            "is_featured",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "startLine": 1,
+          "endLine": 13
+        },
+        {
+          "name": "idx_collections_owner_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 15,
+          "endLine": 15
+        },
+        {
+          "name": "idx_collections_visibility",
+          "kind": "index",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "idx_collections_title",
+          "kind": "index",
+          "fields": [],
+          "startLine": 17,
+          "endLine": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 4
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V4__create_vocabularies_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 35,
+      "nonEmptyLines": 32,
+      "definitions": [
+        {
+          "name": "vocabularies",
+          "kind": "table",
+          "fields": [
+            "id",
+            "word",
+            "normalized_word",
+            "phonetic",
+            "audio_url",
+            "part_of_speech",
+            "meaning_vi",
+            "meaning_en",
+            "synonyms",
+            "antonyms",
+            "examples",
+            "source",
+            "created_by",
+            "created_at",
+            "updated_at",
+            "deleted_at"
+          ],
+          "startLine": 1,
+          "endLine": 18
+        },
+        {
+          "name": "collection_vocabularies",
+          "kind": "table",
+          "fields": [
+            "id",
+            "collection_id",
+            "vocabulary_id",
+            "added_by",
+            "position",
+            "created_at"
+          ],
+          "startLine": 20,
+          "endLine": 29
+        },
+        {
+          "name": "idx_vocabularies_word",
+          "kind": "index",
+          "fields": [],
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "idx_vocabularies_normalized_word",
+          "kind": "index",
+          "fields": [],
+          "startLine": 32,
+          "endLine": 32
+        },
+        {
+          "name": "idx_vocabularies_created_by",
+          "kind": "index",
+          "fields": [],
+          "startLine": 33,
+          "endLine": 33
+        },
+        {
+          "name": "idx_collection_vocabularies_collection_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 34,
+          "endLine": 34
+        },
+        {
+          "name": "idx_collection_vocabularies_vocabulary_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 35,
+          "endLine": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 7
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V5__create_learning_progress_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "definitions": [
+        {
+          "name": "learning_progress",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "vocabulary_id",
+            "status",
+            "repetition_count",
+            "ease_factor",
+            "next_review_at",
+            "last_reviewed_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 14
+        },
+        {
+          "name": "idx_learning_progress_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "idx_learning_progress_vocabulary_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 17,
+          "endLine": 17
+        },
+        {
+          "name": "idx_learning_progress_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "name": "idx_learning_progress_next_review_at",
+          "kind": "index",
+          "fields": [],
+          "startLine": 19,
+          "endLine": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 5
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V6__create_review_history_table.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "definitions": [
+        {
+          "name": "review_history",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "vocabulary_id",
+            "result",
+            "reviewed_at",
+            "next_review_at",
+            "previous_status",
+            "new_status"
+          ],
+          "startLine": 1,
+          "endLine": 10
+        },
+        {
+          "name": "idx_review_history_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 12,
+          "endLine": 12
+        },
+        {
+          "name": "idx_review_history_vocabulary_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 13,
+          "endLine": 13
+        },
+        {
+          "name": "idx_review_history_reviewed_at",
+          "kind": "index",
+          "fields": [],
+          "startLine": 14,
+          "endLine": 14
+        },
+        {
+          "name": "idx_review_history_next_review_at",
+          "kind": "index",
+          "fields": [],
+          "startLine": 15,
+          "endLine": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 5
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V7__create_flashcard_tables.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 31,
+      "nonEmptyLines": 28,
+      "definitions": [
+        {
+          "name": "flashcard_sessions",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "source",
+            "collection_id",
+            "status",
+            "total_cards",
+            "completed_cards",
+            "started_at",
+            "completed_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 13
+        },
+        {
+          "name": "flashcard_session_items",
+          "kind": "table",
+          "fields": [
+            "id",
+            "session_id",
+            "vocabulary_id",
+            "result",
+            "answered_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 15,
+          "endLine": 25
+        },
+        {
+          "name": "idx_flashcard_sessions_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 27,
+          "endLine": 27
+        },
+        {
+          "name": "idx_flashcard_sessions_collection_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 28,
+          "endLine": 28
+        },
+        {
+          "name": "idx_flashcard_sessions_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 29,
+          "endLine": 29
+        },
+        {
+          "name": "idx_flashcard_session_items_session_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 30,
+          "endLine": 30
+        },
+        {
+          "name": "idx_flashcard_session_items_vocabulary_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 31,
+          "endLine": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 7
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V8__create_quiz_tables.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 35,
+      "nonEmptyLines": 33,
+      "definitions": [
+        {
+          "name": "quiz_sessions",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "source",
+            "collection_id",
+            "status",
+            "total_questions",
+            "correct_answers",
+            "completed_questions",
+            "started_at",
+            "completed_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 14
+        },
+        {
+          "name": "quiz_questions",
+          "kind": "table",
+          "fields": [
+            "id",
+            "session_id",
+            "vocabulary_id",
+            "question_type",
+            "question_text",
+            "correct_answer",
+            "options",
+            "user_answer",
+            "is_correct",
+            "answered_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 16,
+          "endLine": 29
+        },
+        {
+          "name": "idx_quiz_sessions_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "idx_quiz_sessions_collection_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 32,
+          "endLine": 32
+        },
+        {
+          "name": "idx_quiz_sessions_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 33,
+          "endLine": 33
+        },
+        {
+          "name": "idx_quiz_questions_session_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 34,
+          "endLine": 34
+        },
+        {
+          "name": "idx_quiz_questions_vocabulary_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 35,
+          "endLine": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 7
+      }
+    },
+    {
+      "path": "src/main/resources/db/migration/V9__create_typing_tables.sql",
+      "language": "sql",
+      "fileCategory": "data",
+      "totalLines": 34,
+      "nonEmptyLines": 32,
+      "definitions": [
+        {
+          "name": "typing_sessions",
+          "kind": "table",
+          "fields": [
+            "id",
+            "user_id",
+            "source",
+            "collection_id",
+            "status",
+            "total_questions",
+            "correct_answers",
+            "completed_questions",
+            "started_at",
+            "completed_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 1,
+          "endLine": 14
+        },
+        {
+          "name": "typing_questions",
+          "kind": "table",
+          "fields": [
+            "id",
+            "session_id",
+            "vocabulary_id",
+            "prompt_text",
+            "correct_answer",
+            "user_answer",
+            "is_correct",
+            "similarity_score",
+            "answered_at",
+            "created_at",
+            "updated_at"
+          ],
+          "startLine": 16,
+          "endLine": 28
+        },
+        {
+          "name": "idx_typing_sessions_user_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 30,
+          "endLine": 30
+        },
+        {
+          "name": "idx_typing_sessions_collection_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "idx_typing_sessions_status",
+          "kind": "index",
+          "fields": [],
+          "startLine": 32,
+          "endLine": 32
+        },
+        {
+          "name": "idx_typing_questions_session_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 33,
+          "endLine": 33
+        },
+        {
+          "name": "idx_typing_questions_vocabulary_id",
+          "kind": "index",
+          "fields": [],
+          "startLine": 34,
+          "endLine": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 7
+      }
+    }
+  ]
+}

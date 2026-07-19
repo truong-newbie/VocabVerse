@@ -1,0 +1,1481 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/checksums/md5-checksums.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 65,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/checksums/sha1-checksums.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 272,
+      "nonEmptyLines": 269,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/executionHistory/executionHistory.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 297,
+      "nonEmptyLines": 297,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/fileChanges/last-build.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/fileHashes/fileHashes.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 103,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/fileHashes/resourceHashesCache.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 77,
+      "nonEmptyLines": 77,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/9.3.0/gc.properties",
+      "language": "properties",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/cache.properties",
+      "language": "properties",
+      "fileCategory": "config",
+      "totalLines": 2,
+      "nonEmptyLines": 2,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/outputFiles.bin",
+      "language": "bin",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/file-system.probe",
+      "language": "probe",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 1,
+      "metrics": {}
+    },
+    {
+      "path": ".gradle/vcs-1/gc.properties",
+      "language": "properties",
+      "fileCategory": "config",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "language": "properties",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 43,
+      "nonEmptyLines": 37,
+      "metrics": {}
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "docs/api/06-api-design.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 956,
+      "nonEmptyLines": 700,
+      "sections": [
+        {
+          "heading": "06-api-design.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "THIẾT KẾ API",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. THÔNG TIN TÀI LIỆU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. API CONVENTION",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "2.1 Base URL",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "2.2 Authentication Header",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "2.3 Response Format Thành Công",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "2.4 Response Format Lỗi",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "2.5 Pagination Format",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "3. AUTH API",
+          "level": 1,
+          "line": 85
+        },
+        {
+          "heading": "3.1 Register",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 103
+        },
+        {
+          "heading": "3.2 Login",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "3.3 Refresh Token",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 158
+        },
+        {
+          "heading": "3.4 Logout",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "4. USER API",
+          "level": 1,
+          "line": 176
+        },
+        {
+          "heading": "4.1 Get Current User",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "4.2 Update Profile",
+          "level": 2,
+          "line": 201
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "5. COLLECTION API",
+          "level": 1,
+          "line": 218
+        },
+        {
+          "heading": "5.1 Create Collection",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 226
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 236
+        },
+        {
+          "heading": "5.2 Get My Collections",
+          "level": 2,
+          "line": 253
+        },
+        {
+          "heading": "5.3 Get Collection Detail",
+          "level": 2,
+          "line": 261
+        },
+        {
+          "heading": "5.4 Update Collection",
+          "level": 2,
+          "line": 269
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 275
+        },
+        {
+          "heading": "5.5 Delete Collection",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "5.6 Publish Collection",
+          "level": 2,
+          "line": 295
+        },
+        {
+          "heading": "5.7 Make Collection Private",
+          "level": 2,
+          "line": 303
+        },
+        {
+          "heading": "5.8 Get Public Collections",
+          "level": 2,
+          "line": 311
+        },
+        {
+          "heading": "5.9 Save Public Collection",
+          "level": 2,
+          "line": 319
+        },
+        {
+          "heading": "6. VOCABULARY API",
+          "level": 1,
+          "line": 327
+        },
+        {
+          "heading": "6.1 Search Word",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 335
+        },
+        {
+          "heading": "6.2 Add Vocabulary To Collection",
+          "level": 2,
+          "line": 362
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 368
+        },
+        {
+          "heading": "6.3 Get Vocabularies In Collection",
+          "level": 2,
+          "line": 390
+        },
+        {
+          "heading": "6.4 Remove Vocabulary From Collection",
+          "level": 2,
+          "line": 398
+        },
+        {
+          "heading": "6.5 Update Vocabulary",
+          "level": 2,
+          "line": 406
+        },
+        {
+          "heading": "7. AI IMPORT API",
+          "level": 1,
+          "line": 414
+        },
+        {
+          "heading": "7.1 Create AI Import Job",
+          "level": 2,
+          "line": 416
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 422
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 432
+        },
+        {
+          "heading": "7.2 Get AI Import Job Status",
+          "level": 2,
+          "line": 447
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 453
+        },
+        {
+          "heading": "8. FLASHCARD API",
+          "level": 1,
+          "line": 469
+        },
+        {
+          "heading": "8.1 Start Flashcard Session",
+          "level": 2,
+          "line": 471
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 477
+        },
+        {
+          "heading": "8.2 Submit Flashcard Result",
+          "level": 2,
+          "line": 487
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 493
+        },
+        {
+          "heading": "9. QUIZ API",
+          "level": 1,
+          "line": 505
+        },
+        {
+          "heading": "9.1 Start Quiz",
+          "level": 2,
+          "line": 507
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 513
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 523
+        },
+        {
+          "heading": "9.2 Submit Quiz",
+          "level": 2,
+          "line": 545
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 551
+        },
+        {
+          "heading": "10. TYPING PRACTICE API",
+          "level": 1,
+          "line": 566
+        },
+        {
+          "heading": "10.1 Start Typing Practice",
+          "level": 2,
+          "line": 568
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 574
+        },
+        {
+          "heading": "10.2 Submit Typing Practice",
+          "level": 2,
+          "line": 585
+        },
+        {
+          "heading": "11. SPACED REPETITION API",
+          "level": 1,
+          "line": 593
+        },
+        {
+          "heading": "11.1 Enable Spaced Repetition",
+          "level": 2,
+          "line": 595
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 601
+        },
+        {
+          "heading": "11.2 Update Review Schedule",
+          "level": 2,
+          "line": 612
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 618
+        },
+        {
+          "heading": "11.3 Get Today Reviews",
+          "level": 2,
+          "line": 629
+        },
+        {
+          "heading": "11.4 Complete Review Session",
+          "level": 2,
+          "line": 637
+        },
+        {
+          "heading": "12. DASHBOARD API",
+          "level": 1,
+          "line": 645
+        },
+        {
+          "heading": "12.1 Get Dashboard Summary",
+          "level": 2,
+          "line": 647
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 653
+        },
+        {
+          "heading": "13. SHADOWING API",
+          "level": 1,
+          "line": 672
+        },
+        {
+          "heading": "13.1 Admin Upload Shadowing Video",
+          "level": 2,
+          "line": 674
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 680
+        },
+        {
+          "heading": "13.2 Get Shadowing Videos",
+          "level": 2,
+          "line": 693
+        },
+        {
+          "heading": "13.3 Get Shadowing Video Detail",
+          "level": 2,
+          "line": 701
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 707
+        },
+        {
+          "heading": "13.4 Update Shadowing Progress",
+          "level": 2,
+          "line": 732
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 738
+        },
+        {
+          "heading": "14. ROLEPLAY API",
+          "level": 1,
+          "line": 749
+        },
+        {
+          "heading": "14.1 Create Roleplay Session",
+          "level": 2,
+          "line": 751
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 757
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 767
+        },
+        {
+          "heading": "14.2 Send Roleplay Message",
+          "level": 2,
+          "line": 782
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 788
+        },
+        {
+          "heading": "Response",
+          "level": 3,
+          "line": 796
+        },
+        {
+          "heading": "14.3 End Roleplay Session",
+          "level": 2,
+          "line": 815
+        },
+        {
+          "heading": "14.4 Get Roleplay Report",
+          "level": 2,
+          "line": 823
+        },
+        {
+          "heading": "15. PDF EXPORT API",
+          "level": 1,
+          "line": 831
+        },
+        {
+          "heading": "15.1 Create Export Job",
+          "level": 2,
+          "line": 833
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 839
+        },
+        {
+          "heading": "15.2 Get Export Job Status",
+          "level": 2,
+          "line": 850
+        },
+        {
+          "heading": "16. ADMIN API",
+          "level": 1,
+          "line": 858
+        },
+        {
+          "heading": "16.1 Get Users",
+          "level": 2,
+          "line": 860
+        },
+        {
+          "heading": "16.2 Ban User",
+          "level": 2,
+          "line": 868
+        },
+        {
+          "heading": "16.3 Unban User",
+          "level": 2,
+          "line": 876
+        },
+        {
+          "heading": "16.4 Create System Collection",
+          "level": 2,
+          "line": 884
+        },
+        {
+          "heading": "Request",
+          "level": 3,
+          "line": 890
+        },
+        {
+          "heading": "17. ERROR CODES",
+          "level": 1,
+          "line": 903
+        },
+        {
+          "heading": "18. API PRIORITY CHO MVP",
+          "level": 1,
+          "line": 921
+        },
+        {
+          "heading": "Phase 1",
+          "level": 2,
+          "line": 923
+        },
+        {
+          "heading": "Phase 2",
+          "level": 2,
+          "line": 937
+        },
+        {
+          "heading": "Phase 3",
+          "level": 2,
+          "line": 946
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 109
+      }
+    },
+    {
+      "path": "docs/api/API_DOCUMENTATION_FE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 479,
+      "nonEmptyLines": 369,
+      "sections": [
+        {
+          "heading": "Base URL",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Authentication",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Common Response Format",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "Pagination",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "Endpoint Summary",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "Auth",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "Users",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "Collections",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "Collection Vocabularies",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "Vocabularies",
+          "level": 3,
+          "line": 130
+        },
+        {
+          "heading": "Public Collections",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "Learning Progress",
+          "level": 3,
+          "line": 149
+        },
+        {
+          "heading": "Flashcards",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "Quizzes",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "Typing",
+          "level": 3,
+          "line": 175
+        },
+        {
+          "heading": "Reviews",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "Dashboard",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "Notifications",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "AI Vocabulary",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "Roleplay",
+          "level": 3,
+          "line": 214
+        },
+        {
+          "heading": "Export",
+          "level": 3,
+          "line": 224
+        },
+        {
+          "heading": "Request Body Samples",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "CreateCollectionRequest",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "CreateFlashcardSessionRequest",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "CreateQuizSessionRequest",
+          "level": 3,
+          "line": 260
+        },
+        {
+          "heading": "CreateRoleplaySessionRequest",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "CreateTypingSessionRequest",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "CreateVocabularyRequest",
+          "level": 3,
+          "line": 288
+        },
+        {
+          "heading": "LoginRequest",
+          "level": 3,
+          "line": 315
+        },
+        {
+          "heading": "NormalizeVocabularyRequest",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "RefreshTokenRequest",
+          "level": 3,
+          "line": 332
+        },
+        {
+          "heading": "RegisterRequest",
+          "level": 3,
+          "line": 340
+        },
+        {
+          "heading": "SendRoleplayMessageRequest",
+          "level": 3,
+          "line": 350
+        },
+        {
+          "heading": "SubmitFlashcardAnswerRequest",
+          "level": 3,
+          "line": 358
+        },
+        {
+          "heading": "SubmitQuizAnswerRequest",
+          "level": 3,
+          "line": 366
+        },
+        {
+          "heading": "SubmitReviewRequest",
+          "level": 3,
+          "line": 374
+        },
+        {
+          "heading": "SubmitTypingAnswerRequest",
+          "level": 3,
+          "line": 382
+        },
+        {
+          "heading": "UpdateCollectionRequest",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "UpdateVocabularyRequest",
+          "level": 3,
+          "line": 401
+        },
+        {
+          "heading": "Key Response Samples",
+          "level": 2,
+          "line": 419
+        },
+        {
+          "heading": "Login Success",
+          "level": 3,
+          "line": 421
+        },
+        {
+          "heading": "Register Success",
+          "level": 3,
+          "line": 442
+        },
+        {
+          "heading": "Axios Example",
+          "level": 2,
+          "line": 457
+        },
+        {
+          "heading": "Common 404 Causes",
+          "level": 2,
+          "line": 473
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    },
+    {
+      "path": "docs/engineering/08-non-functional-requirements.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 470,
+      "nonEmptyLines": 306,
+      "sections": [
+        {
+          "heading": "08-non-functional-requirements.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "YÊU CẦU PHI CHỨC NĂNG",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. Mục tiêu",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. Performance Requirements",
+          "level": 1,
+          "line": 27
+        },
+        {
+          "heading": "NFR-PERF-001",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "NFR-PERF-002",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "NFR-PERF-003",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "3. Security Requirements",
+          "level": 1,
+          "line": 74
+        },
+        {
+          "heading": "NFR-SEC-001",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "NFR-SEC-002",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "NFR-SEC-003",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "NFR-SEC-004",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "NFR-SEC-005",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "4. Rate Limiting",
+          "level": 1,
+          "line": 140
+        },
+        {
+          "heading": "NFR-RATE-001",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "NFR-RATE-002",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "5. Availability Requirements",
+          "level": 1,
+          "line": 167
+        },
+        {
+          "heading": "NFR-AVA-001",
+          "level": 2,
+          "line": 169
+        },
+        {
+          "heading": "NFR-AVA-002",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "6. Scalability Requirements",
+          "level": 1,
+          "line": 196
+        },
+        {
+          "heading": "NFR-SCALE-001",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "NFR-SCALE-002",
+          "level": 2,
+          "line": 210
+        },
+        {
+          "heading": "7. Logging Requirements",
+          "level": 1,
+          "line": 222
+        },
+        {
+          "heading": "NFR-LOG-001",
+          "level": 2,
+          "line": 224
+        },
+        {
+          "heading": "NFR-LOG-002",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "8. Monitoring Requirements",
+          "level": 1,
+          "line": 258
+        },
+        {
+          "heading": "9. Backup Requirements",
+          "level": 1,
+          "line": 285
+        },
+        {
+          "heading": "NFR-BACKUP-001",
+          "level": 2,
+          "line": 287
+        },
+        {
+          "heading": "NFR-BACKUP-002",
+          "level": 2,
+          "line": 297
+        },
+        {
+          "heading": "10. Maintainability Requirements",
+          "level": 1,
+          "line": 312
+        },
+        {
+          "heading": "NFR-MAIN-001",
+          "level": 2,
+          "line": 314
+        },
+        {
+          "heading": "NFR-MAIN-002",
+          "level": 2,
+          "line": 334
+        },
+        {
+          "heading": "NFR-MAIN-003",
+          "level": 2,
+          "line": 352
+        },
+        {
+          "heading": "11. Data Integrity Requirements",
+          "level": 1,
+          "line": 366
+        },
+        {
+          "heading": "NFR-DATA-001",
+          "level": 2,
+          "line": 368
+        },
+        {
+          "heading": "NFR-DATA-002",
+          "level": 2,
+          "line": 374
+        },
+        {
+          "heading": "NFR-DATA-003",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "12. AI Safety Requirements",
+          "level": 1,
+          "line": 390
+        },
+        {
+          "heading": "NFR-AI-001",
+          "level": 2,
+          "line": 392
+        },
+        {
+          "heading": "NFR-AI-002",
+          "level": 2,
+          "line": 398
+        },
+        {
+          "heading": "NFR-AI-003",
+          "level": 2,
+          "line": 408
+        },
+        {
+          "heading": "13. File Upload Requirements",
+          "level": 1,
+          "line": 420
+        },
+        {
+          "heading": "NFR-FILE-001",
+          "level": 2,
+          "line": 422
+        },
+        {
+          "heading": "NFR-FILE-002",
+          "level": 2,
+          "line": 435
+        },
+        {
+          "heading": "14. Browser Compatibility",
+          "level": 1,
+          "line": 447
+        },
+        {
+          "heading": "15. Kết luận",
+          "level": 1,
+          "line": 460
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 47
+      }
+    },
+    {
+      "path": "docs/engineering/09-backend-project-structure.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 793,
+      "nonEmptyLines": 526,
+      "sections": [
+        {
+          "heading": "09-backend-project-structure.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "BACKEND PROJECT STRUCTURE",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. KIẾN TRÚC BACKEND",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "3. PACKAGE ROOT",
+          "level": 1,
+          "line": 46
+        },
+        {
+          "heading": "4. PROJECT STRUCTURE",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "5. COMMON MODULE",
+          "level": 1,
+          "line": 78
+        },
+        {
+          "heading": "6. MODULE STRUCTURE",
+          "level": 1,
+          "line": 97
+        },
+        {
+          "heading": "7. CONTROLLER LAYER",
+          "level": 1,
+          "line": 116
+        },
+        {
+          "heading": "8. SERVICE LAYER",
+          "level": 1,
+          "line": 160
+        },
+        {
+          "heading": "9. REPOSITORY LAYER",
+          "level": 1,
+          "line": 190
+        },
+        {
+          "heading": "10. DTO STRUCTURE",
+          "level": 1,
+          "line": 209
+        },
+        {
+          "heading": "Request",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "Response",
+          "level": 2,
+          "line": 221
+        },
+        {
+          "heading": "11. ENTITY STRUCTURE",
+          "level": 1,
+          "line": 247
+        },
+        {
+          "heading": "12. MAPPER STRATEGY",
+          "level": 1,
+          "line": 277
+        },
+        {
+          "heading": "13. RESPONSE STANDARD",
+          "level": 1,
+          "line": 303
+        },
+        {
+          "heading": "14. EXCEPTION ARCHITECTURE",
+          "level": 1,
+          "line": 332
+        },
+        {
+          "heading": "Base Exception",
+          "level": 2,
+          "line": 334
+        },
+        {
+          "heading": "Business Exception",
+          "level": 2,
+          "line": 346
+        },
+        {
+          "heading": "Global Exception Handler",
+          "level": 2,
+          "line": 358
+        },
+        {
+          "heading": "15. ERROR CODE",
+          "level": 1,
+          "line": 381
+        },
+        {
+          "heading": "16. SECURITY STRUCTURE",
+          "level": 1,
+          "line": 404
+        },
+        {
+          "heading": "17. JWT FLOW",
+          "level": 1,
+          "line": 418
+        },
+        {
+          "heading": "18. CONFIG PACKAGE",
+          "level": 1,
+          "line": 456
+        },
+        {
+          "heading": "19. VALIDATION",
+          "level": 1,
+          "line": 472
+        },
+        {
+          "heading": "20. ASYNC MODULE",
+          "level": 1,
+          "line": 494
+        },
+        {
+          "heading": "21. AI MODULE",
+          "level": 1,
+          "line": 517
+        },
+        {
+          "heading": "Client",
+          "level": 2,
+          "line": 531
+        },
+        {
+          "heading": "Interface",
+          "level": 2,
+          "line": 541
+        },
+        {
+          "heading": "22. STORAGE MODULE",
+          "level": 1,
+          "line": 558
+        },
+        {
+          "heading": "23. NOTIFICATION MODULE",
+          "level": 1,
+          "line": 575
+        },
+        {
+          "heading": "24. TEST STRUCTURE",
+          "level": 1,
+          "line": 598
+        },
+        {
+          "heading": "Unit Test",
+          "level": 2,
+          "line": 612
+        },
+        {
+          "heading": "Integration Test",
+          "level": 2,
+          "line": 620
+        },
+        {
+          "heading": "25. LOGGING",
+          "level": 1,
+          "line": 628
+        },
+        {
+          "heading": "26. FOLDER CẤM XUẤT HIỆN",
+          "level": 1,
+          "line": 657
+        },
+        {
+          "heading": "27. DEPENDENCY ĐỀ XUẤT",
+          "level": 1,
+          "line": 672
+        },
+        {
+          "heading": "28. OPENAPI",
+          "level": 1,
+          "line": 702
+        },
+        {
+          "heading": "29. NAMING CONVENTION",
+          "level": 1,
+          "line": 718
+        },
+        {
+          "heading": "Controller",
+          "level": 2,
+          "line": 720
+        },
+        {
+          "heading": "Service",
+          "level": 2,
+          "line": 729
+        },
+        {
+          "heading": "Repository",
+          "level": 2,
+          "line": 738
+        },
+        {
+          "heading": "DTO",
+          "level": 2,
+          "line": 747
+        },
+        {
+          "heading": "30. KẾT LUẬN",
+          "level": 1,
+          "line": 759
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 46
+      }
+    },
+    {
+      "path": "docs/openapi-current.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 4614,
+      "nonEmptyLines": 4613,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "language": "jar",
+      "fileCategory": "code",
+      "totalLines": 148,
+      "nonEmptyLines": 148,
+      "metrics": {}
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "language": "properties",
+      "fileCategory": "config",
+      "totalLines": 7,
+      "nonEmptyLines": 7,
+      "metrics": {}
+    },
+    {
+      "path": "gradlew",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 248,
+      "nonEmptyLines": 220,
+      "metrics": {}
+    },
+    {
+      "path": "mvnw",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 295,
+      "nonEmptyLines": 263,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

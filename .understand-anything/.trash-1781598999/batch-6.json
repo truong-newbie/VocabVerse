@@ -1,0 +1,2592 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+      "type": "file",
+      "name": "ReviewDuePageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+      "summary": "ReviewDuePageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+      "type": "file",
+      "name": "ReviewHistoryPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+      "summary": "ReviewHistoryPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "type": "file",
+      "name": "ReviewHistoryResponse.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "summary": "ReviewHistoryResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+      "type": "file",
+      "name": "ReviewStatisticsResponse.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+      "summary": "ReviewStatisticsResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "type": "file",
+      "name": "ReviewSubmitResponse.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "summary": "ReviewSubmitResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "type": "file",
+      "name": "ReviewHistoryEntity.java",
+      "filePath": "src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "summary": "ReviewHistoryEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java:ReviewHistoryEntity",
+      "type": "class",
+      "name": "ReviewHistoryEntity",
+      "filePath": "src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "lineRange": [
+        25,
+        64
+      ],
+      "summary": "ReviewHistoryEntity định nghĩa cấu trúc hoặc hành vi chính trong ReviewHistoryEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "file",
+      "name": "ReviewResult.java",
+      "filePath": "src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "summary": "ReviewResult.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "type": "file",
+      "name": "ReviewHistoryRepository.java",
+      "filePath": "src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "summary": "ReviewHistoryRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java:ReviewHistoryRepository",
+      "type": "class",
+      "name": "ReviewHistoryRepository",
+      "filePath": "src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "lineRange": [
+        13,
+        26
+      ],
+      "summary": "ReviewHistoryRepository định nghĩa cấu trúc hoặc hành vi chính trong ReviewHistoryRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "type": "file",
+      "name": "ReviewService.java",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "summary": "ReviewService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 14 function, 24 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/service/ReviewService.java:ReviewService",
+      "type": "class",
+      "name": "ReviewService",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        40,
+        233
+      ],
+      "summary": "ReviewService định nghĩa cấu trúc hoặc hành vi chính trong ReviewService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:submitReview",
+      "type": "function",
+      "name": "submitReview",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        54,
+        73
+      ],
+      "summary": "submitReview triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:getTodayReviews",
+      "type": "function",
+      "name": "getTodayReviews",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        75,
+        88
+      ],
+      "summary": "getTodayReviews triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:getReviewHistory",
+      "type": "function",
+      "name": "getReviewHistory",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        90,
+        103
+      ],
+      "summary": "getReviewHistory triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:initializeProgress",
+      "type": "function",
+      "name": "initializeProgress",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        105,
+        122
+      ],
+      "summary": "initializeProgress triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:findEnabledReviewSetting",
+      "type": "function",
+      "name": "findEnabledReviewSetting",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        124,
+        133
+      ],
+      "summary": "findEnabledReviewSetting triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:applyScheduleResult",
+      "type": "function",
+      "name": "applyScheduleResult",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        142,
+        158
+      ],
+      "summary": "applyScheduleResult triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:createReviewHistory",
+      "type": "function",
+      "name": "createReviewHistory",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        160,
+        177
+      ],
+      "summary": "createReviewHistory triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:toDueItemResponse",
+      "type": "function",
+      "name": "toDueItemResponse",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        179,
+        193
+      ],
+      "summary": "toDueItemResponse triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:toHistoryResponse",
+      "type": "function",
+      "name": "toHistoryResponse",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "lineRange": [
+        195,
+        206
+      ],
+      "summary": "toHistoryResponse triển khai một thao tác đáng chú ý trong ReviewService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "type": "file",
+      "name": "ReviewStatisticsService.java",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "summary": "ReviewStatisticsService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 function, 12 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:ReviewStatisticsService",
+      "type": "class",
+      "name": "ReviewStatisticsService",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "lineRange": [
+        27,
+        103
+      ],
+      "summary": "ReviewStatisticsService định nghĩa cấu trúc hoặc hành vi chính trong ReviewStatisticsService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:getCurrentUserStats",
+      "type": "function",
+      "name": "getCurrentUserStats",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "lineRange": [
+        38,
+        51
+      ],
+      "summary": "getCurrentUserStats triển khai một thao tác đáng chú ý trong ReviewStatisticsService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:isReviewEnabled",
+      "type": "function",
+      "name": "isReviewEnabled",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "lineRange": [
+        60,
+        73
+      ],
+      "summary": "isReviewEnabled triển khai một thao tác đáng chú ý trong ReviewStatisticsService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:calculateCurrentStreak",
+      "type": "function",
+      "name": "calculateCurrentStreak",
+      "filePath": "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "lineRange": [
+        75,
+        88
+      ],
+      "summary": "calculateCurrentStreak triển khai một thao tác đáng chú ý trong ReviewStatisticsService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "type": "file",
+      "name": "FixedIntervalScheduler.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "summary": "FixedIntervalScheduler.java là file mã nguồn java trong VocabVerse, gồm 1 class, 7 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:FixedIntervalScheduler",
+      "type": "class",
+      "name": "FixedIntervalScheduler",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "lineRange": [
+        12,
+        102
+      ],
+      "summary": "FixedIntervalScheduler định nghĩa cấu trúc hoặc hành vi chính trong FixedIntervalScheduler.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:type",
+      "type": "function",
+      "name": "type",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "lineRange": [
+        15,
+        18
+      ],
+      "summary": "type triển khai một thao tác đáng chú ý trong FixedIntervalScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:schedule",
+      "type": "function",
+      "name": "schedule",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "lineRange": [
+        20,
+        45
+      ],
+      "summary": "schedule triển khai một thao tác đáng chú ý trong FixedIntervalScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:resolveCollectionIntervalDays",
+      "type": "function",
+      "name": "resolveCollectionIntervalDays",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "lineRange": [
+        64,
+        78
+      ],
+      "summary": "resolveCollectionIntervalDays triển khai một thao tác đáng chú ý trong FixedIntervalScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:resolveDefaultIntervalDays",
+      "type": "function",
+      "name": "resolveDefaultIntervalDays",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "lineRange": [
+        80,
+        97
+      ],
+      "summary": "resolveDefaultIntervalDays triển khai một thao tác đáng chú ý trong FixedIntervalScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "type": "file",
+      "name": "FsrsScheduler.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "summary": "FsrsScheduler.java là file mã nguồn java trong VocabVerse, gồm 1 class, 15 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:FsrsScheduler",
+      "type": "class",
+      "name": "FsrsScheduler",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "lineRange": [
+        13,
+        174
+      ],
+      "summary": "FsrsScheduler định nghĩa cấu trúc hoặc hành vi chính trong FsrsScheduler.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:type",
+      "type": "function",
+      "name": "type",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "lineRange": [
+        24,
+        27
+      ],
+      "summary": "type triển khai một thao tác đáng chú ý trong FsrsScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:schedule",
+      "type": "function",
+      "name": "schedule",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "lineRange": [
+        29,
+        58
+      ],
+      "summary": "schedule triển khai một thao tác đáng chú ý trong FsrsScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:initializeOrLoad",
+      "type": "function",
+      "name": "initializeOrLoad",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "lineRange": [
+        60,
+        70
+      ],
+      "summary": "initializeOrLoad triển khai một thao tác đáng chú ý trong FsrsScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:calculateRetrievability",
+      "type": "function",
+      "name": "calculateRetrievability",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "lineRange": [
+        72,
+        83
+      ],
+      "summary": "calculateRetrievability triển khai một thao tác đáng chú ý trong FsrsScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:updateMemoryState",
+      "type": "function",
+      "name": "updateMemoryState",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "lineRange": [
+        85,
+        104
+      ],
+      "summary": "updateMemoryState triển khai một thao tác đáng chú ý trong FsrsScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "type": "file",
+      "name": "ReviewIntervalStrategy.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "summary": "ReviewIntervalStrategy.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java:ReviewIntervalStrategy",
+      "type": "class",
+      "name": "ReviewIntervalStrategy",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "lineRange": [
+        7,
+        10
+      ],
+      "summary": "ReviewIntervalStrategy định nghĩa cấu trúc hoặc hành vi chính trong ReviewIntervalStrategy.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduleResult.java",
+      "type": "file",
+      "name": "ReviewScheduleResult.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewScheduleResult.java",
+      "summary": "ReviewScheduleResult.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "type": "file",
+      "name": "ReviewScheduler.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "summary": "ReviewScheduler.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java:ReviewScheduler",
+      "type": "class",
+      "name": "ReviewScheduler",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "lineRange": [
+        8,
+        18
+      ],
+      "summary": "ReviewScheduler định nghĩa cấu trúc hoặc hành vi chính trong ReviewScheduler.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "type": "file",
+      "name": "ReviewSchedulerType.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "summary": "ReviewSchedulerType.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "type": "file",
+      "name": "SimpleReviewIntervalStrategy.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "summary": "SimpleReviewIntervalStrategy.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:SimpleReviewIntervalStrategy",
+      "type": "class",
+      "name": "SimpleReviewIntervalStrategy",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "lineRange": [
+        8,
+        39
+      ],
+      "summary": "SimpleReviewIntervalStrategy định nghĩa cấu trúc hoặc hành vi chính trong SimpleReviewIntervalStrategy.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:calculateNextReviewDate",
+      "type": "function",
+      "name": "calculateNextReviewDate",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "lineRange": [
+        11,
+        18
+      ],
+      "summary": "calculateNextReviewDate triển khai một thao tác đáng chú ý trong SimpleReviewIntervalStrategy.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:resolveIntervalDays",
+      "type": "function",
+      "name": "resolveIntervalDays",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "lineRange": [
+        20,
+        38
+      ],
+      "summary": "resolveIntervalDays triển khai một thao tác đáng chú ý trong SimpleReviewIntervalStrategy.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "type": "file",
+      "name": "Sm2Scheduler.java",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "summary": "Sm2Scheduler.java là file mã nguồn java trong VocabVerse, gồm 1 class, 7 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:Sm2Scheduler",
+      "type": "class",
+      "name": "Sm2Scheduler",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "lineRange": [
+        12,
+        104
+      ],
+      "summary": "Sm2Scheduler định nghĩa cấu trúc hoặc hành vi chính trong Sm2Scheduler.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:type",
+      "type": "function",
+      "name": "type",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "lineRange": [
+        19,
+        22
+      ],
+      "summary": "type triển khai một thao tác đáng chú ý trong Sm2Scheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:schedule",
+      "type": "function",
+      "name": "schedule",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "lineRange": [
+        24,
+        59
+      ],
+      "summary": "schedule triển khai một thao tác đáng chú ý trong Sm2Scheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:calculateIntervalDays",
+      "type": "function",
+      "name": "calculateIntervalDays",
+      "filePath": "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "lineRange": [
+        78,
+        89
+      ],
+      "summary": "calculateIntervalDays triển khai một thao tác đáng chú ý trong Sm2Scheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "file",
+      "name": "VocabularyEntity.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "summary": "VocabularyEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java:VocabularyEntity",
+      "type": "class",
+      "name": "VocabularyEntity",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "lineRange": [
+        28,
+        93
+      ],
+      "summary": "VocabularyEntity định nghĩa cấu trúc hoặc hành vi chính trong VocabularyEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "file",
+      "name": "VocabularyRepository.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "summary": "VocabularyRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java:VocabularyRepository",
+      "type": "class",
+      "name": "VocabularyRepository",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "lineRange": [
+        11,
+        22
+      ],
+      "summary": "VocabularyRepository định nghĩa cấu trúc hoặc hành vi chính trong VocabularyRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "type": "file",
+      "name": "VocabVerseApplicationTests.java",
+      "filePath": "src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "summary": "VocabVerseApplicationTests.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 21 import.",
+      "tags": [
+        "java",
+        "code",
+        "test",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/VocabVerseApplicationTests.java:VocabVerseApplicationTests",
+      "type": "class",
+      "name": "VocabVerseApplicationTests",
+      "filePath": "src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "lineRange": [
+        31,
+        114
+      ],
+      "summary": "VocabVerseApplicationTests định nghĩa cấu trúc hoặc hành vi chính trong VocabVerseApplicationTests.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "type": "file",
+      "name": "FixedIntervalSchedulerTest.java",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "summary": "FixedIntervalSchedulerTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "test",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:FixedIntervalSchedulerTest",
+      "type": "class",
+      "name": "FixedIntervalSchedulerTest",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "lineRange": [
+        14,
+        89
+      ],
+      "summary": "FixedIntervalSchedulerTest định nghĩa cấu trúc hoặc hành vi chính trong FixedIntervalSchedulerTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:againUsesFirstCollectionInterval",
+      "type": "function",
+      "name": "againUsesFirstCollectionInterval",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "lineRange": [
+        18,
+        30
+      ],
+      "summary": "againUsesFirstCollectionInterval triển khai một thao tác đáng chú ý trong FixedIntervalSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:goodUsesCollectionIntervalByNewRepetitionCount",
+      "type": "function",
+      "name": "goodUsesCollectionIntervalByNewRepetitionCount",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "lineRange": [
+        32,
+        44
+      ],
+      "summary": "goodUsesCollectionIntervalByNewRepetitionCount triển khai một thao tác đáng chú ý trong FixedIntervalSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:defaultRuleIsUsedWhenSettingIsMissing",
+      "type": "function",
+      "name": "defaultRuleIsUsedWhenSettingIsMissing",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "lineRange": [
+        46,
+        56
+      ],
+      "summary": "defaultRuleIsUsedWhenSettingIsMissing triển khai một thao tác đáng chú ý trong FixedIntervalSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:easyAtFifthRepetitionMarksVocabularyMastered",
+      "type": "function",
+      "name": "easyAtFifthRepetitionMarksVocabularyMastered",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "lineRange": [
+        58,
+        71
+      ],
+      "summary": "easyAtFifthRepetitionMarksVocabularyMastered triển khai một thao tác đáng chú ý trong FixedIntervalSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "type": "file",
+      "name": "FsrsSchedulerTest.java",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "summary": "FsrsSchedulerTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "test",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:FsrsSchedulerTest",
+      "type": "class",
+      "name": "FsrsSchedulerTest",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "lineRange": [
+        13,
+        117
+      ],
+      "summary": "FsrsSchedulerTest định nghĩa cấu trúc hoặc hành vi chính trong FsrsSchedulerTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:newCardGoodInitializesMemoryStateAndSchedulesReview",
+      "type": "function",
+      "name": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "lineRange": [
+        17,
+        31
+      ],
+      "summary": "newCardGoodInitializesMemoryStateAndSchedulesReview triển khai một thao tác đáng chú ý trong FsrsSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+      "type": "function",
+      "name": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "lineRange": [
+        33,
+        44
+      ],
+      "summary": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary triển khai một thao tác đáng chú ý trong FsrsSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:againIncrementsLapseAndResetsRepetition",
+      "type": "function",
+      "name": "againIncrementsLapseAndResetsRepetition",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "lineRange": [
+        46,
+        61
+      ],
+      "summary": "againIncrementsLapseAndResetsRepetition triển khai một thao tác đáng chú ý trong FsrsSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:desiredRetentionAndMaxIntervalAffectInterval",
+      "type": "function",
+      "name": "desiredRetentionAndMaxIntervalAffectInterval",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "lineRange": [
+        63,
+        89
+      ],
+      "summary": "desiredRetentionAndMaxIntervalAffectInterval triển khai một thao tác đáng chú ý trong FsrsSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:progress",
+      "type": "function",
+      "name": "progress",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "lineRange": [
+        99,
+        116
+      ],
+      "summary": "progress triển khai một thao tác đáng chú ý trong FsrsSchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "type": "file",
+      "name": "Sm2SchedulerTest.java",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "summary": "Sm2SchedulerTest.java là file mã nguồn java trong VocabVerse, gồm 1 class, 8 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "test",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:Sm2SchedulerTest",
+      "type": "class",
+      "name": "Sm2SchedulerTest",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        12,
+        130
+      ],
+      "summary": "Sm2SchedulerTest định nghĩa cấu trúc hoặc hành vi chính trong Sm2SchedulerTest.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:newCardAgainResetsRepetitionAndSchedulesTomorrow",
+      "type": "function",
+      "name": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        16,
+        30
+      ],
+      "summary": "newCardAgainResetsRepetitionAndSchedulesTomorrow triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+      "type": "function",
+      "name": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        32,
+        44
+      ],
+      "summary": "newCardGoodSchedulesOneDayWithDefaultEaseFactor triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:secondGoodReviewSchedulesSixDays",
+      "type": "function",
+      "name": "secondGoodReviewSchedulesSixDays",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        46,
+        57
+      ],
+      "summary": "secondGoodReviewSchedulesSixDays triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+      "type": "function",
+      "name": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        59,
+        71
+      ],
+      "summary": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:hardReviewReducesEaseFactor",
+      "type": "function",
+      "name": "hardReviewReducesEaseFactor",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        73,
+        85
+      ],
+      "summary": "hardReviewReducesEaseFactor triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:easeFactorNeverDropsBelowMinimum",
+      "type": "function",
+      "name": "easeFactorNeverDropsBelowMinimum",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        87,
+        99
+      ],
+      "summary": "easeFactorNeverDropsBelowMinimum triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:intervalIsClampedToMaxInterval",
+      "type": "function",
+      "name": "intervalIsClampedToMaxInterval",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        101,
+        113
+      ],
+      "summary": "intervalIsClampedToMaxInterval triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:progress",
+      "type": "function",
+      "name": "progress",
+      "filePath": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "lineRange": [
+        115,
+        129
+      ],
+      "summary": "progress triển khai một thao tác đáng chú ý trong Sm2SchedulerTest.java.",
+      "tags": [
+        "function",
+        "java",
+        "test"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "target": "class:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java:ReviewHistoryEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "target": "class:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java:ReviewHistoryEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "target": "class:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java:ReviewHistoryRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "target": "class:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java:ReviewHistoryRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "class:src/main/java/com/vocabverse/review/service/ReviewService.java:ReviewService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "class:src/main/java/com/vocabverse/review/service/ReviewService.java:ReviewService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:submitReview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:submitReview",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:getTodayReviews",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:getTodayReviews",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:getReviewHistory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:getReviewHistory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:initializeProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:findEnabledReviewSetting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:applyScheduleResult",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:createReviewHistory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:toDueItemResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewService.java:toHistoryResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduleResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "class:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:ReviewStatisticsService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "class:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:ReviewStatisticsService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:getCurrentUserStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:getCurrentUserStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:isReviewEnabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "function:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java:calculateCurrentStreak",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:FixedIntervalScheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:FixedIntervalScheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:type",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:schedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:schedule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:resolveCollectionIntervalDays",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java:resolveDefaultIntervalDays",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:FsrsScheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:FsrsScheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:type",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:schedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:schedule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:initializeOrLoad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:calculateRetrievability",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java:updateMemoryState",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java:ReviewIntervalStrategy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java:ReviewIntervalStrategy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduleResult.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java:ReviewScheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java:ReviewScheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:SimpleReviewIntervalStrategy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:SimpleReviewIntervalStrategy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:calculateNextReviewDate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:calculateNextReviewDate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java:resolveIntervalDays",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:Sm2Scheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "class:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:Sm2Scheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:type",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:schedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:schedule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "function:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java:calculateIntervalDays",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java:VocabularyEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java:VocabularyEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java:VocabularyRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java:VocabularyRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "class:src/test/java/com/vocabverse/VocabVerseApplicationTests.java:VocabVerseApplicationTests",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "class:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:FixedIntervalSchedulerTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:againUsesFirstCollectionInterval",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:goodUsesCollectionIntervalByNewRepetitionCount",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:defaultRuleIsUsedWhenSettingIsMissing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java:easyAtFifthRepetitionMarksVocabularyMastered",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "class:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:FsrsSchedulerTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:newCardGoodInitializesMemoryStateAndSchedulesReview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:againIncrementsLapseAndResetsRepetition",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:desiredRetentionAndMaxIntervalAffectInterval",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java:progress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "class:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:Sm2SchedulerTest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:newCardAgainResetsRepetitionAndSchedulesTomorrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:secondGoodReviewSchedulesSixDays",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:hardReviewReducesEaseFactor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:easeFactorNeverDropsBelowMinimum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:intervalIsClampedToMaxInterval",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "function:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java:progress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

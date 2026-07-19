@@ -1,0 +1,2070 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "type": "file",
+      "name": "PdfTemplateBuilder.java",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "summary": "PdfTemplateBuilder.java là file mã nguồn java trong VocabVerse, gồm 1 class, 12 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:PdfTemplateBuilder",
+      "type": "class",
+      "name": "PdfTemplateBuilder",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        11,
+        196
+      ],
+      "summary": "PdfTemplateBuilder định nghĩa cấu trúc hoặc hành vi chính trong PdfTemplateBuilder.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildVocabularyPdf",
+      "type": "function",
+      "name": "buildVocabularyPdf",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        22,
+        25
+      ],
+      "summary": "buildVocabularyPdf triển khai một thao tác đáng chú ý trong PdfTemplateBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildLines",
+      "type": "function",
+      "name": "buildLines",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        27,
+        51
+      ],
+      "summary": "buildLines triển khai một thao tác đáng chú ý trong PdfTemplateBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:paginate",
+      "type": "function",
+      "name": "paginate",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        53,
+        74
+      ],
+      "summary": "paginate triển khai một thao tác đáng chú ý trong PdfTemplateBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:wrap",
+      "type": "function",
+      "name": "wrap",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        76,
+        96
+      ],
+      "summary": "wrap triển khai một thao tác đáng chú ý trong PdfTemplateBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildPdf",
+      "type": "function",
+      "name": "buildPdf",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        98,
+        142
+      ],
+      "summary": "buildPdf triển khai một thao tác đáng chú ý trong PdfTemplateBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildContentObject",
+      "type": "function",
+      "name": "buildContentObject",
+      "filePath": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "lineRange": [
+        158,
+        173
+      ],
+      "summary": "buildContentObject triển khai một thao tác đáng chú ý trong PdfTemplateBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "type": "file",
+      "name": "QuizController.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "summary": "QuizController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 7 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:QuizController",
+      "type": "class",
+      "name": "QuizController",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "lineRange": [
+        21,
+        53
+      ],
+      "summary": "QuizController định nghĩa cấu trúc hoặc hành vi chính trong QuizController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong QuizController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:getSessionDetail",
+      "type": "function",
+      "name": "getSessionDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "lineRange": [
+        35,
+        38
+      ],
+      "summary": "getSessionDetail triển khai một thao tác đáng chú ý trong QuizController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:getSessionQuestions",
+      "type": "function",
+      "name": "getSessionQuestions",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "getSessionQuestions triển khai một thao tác đáng chú ý trong QuizController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:submitAnswer",
+      "type": "function",
+      "name": "submitAnswer",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "lineRange": [
+        45,
+        52
+      ],
+      "summary": "submitAnswer triển khai một thao tác đáng chú ý trong QuizController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "type": "file",
+      "name": "CreateQuizSessionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "summary": "CreateQuizSessionRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "type": "file",
+      "name": "SubmitQuizAnswerRequest.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "summary": "SubmitQuizAnswerRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "type": "file",
+      "name": "QuizAnswerResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "summary": "QuizAnswerResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "type": "file",
+      "name": "QuizQuestionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "summary": "QuizQuestionResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "type": "file",
+      "name": "QuizSessionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "summary": "QuizSessionResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "type": "file",
+      "name": "QuizQuestionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "summary": "QuizQuestionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java:QuizQuestionEntity",
+      "type": "class",
+      "name": "QuizQuestionEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "lineRange": [
+        28,
+        80
+      ],
+      "summary": "QuizQuestionEntity định nghĩa cấu trúc hoặc hành vi chính trong QuizQuestionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "type": "file",
+      "name": "QuizQuestionType.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "summary": "QuizQuestionType.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "type": "file",
+      "name": "QuizSessionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "summary": "QuizSessionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java:QuizSessionEntity",
+      "type": "class",
+      "name": "QuizSessionEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "lineRange": [
+        26,
+        78
+      ],
+      "summary": "QuizSessionEntity định nghĩa cấu trúc hoặc hành vi chính trong QuizSessionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "type": "file",
+      "name": "QuizSessionSource.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "summary": "QuizSessionSource.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "type": "file",
+      "name": "QuizSessionStatus.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "summary": "QuizSessionStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "type": "file",
+      "name": "QuizMapper.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "summary": "QuizMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java:QuizMapper",
+      "type": "class",
+      "name": "QuizMapper",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "lineRange": [
+        10,
+        19
+      ],
+      "summary": "QuizMapper định nghĩa cấu trúc hoặc hành vi chính trong QuizMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "type": "file",
+      "name": "QuizQuestionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "summary": "QuizQuestionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java:QuizQuestionRepository",
+      "type": "class",
+      "name": "QuizQuestionRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "QuizQuestionRepository định nghĩa cấu trúc hoặc hành vi chính trong QuizQuestionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "type": "file",
+      "name": "QuizSessionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "summary": "QuizSessionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java:QuizSessionRepository",
+      "type": "class",
+      "name": "QuizSessionRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "QuizSessionRepository định nghĩa cấu trúc hoặc hành vi chính trong QuizSessionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "type": "file",
+      "name": "QuizService.java",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "summary": "QuizService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 15 function, 28 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:QuizService",
+      "type": "class",
+      "name": "QuizService",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        44,
+        274
+      ],
+      "summary": "QuizService định nghĩa cấu trúc hoặc hành vi chính trong QuizService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        58,
+        90
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:getSessionDetail",
+      "type": "function",
+      "name": "getSessionDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        92,
+        95
+      ],
+      "summary": "getSessionDetail triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:getSessionQuestions",
+      "type": "function",
+      "name": "getSessionQuestions",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        97,
+        104
+      ],
+      "summary": "getSessionQuestions triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:submitAnswer",
+      "type": "function",
+      "name": "submitAnswer",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        106,
+        154
+      ],
+      "summary": "submitAnswer triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:buildQuestion",
+      "type": "function",
+      "name": "buildQuestion",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        156,
+        174
+      ],
+      "summary": "buildQuestion triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:buildOptions",
+      "type": "function",
+      "name": "buildOptions",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        176,
+        196
+      ],
+      "summary": "buildOptions triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:resolveCollection",
+      "type": "function",
+      "name": "resolveCollection",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        219,
+        228
+      ],
+      "summary": "resolveCollection triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:resolveSessionVocabularies",
+      "type": "function",
+      "name": "resolveSessionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "lineRange": [
+        230,
+        249
+      ],
+      "summary": "resolveSessionVocabularies triển khai một thao tác đáng chú ý trong QuizService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "type": "file",
+      "name": "PublicCollectionController.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "summary": "PublicCollectionController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:PublicCollectionController",
+      "type": "class",
+      "name": "PublicCollectionController",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "lineRange": [
+        19,
+        50
+      ],
+      "summary": "PublicCollectionController định nghĩa cấu trúc hoặc hành vi chính trong PublicCollectionController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollections",
+      "type": "function",
+      "name": "getPublicCollections",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "lineRange": [
+        26,
+        31
+      ],
+      "summary": "getPublicCollections triển khai một thao tác đáng chú ý trong PublicCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollectionDetail",
+      "type": "function",
+      "name": "getPublicCollectionDetail",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "lineRange": [
+        33,
+        36
+      ],
+      "summary": "getPublicCollectionDetail triển khai một thao tác đáng chú ý trong PublicCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollectionVocabularies",
+      "type": "function",
+      "name": "getPublicCollectionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "getPublicCollectionVocabularies triển khai một thao tác đáng chú ý trong PublicCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:clonePublicCollection",
+      "type": "function",
+      "name": "clonePublicCollection",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "lineRange": [
+        46,
+        49
+      ],
+      "summary": "clonePublicCollection triển khai một thao tác đáng chú ý trong PublicCollectionController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "type": "file",
+      "name": "CloneCollectionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "summary": "CloneCollectionResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "type": "file",
+      "name": "PublicCollectionPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "summary": "PublicCollectionPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "type": "file",
+      "name": "PublicCollectionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "summary": "PublicCollectionResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "type": "file",
+      "name": "PublicVocabularyPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "summary": "PublicVocabularyPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+      "type": "file",
+      "name": "PublicVocabularyResponse.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+      "summary": "PublicVocabularyResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "type": "file",
+      "name": "PublicCollectionService.java",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "summary": "PublicCollectionService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 11 function, 16 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:PublicCollectionService",
+      "type": "class",
+      "name": "PublicCollectionService",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        29,
+        193
+      ],
+      "summary": "PublicCollectionService định nghĩa cấu trúc hoặc hành vi chính trong PublicCollectionService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollections",
+      "type": "function",
+      "name": "getPublicCollections",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        37,
+        51
+      ],
+      "summary": "getPublicCollections triển khai một thao tác đáng chú ý trong PublicCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollectionDetail",
+      "type": "function",
+      "name": "getPublicCollectionDetail",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        53,
+        56
+      ],
+      "summary": "getPublicCollectionDetail triển khai một thao tác đáng chú ý trong PublicCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollectionVocabularies",
+      "type": "function",
+      "name": "getPublicCollectionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        58,
+        77
+      ],
+      "summary": "getPublicCollectionVocabularies triển khai một thao tác đáng chú ý trong PublicCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:clonePublicCollection",
+      "type": "function",
+      "name": "clonePublicCollection",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        79,
+        125
+      ],
+      "summary": "clonePublicCollection triển khai một thao tác đáng chú ý trong PublicCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:toCollectionResponse",
+      "type": "function",
+      "name": "toCollectionResponse",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        136,
+        151
+      ],
+      "summary": "toCollectionResponse triển khai một thao tác đáng chú ý trong PublicCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:toVocabularyResponse",
+      "type": "function",
+      "name": "toVocabularyResponse",
+      "filePath": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "lineRange": [
+        153,
+        164
+      ],
+      "summary": "toVocabularyResponse triển khai một thao tác đáng chú ý trong PublicCollectionService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "file",
+      "name": "CollectionVocabularyEntity.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "summary": "CollectionVocabularyEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java:CollectionVocabularyEntity",
+      "type": "class",
+      "name": "CollectionVocabularyEntity",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "lineRange": [
+        24,
+        62
+      ],
+      "summary": "CollectionVocabularyEntity định nghĩa cấu trúc hoặc hành vi chính trong CollectionVocabularyEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "file",
+      "name": "CollectionVocabularyRepository.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "summary": "CollectionVocabularyRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java:CollectionVocabularyRepository",
+      "type": "class",
+      "name": "CollectionVocabularyRepository",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "lineRange": [
+        14,
+        89
+      ],
+      "summary": "CollectionVocabularyRepository định nghĩa cấu trúc hoặc hành vi chính trong CollectionVocabularyRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:PdfTemplateBuilder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:PdfTemplateBuilder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildVocabularyPdf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildVocabularyPdf",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildLines",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:paginate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:wrap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildPdf",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java:buildContentObject",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "target": "file:src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:QuizController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:QuizController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:getSessionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:getSessionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:getSessionQuestions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:getSessionQuestions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:submitAnswer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java:submitAnswer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java:QuizQuestionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java:QuizQuestionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java:QuizSessionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java:QuizSessionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java:QuizMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java:QuizMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java:QuizQuestionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java:QuizQuestionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java:QuizSessionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java:QuizSessionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:QuizService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:QuizService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:getSessionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:getSessionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:getSessionQuestions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:getSessionQuestions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:submitAnswer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:submitAnswer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:buildQuestion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:buildOptions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:resolveCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java:resolveSessionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "class:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:PublicCollectionController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "class:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:PublicCollectionController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollectionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollectionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollectionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:getPublicCollectionVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:clonePublicCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java:clonePublicCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "class:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:PublicCollectionService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "class:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:PublicCollectionService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollections",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollectionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollectionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollectionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:getPublicCollectionVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:clonePublicCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:clonePublicCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:toCollectionResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "function:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java:toVocabularyResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java:CollectionVocabularyEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java:CollectionVocabularyEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java:CollectionVocabularyRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java:CollectionVocabularyRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

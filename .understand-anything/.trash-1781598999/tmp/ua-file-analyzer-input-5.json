@@ -1,0 +1,293 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "language": "java",
+      "sizeLines": 25,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "language": "java",
+      "sizeLines": 96,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "language": "java",
+      "sizeLines": 287,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "language": "java",
+      "sizeLines": 44,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "language": "java",
+      "sizeLines": 180,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "language": "java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "language": "java",
+      "sizeLines": 100,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "language": "java",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "language": "java",
+      "sizeLines": 57,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java": [
+      "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java": [
+      "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java"
+    ],
+    "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java": [
+      "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java"
+    ],
+    "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java": [
+      "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java"
+    ],
+    "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java": [
+      "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "src/main/java/com/vocabverse/dashboard/service/DashboardService.java"
+    ],
+    "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java": [],
+    "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java": [],
+    "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java": [
+      "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java"
+    ],
+    "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java": [
+      "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java"
+    ],
+    "src/main/java/com/vocabverse/dashboard/service/DashboardService.java": [
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java"
+    ],
+    "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java": [],
+    "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java": [
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java": [],
+    "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java": [
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java": [],
+    "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java": [
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java": [
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/review/controller/ReviewController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java"
+    ],
+    "src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java": [
+      "src/main/java/com/vocabverse/review/entity/ReviewResult.java"
+    ],
+    "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java": [
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java"
+    ]
+  }
+}

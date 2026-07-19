@@ -1,0 +1,447 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/entity/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/exception/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/exception/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/mapper/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/mapper/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "mapper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/repository/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/repository/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/specification/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/specification/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/notification/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/browser/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/notification/browser/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/email/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/notification/email/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "type": "file",
+      "name": "EmailSender.java",
+      "filePath": "src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "summary": "EmailSender.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/email/EmailSender.java:EmailSender",
+      "type": "class",
+      "name": "EmailSender",
+      "filePath": "src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "lineRange": [
+        3,
+        6
+      ],
+      "summary": "EmailSender định nghĩa cấu trúc hoặc hành vi chính trong EmailSender.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "type": "file",
+      "name": "SmtpEmailSender.java",
+      "filePath": "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "summary": "SmtpEmailSender.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java:SmtpEmailSender",
+      "type": "class",
+      "name": "SmtpEmailSender",
+      "filePath": "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "lineRange": [
+        9,
+        30
+      ],
+      "summary": "SmtpEmailSender định nghĩa cấu trúc hoặc hành vi chính trong SmtpEmailSender.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java:send",
+      "type": "function",
+      "name": "send",
+      "filePath": "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "lineRange": [
+        18,
+        29
+      ],
+      "summary": "send triển khai một thao tác đáng chú ý trong SmtpEmailSender.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/scheduler/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/notification/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/controller/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/controller/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/dto/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/entity/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/entity/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/exception/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/exception/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/mapper/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/mapper/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "mapper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "type": "file",
+      "name": "ReviewMapper.java",
+      "filePath": "src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "summary": "ReviewMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/mapper/ReviewMapper.java:ReviewMapper",
+      "type": "class",
+      "name": "ReviewMapper",
+      "filePath": "src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "lineRange": [
+        5,
+        7
+      ],
+      "summary": "ReviewMapper định nghĩa cấu trúc hoặc hành vi chính trong ReviewMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/repository/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/repository/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/specification/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/review/specification/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/roleplay/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/controller/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "controller"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "target": "class:src/main/java/com/vocabverse/notification/email/EmailSender.java:EmailSender",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "target": "class:src/main/java/com/vocabverse/notification/email/EmailSender.java:EmailSender",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "target": "class:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java:SmtpEmailSender",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "target": "class:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java:SmtpEmailSender",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "target": "function:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java:send",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "target": "function:src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java:send",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "target": "class:src/main/java/com/vocabverse/review/mapper/ReviewMapper.java:ReviewMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "target": "class:src/main/java/com/vocabverse/review/mapper/ReviewMapper.java:ReviewMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

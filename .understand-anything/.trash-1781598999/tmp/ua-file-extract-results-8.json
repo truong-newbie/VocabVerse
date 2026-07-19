@@ -1,0 +1,1736 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "listNotifications",
+          "startLine": 23,
+          "endLine": 28,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getStats",
+          "startLine": 30,
+          "endLine": 33,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminNotificationController",
+          "startLine": 15,
+          "endLine": 34,
+          "methods": [
+            "listNotifications",
+            "getStats"
+          ],
+          "properties": [
+            "adminNotificationService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listNotifications",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "getStats",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "AdminNotificationController",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listNotifications",
+          "callee": "ApiResponse.success",
+          "lineNumber": 27
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "adminNotificationService.listNotifications",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getStats",
+          "callee": "ApiResponse.success",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getStats",
+          "callee": "adminNotificationService.getStats",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 63,
+      "functions": [
+        {
+          "name": "listNotifications",
+          "startLine": 23,
+          "endLine": 40,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getStats",
+          "startLine": 42,
+          "endLine": 59,
+          "params": []
+        },
+        {
+          "name": "toLogResponse",
+          "startLine": 61,
+          "endLine": 70,
+          "params": [
+            "notification"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminNotificationService",
+          "startLine": 17,
+          "endLine": 71,
+          "methods": [
+            "listNotifications",
+            "getStats",
+            "toLogResponse"
+          ],
+          "properties": [
+            "notificationRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listNotifications",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "getStats",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "AdminNotificationService",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listNotifications",
+          "callee": "LocalDate.now().atStartOfDay",
+          "lineNumber": 25
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "LocalDate.now",
+          "lineNumber": 25
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "startOfDay.plusDays(1).minusNanos",
+          "lineNumber": 26
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "startOfDay.plusDays",
+          "lineNumber": 26
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "notificationRepository\r\n                .findAllByOrderByCreatedAtDesc(pageable).map",
+          "lineNumber": 27
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "notificationRepository.findAllByOrderByCreatedAtDesc",
+          "lineNumber": 27
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "new AdminNotificationPageResponse",
+          "lineNumber": 31
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "notificationRepository.countByStatusAndCreatedAtBetween",
+          "lineNumber": 32
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "notificationRepository.countByStatusAndCreatedAtBetween",
+          "lineNumber": 33
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "page.getContent",
+          "lineNumber": 34
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "page.getTotalElements",
+          "lineNumber": 35
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "page.getTotalPages",
+          "lineNumber": 36
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "page.getNumber",
+          "lineNumber": 37
+        },
+        {
+          "caller": "listNotifications",
+          "callee": "page.getSize",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getStats",
+          "callee": "LocalDate.now().atStartOfDay",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getStats",
+          "callee": "LocalDate.now",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getStats",
+          "callee": "startOfDay.plusDays(1).minusNanos",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getStats",
+          "callee": "startOfDay.plusDays",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getStats",
+          "callee": "new AdminNotificationStatsResponse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getStats",
+          "callee": "notificationRepository.countByStatusAndCreatedAtBetween",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getStats",
+          "callee": "notificationRepository.countByStatusAndCreatedAtBetween",
+          "lineNumber": 53
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "new AdminNotificationLogResponse",
+          "lineNumber": 62
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getId",
+          "lineNumber": 63
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getUser",
+          "lineNumber": 64
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getUser().getEmail",
+          "lineNumber": 64
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getUser",
+          "lineNumber": 64
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getType",
+          "lineNumber": 65
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getStatus",
+          "lineNumber": 66
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getStatus().name",
+          "lineNumber": 67
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getStatus",
+          "lineNumber": 67
+        },
+        {
+          "caller": "toLogResponse",
+          "callee": "notification.getCreatedAt",
+          "lineNumber": 68
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "vocabverseExchange",
+          "startLine": 22,
+          "endLine": 25,
+          "params": []
+        },
+        {
+          "name": "notificationEmailQueue",
+          "startLine": 27,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "notificationEmailBinding",
+          "startLine": 32,
+          "endLine": 38,
+          "params": [
+            "notificationEmailQueue",
+            "vocabverseExchange"
+          ]
+        },
+        {
+          "name": "jsonMessageConverter",
+          "startLine": 40,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "rabbitTemplate",
+          "startLine": 45,
+          "endLine": 50,
+          "params": [
+            "connectionFactory",
+            "jsonMessageConverter"
+          ]
+        },
+        {
+          "name": "rabbitListenerContainerFactory",
+          "startLine": 52,
+          "endLine": 61,
+          "params": [
+            "connectionFactory",
+            "jsonMessageConverter"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RabbitMqConfig",
+          "startLine": 15,
+          "endLine": 62,
+          "methods": [
+            "vocabverseExchange",
+            "notificationEmailQueue",
+            "notificationEmailBinding",
+            "jsonMessageConverter",
+            "rabbitTemplate",
+            "rabbitListenerContainerFactory"
+          ],
+          "properties": [
+            "VOCABVERSE_EXCHANGE",
+            "NOTIFICATION_EMAIL_QUEUE",
+            "NOTIFICATION_EMAIL_ROUTING_KEY"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VOCABVERSE_EXCHANGE",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_QUEUE",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_ROUTING_KEY",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "vocabverseExchange",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "notificationEmailQueue",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "notificationEmailBinding",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "jsonMessageConverter",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "rabbitTemplate",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "rabbitListenerContainerFactory",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "RabbitMqConfig",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "vocabverseExchange",
+          "callee": "new DirectExchange",
+          "lineNumber": 24
+        },
+        {
+          "caller": "notificationEmailQueue",
+          "callee": "new Queue",
+          "lineNumber": 29
+        },
+        {
+          "caller": "notificationEmailBinding",
+          "callee": "BindingBuilder\r\n                .bind(notificationEmailQueue)\r\n                .to(vocabverseExchange).with",
+          "lineNumber": 34
+        },
+        {
+          "caller": "notificationEmailBinding",
+          "callee": "BindingBuilder\r\n                .bind(notificationEmailQueue).to",
+          "lineNumber": 34
+        },
+        {
+          "caller": "notificationEmailBinding",
+          "callee": "BindingBuilder.bind",
+          "lineNumber": 34
+        },
+        {
+          "caller": "jsonMessageConverter",
+          "callee": "new Jackson2JsonMessageConverter",
+          "lineNumber": 42
+        },
+        {
+          "caller": "rabbitTemplate",
+          "callee": "new RabbitTemplate",
+          "lineNumber": 47
+        },
+        {
+          "caller": "rabbitTemplate",
+          "callee": "rabbitTemplate.setMessageConverter",
+          "lineNumber": 48
+        },
+        {
+          "caller": "rabbitListenerContainerFactory",
+          "callee": "new SimpleRabbitListenerContainerFactory",
+          "lineNumber": 57
+        },
+        {
+          "caller": "rabbitListenerContainerFactory",
+          "callee": "factory.setConnectionFactory",
+          "lineNumber": 58
+        },
+        {
+          "caller": "rabbitListenerContainerFactory",
+          "callee": "factory.setMessageConverter",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 10,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "consumeReviewDueEvent",
+          "startLine": 16,
+          "endLine": 22,
+          "params": [
+            "event"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationConsumer",
+          "startLine": 10,
+          "endLine": 23,
+          "methods": [
+            "consumeReviewDueEvent"
+          ],
+          "properties": [
+            "notificationService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "consumeReviewDueEvent",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationConsumer",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "consumeReviewDueEvent",
+          "callee": "notificationService.sendReviewDueEmail",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 18,
+      "functions": [
+        {
+          "name": "publishReviewDueEvent",
+          "startLine": 15,
+          "endLine": 21,
+          "params": [
+            "event"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationProducer",
+          "startLine": 9,
+          "endLine": 22,
+          "methods": [
+            "publishReviewDueEvent"
+          ],
+          "properties": [
+            "rabbitTemplate"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "publishReviewDueEvent",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationProducer",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "publishReviewDueEvent",
+          "callee": "rabbitTemplate.convertAndSend",
+          "lineNumber": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 28,
+      "functions": [
+        {
+          "name": "getNotifications",
+          "startLine": 20,
+          "endLine": 25,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getNotificationHistory",
+          "startLine": 27,
+          "endLine": 32,
+          "params": [
+            "pageable"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationController",
+          "startLine": 13,
+          "endLine": 33,
+          "methods": [
+            "getNotifications",
+            "getNotificationHistory"
+          ],
+          "properties": [
+            "notificationService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getNotifications",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "getNotificationHistory",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationController",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getNotifications",
+          "callee": "ApiResponse.success",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getNotifications",
+          "callee": "notificationService.getNotifications",
+          "lineNumber": 24
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "ApiResponse.success",
+          "lineNumber": 31
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "notificationService.getNotificationHistory",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 25,
+      "functions": [
+        {
+          "name": "sendReviewDueEmail",
+          "startLine": 17,
+          "endLine": 33,
+          "params": [
+            "event"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "EmailService",
+          "startLine": 8,
+          "endLine": 34,
+          "methods": [
+            "sendReviewDueEmail"
+          ],
+          "properties": [
+            "emailSender",
+            "reviewLink"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "sendReviewDueEmail",
+          "line": 17,
+          "isDefault": false
+        },
+        {
+          "name": "EmailService",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.fullName",
+          "lineNumber": 18
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.fullName().isBlank",
+          "lineNumber": 18
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.fullName",
+          "lineNumber": 18
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.fullName",
+          "lineNumber": 20
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "\"\"\"\r\n                Hi %s,\r\n\r\n                You have %d vocabularies due for review today.\r\n\r\n                Review link: %s\r\n\r\n                A short review today helps keep these words fresh. See you in VocabVerse.\r\n                \"\"\".formatted",
+          "lineNumber": 22
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.totalDueVocabularies",
+          "lineNumber": 30
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "emailSender.send",
+          "lineNumber": 32
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.email",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 52,
+      "classes": [
+        {
+          "name": "NotificationEntity",
+          "startLine": 25,
+          "endLine": 61,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "type",
+            "status",
+            "sentAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationEntity",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 5,
+      "nonEmptyLines": 4,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "NotificationMapper",
+          "startLine": 7,
+          "endLine": 11,
+          "methods": [
+            "toResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationMapper",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 33,
+      "nonEmptyLines": 26,
+      "classes": [
+        {
+          "name": "NotificationRepository",
+          "startLine": 13,
+          "endLine": 33,
+          "methods": [
+            "existsByUserIdAndTypeAndCreatedAtBetween",
+            "findAllByUserIdOrderByCreatedAtDesc",
+            "findAllByOrderByCreatedAtDesc",
+            "findAllByUserIdAndStatusInOrderByCreatedAtDesc",
+            "countByStatusAndCreatedAtBetween"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "NotificationRepository",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "publishReviewDueNotifications",
+          "startLine": 32,
+          "endLine": 43,
+          "params": []
+        },
+        {
+          "name": "countDueVocabulariesAllowedForNotification",
+          "startLine": 45,
+          "endLine": 50,
+          "params": [
+            "userId",
+            "now"
+          ]
+        },
+        {
+          "name": "isNotificationAllowed",
+          "startLine": 52,
+          "endLine": 72,
+          "params": [
+            "progress",
+            "now"
+          ]
+        },
+        {
+          "name": "isReminderTimeMatched",
+          "startLine": 74,
+          "endLine": 87,
+          "params": [
+            "setting",
+            "now"
+          ]
+        },
+        {
+          "name": "resolveZoneId",
+          "startLine": 89,
+          "endLine": 98,
+          "params": [
+            "timezone"
+          ]
+        },
+        {
+          "name": "publish",
+          "startLine": 100,
+          "endLine": 102,
+          "params": [
+            "event"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReviewDueScheduler",
+          "startLine": 22,
+          "endLine": 103,
+          "methods": [
+            "publishReviewDueNotifications",
+            "countDueVocabulariesAllowedForNotification",
+            "isNotificationAllowed",
+            "isReminderTimeMatched",
+            "resolveZoneId",
+            "publish"
+          ],
+          "properties": [
+            "learningProgressRepository",
+            "collectionReviewSettingRepository",
+            "collectionVocabularyRepository",
+            "notificationService",
+            "notificationProducer"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "publishReviewDueNotifications",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "ReviewDueScheduler",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 34
+        },
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "now.toLocalDate",
+          "lineNumber": 35
+        },
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "learningProgressRepository.findDistinctUsersWithDueReviews",
+          "lineNumber": 36
+        },
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "countDueVocabulariesAllowedForNotification",
+          "lineNumber": 39
+        },
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "user.getId",
+          "lineNumber": 39
+        },
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "notificationService.createPendingReviewDueNotification(user, totalDueVocabularies, reviewDate).ifPresent",
+          "lineNumber": 40
+        },
+        {
+          "caller": "publishReviewDueNotifications",
+          "callee": "notificationService.createPendingReviewDueNotification",
+          "lineNumber": 40
+        },
+        {
+          "caller": "countDueVocabulariesAllowedForNotification",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual(userId, now)\r\n                .stream()\r\n                .filter(progress -> isNotificationAllowed(progress, now)).count",
+          "lineNumber": 46
+        },
+        {
+          "caller": "countDueVocabulariesAllowedForNotification",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual(userId, now)\r\n                .stream().filter",
+          "lineNumber": 46
+        },
+        {
+          "caller": "countDueVocabulariesAllowedForNotification",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual(userId, now).stream",
+          "lineNumber": 46
+        },
+        {
+          "caller": "countDueVocabulariesAllowedForNotification",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 46
+        },
+        {
+          "caller": "countDueVocabulariesAllowedForNotification",
+          "callee": "isNotificationAllowed",
+          "lineNumber": 48
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId",
+          "lineNumber": 53
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "progress.getUser().getId",
+          "lineNumber": 54
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "progress.getUser",
+          "lineNumber": 54
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "progress.getVocabulary().getId",
+          "lineNumber": 55
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "progress.getVocabulary",
+          "lineNumber": 55
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "collectionIds.isEmpty",
+          "lineNumber": 57
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "collectionReviewSettingRepository.findAllByUserIdAndCollectionIdIn",
+          "lineNumber": 61
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "progress.getUser().getId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "progress.getUser",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "settings.isEmpty",
+          "lineNumber": 65
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "settings.stream().anyMatch",
+          "lineNumber": 69
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "settings.stream",
+          "lineNumber": 69
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "setting.isEnabled",
+          "lineNumber": 69
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "setting.isEmailEnabled",
+          "lineNumber": 70
+        },
+        {
+          "caller": "isNotificationAllowed",
+          "callee": "isReminderTimeMatched",
+          "lineNumber": 71
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "setting.getReminderTime",
+          "lineNumber": 75
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "resolveZoneId",
+          "lineNumber": 80
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "setting.getTimezone",
+          "lineNumber": 80
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "now.atZone(ZoneId.systemDefault())\r\n                .withZoneSameInstant(zoneId)\r\n                .toLocalTime()\r\n                .withSecond(0).withNano",
+          "lineNumber": 81
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "now.atZone(ZoneId.systemDefault())\r\n                .withZoneSameInstant(zoneId)\r\n                .toLocalTime().withSecond",
+          "lineNumber": 81
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "now.atZone(ZoneId.systemDefault())\r\n                .withZoneSameInstant(zoneId).toLocalTime",
+          "lineNumber": 81
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "now.atZone(ZoneId.systemDefault()).withZoneSameInstant",
+          "lineNumber": 81
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "now.atZone",
+          "lineNumber": 81
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "ZoneId.systemDefault",
+          "lineNumber": 81
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "currentTime.equals",
+          "lineNumber": 86
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "reminderTime.withSecond(0).withNano",
+          "lineNumber": 86
+        },
+        {
+          "caller": "isReminderTimeMatched",
+          "callee": "reminderTime.withSecond",
+          "lineNumber": 86
+        },
+        {
+          "caller": "resolveZoneId",
+          "callee": "timezone.isBlank",
+          "lineNumber": 90
+        },
+        {
+          "caller": "resolveZoneId",
+          "callee": "ZoneId.systemDefault",
+          "lineNumber": 91
+        },
+        {
+          "caller": "resolveZoneId",
+          "callee": "ZoneId.of",
+          "lineNumber": 94
+        },
+        {
+          "caller": "resolveZoneId",
+          "callee": "ZoneId.systemDefault",
+          "lineNumber": 96
+        },
+        {
+          "caller": "publish",
+          "callee": "notificationProducer.publishReviewDueEvent",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 9,
+        "exportCount": 2,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 144,
+      "nonEmptyLines": 128,
+      "functions": [
+        {
+          "name": "createPendingReviewDueNotification",
+          "startLine": 38,
+          "endLine": 71,
+          "params": [
+            "user",
+            "totalDueVocabularies",
+            "reviewDate"
+          ]
+        },
+        {
+          "name": "sendReviewDueEmail",
+          "startLine": 73,
+          "endLine": 90,
+          "params": [
+            "event"
+          ]
+        },
+        {
+          "name": "getNotifications",
+          "startLine": 92,
+          "endLine": 97,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getNotificationHistory",
+          "startLine": 99,
+          "endLine": 108,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "existsReviewDueNotificationForDate",
+          "startLine": 110,
+          "endLine": 119,
+          "params": [
+            "userId",
+            "reviewDate"
+          ]
+        },
+        {
+          "name": "toPageResponse",
+          "startLine": 121,
+          "endLine": 129,
+          "params": [
+            "page"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 131,
+          "endLine": 135,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 137,
+          "endLine": 143,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "NotificationService",
+          "startLine": 29,
+          "endLine": 144,
+          "methods": [
+            "createPendingReviewDueNotification",
+            "sendReviewDueEmail",
+            "getNotifications",
+            "getNotificationHistory",
+            "existsReviewDueNotificationForDate",
+            "toPageResponse",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "notificationRepository",
+            "userRepository",
+            "notificationMapper",
+            "emailService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createPendingReviewDueNotification",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "sendReviewDueEmail",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "getNotifications",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "getNotificationHistory",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "NotificationService",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "Optional.empty",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "existsReviewDueNotificationForDate",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "user.getId",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "Optional.empty",
+          "lineNumber": 48
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "NotificationEntity.builder()\r\n                .user(user)\r\n                .type(NotificationType.REVIEW_DUE)\r\n                .status(NotificationStatus.PENDING).build",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "NotificationEntity.builder()\r\n                .user(user)\r\n                .type(NotificationType.REVIEW_DUE).status",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "NotificationEntity.builder()\r\n                .user(user).type",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "NotificationEntity.builder().user",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "NotificationEntity.builder",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "notificationRepository.saveAndFlush",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "Optional.empty",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "Optional.of",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "new ReviewDueEvent",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "notification.getId",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "user.getId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "user.getEmail",
+          "lineNumber": 66
+        },
+        {
+          "caller": "createPendingReviewDueNotification",
+          "callee": "user.getFullName",
+          "lineNumber": 67
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notificationRepository.findById(event.notificationId()).orElseThrow",
+          "lineNumber": 75
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notificationRepository.findById",
+          "lineNumber": 75
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "event.notificationId",
+          "lineNumber": 75
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 76
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notification.getStatus",
+          "lineNumber": 78
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "emailService.sendReviewDueEmail",
+          "lineNumber": 83
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notification.setStatus",
+          "lineNumber": 84
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notification.setSentAt",
+          "lineNumber": 85
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 85
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notification.setStatus",
+          "lineNumber": 87
+        },
+        {
+          "caller": "sendReviewDueEmail",
+          "callee": "notificationRepository.save",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getNotifications",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getNotifications",
+          "callee": "getCurrentUser",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getNotifications",
+          "callee": "notificationRepository.findAllByUserIdOrderByCreatedAtDesc",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getNotifications",
+          "callee": "toPageResponse",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 101
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "getCurrentUser",
+          "lineNumber": 101
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "notificationRepository.findAllByUserIdAndStatusInOrderByCreatedAtDesc",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "List.of",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getNotificationHistory",
+          "callee": "toPageResponse",
+          "lineNumber": 107
+        },
+        {
+          "caller": "existsReviewDueNotificationForDate",
+          "callee": "reviewDate.atStartOfDay",
+          "lineNumber": 111
+        },
+        {
+          "caller": "existsReviewDueNotificationForDate",
+          "callee": "reviewDate.plusDays(1).atStartOfDay().minusNanos",
+          "lineNumber": 112
+        },
+        {
+          "caller": "existsReviewDueNotificationForDate",
+          "callee": "reviewDate.plusDays(1).atStartOfDay",
+          "lineNumber": 112
+        },
+        {
+          "caller": "existsReviewDueNotificationForDate",
+          "callee": "reviewDate.plusDays",
+          "lineNumber": 112
+        },
+        {
+          "caller": "existsReviewDueNotificationForDate",
+          "callee": "notificationRepository.existsByUserIdAndTypeAndCreatedAtBetween",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "new NotificationPageResponse",
+          "lineNumber": 122
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.map(notificationMapper::toResponse).getContent",
+          "lineNumber": 123
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.map",
+          "lineNumber": 123
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getNumber",
+          "lineNumber": 124
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getSize",
+          "lineNumber": 125
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalElements",
+          "lineNumber": 126
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalPages",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 132
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 134
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 140
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 5,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    }
+  ]
+}

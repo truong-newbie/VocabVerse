@@ -1,0 +1,1325 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/product/01_Product_Overview.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 459,
+      "nonEmptyLines": 278,
+      "sections": [
+        {
+          "heading": "VocabVerse - Product Overview",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Executive Summary",
+          "level": 1,
+          "line": 13
+        },
+        {
+          "heading": "2. Product Vision",
+          "level": 1,
+          "line": 29
+        },
+        {
+          "heading": "3. Product Mission",
+          "level": 1,
+          "line": 35
+        },
+        {
+          "heading": "4. Problem Statement",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "4.1 Vocabulary Collection Problem",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "4.2 Review Problem",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "4.3 Practice Problem",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "4.4 Content Fragmentation",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "5. Product Goals",
+          "level": 1,
+          "line": 86
+        },
+        {
+          "heading": "Goal 1",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "Goal 2",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "Goal 3",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "Goal 4",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Goal 5",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "6. Target Audience",
+          "level": 1,
+          "line": 110
+        },
+        {
+          "heading": "Primary Users",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "University Students",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "Self-Learners",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "Working Professionals",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "7. Product Scope",
+          "level": 1,
+          "line": 133
+        },
+        {
+          "heading": "Included",
+          "level": 2,
+          "line": 135
+        },
+        {
+          "heading": "Vocabulary Management",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "Learning System",
+          "level": 3,
+          "line": 145
+        },
+        {
+          "heading": "Shadowing",
+          "level": 3,
+          "line": 152
+        },
+        {
+          "heading": "AI Roleplay",
+          "level": 3,
+          "line": 158
+        },
+        {
+          "heading": "Progress Tracking",
+          "level": 3,
+          "line": 165
+        },
+        {
+          "heading": "Excluded In V1",
+          "level": 2,
+          "line": 173
+        },
+        {
+          "heading": "8. User Roles",
+          "level": 1,
+          "line": 183
+        },
+        {
+          "heading": "User",
+          "level": 2,
+          "line": 185
+        },
+        {
+          "heading": "Admin",
+          "level": 2,
+          "line": 202
+        },
+        {
+          "heading": "9. Core Features",
+          "level": 1,
+          "line": 214
+        },
+        {
+          "heading": "F01 - Vocabulary Search",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "F02 - Vocabulary Import",
+          "level": 2,
+          "line": 228
+        },
+        {
+          "heading": "F03 - AI Vocabulary Normalization",
+          "level": 2,
+          "line": 239
+        },
+        {
+          "heading": "F04 - Collection Management",
+          "level": 2,
+          "line": 257
+        },
+        {
+          "heading": "F05 - Flashcard Learning",
+          "level": 2,
+          "line": 269
+        },
+        {
+          "heading": "F06 - Quiz System",
+          "level": 2,
+          "line": 279
+        },
+        {
+          "heading": "F07 - Typing Practice",
+          "level": 2,
+          "line": 289
+        },
+        {
+          "heading": "F08 - Spaced Repetition",
+          "level": 2,
+          "line": 295
+        },
+        {
+          "heading": "F09 - Shadowing",
+          "level": 2,
+          "line": 305
+        },
+        {
+          "heading": "F10 - AI Roleplay",
+          "level": 2,
+          "line": 318
+        },
+        {
+          "heading": "F11 - Dashboard",
+          "level": 2,
+          "line": 332
+        },
+        {
+          "heading": "F12 - PDF Export",
+          "level": 2,
+          "line": 344
+        },
+        {
+          "heading": "10. Success Metrics",
+          "level": 1,
+          "line": 353
+        },
+        {
+          "heading": "User Metrics",
+          "level": 2,
+          "line": 355
+        },
+        {
+          "heading": "Learning Metrics",
+          "level": 2,
+          "line": 361
+        },
+        {
+          "heading": "Retention Metrics",
+          "level": 2,
+          "line": 367
+        },
+        {
+          "heading": "11. Technology Direction",
+          "level": 1,
+          "line": 375
+        },
+        {
+          "heading": "12. Roadmap",
+          "level": 1,
+          "line": 419
+        },
+        {
+          "heading": "13. Future Expansion",
+          "level": 1,
+          "line": 447
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 51
+      }
+    },
+    {
+      "path": "docs/product/02_prd.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 774,
+      "nonEmptyLines": 437,
+      "sections": [
+        {
+          "heading": "02-prd.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "TÀI LIỆU YÊU CẦU SẢN PHẨM (PRD)",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. THÔNG TIN TÀI LIỆU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. MỤC TIÊU SẢN PHẨM",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "2.1 Mục tiêu kinh doanh",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "2.2 Mục tiêu người dùng",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "3. PHẠM VI DỰ ÁN",
+          "level": 1,
+          "line": 56
+        },
+        {
+          "heading": "Bao gồm",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Vocabulary Learning",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Learning Activities",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "Review System",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Speaking",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "Không bao gồm V1",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "4. USER PERSONA",
+          "level": 1,
+          "line": 95
+        },
+        {
+          "heading": "Persona 1",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Sinh viên đại học",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Persona 2",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "Người tự học",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "5. USER ROLE",
+          "level": 1,
+          "line": 129
+        },
+        {
+          "heading": "USER",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "ADMIN",
+          "level": 2,
+          "line": 143
+        },
+        {
+          "heading": "6. MODULE 01 - QUẢN LÝ TỪ VỰNG",
+          "level": 1,
+          "line": 154
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "UC-01",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "Tra cứu từ vựng",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "User Story",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "UC-02",
+          "level": 2,
+          "line": 202
+        },
+        {
+          "heading": "Lưu từ vào Collection",
+          "level": 3,
+          "line": 204
+        },
+        {
+          "heading": "Kết quả",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "UC-03",
+          "level": 2,
+          "line": 222
+        },
+        {
+          "heading": "Tạo Collection",
+          "level": 3,
+          "line": 224
+        },
+        {
+          "heading": "7. MODULE 02 - IMPORT TỪ VỰNG",
+          "level": 1,
+          "line": 239
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 243
+        },
+        {
+          "heading": "UC-04",
+          "level": 2,
+          "line": 249
+        },
+        {
+          "heading": "Import bằng Text",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "UC-05",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "Import bằng JSON",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "UC-06",
+          "level": 2,
+          "line": 281
+        },
+        {
+          "heading": "Import bằng CSV",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "UC-07",
+          "level": 2,
+          "line": 292
+        },
+        {
+          "heading": "AI Normalize",
+          "level": 3,
+          "line": 294
+        },
+        {
+          "heading": "User Story",
+          "level": 3,
+          "line": 309
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 319
+        },
+        {
+          "heading": "8. MODULE 03 - FLASHCARD",
+          "level": 1,
+          "line": 328
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 332
+        },
+        {
+          "heading": "UC-08",
+          "level": 2,
+          "line": 338
+        },
+        {
+          "heading": "Học Flashcard",
+          "level": 3,
+          "line": 340
+        },
+        {
+          "heading": "Hành động",
+          "level": 3,
+          "line": 354
+        },
+        {
+          "heading": "UC-09",
+          "level": 2,
+          "line": 362
+        },
+        {
+          "heading": "Đánh dấu mức độ nhớ",
+          "level": 3,
+          "line": 364
+        },
+        {
+          "heading": "9. MODULE 04 - QUIZ",
+          "level": 1,
+          "line": 378
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 382
+        },
+        {
+          "heading": "Loại Quiz",
+          "level": 2,
+          "line": 388
+        },
+        {
+          "heading": "Multiple Choice",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "Matching",
+          "level": 3,
+          "line": 396
+        },
+        {
+          "heading": "Fill In Blank",
+          "level": 3,
+          "line": 402
+        },
+        {
+          "heading": "UC-10",
+          "level": 2,
+          "line": 408
+        },
+        {
+          "heading": "Bắt đầu Quiz",
+          "level": 3,
+          "line": 410
+        },
+        {
+          "heading": "Kết quả",
+          "level": 3,
+          "line": 420
+        },
+        {
+          "heading": "10. MODULE 05 - TYPING PRACTICE",
+          "level": 1,
+          "line": 430
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 434
+        },
+        {
+          "heading": "UC-11",
+          "level": 2,
+          "line": 440
+        },
+        {
+          "heading": "Gõ đáp án",
+          "level": 3,
+          "line": 442
+        },
+        {
+          "heading": "11. MODULE 06 - SPACED REPETITION",
+          "level": 1,
+          "line": 460
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 464
+        },
+        {
+          "heading": "UC-12",
+          "level": 2,
+          "line": 470
+        },
+        {
+          "heading": "Kích hoạt Spaced Repetition",
+          "level": 3,
+          "line": 472
+        },
+        {
+          "heading": "UC-13",
+          "level": 2,
+          "line": 494
+        },
+        {
+          "heading": "Email Reminder",
+          "level": 3,
+          "line": 496
+        },
+        {
+          "heading": "UC-14",
+          "level": 2,
+          "line": 506
+        },
+        {
+          "heading": "Browser Notification",
+          "level": 3,
+          "line": 508
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 516
+        },
+        {
+          "heading": "12. MODULE 07 - SHADOWING",
+          "level": 1,
+          "line": 524
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 528
+        },
+        {
+          "heading": "UC-15",
+          "level": 2,
+          "line": 534
+        },
+        {
+          "heading": "Upload Video",
+          "level": 3,
+          "line": 536
+        },
+        {
+          "heading": "Hệ thống",
+          "level": 2,
+          "line": 545
+        },
+        {
+          "heading": "UC-16",
+          "level": 2,
+          "line": 556
+        },
+        {
+          "heading": "Shadowing Practice",
+          "level": 3,
+          "line": 558
+        },
+        {
+          "heading": "13. MODULE 08 - AI ROLEPLAY",
+          "level": 1,
+          "line": 577
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 581
+        },
+        {
+          "heading": "UC-17",
+          "level": 2,
+          "line": 587
+        },
+        {
+          "heading": "Chọn chủ đề",
+          "level": 3,
+          "line": 589
+        },
+        {
+          "heading": "UC-18",
+          "level": 2,
+          "line": 600
+        },
+        {
+          "heading": "Chọn độ khó",
+          "level": 3,
+          "line": 602
+        },
+        {
+          "heading": "UC-19",
+          "level": 2,
+          "line": 610
+        },
+        {
+          "heading": "Chọn Persona",
+          "level": 3,
+          "line": 612
+        },
+        {
+          "heading": "UC-20",
+          "level": 2,
+          "line": 621
+        },
+        {
+          "heading": "Bắt đầu hội thoại",
+          "level": 3,
+          "line": 623
+        },
+        {
+          "heading": "UC-21",
+          "level": 2,
+          "line": 635
+        },
+        {
+          "heading": "Sửa lỗi",
+          "level": 3,
+          "line": 637
+        },
+        {
+          "heading": "UC-22",
+          "level": 2,
+          "line": 648
+        },
+        {
+          "heading": "Session Report",
+          "level": 3,
+          "line": 650
+        },
+        {
+          "heading": "14. MODULE 09 - DASHBOARD",
+          "level": 1,
+          "line": 663
+        },
+        {
+          "heading": "UC-23",
+          "level": 2,
+          "line": 667
+        },
+        {
+          "heading": "Learning Statistics",
+          "level": 3,
+          "line": 669
+        },
+        {
+          "heading": "UC-24",
+          "level": 2,
+          "line": 680
+        },
+        {
+          "heading": "Collection Statistics",
+          "level": 3,
+          "line": 682
+        },
+        {
+          "heading": "15. MODULE 10 - EXPORT PDF",
+          "level": 1,
+          "line": 691
+        },
+        {
+          "heading": "UC-25",
+          "level": 2,
+          "line": 695
+        },
+        {
+          "heading": "Export Vocabulary Table",
+          "level": 3,
+          "line": 697
+        },
+        {
+          "heading": "UC-26",
+          "level": 2,
+          "line": 711
+        },
+        {
+          "heading": "Export Flashcard PDF",
+          "level": 3,
+          "line": 713
+        },
+        {
+          "heading": "16. CHIA SẺ COLLECTION",
+          "level": 1,
+          "line": 723
+        },
+        {
+          "heading": "UC-27",
+          "level": 2,
+          "line": 727
+        },
+        {
+          "heading": "Public Collection",
+          "level": 3,
+          "line": 729
+        },
+        {
+          "heading": "UC-28",
+          "level": 2,
+          "line": 741
+        },
+        {
+          "heading": "Private Collection",
+          "level": 3,
+          "line": 743
+        },
+        {
+          "heading": "17. KPI SẢN PHẨM",
+          "level": 1,
+          "line": 749
+        },
+        {
+          "heading": "KPI Học Tập",
+          "level": 2,
+          "line": 751
+        },
+        {
+          "heading": "KPI Người Dùng",
+          "level": 2,
+          "line": 758
+        },
+        {
+          "heading": "KPI Retention",
+          "level": 2,
+          "line": 766
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 114
+      }
+    },
+    {
+      "path": "docs/product/03_srs.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 767,
+      "nonEmptyLines": 455,
+      "sections": [
+        {
+          "heading": "03-srs.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "SOFTWARE REQUIREMENT SPECIFICATION",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. THÔNG TIN TÀI LIỆU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. MỤC ĐÍCH",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "3. PHẠM VI HỆ THỐNG",
+          "level": 1,
+          "line": 38
+        },
+        {
+          "heading": "4. ĐỊNH NGHĨA THUẬT NGỮ",
+          "level": 1,
+          "line": 54
+        },
+        {
+          "heading": "5. KIẾN TRÚC TỔNG QUAN",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "6. PHÂN QUYỀN",
+          "level": 1,
+          "line": 92
+        },
+        {
+          "heading": "USER",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "ADMIN",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "7. FUNCTIONAL REQUIREMENTS",
+          "level": 1,
+          "line": 117
+        },
+        {
+          "heading": "MODULE AUTHENTICATION",
+          "level": 1,
+          "line": 121
+        },
+        {
+          "heading": "FR-AUTH-001",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "FR-AUTH-002",
+          "level": 2,
+          "line": 144
+        },
+        {
+          "heading": "FR-AUTH-003",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "FR-AUTH-004",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "MODULE VOCABULARY",
+          "level": 1,
+          "line": 180
+        },
+        {
+          "heading": "FR-VOCAB-001",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "FR-VOCAB-002",
+          "level": 2,
+          "line": 205
+        },
+        {
+          "heading": "FR-VOCAB-003",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "FR-VOCAB-004",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "FR-VOCAB-005",
+          "level": 2,
+          "line": 237
+        },
+        {
+          "heading": "MODULE COLLECTION",
+          "level": 1,
+          "line": 243
+        },
+        {
+          "heading": "FR-COL-001",
+          "level": 2,
+          "line": 245
+        },
+        {
+          "heading": "FR-COL-002",
+          "level": 2,
+          "line": 251
+        },
+        {
+          "heading": "FR-COL-003",
+          "level": 2,
+          "line": 257
+        },
+        {
+          "heading": "FR-COL-004",
+          "level": 2,
+          "line": 263
+        },
+        {
+          "heading": "FR-COL-005",
+          "level": 2,
+          "line": 275
+        },
+        {
+          "heading": "MODULE AI NORMALIZATION",
+          "level": 1,
+          "line": 281
+        },
+        {
+          "heading": "FR-AI-001",
+          "level": 2,
+          "line": 283
+        },
+        {
+          "heading": "FR-AI-002",
+          "level": 2,
+          "line": 297
+        },
+        {
+          "heading": "FR-AI-003",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "FR-AI-004",
+          "level": 2,
+          "line": 327
+        },
+        {
+          "heading": "MODULE FLASHCARD",
+          "level": 1,
+          "line": 341
+        },
+        {
+          "heading": "FR-FLASH-001",
+          "level": 2,
+          "line": 343
+        },
+        {
+          "heading": "FR-FLASH-002",
+          "level": 2,
+          "line": 349
+        },
+        {
+          "heading": "FR-FLASH-003",
+          "level": 2,
+          "line": 359
+        },
+        {
+          "heading": "FR-FLASH-004",
+          "level": 2,
+          "line": 371
+        },
+        {
+          "heading": "MODULE QUIZ",
+          "level": 1,
+          "line": 377
+        },
+        {
+          "heading": "FR-QUIZ-001",
+          "level": 2,
+          "line": 379
+        },
+        {
+          "heading": "FR-QUIZ-002",
+          "level": 2,
+          "line": 385
+        },
+        {
+          "heading": "FR-QUIZ-003",
+          "level": 2,
+          "line": 397
+        },
+        {
+          "heading": "FR-QUIZ-004",
+          "level": 2,
+          "line": 407
+        },
+        {
+          "heading": "MODULE TYPING PRACTICE",
+          "level": 1,
+          "line": 413
+        },
+        {
+          "heading": "FR-TYPE-001",
+          "level": 2,
+          "line": 415
+        },
+        {
+          "heading": "FR-TYPE-002",
+          "level": 2,
+          "line": 421
+        },
+        {
+          "heading": "FR-TYPE-003",
+          "level": 2,
+          "line": 430
+        },
+        {
+          "heading": "MODULE SPACED REPETITION",
+          "level": 1,
+          "line": 436
+        },
+        {
+          "heading": "FR-SR-001",
+          "level": 2,
+          "line": 438
+        },
+        {
+          "heading": "FR-SR-002",
+          "level": 2,
+          "line": 444
+        },
+        {
+          "heading": "FR-SR-003",
+          "level": 2,
+          "line": 458
+        },
+        {
+          "heading": "FR-SR-004",
+          "level": 2,
+          "line": 464
+        },
+        {
+          "heading": "FR-SR-005",
+          "level": 2,
+          "line": 472
+        },
+        {
+          "heading": "FR-SR-006",
+          "level": 2,
+          "line": 478
+        },
+        {
+          "heading": "FR-SR-007",
+          "level": 2,
+          "line": 484
+        },
+        {
+          "heading": "MODULE SHADOWING",
+          "level": 1,
+          "line": 490
+        },
+        {
+          "heading": "FR-SHADOW-001",
+          "level": 2,
+          "line": 492
+        },
+        {
+          "heading": "FR-SHADOW-002",
+          "level": 2,
+          "line": 505
+        },
+        {
+          "heading": "FR-SHADOW-003",
+          "level": 2,
+          "line": 514
+        },
+        {
+          "heading": "FR-SHADOW-004",
+          "level": 2,
+          "line": 520
+        },
+        {
+          "heading": "FR-SHADOW-005",
+          "level": 2,
+          "line": 526
+        },
+        {
+          "heading": "FR-SHADOW-006",
+          "level": 2,
+          "line": 532
+        },
+        {
+          "heading": "FR-SHADOW-007",
+          "level": 2,
+          "line": 538
+        },
+        {
+          "heading": "MODULE ROLEPLAY",
+          "level": 1,
+          "line": 546
+        },
+        {
+          "heading": "FR-ROLE-001",
+          "level": 2,
+          "line": 548
+        },
+        {
+          "heading": "FR-ROLE-002",
+          "level": 2,
+          "line": 554
+        },
+        {
+          "heading": "FR-ROLE-003",
+          "level": 2,
+          "line": 566
+        },
+        {
+          "heading": "FR-ROLE-004",
+          "level": 2,
+          "line": 572
+        },
+        {
+          "heading": "FR-ROLE-005",
+          "level": 2,
+          "line": 578
+        },
+        {
+          "heading": "FR-ROLE-006",
+          "level": 2,
+          "line": 584
+        },
+        {
+          "heading": "FR-ROLE-007",
+          "level": 2,
+          "line": 590
+        },
+        {
+          "heading": "MODULE DASHBOARD",
+          "level": 1,
+          "line": 596
+        },
+        {
+          "heading": "FR-DASH-001",
+          "level": 2,
+          "line": 598
+        },
+        {
+          "heading": "FR-DASH-002",
+          "level": 2,
+          "line": 608
+        },
+        {
+          "heading": "FR-DASH-003",
+          "level": 2,
+          "line": 614
+        },
+        {
+          "heading": "MODULE PDF EXPORT",
+          "level": 1,
+          "line": 620
+        },
+        {
+          "heading": "FR-PDF-001",
+          "level": 2,
+          "line": 622
+        },
+        {
+          "heading": "FR-PDF-002",
+          "level": 2,
+          "line": 628
+        },
+        {
+          "heading": "8. NON FUNCTIONAL REQUIREMENTS",
+          "level": 1,
+          "line": 641
+        },
+        {
+          "heading": "NFR-001 Performance",
+          "level": 2,
+          "line": 643
+        },
+        {
+          "heading": "NFR-002 Security",
+          "level": 2,
+          "line": 653
+        },
+        {
+          "heading": "NFR-003 Authentication",
+          "level": 2,
+          "line": 663
+        },
+        {
+          "heading": "NFR-004 Availability",
+          "level": 2,
+          "line": 673
+        },
+        {
+          "heading": "NFR-005 Scalability",
+          "level": 2,
+          "line": 683
+        },
+        {
+          "heading": "NFR-006 Logging",
+          "level": 2,
+          "line": 689
+        },
+        {
+          "heading": "NFR-007 Monitoring",
+          "level": 2,
+          "line": 695
+        },
+        {
+          "heading": "9. BUSINESS RULES",
+          "level": 1,
+          "line": 705
+        },
+        {
+          "heading": "10. ERROR CODES",
+          "level": 1,
+          "line": 743
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 89
+      }
+    }
+  ]
+}

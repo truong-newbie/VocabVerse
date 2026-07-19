@@ -1,0 +1,567 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/ai/13-prompt-engineering-design.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 605,
+      "nonEmptyLines": 396,
+      "sections": [
+        {
+          "heading": "13-prompt-engineering-design.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "THIẾT KẾ HỆ THỐNG PROMPT AI",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. KIẾN TRÚC AI",
+          "level": 1,
+          "line": 23
+        },
+        {
+          "heading": "3. AI MODULES",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "4. AI NORMALIZE VOCABULARY",
+          "level": 1,
+          "line": 69
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "Input",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "Output Schema",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "System Prompt",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "User Prompt",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "5. JSON VALIDATION",
+          "level": 1,
+          "line": 146
+        },
+        {
+          "heading": "6. SHADOWING TRANSLATION",
+          "level": 1,
+          "line": 174
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 176
+        },
+        {
+          "heading": "Input",
+          "level": 2,
+          "line": 182
+        },
+        {
+          "heading": "Output",
+          "level": 2,
+          "line": 193
+        },
+        {
+          "heading": "System Prompt",
+          "level": 2,
+          "line": 204
+        },
+        {
+          "heading": "Bad Example",
+          "level": 2,
+          "line": 221
+        },
+        {
+          "heading": "Good Example",
+          "level": 2,
+          "line": 231
+        },
+        {
+          "heading": "7. ROLEPLAY SYSTEM",
+          "level": 1,
+          "line": 239
+        },
+        {
+          "heading": "8. ROLEPLAY ARCHITECTURE",
+          "level": 1,
+          "line": 245
+        },
+        {
+          "heading": "9. ROLEPLAY PERSONA",
+          "level": 1,
+          "line": 273
+        },
+        {
+          "heading": "10. SYSTEM PROMPT ROLEPLAY",
+          "level": 1,
+          "line": 291
+        },
+        {
+          "heading": "11. DIFFICULTY LEVELS",
+          "level": 1,
+          "line": 309
+        },
+        {
+          "heading": "EASY",
+          "level": 2,
+          "line": 311
+        },
+        {
+          "heading": "MEDIUM",
+          "level": 2,
+          "line": 323
+        },
+        {
+          "heading": "HARD",
+          "level": 2,
+          "line": 333
+        },
+        {
+          "heading": "12. CORRECTION ENGINE",
+          "level": 1,
+          "line": 345
+        },
+        {
+          "heading": "13. SESSION REPORT",
+          "level": 1,
+          "line": 384
+        },
+        {
+          "heading": "14. PROMPT VERSIONING",
+          "level": 1,
+          "line": 403
+        },
+        {
+          "heading": "15. COST OPTIMIZATION",
+          "level": 1,
+          "line": 443
+        },
+        {
+          "heading": "Cache",
+          "level": 2,
+          "line": 445
+        },
+        {
+          "heading": "Không gọi AI lại nếu:",
+          "level": 2,
+          "line": 457
+        },
+        {
+          "heading": "16. FALLBACK STRATEGY",
+          "level": 1,
+          "line": 481
+        },
+        {
+          "heading": "17. TOKEN LIMIT",
+          "level": 1,
+          "line": 513
+        },
+        {
+          "heading": "18. SECURITY",
+          "level": 1,
+          "line": 539
+        },
+        {
+          "heading": "19. OBSERVABILITY",
+          "level": 1,
+          "line": 557
+        },
+        {
+          "heading": "20. KẾT LUẬN",
+          "level": 1,
+          "line": 573
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 39
+      }
+    },
+    {
+      "path": "docs/ai/AI_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 292,
+      "nonEmptyLines": 171,
+      "sections": [
+        {
+          "heading": "AI_RULES.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "VocabVerse AI Development Rules",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Project Overview",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Golden Rule",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "Mandatory Documents",
+          "level": 1,
+          "line": 37
+        },
+        {
+          "heading": "Forbidden Actions",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "Backend Standards",
+          "level": 1,
+          "line": 66
+        },
+        {
+          "heading": "Entity Rules",
+          "level": 1,
+          "line": 98
+        },
+        {
+          "heading": "Controller Rules",
+          "level": 1,
+          "line": 116
+        },
+        {
+          "heading": "Service Rules",
+          "level": 1,
+          "line": 132
+        },
+        {
+          "heading": "Repository Rules",
+          "level": 1,
+          "line": 144
+        },
+        {
+          "heading": "API Rules",
+          "level": 1,
+          "line": 155
+        },
+        {
+          "heading": "Vocabulary Rules",
+          "level": 1,
+          "line": 179
+        },
+        {
+          "heading": "Collection Rules",
+          "level": 1,
+          "line": 189
+        },
+        {
+          "heading": "AI Normalize Rules",
+          "level": 1,
+          "line": 203
+        },
+        {
+          "heading": "Roleplay Rules",
+          "level": 1,
+          "line": 217
+        },
+        {
+          "heading": "Spaced Repetition Rules",
+          "level": 1,
+          "line": 229
+        },
+        {
+          "heading": "Security Rules",
+          "level": 1,
+          "line": 239
+        },
+        {
+          "heading": "Testing Rules",
+          "level": 1,
+          "line": 255
+        },
+        {
+          "heading": "Logging Rules",
+          "level": 1,
+          "line": 267
+        },
+        {
+          "heading": "Before Creating New Code",
+          "level": 1,
+          "line": 283
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "docs/ai/ARCHITECTURE_LOCK.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 130,
+      "nonEmptyLines": 77,
+      "sections": [
+        {
+          "heading": "ARCHITECTURE_LOCK.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Architecture",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Backend",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "Database",
+          "level": 1,
+          "line": 31
+        },
+        {
+          "heading": "Cache",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "Async Processing",
+          "level": 1,
+          "line": 51
+        },
+        {
+          "heading": "AI Providers",
+          "level": 1,
+          "line": 64
+        },
+        {
+          "heading": "Forbidden Architecture Changes",
+          "level": 1,
+          "line": 76
+        },
+        {
+          "heading": "API Style",
+          "level": 1,
+          "line": 91
+        },
+        {
+          "heading": "Authentication",
+          "level": 1,
+          "line": 101
+        },
+        {
+          "heading": "Database Rules",
+          "level": 1,
+          "line": 111
+        },
+        {
+          "heading": "Storage",
+          "level": 1,
+          "line": 121
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "docs/ai/BUSINESS_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 148,
+      "nonEmptyLines": 87,
+      "sections": [
+        {
+          "heading": "BUSINESS_RULES.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Vocabulary",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Collection",
+          "level": 1,
+          "line": 17
+        },
+        {
+          "heading": "Vocabulary Import",
+          "level": 1,
+          "line": 34
+        },
+        {
+          "heading": "Flashcard",
+          "level": 1,
+          "line": 48
+        },
+        {
+          "heading": "Quiz",
+          "level": 1,
+          "line": 62
+        },
+        {
+          "heading": "Spaced Repetition",
+          "level": 1,
+          "line": 70
+        },
+        {
+          "heading": "Shadowing",
+          "level": 1,
+          "line": 92
+        },
+        {
+          "heading": "Roleplay",
+          "level": 1,
+          "line": 110
+        },
+        {
+          "heading": "Dashboard",
+          "level": 1,
+          "line": 126
+        },
+        {
+          "heading": "Export PDF",
+          "level": 1,
+          "line": 138
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "docs/ai/TASK_TEMPLATE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 127,
+      "nonEmptyLines": 70,
+      "sections": [
+        {
+          "heading": "TASK_TEMPLATE.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Task",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Title",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Goal",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Business Context",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Allowed Files",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Forbidden Files",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Requirements",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "API Contract",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "Test Cases",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "Out Of Scope",
+          "level": 2,
+          "line": 108
+        },
+        {
+          "heading": "Deliverables",
+          "level": 2,
+          "line": 120
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    }
+  ]
+}

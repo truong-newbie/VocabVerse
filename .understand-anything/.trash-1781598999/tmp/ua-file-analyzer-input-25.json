@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/browser/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "language": "java",
+      "sizeLines": 30,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/scheduler/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/learning/typing/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/learning/typing/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/notification/.gitkeep": [],
+    "src/main/java/com/vocabverse/notification/browser/.gitkeep": [],
+    "src/main/java/com/vocabverse/notification/email/.gitkeep": [],
+    "src/main/java/com/vocabverse/notification/email/EmailSender.java": [],
+    "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java": [],
+    "src/main/java/com/vocabverse/notification/scheduler/.gitkeep": [],
+    "src/main/java/com/vocabverse/notification/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/mapper/ReviewMapper.java": [],
+    "src/main/java/com/vocabverse/review/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/review/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/controller/.gitkeep": []
+  }
+}

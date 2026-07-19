@@ -1,0 +1,1819 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 61,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 30,
+          "endLine": 35,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSession",
+          "startLine": 37,
+          "endLine": 40,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessions",
+          "startLine": 42,
+          "endLine": 47,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "sendMessage",
+          "startLine": 49,
+          "endLine": 55,
+          "params": [
+            "sessionId",
+            "request"
+          ]
+        },
+        {
+          "name": "endSession",
+          "startLine": 57,
+          "endLine": 60,
+          "params": [
+            "sessionId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoleplayController",
+          "startLine": 23,
+          "endLine": 61,
+          "methods": [
+            "createSession",
+            "getSession",
+            "getSessions",
+            "sendMessage",
+            "endSession"
+          ],
+          "properties": [
+            "roleplayService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getSession",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getSessions",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "sendMessage",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "endSession",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "RoleplayController",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "ApiResponse.success",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createSession",
+          "callee": "roleplayService.createSession",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getSession",
+          "callee": "ApiResponse.success",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getSession",
+          "callee": "roleplayService.getSession",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getSessions",
+          "callee": "ApiResponse.success",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getSessions",
+          "callee": "roleplayService.getSessions",
+          "lineNumber": 46
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "ApiResponse.success",
+          "lineNumber": 54
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "roleplayService.sendMessage",
+          "lineNumber": 54
+        },
+        {
+          "caller": "endSession",
+          "callee": "ApiResponse.success",
+          "lineNumber": 59
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayService.endSession",
+          "lineNumber": 59
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "RoleplayCorrection",
+          "startLine": 8,
+          "endLine": 18,
+          "methods": [],
+          "properties": [
+            "original",
+            "corrected",
+            "betterExpression",
+            "explanation"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplayCorrection",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 58,
+      "nonEmptyLines": 50,
+      "classes": [
+        {
+          "name": "RoleplayMessageEntity",
+          "startLine": 26,
+          "endLine": 58,
+          "methods": [],
+          "properties": [
+            "id",
+            "session",
+            "sender",
+            "content",
+            "correction",
+            "createdAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplayMessageEntity",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 66,
+      "nonEmptyLines": 55,
+      "classes": [
+        {
+          "name": "RoleplayReportEntity",
+          "startLine": 24,
+          "endLine": 66,
+          "methods": [],
+          "properties": [
+            "id",
+            "session",
+            "summary",
+            "strengths",
+            "weaknesses",
+            "suggestedVocabulary",
+            "grammarFeedback",
+            "overallScore",
+            "createdAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplayReportEntity",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 62,
+      "classes": [
+        {
+          "name": "RoleplaySessionEntity",
+          "startLine": 27,
+          "endLine": 75,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "topic",
+            "difficulty",
+            "persona",
+            "scenario",
+            "status",
+            "startedAt",
+            "endedAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplaySessionEntity",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 33,
+      "classes": [
+        {
+          "name": "RoleplayMapper",
+          "startLine": 13,
+          "endLine": 38,
+          "methods": [
+            "toMessageResponse",
+            "toReportResponse",
+            "toSessionResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplayMapper",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 81,
+      "functions": [
+        {
+          "name": "buildScenarioPrompt",
+          "startLine": 11,
+          "endLine": 24,
+          "params": [
+            "topic",
+            "difficulty",
+            "persona"
+          ]
+        },
+        {
+          "name": "buildReplyPrompt",
+          "startLine": 26,
+          "endLine": 59,
+          "params": [
+            "session",
+            "messages",
+            "userMessage"
+          ]
+        },
+        {
+          "name": "buildReportPrompt",
+          "startLine": 61,
+          "endLine": 82,
+          "params": [
+            "session",
+            "messages"
+          ]
+        },
+        {
+          "name": "formatMessages",
+          "startLine": 84,
+          "endLine": 92,
+          "params": [
+            "messages"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoleplayPromptBuilder",
+          "startLine": 8,
+          "endLine": 93,
+          "methods": [
+            "buildScenarioPrompt",
+            "buildReplyPrompt",
+            "buildReportPrompt",
+            "formatMessages"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "buildScenarioPrompt",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "buildReplyPrompt",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "buildReportPrompt",
+          "line": 61,
+          "isDefault": false
+        },
+        {
+          "name": "RoleplayPromptBuilder",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildScenarioPrompt",
+          "callee": "\"\"\"\n                You are creating an English roleplay scenario.\n                Return JSON only with this schema:\n                {\"scenario\": \"...\", \"firstMessage\": \"...\"}\n\n                Rules:\n                - Topic: %s\n                - Difficulty: %s\n                - Persona: %s\n                - Stay in character.\n                - Keep the opening message concise.\n                \"\"\".formatted",
+          "lineNumber": 12
+        },
+        {
+          "caller": "buildReplyPrompt",
+          "callee": "\"\"\"\n                You are acting as the roleplay persona.\n                Return JSON only with this schema:\n                {\n                  \"reply\": \"...\",\n                  \"correction\": {\n                    \"original\": \"...\",\n                    \"corrected\": \"...\",\n                    \"betterExpression\": \"...\",\n                    \"explanation\": \"...\"\n                  }\n                }\n\n                Session:\n                - Topic: %s\n                - Difficulty: %s\n                - Persona: %s\n                - Scenario: %s\n\n                Recent conversation:\n                %s\n\n                User message:\n                %s\n                \"\"\".formatted",
+          "lineNumber": 27
+        },
+        {
+          "caller": "buildReplyPrompt",
+          "callee": "session.getTopic",
+          "lineNumber": 52
+        },
+        {
+          "caller": "buildReplyPrompt",
+          "callee": "session.getDifficulty",
+          "lineNumber": 53
+        },
+        {
+          "caller": "buildReplyPrompt",
+          "callee": "session.getPersona",
+          "lineNumber": 54
+        },
+        {
+          "caller": "buildReplyPrompt",
+          "callee": "session.getScenario",
+          "lineNumber": 55
+        },
+        {
+          "caller": "buildReplyPrompt",
+          "callee": "formatMessages",
+          "lineNumber": 56
+        },
+        {
+          "caller": "buildReportPrompt",
+          "callee": "\"\"\"\n                Generate a final roleplay report.\n                Return JSON only with this schema:\n                {\n                  \"summary\": \"...\",\n                  \"strengths\": [],\n                  \"weaknesses\": [],\n                  \"suggestedVocabulary\": [],\n                  \"grammarFeedback\": \"...\",\n                  \"overallScore\": 0\n                }\n\n                Session:\n                - Topic: %s\n                - Difficulty: %s\n                - Persona: %s\n\n                Conversation:\n                %s\n                \"\"\".formatted",
+          "lineNumber": 62
+        },
+        {
+          "caller": "buildReportPrompt",
+          "callee": "session.getTopic",
+          "lineNumber": 81
+        },
+        {
+          "caller": "buildReportPrompt",
+          "callee": "session.getDifficulty",
+          "lineNumber": 81
+        },
+        {
+          "caller": "buildReportPrompt",
+          "callee": "session.getPersona",
+          "lineNumber": 81
+        },
+        {
+          "caller": "buildReportPrompt",
+          "callee": "formatMessages",
+          "lineNumber": 81
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "messages.isEmpty",
+          "lineNumber": 85
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "messages.stream()\n                .map(message -> message.getSender() + \": \" + message.getContent())\n                .reduce((left, right) -> left + \"\\n\" + right).orElse",
+          "lineNumber": 88
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "messages.stream()\n                .map(message -> message.getSender() + \": \" + message.getContent()).reduce",
+          "lineNumber": 88
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "messages.stream().map",
+          "lineNumber": 88
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "messages.stream",
+          "lineNumber": 88
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "message.getSender",
+          "lineNumber": 89
+        },
+        {
+          "caller": "formatMessages",
+          "callee": "message.getContent",
+          "lineNumber": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 4,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "RoleplayMessageRepository",
+          "startLine": 8,
+          "endLine": 11,
+          "methods": [
+            "findAllBySessionIdOrderByCreatedAtAsc"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplayMessageRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "classes": [
+        {
+          "name": "RoleplayReportRepository",
+          "startLine": 8,
+          "endLine": 11,
+          "methods": [
+            "findBySessionId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplayReportRepository",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 11,
+      "classes": [
+        {
+          "name": "RoleplaySessionRepository",
+          "startLine": 10,
+          "endLine": 15,
+          "methods": [
+            "findByIdAndUserId",
+            "findAllByUserIdOrderByCreatedAtDesc"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "RoleplaySessionRepository",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 79,
+      "nonEmptyLines": 69,
+      "functions": [
+        {
+          "name": "startSession",
+          "startLine": 21,
+          "endLine": 30,
+          "params": [
+            "topic",
+            "difficulty",
+            "persona"
+          ]
+        },
+        {
+          "name": "reply",
+          "startLine": 32,
+          "endLine": 37,
+          "params": [
+            "session",
+            "messages",
+            "userMessage"
+          ]
+        },
+        {
+          "name": "report",
+          "startLine": 39,
+          "endLine": 54,
+          "params": [
+            "session",
+            "messages"
+          ]
+        },
+        {
+          "name": "buildReply",
+          "startLine": 56,
+          "endLine": 61,
+          "params": [
+            "session",
+            "userMessage"
+          ]
+        },
+        {
+          "name": "buildCorrection",
+          "startLine": 63,
+          "endLine": 78,
+          "params": [
+            "userMessage"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoleplayAiService",
+          "startLine": 15,
+          "endLine": 79,
+          "methods": [
+            "startSession",
+            "reply",
+            "report",
+            "buildReply",
+            "buildCorrection"
+          ],
+          "properties": [
+            "promptBuilder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "startSession",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "reply",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "report",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "RoleplayAiService",
+          "line": 15,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "startSession",
+          "callee": "promptBuilder.buildScenarioPrompt",
+          "lineNumber": 22
+        },
+        {
+          "caller": "startSession",
+          "callee": "new RoleplayAiScenario",
+          "lineNumber": 29
+        },
+        {
+          "caller": "reply",
+          "callee": "promptBuilder.buildReplyPrompt",
+          "lineNumber": 33
+        },
+        {
+          "caller": "reply",
+          "callee": "buildReply",
+          "lineNumber": 34
+        },
+        {
+          "caller": "reply",
+          "callee": "buildCorrection",
+          "lineNumber": 35
+        },
+        {
+          "caller": "reply",
+          "callee": "new RoleplayAiReply",
+          "lineNumber": 36
+        },
+        {
+          "caller": "report",
+          "callee": "promptBuilder.buildReportPrompt",
+          "lineNumber": 40
+        },
+        {
+          "caller": "report",
+          "callee": "messages.stream()\n                .filter(message -> message.getSender() == RoleplayMessageSender.USER).count",
+          "lineNumber": 41
+        },
+        {
+          "caller": "report",
+          "callee": "messages.stream().filter",
+          "lineNumber": 41
+        },
+        {
+          "caller": "report",
+          "callee": "messages.stream",
+          "lineNumber": 41
+        },
+        {
+          "caller": "report",
+          "callee": "message.getSender",
+          "lineNumber": 42
+        },
+        {
+          "caller": "report",
+          "callee": "Math.min",
+          "lineNumber": 44
+        },
+        {
+          "caller": "report",
+          "callee": "new RoleplayAiReport",
+          "lineNumber": 46
+        },
+        {
+          "caller": "report",
+          "callee": "session.getTopic",
+          "lineNumber": 47
+        },
+        {
+          "caller": "report",
+          "callee": "List.of",
+          "lineNumber": 48
+        },
+        {
+          "caller": "report",
+          "callee": "List.of",
+          "lineNumber": 49
+        },
+        {
+          "caller": "report",
+          "callee": "List.of",
+          "lineNumber": 50
+        },
+        {
+          "caller": "report",
+          "callee": "session.getTopic",
+          "lineNumber": 50
+        },
+        {
+          "caller": "buildReply",
+          "callee": "userMessage.endsWith",
+          "lineNumber": 57
+        },
+        {
+          "caller": "buildReply",
+          "callee": "session.getTopic",
+          "lineNumber": 58
+        },
+        {
+          "caller": "buildReply",
+          "callee": "session.getTopic",
+          "lineNumber": 60
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "userMessage.trim",
+          "lineNumber": 64
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "trimmed.isEmpty",
+          "lineNumber": 65
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "Character.toUpperCase",
+          "lineNumber": 67
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "trimmed.charAt",
+          "lineNumber": 67
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "trimmed.substring",
+          "lineNumber": 67
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "corrected.endsWith",
+          "lineNumber": 68
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "corrected.endsWith",
+          "lineNumber": 68
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "corrected.endsWith",
+          "lineNumber": 68
+        },
+        {
+          "caller": "buildCorrection",
+          "callee": "new RoleplayCorrection",
+          "lineNumber": 72
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 4,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 189,
+      "nonEmptyLines": 164,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 48,
+          "endLine": 74,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSession",
+          "startLine": 76,
+          "endLine": 80,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessions",
+          "startLine": 82,
+          "endLine": 94,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "sendMessage",
+          "startLine": 96,
+          "endLine": 121,
+          "params": [
+            "sessionId",
+            "request"
+          ]
+        },
+        {
+          "name": "endSession",
+          "startLine": 123,
+          "endLine": 149,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "toSessionResponse",
+          "startLine": 151,
+          "endLine": 157,
+          "params": [
+            "session"
+          ]
+        },
+        {
+          "name": "toSessionResponse",
+          "startLine": 159,
+          "endLine": 168,
+          "params": [
+            "session",
+            "messages",
+            "report"
+          ]
+        },
+        {
+          "name": "getOwnedSession",
+          "startLine": 170,
+          "endLine": 174,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 176,
+          "endLine": 180,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 182,
+          "endLine": 188,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "RoleplayService",
+          "startLine": 37,
+          "endLine": 189,
+          "methods": [
+            "createSession",
+            "getSession",
+            "getSessions",
+            "sendMessage",
+            "endSession",
+            "toSessionResponse",
+            "toSessionResponse",
+            "getOwnedSession",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "roleplaySessionRepository",
+            "roleplayMessageRepository",
+            "roleplayReportRepository",
+            "userRepository",
+            "roleplayAiService",
+            "roleplayMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getSession",
+          "line": 76,
+          "isDefault": false
+        },
+        {
+          "name": "getSessions",
+          "line": 82,
+          "isDefault": false
+        },
+        {
+          "name": "sendMessage",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "endSession",
+          "line": 123,
+          "isDefault": false
+        },
+        {
+          "name": "RoleplayService",
+          "line": 37,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 50
+        },
+        {
+          "caller": "createSession",
+          "callee": "roleplayAiService.startSession",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.topic().trim",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.topic",
+          "lineNumber": 52
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.difficulty().name",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.difficulty",
+          "lineNumber": 53
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.persona().trim",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.persona",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createSession",
+          "callee": "roleplaySessionRepository.save",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user)\n                .topic(request.topic().trim())\n                .difficulty(request.difficulty())\n                .persona(request.persona().trim())\n                .scenario(aiScenario.scenario())\n                .status(RoleplaySessionStatus.IN_PROGRESS)\n                .startedAt(LocalDateTime.now()).build",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user)\n                .topic(request.topic().trim())\n                .difficulty(request.difficulty())\n                .persona(request.persona().trim())\n                .scenario(aiScenario.scenario())\n                .status(RoleplaySessionStatus.IN_PROGRESS).startedAt",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user)\n                .topic(request.topic().trim())\n                .difficulty(request.difficulty())\n                .persona(request.persona().trim())\n                .scenario(aiScenario.scenario()).status",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user)\n                .topic(request.topic().trim())\n                .difficulty(request.difficulty())\n                .persona(request.persona().trim()).scenario",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user)\n                .topic(request.topic().trim())\n                .difficulty(request.difficulty()).persona",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user)\n                .topic(request.topic().trim()).difficulty",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder()\n                .user(user).topic",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder().user",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplaySessionEntity.builder",
+          "lineNumber": 57
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.topic().trim",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.topic",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.difficulty",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.persona().trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.persona",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createSession",
+          "callee": "aiScenario.scenario",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createSession",
+          "callee": "roleplayMessageRepository.save",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.AI)\n                .content(aiScenario.firstMessage()).build",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.AI).content",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session).sender",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplayMessageEntity.builder().session",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "RoleplayMessageEntity.builder",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "aiScenario.firstMessage",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createSession",
+          "callee": "toSessionResponse",
+          "lineNumber": 73
+        },
+        {
+          "caller": "createSession",
+          "callee": "List.of",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getSession",
+          "callee": "getOwnedSession",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getSession",
+          "callee": "toSessionResponse",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getSessions",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getSessions",
+          "callee": "getCurrentUser",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getSessions",
+          "callee": "roleplaySessionRepository.findAllByUserIdOrderByCreatedAtDesc",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getSessions",
+          "callee": "new RoleplaySessionPageResponse",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getSessions",
+          "callee": "page.map(session -> toSessionResponse(session, List.of(), null)).getContent",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getSessions",
+          "callee": "page.map",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getSessions",
+          "callee": "toSessionResponse",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getSessions",
+          "callee": "List.of",
+          "lineNumber": 88
+        },
+        {
+          "caller": "getSessions",
+          "callee": "page.getNumber",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getSessions",
+          "callee": "page.getSize",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getSessions",
+          "callee": "page.getTotalElements",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getSessions",
+          "callee": "page.getTotalPages",
+          "lineNumber": 92
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "getOwnedSession",
+          "lineNumber": 98
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "session.getStatus",
+          "lineNumber": 99
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "new BusinessException",
+          "lineNumber": 100
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "request.message().trim",
+          "lineNumber": 103
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "request.message",
+          "lineNumber": 103
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "roleplayMessageRepository.save",
+          "lineNumber": 104
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.USER)\n                .content(userMessageText).build",
+          "lineNumber": 104
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.USER).content",
+          "lineNumber": 104
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session).sender",
+          "lineNumber": 104
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder().session",
+          "lineNumber": 104
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder",
+          "lineNumber": 104
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "roleplayMessageRepository.findAllBySessionIdOrderByCreatedAtAsc",
+          "lineNumber": 110
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "roleplayAiService.reply",
+          "lineNumber": 111
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "roleplayMessageRepository.save",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.AI)\n                .content(aiReply.reply())\n                .correction(aiReply.correction()).build",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.AI)\n                .content(aiReply.reply()).correction",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session)\n                .sender(RoleplayMessageSender.AI).content",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder()\n                .session(session).sender",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder().session",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "RoleplayMessageEntity.builder",
+          "lineNumber": 113
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "aiReply.reply",
+          "lineNumber": 116
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "aiReply.correction",
+          "lineNumber": 117
+        },
+        {
+          "caller": "sendMessage",
+          "callee": "roleplayMapper.toMessageResponse",
+          "lineNumber": 120
+        },
+        {
+          "caller": "endSession",
+          "callee": "getOwnedSession",
+          "lineNumber": 125
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayReportRepository.findBySessionId",
+          "lineNumber": 126
+        },
+        {
+          "caller": "endSession",
+          "callee": "session.getId",
+          "lineNumber": 126
+        },
+        {
+          "caller": "endSession",
+          "callee": "existingReport.isPresent",
+          "lineNumber": 127
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayMapper.toReportResponse",
+          "lineNumber": 128
+        },
+        {
+          "caller": "endSession",
+          "callee": "existingReport.get",
+          "lineNumber": 128
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayMessageRepository.findAllBySessionIdOrderByCreatedAtAsc",
+          "lineNumber": 131
+        },
+        {
+          "caller": "endSession",
+          "callee": "session.getId",
+          "lineNumber": 131
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayAiService.report",
+          "lineNumber": 132
+        },
+        {
+          "caller": "endSession",
+          "callee": "session.setStatus",
+          "lineNumber": 134
+        },
+        {
+          "caller": "endSession",
+          "callee": "session.setEndedAt",
+          "lineNumber": 135
+        },
+        {
+          "caller": "endSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 135
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplaySessionRepository.save",
+          "lineNumber": 136
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayReportRepository.save",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session)\n                .summary(aiReport.summary())\n                .strengths(aiReport.strengths())\n                .weaknesses(aiReport.weaknesses())\n                .suggestedVocabulary(aiReport.suggestedVocabulary())\n                .grammarFeedback(aiReport.grammarFeedback())\n                .overallScore(aiReport.overallScore()).build",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session)\n                .summary(aiReport.summary())\n                .strengths(aiReport.strengths())\n                .weaknesses(aiReport.weaknesses())\n                .suggestedVocabulary(aiReport.suggestedVocabulary())\n                .grammarFeedback(aiReport.grammarFeedback()).overallScore",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session)\n                .summary(aiReport.summary())\n                .strengths(aiReport.strengths())\n                .weaknesses(aiReport.weaknesses())\n                .suggestedVocabulary(aiReport.suggestedVocabulary()).grammarFeedback",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session)\n                .summary(aiReport.summary())\n                .strengths(aiReport.strengths())\n                .weaknesses(aiReport.weaknesses()).suggestedVocabulary",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session)\n                .summary(aiReport.summary())\n                .strengths(aiReport.strengths()).weaknesses",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session)\n                .summary(aiReport.summary()).strengths",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder()\n                .session(session).summary",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder().session",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "RoleplayReportEntity.builder",
+          "lineNumber": 138
+        },
+        {
+          "caller": "endSession",
+          "callee": "aiReport.summary",
+          "lineNumber": 140
+        },
+        {
+          "caller": "endSession",
+          "callee": "aiReport.strengths",
+          "lineNumber": 141
+        },
+        {
+          "caller": "endSession",
+          "callee": "aiReport.weaknesses",
+          "lineNumber": 142
+        },
+        {
+          "caller": "endSession",
+          "callee": "aiReport.suggestedVocabulary",
+          "lineNumber": 143
+        },
+        {
+          "caller": "endSession",
+          "callee": "aiReport.grammarFeedback",
+          "lineNumber": 144
+        },
+        {
+          "caller": "endSession",
+          "callee": "aiReport.overallScore",
+          "lineNumber": 145
+        },
+        {
+          "caller": "endSession",
+          "callee": "roleplayMapper.toReportResponse",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "roleplayMessageRepository.findAllBySessionIdOrderByCreatedAtAsc",
+          "lineNumber": 152
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "session.getId",
+          "lineNumber": 152
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "roleplayReportRepository.findBySessionId(session.getId())\n                .map(roleplayMapper::toReportResponse).orElse",
+          "lineNumber": 153
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "roleplayReportRepository.findBySessionId(session.getId()).map",
+          "lineNumber": 153
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "roleplayReportRepository.findBySessionId",
+          "lineNumber": 153
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "session.getId",
+          "lineNumber": 153
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "toSessionResponse",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "messages.stream()\n                .map(roleplayMapper::toMessageResponse).toList",
+          "lineNumber": 164
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "messages.stream().map",
+          "lineNumber": 164
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "messages.stream",
+          "lineNumber": 164
+        },
+        {
+          "caller": "toSessionResponse",
+          "callee": "roleplayMapper.toSessionResponse",
+          "lineNumber": 167
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 171
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 171
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "roleplaySessionRepository.findByIdAndUserId(sessionId, userId).orElseThrow",
+          "lineNumber": 172
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "roleplaySessionRepository.findByIdAndUserId",
+          "lineNumber": 172
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "new BusinessException",
+          "lineNumber": 173
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 177
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 179
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 183
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 183
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 184
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 185
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 187
+        }
+      ],
+      "metrics": {
+        "importCount": 22,
+        "exportCount": 6,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    }
+  ]
+}

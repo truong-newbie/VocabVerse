@@ -1,0 +1,822 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/repository/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/repository/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/specification/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/specification/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/config/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/config/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "type": "file",
+      "name": "OpenApiConfig.java",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "summary": "OpenApiConfig.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function.",
+      "tags": [
+        "java",
+        "code",
+        "config",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:OpenApiConfig",
+      "type": "class",
+      "name": "OpenApiConfig",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        14,
+        107
+      ],
+      "summary": "OpenApiConfig định nghĩa cấu trúc hoặc hành vi chính trong OpenApiConfig.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:vocabVerseOpenApi",
+      "type": "function",
+      "name": "vocabVerseOpenApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        19,
+        36
+      ],
+      "summary": "vocabVerseOpenApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:authApi",
+      "type": "function",
+      "name": "authApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "authApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:userApi",
+      "type": "function",
+      "name": "userApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        46,
+        52
+      ],
+      "summary": "userApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:collectionApi",
+      "type": "function",
+      "name": "collectionApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        54,
+        60
+      ],
+      "summary": "collectionApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:vocabularyApi",
+      "type": "function",
+      "name": "vocabularyApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        62,
+        68
+      ],
+      "summary": "vocabularyApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:learningApi",
+      "type": "function",
+      "name": "learningApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        70,
+        82
+      ],
+      "summary": "learningApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:notificationApi",
+      "type": "function",
+      "name": "notificationApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        84,
+        90
+      ],
+      "summary": "notificationApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:aiApi",
+      "type": "function",
+      "name": "aiApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        92,
+        98
+      ],
+      "summary": "aiApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:exportApi",
+      "type": "function",
+      "name": "exportApi",
+      "filePath": "src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "lineRange": [
+        100,
+        106
+      ],
+      "summary": "exportApi triển khai một thao tác đáng chú ý trong OpenApiConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "type": "file",
+      "name": "SecurityConfig.java",
+      "filePath": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "summary": "SecurityConfig.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "config",
+        "security",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/config/SecurityConfig.java:SecurityConfig",
+      "type": "class",
+      "name": "SecurityConfig",
+      "filePath": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "lineRange": [
+        21,
+        73
+      ],
+      "summary": "SecurityConfig định nghĩa cấu trúc hoặc hành vi chính trong SecurityConfig.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:securityFilterChain",
+      "type": "function",
+      "name": "securityFilterChain",
+      "filePath": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "lineRange": [
+        31,
+        53
+      ],
+      "summary": "securityFilterChain triển khai một thao tác đáng chú ý trong SecurityConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:passwordEncoder",
+      "type": "function",
+      "name": "passwordEncoder",
+      "filePath": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "lineRange": [
+        55,
+        58
+      ],
+      "summary": "passwordEncoder triển khai một thao tác đáng chú ý trong SecurityConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:corsConfigurationSource",
+      "type": "function",
+      "name": "corsConfigurationSource",
+      "filePath": "src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "lineRange": [
+        60,
+        72
+      ],
+      "summary": "corsConfigurationSource triển khai một thao tác đáng chú ý trong SecurityConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/constant/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/constant/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/exception/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/exception/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/mapper/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/mapper/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "mapper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/response/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/response/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/security/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/security/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "security"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "type": "file",
+      "name": "JwtAuthenticationFilter.java",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "summary": "JwtAuthenticationFilter.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function.",
+      "tags": [
+        "java",
+        "code",
+        "security",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java:JwtAuthenticationFilter",
+      "type": "class",
+      "name": "JwtAuthenticationFilter",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "lineRange": [
+        16,
+        59
+      ],
+      "summary": "JwtAuthenticationFilter định nghĩa cấu trúc hoặc hành vi chính trong JwtAuthenticationFilter.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java:doFilterInternal",
+      "type": "function",
+      "name": "doFilterInternal",
+      "filePath": "src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "lineRange": [
+        26,
+        50
+      ],
+      "summary": "doFilterInternal triển khai một thao tác đáng chú ý trong JwtAuthenticationFilter.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/util/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/util/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/validator/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/common/validator/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/dictionary/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/client/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/dictionary/client/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/dto/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/dictionary/dto/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dictionary/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/dictionary/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/export/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/controller/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/export/controller/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/dto/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/export/dto/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/entity/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/export/entity/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/exception/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/export/exception/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/export/mapper/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/export/mapper/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "mapper"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "class:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:OpenApiConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "class:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:OpenApiConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:vocabVerseOpenApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:vocabVerseOpenApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:authApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:authApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:userApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:userApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:collectionApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:collectionApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:vocabularyApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:vocabularyApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:learningApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:learningApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:notificationApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:notificationApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:aiApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:aiApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:exportApi",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/OpenApiConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/OpenApiConfig.java:exportApi",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "class:src/main/java/com/vocabverse/common/config/SecurityConfig.java:SecurityConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "class:src/main/java/com/vocabverse/common/config/SecurityConfig.java:SecurityConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:securityFilterChain",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:securityFilterChain",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:passwordEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:passwordEncoder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:corsConfigurationSource",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "function:src/main/java/com/vocabverse/common/config/SecurityConfig.java:corsConfigurationSource",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/config/SecurityConfig.java",
+      "target": "file:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "target": "class:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java:JwtAuthenticationFilter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "target": "class:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java:JwtAuthenticationFilter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java",
+      "target": "function:src/main/java/com/vocabverse/common/security/JwtAuthenticationFilter.java:doFilterInternal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

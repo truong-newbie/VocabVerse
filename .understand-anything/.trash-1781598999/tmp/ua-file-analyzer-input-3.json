@@ -1,0 +1,283 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "language": "java",
+      "sizeLines": 218,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "language": "java",
+      "sizeLines": 69,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "language": "java",
+      "sizeLines": 73,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "language": "java",
+      "sizeLines": 51,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "language": "java",
+      "sizeLines": 46,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "language": "java",
+      "sizeLines": 125,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "language": "java",
+      "sizeLines": 131,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java": [
+      "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java": [],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java": [],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java": [],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java": [],
+    "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java": [
+      "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java"
+    ],
+    "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java": [
+      "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/collection/controller/CollectionController.java": [
+      "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java": [],
+    "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java": [
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java": [],
+    "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java": [
+      "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java"
+    ],
+    "src/main/java/com/vocabverse/collection/service/CollectionService.java": [
+      "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/export/controller/ExportController.java": [
+      "src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "src/main/java/com/vocabverse/export/service/PdfExportService.java"
+    ],
+    "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java": [],
+    "src/main/java/com/vocabverse/export/dto/PdfExportResult.java": [],
+    "src/main/java/com/vocabverse/export/service/PdfExportService.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ]
+  }
+}

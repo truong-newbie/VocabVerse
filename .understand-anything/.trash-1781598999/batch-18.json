@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/architecture/04_database_design.md",
+      "type": "document",
+      "name": "04_database_design.md",
+      "filePath": "docs/architecture/04_database_design.md",
+      "summary": "04_database_design.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/architecture/05-system-architecture.md",
+      "type": "document",
+      "name": "05-system-architecture.md",
+      "filePath": "docs/architecture/05-system-architecture.md",
+      "summary": "05-system-architecture.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/architecture/12-erd-diagram.md",
+      "type": "document",
+      "name": "12-erd-diagram.md",
+      "filePath": "docs/architecture/12-erd-diagram.md",
+      "summary": "12-erd-diagram.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

@@ -1,0 +1,331 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/exception/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/mapper/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/repository/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/service/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/specification/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/browser/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/EmailSender.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 4,
+      "classes": [
+        {
+          "name": "EmailSender",
+          "startLine": 3,
+          "endLine": 6,
+          "methods": [
+            "send"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "EmailSender",
+          "line": 3,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/SmtpEmailSender.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 30,
+      "nonEmptyLines": 24,
+      "functions": [
+        {
+          "name": "send",
+          "startLine": 18,
+          "endLine": 29,
+          "params": [
+            "to",
+            "subject",
+            "body"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SmtpEmailSender",
+          "startLine": 9,
+          "endLine": 30,
+          "methods": [
+            "send"
+          ],
+          "properties": [
+            "javaMailSender",
+            "from"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "send",
+          "line": 18,
+          "isDefault": false
+        },
+        {
+          "name": "SmtpEmailSender",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "send",
+          "callee": "new SimpleMailMessage",
+          "lineNumber": 20
+        },
+        {
+          "caller": "send",
+          "callee": "from.isBlank",
+          "lineNumber": 21
+        },
+        {
+          "caller": "send",
+          "callee": "message.setFrom",
+          "lineNumber": 22
+        },
+        {
+          "caller": "send",
+          "callee": "message.setTo",
+          "lineNumber": 24
+        },
+        {
+          "caller": "send",
+          "callee": "message.setSubject",
+          "lineNumber": 25
+        },
+        {
+          "caller": "send",
+          "callee": "message.setText",
+          "lineNumber": 26
+        },
+        {
+          "caller": "send",
+          "callee": "javaMailSender.send",
+          "lineNumber": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/scheduler/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/service/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/controller/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/entity/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/exception/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/mapper/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/mapper/ReviewMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "ReviewMapper",
+          "startLine": 5,
+          "endLine": 7,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReviewMapper",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/repository/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/service/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/specification/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/controller/.gitkeep",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 1,
+      "nonEmptyLines": 0,
+      "metrics": {}
+    }
+  ]
+}

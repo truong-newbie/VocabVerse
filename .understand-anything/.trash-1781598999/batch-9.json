@@ -1,0 +1,1867 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "type": "file",
+      "name": "AdminShadowingController.java",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "summary": "AdminShadowingController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:AdminShadowingController",
+      "type": "class",
+      "name": "AdminShadowingController",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        30,
+        102
+      ],
+      "summary": "AdminShadowingController định nghĩa cấu trúc hoặc hành vi chính trong AdminShadowingController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:uploadLesson",
+      "type": "function",
+      "name": "uploadLesson",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        38,
+        45
+      ],
+      "summary": "uploadLesson triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:getLessonStatus",
+      "type": "function",
+      "name": "getLessonStatus",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        47,
+        50
+      ],
+      "summary": "getLessonStatus triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:listLessons",
+      "type": "function",
+      "name": "listLessons",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        52,
+        57
+      ],
+      "summary": "listLessons triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:listSubtitles",
+      "type": "function",
+      "name": "listSubtitles",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        59,
+        62
+      ],
+      "summary": "listSubtitles triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:createSubtitle",
+      "type": "function",
+      "name": "createSubtitle",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        64,
+        70
+      ],
+      "summary": "createSubtitle triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:importSubtitles",
+      "type": "function",
+      "name": "importSubtitles",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        72,
+        78
+      ],
+      "summary": "importSubtitles triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:generateAiSubtitles",
+      "type": "function",
+      "name": "generateAiSubtitles",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        80,
+        83
+      ],
+      "summary": "generateAiSubtitles triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:updateSubtitle",
+      "type": "function",
+      "name": "updateSubtitle",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        85,
+        92
+      ],
+      "summary": "updateSubtitle triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:deleteSubtitle",
+      "type": "function",
+      "name": "deleteSubtitle",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "lineRange": [
+        94,
+        101
+      ],
+      "summary": "deleteSubtitle triển khai một thao tác đáng chú ý trong AdminShadowingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "type": "file",
+      "name": "AdminImportShadowingSubtitlesRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "summary": "AdminImportShadowingSubtitlesRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "type": "file",
+      "name": "AdminUpsertShadowingSubtitleRequest.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "summary": "AdminUpsertShadowingSubtitleRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "type": "file",
+      "name": "AdminShadowingLessonResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "summary": "AdminShadowingLessonResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "type": "file",
+      "name": "AdminShadowingLessonStatusResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "summary": "AdminShadowingLessonStatusResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "type": "file",
+      "name": "AdminShadowingService.java",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "summary": "AdminShadowingService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 17 function, 18 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:AdminShadowingService",
+      "type": "class",
+      "name": "AdminShadowingService",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        36,
+        308
+      ],
+      "summary": "AdminShadowingService định nghĩa cấu trúc hoặc hành vi chính trong AdminShadowingService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:uploadLesson",
+      "type": "function",
+      "name": "uploadLesson",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        48,
+        76
+      ],
+      "summary": "uploadLesson triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:getLessonStatus",
+      "type": "function",
+      "name": "getLessonStatus",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        78,
+        87
+      ],
+      "summary": "getLessonStatus triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:listLessons",
+      "type": "function",
+      "name": "listLessons",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        89,
+        101
+      ],
+      "summary": "listLessons triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:listSubtitles",
+      "type": "function",
+      "name": "listSubtitles",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        103,
+        110
+      ],
+      "summary": "listSubtitles triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:createSubtitle",
+      "type": "function",
+      "name": "createSubtitle",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        112,
+        129
+      ],
+      "summary": "createSubtitle triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:importSubtitles",
+      "type": "function",
+      "name": "importSubtitles",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        131,
+        157
+      ],
+      "summary": "importSubtitles triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:updateSubtitle",
+      "type": "function",
+      "name": "updateSubtitle",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        159,
+        178
+      ],
+      "summary": "updateSubtitle triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:deleteSubtitle",
+      "type": "function",
+      "name": "deleteSubtitle",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        180,
+        186
+      ],
+      "summary": "deleteSubtitle triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:generateAiSubtitles",
+      "type": "function",
+      "name": "generateAiSubtitles",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        188,
+        225
+      ],
+      "summary": "generateAiSubtitles triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:toResponse",
+      "type": "function",
+      "name": "toResponse",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        252,
+        274
+      ],
+      "summary": "toResponse triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:toSubtitleResponse",
+      "type": "function",
+      "name": "toSubtitleResponse",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        276,
+        285
+      ],
+      "summary": "toSubtitleResponse triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:resolveStatusMessage",
+      "type": "function",
+      "name": "resolveStatusMessage",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "lineRange": [
+        297,
+        307
+      ],
+      "summary": "resolveStatusMessage triển khai một thao tác đáng chú ý trong AdminShadowingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "type": "file",
+      "name": "ShadowingLessonController.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "summary": "ShadowingLessonController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:ShadowingLessonController",
+      "type": "class",
+      "name": "ShadowingLessonController",
+      "filePath": "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "lineRange": [
+        16,
+        34
+      ],
+      "summary": "ShadowingLessonController định nghĩa cấu trúc hoặc hành vi chính trong ShadowingLessonController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:listLessons",
+      "type": "function",
+      "name": "listLessons",
+      "filePath": "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "lineRange": [
+        23,
+        28
+      ],
+      "summary": "listLessons triển khai một thao tác đáng chú ý trong ShadowingLessonController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:getLesson",
+      "type": "function",
+      "name": "getLesson",
+      "filePath": "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "lineRange": [
+        30,
+        33
+      ],
+      "summary": "getLesson triển khai một thao tác đáng chú ý trong ShadowingLessonController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "type": "file",
+      "name": "ShadowingLessonDetailResponse.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "summary": "ShadowingLessonDetailResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "type": "file",
+      "name": "ShadowingLessonPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "summary": "ShadowingLessonPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "type": "file",
+      "name": "ShadowingLessonSummaryResponse.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "summary": "ShadowingLessonSummaryResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "type": "file",
+      "name": "ShadowingSubtitleResponse.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "summary": "ShadowingSubtitleResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "type": "file",
+      "name": "ShadowingLessonEntity.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "summary": "ShadowingLessonEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java:ShadowingLessonEntity",
+      "type": "class",
+      "name": "ShadowingLessonEntity",
+      "filePath": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "lineRange": [
+        25,
+        97
+      ],
+      "summary": "ShadowingLessonEntity định nghĩa cấu trúc hoặc hành vi chính trong ShadowingLessonEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "type": "file",
+      "name": "ShadowingLessonSource.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "summary": "ShadowingLessonSource.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "file",
+      "name": "ShadowingLessonStatus.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "summary": "ShadowingLessonStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "type": "file",
+      "name": "ShadowingLessonSubtitleEntity.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "summary": "ShadowingLessonSubtitleEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java:ShadowingLessonSubtitleEntity",
+      "type": "class",
+      "name": "ShadowingLessonSubtitleEntity",
+      "filePath": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "lineRange": [
+        22,
+        62
+      ],
+      "summary": "ShadowingLessonSubtitleEntity định nghĩa cấu trúc hoặc hành vi chính trong ShadowingLessonSubtitleEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "type": "file",
+      "name": "ShadowingLessonRepository.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "summary": "ShadowingLessonRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java:ShadowingLessonRepository",
+      "type": "class",
+      "name": "ShadowingLessonRepository",
+      "filePath": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "lineRange": [
+        11,
+        22
+      ],
+      "summary": "ShadowingLessonRepository định nghĩa cấu trúc hoặc hành vi chính trong ShadowingLessonRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "type": "file",
+      "name": "ShadowingLessonSubtitleRepository.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "summary": "ShadowingLessonSubtitleRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java:ShadowingLessonSubtitleRepository",
+      "type": "class",
+      "name": "ShadowingLessonSubtitleRepository",
+      "filePath": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "lineRange": [
+        9,
+        18
+      ],
+      "summary": "ShadowingLessonSubtitleRepository định nghĩa cấu trúc hoặc hành vi chính trong ShadowingLessonSubtitleRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "type": "file",
+      "name": "ShadowingAiSubtitleService.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "summary": "ShadowingAiSubtitleService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:ShadowingAiSubtitleService",
+      "type": "class",
+      "name": "ShadowingAiSubtitleService",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "lineRange": [
+        26,
+        254
+      ],
+      "summary": "ShadowingAiSubtitleService định nghĩa cấu trúc hoặc hành vi chính trong ShadowingAiSubtitleService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:ShadowingAiSubtitleService",
+      "type": "function",
+      "name": "ShadowingAiSubtitleService",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "lineRange": [
+        47,
+        52
+      ],
+      "summary": "ShadowingAiSubtitleService triển khai một thao tác đáng chú ý trong ShadowingAiSubtitleService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:generateSubtitles",
+      "type": "function",
+      "name": "generateSubtitles",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "lineRange": [
+        54,
+        70
+      ],
+      "summary": "generateSubtitles triển khai một thao tác đáng chú ý trong ShadowingAiSubtitleService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:assertAvailable",
+      "type": "function",
+      "name": "assertAvailable",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "lineRange": [
+        72,
+        82
+      ],
+      "summary": "assertAvailable triển khai một thao tác đáng chú ý trong ShadowingAiSubtitleService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:transcribe",
+      "type": "function",
+      "name": "transcribe",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "lineRange": [
+        84,
+        139
+      ],
+      "summary": "transcribe triển khai một thao tác đáng chú ý trong ShadowingAiSubtitleService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:translate",
+      "type": "function",
+      "name": "translate",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "lineRange": [
+        141,
+        207
+      ],
+      "summary": "translate triển khai một thao tác đáng chú ý trong ShadowingAiSubtitleService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "type": "file",
+      "name": "ShadowingLessonService.java",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "summary": "ShadowingLessonService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 12 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:ShadowingLessonService",
+      "type": "class",
+      "name": "ShadowingLessonService",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "lineRange": [
+        23,
+        102
+      ],
+      "summary": "ShadowingLessonService định nghĩa cấu trúc hoặc hành vi chính trong ShadowingLessonService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:listLessons",
+      "type": "function",
+      "name": "listLessons",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "lineRange": [
+        30,
+        46
+      ],
+      "summary": "listLessons triển khai một thao tác đáng chú ý trong ShadowingLessonService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:getLesson",
+      "type": "function",
+      "name": "getLesson",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "lineRange": [
+        48,
+        75
+      ],
+      "summary": "getLesson triển khai một thao tác đáng chú ý trong ShadowingLessonService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:toSummaryResponse",
+      "type": "function",
+      "name": "toSummaryResponse",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "lineRange": [
+        77,
+        90
+      ],
+      "summary": "toSummaryResponse triển khai một thao tác đáng chú ý trong ShadowingLessonService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:toSubtitleResponse",
+      "type": "function",
+      "name": "toSubtitleResponse",
+      "filePath": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "lineRange": [
+        92,
+        101
+      ],
+      "summary": "toSubtitleResponse triển khai một thao tác đáng chú ý trong ShadowingLessonService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:AdminShadowingController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:AdminShadowingController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:uploadLesson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:uploadLesson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:getLessonStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:getLessonStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:listLessons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:listLessons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:listSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:listSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:createSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:createSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:importSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:importSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:generateAiSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:generateAiSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:updateSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:updateSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:deleteSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java:deleteSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:AdminShadowingService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:AdminShadowingService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:uploadLesson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:uploadLesson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:getLessonStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:getLessonStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:listLessons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:listLessons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:listSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:listSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:createSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:createSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:importSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:importSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:updateSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:updateSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:deleteSubtitle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:deleteSubtitle",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:generateAiSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:generateAiSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:toResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:toSubtitleResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java:resolveStatusMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:ShadowingLessonController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:ShadowingLessonController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:listLessons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:listLessons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:getLesson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java:getLesson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java:ShadowingLessonEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java:ShadowingLessonEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java:ShadowingLessonSubtitleEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java:ShadowingLessonSubtitleEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java:ShadowingLessonRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java:ShadowingLessonRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java:ShadowingLessonSubtitleRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java:ShadowingLessonSubtitleRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:ShadowingAiSubtitleService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:ShadowingAiSubtitleService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:ShadowingAiSubtitleService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:ShadowingAiSubtitleService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:generateSubtitles",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:generateSubtitles",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:assertAvailable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:transcribe",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java:translate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:ShadowingLessonService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "class:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:ShadowingLessonService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:listLessons",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:listLessons",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:getLesson",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:getLesson",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:toSummaryResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "function:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java:toSubtitleResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

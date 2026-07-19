@@ -1,0 +1,164 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "language": "java",
+      "sizeLines": 78,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "language": "java",
+      "sizeLines": 264,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/service/TypingService.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java": [
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java": [],
+    "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java": [
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java": [],
+    "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java": [
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java": [
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java": [],
+    "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java": [],
+    "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java": [
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java": [
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java": [
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/learning/typing/service/TypingService.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ]
+  }
+}

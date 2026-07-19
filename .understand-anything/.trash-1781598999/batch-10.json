@@ -1,0 +1,1398 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "type": "file",
+      "name": "CollectionVocabularyController.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "summary": "CollectionVocabularyController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 7 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:CollectionVocabularyController",
+      "type": "class",
+      "name": "CollectionVocabularyController",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "lineRange": [
+        22,
+        62
+      ],
+      "summary": "CollectionVocabularyController định nghĩa cấu trúc hoặc hành vi chính trong CollectionVocabularyController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:bulkCreateVocabularies",
+      "type": "function",
+      "name": "bulkCreateVocabularies",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "lineRange": [
+        30,
+        36
+      ],
+      "summary": "bulkCreateVocabularies triển khai một thao tác đáng chú ý trong CollectionVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:addVocabularyToCollection",
+      "type": "function",
+      "name": "addVocabularyToCollection",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "lineRange": [
+        38,
+        44
+      ],
+      "summary": "addVocabularyToCollection triển khai một thao tác đáng chú ý trong CollectionVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:removeVocabularyFromCollection",
+      "type": "function",
+      "name": "removeVocabularyFromCollection",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "lineRange": [
+        46,
+        53
+      ],
+      "summary": "removeVocabularyFromCollection triển khai một thao tác đáng chú ý trong CollectionVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:getCollectionVocabularies",
+      "type": "function",
+      "name": "getCollectionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "lineRange": [
+        55,
+        61
+      ],
+      "summary": "getCollectionVocabularies triển khai một thao tác đáng chú ý trong CollectionVocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "type": "file",
+      "name": "VocabularyController.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "summary": "VocabularyController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 5 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:VocabularyController",
+      "type": "class",
+      "name": "VocabularyController",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "lineRange": [
+        23,
+        62
+      ],
+      "summary": "VocabularyController định nghĩa cấu trúc hoặc hành vi chính trong VocabularyController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:createVocabulary",
+      "type": "function",
+      "name": "createVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "lineRange": [
+        30,
+        35
+      ],
+      "summary": "createVocabulary triển khai một thao tác đáng chú ý trong VocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:getMyVocabularies",
+      "type": "function",
+      "name": "getMyVocabularies",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "lineRange": [
+        37,
+        42
+      ],
+      "summary": "getMyVocabularies triển khai một thao tác đáng chú ý trong VocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:getVocabularyDetail",
+      "type": "function",
+      "name": "getVocabularyDetail",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "lineRange": [
+        44,
+        47
+      ],
+      "summary": "getVocabularyDetail triển khai một thao tác đáng chú ý trong VocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:updateVocabulary",
+      "type": "function",
+      "name": "updateVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "lineRange": [
+        49,
+        55
+      ],
+      "summary": "updateVocabulary triển khai một thao tác đáng chú ý trong VocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:deleteVocabulary",
+      "type": "function",
+      "name": "deleteVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "lineRange": [
+        57,
+        61
+      ],
+      "summary": "deleteVocabulary triển khai một thao tác đáng chú ý trong VocabularyController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+      "type": "file",
+      "name": "BulkCreateVocabularyItemRequest.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+      "summary": "BulkCreateVocabularyItemRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "type": "file",
+      "name": "BulkCreateVocabularyRequest.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "summary": "BulkCreateVocabularyRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "type": "file",
+      "name": "CreateVocabularyRequest.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "summary": "CreateVocabularyRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "type": "file",
+      "name": "UpdateVocabularyRequest.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "summary": "UpdateVocabularyRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+      "type": "file",
+      "name": "BulkCreateVocabularyFailedItemResponse.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+      "summary": "BulkCreateVocabularyFailedItemResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "type": "file",
+      "name": "BulkCreateVocabularyResponse.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "summary": "BulkCreateVocabularyResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "type": "file",
+      "name": "VocabularyPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "summary": "VocabularyPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "type": "file",
+      "name": "VocabularyResponse.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "summary": "VocabularyResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "file",
+      "name": "VocabularyExample.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "summary": "VocabularyExample.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java:VocabularyExample",
+      "type": "class",
+      "name": "VocabularyExample",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "lineRange": [
+        8,
+        16
+      ],
+      "summary": "VocabularyExample định nghĩa cấu trúc hoặc hành vi chính trong VocabularyExample.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "type": "file",
+      "name": "VocabularySource.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "summary": "VocabularySource.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "type": "file",
+      "name": "VocabularyMapper.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "summary": "VocabularyMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java:VocabularyMapper",
+      "type": "class",
+      "name": "VocabularyMapper",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "lineRange": [
+        11,
+        34
+      ],
+      "summary": "VocabularyMapper định nghĩa cấu trúc hoặc hành vi chính trong VocabularyMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "type": "file",
+      "name": "BulkVocabularyService.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "summary": "BulkVocabularyService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 16 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:BulkVocabularyService",
+      "type": "class",
+      "name": "BulkVocabularyService",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "lineRange": [
+        31,
+        192
+      ],
+      "summary": "BulkVocabularyService định nghĩa cấu trúc hoặc hành vi chính trong BulkVocabularyService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:bulkCreate",
+      "type": "function",
+      "name": "bulkCreate",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "lineRange": [
+        48,
+        99
+      ],
+      "summary": "bulkCreate triển khai một thao tác đáng chú ý trong BulkVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:toVocabulary",
+      "type": "function",
+      "name": "toVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "lineRange": [
+        101,
+        124
+      ],
+      "summary": "toVocabulary triển khai một thao tác đáng chú ý trong BulkVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:validateItem",
+      "type": "function",
+      "name": "validateItem",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "lineRange": [
+        126,
+        158
+      ],
+      "summary": "validateItem triển khai một thao tác đáng chú ý trong BulkVocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "type": "file",
+      "name": "VocabularyService.java",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "summary": "VocabularyService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 18 function, 16 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:VocabularyService",
+      "type": "class",
+      "name": "VocabularyService",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        32,
+        223
+      ],
+      "summary": "VocabularyService định nghĩa cấu trúc hoặc hành vi chính trong VocabularyService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:createVocabulary",
+      "type": "function",
+      "name": "createVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        42,
+        54
+      ],
+      "summary": "createVocabulary triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getMyVocabularies",
+      "type": "function",
+      "name": "getMyVocabularies",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        56,
+        64
+      ],
+      "summary": "getMyVocabularies triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getVocabularyDetail",
+      "type": "function",
+      "name": "getVocabularyDetail",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        66,
+        69
+      ],
+      "summary": "getVocabularyDetail triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:updateVocabulary",
+      "type": "function",
+      "name": "updateVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        71,
+        79
+      ],
+      "summary": "updateVocabulary triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:deleteVocabulary",
+      "type": "function",
+      "name": "deleteVocabulary",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        81,
+        92
+      ],
+      "summary": "deleteVocabulary triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:addVocabularyToCollection",
+      "type": "function",
+      "name": "addVocabularyToCollection",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        94,
+        118
+      ],
+      "summary": "addVocabularyToCollection triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:removeVocabularyFromCollection",
+      "type": "function",
+      "name": "removeVocabularyFromCollection",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        120,
+        134
+      ],
+      "summary": "removeVocabularyFromCollection triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getCollectionVocabularies",
+      "type": "function",
+      "name": "getCollectionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        136,
+        147
+      ],
+      "summary": "getCollectionVocabularies triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:attachToCollections",
+      "type": "function",
+      "name": "attachToCollections",
+      "filePath": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "lineRange": [
+        149,
+        170
+      ],
+      "summary": "attachToCollections triển khai một thao tác đáng chú ý trong VocabularyService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:CollectionVocabularyController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:CollectionVocabularyController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:bulkCreateVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:bulkCreateVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:addVocabularyToCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:addVocabularyToCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:removeVocabularyFromCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:removeVocabularyFromCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:getCollectionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java:getCollectionVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:VocabularyController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:VocabularyController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:createVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:createVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:getMyVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:getMyVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:getVocabularyDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:getVocabularyDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:updateVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:updateVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:deleteVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java:deleteVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java:VocabularyExample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java:VocabularyExample",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java:VocabularyMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java:VocabularyMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:BulkVocabularyService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:BulkVocabularyService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:bulkCreate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:bulkCreate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:toVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java:validateItem",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:VocabularyService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "class:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:VocabularyService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:createVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:createVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getMyVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getMyVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getVocabularyDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getVocabularyDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:updateVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:updateVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:deleteVocabulary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:deleteVocabulary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:addVocabularyToCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:addVocabularyToCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:removeVocabularyFromCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:removeVocabularyFromCollection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getCollectionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:getCollectionVocabularies",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "function:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java:attachToCollections",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}
