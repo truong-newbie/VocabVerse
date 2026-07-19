@@ -2,6 +2,7 @@ package com.vocabverse.review.controller;
 
 import com.vocabverse.common.response.ApiResponse;
 import com.vocabverse.review.dto.request.SubmitReviewRequest;
+import com.vocabverse.review.dto.response.ReviewDueCountResponse;
 import com.vocabverse.review.dto.response.ReviewDuePageResponse;
 import com.vocabverse.review.dto.response.ReviewHistoryPageResponse;
 import com.vocabverse.review.dto.response.ReviewStatisticsResponse;
@@ -53,5 +54,10 @@ public class ReviewController {
     @GetMapping("/stats")
     public ApiResponse<ReviewStatisticsResponse> getReviewStats() {
         return ApiResponse.success(reviewStatisticsService.getCurrentUserStats());
+    }
+
+    @GetMapping("/due-count")
+    public ApiResponse<ReviewDueCountResponse> getDueCount() {
+        return ApiResponse.success(reviewService.getDueCount());
     }
 }
