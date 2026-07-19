@@ -94,7 +94,7 @@ public class AiVocabularyService {
 
         String apiKey = resolveApiKey(request.userApiKey());
         if (apiKey == null) {
-            throw new BusinessException(ErrorCode.AI_PROVIDER_NOT_AVAILABLE);
+            return fallbackNormalize(rawText);
         }
         if (aiNormalizeQuotaService.shouldApplySystemTrialQuota(request.userApiKey())) {
             aiNormalizeQuotaService.consumeTrialQuota();
