@@ -101,3 +101,10 @@ management:
   health:
     mail:
       enabled: ${MAIL_HEALTH_ENABLED:false}
+youtube:
+  download:
+    yt-dlp-path: python -m yt_dlp
+
+audio:
+  extractor:
+    ffmpeg-path: C:\\Users\\DELL\\AppData\\Local\\ffmpegio\\ffmpeg-downloader\\ffmpeg\\bin\\ffmpeg.exe

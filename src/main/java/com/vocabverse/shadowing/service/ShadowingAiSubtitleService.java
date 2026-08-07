@@ -12,6 +12,8 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpTimeoutException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -31,6 +33,7 @@ public class ShadowingAiSubtitleService {
 
     private final ObjectMapper objectMapper;
     private final HttpClient httpClient;
+    private final AudioExtractorService audioExtractorService;
 
     @Value("${ai.groq.api-key:}")
     private String groqApiKey;
@@ -44,8 +47,9 @@ public class ShadowingAiSubtitleService {
     @Value("${shadowing.ai.subtitle.translation-model:llama-3.1-8b-instant}")
     private String translationModel;
 
-    public ShadowingAiSubtitleService(ObjectMapper objectMapper) {
+    public ShadowingAiSubtitleService(ObjectMapper objectMapper, AudioExtractorService audioExtractorService) {
         this.objectMapper = objectMapper;
+        this.audioExtractorService = audioExtractorService;
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(10))
                 .build();
@@ -53,20 +57,25 @@ public class ShadowingAiSubtitleService {
 
     public List<GeneratedSubtitle> generateSubtitles(ShadowingLessonEntity lesson) {
         assertAvailable(lesson);
-        List<TranscriptSegment> segments = transcribe(lesson.getVideoUrl());
-        Map<Integer, String> translations = translate(segments);
-        List<GeneratedSubtitle> subtitles = new ArrayList<>();
-        for (int index = 0; index < segments.size(); index++) {
-            TranscriptSegment segment = segments.get(index);
-            subtitles.add(new GeneratedSubtitle(
-                    segment.startTimeMs(),
-                    segment.endTimeMs(),
-                    segment.englishText(),
-                    translations.get(index),
-                    index
-            ));
+        Path audioFile = audioExtractorService.downloadAndExtractAudio(lesson.getVideoUrl());
+        try {
+            List<TranscriptSegment> segments = transcribe(audioFile);
+            Map<Integer, String> translations = translate(segments);
+            List<GeneratedSubtitle> subtitles = new ArrayList<>();
+            for (int index = 0; index < segments.size(); index++) {
+                TranscriptSegment segment = segments.get(index);
+                subtitles.add(new GeneratedSubtitle(
+                        segment.startTimeMs(),
+                        segment.endTimeMs(),
+                        segment.englishText(),
+                        translations.get(index),
+                        index
+                ));
+            }
+            return subtitles;
+        } finally {
+            try { Files.deleteIfExists(audioFile); } catch (IOException ignored) {}
         }
-        return subtitles;
     }
 
     private void assertAvailable(ShadowingLessonEntity lesson) {
@@ -81,22 +90,14 @@ public class ShadowingAiSubtitleService {
         }
     }
 
-    private List<TranscriptSegment> transcribe(String videoUrl) {
+    private List<TranscriptSegment> transcribe(Path audioFile) {
         String boundary = "----vocabverse-" + UUID.randomUUID();
-        String body = multipartBody(boundary, Map.of(
-                "model", transcriptionModel,
-                "url", videoUrl,
-                "language", "en",
-                "response_format", "verbose_json",
-                "temperature", "0",
-                "timestamp_granularities[]", "segment"
-        ));
 
         HttpRequest request = HttpRequest.newBuilder(GROQ_TRANSCRIPTIONS_URI)
                 .timeout(Duration.ofSeconds(120))
                 .header("Authorization", "Bearer " + groqApiKey.trim())
                 .header("Content-Type", "multipart/form-data; boundary=" + boundary)
-                .POST(HttpRequest.BodyPublishers.ofString(body, StandardCharsets.UTF_8))
+                .POST(buildMultipartBodyPublisher(boundary, audioFile))
                 .build();
 
         try {
@@ -213,14 +214,53 @@ public class ShadowingAiSubtitleService {
         return new BusinessException(ErrorCode.AI_PROVIDER_NOT_AVAILABLE, message);
     }
 
-    private String multipartBody(String boundary, Map<String, String> fields) {
-        StringBuilder builder = new StringBuilder();
-        fields.forEach((name, value) -> builder
-                .append("--").append(boundary).append("\r\n")
-                .append("Content-Disposition: form-data; name=\"").append(name).append("\"\r\n\r\n")
-                .append(value).append("\r\n"));
-        builder.append("--").append(boundary).append("--\r\n");
-        return builder.toString();
+    private HttpRequest.BodyPublisher buildMultipartBodyPublisher(String boundary, Path audioFile) {
+        try {
+            byte[] audioData = Files.readAllBytes(audioFile);
+            byte[] fieldPart = ("--" + boundary + "\r\n"
+                    + "Content-Disposition: form-data; name=\"file\"; filename=\"audio.m4a\"\r\n"
+                    + "Content-Type: audio/mp4\r\n\r\n").getBytes(StandardCharsets.UTF_8);
+            byte[] modelPart = ("\r\n--" + boundary + "\r\n"
+                    + "Content-Disposition: form-data; name=\"model\"\r\n\r\n"
+                    + transcriptionModel + "\r\n").getBytes(StandardCharsets.UTF_8);
+            byte[] langPart = ("--" + boundary + "\r\n"
+                    + "Content-Disposition: form-data; name=\"language\"\r\n\r\n"
+                    + "en\r\n").getBytes(StandardCharsets.UTF_8);
+            byte[] formatPart = ("--" + boundary + "\r\n"
+                    + "Content-Disposition: form-data; name=\"response_format\"\r\n\r\n"
+                    + "verbose_json\r\n").getBytes(StandardCharsets.UTF_8);
+            byte[] tempPart = ("--" + boundary + "\r\n"
+                    + "Content-Disposition: form-data; name=\"temperature\"\r\n\r\n"
+                    + "0\r\n").getBytes(StandardCharsets.UTF_8);
+            byte[] granPart = ("--" + boundary + "\r\n"
+                    + "Content-Disposition: form-data; name=\"timestamp_granularities[]\"\r\n\r\n"
+                    + "segment\r\n").getBytes(StandardCharsets.UTF_8);
+            byte[] closing = ("--" + boundary + "--\r\n").getBytes(StandardCharsets.UTF_8);
+
+            int total = fieldPart.length + audioData.length + modelPart.length + langPart.length
+                    + formatPart.length + tempPart.length + granPart.length + closing.length;
+            byte[] body = new byte[total];
+            int offset = 0;
+            System.arraycopy(fieldPart, 0, body, offset, fieldPart.length);
+            offset += fieldPart.length;
+            System.arraycopy(audioData, 0, body, offset, audioData.length);
+            offset += audioData.length;
+            System.arraycopy(modelPart, 0, body, offset, modelPart.length);
+            offset += modelPart.length;
+            System.arraycopy(langPart, 0, body, offset, langPart.length);
+            offset += langPart.length;
+            System.arraycopy(formatPart, 0, body, offset, formatPart.length);
+            offset += formatPart.length;
+            System.arraycopy(tempPart, 0, body, offset, tempPart.length);
+            offset += tempPart.length;
+            System.arraycopy(granPart, 0, body, offset, granPart.length);
+            offset += granPart.length;
+            System.arraycopy(closing, 0, body, offset, closing.length);
+            return HttpRequest.BodyPublishers.ofByteArrays(List.of(body));
+        } catch (IOException exception) {
+            throw new BusinessException(ErrorCode.VIDEO_PROCESSING_FAILED,
+                    "Failed to read audio file for transcription: " + exception.getMessage(), exception);
+        }
     }
 
     private int secondsToMs(double seconds) {

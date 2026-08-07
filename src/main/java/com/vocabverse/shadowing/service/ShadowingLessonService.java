@@ -30,8 +30,8 @@ public class ShadowingLessonService {
     @Transactional(readOnly = true)
     public ShadowingLessonPageResponse listLessons(Pageable pageable) {
         Page<ShadowingLessonSummaryResponse> page = shadowingLessonRepository
-                .findBySourceAndStatusOrderByCreatedAtDesc(
-                        ShadowingLessonSource.UPLOAD,
+                .findBySourceInAndStatusOrderByCreatedAtDesc(
+                        List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE),
                         ShadowingLessonStatus.COMPLETED,
                         pageable
                 )
@@ -49,7 +49,10 @@ public class ShadowingLessonService {
     public ShadowingLessonDetailResponse getLesson(UUID lessonId) {
         ShadowingLessonEntity lesson = shadowingLessonRepository.findById(lessonId)
                 .orElseThrow(() -> new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND));
-        if (lesson.getSource() != ShadowingLessonSource.UPLOAD || lesson.getStatus() != ShadowingLessonStatus.COMPLETED) {
+        if (lesson.getStatus() != ShadowingLessonStatus.COMPLETED) {
+            throw new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND);
+        }
+        if (lesson.getSource() != ShadowingLessonSource.UPLOAD && lesson.getSource() != ShadowingLessonSource.YOUTUBE) {
             throw new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND);
         }
 
@@ -61,6 +64,7 @@ public class ShadowingLessonService {
 
         return new ShadowingLessonDetailResponse(
                 lesson.getId(),
+                lesson.getSource(),
                 lesson.getStatus(),
                 lesson.getTitle(),
                 lesson.getDescription(),
@@ -77,6 +81,7 @@ public class ShadowingLessonService {
     private ShadowingLessonSummaryResponse toSummaryResponse(ShadowingLessonEntity lesson) {
         return new ShadowingLessonSummaryResponse(
                 lesson.getId(),
+                lesson.getSource(),
                 lesson.getStatus(),
                 lesson.getTitle(),
                 lesson.getDescription(),

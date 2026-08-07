@@ -4,6 +4,7 @@ import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 import com.vocabverse.common.constant.ErrorCode;
 import com.vocabverse.common.exception.BusinessException;
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -31,6 +32,42 @@ public class CloudinaryVideoStorageService {
 
     @Value("${storage.cloudinary.upload-folder:vocabverse/shadowing}")
     private String uploadFolder;
+
+    public CloudinaryUploadResult uploadAudio(File audioFile, String filename) {
+        assertConfigured();
+        try {
+            Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap(
+                    "cloud_name", cloudName,
+                    "api_key", apiKey,
+                    "api_secret", apiSecret
+            ));
+
+            String publicId = UUID.randomUUID().toString();
+            Map<?, ?> result = cloudinary.uploader().upload(audioFile, ObjectUtils.asMap(
+                    "resource_type", "raw",
+                    "folder", uploadFolder,
+                    "public_id", publicId
+            ));
+
+            String secureUrl = asString(result.get("secure_url"));
+            String returnedPublicId = asString(result.get("public_id"));
+            if (!StringUtils.hasText(secureUrl) || !StringUtils.hasText(returnedPublicId)) {
+                throw new BusinessException(ErrorCode.VIDEO_PROCESSING_FAILED, "Cloudinary audio upload response is invalid");
+            }
+
+            return new CloudinaryUploadResult(
+                    returnedPublicId,
+                    secureUrl,
+                    null,
+                    STORAGE_PROVIDER,
+                    null
+            );
+        } catch (BusinessException exception) {
+            throw exception;
+        } catch (Exception exception) {
+            throw new BusinessException(ErrorCode.VIDEO_PROCESSING_FAILED, "Failed to upload audio to Cloudinary", exception);
+        }
+    }
 
     public CloudinaryUploadResult uploadMp4(MultipartFile file) {
         assertConfigured();
