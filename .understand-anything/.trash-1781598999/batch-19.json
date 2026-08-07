@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/product/01_Product_Overview.md",
+      "type": "document",
+      "name": "01_Product_Overview.md",
+      "filePath": "docs/product/01_Product_Overview.md",
+      "summary": "01_Product_Overview.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/product/02_prd.md",
+      "type": "document",
+      "name": "02_prd.md",
+      "filePath": "docs/product/02_prd.md",
+      "summary": "02_prd.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/product/03_srs.md",
+      "type": "document",
+      "name": "03_srs.md",
+      "filePath": "docs/product/03_srs.md",
+      "summary": "03_srs.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    }
+  ],
+  "edges": []
+}

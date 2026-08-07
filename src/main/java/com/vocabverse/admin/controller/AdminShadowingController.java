@@ -1,5 +1,6 @@
 package com.vocabverse.admin.controller;
 
+import com.vocabverse.admin.dto.request.AdminImportFromYouTubeRequest;
 import com.vocabverse.admin.dto.request.AdminImportShadowingSubtitlesRequest;
 import com.vocabverse.admin.dto.request.AdminUpsertShadowingSubtitleRequest;
 import com.vocabverse.admin.dto.response.AdminPageResponse;
@@ -42,6 +43,13 @@ public class AdminShadowingController {
             @RequestParam(required = false) String description
     ) {
         return ApiResponse.success(adminShadowingService.uploadLesson(file, title, description));
+    }
+
+    @PostMapping("/youtube")
+    public ApiResponse<AdminShadowingLessonResponse> importFromYouTube(
+            @Valid @RequestBody AdminImportFromYouTubeRequest request
+    ) {
+        return ApiResponse.success(adminShadowingService.importFromYouTube(request));
     }
 
     @GetMapping("/{lessonId}/status")

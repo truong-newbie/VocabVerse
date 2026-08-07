@@ -1,0 +1,3170 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/export/template/PdfTemplateBuilder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 196,
+      "nonEmptyLines": 166,
+      "functions": [
+        {
+          "name": "buildVocabularyPdf",
+          "startLine": 22,
+          "endLine": 25,
+          "params": [
+            "title",
+            "rows"
+          ]
+        },
+        {
+          "name": "buildLines",
+          "startLine": 27,
+          "endLine": 51,
+          "params": [
+            "title",
+            "rows"
+          ]
+        },
+        {
+          "name": "paginate",
+          "startLine": 53,
+          "endLine": 74,
+          "params": [
+            "rawLines"
+          ]
+        },
+        {
+          "name": "wrap",
+          "startLine": 76,
+          "endLine": 96,
+          "params": [
+            "line"
+          ]
+        },
+        {
+          "name": "buildPdf",
+          "startLine": 98,
+          "endLine": 142,
+          "params": [
+            "pages"
+          ]
+        },
+        {
+          "name": "buildPagesObject",
+          "startLine": 144,
+          "endLine": 150,
+          "params": [
+            "pageCount"
+          ]
+        },
+        {
+          "name": "buildPageObject",
+          "startLine": 152,
+          "endLine": 156,
+          "params": [
+            "contentObjectNumber",
+            "fontObjectNumber"
+          ]
+        },
+        {
+          "name": "buildContentObject",
+          "startLine": 158,
+          "endLine": 173,
+          "params": [
+            "lines"
+          ]
+        },
+        {
+          "name": "escapePdfString",
+          "startLine": 175,
+          "endLine": 180,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "sanitize",
+          "startLine": 182,
+          "endLine": 187,
+          "params": [
+            "text"
+          ]
+        },
+        {
+          "name": "nonBlank",
+          "startLine": 189,
+          "endLine": 191,
+          "params": [
+            "value",
+            "fallback"
+          ]
+        },
+        {
+          "name": "write",
+          "startLine": 193,
+          "endLine": 195,
+          "params": [
+            "out",
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PdfTemplateBuilder",
+          "startLine": 11,
+          "endLine": 196,
+          "methods": [
+            "buildVocabularyPdf",
+            "buildLines",
+            "paginate",
+            "wrap",
+            "buildPdf",
+            "buildPagesObject",
+            "buildPageObject",
+            "buildContentObject",
+            "escapePdfString",
+            "sanitize",
+            "nonBlank",
+            "write"
+          ],
+          "properties": [
+            "PAGE_WIDTH",
+            "PAGE_HEIGHT",
+            "LEFT_MARGIN",
+            "TOP_Y",
+            "BOTTOM_Y",
+            "LINE_HEIGHT",
+            "MAX_LINE_CHARS"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "buildVocabularyPdf",
+          "line": 22,
+          "isDefault": false
+        },
+        {
+          "name": "PdfTemplateBuilder",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "buildVocabularyPdf",
+          "callee": "paginate",
+          "lineNumber": 23
+        },
+        {
+          "caller": "buildVocabularyPdf",
+          "callee": "buildLines",
+          "lineNumber": 23
+        },
+        {
+          "caller": "buildVocabularyPdf",
+          "callee": "buildPdf",
+          "lineNumber": 24
+        },
+        {
+          "caller": "buildLines",
+          "callee": "new ArrayList<>",
+          "lineNumber": 28
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 29
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 29
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 30
+        },
+        {
+          "caller": "buildLines",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 30
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 31
+        },
+        {
+          "caller": "buildLines",
+          "callee": "rows.isEmpty",
+          "lineNumber": 33
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 34
+        },
+        {
+          "caller": "buildLines",
+          "callee": "rows.size",
+          "lineNumber": 38
+        },
+        {
+          "caller": "buildLines",
+          "callee": "rows.get",
+          "lineNumber": 39
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 40
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 40
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.term",
+          "lineNumber": 40
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.meaning",
+          "lineNumber": 41
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 42
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 42
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.vietnameseMeaning",
+          "lineNumber": 42
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 43
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 43
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.pronunciation",
+          "lineNumber": 43
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 44
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 44
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.partOfSpeech",
+          "lineNumber": 44
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.exampleSentence",
+          "lineNumber": 45
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 46
+        },
+        {
+          "caller": "buildLines",
+          "callee": "nonBlank",
+          "lineNumber": 46
+        },
+        {
+          "caller": "buildLines",
+          "callee": "row.note",
+          "lineNumber": 46
+        },
+        {
+          "caller": "buildLines",
+          "callee": "lines.add",
+          "lineNumber": 47
+        },
+        {
+          "caller": "paginate",
+          "callee": "new ArrayList<>",
+          "lineNumber": 54
+        },
+        {
+          "caller": "paginate",
+          "callee": "new ArrayList<>",
+          "lineNumber": 55
+        },
+        {
+          "caller": "paginate",
+          "callee": "wrap",
+          "lineNumber": 59
+        },
+        {
+          "caller": "paginate",
+          "callee": "currentPage.size",
+          "lineNumber": 60
+        },
+        {
+          "caller": "paginate",
+          "callee": "pages.add",
+          "lineNumber": 61
+        },
+        {
+          "caller": "paginate",
+          "callee": "new ArrayList<>",
+          "lineNumber": 62
+        },
+        {
+          "caller": "paginate",
+          "callee": "currentPage.add",
+          "lineNumber": 64
+        },
+        {
+          "caller": "paginate",
+          "callee": "currentPage.isEmpty",
+          "lineNumber": 68
+        },
+        {
+          "caller": "paginate",
+          "callee": "currentPage.add",
+          "lineNumber": 69
+        },
+        {
+          "caller": "paginate",
+          "callee": "pages.add",
+          "lineNumber": 71
+        },
+        {
+          "caller": "wrap",
+          "callee": "sanitize",
+          "lineNumber": 77
+        },
+        {
+          "caller": "wrap",
+          "callee": "sanitized.length",
+          "lineNumber": 78
+        },
+        {
+          "caller": "wrap",
+          "callee": "List.of",
+          "lineNumber": 79
+        },
+        {
+          "caller": "wrap",
+          "callee": "new ArrayList<>",
+          "lineNumber": 82
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.length",
+          "lineNumber": 84
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.lastIndexOf",
+          "lineNumber": 85
+        },
+        {
+          "caller": "wrap",
+          "callee": "lines.add",
+          "lineNumber": 89
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.substring(0, splitAt).stripTrailing",
+          "lineNumber": 89
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.substring",
+          "lineNumber": 89
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.substring(splitAt).stripLeading",
+          "lineNumber": 90
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.substring",
+          "lineNumber": 90
+        },
+        {
+          "caller": "wrap",
+          "callee": "remaining.isBlank",
+          "lineNumber": 92
+        },
+        {
+          "caller": "wrap",
+          "callee": "lines.add",
+          "lineNumber": 93
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "pages.size",
+          "lineNumber": 99
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "new ArrayList<>",
+          "lineNumber": 102
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.add",
+          "lineNumber": 104
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.add",
+          "lineNumber": 105
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "buildPagesObject",
+          "lineNumber": 105
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.add",
+          "lineNumber": 109
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "buildPageObject",
+          "lineNumber": 109
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.add",
+          "lineNumber": 110
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "buildContentObject",
+          "lineNumber": 110
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.add",
+          "lineNumber": 114
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "new ByteArrayOutputStream",
+          "lineNumber": 116
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 117
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "new ArrayList<>",
+          "lineNumber": 118
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "offsets.add",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.size",
+          "lineNumber": 121
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "offsets.add",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "out.size",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 123
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 124
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "objects.get",
+          "lineNumber": 124
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 125
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "out.size",
+          "lineNumber": 128
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 129
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 130
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 131
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "offsets.size",
+          "lineNumber": 132
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 133
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "String.format",
+          "lineNumber": 133
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "offsets.get",
+          "lineNumber": 133
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 135
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 136
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 137
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 138
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "write",
+          "lineNumber": 139
+        },
+        {
+          "caller": "buildPdf",
+          "callee": "out.toByteArray",
+          "lineNumber": 141
+        },
+        {
+          "caller": "buildPagesObject",
+          "callee": "new StringBuilder",
+          "lineNumber": 145
+        },
+        {
+          "caller": "buildPagesObject",
+          "callee": "kids.append(3 + (i * 2)).append",
+          "lineNumber": 147
+        },
+        {
+          "caller": "buildPagesObject",
+          "callee": "kids.append",
+          "lineNumber": 147
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "new StringBuilder",
+          "lineNumber": 159
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append",
+          "lineNumber": 160
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(LEFT_MARGIN).append(\" \").append(TOP_Y).append",
+          "lineNumber": 162
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(LEFT_MARGIN).append(\" \").append",
+          "lineNumber": 162
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(LEFT_MARGIN).append",
+          "lineNumber": 162
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append",
+          "lineNumber": 162
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "lines.size",
+          "lineNumber": 163
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(\"0 -\").append(LINE_HEIGHT).append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(\"0 -\").append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append",
+          "lineNumber": 165
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(\"(\").append(escapePdfString(lines.get(i))).append",
+          "lineNumber": 167
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append(\"(\").append",
+          "lineNumber": 167
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append",
+          "lineNumber": 167
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "escapePdfString",
+          "lineNumber": 167
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "lines.get",
+          "lineNumber": 167
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.append",
+          "lineNumber": 169
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.toString().getBytes",
+          "lineNumber": 171
+        },
+        {
+          "caller": "buildContentObject",
+          "callee": "stream.toString",
+          "lineNumber": 171
+        },
+        {
+          "caller": "escapePdfString",
+          "callee": "text\n                .replace(\"\\\\\", \"\\\\\\\\\")\n                .replace(\"(\", \"\\\\(\").replace",
+          "lineNumber": 176
+        },
+        {
+          "caller": "escapePdfString",
+          "callee": "text\n                .replace(\"\\\\\", \"\\\\\\\\\").replace",
+          "lineNumber": 176
+        },
+        {
+          "caller": "escapePdfString",
+          "callee": "text.replace",
+          "lineNumber": 176
+        },
+        {
+          "caller": "sanitize",
+          "callee": "nonBlank(text, \"\")\n                .replaceAll(\"[\\\\r\\\\n\\\\t]+\", \" \")\n                .replaceAll(\"[^\\\\x20-\\\\x7E]\", \"?\").strip",
+          "lineNumber": 183
+        },
+        {
+          "caller": "sanitize",
+          "callee": "nonBlank(text, \"\")\n                .replaceAll(\"[\\\\r\\\\n\\\\t]+\", \" \").replaceAll",
+          "lineNumber": 183
+        },
+        {
+          "caller": "sanitize",
+          "callee": "nonBlank(text, \"\").replaceAll",
+          "lineNumber": 183
+        },
+        {
+          "caller": "sanitize",
+          "callee": "nonBlank",
+          "lineNumber": 183
+        },
+        {
+          "caller": "nonBlank",
+          "callee": "value.isBlank",
+          "lineNumber": 190
+        },
+        {
+          "caller": "write",
+          "callee": "out.writeBytes",
+          "lineNumber": 194
+        },
+        {
+          "caller": "write",
+          "callee": "value.getBytes",
+          "lineNumber": 194
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 12,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/controller/QuizController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 28,
+          "endLine": 33,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSessionDetail",
+          "startLine": 35,
+          "endLine": 38,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessionQuestions",
+          "startLine": 40,
+          "endLine": 43,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "submitAnswer",
+          "startLine": 45,
+          "endLine": 52,
+          "params": [
+            "sessionId",
+            "questionId",
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QuizController",
+          "startLine": 21,
+          "endLine": 53,
+          "methods": [
+            "createSession",
+            "getSessionDetail",
+            "getSessionQuestions",
+            "submitAnswer"
+          ],
+          "properties": [
+            "quizService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionDetail",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionQuestions",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "submitAnswer",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "QuizController",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "ApiResponse.success",
+          "lineNumber": 32
+        },
+        {
+          "caller": "createSession",
+          "callee": "quizService.createSession",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "quizService.getSessionDetail",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "ApiResponse.success",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "quizService.getSessionQuestions",
+          "lineNumber": 42
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "ApiResponse.success",
+          "lineNumber": 51
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "quizService.submitAnswer",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/request/CreateQuizSessionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/request/SubmitQuizAnswerRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizAnswerResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizQuestionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/dto/response/QuizSessionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 80,
+      "nonEmptyLines": 66,
+      "classes": [
+        {
+          "name": "QuizQuestionEntity",
+          "startLine": 28,
+          "endLine": 80,
+          "methods": [],
+          "properties": [
+            "id",
+            "session",
+            "vocabulary",
+            "questionType",
+            "questionText",
+            "correctAnswer",
+            "options",
+            "userAnswer",
+            "correct",
+            "answeredAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuizQuestionEntity",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizQuestionType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 64,
+      "classes": [
+        {
+          "name": "QuizSessionEntity",
+          "startLine": 26,
+          "endLine": 78,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "source",
+            "collection",
+            "status",
+            "totalQuestions",
+            "correctAnswers",
+            "completedQuestions",
+            "startedAt",
+            "completedAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuizSessionEntity",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionSource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/mapper/QuizMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "QuizMapper",
+          "startLine": 10,
+          "endLine": 19,
+          "methods": [
+            "toSessionResponse",
+            "toQuestionResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuizMapper",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/repository/QuizQuestionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "QuizQuestionRepository",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "findAllBySessionIdOrderByCreatedAtAsc",
+            "findByIdAndSessionId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuizQuestionRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "QuizSessionRepository",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "findByIdAndUserId",
+            "countByUserIdAndStatus"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "QuizSessionRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/quiz/service/QuizService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 274,
+      "nonEmptyLines": 244,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 58,
+          "endLine": 90,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSessionDetail",
+          "startLine": 92,
+          "endLine": 95,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessionQuestions",
+          "startLine": 97,
+          "endLine": 104,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "submitAnswer",
+          "startLine": 106,
+          "endLine": 154,
+          "params": [
+            "sessionId",
+            "questionId",
+            "request"
+          ]
+        },
+        {
+          "name": "buildQuestion",
+          "startLine": 156,
+          "endLine": 174,
+          "params": [
+            "session",
+            "vocabulary",
+            "optionPool"
+          ]
+        },
+        {
+          "name": "buildOptions",
+          "startLine": 176,
+          "endLine": 196,
+          "params": [
+            "vocabulary",
+            "type",
+            "optionPool"
+          ]
+        },
+        {
+          "name": "resolveQuestionText",
+          "startLine": 198,
+          "endLine": 203,
+          "params": [
+            "vocabulary",
+            "type"
+          ]
+        },
+        {
+          "name": "resolveCorrectAnswer",
+          "startLine": 205,
+          "endLine": 210,
+          "params": [
+            "vocabulary",
+            "type"
+          ]
+        },
+        {
+          "name": "safeMeaning",
+          "startLine": 212,
+          "endLine": 217,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "resolveCollection",
+          "startLine": 219,
+          "endLine": 228,
+          "params": [
+            "request",
+            "userId"
+          ]
+        },
+        {
+          "name": "resolveSessionVocabularies",
+          "startLine": 230,
+          "endLine": 249,
+          "params": [
+            "request",
+            "userId",
+            "collection"
+          ]
+        },
+        {
+          "name": "getOwnedSession",
+          "startLine": 251,
+          "endLine": 255,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 257,
+          "endLine": 261,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 263,
+          "endLine": 269,
+          "params": []
+        },
+        {
+          "name": "normalizeAnswer",
+          "startLine": 271,
+          "endLine": 273,
+          "params": [
+            "answer"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "QuizService",
+          "startLine": 44,
+          "endLine": 274,
+          "methods": [
+            "createSession",
+            "getSessionDetail",
+            "getSessionQuestions",
+            "submitAnswer",
+            "buildQuestion",
+            "buildOptions",
+            "resolveQuestionText",
+            "resolveCorrectAnswer",
+            "safeMeaning",
+            "resolveCollection",
+            "resolveSessionVocabularies",
+            "getOwnedSession",
+            "getCurrentUser",
+            "getAuthenticatedEmail",
+            "normalizeAnswer"
+          ],
+          "properties": [
+            "quizSessionRepository",
+            "quizQuestionRepository",
+            "vocabularyRepository",
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "learningProgressRepository",
+            "userRepository",
+            "reviewService",
+            "quizMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionDetail",
+          "line": 92,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionQuestions",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "submitAnswer",
+          "line": 106,
+          "isDefault": false
+        },
+        {
+          "name": "QuizService",
+          "line": 44,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolveCollection",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolveSessionVocabularies",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(QuizSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size())\r\n                .correctAnswers(0)\r\n                .completedQuestions(0)\r\n                .startedAt(LocalDateTime.now()).build",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(QuizSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size())\r\n                .correctAnswers(0)\r\n                .completedQuestions(0).startedAt",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(QuizSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size())\r\n                .correctAnswers(0).completedQuestions",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(QuizSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size()).correctAnswers",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(QuizSessionStatus.IN_PROGRESS).totalQuestions",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection).status",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source()).collection",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder()\r\n                .user(user).source",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder().user",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "QuizSessionEntity.builder",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.source",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.size",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 73
+        },
+        {
+          "caller": "createSession",
+          "callee": "quizSessionRepository.save",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream()\r\n                .map(vocabulary -> buildQuestion(sessionForQuestions, vocabulary, optionPool)).toList",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream().map",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createSession",
+          "callee": "buildQuestion",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createSession",
+          "callee": "quizQuestionRepository.saveAll",
+          "lineNumber": 81
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.isEmpty",
+          "lineNumber": 83
+        },
+        {
+          "caller": "createSession",
+          "callee": "savedSession.setStatus",
+          "lineNumber": 84
+        },
+        {
+          "caller": "createSession",
+          "callee": "savedSession.setCompletedAt",
+          "lineNumber": 85
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 85
+        },
+        {
+          "caller": "createSession",
+          "callee": "quizSessionRepository.save",
+          "lineNumber": 86
+        },
+        {
+          "caller": "createSession",
+          "callee": "quizMapper.toSessionResponse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "quizMapper.toSessionResponse",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "getOwnedSession",
+          "lineNumber": 94
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "getOwnedSession",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "quizQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId())\r\n                .stream()\r\n                .map(quizMapper::toQuestionResponse).toList",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "quizQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId())\r\n                .stream().map",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "quizQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId()).stream",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "quizQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "session.getId",
+          "lineNumber": 100
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "getOwnedSession",
+          "lineNumber": 108
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getStatus",
+          "lineNumber": 109
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 110
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "quizQuestionRepository.findByIdAndSessionId(questionId, sessionId).orElseThrow",
+          "lineNumber": 113
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "quizQuestionRepository.findByIdAndSessionId",
+          "lineNumber": 113
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 114
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getAnsweredAt",
+          "lineNumber": 115
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 116
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "normalizeAnswer(request.answer()).equals",
+          "lineNumber": 119
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "normalizeAnswer",
+          "lineNumber": 119
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.answer",
+          "lineNumber": 119
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "normalizeAnswer",
+          "lineNumber": 119
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getCorrectAnswer",
+          "lineNumber": 119
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewService.submitReview",
+          "lineNumber": 120
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary().getId",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setUserAnswer",
+          "lineNumber": 125
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.answer",
+          "lineNumber": 125
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setCorrect",
+          "lineNumber": 126
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setAnsweredAt",
+          "lineNumber": 127
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 127
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "quizQuestionRepository.save",
+          "lineNumber": 128
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCompletedQuestions",
+          "lineNumber": 130
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedQuestions",
+          "lineNumber": 130
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCorrectAnswers",
+          "lineNumber": 132
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCorrectAnswers",
+          "lineNumber": 132
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedQuestions",
+          "lineNumber": 134
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getTotalQuestions",
+          "lineNumber": 134
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setStatus",
+          "lineNumber": 135
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCompletedAt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 136
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "quizSessionRepository.save",
+          "lineNumber": 138
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new QuizAnswerResponse",
+          "lineNumber": 140
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getId",
+          "lineNumber": 141
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getId",
+          "lineNumber": 142
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary().getId",
+          "lineNumber": 143
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary",
+          "lineNumber": 143
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getCorrectAnswer",
+          "lineNumber": 145
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.status",
+          "lineNumber": 146
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.nextReviewAt",
+          "lineNumber": 147
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.repetitionCount",
+          "lineNumber": 148
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCorrectAnswers",
+          "lineNumber": 149
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedQuestions",
+          "lineNumber": 150
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getTotalQuestions",
+          "lineNumber": 151
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getStatus",
+          "lineNumber": 152
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "Math.abs",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "vocabulary.getId().hashCode",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "vocabulary.getId",
+          "lineNumber": 161
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "resolveCorrectAnswer",
+          "lineNumber": 164
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder()\r\n                .session(session)\r\n                .vocabulary(vocabulary)\r\n                .questionType(type)\r\n                .questionText(resolveQuestionText(vocabulary, type))\r\n                .correctAnswer(correctAnswer)\r\n                .options(buildOptions(vocabulary, type, optionPool)).build",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder()\r\n                .session(session)\r\n                .vocabulary(vocabulary)\r\n                .questionType(type)\r\n                .questionText(resolveQuestionText(vocabulary, type))\r\n                .correctAnswer(correctAnswer).options",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder()\r\n                .session(session)\r\n                .vocabulary(vocabulary)\r\n                .questionType(type)\r\n                .questionText(resolveQuestionText(vocabulary, type)).correctAnswer",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder()\r\n                .session(session)\r\n                .vocabulary(vocabulary)\r\n                .questionType(type).questionText",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder()\r\n                .session(session)\r\n                .vocabulary(vocabulary).questionType",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder()\r\n                .session(session).vocabulary",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder().session",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "QuizQuestionEntity.builder",
+          "lineNumber": 166
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "resolveQuestionText",
+          "lineNumber": 170
+        },
+        {
+          "caller": "buildQuestion",
+          "callee": "buildOptions",
+          "lineNumber": 172
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "new LinkedHashSet<>",
+          "lineNumber": 181
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "options.add",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "resolveCorrectAnswer",
+          "lineNumber": 182
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "optionPool.stream()\r\n                .filter(candidate -> !candidate.getId().equals(vocabulary.getId()))\r\n                .sorted(Comparator.comparing(VocabularyEntity::getWord))\r\n                .map(candidate -> resolveCorrectAnswer(candidate, type))\r\n                .filter(option -> option != null && !option.isBlank()).forEach",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "optionPool.stream()\r\n                .filter(candidate -> !candidate.getId().equals(vocabulary.getId()))\r\n                .sorted(Comparator.comparing(VocabularyEntity::getWord))\r\n                .map(candidate -> resolveCorrectAnswer(candidate, type)).filter",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "optionPool.stream()\r\n                .filter(candidate -> !candidate.getId().equals(vocabulary.getId()))\r\n                .sorted(Comparator.comparing(VocabularyEntity::getWord)).map",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "optionPool.stream()\r\n                .filter(candidate -> !candidate.getId().equals(vocabulary.getId())).sorted",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "optionPool.stream().filter",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "optionPool.stream",
+          "lineNumber": 184
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "candidate.getId().equals",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "candidate.getId",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "vocabulary.getId",
+          "lineNumber": 185
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "Comparator.comparing",
+          "lineNumber": 186
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "resolveCorrectAnswer",
+          "lineNumber": 187
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "option.isBlank",
+          "lineNumber": 188
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "options.size",
+          "lineNumber": 190
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "options.add",
+          "lineNumber": 191
+        },
+        {
+          "caller": "buildOptions",
+          "callee": "new ArrayList<>",
+          "lineNumber": 195
+        },
+        {
+          "caller": "resolveQuestionText",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 200
+        },
+        {
+          "caller": "resolveQuestionText",
+          "callee": "safeMeaning",
+          "lineNumber": 201
+        },
+        {
+          "caller": "resolveCorrectAnswer",
+          "callee": "safeMeaning",
+          "lineNumber": 207
+        },
+        {
+          "caller": "resolveCorrectAnswer",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 208
+        },
+        {
+          "caller": "safeMeaning",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 213
+        },
+        {
+          "caller": "safeMeaning",
+          "callee": "vocabulary.getMeaningVi().isBlank",
+          "lineNumber": 213
+        },
+        {
+          "caller": "safeMeaning",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 213
+        },
+        {
+          "caller": "safeMeaning",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 214
+        },
+        {
+          "caller": "safeMeaning",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 216
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.source",
+          "lineNumber": 220
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.collectionId",
+          "lineNumber": 223
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 224
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(request.collectionId(), userId).orElseThrow",
+          "lineNumber": 226
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 226
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.collectionId",
+          "lineNumber": 226
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 227
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "request.source",
+          "lineNumber": 235
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 236
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                    .stream()\r\n                    .map(CollectionVocabularyEntity::getVocabulary).toList",
+          "lineNumber": 237
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                    .stream().map",
+          "lineNumber": 237
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId()).stream",
+          "lineNumber": 237
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 237
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collection.getId",
+          "lineNumber": 238
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream()\r\n                    .map(LearningProgressEntity::getVocabulary)\r\n                    .filter(vocabulary -> vocabulary.getDeletedAt() == null).toList",
+          "lineNumber": 242
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream()\r\n                    .map(LearningProgressEntity::getVocabulary).filter",
+          "lineNumber": 242
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream().map",
+          "lineNumber": 242
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now()).stream",
+          "lineNumber": 242
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 242
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 243
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "vocabulary.getDeletedAt",
+          "lineNumber": 246
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 252
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 252
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "quizSessionRepository.findByIdAndUserId(sessionId, userId).orElseThrow",
+          "lineNumber": 253
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "quizSessionRepository.findByIdAndUserId",
+          "lineNumber": 253
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "new BusinessException",
+          "lineNumber": 254
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 258
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 259
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 259
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 260
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 264
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 264
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 265
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 266
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 268
+        },
+        {
+          "caller": "normalizeAnswer",
+          "callee": "answer.trim().toLowerCase",
+          "lineNumber": 272
+        },
+        {
+          "caller": "normalizeAnswer",
+          "callee": "answer.trim",
+          "lineNumber": 272
+        }
+      ],
+      "metrics": {
+        "importCount": 28,
+        "exportCount": 5,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/controller/PublicCollectionController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 50,
+      "nonEmptyLines": 43,
+      "functions": [
+        {
+          "name": "getPublicCollections",
+          "startLine": 26,
+          "endLine": 31,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getPublicCollectionDetail",
+          "startLine": 33,
+          "endLine": 36,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "collectionId",
+            "pageable"
+          ]
+        },
+        {
+          "name": "clonePublicCollection",
+          "startLine": 46,
+          "endLine": 49,
+          "params": [
+            "collectionId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "PublicCollectionController",
+          "startLine": 19,
+          "endLine": 50,
+          "methods": [
+            "getPublicCollections",
+            "getPublicCollectionDetail",
+            "getPublicCollectionVocabularies",
+            "clonePublicCollection"
+          ],
+          "properties": [
+            "publicCollectionService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPublicCollections",
+          "line": 26,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicCollectionDetail",
+          "line": 33,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "clonePublicCollection",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCollectionController",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPublicCollections",
+          "callee": "ApiResponse.success",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "publicCollectionService.getPublicCollections",
+          "lineNumber": 30
+        },
+        {
+          "caller": "getPublicCollectionDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getPublicCollectionDetail",
+          "callee": "publicCollectionService.getPublicCollectionDetail",
+          "lineNumber": 35
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "ApiResponse.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "publicCollectionService.getPublicCollectionVocabularies",
+          "lineNumber": 43
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 48
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "publicCollectionService.clonePublicCollection",
+          "lineNumber": 48
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/CloneCollectionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicCollectionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/dto/response/PublicVocabularyResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/publiccollection/service/PublicCollectionService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 193,
+      "nonEmptyLines": 174,
+      "functions": [
+        {
+          "name": "getPublicCollections",
+          "startLine": 37,
+          "endLine": 51,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getPublicCollectionDetail",
+          "startLine": 53,
+          "endLine": 56,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "startLine": 58,
+          "endLine": 77,
+          "params": [
+            "collectionId",
+            "pageable"
+          ]
+        },
+        {
+          "name": "clonePublicCollection",
+          "startLine": 79,
+          "endLine": 125,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "getPublicCollection",
+          "startLine": 127,
+          "endLine": 134,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "toCollectionResponse",
+          "startLine": 136,
+          "endLine": 151,
+          "params": [
+            "collection"
+          ]
+        },
+        {
+          "name": "toVocabularyResponse",
+          "startLine": 153,
+          "endLine": 164,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "safeOwnerName",
+          "startLine": 166,
+          "endLine": 171,
+          "params": [
+            "owner"
+          ]
+        },
+        {
+          "name": "firstExample",
+          "startLine": 173,
+          "endLine": 178,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 180,
+          "endLine": 184,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 186,
+          "endLine": 192,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PublicCollectionService",
+          "startLine": 29,
+          "endLine": 193,
+          "methods": [
+            "getPublicCollections",
+            "getPublicCollectionDetail",
+            "getPublicCollectionVocabularies",
+            "clonePublicCollection",
+            "getPublicCollection",
+            "toCollectionResponse",
+            "toVocabularyResponse",
+            "safeOwnerName",
+            "firstExample",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getPublicCollections",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicCollectionDetail",
+          "line": 53,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "clonePublicCollection",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "PublicCollectionService",
+          "line": 29,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getPublicCollections",
+          "callee": "collectionRepository.findAllByVisibilityAndDeletedAtIsNull",
+          "lineNumber": 39
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "new PublicCollectionPageResponse",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "page.map(this::toCollectionResponse).getContent",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "page.map",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "page.getNumber",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "page.getSize",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "page.getTotalElements",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getPublicCollections",
+          "callee": "page.getTotalPages",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getPublicCollectionDetail",
+          "callee": "toCollectionResponse",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getPublicCollectionDetail",
+          "callee": "getPublicCollection",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "getPublicCollection",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "new PublicVocabularyPageResponse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.map(CollectionVocabularyEntity::getVocabulary)\r\n                        .map(this::toVocabularyResponse).getContent",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.map(CollectionVocabularyEntity::getVocabulary).map",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.map",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getNumber",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getSize",
+          "lineNumber": 73
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getTotalElements",
+          "lineNumber": 74
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getTotalPages",
+          "lineNumber": 75
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "getCurrentUser",
+          "lineNumber": 81
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "getPublicCollection",
+          "lineNumber": 82
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 84
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "source.getId",
+          "lineNumber": 85
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user)\r\n                    .title(source.getTitle())\r\n                    .description(source.getDescription())\r\n                    .visibility(CollectionVisibility.PRIVATE)\r\n                    .thumbnailUrl(source.getThumbnailUrl())\r\n                    .totalWords(sourceItems.size())\r\n                    .featured(false).build",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user)\r\n                    .title(source.getTitle())\r\n                    .description(source.getDescription())\r\n                    .visibility(CollectionVisibility.PRIVATE)\r\n                    .thumbnailUrl(source.getThumbnailUrl())\r\n                    .totalWords(sourceItems.size()).featured",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user)\r\n                    .title(source.getTitle())\r\n                    .description(source.getDescription())\r\n                    .visibility(CollectionVisibility.PRIVATE)\r\n                    .thumbnailUrl(source.getThumbnailUrl()).totalWords",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user)\r\n                    .title(source.getTitle())\r\n                    .description(source.getDescription())\r\n                    .visibility(CollectionVisibility.PRIVATE).thumbnailUrl",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user)\r\n                    .title(source.getTitle())\r\n                    .description(source.getDescription()).visibility",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user)\r\n                    .title(source.getTitle()).description",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder()\r\n                    .owner(user).title",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder().owner",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionEntity.builder",
+          "lineNumber": 87
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "source.getTitle",
+          "lineNumber": 89
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "source.getDescription",
+          "lineNumber": 90
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "source.getThumbnailUrl",
+          "lineNumber": 92
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItems.size",
+          "lineNumber": 93
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 97
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItems.stream()\r\n                    .map(sourceItem -> CollectionVocabularyEntity.builder()\r\n                            .collection(savedCollection)\r\n                            .vocabulary(sourceItem.getVocabulary())\r\n                            .addedBy(user)\r\n                            .position(sourceItem.getPosition())\r\n                            .build()).toList",
+          "lineNumber": 98
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItems.stream().map",
+          "lineNumber": 98
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItems.stream",
+          "lineNumber": 98
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                            .collection(savedCollection)\r\n                            .vocabulary(sourceItem.getVocabulary())\r\n                            .addedBy(user)\r\n                            .position(sourceItem.getPosition()).build",
+          "lineNumber": 99
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                            .collection(savedCollection)\r\n                            .vocabulary(sourceItem.getVocabulary())\r\n                            .addedBy(user).position",
+          "lineNumber": 99
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                            .collection(savedCollection)\r\n                            .vocabulary(sourceItem.getVocabulary()).addedBy",
+          "lineNumber": 99
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                            .collection(savedCollection).vocabulary",
+          "lineNumber": 99
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionVocabularyEntity.builder().collection",
+          "lineNumber": 99
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "CollectionVocabularyEntity.builder",
+          "lineNumber": 99
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItem.getVocabulary",
+          "lineNumber": 101
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItem.getPosition",
+          "lineNumber": 103
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "collectionVocabularyRepository.saveAll",
+          "lineNumber": 106
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "new CloneCollectionResponse",
+          "lineNumber": 108
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "savedCollection.getId",
+          "lineNumber": 109
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "savedCollection.getTitle",
+          "lineNumber": 110
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "savedCollection.getDescription",
+          "lineNumber": 111
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "savedCollection.getVisibility",
+          "lineNumber": 112
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "sourceItems.size",
+          "lineNumber": 113
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 119
+        },
+        {
+          "caller": "clonePublicCollection",
+          "callee": "ErrorCode.PUBLIC_COLLECTION_CLONE_FAILED.getMessage",
+          "lineNumber": 121
+        },
+        {
+          "caller": "getPublicCollection",
+          "callee": "collectionRepository.findByIdAndDeletedAtIsNull(collectionId).orElseThrow",
+          "lineNumber": 128
+        },
+        {
+          "caller": "getPublicCollection",
+          "callee": "collectionRepository.findByIdAndDeletedAtIsNull",
+          "lineNumber": 128
+        },
+        {
+          "caller": "getPublicCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 129
+        },
+        {
+          "caller": "getPublicCollection",
+          "callee": "collection.getVisibility",
+          "lineNumber": 130
+        },
+        {
+          "caller": "getPublicCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 131
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getOwner",
+          "lineNumber": 137
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collectionVocabularyRepository.countByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getId",
+          "lineNumber": 139
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "new PublicCollectionResponse",
+          "lineNumber": 140
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getId",
+          "lineNumber": 141
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getTitle",
+          "lineNumber": 142
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getDescription",
+          "lineNumber": 143
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getVisibility",
+          "lineNumber": 144
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "owner.getId",
+          "lineNumber": 145
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "safeOwnerName",
+          "lineNumber": 146
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getCreatedAt",
+          "lineNumber": 148
+        },
+        {
+          "caller": "toCollectionResponse",
+          "callee": "collection.getUpdatedAt",
+          "lineNumber": 149
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "firstExample",
+          "lineNumber": 154
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "new PublicVocabularyResponse",
+          "lineNumber": 155
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 156
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 157
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 158
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 159
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "vocabulary.getPhonetic",
+          "lineNumber": 160
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "vocabulary.getPartOfSpeech",
+          "lineNumber": 161
+        },
+        {
+          "caller": "toVocabularyResponse",
+          "callee": "example.getEn",
+          "lineNumber": 162
+        },
+        {
+          "caller": "safeOwnerName",
+          "callee": "owner.getFullName",
+          "lineNumber": 167
+        },
+        {
+          "caller": "safeOwnerName",
+          "callee": "owner.getFullName().isBlank",
+          "lineNumber": 167
+        },
+        {
+          "caller": "safeOwnerName",
+          "callee": "owner.getFullName",
+          "lineNumber": 167
+        },
+        {
+          "caller": "safeOwnerName",
+          "callee": "owner.getFullName",
+          "lineNumber": 170
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 174
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples().isEmpty",
+          "lineNumber": 174
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 174
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples().get",
+          "lineNumber": 177
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 177
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 181
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 182
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 182
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 183
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 187
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 187
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 188
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 189
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 191
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 5,
+        "functionCount": 11,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 54,
+      "classes": [
+        {
+          "name": "CollectionVocabularyEntity",
+          "startLine": 24,
+          "endLine": 62,
+          "methods": [],
+          "properties": [
+            "id",
+            "collection",
+            "vocabulary",
+            "addedBy",
+            "position",
+            "createdAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionVocabularyEntity",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 76,
+      "classes": [
+        {
+          "name": "CollectionVocabularyRepository",
+          "startLine": 14,
+          "endLine": 89,
+          "methods": [
+            "existsByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "existsByCollectionIdAndVocabularyNormalizedWordAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "findByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "findAllByVocabularyId",
+            "countByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+            "findOwnedCollectionIdsByVocabularyId",
+            "findVocabularyIdsByOwnedCollectionId",
+            "findOwnedCollectionTitlesByVocabularyId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionVocabularyRepository",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    }
+  ]
+}

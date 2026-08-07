@@ -1,0 +1,207 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "language": "java",
+      "sizeLines": 29,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "language": "java",
+      "sizeLines": 308,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "language": "java",
+      "sizeLines": 97,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "language": "java",
+      "sizeLines": 254,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "language": "java",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java": [
+      "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java": [],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java": [],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java": [
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java": [
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java"
+    ],
+    "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java": [
+      "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java": [
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java": [],
+    "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java": [
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java": [],
+    "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java": [
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java": [],
+    "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java": [],
+    "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java": [],
+    "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java": [
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java": [
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java"
+    ]
+  }
+}

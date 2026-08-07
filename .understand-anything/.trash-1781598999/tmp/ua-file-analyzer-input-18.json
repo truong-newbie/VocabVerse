@@ -1,0 +1,28 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "docs/architecture/04_database_design.md",
+      "language": "markdown",
+      "sizeLines": 1075,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/architecture/05-system-architecture.md",
+      "language": "markdown",
+      "sizeLines": 1026,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/architecture/12-erd-diagram.md",
+      "language": "markdown",
+      "sizeLines": 147,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/architecture/04_database_design.md": [],
+    "docs/architecture/05-system-architecture.md": [],
+    "docs/architecture/12-erd-diagram.md": []
+  }
+}

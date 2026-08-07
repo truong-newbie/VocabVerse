@@ -1,0 +1,4558 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 31,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "AiClient",
+          "startLine": 5,
+          "endLine": 8,
+          "methods": [
+            "normalizeVocabulary"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "AiClient",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 101,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "GroqVocabularyClient",
+          "startLine": 32,
+          "endLine": 37,
+          "params": [
+            "objectMapper"
+          ]
+        },
+        {
+          "name": "completeJson",
+          "startLine": 39,
+          "endLine": 100,
+          "params": [
+            "prompt",
+            "apiKey"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "GroqVocabularyClient",
+          "startLine": 20,
+          "endLine": 101,
+          "methods": [
+            "GroqVocabularyClient",
+            "completeJson"
+          ],
+          "properties": [
+            "CHAT_COMPLETIONS_URI",
+            "objectMapper",
+            "httpClient",
+            "model"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "GroqVocabularyClient",
+          "line": 32,
+          "isDefault": false
+        },
+        {
+          "name": "completeJson",
+          "line": 39,
+          "isDefault": false
+        },
+        {
+          "name": "GroqVocabularyClient",
+          "line": 20,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "GroqVocabularyClient",
+          "callee": "HttpClient.newBuilder()\r\n                .connectTimeout(Duration.ofSeconds(10)).build",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GroqVocabularyClient",
+          "callee": "HttpClient.newBuilder().connectTimeout",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GroqVocabularyClient",
+          "callee": "HttpClient.newBuilder",
+          "lineNumber": 34
+        },
+        {
+          "caller": "GroqVocabularyClient",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 35
+        },
+        {
+          "caller": "completeJson",
+          "callee": "UUID.randomUUID().toString",
+          "lineNumber": 40
+        },
+        {
+          "caller": "completeJson",
+          "callee": "UUID.randomUUID",
+          "lineNumber": 40
+        },
+        {
+          "caller": "completeJson",
+          "callee": "System.nanoTime",
+          "lineNumber": 41
+        },
+        {
+          "caller": "completeJson",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 43
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Map.of",
+          "lineNumber": 43
+        },
+        {
+          "caller": "completeJson",
+          "callee": "List.of",
+          "lineNumber": 46
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Map.of",
+          "lineNumber": 46
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.newBuilder(CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(30))\r\n                    .header(\"Authorization\", \"Bearer \" + apiKey)\r\n                    .header(\"Content-Type\", \"application/json\")\r\n                    .POST(HttpRequest.BodyPublishers.ofString(body)).build",
+          "lineNumber": 52
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.newBuilder(CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(30))\r\n                    .header(\"Authorization\", \"Bearer \" + apiKey)\r\n                    .header(\"Content-Type\", \"application/json\").POST",
+          "lineNumber": 52
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.newBuilder(CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(30))\r\n                    .header(\"Authorization\", \"Bearer \" + apiKey).header",
+          "lineNumber": 52
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.newBuilder(CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(30)).header",
+          "lineNumber": 52
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.newBuilder(CHAT_COMPLETIONS_URI).timeout",
+          "lineNumber": 52
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.newBuilder",
+          "lineNumber": 52
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 53
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpRequest.BodyPublishers.ofString",
+          "lineNumber": 56
+        },
+        {
+          "caller": "completeJson",
+          "callee": "httpClient.send",
+          "lineNumber": 59
+        },
+        {
+          "caller": "completeJson",
+          "callee": "HttpResponse.BodyHandlers.ofString",
+          "lineNumber": 59
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos(System.nanoTime() - startedAt).toMillis",
+          "lineNumber": 60
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos",
+          "lineNumber": 60
+        },
+        {
+          "caller": "completeJson",
+          "callee": "System.nanoTime",
+          "lineNumber": 60
+        },
+        {
+          "caller": "completeJson",
+          "callee": "log.info",
+          "lineNumber": 61
+        },
+        {
+          "caller": "completeJson",
+          "callee": "response.statusCode",
+          "lineNumber": 64
+        },
+        {
+          "caller": "completeJson",
+          "callee": "response.statusCode",
+          "lineNumber": 65
+        },
+        {
+          "caller": "completeJson",
+          "callee": "response.statusCode",
+          "lineNumber": 65
+        },
+        {
+          "caller": "completeJson",
+          "callee": "response.statusCode",
+          "lineNumber": 66
+        },
+        {
+          "caller": "completeJson",
+          "callee": "new BusinessException",
+          "lineNumber": 67
+        },
+        {
+          "caller": "completeJson",
+          "callee": "new BusinessException",
+          "lineNumber": 69
+        },
+        {
+          "caller": "completeJson",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 72
+        },
+        {
+          "caller": "completeJson",
+          "callee": "response.body",
+          "lineNumber": 72
+        },
+        {
+          "caller": "completeJson",
+          "callee": "root.path(\"choices\").path(0).path(\"message\").path",
+          "lineNumber": 73
+        },
+        {
+          "caller": "completeJson",
+          "callee": "root.path(\"choices\").path(0).path",
+          "lineNumber": 73
+        },
+        {
+          "caller": "completeJson",
+          "callee": "root.path(\"choices\").path",
+          "lineNumber": 73
+        },
+        {
+          "caller": "completeJson",
+          "callee": "root.path",
+          "lineNumber": 73
+        },
+        {
+          "caller": "completeJson",
+          "callee": "content.isTextual",
+          "lineNumber": 74
+        },
+        {
+          "caller": "completeJson",
+          "callee": "content.asText().isBlank",
+          "lineNumber": 74
+        },
+        {
+          "caller": "completeJson",
+          "callee": "content.asText",
+          "lineNumber": 74
+        },
+        {
+          "caller": "completeJson",
+          "callee": "new BusinessException",
+          "lineNumber": 75
+        },
+        {
+          "caller": "completeJson",
+          "callee": "content.asText",
+          "lineNumber": 77
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos(System.nanoTime() - startedAt).toMillis",
+          "lineNumber": 79
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos",
+          "lineNumber": 79
+        },
+        {
+          "caller": "completeJson",
+          "callee": "System.nanoTime",
+          "lineNumber": 79
+        },
+        {
+          "caller": "completeJson",
+          "callee": "log.warn",
+          "lineNumber": 80
+        },
+        {
+          "caller": "completeJson",
+          "callee": "exception.getErrorCode().getCode",
+          "lineNumber": 83
+        },
+        {
+          "caller": "completeJson",
+          "callee": "exception.getErrorCode",
+          "lineNumber": 83
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos(System.nanoTime() - startedAt).toMillis",
+          "lineNumber": 86
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos",
+          "lineNumber": 86
+        },
+        {
+          "caller": "completeJson",
+          "callee": "System.nanoTime",
+          "lineNumber": 86
+        },
+        {
+          "caller": "completeJson",
+          "callee": "log.warn",
+          "lineNumber": 87
+        },
+        {
+          "caller": "completeJson",
+          "callee": "new BusinessException",
+          "lineNumber": 88
+        },
+        {
+          "caller": "completeJson",
+          "callee": "ErrorCode.AI_TIMEOUT.getMessage",
+          "lineNumber": 88
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Thread.currentThread().interrupt",
+          "lineNumber": 90
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Thread.currentThread",
+          "lineNumber": 90
+        },
+        {
+          "caller": "completeJson",
+          "callee": "new BusinessException",
+          "lineNumber": 91
+        },
+        {
+          "caller": "completeJson",
+          "callee": "ErrorCode.AI_NORMALIZE_FAILED.getMessage",
+          "lineNumber": 91
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos(System.nanoTime() - startedAt).toMillis",
+          "lineNumber": 93
+        },
+        {
+          "caller": "completeJson",
+          "callee": "Duration.ofNanos",
+          "lineNumber": 93
+        },
+        {
+          "caller": "completeJson",
+          "callee": "System.nanoTime",
+          "lineNumber": 93
+        },
+        {
+          "caller": "completeJson",
+          "callee": "log.warn",
+          "lineNumber": 94
+        },
+        {
+          "caller": "completeJson",
+          "callee": "ErrorCode.AI_NORMALIZE_FAILED.getCode",
+          "lineNumber": 97
+        },
+        {
+          "caller": "completeJson",
+          "callee": "new BusinessException",
+          "lineNumber": 98
+        },
+        {
+          "caller": "completeJson",
+          "callee": "ErrorCode.AI_NORMALIZE_FAILED.getMessage",
+          "lineNumber": 98
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "normalizeVocabulary",
+          "startLine": 10,
+          "endLine": 25,
+          "params": [
+            "rawText",
+            "prompt"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "LocalFallbackAiClient",
+          "startLine": 7,
+          "endLine": 26,
+          "methods": [
+            "normalizeVocabulary"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "normalizeVocabulary",
+          "line": 10,
+          "isDefault": false
+        },
+        {
+          "name": "LocalFallbackAiClient",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeVocabulary",
+          "callee": "rawText.trim",
+          "lineNumber": 12
+        },
+        {
+          "caller": "normalizeVocabulary",
+          "callee": "new NormalizeVocabularyResponse",
+          "lineNumber": 13
+        },
+        {
+          "caller": "normalizeVocabulary",
+          "callee": "List.of",
+          "lineNumber": 20
+        },
+        {
+          "caller": "normalizeVocabulary",
+          "callee": "List.of",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "normalize",
+          "startLine": 27,
+          "endLine": 32,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "normalizeBulk",
+          "startLine": 34,
+          "endLine": 39,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getNormalizeQuota",
+          "startLine": 41,
+          "endLine": 44,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AiVocabularyController",
+          "startLine": 19,
+          "endLine": 45,
+          "methods": [
+            "normalize",
+            "normalizeBulk",
+            "getNormalizeQuota"
+          ],
+          "properties": [
+            "aiVocabularyService",
+            "aiNormalizeQuotaService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "normalize",
+          "line": 27,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeBulk",
+          "line": 34,
+          "isDefault": false
+        },
+        {
+          "name": "getNormalizeQuota",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "AiVocabularyController",
+          "line": 19,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalize",
+          "callee": "ApiResponse.success",
+          "lineNumber": 31
+        },
+        {
+          "caller": "normalize",
+          "callee": "aiVocabularyService.normalize",
+          "lineNumber": 31
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "ApiResponse.success",
+          "lineNumber": 38
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "aiVocabularyService.normalizeBulk",
+          "lineNumber": 38
+        },
+        {
+          "caller": "getNormalizeQuota",
+          "callee": "ApiResponse.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getNormalizeQuota",
+          "callee": "aiNormalizeQuotaService.getCurrentQuota",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 12,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 15,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "functions": [
+        {
+          "name": "BulkVocabularyJsonParser",
+          "startLine": 12,
+          "endLine": 14,
+          "params": [
+            "vocabularyNormalizeJsonParser"
+          ]
+        },
+        {
+          "name": "parse",
+          "startLine": 16,
+          "endLine": 18,
+          "params": [
+            "content"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BulkVocabularyJsonParser",
+          "startLine": 7,
+          "endLine": 19,
+          "methods": [
+            "BulkVocabularyJsonParser",
+            "parse"
+          ],
+          "properties": [
+            "vocabularyNormalizeJsonParser"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "BulkVocabularyJsonParser",
+          "line": 12,
+          "isDefault": false
+        },
+        {
+          "name": "parse",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "BulkVocabularyJsonParser",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parse",
+          "callee": "vocabularyNormalizeJsonParser.parseBulk",
+          "lineNumber": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 200,
+      "nonEmptyLines": 180,
+      "functions": [
+        {
+          "name": "VocabularyNormalizeJsonParser",
+          "startLine": 19,
+          "endLine": 21,
+          "params": [
+            "objectMapper"
+          ]
+        },
+        {
+          "name": "parseSingle",
+          "startLine": 23,
+          "endLine": 35,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "parseBulk",
+          "startLine": 37,
+          "endLine": 70,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "toSingleResponse",
+          "startLine": 72,
+          "endLine": 98,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "extractJson",
+          "startLine": 100,
+          "endLine": 126,
+          "params": [
+            "content"
+          ]
+        },
+        {
+          "name": "trimToBalancedJson",
+          "startLine": 128,
+          "endLine": 162,
+          "params": [
+            "candidate"
+          ]
+        },
+        {
+          "name": "requiredText",
+          "startLine": 164,
+          "endLine": 170,
+          "params": [
+            "node",
+            "fieldName"
+          ]
+        },
+        {
+          "name": "textArray",
+          "startLine": 172,
+          "endLine": 190,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "normalizeDifficulty",
+          "startLine": 192,
+          "endLine": 199,
+          "params": [
+            "difficulty"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VocabularyNormalizeJsonParser",
+          "startLine": 14,
+          "endLine": 200,
+          "methods": [
+            "VocabularyNormalizeJsonParser",
+            "parseSingle",
+            "parseBulk",
+            "toSingleResponse",
+            "extractJson",
+            "trimToBalancedJson",
+            "requiredText",
+            "textArray",
+            "normalizeDifficulty"
+          ],
+          "properties": [
+            "objectMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VocabularyNormalizeJsonParser",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "parseSingle",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "parseBulk",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "VocabularyNormalizeJsonParser",
+          "line": 14,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "parseSingle",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 25
+        },
+        {
+          "caller": "parseSingle",
+          "callee": "extractJson",
+          "lineNumber": 25
+        },
+        {
+          "caller": "parseSingle",
+          "callee": "node.isObject",
+          "lineNumber": 26
+        },
+        {
+          "caller": "parseSingle",
+          "callee": "new BusinessException",
+          "lineNumber": 27
+        },
+        {
+          "caller": "parseSingle",
+          "callee": "toSingleResponse",
+          "lineNumber": 29
+        },
+        {
+          "caller": "parseSingle",
+          "callee": "new BusinessException",
+          "lineNumber": 33
+        },
+        {
+          "caller": "parseSingle",
+          "callee": "ErrorCode.AI_RESPONSE_INVALID.getMessage",
+          "lineNumber": 33
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 39
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "extractJson",
+          "lineNumber": 39
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "node.isArray",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "node.path",
+          "lineNumber": 40
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "itemsNode.isArray",
+          "lineNumber": 41
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "new BusinessException",
+          "lineNumber": 42
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "new ArrayList<>",
+          "lineNumber": 45
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "toSingleResponse",
+          "lineNumber": 47
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "items.add",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "new NormalizeBulkVocabularyItemResponse",
+          "lineNumber": 48
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.term",
+          "lineNumber": 49
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.meaning",
+          "lineNumber": 50
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.vietnameseMeaning",
+          "lineNumber": 51
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.pronunciation",
+          "lineNumber": 52
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.partOfSpeech",
+          "lineNumber": 53
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.exampleSentence",
+          "lineNumber": 54
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.synonyms",
+          "lineNumber": 55
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.antonyms",
+          "lineNumber": 56
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.difficulty",
+          "lineNumber": 57
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "single.aiExplanation",
+          "lineNumber": 58
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "items.isEmpty",
+          "lineNumber": 61
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "new BusinessException",
+          "lineNumber": 62
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "new BusinessException",
+          "lineNumber": 68
+        },
+        {
+          "caller": "parseBulk",
+          "callee": "ErrorCode.AI_RESPONSE_INVALID.getMessage",
+          "lineNumber": 68
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "node.isObject",
+          "lineNumber": 73
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "new BusinessException",
+          "lineNumber": 74
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 77
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 78
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 79
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 80
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 81
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 82
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "normalizeDifficulty",
+          "lineNumber": 83
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 83
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "requiredText",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "new NormalizeVocabularyResponse",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "textArray",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "node.path",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "textArray",
+          "lineNumber": 94
+        },
+        {
+          "caller": "toSingleResponse",
+          "callee": "node.path",
+          "lineNumber": 94
+        },
+        {
+          "caller": "extractJson",
+          "callee": "content.isBlank",
+          "lineNumber": 101
+        },
+        {
+          "caller": "extractJson",
+          "callee": "new BusinessException",
+          "lineNumber": 102
+        },
+        {
+          "caller": "extractJson",
+          "callee": "content.trim",
+          "lineNumber": 105
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.startsWith",
+          "lineNumber": 106
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.indexOf",
+          "lineNumber": 107
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.lastIndexOf",
+          "lineNumber": 108
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.substring(firstNewline + 1, closingFence).trim",
+          "lineNumber": 110
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.substring",
+          "lineNumber": 110
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.startsWith",
+          "lineNumber": 114
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.startsWith",
+          "lineNumber": 114
+        },
+        {
+          "caller": "extractJson",
+          "callee": "trimToBalancedJson",
+          "lineNumber": 115
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.indexOf",
+          "lineNumber": 118
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.indexOf",
+          "lineNumber": 119
+        },
+        {
+          "caller": "extractJson",
+          "callee": "new BusinessException",
+          "lineNumber": 121
+        },
+        {
+          "caller": "extractJson",
+          "callee": "trimToBalancedJson",
+          "lineNumber": 125
+        },
+        {
+          "caller": "extractJson",
+          "callee": "candidate.substring",
+          "lineNumber": 125
+        },
+        {
+          "caller": "trimToBalancedJson",
+          "callee": "candidate.charAt",
+          "lineNumber": 129
+        },
+        {
+          "caller": "trimToBalancedJson",
+          "callee": "candidate.length",
+          "lineNumber": 135
+        },
+        {
+          "caller": "trimToBalancedJson",
+          "callee": "candidate.charAt",
+          "lineNumber": 136
+        },
+        {
+          "caller": "trimToBalancedJson",
+          "callee": "candidate.substring",
+          "lineNumber": 157
+        },
+        {
+          "caller": "trimToBalancedJson",
+          "callee": "new BusinessException",
+          "lineNumber": 161
+        },
+        {
+          "caller": "requiredText",
+          "callee": "node.path",
+          "lineNumber": 165
+        },
+        {
+          "caller": "requiredText",
+          "callee": "value.isTextual",
+          "lineNumber": 166
+        },
+        {
+          "caller": "requiredText",
+          "callee": "value.asText().trim().isBlank",
+          "lineNumber": 166
+        },
+        {
+          "caller": "requiredText",
+          "callee": "value.asText().trim",
+          "lineNumber": 166
+        },
+        {
+          "caller": "requiredText",
+          "callee": "value.asText",
+          "lineNumber": 166
+        },
+        {
+          "caller": "requiredText",
+          "callee": "new BusinessException",
+          "lineNumber": 167
+        },
+        {
+          "caller": "requiredText",
+          "callee": "value.asText().trim",
+          "lineNumber": 169
+        },
+        {
+          "caller": "requiredText",
+          "callee": "value.asText",
+          "lineNumber": 169
+        },
+        {
+          "caller": "textArray",
+          "callee": "node.isMissingNode",
+          "lineNumber": 173
+        },
+        {
+          "caller": "textArray",
+          "callee": "node.isNull",
+          "lineNumber": 173
+        },
+        {
+          "caller": "textArray",
+          "callee": "List.of",
+          "lineNumber": 174
+        },
+        {
+          "caller": "textArray",
+          "callee": "node.isArray",
+          "lineNumber": 176
+        },
+        {
+          "caller": "textArray",
+          "callee": "new BusinessException",
+          "lineNumber": 177
+        },
+        {
+          "caller": "textArray",
+          "callee": "new ArrayList<>",
+          "lineNumber": 179
+        },
+        {
+          "caller": "textArray",
+          "callee": "item.isTextual",
+          "lineNumber": 181
+        },
+        {
+          "caller": "textArray",
+          "callee": "new BusinessException",
+          "lineNumber": 182
+        },
+        {
+          "caller": "textArray",
+          "callee": "item.asText().trim",
+          "lineNumber": 184
+        },
+        {
+          "caller": "textArray",
+          "callee": "item.asText",
+          "lineNumber": 184
+        },
+        {
+          "caller": "textArray",
+          "callee": "text.isBlank",
+          "lineNumber": 185
+        },
+        {
+          "caller": "textArray",
+          "callee": "values.add",
+          "lineNumber": 186
+        },
+        {
+          "caller": "textArray",
+          "callee": "List.copyOf",
+          "lineNumber": 189
+        },
+        {
+          "caller": "normalizeDifficulty",
+          "callee": "difficulty.trim().toUpperCase",
+          "lineNumber": 193
+        },
+        {
+          "caller": "normalizeDifficulty",
+          "callee": "difficulty.trim",
+          "lineNumber": 193
+        },
+        {
+          "caller": "normalizeDifficulty",
+          "callee": "new BusinessException",
+          "lineNumber": 197
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 4,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 9,
+          "endLine": 52,
+          "params": [
+            "terms"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BulkVocabularyNormalizePromptBuilder",
+          "startLine": 6,
+          "endLine": 53,
+          "methods": [
+            "build"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 9,
+          "isDefault": false
+        },
+        {
+          "name": "BulkVocabularyNormalizePromptBuilder",
+          "line": 6,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "\"\"\"\r\n                Normalize these English vocabulary terms into one strict JSON array.\r\n\r\n                Output rules:\r\n                Return JSON only.\r\n                Do not use markdown.\r\n                Do not wrap output in a code block.\r\n                Do not include explanation outside JSON.\r\n                Do not include conversational text.\r\n                Return exactly one JSON array.\r\n\r\n                Expected structure:\r\n                [\r\n                  {\r\n                    \"term\": \"\",\r\n                    \"meaning\": \"\",\r\n                    \"vietnameseMeaning\": \"\",\r\n                    \"pronunciation\": \"\",\r\n                    \"partOfSpeech\": \"\",\r\n                    \"exampleSentence\": \"\",\r\n                    \"synonyms\": [],\r\n                    \"antonyms\": [],\r\n                    \"difficulty\": \"\",\r\n                    \"aiExplanation\": \"\"\r\n                  }\r\n                ]\r\n\r\n                Field rules:\r\n                term: normalized English headword or phrase.\r\n                meaning: concise English learner-friendly definition.\r\n                vietnameseMeaning: clear, natural Vietnamese meaning for learners.\r\n                pronunciation: IPA pronunciation, for example \"/əˈbændən/\".\r\n                partOfSpeech: common part of speech such as noun, verb, adjective, adverb, phrase.\r\n                exampleSentence: one natural, simple, educational English sentence.\r\n                synonyms: JSON array of short English synonyms; empty array if none.\r\n                antonyms: JSON array of short English antonyms; empty array if none.\r\n                difficulty: exactly one of BEGINNER, INTERMEDIATE, ADVANCED based on common English usage.\r\n                aiExplanation: one concise sentence explaining normalization choices.\r\n\r\n                Terms:\r\n                %s\r\n                \"\"\".formatted",
+          "lineNumber": 10
+        },
+        {
+          "caller": "build",
+          "callee": "String.join",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 49,
+      "nonEmptyLines": 42,
+      "functions": [
+        {
+          "name": "build",
+          "startLine": 8,
+          "endLine": 48,
+          "params": [
+            "rawText"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VocabularyNormalizePromptBuilder",
+          "startLine": 5,
+          "endLine": 49,
+          "methods": [
+            "build"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "build",
+          "line": 8,
+          "isDefault": false
+        },
+        {
+          "name": "VocabularyNormalizePromptBuilder",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "build",
+          "callee": "\"\"\"\r\n                Normalize this English vocabulary input into one strict JSON object.\r\n\r\n                Output rules:\r\n                Return JSON only.\r\n                Do not use markdown.\r\n                Do not wrap output in a code block.\r\n                Do not include explanation outside JSON.\r\n                Do not include conversational text.\r\n\r\n                Required JSON structure:\r\n                {\r\n                  \"term\": \"\",\r\n                  \"meaning\": \"\",\r\n                  \"vietnameseMeaning\": \"\",\r\n                  \"pronunciation\": \"\",\r\n                  \"partOfSpeech\": \"\",\r\n                  \"exampleSentence\": \"\",\r\n                  \"synonyms\": [],\r\n                  \"antonyms\": [],\r\n                  \"difficulty\": \"\",\r\n                  \"aiExplanation\": \"\"\r\n                }\r\n\r\n                Field rules:\r\n                term: normalized English headword or phrase.\r\n                meaning: concise English learner-friendly definition.\r\n                vietnameseMeaning: clear, natural Vietnamese meaning for learners.\r\n                pronunciation: IPA pronunciation, for example \"/əˈbændən/\".\r\n                partOfSpeech: common part of speech such as noun, verb, adjective, adverb, phrase.\r\n                exampleSentence: one natural, simple, educational English sentence.\r\n                synonyms: JSON array of short English synonyms; empty array if none.\r\n                antonyms: JSON array of short English antonyms; empty array if none.\r\n                difficulty: exactly one of BEGINNER, INTERMEDIATE, ADVANCED based on common English usage.\r\n                aiExplanation: one concise sentence explaining normalization choices.\r\n\r\n                Input:\r\n                %s\r\n                \"\"\".formatted",
+          "lineNumber": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 170,
+      "nonEmptyLines": 151,
+      "functions": [
+        {
+          "name": "AiVocabularyService",
+          "startLine": 40,
+          "endLine": 58,
+          "params": [
+            "aiClient",
+            "groqVocabularyClient",
+            "promptBuilder",
+            "bulkPromptBuilder",
+            "bulkVocabularyJsonParser",
+            "vocabularyNormalizeJsonParser",
+            "aiNormalizeQuotaService"
+          ]
+        },
+        {
+          "name": "AiVocabularyService",
+          "startLine": 60,
+          "endLine": 71,
+          "params": [
+            "aiClient",
+            "promptBuilder"
+          ]
+        },
+        {
+          "name": "normalize",
+          "startLine": 73,
+          "endLine": 105,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "normalizeBulk",
+          "startLine": 107,
+          "endLine": 126,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "resolveProvider",
+          "startLine": 128,
+          "endLine": 132,
+          "params": [
+            "provider"
+          ]
+        },
+        {
+          "name": "normalizeRawTerms",
+          "startLine": 134,
+          "endLine": 144,
+          "params": [
+            "rawText"
+          ]
+        },
+        {
+          "name": "resolveApiKey",
+          "startLine": 146,
+          "endLine": 154,
+          "params": [
+            "userApiKey"
+          ]
+        },
+        {
+          "name": "fallbackNormalize",
+          "startLine": 156,
+          "endLine": 169,
+          "params": [
+            "rawText"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AiVocabularyService",
+          "startLine": 25,
+          "endLine": 170,
+          "methods": [
+            "AiVocabularyService",
+            "AiVocabularyService",
+            "normalize",
+            "normalizeBulk",
+            "resolveProvider",
+            "normalizeRawTerms",
+            "resolveApiKey",
+            "fallbackNormalize"
+          ],
+          "properties": [
+            "aiClient",
+            "groqVocabularyClient",
+            "promptBuilder",
+            "bulkPromptBuilder",
+            "bulkVocabularyJsonParser",
+            "vocabularyNormalizeJsonParser",
+            "aiNormalizeQuotaService",
+            "legacyAiClientMode",
+            "systemGroqApiKey"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "AiVocabularyService",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "AiVocabularyService",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "normalize",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "normalizeBulk",
+          "line": 107,
+          "isDefault": false
+        },
+        {
+          "name": "AiVocabularyService",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "AiVocabularyService",
+          "callee": "new ObjectMapper",
+          "lineNumber": 61
+        },
+        {
+          "caller": "AiVocabularyService",
+          "callee": "new VocabularyNormalizeJsonParser",
+          "lineNumber": 62
+        },
+        {
+          "caller": "AiVocabularyService",
+          "callee": "new GroqVocabularyClient",
+          "lineNumber": 64
+        },
+        {
+          "caller": "AiVocabularyService",
+          "callee": "new BulkVocabularyNormalizePromptBuilder",
+          "lineNumber": 66
+        },
+        {
+          "caller": "AiVocabularyService",
+          "callee": "new BulkVocabularyJsonParser",
+          "lineNumber": 68
+        },
+        {
+          "caller": "normalize",
+          "callee": "request.rawText().trim",
+          "lineNumber": 74
+        },
+        {
+          "caller": "normalize",
+          "callee": "request.rawText",
+          "lineNumber": 74
+        },
+        {
+          "caller": "normalize",
+          "callee": "rawText.isBlank",
+          "lineNumber": 75
+        },
+        {
+          "caller": "normalize",
+          "callee": "new BusinessException",
+          "lineNumber": 76
+        },
+        {
+          "caller": "normalize",
+          "callee": "promptBuilder.build",
+          "lineNumber": 79
+        },
+        {
+          "caller": "normalize",
+          "callee": "aiClient.normalizeVocabulary",
+          "lineNumber": 82
+        },
+        {
+          "caller": "normalize",
+          "callee": "fallbackNormalize",
+          "lineNumber": 86
+        },
+        {
+          "caller": "normalize",
+          "callee": "resolveProvider",
+          "lineNumber": 90
+        },
+        {
+          "caller": "normalize",
+          "callee": "request.provider",
+          "lineNumber": 90
+        },
+        {
+          "caller": "normalize",
+          "callee": "\"GROQ\".equals",
+          "lineNumber": 91
+        },
+        {
+          "caller": "normalize",
+          "callee": "new BusinessException",
+          "lineNumber": 92
+        },
+        {
+          "caller": "normalize",
+          "callee": "resolveApiKey",
+          "lineNumber": 95
+        },
+        {
+          "caller": "normalize",
+          "callee": "request.userApiKey",
+          "lineNumber": 95
+        },
+        {
+          "caller": "normalize",
+          "callee": "new BusinessException",
+          "lineNumber": 97
+        },
+        {
+          "caller": "normalize",
+          "callee": "aiNormalizeQuotaService.shouldApplySystemTrialQuota",
+          "lineNumber": 99
+        },
+        {
+          "caller": "normalize",
+          "callee": "request.userApiKey",
+          "lineNumber": 99
+        },
+        {
+          "caller": "normalize",
+          "callee": "aiNormalizeQuotaService.consumeTrialQuota",
+          "lineNumber": 100
+        },
+        {
+          "caller": "normalize",
+          "callee": "groqVocabularyClient.completeJson",
+          "lineNumber": 103
+        },
+        {
+          "caller": "normalize",
+          "callee": "vocabularyNormalizeJsonParser.parseSingle",
+          "lineNumber": 104
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "normalizeRawTerms",
+          "lineNumber": 108
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "request.rawText",
+          "lineNumber": 108
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "terms.isEmpty",
+          "lineNumber": 109
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "new BusinessException",
+          "lineNumber": 110
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "resolveProvider",
+          "lineNumber": 113
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "request.provider",
+          "lineNumber": 113
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "\"GROQ\".equals",
+          "lineNumber": 114
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "new BusinessException",
+          "lineNumber": 115
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "resolveApiKey",
+          "lineNumber": 118
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "request.userApiKey",
+          "lineNumber": 118
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "new BusinessException",
+          "lineNumber": 120
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "bulkPromptBuilder.build",
+          "lineNumber": 123
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "groqVocabularyClient.completeJson",
+          "lineNumber": 124
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "new NormalizeBulkVocabularyResponse",
+          "lineNumber": 125
+        },
+        {
+          "caller": "normalizeBulk",
+          "callee": "bulkVocabularyJsonParser.parse",
+          "lineNumber": 125
+        },
+        {
+          "caller": "resolveProvider",
+          "callee": "provider.isBlank",
+          "lineNumber": 129
+        },
+        {
+          "caller": "resolveProvider",
+          "callee": "provider.trim().toUpperCase",
+          "lineNumber": 131
+        },
+        {
+          "caller": "resolveProvider",
+          "callee": "provider.trim",
+          "lineNumber": 131
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "rawText.trim().isBlank",
+          "lineNumber": 135
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "rawText.trim",
+          "lineNumber": 135
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "List.of",
+          "lineNumber": 136
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "new LinkedHashSet<>",
+          "lineNumber": 138
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "Arrays.stream(rawText.split(\"[,\\\\r\\\\n]+\"))\r\n                .map(String::trim)\r\n                .filter(term -> !term.isBlank()).forEach",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "Arrays.stream(rawText.split(\"[,\\\\r\\\\n]+\"))\r\n                .map(String::trim).filter",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "Arrays.stream(rawText.split(\"[,\\\\r\\\\n]+\")).map",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "Arrays.stream",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "rawText.split",
+          "lineNumber": 139
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "term.isBlank",
+          "lineNumber": 141
+        },
+        {
+          "caller": "normalizeRawTerms",
+          "callee": "List.copyOf",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resolveApiKey",
+          "callee": "userApiKey.trim().isBlank",
+          "lineNumber": 147
+        },
+        {
+          "caller": "resolveApiKey",
+          "callee": "userApiKey.trim",
+          "lineNumber": 147
+        },
+        {
+          "caller": "resolveApiKey",
+          "callee": "userApiKey.trim",
+          "lineNumber": 148
+        },
+        {
+          "caller": "resolveApiKey",
+          "callee": "systemGroqApiKey.trim().isBlank",
+          "lineNumber": 150
+        },
+        {
+          "caller": "resolveApiKey",
+          "callee": "systemGroqApiKey.trim",
+          "lineNumber": 150
+        },
+        {
+          "caller": "resolveApiKey",
+          "callee": "systemGroqApiKey.trim",
+          "lineNumber": 151
+        },
+        {
+          "caller": "fallbackNormalize",
+          "callee": "new NormalizeVocabularyResponse",
+          "lineNumber": 157
+        },
+        {
+          "caller": "fallbackNormalize",
+          "callee": "List.of",
+          "lineNumber": 164
+        },
+        {
+          "caller": "fallbackNormalize",
+          "callee": "List.of",
+          "lineNumber": 165
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 5,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 319,
+      "nonEmptyLines": 311,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "functions": [
+        {
+          "name": "BaseException",
+          "startLine": 9,
+          "endLine": 12,
+          "params": [
+            "errorCode"
+          ]
+        },
+        {
+          "name": "BaseException",
+          "startLine": 14,
+          "endLine": 17,
+          "params": [
+            "errorCode",
+            "message"
+          ]
+        },
+        {
+          "name": "BaseException",
+          "startLine": 19,
+          "endLine": 22,
+          "params": [
+            "errorCode",
+            "message",
+            "cause"
+          ]
+        },
+        {
+          "name": "getErrorCode",
+          "startLine": 24,
+          "endLine": 26,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BaseException",
+          "startLine": 5,
+          "endLine": 27,
+          "methods": [
+            "BaseException",
+            "BaseException",
+            "BaseException",
+            "getErrorCode"
+          ],
+          "properties": [
+            "errorCode"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getErrorCode",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "BaseException",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "BaseException",
+          "callee": "errorCode.getMessage",
+          "lineNumber": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 2,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "functions": [
+        {
+          "name": "BusinessException",
+          "startLine": 7,
+          "endLine": 9,
+          "params": [
+            "errorCode"
+          ]
+        },
+        {
+          "name": "BusinessException",
+          "startLine": 11,
+          "endLine": 13,
+          "params": [
+            "errorCode",
+            "message"
+          ]
+        },
+        {
+          "name": "BusinessException",
+          "startLine": 15,
+          "endLine": 17,
+          "params": [
+            "errorCode",
+            "message",
+            "cause"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "BusinessException",
+          "startLine": 5,
+          "endLine": 18,
+          "methods": [
+            "BusinessException",
+            "BusinessException",
+            "BusinessException"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "BusinessException",
+          "line": 7,
+          "isDefault": false
+        },
+        {
+          "name": "BusinessException",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "BusinessException",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "BusinessException",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 4,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 19,
+      "functions": [
+        {
+          "name": "search",
+          "startLine": 19,
+          "endLine": 22,
+          "params": [
+            "word"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DictionaryController",
+          "startLine": 12,
+          "endLine": 23,
+          "methods": [
+            "search"
+          ],
+          "properties": [
+            "dictionaryService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "search",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "DictionaryController",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "search",
+          "callee": "ApiResponse.success",
+          "lineNumber": 21
+        },
+        {
+          "caller": "search",
+          "callee": "dictionaryService.search",
+          "lineNumber": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 2,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 147,
+      "nonEmptyLines": 129,
+      "functions": [
+        {
+          "name": "toResponse",
+          "startLine": 19,
+          "endLine": 31,
+          "params": [
+            "providerRoot"
+          ]
+        },
+        {
+          "name": "resolveEntry",
+          "startLine": 33,
+          "endLine": 44,
+          "params": [
+            "providerRoot"
+          ]
+        },
+        {
+          "name": "resolvePhonetic",
+          "startLine": 46,
+          "endLine": 63,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "resolveAudioUrl",
+          "startLine": 65,
+          "endLine": 77,
+          "params": [
+            "entry"
+          ]
+        },
+        {
+          "name": "toMeanings",
+          "startLine": 79,
+          "endLine": 93,
+          "params": [
+            "meaningsNode"
+          ]
+        },
+        {
+          "name": "toDefinitions",
+          "startLine": 95,
+          "endLine": 120,
+          "params": [
+            "meaningNode"
+          ]
+        },
+        {
+          "name": "merge",
+          "startLine": 122,
+          "endLine": 127,
+          "params": [
+            "first",
+            "second"
+          ]
+        },
+        {
+          "name": "toTextList",
+          "startLine": 129,
+          "endLine": 142,
+          "params": [
+            "node"
+          ]
+        },
+        {
+          "name": "text",
+          "startLine": 144,
+          "endLine": 146,
+          "params": [
+            "node"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DictionaryMapper",
+          "startLine": 16,
+          "endLine": 147,
+          "methods": [
+            "toResponse",
+            "resolveEntry",
+            "resolvePhonetic",
+            "resolveAudioUrl",
+            "toMeanings",
+            "toDefinitions",
+            "merge",
+            "toTextList",
+            "text"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "toResponse",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "DictionaryMapper",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toResponse",
+          "callee": "resolveEntry",
+          "lineNumber": 20
+        },
+        {
+          "caller": "toResponse",
+          "callee": "text",
+          "lineNumber": 21
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entry.path",
+          "lineNumber": 21
+        },
+        {
+          "caller": "toResponse",
+          "callee": "resolvePhonetic",
+          "lineNumber": 22
+        },
+        {
+          "caller": "toResponse",
+          "callee": "resolveAudioUrl",
+          "lineNumber": 23
+        },
+        {
+          "caller": "toResponse",
+          "callee": "toMeanings",
+          "lineNumber": 24
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entry.path",
+          "lineNumber": 24
+        },
+        {
+          "caller": "toResponse",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 26
+        },
+        {
+          "caller": "toResponse",
+          "callee": "meanings.isEmpty",
+          "lineNumber": 26
+        },
+        {
+          "caller": "toResponse",
+          "callee": "new BusinessException",
+          "lineNumber": 27
+        },
+        {
+          "caller": "toResponse",
+          "callee": "new DictionaryWordResponse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "providerRoot.isNull",
+          "lineNumber": 34
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "new BusinessException",
+          "lineNumber": 35
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "providerRoot.isArray",
+          "lineNumber": 37
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "providerRoot.size",
+          "lineNumber": 37
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "providerRoot.get",
+          "lineNumber": 38
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "providerRoot.isObject",
+          "lineNumber": 40
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "providerRoot.has",
+          "lineNumber": 40
+        },
+        {
+          "caller": "resolveEntry",
+          "callee": "new BusinessException",
+          "lineNumber": 43
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "text",
+          "lineNumber": 47
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "entry.path",
+          "lineNumber": 47
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 48
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "entry.path",
+          "lineNumber": 52
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "phonetics.isArray",
+          "lineNumber": 53
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "text",
+          "lineNumber": 57
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "item.path",
+          "lineNumber": 57
+        },
+        {
+          "caller": "resolvePhonetic",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 58
+        },
+        {
+          "caller": "resolveAudioUrl",
+          "callee": "entry.path",
+          "lineNumber": 66
+        },
+        {
+          "caller": "resolveAudioUrl",
+          "callee": "phonetics.isArray",
+          "lineNumber": 67
+        },
+        {
+          "caller": "resolveAudioUrl",
+          "callee": "text",
+          "lineNumber": 71
+        },
+        {
+          "caller": "resolveAudioUrl",
+          "callee": "item.path",
+          "lineNumber": 71
+        },
+        {
+          "caller": "resolveAudioUrl",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 72
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "meaningsNode.isArray",
+          "lineNumber": 80
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "List.of",
+          "lineNumber": 81
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "new ArrayList<>",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "text",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "meaningNode.path",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "toDefinitions",
+          "lineNumber": 87
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "definitions.isEmpty",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "meanings.add",
+          "lineNumber": 89
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "new DictionaryMeaningResponse",
+          "lineNumber": 89
+        },
+        {
+          "caller": "toMeanings",
+          "callee": "List.copyOf",
+          "lineNumber": 92
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "meaningNode.path",
+          "lineNumber": 96
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "definitionsNode.isArray",
+          "lineNumber": 97
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "List.of",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "toTextList",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "meaningNode.path",
+          "lineNumber": 101
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "toTextList",
+          "lineNumber": 102
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "meaningNode.path",
+          "lineNumber": 102
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "new ArrayList<>",
+          "lineNumber": 103
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "text",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "definitionNode.path",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 107
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "merge",
+          "lineNumber": 110
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "toTextList",
+          "lineNumber": 110
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "definitionNode.path",
+          "lineNumber": 110
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "merge",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "toTextList",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "definitionNode.path",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "definitions.add",
+          "lineNumber": 112
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "new DictionaryDefinitionResponse",
+          "lineNumber": 112
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "text",
+          "lineNumber": 114
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "definitionNode.path",
+          "lineNumber": 114
+        },
+        {
+          "caller": "toDefinitions",
+          "callee": "List.copyOf",
+          "lineNumber": 119
+        },
+        {
+          "caller": "merge",
+          "callee": "new LinkedHashSet<>",
+          "lineNumber": 123
+        },
+        {
+          "caller": "merge",
+          "callee": "values.addAll",
+          "lineNumber": 124
+        },
+        {
+          "caller": "merge",
+          "callee": "values.addAll",
+          "lineNumber": 125
+        },
+        {
+          "caller": "merge",
+          "callee": "List.copyOf",
+          "lineNumber": 126
+        },
+        {
+          "caller": "toTextList",
+          "callee": "node.isArray",
+          "lineNumber": 130
+        },
+        {
+          "caller": "toTextList",
+          "callee": "List.of",
+          "lineNumber": 131
+        },
+        {
+          "caller": "toTextList",
+          "callee": "new ArrayList<>",
+          "lineNumber": 134
+        },
+        {
+          "caller": "toTextList",
+          "callee": "text",
+          "lineNumber": 136
+        },
+        {
+          "caller": "toTextList",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 137
+        },
+        {
+          "caller": "toTextList",
+          "callee": "values.add",
+          "lineNumber": 138
+        },
+        {
+          "caller": "toTextList",
+          "callee": "List.copyOf",
+          "lineNumber": 141
+        },
+        {
+          "caller": "text",
+          "callee": "node.isTextual",
+          "lineNumber": 145
+        },
+        {
+          "caller": "text",
+          "callee": "node.asText().trim",
+          "lineNumber": 145
+        },
+        {
+          "caller": "text",
+          "callee": "node.asText",
+          "lineNumber": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 2,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 5,
+      "classes": [
+        {
+          "name": "DictionaryProvider",
+          "startLine": 5,
+          "endLine": 8,
+          "methods": [
+            "search"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "DictionaryProvider",
+          "line": 5,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 133,
+      "nonEmptyLines": 120,
+      "functions": [
+        {
+          "name": "DictionaryProviderImpl",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "objectMapper",
+            "dictionaryMapper"
+          ]
+        },
+        {
+          "name": "search",
+          "startLine": 46,
+          "endLine": 115,
+          "params": [
+            "word"
+          ]
+        },
+        {
+          "name": "buildUri",
+          "startLine": 117,
+          "endLine": 132,
+          "params": [
+            "word"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DictionaryProviderImpl",
+          "startLine": 24,
+          "endLine": 133,
+          "methods": [
+            "DictionaryProviderImpl",
+            "search",
+            "buildUri"
+          ],
+          "properties": [
+            "CONNECT_TIMEOUT",
+            "REQUEST_TIMEOUT",
+            "objectMapper",
+            "dictionaryMapper",
+            "httpClient",
+            "baseUrl"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "DictionaryProviderImpl",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "search",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "DictionaryProviderImpl",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "DictionaryProviderImpl",
+          "callee": "HttpClient.newBuilder()\r\n                .connectTimeout(CONNECT_TIMEOUT).build",
+          "lineNumber": 41
+        },
+        {
+          "caller": "DictionaryProviderImpl",
+          "callee": "HttpClient.newBuilder().connectTimeout",
+          "lineNumber": 41
+        },
+        {
+          "caller": "DictionaryProviderImpl",
+          "callee": "HttpClient.newBuilder",
+          "lineNumber": 41
+        },
+        {
+          "caller": "search",
+          "callee": "UUID.randomUUID().toString",
+          "lineNumber": 48
+        },
+        {
+          "caller": "search",
+          "callee": "UUID.randomUUID",
+          "lineNumber": 48
+        },
+        {
+          "caller": "search",
+          "callee": "System.nanoTime",
+          "lineNumber": 49
+        },
+        {
+          "caller": "search",
+          "callee": "HttpRequest.newBuilder(buildUri(word))\r\n                    .timeout(REQUEST_TIMEOUT)\r\n                    .header(\"Accept\", \"application/json\")\r\n                    .GET().build",
+          "lineNumber": 52
+        },
+        {
+          "caller": "search",
+          "callee": "HttpRequest.newBuilder(buildUri(word))\r\n                    .timeout(REQUEST_TIMEOUT)\r\n                    .header(\"Accept\", \"application/json\").GET",
+          "lineNumber": 52
+        },
+        {
+          "caller": "search",
+          "callee": "HttpRequest.newBuilder(buildUri(word))\r\n                    .timeout(REQUEST_TIMEOUT).header",
+          "lineNumber": 52
+        },
+        {
+          "caller": "search",
+          "callee": "HttpRequest.newBuilder(buildUri(word)).timeout",
+          "lineNumber": 52
+        },
+        {
+          "caller": "search",
+          "callee": "HttpRequest.newBuilder",
+          "lineNumber": 52
+        },
+        {
+          "caller": "search",
+          "callee": "buildUri",
+          "lineNumber": 52
+        },
+        {
+          "caller": "search",
+          "callee": "httpClient.send",
+          "lineNumber": 58
+        },
+        {
+          "caller": "search",
+          "callee": "HttpResponse.BodyHandlers.ofString",
+          "lineNumber": 58
+        },
+        {
+          "caller": "search",
+          "callee": "Duration.ofNanos(System.nanoTime() - startedAt).toMillis",
+          "lineNumber": 59
+        },
+        {
+          "caller": "search",
+          "callee": "Duration.ofNanos",
+          "lineNumber": 59
+        },
+        {
+          "caller": "search",
+          "callee": "System.nanoTime",
+          "lineNumber": 59
+        },
+        {
+          "caller": "search",
+          "callee": "log.info",
+          "lineNumber": 60
+        },
+        {
+          "caller": "search",
+          "callee": "response.statusCode",
+          "lineNumber": 64
+        },
+        {
+          "caller": "search",
+          "callee": "response.statusCode",
+          "lineNumber": 66
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 67
+        },
+        {
+          "caller": "search",
+          "callee": "response.statusCode",
+          "lineNumber": 69
+        },
+        {
+          "caller": "search",
+          "callee": "response.statusCode",
+          "lineNumber": 69
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 70
+        },
+        {
+          "caller": "search",
+          "callee": "response.statusCode",
+          "lineNumber": 72
+        },
+        {
+          "caller": "search",
+          "callee": "response.statusCode",
+          "lineNumber": 72
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 73
+        },
+        {
+          "caller": "search",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 76
+        },
+        {
+          "caller": "search",
+          "callee": "response.body",
+          "lineNumber": 76
+        },
+        {
+          "caller": "search",
+          "callee": "dictionaryMapper.toResponse",
+          "lineNumber": 77
+        },
+        {
+          "caller": "search",
+          "callee": "log.warn",
+          "lineNumber": 79
+        },
+        {
+          "caller": "search",
+          "callee": "exception.getErrorCode().getCode",
+          "lineNumber": 82
+        },
+        {
+          "caller": "search",
+          "callee": "exception.getErrorCode",
+          "lineNumber": 82
+        },
+        {
+          "caller": "search",
+          "callee": "log.warn",
+          "lineNumber": 85
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 86
+        },
+        {
+          "caller": "search",
+          "callee": "ErrorCode.DICTIONARY_TIMEOUT.getMessage",
+          "lineNumber": 88
+        },
+        {
+          "caller": "search",
+          "callee": "Thread.currentThread().interrupt",
+          "lineNumber": 92
+        },
+        {
+          "caller": "search",
+          "callee": "Thread.currentThread",
+          "lineNumber": 92
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 93
+        },
+        {
+          "caller": "search",
+          "callee": "ErrorCode.DICTIONARY_PROVIDER_UNAVAILABLE.getMessage",
+          "lineNumber": 95
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 99
+        },
+        {
+          "caller": "search",
+          "callee": "ErrorCode.DICTIONARY_INVALID_RESPONSE.getMessage",
+          "lineNumber": 101
+        },
+        {
+          "caller": "search",
+          "callee": "log.warn",
+          "lineNumber": 105
+        },
+        {
+          "caller": "search",
+          "callee": "ErrorCode.DICTIONARY_PROVIDER_UNAVAILABLE.getCode",
+          "lineNumber": 108
+        },
+        {
+          "caller": "search",
+          "callee": "new BusinessException",
+          "lineNumber": 109
+        },
+        {
+          "caller": "search",
+          "callee": "ErrorCode.DICTIONARY_PROVIDER_UNAVAILABLE.getMessage",
+          "lineNumber": 111
+        },
+        {
+          "caller": "buildUri",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 118
+        },
+        {
+          "caller": "buildUri",
+          "callee": "new BusinessException",
+          "lineNumber": 119
+        },
+        {
+          "caller": "buildUri",
+          "callee": "URLEncoder.encode(word, StandardCharsets.UTF_8).replace",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildUri",
+          "callee": "URLEncoder.encode",
+          "lineNumber": 122
+        },
+        {
+          "caller": "buildUri",
+          "callee": "baseUrl.trim",
+          "lineNumber": 123
+        },
+        {
+          "caller": "buildUri",
+          "callee": "url.contains",
+          "lineNumber": 124
+        },
+        {
+          "caller": "buildUri",
+          "callee": "URI.create",
+          "lineNumber": 125
+        },
+        {
+          "caller": "buildUri",
+          "callee": "url.replace",
+          "lineNumber": 125
+        },
+        {
+          "caller": "buildUri",
+          "callee": "url.endsWith",
+          "lineNumber": 127
+        },
+        {
+          "caller": "buildUri",
+          "callee": "URI.create",
+          "lineNumber": 128
+        },
+        {
+          "caller": "buildUri",
+          "callee": "url.endsWith",
+          "lineNumber": 130
+        },
+        {
+          "caller": "buildUri",
+          "callee": "URI.create",
+          "lineNumber": 131
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 84,
+      "nonEmptyLines": 72,
+      "functions": [
+        {
+          "name": "search",
+          "startLine": 31,
+          "endLine": 43,
+          "params": [
+            "word"
+          ]
+        },
+        {
+          "name": "normalizeWord",
+          "startLine": 45,
+          "endLine": 58,
+          "params": [
+            "word"
+          ]
+        },
+        {
+          "name": "readCache",
+          "startLine": 60,
+          "endLine": 71,
+          "params": [
+            "cacheKey"
+          ]
+        },
+        {
+          "name": "writeCache",
+          "startLine": 73,
+          "endLine": 79,
+          "params": [
+            "cacheKey",
+            "response"
+          ]
+        },
+        {
+          "name": "cacheKey",
+          "startLine": 81,
+          "endLine": 83,
+          "params": [
+            "normalizedWord"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DictionaryService",
+          "startLine": 18,
+          "endLine": 84,
+          "methods": [
+            "search",
+            "normalizeWord",
+            "readCache",
+            "writeCache",
+            "cacheKey"
+          ],
+          "properties": [
+            "MAX_WORD_LENGTH",
+            "CACHE_TTL",
+            "ENGLISH_WORD_PATTERN",
+            "dictionaryProvider",
+            "stringRedisTemplate",
+            "objectMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "search",
+          "line": 31,
+          "isDefault": false
+        },
+        {
+          "name": "DictionaryService",
+          "line": 18,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "search",
+          "callee": "normalizeWord",
+          "lineNumber": 32
+        },
+        {
+          "caller": "search",
+          "callee": "cacheKey",
+          "lineNumber": 33
+        },
+        {
+          "caller": "search",
+          "callee": "readCache",
+          "lineNumber": 35
+        },
+        {
+          "caller": "search",
+          "callee": "cached.isPresent",
+          "lineNumber": 36
+        },
+        {
+          "caller": "search",
+          "callee": "cached.get",
+          "lineNumber": 37
+        },
+        {
+          "caller": "search",
+          "callee": "dictionaryProvider.search",
+          "lineNumber": 40
+        },
+        {
+          "caller": "search",
+          "callee": "writeCache",
+          "lineNumber": 41
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 46
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "new BusinessException",
+          "lineNumber": 47
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "word.trim().replaceAll",
+          "lineNumber": 50
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "word.trim",
+          "lineNumber": 50
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "normalized.length",
+          "lineNumber": 51
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "new BusinessException",
+          "lineNumber": 52
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "ENGLISH_WORD_PATTERN.matcher(normalized).matches",
+          "lineNumber": 54
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "ENGLISH_WORD_PATTERN.matcher",
+          "lineNumber": 54
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "new BusinessException",
+          "lineNumber": 55
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "normalized.toLowerCase",
+          "lineNumber": 57
+        },
+        {
+          "caller": "readCache",
+          "callee": "stringRedisTemplate.opsForValue().get",
+          "lineNumber": 62
+        },
+        {
+          "caller": "readCache",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 62
+        },
+        {
+          "caller": "readCache",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 63
+        },
+        {
+          "caller": "readCache",
+          "callee": "Optional.empty",
+          "lineNumber": 64
+        },
+        {
+          "caller": "readCache",
+          "callee": "Optional.of",
+          "lineNumber": 66
+        },
+        {
+          "caller": "readCache",
+          "callee": "objectMapper.readValue",
+          "lineNumber": 66
+        },
+        {
+          "caller": "readCache",
+          "callee": "log.warn",
+          "lineNumber": 68
+        },
+        {
+          "caller": "readCache",
+          "callee": "Optional.empty",
+          "lineNumber": 69
+        },
+        {
+          "caller": "writeCache",
+          "callee": "stringRedisTemplate.opsForValue().set",
+          "lineNumber": 75
+        },
+        {
+          "caller": "writeCache",
+          "callee": "stringRedisTemplate.opsForValue",
+          "lineNumber": 75
+        },
+        {
+          "caller": "writeCache",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 75
+        },
+        {
+          "caller": "writeCache",
+          "callee": "log.warn",
+          "lineNumber": 77
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 2,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 28,
+      "nonEmptyLines": 23,
+      "functions": [
+        {
+          "name": "ReviewSchedulerResolver",
+          "startLine": 16,
+          "endLine": 19,
+          "params": [
+            "schedulerList"
+          ]
+        },
+        {
+          "name": "resolve",
+          "startLine": 21,
+          "endLine": 27,
+          "params": [
+            "type"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReviewSchedulerResolver",
+          "startLine": 11,
+          "endLine": 28,
+          "methods": [
+            "ReviewSchedulerResolver",
+            "resolve"
+          ],
+          "properties": [
+            "schedulers"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReviewSchedulerResolver",
+          "line": 16,
+          "isDefault": false
+        },
+        {
+          "name": "resolve",
+          "line": 21,
+          "isDefault": false
+        },
+        {
+          "name": "ReviewSchedulerResolver",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ReviewSchedulerResolver",
+          "callee": "schedulerList.stream().collect",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ReviewSchedulerResolver",
+          "callee": "schedulerList.stream",
+          "lineNumber": 17
+        },
+        {
+          "caller": "ReviewSchedulerResolver",
+          "callee": "Collectors.toMap",
+          "lineNumber": 18
+        },
+        {
+          "caller": "ReviewSchedulerResolver",
+          "callee": "Function.identity",
+          "lineNumber": 18
+        },
+        {
+          "caller": "resolve",
+          "callee": "schedulers.get",
+          "lineNumber": 22
+        },
+        {
+          "caller": "resolve",
+          "callee": "new BusinessException",
+          "lineNumber": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 120,
+      "nonEmptyLines": 103,
+      "functions": [
+        {
+          "name": "uploadMp4",
+          "startLine": 35,
+          "endLine": 82,
+          "params": [
+            "file"
+          ]
+        },
+        {
+          "name": "assertConfigured",
+          "startLine": 84,
+          "endLine": 88,
+          "params": []
+        },
+        {
+          "name": "buildThumbnailUrl",
+          "startLine": 90,
+          "endLine": 92,
+          "params": [
+            "publicId"
+          ]
+        },
+        {
+          "name": "formatDuration",
+          "startLine": 94,
+          "endLine": 106,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "asString",
+          "startLine": 108,
+          "endLine": 110,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CloudinaryVideoStorageService",
+          "startLine": 17,
+          "endLine": 120,
+          "methods": [
+            "uploadMp4",
+            "assertConfigured",
+            "buildThumbnailUrl",
+            "formatDuration",
+            "asString"
+          ],
+          "properties": [
+            "STORAGE_PROVIDER",
+            "CHUNK_SIZE",
+            "cloudName",
+            "apiKey",
+            "apiSecret",
+            "uploadFolder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "uploadMp4",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "CloudinaryVideoStorageService",
+          "line": 17,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "uploadMp4",
+          "callee": "assertConfigured",
+          "lineNumber": 36
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "Files.createTempFile",
+          "lineNumber": 39
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "file.transferTo",
+          "lineNumber": 40
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "new Cloudinary",
+          "lineNumber": 42
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "ObjectUtils.asMap",
+          "lineNumber": 42
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "UUID.randomUUID().toString",
+          "lineNumber": 48
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "UUID.randomUUID",
+          "lineNumber": 48
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "cloudinary.uploader().uploadLarge",
+          "lineNumber": 49
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "cloudinary.uploader",
+          "lineNumber": 49
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "tempFile.toFile",
+          "lineNumber": 49
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "ObjectUtils.asMap",
+          "lineNumber": 49
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "asString",
+          "lineNumber": 56
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "result.get",
+          "lineNumber": 56
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "asString",
+          "lineNumber": 57
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "result.get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "new BusinessException",
+          "lineNumber": 59
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "new CloudinaryUploadResult",
+          "lineNumber": 62
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "buildThumbnailUrl",
+          "lineNumber": 65
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "formatDuration",
+          "lineNumber": 67
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "result.get",
+          "lineNumber": 67
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "new BusinessException",
+          "lineNumber": 72
+        },
+        {
+          "caller": "uploadMp4",
+          "callee": "Files.deleteIfExists",
+          "lineNumber": 76
+        },
+        {
+          "caller": "assertConfigured",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 85
+        },
+        {
+          "caller": "assertConfigured",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 85
+        },
+        {
+          "caller": "assertConfigured",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 85
+        },
+        {
+          "caller": "assertConfigured",
+          "callee": "new BusinessException",
+          "lineNumber": 86
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "Math.round",
+          "lineNumber": 98
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "number.doubleValue",
+          "lineNumber": 98
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "String.format",
+          "lineNumber": 103
+        },
+        {
+          "caller": "formatDuration",
+          "callee": "String.format",
+          "lineNumber": 105
+        },
+        {
+          "caller": "asString",
+          "callee": "value.toString",
+          "lineNumber": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 67,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "normalizeReturnsProviderResult",
+          "startLine": 19,
+          "endLine": 39,
+          "params": []
+        },
+        {
+          "name": "normalizeRejectsBlankRawText",
+          "startLine": 41,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "normalizeFallsBackWhenProviderFails",
+          "startLine": 54,
+          "endLine": 66,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "AiVocabularyServiceTest",
+          "startLine": 15,
+          "endLine": 67,
+          "methods": [
+            "normalizeReturnsProviderResult",
+            "normalizeRejectsBlankRawText",
+            "normalizeFallsBackWhenProviderFails"
+          ],
+          "properties": [
+            "promptBuilder"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "new NormalizeVocabularyResponse",
+          "lineNumber": 21
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "List.of",
+          "lineNumber": 28
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "List.of",
+          "lineNumber": 29
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "new AiVocabularyService",
+          "lineNumber": 34
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "service.normalize",
+          "lineNumber": 36
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "new NormalizeVocabularyRequest",
+          "lineNumber": 36
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "assertThat(response).isEqualTo",
+          "lineNumber": 38
+        },
+        {
+          "caller": "normalizeReturnsProviderResult",
+          "callee": "assertThat",
+          "lineNumber": 38
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "new AssertionError",
+          "lineNumber": 44
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "new AiVocabularyService",
+          "lineNumber": 46
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "assertThatThrownBy(() -> service.normalize(new NormalizeVocabularyRequest(\"   \")))\r\n                .isInstanceOf(BusinessException.class)\r\n                .extracting(\"errorCode\").isEqualTo",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "assertThatThrownBy(() -> service.normalize(new NormalizeVocabularyRequest(\"   \")))\r\n                .isInstanceOf(BusinessException.class).extracting",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "assertThatThrownBy(() -> service.normalize(new NormalizeVocabularyRequest(\"   \"))).isInstanceOf",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "assertThatThrownBy",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "service.normalize",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalizeRejectsBlankRawText",
+          "callee": "new NormalizeVocabularyRequest",
+          "lineNumber": 48
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "new IllegalStateException",
+          "lineNumber": 57
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "new AiVocabularyService",
+          "lineNumber": 59
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "service.normalize",
+          "lineNumber": 61
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "new NormalizeVocabularyRequest",
+          "lineNumber": 61
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "assertThat(response.term()).isEqualTo",
+          "lineNumber": 63
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "assertThat",
+          "lineNumber": 63
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "response.term",
+          "lineNumber": 63
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "assertThat(response.difficulty()).isEqualTo",
+          "lineNumber": 64
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "assertThat",
+          "lineNumber": 64
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "response.difficulty",
+          "lineNumber": 64
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "assertThat(response.aiExplanation()).contains",
+          "lineNumber": 65
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "assertThat",
+          "lineNumber": 65
+        },
+        {
+          "caller": "normalizeFallsBackWhenProviderFails",
+          "callee": "response.aiExplanation",
+          "lineNumber": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 0,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 60,
+      "nonEmptyLines": 53,
+      "functions": [
+        {
+          "name": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "startLine": 15,
+          "endLine": 59,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "DictionaryMapperTest",
+          "startLine": 10,
+          "endLine": 60,
+          "methods": [
+            "mapsDictionaryApiDevResponseToUnifiedResponse"
+          ],
+          "properties": [
+            "objectMapper",
+            "dictionaryMapper"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 17
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "dictionaryMapper.toResponse",
+          "lineNumber": 46
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.word()).isEqualTo",
+          "lineNumber": 48
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 48
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.word",
+          "lineNumber": 48
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.phonetic()).isEqualTo",
+          "lineNumber": 49
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 49
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.phonetic",
+          "lineNumber": 49
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.audioUrl()).isEqualTo",
+          "lineNumber": 50
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 50
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.audioUrl",
+          "lineNumber": 50
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.meanings()).hasSize",
+          "lineNumber": 51
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 51
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings",
+          "lineNumber": 51
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.meanings().get(0).partOfSpeech()).isEqualTo",
+          "lineNumber": 52
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 52
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).partOfSpeech",
+          "lineNumber": 52
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get",
+          "lineNumber": 52
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings",
+          "lineNumber": 52
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.meanings().get(0).definitions().get(0).definition()).isEqualTo",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions().get(0).definition",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions().get",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings",
+          "lineNumber": 53
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.meanings().get(0).definitions().get(0).synonyms()).containsExactly",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions().get(0).synonyms",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions().get",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings",
+          "lineNumber": 55
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat(response.meanings().get(0).definitions().get(0).antonyms()).containsExactly",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "assertThat",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions().get(0).antonyms",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions().get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get(0).definitions",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings().get",
+          "lineNumber": 57
+        },
+        {
+          "caller": "mapsDictionaryApiDevResponseToUnifiedResponse",
+          "callee": "response.meanings",
+          "lineNumber": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 80,
+      "functions": [
+        {
+          "name": "searchNormalizesWordAndCachesProviderResponse",
+          "startLine": 28,
+          "endLine": 52,
+          "params": []
+        },
+        {
+          "name": "searchReturnsCachedResponseWhenAvailable",
+          "startLine": 54,
+          "endLine": 70,
+          "params": []
+        },
+        {
+          "name": "searchRejectsInvalidWord",
+          "startLine": 72,
+          "endLine": 83,
+          "params": []
+        },
+        {
+          "name": "mockRedisTemplate",
+          "startLine": 85,
+          "endLine": 92,
+          "params": [
+            "cachedValue"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "DictionaryServiceTest",
+          "startLine": 24,
+          "endLine": 93,
+          "methods": [
+            "searchNormalizesWordAndCachesProviderResponse",
+            "searchReturnsCachedResponseWhenAvailable",
+            "searchRejectsInvalidWord",
+            "mockRedisTemplate"
+          ],
+          "properties": [
+            "objectMapper"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "new DictionaryWordResponse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "List.of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "new DictionaryMeaningResponse",
+          "lineNumber": 34
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "List.of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "assertThat(word).isEqualTo",
+          "lineNumber": 37
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "assertThat",
+          "lineNumber": 37
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 40
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "new DictionaryService",
+          "lineNumber": 41
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "service.search",
+          "lineNumber": 43
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "assertThat(response).isEqualTo",
+          "lineNumber": 45
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "assertThat",
+          "lineNumber": 45
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "verify(redisTemplate.opsForValue()).get",
+          "lineNumber": 46
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "verify",
+          "lineNumber": 46
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 46
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "verify(redisTemplate.opsForValue()).set",
+          "lineNumber": 47
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "verify",
+          "lineNumber": 47
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 47
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "eq",
+          "lineNumber": 48
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "anyString",
+          "lineNumber": 49
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "eq",
+          "lineNumber": 50
+        },
+        {
+          "caller": "searchNormalizesWordAndCachesProviderResponse",
+          "callee": "Duration.ofHours",
+          "lineNumber": 50
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "new DictionaryWordResponse",
+          "lineNumber": 56
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "List.of",
+          "lineNumber": 60
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "mock",
+          "lineNumber": 62
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 63
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 63
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "new DictionaryService",
+          "lineNumber": 64
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "service.search",
+          "lineNumber": 66
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "assertThat(response).isEqualTo",
+          "lineNumber": 68
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "assertThat",
+          "lineNumber": 68
+        },
+        {
+          "caller": "searchReturnsCachedResponseWhenAvailable",
+          "callee": "verifyNoInteractions",
+          "lineNumber": 69
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "mock",
+          "lineNumber": 74
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "mockRedisTemplate",
+          "lineNumber": 75
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "new DictionaryService",
+          "lineNumber": 76
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "assertThatThrownBy(() -> service.search(\"abandon123\"))\r\n                .isInstanceOf(BusinessException.class)\r\n                .extracting(\"errorCode\").isEqualTo",
+          "lineNumber": 78
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "assertThatThrownBy(() -> service.search(\"abandon123\"))\r\n                .isInstanceOf(BusinessException.class).extracting",
+          "lineNumber": 78
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "assertThatThrownBy(() -> service.search(\"abandon123\")).isInstanceOf",
+          "lineNumber": 78
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "assertThatThrownBy",
+          "lineNumber": 78
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "service.search",
+          "lineNumber": 78
+        },
+        {
+          "caller": "searchRejectsInvalidWord",
+          "callee": "verifyNoInteractions",
+          "lineNumber": 82
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "mock",
+          "lineNumber": 87
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "mock",
+          "lineNumber": 88
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when(redisTemplate.opsForValue()).thenReturn",
+          "lineNumber": 89
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when",
+          "lineNumber": 89
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "redisTemplate.opsForValue",
+          "lineNumber": 89
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when(valueOperations.get(anyString())).thenReturn",
+          "lineNumber": 90
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "when",
+          "lineNumber": 90
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "valueOperations.get",
+          "lineNumber": 90
+        },
+        {
+          "caller": "mockRedisTemplate",
+          "callee": "anyString",
+          "lineNumber": 90
+        }
+      ],
+      "metrics": {
+        "importCount": 5,
+        "exportCount": 0,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 31,
+      "functions": [
+        {
+          "name": "resolvesRegisteredSchedulers",
+          "startLine": 13,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "rejectsUnsupportedScheduler",
+          "startLine": 29,
+          "endLine": 37,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReviewSchedulerResolverTest",
+          "startLine": 11,
+          "endLine": 38,
+          "methods": [
+            "resolvesRegisteredSchedulers",
+            "rejectsUnsupportedScheduler"
+          ],
+          "properties": []
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "new FixedIntervalScheduler",
+          "lineNumber": 15
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "new Sm2Scheduler",
+          "lineNumber": 16
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "new FsrsScheduler",
+          "lineNumber": 17
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "new ReviewSchedulerResolver",
+          "lineNumber": 18
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "List.of",
+          "lineNumber": 18
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "assertThat(resolver.resolve(ReviewSchedulerType.FIXED_INTERVAL)).isSameAs",
+          "lineNumber": 24
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "assertThat",
+          "lineNumber": 24
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "resolver.resolve",
+          "lineNumber": 24
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "assertThat(resolver.resolve(ReviewSchedulerType.SM2)).isSameAs",
+          "lineNumber": 25
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "assertThat",
+          "lineNumber": 25
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "resolver.resolve",
+          "lineNumber": 25
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "assertThat(resolver.resolve(ReviewSchedulerType.FSRS)).isSameAs",
+          "lineNumber": 26
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "assertThat",
+          "lineNumber": 26
+        },
+        {
+          "caller": "resolvesRegisteredSchedulers",
+          "callee": "resolver.resolve",
+          "lineNumber": 26
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "new ReviewSchedulerResolver",
+          "lineNumber": 31
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "List.of",
+          "lineNumber": 31
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "new FixedIntervalScheduler",
+          "lineNumber": 31
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "assertThatThrownBy(() -> resolver.resolve(ReviewSchedulerType.FSRS))\r\n                .isInstanceOf(BusinessException.class)\r\n                .extracting(\"errorCode\").isEqualTo",
+          "lineNumber": 33
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "assertThatThrownBy(() -> resolver.resolve(ReviewSchedulerType.FSRS))\r\n                .isInstanceOf(BusinessException.class).extracting",
+          "lineNumber": 33
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "assertThatThrownBy(() -> resolver.resolve(ReviewSchedulerType.FSRS)).isInstanceOf",
+          "lineNumber": 33
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "assertThatThrownBy",
+          "lineNumber": 33
+        },
+        {
+          "caller": "rejectsUnsupportedScheduler",
+          "callee": "resolver.resolve",
+          "lineNumber": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    }
+  ]
+}

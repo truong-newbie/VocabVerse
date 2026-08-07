@@ -7,10 +7,11 @@ import com.vocabverse.common.exception.BusinessException;
 import com.vocabverse.learning.progress.entity.LearningProgressEntity;
 import com.vocabverse.learning.progress.entity.LearningStatus;
 import com.vocabverse.learning.progress.repository.LearningProgressRepository;
-import com.vocabverse.review.dto.response.ReviewDuePageResponse;
+import com.vocabverse.review.dto.response.ReviewDueCountResponse;
 import com.vocabverse.review.dto.response.ReviewDueItemResponse;
-import com.vocabverse.review.dto.response.ReviewHistoryResponse;
+import com.vocabverse.review.dto.response.ReviewDuePageResponse;
 import com.vocabverse.review.dto.response.ReviewHistoryPageResponse;
+import com.vocabverse.review.dto.response.ReviewHistoryResponse;
 import com.vocabverse.review.dto.response.ReviewSubmitResponse;
 import com.vocabverse.review.entity.ReviewHistoryEntity;
 import com.vocabverse.review.entity.ReviewResult;
@@ -85,6 +86,13 @@ public class ReviewService {
                 duePage.getTotalElements(),
                 duePage.getTotalPages()
         );
+    }
+
+    @Transactional(readOnly = true)
+    public ReviewDueCountResponse getDueCount() {
+        UUID userId = getCurrentUser().getId();
+        long count = learningProgressRepository.countDueReviewsByUserId(userId, LocalDateTime.now());
+        return new ReviewDueCountResponse(count);
     }
 
     @Transactional(readOnly = true)

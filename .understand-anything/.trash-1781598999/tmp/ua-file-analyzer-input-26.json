@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/storage/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/storage/local/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/storage/r2/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/storage/s3/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/roleplay/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/roleplay/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/shadowing/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/storage/.gitkeep": [],
+    "src/main/java/com/vocabverse/storage/local/.gitkeep": [],
+    "src/main/java/com/vocabverse/storage/r2/.gitkeep": [],
+    "src/main/java/com/vocabverse/storage/s3/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/exception/.gitkeep": []
+  }
+}

@@ -1,0 +1,2493 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "type": "file",
+      "name": "CollectionReviewSettingController.java",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "summary": "CollectionReviewSettingController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 5 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:CollectionReviewSettingController",
+      "type": "class",
+      "name": "CollectionReviewSettingController",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "lineRange": [
+        18,
+        58
+      ],
+      "summary": "CollectionReviewSettingController định nghĩa cấu trúc hoặc hành vi chính trong CollectionReviewSettingController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:getSettings",
+      "type": "function",
+      "name": "getSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": "getSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:updateSettings",
+      "type": "function",
+      "name": "updateSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "lineRange": [
+        33,
+        39
+      ],
+      "summary": "updateSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:patchSettings",
+      "type": "function",
+      "name": "patchSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "lineRange": [
+        41,
+        47
+      ],
+      "summary": "patchSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:disableSettings",
+      "type": "function",
+      "name": "disableSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "lineRange": [
+        49,
+        52
+      ],
+      "summary": "disableSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:resetSchedule",
+      "type": "function",
+      "name": "resetSchedule",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "lineRange": [
+        54,
+        57
+      ],
+      "summary": "resetSchedule triển khai một thao tác đáng chú ý trong CollectionReviewSettingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "type": "file",
+      "name": "UpdateCollectionReviewSettingRequest.java",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "summary": "UpdateCollectionReviewSettingRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "type": "file",
+      "name": "CollectionReviewSettingResponse.java",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "summary": "CollectionReviewSettingResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "file",
+      "name": "CollectionReviewSettingEntity.java",
+      "filePath": "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "summary": "CollectionReviewSettingEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java:CollectionReviewSettingEntity",
+      "type": "class",
+      "name": "CollectionReviewSettingEntity",
+      "filePath": "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "lineRange": [
+        32,
+        96
+      ],
+      "summary": "CollectionReviewSettingEntity định nghĩa cấu trúc hoặc hành vi chính trong CollectionReviewSettingEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "type": "file",
+      "name": "CollectionReviewSettingRepository.java",
+      "filePath": "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "summary": "CollectionReviewSettingRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java:CollectionReviewSettingRepository",
+      "type": "class",
+      "name": "CollectionReviewSettingRepository",
+      "filePath": "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "lineRange": [
+        10,
+        20
+      ],
+      "summary": "CollectionReviewSettingRepository định nghĩa cấu trúc hoặc hành vi chính trong CollectionReviewSettingRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "type": "file",
+      "name": "CollectionReviewSettingService.java",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "summary": "CollectionReviewSettingService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 17 function, 18 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:CollectionReviewSettingService",
+      "type": "class",
+      "name": "CollectionReviewSettingService",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        38,
+        287
+      ],
+      "summary": "CollectionReviewSettingService định nghĩa cấu trúc hoặc hành vi chính trong CollectionReviewSettingService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:getSettings",
+      "type": "function",
+      "name": "getSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        55,
+        60
+      ],
+      "summary": "getSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:updateSettings",
+      "type": "function",
+      "name": "updateSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        62,
+        97
+      ],
+      "summary": "updateSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:disableSettings",
+      "type": "function",
+      "name": "disableSettings",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        99,
+        107
+      ],
+      "summary": "disableSettings triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:resetSchedule",
+      "type": "function",
+      "name": "resetSchedule",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        109,
+        137
+      ],
+      "summary": "resetSchedule triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:resetProgressRows",
+      "type": "function",
+      "name": "resetProgressRows",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        139,
+        177
+      ],
+      "summary": "resetProgressRows triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:findOrDefault",
+      "type": "function",
+      "name": "findOrDefault",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        179,
+        193
+      ],
+      "summary": "findOrDefault triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:validateIntervals",
+      "type": "function",
+      "name": "validateIntervals",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        200,
+        210
+      ],
+      "summary": "validateIntervals triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:validateTimezone",
+      "type": "function",
+      "name": "validateTimezone",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        212,
+        222
+      ],
+      "summary": "validateTimezone triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:toResponse",
+      "type": "function",
+      "name": "toResponse",
+      "filePath": "src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "lineRange": [
+        256,
+        272
+      ],
+      "summary": "toResponse triển khai một thao tác đáng chú ý trong CollectionReviewSettingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "type": "file",
+      "name": "DashboardController.java",
+      "filePath": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "summary": "DashboardController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:DashboardController",
+      "type": "class",
+      "name": "DashboardController",
+      "filePath": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "lineRange": [
+        16,
+        44
+      ],
+      "summary": "DashboardController định nghĩa cấu trúc hoặc hành vi chính trong DashboardController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getSummary",
+      "type": "function",
+      "name": "getSummary",
+      "filePath": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "lineRange": [
+        23,
+        26
+      ],
+      "summary": "getSummary triển khai một thao tác đáng chú ý trong DashboardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getLearningStatus",
+      "type": "function",
+      "name": "getLearningStatus",
+      "filePath": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "lineRange": [
+        28,
+        31
+      ],
+      "summary": "getLearningStatus triển khai một thao tác đáng chú ý trong DashboardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getReviewDue",
+      "type": "function",
+      "name": "getReviewDue",
+      "filePath": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "lineRange": [
+        33,
+        38
+      ],
+      "summary": "getReviewDue triển khai một thao tác đáng chú ý trong DashboardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getRecentActivity",
+      "type": "function",
+      "name": "getRecentActivity",
+      "filePath": "src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "getRecentActivity triển khai một thao tác đáng chú ý trong DashboardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "type": "file",
+      "name": "DashboardSummaryResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "summary": "DashboardSummaryResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "type": "file",
+      "name": "LearningStatusStatsResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "summary": "LearningStatusStatsResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "type": "file",
+      "name": "RecentActivityResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "summary": "RecentActivityResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "type": "file",
+      "name": "ReviewDueResponse.java",
+      "filePath": "src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "summary": "ReviewDueResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "type": "file",
+      "name": "DashboardService.java",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "summary": "DashboardService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 11 function, 27 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:DashboardService",
+      "type": "class",
+      "name": "DashboardService",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        42,
+        180
+      ],
+      "summary": "DashboardService định nghĩa cấu trúc hoặc hành vi chính trong DashboardService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getSummary",
+      "type": "function",
+      "name": "getSummary",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        60,
+        78
+      ],
+      "summary": "getSummary triển khai một thao tác đáng chú ý trong DashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getLearningStatus",
+      "type": "function",
+      "name": "getLearningStatus",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        80,
+        83
+      ],
+      "summary": "getLearningStatus triển khai một thao tác đáng chú ý trong DashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getReviewDue",
+      "type": "function",
+      "name": "getReviewDue",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        85,
+        100
+      ],
+      "summary": "getReviewDue triển khai một thao tác đáng chú ý trong DashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getRecentActivity",
+      "type": "function",
+      "name": "getRecentActivity",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        102,
+        115
+      ],
+      "summary": "getRecentActivity triển khai một thao tác đáng chú ý trong DashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:toDueItemResponse",
+      "type": "function",
+      "name": "toDueItemResponse",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        126,
+        140
+      ],
+      "summary": "toDueItemResponse triển khai một thao tác đáng chú ý trong DashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:toHistoryResponse",
+      "type": "function",
+      "name": "toHistoryResponse",
+      "filePath": "src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "lineRange": [
+        142,
+        153
+      ],
+      "summary": "toHistoryResponse triển khai một thao tác đáng chú ý trong DashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "type": "file",
+      "name": "LearningProgressController.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "summary": "LearningProgressController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 5 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:LearningProgressController",
+      "type": "class",
+      "name": "LearningProgressController",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "lineRange": [
+        18,
+        46
+      ],
+      "summary": "LearningProgressController định nghĩa cấu trúc hoặc hành vi chính trong LearningProgressController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getCurrentUserProgressSummary",
+      "type": "function",
+      "name": "getCurrentUserProgressSummary",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "lineRange": [
+        25,
+        28
+      ],
+      "summary": "getCurrentUserProgressSummary triển khai một thao tác đáng chú ý trong LearningProgressController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getCurrentUserProgress",
+      "type": "function",
+      "name": "getCurrentUserProgress",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "lineRange": [
+        30,
+        35
+      ],
+      "summary": "getCurrentUserProgress triển khai một thao tác đáng chú ý trong LearningProgressController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getProgressDetail",
+      "type": "function",
+      "name": "getProgressDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "getProgressDetail triển khai một thao tác đáng chú ý trong LearningProgressController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:initializeProgress",
+      "type": "function",
+      "name": "initializeProgress",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "lineRange": [
+        42,
+        45
+      ],
+      "summary": "initializeProgress triển khai một thao tác đáng chú ý trong LearningProgressController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "type": "file",
+      "name": "LearningProgressPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "summary": "LearningProgressPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "type": "file",
+      "name": "LearningProgressResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "summary": "LearningProgressResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "type": "file",
+      "name": "LearningProgressSummaryResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "summary": "LearningProgressSummaryResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "file",
+      "name": "LearningProgressEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "summary": "LearningProgressEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java:LearningProgressEntity",
+      "type": "class",
+      "name": "LearningProgressEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "lineRange": [
+        28,
+        97
+      ],
+      "summary": "LearningProgressEntity định nghĩa cấu trúc hoặc hành vi chính trong LearningProgressEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "file",
+      "name": "LearningStatus.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "summary": "LearningStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "type": "file",
+      "name": "LearningProgressMapper.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "summary": "LearningProgressMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java:LearningProgressMapper",
+      "type": "class",
+      "name": "LearningProgressMapper",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "lineRange": [
+        8,
+        15
+      ],
+      "summary": "LearningProgressMapper định nghĩa cấu trúc hoặc hành vi chính trong LearningProgressMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "file",
+      "name": "LearningProgressRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "summary": "LearningProgressRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java:LearningProgressRepository",
+      "type": "class",
+      "name": "LearningProgressRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "lineRange": [
+        16,
+        100
+      ],
+      "summary": "LearningProgressRepository định nghĩa cấu trúc hoặc hành vi chính trong LearningProgressRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "type": "file",
+      "name": "LearningProgressService.java",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "summary": "LearningProgressService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 7 function, 13 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:LearningProgressService",
+      "type": "class",
+      "name": "LearningProgressService",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "lineRange": [
+        27,
+        118
+      ],
+      "summary": "LearningProgressService định nghĩa cấu trúc hoặc hành vi chính trong LearningProgressService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getCurrentUserProgressSummary",
+      "type": "function",
+      "name": "getCurrentUserProgressSummary",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "lineRange": [
+        39,
+        48
+      ],
+      "summary": "getCurrentUserProgressSummary triển khai một thao tác đáng chú ý trong LearningProgressService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getCurrentUserProgress",
+      "type": "function",
+      "name": "getCurrentUserProgress",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "lineRange": [
+        50,
+        64
+      ],
+      "summary": "getCurrentUserProgress triển khai một thao tác đáng chú ý trong LearningProgressService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getProgressDetail",
+      "type": "function",
+      "name": "getProgressDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "lineRange": [
+        66,
+        74
+      ],
+      "summary": "getProgressDetail triển khai một thao tác đáng chú ý trong LearningProgressService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:initializeProgress",
+      "type": "function",
+      "name": "initializeProgress",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "lineRange": [
+        76,
+        88
+      ],
+      "summary": "initializeProgress triển khai một thao tác đáng chú ý trong LearningProgressService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:createInitialProgress",
+      "type": "function",
+      "name": "createInitialProgress",
+      "filePath": "src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "lineRange": [
+        90,
+        103
+      ],
+      "summary": "createInitialProgress triển khai một thao tác đáng chú ý trong LearningProgressService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "type": "file",
+      "name": "ReviewController.java",
+      "filePath": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "summary": "ReviewController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/review/controller/ReviewController.java:ReviewController",
+      "type": "class",
+      "name": "ReviewController",
+      "filePath": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "lineRange": [
+        23,
+        57
+      ],
+      "summary": "ReviewController định nghĩa cấu trúc hoặc hành vi chính trong ReviewController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:submitReview",
+      "type": "function",
+      "name": "submitReview",
+      "filePath": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "lineRange": [
+        31,
+        37
+      ],
+      "summary": "submitReview triển khai một thao tác đáng chú ý trong ReviewController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getTodayReviews",
+      "type": "function",
+      "name": "getTodayReviews",
+      "filePath": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "lineRange": [
+        39,
+        44
+      ],
+      "summary": "getTodayReviews triển khai một thao tác đáng chú ý trong ReviewController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getReviewHistory",
+      "type": "function",
+      "name": "getReviewHistory",
+      "filePath": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "lineRange": [
+        46,
+        51
+      ],
+      "summary": "getReviewHistory triển khai một thao tác đáng chú ý trong ReviewController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getReviewStats",
+      "type": "function",
+      "name": "getReviewStats",
+      "filePath": "src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "lineRange": [
+        53,
+        56
+      ],
+      "summary": "getReviewStats triển khai một thao tác đáng chú ý trong ReviewController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "type": "file",
+      "name": "SubmitReviewRequest.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "summary": "SubmitReviewRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "type": "file",
+      "name": "ReviewDueItemResponse.java",
+      "filePath": "src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "summary": "ReviewDueItemResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "class:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:CollectionReviewSettingController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "class:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:CollectionReviewSettingController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:getSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:getSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:updateSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:updateSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:patchSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:patchSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:disableSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:disableSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:resetSchedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "function:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java:resetSchedule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/controller/CollectionReviewSettingController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "target": "class:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java:CollectionReviewSettingEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "target": "class:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java:CollectionReviewSettingEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "target": "class:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java:CollectionReviewSettingRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "target": "class:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java:CollectionReviewSettingRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "class:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:CollectionReviewSettingService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "class:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:CollectionReviewSettingService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:getSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:getSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:updateSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:updateSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:disableSettings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:disableSettings",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:resetSchedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:resetSchedule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:resetProgressRows",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:findOrDefault",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:validateIntervals",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:validateTimezone",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "function:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java:toResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionReviewSettingRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/dto/response/CollectionReviewSettingResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/collection/service/CollectionReviewSettingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "class:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:DashboardController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "class:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:DashboardController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getLearningStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getLearningStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getReviewDue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getReviewDue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getRecentActivity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java:getRecentActivity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/controller/DashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "target": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "class:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:DashboardService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "class:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:DashboardService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getLearningStatus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getLearningStatus",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getReviewDue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getReviewDue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getRecentActivity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:getRecentActivity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:toDueItemResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/dashboard/service/DashboardService.java:toHistoryResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/DashboardSummaryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/LearningStatusStatsResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/RecentActivityResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/dashboard/dto/response/ReviewDueResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/entity/QuizSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/quiz/repository/QuizSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/dashboard/service/DashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:LearningProgressController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:LearningProgressController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getCurrentUserProgressSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getCurrentUserProgressSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getCurrentUserProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getCurrentUserProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getProgressDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:getProgressDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:initializeProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java:initializeProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/controller/LearningProgressController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java:LearningProgressEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java:LearningProgressEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java:LearningProgressMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java:LearningProgressMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java:LearningProgressRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java:LearningProgressRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:LearningProgressService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:LearningProgressService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getCurrentUserProgressSummary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getCurrentUserProgressSummary",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getCurrentUserProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getCurrentUserProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getProgressDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:getProgressDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:initializeProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:initializeProgress",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java:createInitialProgress",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/dto/LearningProgressSummaryResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/mapper/LearningProgressMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/progress/service/LearningProgressService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "class:src/main/java/com/vocabverse/review/controller/ReviewController.java:ReviewController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "class:src/main/java/com/vocabverse/review/controller/ReviewController.java:ReviewController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:submitReview",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:submitReview",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getTodayReviews",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getTodayReviews",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getReviewHistory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getReviewHistory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getReviewStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "function:src/main/java/com/vocabverse/review/controller/ReviewController.java:getReviewStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/controller/ReviewController.java",
+      "target": "file:src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/dto/request/SubmitReviewRequest.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/review/dto/response/ReviewDueItemResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

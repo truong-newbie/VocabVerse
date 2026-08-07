@@ -1,0 +1,42 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/resources/application-dev.yml",
+      "language": "yaml",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/main/resources/application-local.yml",
+      "language": "yaml",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/main/resources/application-prod.yml",
+      "language": "yaml",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/main/resources/application-staging.yml",
+      "language": "yaml",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": "src/main/resources/application.yml",
+      "language": "yaml",
+      "sizeLines": 103,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    "src/main/resources/application-dev.yml": [],
+    "src/main/resources/application-local.yml": [],
+    "src/main/resources/application-prod.yml": [],
+    "src/main/resources/application-staging.yml": [],
+    "src/main/resources/application.yml": []
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminUserController.java",
+      "language": "java",
+      "sizeLines": 87,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "language": "java",
+      "sizeLines": 110,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/controller/AuthController.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "language": "java",
+      "sizeLines": 21,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "language": "java",
+      "sizeLines": 82,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java",
+      "language": "java",
+      "sizeLines": 31,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "language": "java",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/controller/UserController.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "language": "java",
+      "sizeLines": 70,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "language": "java",
+      "sizeLines": 35,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/service/UserService.java",
+      "language": "java",
+      "sizeLines": 39,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java",
+      "language": "java",
+      "sizeLines": 118,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/admin/controller/AdminUserController.java": [
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "src/main/java/com/vocabverse/admin/service/AdminUserService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java": [
+      "src/main/java/com/vocabverse/user/entity/UserRole.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java": [
+      "src/main/java/com/vocabverse/user/entity/UserStatus.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java": [],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java": [
+      "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "src/main/java/com/vocabverse/user/entity/UserStatus.java"
+    ],
+    "src/main/java/com/vocabverse/admin/service/AdminUserService.java": [
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserRoleRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateUserStatusRequest.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminUserResponse.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java": [],
+    "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java": [
+      "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/main/java/com/vocabverse/auth/controller/AuthController.java": [
+      "src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java",
+      "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "src/main/java/com/vocabverse/auth/service/AuthService.java",
+      "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/auth/dto/LoginRequest.java": [],
+    "src/main/java/com/vocabverse/auth/dto/LoginResponse.java": [
+      "src/main/java/com/vocabverse/user/entity/UserRole.java"
+    ],
+    "src/main/java/com/vocabverse/auth/dto/RefreshTokenRequest.java": [],
+    "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java": [],
+    "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java": [],
+    "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java": [
+      "src/main/java/com/vocabverse/user/entity/UserRole.java"
+    ],
+    "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java": [],
+    "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java": [
+      "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java"
+    ],
+    "src/main/java/com/vocabverse/auth/service/AuthService.java": [
+      "src/main/java/com/vocabverse/auth/dto/LoginRequest.java",
+      "src/main/java/com/vocabverse/auth/dto/LoginResponse.java",
+      "src/main/java/com/vocabverse/auth/dto/RegisterRequest.java",
+      "src/main/java/com/vocabverse/auth/dto/RegisterResponse.java",
+      "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/main/java/com/vocabverse/auth/service/RefreshTokenService.java": [
+      "src/main/java/com/vocabverse/auth/dto/RefreshTokenResponse.java",
+      "src/main/java/com/vocabverse/auth/entity/RefreshTokenEntity.java",
+      "src/main/java/com/vocabverse/auth/repository/RefreshTokenRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/main/java/com/vocabverse/common/security/CustomUserDetailsService.java": [
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/main/java/com/vocabverse/common/security/JwtTokenProvider.java": [
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/user/controller/UserController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "src/main/java/com/vocabverse/user/service/UserService.java"
+    ],
+    "src/main/java/com/vocabverse/user/dto/UserResponse.java": [
+      "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "src/main/java/com/vocabverse/user/entity/UserStatus.java"
+    ],
+    "src/main/java/com/vocabverse/user/entity/UserEntity.java": [],
+    "src/main/java/com/vocabverse/user/entity/UserRole.java": [],
+    "src/main/java/com/vocabverse/user/entity/UserStatus.java": [],
+    "src/main/java/com/vocabverse/user/mapper/UserMapper.java": [
+      "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/user/repository/UserRepository.java": [
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/entity/UserRole.java",
+      "src/main/java/com/vocabverse/user/entity/UserStatus.java"
+    ],
+    "src/main/java/com/vocabverse/user/service/UserService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/dto/UserResponse.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/mapper/UserMapper.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ],
+    "src/test/java/com/vocabverse/ai/service/AiNormalizeQuotaServiceTest.java": [
+      "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ]
+  }
+}

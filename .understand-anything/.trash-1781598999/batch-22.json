@@ -1,0 +1,317 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/client/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/ai/client/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/dto/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/ai/dto/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/parser/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/ai/parser/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/prompt/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/ai/prompt/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/ai/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/async/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/consumer/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/async/consumer/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/event/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/async/event/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/job/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/async/job/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/producer/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/async/producer/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/controller/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/controller/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/dto/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/dto/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/entity/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/entity/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/exception/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/exception/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/mapper/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/mapper/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "mapper"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/repository/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/repository/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "repository"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/service/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/service/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/auth/specification/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/auth/specification/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/controller/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/controller/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/dto/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/dto/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/entity/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/entity/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/exception/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/exception/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/collection/mapper/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/collection/mapper/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code",
+        "mapper"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

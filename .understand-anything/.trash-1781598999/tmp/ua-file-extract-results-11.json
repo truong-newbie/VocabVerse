@@ -1,0 +1,1082 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 28,
+          "endLine": 33,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSessionDetail",
+          "startLine": 35,
+          "endLine": 38,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessionCards",
+          "startLine": 40,
+          "endLine": 43,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "submitAnswer",
+          "startLine": 45,
+          "endLine": 52,
+          "params": [
+            "sessionId",
+            "vocabularyId",
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FlashcardController",
+          "startLine": 21,
+          "endLine": 53,
+          "methods": [
+            "createSession",
+            "getSessionDetail",
+            "getSessionCards",
+            "submitAnswer"
+          ],
+          "properties": [
+            "flashcardService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionDetail",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionCards",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "submitAnswer",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "FlashcardController",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "ApiResponse.success",
+          "lineNumber": 32
+        },
+        {
+          "caller": "createSession",
+          "callee": "flashcardService.createSession",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "flashcardService.getSessionDetail",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "ApiResponse.success",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "flashcardService.getSessionCards",
+          "lineNumber": 42
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "ApiResponse.success",
+          "lineNumber": 51
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "flashcardService.submitAnswer",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 75,
+      "nonEmptyLines": 62,
+      "classes": [
+        {
+          "name": "FlashcardSessionEntity",
+          "startLine": 26,
+          "endLine": 75,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "source",
+            "collection",
+            "status",
+            "totalCards",
+            "completedCards",
+            "startedAt",
+            "completedAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FlashcardSessionEntity",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 60,
+      "classes": [
+        {
+          "name": "FlashcardSessionItemEntity",
+          "startLine": 27,
+          "endLine": 69,
+          "methods": [],
+          "properties": [
+            "id",
+            "session",
+            "vocabulary",
+            "result",
+            "answeredAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "FlashcardSessionItemEntity",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 20,
+      "classes": [
+        {
+          "name": "FlashcardMapper",
+          "startLine": 10,
+          "endLine": 24,
+          "methods": [
+            "toSessionResponse",
+            "toCardResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FlashcardMapper",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "FlashcardSessionItemRepository",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "findAllBySessionIdOrderByCreatedAtAsc",
+            "findBySessionIdAndVocabularyId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FlashcardSessionItemRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "FlashcardSessionRepository",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "findByIdAndUserId",
+            "countByUserIdAndStatus"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "FlashcardSessionRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 196,
+      "nonEmptyLines": 175,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 52,
+          "endLine": 85,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSessionDetail",
+          "startLine": 87,
+          "endLine": 91,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessionCards",
+          "startLine": 93,
+          "endLine": 100,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "submitAnswer",
+          "startLine": 102,
+          "endLine": 143,
+          "params": [
+            "sessionId",
+            "vocabularyId",
+            "request"
+          ]
+        },
+        {
+          "name": "resolveCollection",
+          "startLine": 145,
+          "endLine": 154,
+          "params": [
+            "request",
+            "userId"
+          ]
+        },
+        {
+          "name": "resolveSessionVocabularies",
+          "startLine": 156,
+          "endLine": 175,
+          "params": [
+            "request",
+            "userId",
+            "collection"
+          ]
+        },
+        {
+          "name": "getOwnedSession",
+          "startLine": 177,
+          "endLine": 181,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 183,
+          "endLine": 187,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 189,
+          "endLine": 195,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "FlashcardService",
+          "startLine": 38,
+          "endLine": 196,
+          "methods": [
+            "createSession",
+            "getSessionDetail",
+            "getSessionCards",
+            "submitAnswer",
+            "resolveCollection",
+            "resolveSessionVocabularies",
+            "getOwnedSession",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "flashcardSessionRepository",
+            "flashcardSessionItemRepository",
+            "vocabularyRepository",
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "learningProgressRepository",
+            "userRepository",
+            "reviewService",
+            "flashcardMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionDetail",
+          "line": 87,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionCards",
+          "line": 93,
+          "isDefault": false
+        },
+        {
+          "name": "submitAnswer",
+          "line": 102,
+          "isDefault": false
+        },
+        {
+          "name": "FlashcardService",
+          "line": 38,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 54
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolveCollection",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 55
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolveSessionVocabularies",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 56
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(FlashcardSessionStatus.IN_PROGRESS)\r\n                .totalCards(vocabularies.size())\r\n                .completedCards(0)\r\n                .startedAt(LocalDateTime.now()).build",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(FlashcardSessionStatus.IN_PROGRESS)\r\n                .totalCards(vocabularies.size())\r\n                .completedCards(0).startedAt",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(FlashcardSessionStatus.IN_PROGRESS)\r\n                .totalCards(vocabularies.size()).completedCards",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(FlashcardSessionStatus.IN_PROGRESS).totalCards",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection).status",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source()).collection",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder()\r\n                .user(user).source",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder().user",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionEntity.builder",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.source",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.size",
+          "lineNumber": 63
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 65
+        },
+        {
+          "caller": "createSession",
+          "callee": "flashcardSessionRepository.save",
+          "lineNumber": 68
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream()\r\n                .map(vocabulary -> FlashcardSessionItemEntity.builder()\r\n                        .session(sessionForItems)\r\n                        .vocabulary(vocabulary)\r\n                        .build()).toList",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream().map",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionItemEntity.builder()\r\n                        .session(sessionForItems)\r\n                        .vocabulary(vocabulary).build",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionItemEntity.builder()\r\n                        .session(sessionForItems).vocabulary",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionItemEntity.builder().session",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createSession",
+          "callee": "FlashcardSessionItemEntity.builder",
+          "lineNumber": 71
+        },
+        {
+          "caller": "createSession",
+          "callee": "flashcardSessionItemRepository.saveAll",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.isEmpty",
+          "lineNumber": 78
+        },
+        {
+          "caller": "createSession",
+          "callee": "savedSession.setStatus",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createSession",
+          "callee": "savedSession.setCompletedAt",
+          "lineNumber": 80
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 80
+        },
+        {
+          "caller": "createSession",
+          "callee": "flashcardSessionRepository.save",
+          "lineNumber": 81
+        },
+        {
+          "caller": "createSession",
+          "callee": "flashcardMapper.toSessionResponse",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "getOwnedSession",
+          "lineNumber": 89
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "flashcardMapper.toSessionResponse",
+          "lineNumber": 90
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "getOwnedSession",
+          "lineNumber": 95
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "flashcardSessionItemRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId())\r\n                .stream()\r\n                .map(flashcardMapper::toCardResponse).toList",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "flashcardSessionItemRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId())\r\n                .stream().map",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "flashcardSessionItemRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId()).stream",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "flashcardSessionItemRepository.findAllBySessionIdOrderByCreatedAtAsc",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getSessionCards",
+          "callee": "session.getId",
+          "lineNumber": 96
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "getOwnedSession",
+          "lineNumber": 108
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getStatus",
+          "lineNumber": 109
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 110
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "flashcardSessionItemRepository\r\n                .findBySessionIdAndVocabularyId(sessionId, vocabularyId).orElseThrow",
+          "lineNumber": 113
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "flashcardSessionItemRepository.findBySessionIdAndVocabularyId",
+          "lineNumber": 113
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 115
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "item.getAnsweredAt",
+          "lineNumber": 117
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 118
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewService.submitReview",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.result",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "item.setResult",
+          "lineNumber": 122
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.result",
+          "lineNumber": 122
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "item.setAnsweredAt",
+          "lineNumber": 123
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 123
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "flashcardSessionItemRepository.save",
+          "lineNumber": 124
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCompletedCards",
+          "lineNumber": 126
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedCards",
+          "lineNumber": 126
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedCards",
+          "lineNumber": 127
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getTotalCards",
+          "lineNumber": 127
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setStatus",
+          "lineNumber": 128
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCompletedAt",
+          "lineNumber": 129
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 129
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "flashcardSessionRepository.save",
+          "lineNumber": 131
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new FlashcardAnswerResponse",
+          "lineNumber": 133
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getId",
+          "lineNumber": 134
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.status",
+          "lineNumber": 136
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.nextReviewAt",
+          "lineNumber": 137
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.repetitionCount",
+          "lineNumber": 138
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedCards",
+          "lineNumber": 139
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getTotalCards",
+          "lineNumber": 140
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getStatus",
+          "lineNumber": 141
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.source",
+          "lineNumber": 146
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.collectionId",
+          "lineNumber": 149
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 150
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(request.collectionId(), userId).orElseThrow",
+          "lineNumber": 152
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 152
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.collectionId",
+          "lineNumber": 152
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 153
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "request.source",
+          "lineNumber": 161
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 162
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                    .stream()\r\n                    .map(CollectionVocabularyEntity::getVocabulary).toList",
+          "lineNumber": 163
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                    .stream().map",
+          "lineNumber": 163
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId()).stream",
+          "lineNumber": 163
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 163
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collection.getId",
+          "lineNumber": 164
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream()\r\n                    .map(LearningProgressEntity::getVocabulary)\r\n                    .filter(vocabulary -> vocabulary.getDeletedAt() == null).toList",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream()\r\n                    .map(LearningProgressEntity::getVocabulary).filter",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream().map",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now()).stream",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 168
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 169
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "vocabulary.getDeletedAt",
+          "lineNumber": 172
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "flashcardSessionRepository.findByIdAndUserId(sessionId, userId).orElseThrow",
+          "lineNumber": 179
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "flashcardSessionRepository.findByIdAndUserId",
+          "lineNumber": 179
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "new BusinessException",
+          "lineNumber": 180
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 184
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 185
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 185
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 186
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 190
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 190
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 191
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 192
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 194
+        }
+      ],
+      "metrics": {
+        "importCount": 26,
+        "exportCount": 5,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    }
+  ]
+}

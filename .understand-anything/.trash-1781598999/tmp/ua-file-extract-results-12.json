@@ -1,0 +1,1395 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 53,
+      "nonEmptyLines": 46,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 28,
+          "endLine": 33,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSessionDetail",
+          "startLine": 35,
+          "endLine": 38,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessionQuestions",
+          "startLine": 40,
+          "endLine": 43,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "submitAnswer",
+          "startLine": 45,
+          "endLine": 52,
+          "params": [
+            "sessionId",
+            "questionId",
+            "request"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TypingController",
+          "startLine": 21,
+          "endLine": 53,
+          "methods": [
+            "createSession",
+            "getSessionDetail",
+            "getSessionQuestions",
+            "submitAnswer"
+          ],
+          "properties": [
+            "typingService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionDetail",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionQuestions",
+          "line": 40,
+          "isDefault": false
+        },
+        {
+          "name": "submitAnswer",
+          "line": 45,
+          "isDefault": false
+        },
+        {
+          "name": "TypingController",
+          "line": 21,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "ApiResponse.success",
+          "lineNumber": 32
+        },
+        {
+          "caller": "createSession",
+          "callee": "typingService.createSession",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "typingService.getSessionDetail",
+          "lineNumber": 37
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "ApiResponse.success",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "typingService.getSessionQuestions",
+          "lineNumber": 42
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "ApiResponse.success",
+          "lineNumber": 51
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "typingService.submitAnswer",
+          "lineNumber": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 24,
+      "nonEmptyLines": 22,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 71,
+      "nonEmptyLines": 58,
+      "classes": [
+        {
+          "name": "TypingQuestionEntity",
+          "startLine": 24,
+          "endLine": 71,
+          "methods": [],
+          "properties": [
+            "id",
+            "session",
+            "vocabulary",
+            "promptText",
+            "correctAnswer",
+            "userAnswer",
+            "correct",
+            "similarityScore",
+            "answeredAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TypingQuestionEntity",
+          "line": 24,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 78,
+      "nonEmptyLines": 64,
+      "classes": [
+        {
+          "name": "TypingSessionEntity",
+          "startLine": 26,
+          "endLine": 78,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "source",
+            "collection",
+            "status",
+            "totalQuestions",
+            "correctAnswers",
+            "completedQuestions",
+            "startedAt",
+            "completedAt",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "TypingSessionEntity",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "TypingMapper",
+          "startLine": 10,
+          "endLine": 19,
+          "methods": [
+            "toSessionResponse",
+            "toQuestionResponse"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TypingMapper",
+          "line": 10,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "TypingQuestionRepository",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "findAllBySessionIdOrderByCreatedAtAsc",
+            "findByIdAndSessionId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TypingQuestionRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 10,
+      "classes": [
+        {
+          "name": "TypingSessionRepository",
+          "startLine": 9,
+          "endLine": 14,
+          "methods": [
+            "findByIdAndUserId",
+            "countByUserIdAndStatus"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "TypingSessionRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 264,
+      "nonEmptyLines": 235,
+      "functions": [
+        {
+          "name": "createSession",
+          "startLine": 56,
+          "endLine": 92,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getSessionDetail",
+          "startLine": 94,
+          "endLine": 97,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getSessionQuestions",
+          "startLine": 99,
+          "endLine": 106,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "submitAnswer",
+          "startLine": 108,
+          "endLine": 159,
+          "params": [
+            "sessionId",
+            "questionId",
+            "request"
+          ]
+        },
+        {
+          "name": "resolvePromptText",
+          "startLine": 161,
+          "endLine": 169,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "resolveCollection",
+          "startLine": 171,
+          "endLine": 180,
+          "params": [
+            "request",
+            "userId"
+          ]
+        },
+        {
+          "name": "resolveSessionVocabularies",
+          "startLine": 182,
+          "endLine": 201,
+          "params": [
+            "request",
+            "userId",
+            "collection"
+          ]
+        },
+        {
+          "name": "getOwnedSession",
+          "startLine": 203,
+          "endLine": 207,
+          "params": [
+            "sessionId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 209,
+          "endLine": 213,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 215,
+          "endLine": 221,
+          "params": []
+        },
+        {
+          "name": "normalizeAnswer",
+          "startLine": 223,
+          "endLine": 225,
+          "params": [
+            "answer"
+          ]
+        },
+        {
+          "name": "calculateSimilarityScore",
+          "startLine": 227,
+          "endLine": 238,
+          "params": [
+            "answer",
+            "correctAnswer"
+          ]
+        },
+        {
+          "name": "levenshteinDistance",
+          "startLine": 240,
+          "endLine": 263,
+          "params": [
+            "left",
+            "right"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "TypingService",
+          "startLine": 42,
+          "endLine": 264,
+          "methods": [
+            "createSession",
+            "getSessionDetail",
+            "getSessionQuestions",
+            "submitAnswer",
+            "resolvePromptText",
+            "resolveCollection",
+            "resolveSessionVocabularies",
+            "getOwnedSession",
+            "getCurrentUser",
+            "getAuthenticatedEmail",
+            "normalizeAnswer",
+            "calculateSimilarityScore",
+            "levenshteinDistance"
+          ],
+          "properties": [
+            "typingSessionRepository",
+            "typingQuestionRepository",
+            "vocabularyRepository",
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "learningProgressRepository",
+            "userRepository",
+            "reviewService",
+            "typingMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createSession",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionDetail",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "getSessionQuestions",
+          "line": 99,
+          "isDefault": false
+        },
+        {
+          "name": "submitAnswer",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "TypingService",
+          "line": 42,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 58
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolveCollection",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 59
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolveSessionVocabularies",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createSession",
+          "callee": "user.getId",
+          "lineNumber": 60
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(TypingSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size())\r\n                .correctAnswers(0)\r\n                .completedQuestions(0)\r\n                .startedAt(LocalDateTime.now()).build",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(TypingSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size())\r\n                .correctAnswers(0)\r\n                .completedQuestions(0).startedAt",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(TypingSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size())\r\n                .correctAnswers(0).completedQuestions",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(TypingSessionStatus.IN_PROGRESS)\r\n                .totalQuestions(vocabularies.size()).correctAnswers",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection)\r\n                .status(TypingSessionStatus.IN_PROGRESS).totalQuestions",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source())\r\n                .collection(collection).status",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user)\r\n                .source(request.source()).collection",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder()\r\n                .user(user).source",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder().user",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingSessionEntity.builder",
+          "lineNumber": 62
+        },
+        {
+          "caller": "createSession",
+          "callee": "request.source",
+          "lineNumber": 64
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.size",
+          "lineNumber": 67
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 70
+        },
+        {
+          "caller": "createSession",
+          "callee": "typingSessionRepository.save",
+          "lineNumber": 73
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream()\r\n                .map(vocabulary -> TypingQuestionEntity.builder()\r\n                        .session(sessionForQuestions)\r\n                        .vocabulary(vocabulary)\r\n                        .promptText(resolvePromptText(vocabulary))\r\n                        .correctAnswer(vocabulary.getWord())\r\n                        .build()).toList",
+          "lineNumber": 75
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream().map",
+          "lineNumber": 75
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.stream",
+          "lineNumber": 75
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingQuestionEntity.builder()\r\n                        .session(sessionForQuestions)\r\n                        .vocabulary(vocabulary)\r\n                        .promptText(resolvePromptText(vocabulary))\r\n                        .correctAnswer(vocabulary.getWord()).build",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingQuestionEntity.builder()\r\n                        .session(sessionForQuestions)\r\n                        .vocabulary(vocabulary)\r\n                        .promptText(resolvePromptText(vocabulary)).correctAnswer",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingQuestionEntity.builder()\r\n                        .session(sessionForQuestions)\r\n                        .vocabulary(vocabulary).promptText",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingQuestionEntity.builder()\r\n                        .session(sessionForQuestions).vocabulary",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingQuestionEntity.builder().session",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "TypingQuestionEntity.builder",
+          "lineNumber": 76
+        },
+        {
+          "caller": "createSession",
+          "callee": "resolvePromptText",
+          "lineNumber": 79
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 80
+        },
+        {
+          "caller": "createSession",
+          "callee": "typingQuestionRepository.saveAll",
+          "lineNumber": 83
+        },
+        {
+          "caller": "createSession",
+          "callee": "vocabularies.isEmpty",
+          "lineNumber": 85
+        },
+        {
+          "caller": "createSession",
+          "callee": "savedSession.setStatus",
+          "lineNumber": 86
+        },
+        {
+          "caller": "createSession",
+          "callee": "savedSession.setCompletedAt",
+          "lineNumber": 87
+        },
+        {
+          "caller": "createSession",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 87
+        },
+        {
+          "caller": "createSession",
+          "callee": "typingSessionRepository.save",
+          "lineNumber": 88
+        },
+        {
+          "caller": "createSession",
+          "callee": "typingMapper.toSessionResponse",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "typingMapper.toSessionResponse",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getSessionDetail",
+          "callee": "getOwnedSession",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "getOwnedSession",
+          "lineNumber": 101
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "typingQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId())\r\n                .stream()\r\n                .map(typingMapper::toQuestionResponse).toList",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "typingQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId())\r\n                .stream().map",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "typingQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId()).stream",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "typingQuestionRepository.findAllBySessionIdOrderByCreatedAtAsc",
+          "lineNumber": 102
+        },
+        {
+          "caller": "getSessionQuestions",
+          "callee": "session.getId",
+          "lineNumber": 102
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "getOwnedSession",
+          "lineNumber": 110
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getStatus",
+          "lineNumber": 111
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 112
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "typingQuestionRepository.findByIdAndSessionId(questionId, sessionId).orElseThrow",
+          "lineNumber": 115
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "typingQuestionRepository.findByIdAndSessionId",
+          "lineNumber": 115
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 116
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getAnsweredAt",
+          "lineNumber": 117
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new BusinessException",
+          "lineNumber": 118
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "normalizeAnswer(request.answer()).equals",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "normalizeAnswer",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.answer",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "normalizeAnswer",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getCorrectAnswer",
+          "lineNumber": 121
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "calculateSimilarityScore",
+          "lineNumber": 122
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.answer",
+          "lineNumber": 122
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getCorrectAnswer",
+          "lineNumber": 122
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewService.submitReview",
+          "lineNumber": 123
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary().getId",
+          "lineNumber": 124
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary",
+          "lineNumber": 124
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setUserAnswer",
+          "lineNumber": 128
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "request.answer",
+          "lineNumber": 128
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setCorrect",
+          "lineNumber": 129
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setSimilarityScore",
+          "lineNumber": 130
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.setAnsweredAt",
+          "lineNumber": 131
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 131
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "typingQuestionRepository.save",
+          "lineNumber": 132
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCompletedQuestions",
+          "lineNumber": 134
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedQuestions",
+          "lineNumber": 134
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCorrectAnswers",
+          "lineNumber": 136
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCorrectAnswers",
+          "lineNumber": 136
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedQuestions",
+          "lineNumber": 138
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getTotalQuestions",
+          "lineNumber": 138
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setStatus",
+          "lineNumber": 139
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.setCompletedAt",
+          "lineNumber": 140
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 140
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "typingSessionRepository.save",
+          "lineNumber": 142
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "new TypingAnswerResponse",
+          "lineNumber": 144
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getId",
+          "lineNumber": 145
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getId",
+          "lineNumber": 146
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary().getId",
+          "lineNumber": 147
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getVocabulary",
+          "lineNumber": 147
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "question.getCorrectAnswer",
+          "lineNumber": 149
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.status",
+          "lineNumber": 151
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.nextReviewAt",
+          "lineNumber": 152
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "reviewResponse.repetitionCount",
+          "lineNumber": 153
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCorrectAnswers",
+          "lineNumber": 154
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getCompletedQuestions",
+          "lineNumber": 155
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getTotalQuestions",
+          "lineNumber": 156
+        },
+        {
+          "caller": "submitAnswer",
+          "callee": "session.getStatus",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 162
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningVi().isBlank",
+          "lineNumber": 162
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 162
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 163
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 165
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningEn().isBlank",
+          "lineNumber": 165
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 165
+        },
+        {
+          "caller": "resolvePromptText",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 166
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.source",
+          "lineNumber": 172
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.collectionId",
+          "lineNumber": 175
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 176
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(request.collectionId(), userId).orElseThrow",
+          "lineNumber": 178
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 178
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "request.collectionId",
+          "lineNumber": 178
+        },
+        {
+          "caller": "resolveCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 179
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "request.source",
+          "lineNumber": 187
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 188
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                    .stream()\r\n                    .map(CollectionVocabularyEntity::getVocabulary).toList",
+          "lineNumber": 189
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                    .stream().map",
+          "lineNumber": 189
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                    .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId()).stream",
+          "lineNumber": 189
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 189
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "collection.getId",
+          "lineNumber": 190
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream()\r\n                    .map(LearningProgressEntity::getVocabulary)\r\n                    .filter(vocabulary -> vocabulary.getDeletedAt() == null).toList",
+          "lineNumber": 194
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream()\r\n                    .map(LearningProgressEntity::getVocabulary).filter",
+          "lineNumber": 194
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now())\r\n                    .stream().map",
+          "lineNumber": 194
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository\r\n                    .findAllByUserIdAndNextReviewAtLessThanEqual(userId, LocalDateTime.now()).stream",
+          "lineNumber": 194
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 194
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 195
+        },
+        {
+          "caller": "resolveSessionVocabularies",
+          "callee": "vocabulary.getDeletedAt",
+          "lineNumber": 198
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 204
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "getCurrentUser",
+          "lineNumber": 204
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "typingSessionRepository.findByIdAndUserId(sessionId, userId).orElseThrow",
+          "lineNumber": 205
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "typingSessionRepository.findByIdAndUserId",
+          "lineNumber": 205
+        },
+        {
+          "caller": "getOwnedSession",
+          "callee": "new BusinessException",
+          "lineNumber": 206
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 210
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 211
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 211
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 212
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 216
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 216
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 217
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 218
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 220
+        },
+        {
+          "caller": "normalizeAnswer",
+          "callee": "answer.trim().toLowerCase",
+          "lineNumber": 224
+        },
+        {
+          "caller": "normalizeAnswer",
+          "callee": "answer.trim",
+          "lineNumber": 224
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "normalizeAnswer",
+          "lineNumber": 228
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "normalizeAnswer",
+          "lineNumber": 229
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "normalizedCorrectAnswer.isEmpty",
+          "lineNumber": 230
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "BigDecimal.ZERO.setScale",
+          "lineNumber": 231
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "levenshteinDistance",
+          "lineNumber": 234
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "Math.max",
+          "lineNumber": 235
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "normalizedAnswer.length",
+          "lineNumber": 235
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "normalizedCorrectAnswer.length",
+          "lineNumber": 235
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "Math.max",
+          "lineNumber": 236
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "BigDecimal.valueOf(score).setScale",
+          "lineNumber": 237
+        },
+        {
+          "caller": "calculateSimilarityScore",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 237
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "right.length",
+          "lineNumber": 241
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "right.length",
+          "lineNumber": 242
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "right.length",
+          "lineNumber": 244
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "left.length",
+          "lineNumber": 248
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "right.length",
+          "lineNumber": 250
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "left.charAt",
+          "lineNumber": 251
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "right.charAt",
+          "lineNumber": 251
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "Math.min",
+          "lineNumber": 252
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "Math.min",
+          "lineNumber": 253
+        },
+        {
+          "caller": "levenshteinDistance",
+          "callee": "right.length",
+          "lineNumber": 262
+        }
+      ],
+      "metrics": {
+        "importCount": 27,
+        "exportCount": 5,
+        "functionCount": 13,
+        "classCount": 1
+      }
+    }
+  ]
+}

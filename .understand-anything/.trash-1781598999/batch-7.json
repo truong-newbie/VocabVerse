@@ -1,0 +1,1659 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "type": "file",
+      "name": "RoleplayController.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "summary": "RoleplayController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 5 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:RoleplayController",
+      "type": "class",
+      "name": "RoleplayController",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "lineRange": [
+        23,
+        61
+      ],
+      "summary": "RoleplayController định nghĩa cấu trúc hoặc hành vi chính trong RoleplayController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "lineRange": [
+        30,
+        35
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong RoleplayController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:getSession",
+      "type": "function",
+      "name": "getSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "lineRange": [
+        37,
+        40
+      ],
+      "summary": "getSession triển khai một thao tác đáng chú ý trong RoleplayController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:getSessions",
+      "type": "function",
+      "name": "getSessions",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "lineRange": [
+        42,
+        47
+      ],
+      "summary": "getSessions triển khai một thao tác đáng chú ý trong RoleplayController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:sendMessage",
+      "type": "function",
+      "name": "sendMessage",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "lineRange": [
+        49,
+        55
+      ],
+      "summary": "sendMessage triển khai một thao tác đáng chú ý trong RoleplayController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:endSession",
+      "type": "function",
+      "name": "endSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "lineRange": [
+        57,
+        60
+      ],
+      "summary": "endSession triển khai một thao tác đáng chú ý trong RoleplayController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "type": "file",
+      "name": "CreateRoleplaySessionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "summary": "CreateRoleplaySessionRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "type": "file",
+      "name": "SendRoleplayMessageRequest.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "summary": "SendRoleplayMessageRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "type": "file",
+      "name": "RoleplayAiReply.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "summary": "RoleplayAiReply.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "type": "file",
+      "name": "RoleplayAiReport.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "summary": "RoleplayAiReport.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "type": "file",
+      "name": "RoleplayAiScenario.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "summary": "RoleplayAiScenario.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "type": "file",
+      "name": "RoleplayMessageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "summary": "RoleplayMessageResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "type": "file",
+      "name": "RoleplayReportResponse.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "summary": "RoleplayReportResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "type": "file",
+      "name": "RoleplaySessionPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "summary": "RoleplaySessionPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "type": "file",
+      "name": "RoleplaySessionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "summary": "RoleplaySessionResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "type": "file",
+      "name": "RoleplayCorrection.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "summary": "RoleplayCorrection.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java:RoleplayCorrection",
+      "type": "class",
+      "name": "RoleplayCorrection",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "lineRange": [
+        8,
+        18
+      ],
+      "summary": "RoleplayCorrection định nghĩa cấu trúc hoặc hành vi chính trong RoleplayCorrection.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "type": "file",
+      "name": "RoleplayMessageEntity.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "summary": "RoleplayMessageEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java:RoleplayMessageEntity",
+      "type": "class",
+      "name": "RoleplayMessageEntity",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "lineRange": [
+        26,
+        58
+      ],
+      "summary": "RoleplayMessageEntity định nghĩa cấu trúc hoặc hành vi chính trong RoleplayMessageEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "type": "file",
+      "name": "RoleplayReportEntity.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "summary": "RoleplayReportEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java:RoleplayReportEntity",
+      "type": "class",
+      "name": "RoleplayReportEntity",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "lineRange": [
+        24,
+        66
+      ],
+      "summary": "RoleplayReportEntity định nghĩa cấu trúc hoặc hành vi chính trong RoleplayReportEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "type": "file",
+      "name": "RoleplaySessionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "summary": "RoleplaySessionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java:RoleplaySessionEntity",
+      "type": "class",
+      "name": "RoleplaySessionEntity",
+      "filePath": "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "lineRange": [
+        27,
+        75
+      ],
+      "summary": "RoleplaySessionEntity định nghĩa cấu trúc hoặc hành vi chính trong RoleplaySessionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "type": "file",
+      "name": "RoleplayDifficulty.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "summary": "RoleplayDifficulty.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "type": "file",
+      "name": "RoleplayMessageSender.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "summary": "RoleplayMessageSender.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "type": "file",
+      "name": "RoleplaySessionStatus.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "summary": "RoleplaySessionStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "type": "file",
+      "name": "RoleplayMapper.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "summary": "RoleplayMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java:RoleplayMapper",
+      "type": "class",
+      "name": "RoleplayMapper",
+      "filePath": "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "lineRange": [
+        13,
+        38
+      ],
+      "summary": "RoleplayMapper định nghĩa cấu trúc hoặc hành vi chính trong RoleplayMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "type": "file",
+      "name": "RoleplayPromptBuilder.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "summary": "RoleplayPromptBuilder.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:RoleplayPromptBuilder",
+      "type": "class",
+      "name": "RoleplayPromptBuilder",
+      "filePath": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "lineRange": [
+        8,
+        93
+      ],
+      "summary": "RoleplayPromptBuilder định nghĩa cấu trúc hoặc hành vi chính trong RoleplayPromptBuilder.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildScenarioPrompt",
+      "type": "function",
+      "name": "buildScenarioPrompt",
+      "filePath": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "lineRange": [
+        11,
+        24
+      ],
+      "summary": "buildScenarioPrompt triển khai một thao tác đáng chú ý trong RoleplayPromptBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildReplyPrompt",
+      "type": "function",
+      "name": "buildReplyPrompt",
+      "filePath": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "lineRange": [
+        26,
+        59
+      ],
+      "summary": "buildReplyPrompt triển khai một thao tác đáng chú ý trong RoleplayPromptBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildReportPrompt",
+      "type": "function",
+      "name": "buildReportPrompt",
+      "filePath": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "lineRange": [
+        61,
+        82
+      ],
+      "summary": "buildReportPrompt triển khai một thao tác đáng chú ý trong RoleplayPromptBuilder.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "type": "file",
+      "name": "RoleplayMessageRepository.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "summary": "RoleplayMessageRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java:RoleplayMessageRepository",
+      "type": "class",
+      "name": "RoleplayMessageRepository",
+      "filePath": "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "RoleplayMessageRepository định nghĩa cấu trúc hoặc hành vi chính trong RoleplayMessageRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "type": "file",
+      "name": "RoleplayReportRepository.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "summary": "RoleplayReportRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java:RoleplayReportRepository",
+      "type": "class",
+      "name": "RoleplayReportRepository",
+      "filePath": "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "RoleplayReportRepository định nghĩa cấu trúc hoặc hành vi chính trong RoleplayReportRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "type": "file",
+      "name": "RoleplaySessionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "summary": "RoleplaySessionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java:RoleplaySessionRepository",
+      "type": "class",
+      "name": "RoleplaySessionRepository",
+      "filePath": "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "lineRange": [
+        10,
+        15
+      ],
+      "summary": "RoleplaySessionRepository định nghĩa cấu trúc hoặc hành vi chính trong RoleplaySessionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "type": "file",
+      "name": "RoleplayAiService.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "summary": "RoleplayAiService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 5 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:RoleplayAiService",
+      "type": "class",
+      "name": "RoleplayAiService",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "lineRange": [
+        15,
+        79
+      ],
+      "summary": "RoleplayAiService định nghĩa cấu trúc hoặc hành vi chính trong RoleplayAiService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:startSession",
+      "type": "function",
+      "name": "startSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "lineRange": [
+        21,
+        30
+      ],
+      "summary": "startSession triển khai một thao tác đáng chú ý trong RoleplayAiService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:reply",
+      "type": "function",
+      "name": "reply",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "lineRange": [
+        32,
+        37
+      ],
+      "summary": "reply triển khai một thao tác đáng chú ý trong RoleplayAiService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:report",
+      "type": "function",
+      "name": "report",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "lineRange": [
+        39,
+        54
+      ],
+      "summary": "report triển khai một thao tác đáng chú ý trong RoleplayAiService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:buildCorrection",
+      "type": "function",
+      "name": "buildCorrection",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "lineRange": [
+        63,
+        78
+      ],
+      "summary": "buildCorrection triển khai một thao tác đáng chú ý trong RoleplayAiService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "type": "file",
+      "name": "RoleplayService.java",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "summary": "RoleplayService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 10 function, 22 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:RoleplayService",
+      "type": "class",
+      "name": "RoleplayService",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        37,
+        189
+      ],
+      "summary": "RoleplayService định nghĩa cấu trúc hoặc hành vi chính trong RoleplayService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        48,
+        74
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong RoleplayService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:getSession",
+      "type": "function",
+      "name": "getSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        76,
+        80
+      ],
+      "summary": "getSession triển khai một thao tác đáng chú ý trong RoleplayService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:getSessions",
+      "type": "function",
+      "name": "getSessions",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        82,
+        94
+      ],
+      "summary": "getSessions triển khai một thao tác đáng chú ý trong RoleplayService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:sendMessage",
+      "type": "function",
+      "name": "sendMessage",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        96,
+        121
+      ],
+      "summary": "sendMessage triển khai một thao tác đáng chú ý trong RoleplayService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:endSession",
+      "type": "function",
+      "name": "endSession",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        123,
+        149
+      ],
+      "summary": "endSession triển khai một thao tác đáng chú ý trong RoleplayService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:toSessionResponse",
+      "type": "function",
+      "name": "toSessionResponse",
+      "filePath": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "lineRange": [
+        159,
+        168
+      ],
+      "summary": "toSessionResponse triển khai một thao tác đáng chú ý trong RoleplayService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:RoleplayController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:RoleplayController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:getSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:getSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:getSessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:getSessions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:sendMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:sendMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:endSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java:endSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java:RoleplayCorrection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java:RoleplayCorrection",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java:RoleplayMessageEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java:RoleplayMessageEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java:RoleplayReportEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java:RoleplayReportEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java:RoleplaySessionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java:RoleplaySessionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java:RoleplayMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java:RoleplayMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:RoleplayPromptBuilder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:RoleplayPromptBuilder",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildScenarioPrompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildScenarioPrompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildReplyPrompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildReplyPrompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildReportPrompt",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java:buildReportPrompt",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java:RoleplayMessageRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java:RoleplayMessageRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java:RoleplayReportRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java:RoleplayReportRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java:RoleplaySessionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java:RoleplaySessionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:RoleplayAiService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:RoleplayAiService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:startSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:startSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:reply",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:reply",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:report",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:report",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java:buildCorrection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:RoleplayService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "class:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:RoleplayService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:getSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:getSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:getSessions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:getSessions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:sendMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:sendMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:endSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:endSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "function:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java:toSessionResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

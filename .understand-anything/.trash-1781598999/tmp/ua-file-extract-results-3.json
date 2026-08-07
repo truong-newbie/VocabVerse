@@ -1,0 +1,2641 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminCollectionController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 91,
+      "functions": [
+        {
+          "name": "listCollections",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "visibility",
+            "pageable"
+          ]
+        },
+        {
+          "name": "getCollection",
+          "startLine": 46,
+          "endLine": 49,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "updateVisibility",
+          "startLine": 51,
+          "endLine": 57,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "moderateCollection",
+          "startLine": 59,
+          "endLine": 65,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteCollection",
+          "startLine": 67,
+          "endLine": 71,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "listPublicCollections",
+          "startLine": 73,
+          "endLine": 78,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "hidePublicCollection",
+          "startLine": 80,
+          "endLine": 86,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "postHidePublicCollection",
+          "startLine": 88,
+          "endLine": 94,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "startLine": 96,
+          "endLine": 102,
+          "params": [
+            "collectionId",
+            "pageable"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminCollectionController",
+          "startLine": 30,
+          "endLine": 103,
+          "methods": [
+            "listCollections",
+            "getCollection",
+            "updateVisibility",
+            "moderateCollection",
+            "deleteCollection",
+            "listPublicCollections",
+            "hidePublicCollection",
+            "postHidePublicCollection",
+            "getPublicCollectionVocabularies"
+          ],
+          "properties": [
+            "adminCollectionService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listCollections",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "getCollection",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "updateVisibility",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "moderateCollection",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "deleteCollection",
+          "line": 67,
+          "isDefault": false
+        },
+        {
+          "name": "listPublicCollections",
+          "line": 73,
+          "isDefault": false
+        },
+        {
+          "name": "hidePublicCollection",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "postHidePublicCollection",
+          "line": 88,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "line": 96,
+          "isDefault": false
+        },
+        {
+          "name": "AdminCollectionController",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listCollections",
+          "callee": "ApiResponse.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "listCollections",
+          "callee": "adminCollectionService.listCollections",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getCollection",
+          "callee": "adminCollectionService.getCollection",
+          "lineNumber": 48
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "ApiResponse.success",
+          "lineNumber": 56
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "adminCollectionService.updateVisibility",
+          "lineNumber": 56
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 64
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "adminCollectionService.moderateCollection",
+          "lineNumber": 64
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "adminCollectionService.deleteCollection",
+          "lineNumber": 69
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 70
+        },
+        {
+          "caller": "listPublicCollections",
+          "callee": "ApiResponse.success",
+          "lineNumber": 77
+        },
+        {
+          "caller": "listPublicCollections",
+          "callee": "adminCollectionService.listPublicCollections",
+          "lineNumber": 77
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 85
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "adminCollectionService.hidePublicCollectionAsCollection",
+          "lineNumber": 85
+        },
+        {
+          "caller": "postHidePublicCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 93
+        },
+        {
+          "caller": "postHidePublicCollection",
+          "callee": "adminCollectionService.hidePublicCollection",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "ApiResponse.success",
+          "lineNumber": 101
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "adminCollectionService.getPublicCollectionVocabularies",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 11,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminHidePublicCollectionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminModerateCollectionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpdateCollectionVisibilityRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionModerationResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminCollectionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 23,
+      "nonEmptyLines": 21,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminPublicCollectionHideResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminPublicVocabularyResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/entity/PublicCollectionModerationEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 44,
+      "classes": [
+        {
+          "name": "PublicCollectionModerationEntity",
+          "startLine": 23,
+          "endLine": 51,
+          "methods": [],
+          "properties": [
+            "id",
+            "collection",
+            "moderatedBy",
+            "reason",
+            "createdAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "PublicCollectionModerationEntity",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/repository/PublicCollectionModerationRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "classes": [
+        {
+          "name": "PublicCollectionModerationRepository",
+          "startLine": 7,
+          "endLine": 8,
+          "methods": [],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "PublicCollectionModerationRepository",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminCollectionService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 218,
+      "nonEmptyLines": 196,
+      "functions": [
+        {
+          "name": "listCollections",
+          "startLine": 43,
+          "endLine": 53,
+          "params": [
+            "visibility",
+            "pageable"
+          ]
+        },
+        {
+          "name": "getCollection",
+          "startLine": 55,
+          "endLine": 58,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "updateVisibility",
+          "startLine": 60,
+          "endLine": 68,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "moderateCollection",
+          "startLine": 70,
+          "endLine": 95,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteCollection",
+          "startLine": 97,
+          "endLine": 106,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "listPublicCollections",
+          "startLine": 108,
+          "endLine": 111,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "hidePublicCollectionAsCollection",
+          "startLine": 113,
+          "endLine": 120,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "hidePublicCollection",
+          "startLine": 122,
+          "endLine": 140,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "startLine": 142,
+          "endLine": 165,
+          "params": [
+            "collectionId",
+            "pageable"
+          ]
+        },
+        {
+          "name": "findCollection",
+          "startLine": 167,
+          "endLine": 170,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "getCurrentAdmin",
+          "startLine": 172,
+          "endLine": 179,
+          "params": []
+        },
+        {
+          "name": "toResponse",
+          "startLine": 181,
+          "endLine": 199,
+          "params": [
+            "collection"
+          ]
+        },
+        {
+          "name": "toPageResponse",
+          "startLine": 201,
+          "endLine": 209,
+          "params": [
+            "page"
+          ]
+        },
+        {
+          "name": "toPublicVocabularyResponse",
+          "startLine": 211,
+          "endLine": 217,
+          "params": [
+            "vocabulary"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminCollectionService",
+          "startLine": 34,
+          "endLine": 218,
+          "methods": [
+            "listCollections",
+            "getCollection",
+            "updateVisibility",
+            "moderateCollection",
+            "deleteCollection",
+            "listPublicCollections",
+            "hidePublicCollectionAsCollection",
+            "hidePublicCollection",
+            "getPublicCollectionVocabularies",
+            "findCollection",
+            "getCurrentAdmin",
+            "toResponse",
+            "toPageResponse",
+            "toPublicVocabularyResponse"
+          ],
+          "properties": [
+            "collectionRepository",
+            "moderationRepository",
+            "userRepository",
+            "collectionVocabularyRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listCollections",
+          "line": 43,
+          "isDefault": false
+        },
+        {
+          "name": "getCollection",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "updateVisibility",
+          "line": 60,
+          "isDefault": false
+        },
+        {
+          "name": "moderateCollection",
+          "line": 70,
+          "isDefault": false
+        },
+        {
+          "name": "deleteCollection",
+          "line": 97,
+          "isDefault": false
+        },
+        {
+          "name": "listPublicCollections",
+          "line": 108,
+          "isDefault": false
+        },
+        {
+          "name": "hidePublicCollectionAsCollection",
+          "line": 113,
+          "isDefault": false
+        },
+        {
+          "name": "hidePublicCollection",
+          "line": 122,
+          "isDefault": false
+        },
+        {
+          "name": "getPublicCollectionVocabularies",
+          "line": 142,
+          "isDefault": false
+        },
+        {
+          "name": "AdminCollectionService",
+          "line": 34,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listCollections",
+          "callee": "collectionRepository.findAllByDeletedAtIsNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "listCollections",
+          "callee": "collectionRepository.findAllByVisibilityAndDeletedAtIsNull",
+          "lineNumber": 50
+        },
+        {
+          "caller": "listCollections",
+          "callee": "toPageResponse",
+          "lineNumber": 52
+        },
+        {
+          "caller": "listCollections",
+          "callee": "page.map",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getCollection",
+          "callee": "toResponse",
+          "lineNumber": 57
+        },
+        {
+          "caller": "getCollection",
+          "callee": "findCollection",
+          "lineNumber": 57
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "findCollection",
+          "lineNumber": 65
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "collection.setVisibility",
+          "lineNumber": 66
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "request.visibility",
+          "lineNumber": 66
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "toResponse",
+          "lineNumber": 67
+        },
+        {
+          "caller": "updateVisibility",
+          "callee": "collectionRepository.save",
+          "lineNumber": 67
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "findCollection",
+          "lineNumber": 75
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.action().trim().toUpperCase",
+          "lineNumber": 76
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.action().trim",
+          "lineNumber": 76
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.action",
+          "lineNumber": 76
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "\"APPROVE\".equals",
+          "lineNumber": 77
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collection.setVisibility",
+          "lineNumber": 78
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 79
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "new AdminCollectionModerationResponse",
+          "lineNumber": 80
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collection.getId",
+          "lineNumber": 80
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collection.getVisibility",
+          "lineNumber": 80
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "\"HIDE\".equals",
+          "lineNumber": 82
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "\"REJECT\".equals",
+          "lineNumber": 82
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collection.setVisibility",
+          "lineNumber": 83
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 84
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "moderationRepository.save",
+          "lineNumber": 85
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "PublicCollectionModerationEntity.builder()\r\n                    .collection(collection)\r\n                    .moderatedBy(getCurrentAdmin())\r\n                    .reason(request.reason() == null || request.reason().isBlank()\r\n                            ? action\r\n                            : request.reason().trim()).build",
+          "lineNumber": 85
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "PublicCollectionModerationEntity.builder()\r\n                    .collection(collection)\r\n                    .moderatedBy(getCurrentAdmin()).reason",
+          "lineNumber": 85
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "PublicCollectionModerationEntity.builder()\r\n                    .collection(collection).moderatedBy",
+          "lineNumber": 85
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "PublicCollectionModerationEntity.builder().collection",
+          "lineNumber": 85
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "PublicCollectionModerationEntity.builder",
+          "lineNumber": 85
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "getCurrentAdmin",
+          "lineNumber": 87
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.reason",
+          "lineNumber": 88
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.reason().isBlank",
+          "lineNumber": 88
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.reason",
+          "lineNumber": 88
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.reason().trim",
+          "lineNumber": 90
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "request.reason",
+          "lineNumber": 90
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "new AdminCollectionModerationResponse",
+          "lineNumber": 92
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collection.getId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "collection.getVisibility",
+          "lineNumber": 92
+        },
+        {
+          "caller": "moderateCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 94
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "findCollection",
+          "lineNumber": 99
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collection.getVisibility",
+          "lineNumber": 100
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 101
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collection.setDeletedAt",
+          "lineNumber": 104
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 104
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 105
+        },
+        {
+          "caller": "listPublicCollections",
+          "callee": "listCollections",
+          "lineNumber": 110
+        },
+        {
+          "caller": "hidePublicCollectionAsCollection",
+          "callee": "hidePublicCollection",
+          "lineNumber": 118
+        },
+        {
+          "caller": "hidePublicCollectionAsCollection",
+          "callee": "toResponse",
+          "lineNumber": 119
+        },
+        {
+          "caller": "hidePublicCollectionAsCollection",
+          "callee": "findCollection",
+          "lineNumber": 119
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "collectionRepository\r\n                .findByIdAndVisibilityAndDeletedAtIsNull(collectionId, CollectionVisibility.PUBLIC).orElseThrow",
+          "lineNumber": 127
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "collectionRepository.findByIdAndVisibilityAndDeletedAtIsNull",
+          "lineNumber": 127
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 129
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "collection.setVisibility",
+          "lineNumber": 131
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "moderationRepository.save",
+          "lineNumber": 132
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "PublicCollectionModerationEntity.builder()\r\n                .collection(collection)\r\n                .moderatedBy(getCurrentAdmin())\r\n                .reason(request.reason().trim()).build",
+          "lineNumber": 132
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "PublicCollectionModerationEntity.builder()\r\n                .collection(collection)\r\n                .moderatedBy(getCurrentAdmin()).reason",
+          "lineNumber": 132
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "PublicCollectionModerationEntity.builder()\r\n                .collection(collection).moderatedBy",
+          "lineNumber": 132
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "PublicCollectionModerationEntity.builder().collection",
+          "lineNumber": 132
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "PublicCollectionModerationEntity.builder",
+          "lineNumber": 132
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "getCurrentAdmin",
+          "lineNumber": 134
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "request.reason().trim",
+          "lineNumber": 135
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "request.reason",
+          "lineNumber": 135
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 138
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "new AdminPublicCollectionHideResponse",
+          "lineNumber": 139
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "collection.getId",
+          "lineNumber": 139
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "request.reason().trim",
+          "lineNumber": 139
+        },
+        {
+          "caller": "hidePublicCollection",
+          "callee": "request.reason",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "collectionRepository.findByIdAndVisibilityAndDeletedAtIsNull(collectionId, CollectionVisibility.PUBLIC).orElseThrow",
+          "lineNumber": 147
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "collectionRepository.findByIdAndVisibilityAndDeletedAtIsNull",
+          "lineNumber": 147
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "new BusinessException",
+          "lineNumber": 148
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(\r\n                        collectionId,\r\n                        CollectionVisibility.PUBLIC,\r\n                        pageable\r\n                )\r\n                .map(CollectionVocabularyEntity::getVocabulary).map",
+          "lineNumber": 150
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(\r\n                        collectionId,\r\n                        CollectionVisibility.PUBLIC,\r\n                        pageable\r\n                ).map",
+          "lineNumber": 150
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionVisibilityAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 150
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "new AdminPageResponse<>",
+          "lineNumber": 158
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getContent",
+          "lineNumber": 159
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getNumber",
+          "lineNumber": 160
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getSize",
+          "lineNumber": 161
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getTotalElements",
+          "lineNumber": 162
+        },
+        {
+          "caller": "getPublicCollectionVocabularies",
+          "callee": "page.getTotalPages",
+          "lineNumber": 163
+        },
+        {
+          "caller": "findCollection",
+          "callee": "collectionRepository.findByIdAndDeletedAtIsNull(collectionId).orElseThrow",
+          "lineNumber": 168
+        },
+        {
+          "caller": "findCollection",
+          "callee": "collectionRepository.findByIdAndDeletedAtIsNull",
+          "lineNumber": 168
+        },
+        {
+          "caller": "findCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 169
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 173
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 173
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 174
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "new BusinessException",
+          "lineNumber": 175
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "userRepository.findByEmail(authentication.getName()).orElseThrow",
+          "lineNumber": 177
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 177
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "authentication.getName",
+          "lineNumber": 177
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "new BusinessException",
+          "lineNumber": 178
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getOwner",
+          "lineNumber": 182
+        },
+        {
+          "caller": "toResponse",
+          "callee": "new AdminCollectionResponse",
+          "lineNumber": 183
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getId",
+          "lineNumber": 184
+        },
+        {
+          "caller": "toResponse",
+          "callee": "owner.getId",
+          "lineNumber": 185
+        },
+        {
+          "caller": "toResponse",
+          "callee": "owner.getEmail",
+          "lineNumber": 186
+        },
+        {
+          "caller": "toResponse",
+          "callee": "owner.getFullName",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getTitle",
+          "lineNumber": 188
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getDescription",
+          "lineNumber": 189
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getVisibility",
+          "lineNumber": 190
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getVisibility().name",
+          "lineNumber": 191
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getVisibility",
+          "lineNumber": 191
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getThumbnailUrl",
+          "lineNumber": 192
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getTotalWords",
+          "lineNumber": 193
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getTotalWords",
+          "lineNumber": 194
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.isFeatured",
+          "lineNumber": 195
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getCreatedAt",
+          "lineNumber": 196
+        },
+        {
+          "caller": "toResponse",
+          "callee": "collection.getUpdatedAt",
+          "lineNumber": 197
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "new AdminPageResponse<>",
+          "lineNumber": 202
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getContent",
+          "lineNumber": 203
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getNumber",
+          "lineNumber": 204
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getSize",
+          "lineNumber": 205
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalElements",
+          "lineNumber": 206
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalPages",
+          "lineNumber": 207
+        },
+        {
+          "caller": "toPublicVocabularyResponse",
+          "callee": "new AdminPublicVocabularyResponse",
+          "lineNumber": 212
+        },
+        {
+          "caller": "toPublicVocabularyResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 213
+        },
+        {
+          "caller": "toPublicVocabularyResponse",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 214
+        },
+        {
+          "caller": "toPublicVocabularyResponse",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 215
+        }
+      ],
+      "metrics": {
+        "importCount": 20,
+        "exportCount": 10,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/controller/CollectionController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 69,
+      "nonEmptyLines": 60,
+      "functions": [
+        {
+          "name": "createCollection",
+          "startLine": 30,
+          "endLine": 35,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getCollections",
+          "startLine": 37,
+          "endLine": 42,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getMyCollections",
+          "startLine": 44,
+          "endLine": 49,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getCollectionDetail",
+          "startLine": 51,
+          "endLine": 54,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "updateCollection",
+          "startLine": 56,
+          "endLine": 62,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteCollection",
+          "startLine": 64,
+          "endLine": 68,
+          "params": [
+            "collectionId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectionController",
+          "startLine": 23,
+          "endLine": 69,
+          "methods": [
+            "createCollection",
+            "getCollections",
+            "getMyCollections",
+            "getCollectionDetail",
+            "updateCollection",
+            "deleteCollection"
+          ],
+          "properties": [
+            "collectionService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createCollection",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getCollections",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getMyCollections",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "getCollectionDetail",
+          "line": 51,
+          "isDefault": false
+        },
+        {
+          "name": "updateCollection",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "deleteCollection",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionController",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collectionService.createCollection",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getCollections",
+          "callee": "ApiResponse.success",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getCollections",
+          "callee": "collectionService.getMyCollections",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "ApiResponse.success",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "collectionService.getMyCollections",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getCollectionDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getCollectionDetail",
+          "callee": "collectionService.getCollectionDetail",
+          "lineNumber": 53
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 61
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "collectionService.updateCollection",
+          "lineNumber": 61
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collectionService.deleteCollection",
+          "lineNumber": 66
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 67
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 7,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/request/CreateCollectionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/request/UpdateCollectionRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/response/CollectionPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/dto/response/CollectionResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 20,
+      "nonEmptyLines": 18,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 73,
+      "nonEmptyLines": 60,
+      "classes": [
+        {
+          "name": "CollectionEntity",
+          "startLine": 26,
+          "endLine": 73,
+          "methods": [],
+          "properties": [
+            "id",
+            "owner",
+            "title",
+            "description",
+            "visibility",
+            "thumbnailUrl",
+            "totalWords",
+            "featured",
+            "createdAt",
+            "updatedAt",
+            "deletedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionEntity",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/mapper/CollectionMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 51,
+      "nonEmptyLines": 45,
+      "classes": [
+        {
+          "name": "CollectionMapper",
+          "startLine": 11,
+          "endLine": 51,
+          "methods": [
+            "toEntity",
+            "toResponse",
+            "toResponse",
+            "updateEntity"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionMapper",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "toResponse",
+          "callee": "new CollectionResponse",
+          "lineNumber": 28
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getId",
+          "lineNumber": 29
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getOwner",
+          "lineNumber": 30
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getOwner().getId",
+          "lineNumber": 30
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getOwner",
+          "lineNumber": 30
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getTitle",
+          "lineNumber": 31
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getDescription",
+          "lineNumber": 32
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getVisibility",
+          "lineNumber": 33
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getThumbnailUrl",
+          "lineNumber": 35
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getTotalWords",
+          "lineNumber": 36
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.isFeatured",
+          "lineNumber": 37
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getCreatedAt",
+          "lineNumber": 38
+        },
+        {
+          "caller": "toResponse",
+          "callee": "entity.getUpdatedAt",
+          "lineNumber": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 46,
+      "nonEmptyLines": 32,
+      "classes": [
+        {
+          "name": "CollectionRepository",
+          "startLine": 13,
+          "endLine": 46,
+          "methods": [
+            "findByIdAndOwnerIdAndDeletedAtIsNull",
+            "findAllByOwnerIdAndDeletedAtIsNull",
+            "findByIdAndOwnerIdAndVisibilityInAndDeletedAtIsNull",
+            "findAllByIdInAndOwnerIdAndDeletedAtIsNull",
+            "countByOwnerIdAndDeletedAtIsNull",
+            "findAllByVisibilityAndOwnerIdNotAndDeletedAtIsNull",
+            "findAllByVisibilityAndDeletedAtIsNull",
+            "findAllByDeletedAtIsNull",
+            "findByIdAndDeletedAtIsNull",
+            "findByIdAndVisibilityAndDeletedAtIsNull",
+            "countByDeletedAtIsNull",
+            "countByVisibilityAndDeletedAtIsNull"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "CollectionRepository",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/collection/service/CollectionService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 125,
+      "nonEmptyLines": 106,
+      "functions": [
+        {
+          "name": "createCollection",
+          "startLine": 35,
+          "endLine": 46,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getMyCollections",
+          "startLine": 48,
+          "endLine": 56,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getCollectionDetail",
+          "startLine": 58,
+          "endLine": 64,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "updateCollection",
+          "startLine": 66,
+          "endLine": 77,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteCollection",
+          "startLine": 79,
+          "endLine": 88,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "getOwnedCollection",
+          "startLine": 90,
+          "endLine": 94,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "rejectSystemVisibility",
+          "startLine": 96,
+          "endLine": 100,
+          "params": [
+            "visibility"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 102,
+          "endLine": 106,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 108,
+          "endLine": 114,
+          "params": []
+        },
+        {
+          "name": "toPageResponse",
+          "startLine": 116,
+          "endLine": 124,
+          "params": [
+            "page"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectionService",
+          "startLine": 26,
+          "endLine": 125,
+          "methods": [
+            "createCollection",
+            "getMyCollections",
+            "getCollectionDetail",
+            "updateCollection",
+            "deleteCollection",
+            "getOwnedCollection",
+            "rejectSystemVisibility",
+            "getCurrentUser",
+            "getAuthenticatedEmail",
+            "toPageResponse"
+          ],
+          "properties": [
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "userRepository",
+            "collectionMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createCollection",
+          "line": 35,
+          "isDefault": false
+        },
+        {
+          "name": "getMyCollections",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getCollectionDetail",
+          "line": 58,
+          "isDefault": false
+        },
+        {
+          "name": "updateCollection",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "deleteCollection",
+          "line": 79,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createCollection",
+          "callee": "rejectSystemVisibility",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createCollection",
+          "callee": "request.visibility",
+          "lineNumber": 37
+        },
+        {
+          "caller": "createCollection",
+          "callee": "getCurrentUser",
+          "lineNumber": 39
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collectionMapper.toEntity",
+          "lineNumber": 40
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collection.setOwner",
+          "lineNumber": 41
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collection.setTotalWords",
+          "lineNumber": 42
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collection.setFeatured",
+          "lineNumber": 43
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collectionMapper.toResponse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "getCurrentUser",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "collectionRepository\r\n                .findAllByOwnerIdAndDeletedAtIsNull(ownerId, pageable).map",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "collectionRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getMyCollections",
+          "callee": "toPageResponse",
+          "lineNumber": 55
+        },
+        {
+          "caller": "getCollectionDetail",
+          "callee": "getOwnedCollection",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getCollectionDetail",
+          "callee": "collectionVocabularyRepository.countByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 61
+        },
+        {
+          "caller": "getCollectionDetail",
+          "callee": "collectionMapper.toResponse",
+          "lineNumber": 63
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "rejectSystemVisibility",
+          "lineNumber": 68
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "request.visibility",
+          "lineNumber": 68
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "getOwnedCollection",
+          "lineNumber": 70
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "collection.getVisibility",
+          "lineNumber": 71
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 72
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "collectionMapper.updateEntity",
+          "lineNumber": 75
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "collectionMapper.toResponse",
+          "lineNumber": 76
+        },
+        {
+          "caller": "updateCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 76
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "getOwnedCollection",
+          "lineNumber": 81
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collection.getVisibility",
+          "lineNumber": 82
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 83
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collection.setDeletedAt",
+          "lineNumber": 86
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 86
+        },
+        {
+          "caller": "deleteCollection",
+          "callee": "collectionRepository.save",
+          "lineNumber": 87
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "getCurrentUser",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(collectionId, ownerId).orElseThrow",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 93
+        },
+        {
+          "caller": "rejectSystemVisibility",
+          "callee": "new BusinessException",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 103
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 104
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 105
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 109
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 110
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 111
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "new CollectionPageResponse",
+          "lineNumber": 117
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getContent",
+          "lineNumber": 118
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getNumber",
+          "lineNumber": 119
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getSize",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalElements",
+          "lineNumber": 121
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalPages",
+          "lineNumber": 122
+        }
+      ],
+      "metrics": {
+        "importCount": 13,
+        "exportCount": 6,
+        "functionCount": 10,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/controller/ExportController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 45,
+      "nonEmptyLines": 39,
+      "functions": [
+        {
+          "name": "exportCollectionPdf",
+          "startLine": 23,
+          "endLine": 26,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "exportAllVocabulariesPdf",
+          "startLine": 28,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "pdfResponse",
+          "startLine": 33,
+          "endLine": 44,
+          "params": [
+            "result"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ExportController",
+          "startLine": 16,
+          "endLine": 45,
+          "methods": [
+            "exportCollectionPdf",
+            "exportAllVocabulariesPdf",
+            "pdfResponse"
+          ],
+          "properties": [
+            "pdfExportService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "exportCollectionPdf",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "exportAllVocabulariesPdf",
+          "line": 28,
+          "isDefault": false
+        },
+        {
+          "name": "ExportController",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "exportCollectionPdf",
+          "callee": "pdfResponse",
+          "lineNumber": 25
+        },
+        {
+          "caller": "exportCollectionPdf",
+          "callee": "pdfExportService.exportCollection",
+          "lineNumber": 25
+        },
+        {
+          "caller": "exportAllVocabulariesPdf",
+          "callee": "pdfResponse",
+          "lineNumber": 30
+        },
+        {
+          "caller": "exportAllVocabulariesPdf",
+          "callee": "pdfExportService.exportAllVocabularies",
+          "lineNumber": 30
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ResponseEntity.ok()\n                .contentType(MediaType.APPLICATION_PDF)\n                .header(\n                        HttpHeaders.CONTENT_DISPOSITION,\n                        ContentDisposition.attachment()\n                                .filename(result.filename())\n                                .build()\n                                .toString()\n                ).body",
+          "lineNumber": 34
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ResponseEntity.ok()\n                .contentType(MediaType.APPLICATION_PDF).header",
+          "lineNumber": 34
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ResponseEntity.ok().contentType",
+          "lineNumber": 34
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ResponseEntity.ok",
+          "lineNumber": 34
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ContentDisposition.attachment()\n                                .filename(result.filename())\n                                .build().toString",
+          "lineNumber": 38
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ContentDisposition.attachment()\n                                .filename(result.filename()).build",
+          "lineNumber": 38
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ContentDisposition.attachment().filename",
+          "lineNumber": 38
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "ContentDisposition.attachment",
+          "lineNumber": 38
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "result.filename",
+          "lineNumber": 39
+        },
+        {
+          "caller": "pdfResponse",
+          "callee": "result.content",
+          "lineNumber": 43
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 3,
+        "functionCount": 3,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/dto/ExportVocabularyRow.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/dto/PdfExportResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/export/service/PdfExportService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 131,
+      "nonEmptyLines": 115,
+      "functions": [
+        {
+          "name": "exportCollection",
+          "startLine": 41,
+          "endLine": 60,
+          "params": [
+            "collectionId"
+          ]
+        },
+        {
+          "name": "exportAllVocabularies",
+          "startLine": 62,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "buildResult",
+          "startLine": 73,
+          "endLine": 79,
+          "params": [
+            "title",
+            "rows",
+            "filename"
+          ]
+        },
+        {
+          "name": "toExportRow",
+          "startLine": 81,
+          "endLine": 92,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "firstExample",
+          "startLine": 94,
+          "endLine": 99,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "firstNonBlank",
+          "startLine": 101,
+          "endLine": 106,
+          "params": [
+            "primary",
+            "fallback"
+          ]
+        },
+        {
+          "name": "safeFilename",
+          "startLine": 108,
+          "endLine": 116,
+          "params": [
+            "title"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 118,
+          "endLine": 122,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 124,
+          "endLine": 130,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "PdfExportService",
+          "startLine": 26,
+          "endLine": 131,
+          "methods": [
+            "exportCollection",
+            "exportAllVocabularies",
+            "buildResult",
+            "toExportRow",
+            "firstExample",
+            "firstNonBlank",
+            "safeFilename",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "EXPORTABLE_COLLECTION_VISIBILITIES",
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "vocabularyRepository",
+            "userRepository",
+            "pdfTemplateBuilder"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "exportCollection",
+          "line": 41,
+          "isDefault": false
+        },
+        {
+          "name": "exportAllVocabularies",
+          "line": 62,
+          "isDefault": false
+        },
+        {
+          "name": "PdfExportService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "exportCollection",
+          "callee": "getCurrentUser",
+          "lineNumber": 43
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionRepository\r\n                .findByIdAndOwnerIdAndVisibilityInAndDeletedAtIsNull(\r\n                        collectionId,\r\n                        user.getId(),\r\n                        EXPORTABLE_COLLECTION_VISIBILITIES\r\n                ).orElseThrow",
+          "lineNumber": 44
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndVisibilityInAndDeletedAtIsNull",
+          "lineNumber": 44
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "user.getId",
+          "lineNumber": 47
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 50
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                .stream()\r\n                .map(CollectionVocabularyEntity::getVocabulary)\r\n                .map(this::toExportRow).toList",
+          "lineNumber": 52
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                .stream()\r\n                .map(CollectionVocabularyEntity::getVocabulary).map",
+          "lineNumber": 52
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId())\r\n                .stream().map",
+          "lineNumber": 52
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collection.getId()).stream",
+          "lineNumber": 52
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 52
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collection.getId",
+          "lineNumber": 53
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "buildResult",
+          "lineNumber": 59
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collection.getTitle",
+          "lineNumber": 59
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "safeFilename",
+          "lineNumber": 59
+        },
+        {
+          "caller": "exportCollection",
+          "callee": "collection.getTitle",
+          "lineNumber": 59
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "getCurrentUser",
+          "lineNumber": 64
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull(user.getId())\r\n                .stream()\r\n                .map(this::toExportRow).toList",
+          "lineNumber": 65
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull(user.getId())\r\n                .stream().map",
+          "lineNumber": 65
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull(user.getId()).stream",
+          "lineNumber": 65
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 65
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "user.getId",
+          "lineNumber": 65
+        },
+        {
+          "caller": "exportAllVocabularies",
+          "callee": "buildResult",
+          "lineNumber": 70
+        },
+        {
+          "caller": "buildResult",
+          "callee": "new PdfExportResult",
+          "lineNumber": 75
+        },
+        {
+          "caller": "buildResult",
+          "callee": "pdfTemplateBuilder.buildVocabularyPdf",
+          "lineNumber": 75
+        },
+        {
+          "caller": "buildResult",
+          "callee": "new BusinessException",
+          "lineNumber": 77
+        },
+        {
+          "caller": "buildResult",
+          "callee": "ErrorCode.PDF_GENERATION_FAILED.getMessage",
+          "lineNumber": 77
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "firstExample",
+          "lineNumber": 82
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "new ExportVocabularyRow",
+          "lineNumber": 83
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "firstNonBlank",
+          "lineNumber": 85
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 85
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 85
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "vocabulary.getPhonetic",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "vocabulary.getPartOfSpeech",
+          "lineNumber": 87
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "example.getEn",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toExportRow",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 89
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 95
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples().isEmpty",
+          "lineNumber": 95
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 95
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples().get",
+          "lineNumber": 98
+        },
+        {
+          "caller": "firstExample",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 98
+        },
+        {
+          "caller": "firstNonBlank",
+          "callee": "primary.isBlank",
+          "lineNumber": 102
+        },
+        {
+          "caller": "safeFilename",
+          "callee": "title.toLowerCase()\r\n                .replaceAll(\"[^a-z0-9]+\", \"-\").replaceAll",
+          "lineNumber": 109
+        },
+        {
+          "caller": "safeFilename",
+          "callee": "title.toLowerCase().replaceAll",
+          "lineNumber": 109
+        },
+        {
+          "caller": "safeFilename",
+          "callee": "title.toLowerCase",
+          "lineNumber": 109
+        },
+        {
+          "caller": "safeFilename",
+          "callee": "filename.isBlank",
+          "lineNumber": 112
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 119
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 120
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 120
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 121
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 125
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 126
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 127
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 129
+        }
+      ],
+      "metrics": {
+        "importCount": 15,
+        "exportCount": 3,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    }
+  ]
+}

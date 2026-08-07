@@ -1,0 +1,182 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": ".gitattributes",
+      "language": "unknown",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/checksums/md5-checksums.bin",
+      "language": "bin",
+      "sizeLines": 64,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/checksums/sha1-checksums.bin",
+      "language": "bin",
+      "sizeLines": 271,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/executionHistory/executionHistory.bin",
+      "language": "bin",
+      "sizeLines": 296,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/fileChanges/last-build.bin",
+      "language": "bin",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/fileHashes/fileHashes.bin",
+      "language": "bin",
+      "sizeLines": 102,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/fileHashes/resourceHashesCache.bin",
+      "language": "bin",
+      "sizeLines": 76,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/9.3.0/gc.properties",
+      "language": "properties",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/cache.properties",
+      "language": "properties",
+      "sizeLines": 2,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".gradle/buildOutputCleanup/outputFiles.bin",
+      "language": "bin",
+      "sizeLines": 2,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/file-system.probe",
+      "language": "probe",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".gradle/vcs-1/gc.properties",
+      "language": "properties",
+      "sizeLines": 0,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".mvn/wrapper/maven-wrapper.properties",
+      "language": "properties",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".understand-anything/.understandignore",
+      "language": "unknown",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".understand-anything/config.json",
+      "language": "json",
+      "sizeLines": 3,
+      "fileCategory": "config"
+    },
+    {
+      "path": "docs/api/06-api-design.md",
+      "language": "markdown",
+      "sizeLines": 956,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/api/API_DOCUMENTATION_FE.md",
+      "language": "markdown",
+      "sizeLines": 479,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/engineering/08-non-functional-requirements.md",
+      "language": "markdown",
+      "sizeLines": 470,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/engineering/09-backend-project-structure.md",
+      "language": "markdown",
+      "sizeLines": 793,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/openapi-current.json",
+      "language": "json",
+      "sizeLines": 4614,
+      "fileCategory": "config"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "language": "jar",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "language": "properties",
+      "sizeLines": 7,
+      "fileCategory": "config"
+    },
+    {
+      "path": "gradlew",
+      "language": "unknown",
+      "sizeLines": 248,
+      "fileCategory": "code"
+    },
+    {
+      "path": "mvnw",
+      "language": "unknown",
+      "sizeLines": 295,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    ".gitattributes": [],
+    ".gradle/9.3.0/checksums/md5-checksums.bin": [],
+    ".gradle/9.3.0/checksums/sha1-checksums.bin": [],
+    ".gradle/9.3.0/executionHistory/executionHistory.bin": [],
+    ".gradle/9.3.0/fileChanges/last-build.bin": [],
+    ".gradle/9.3.0/fileHashes/fileHashes.bin": [],
+    ".gradle/9.3.0/fileHashes/resourceHashesCache.bin": [],
+    ".gradle/9.3.0/gc.properties": [],
+    ".gradle/buildOutputCleanup/cache.properties": [],
+    ".gradle/buildOutputCleanup/outputFiles.bin": [],
+    ".gradle/file-system.probe": [],
+    ".gradle/vcs-1/gc.properties": [],
+    ".mvn/wrapper/maven-wrapper.properties": [],
+    ".understand-anything/.understandignore": [],
+    ".understand-anything/config.json": [],
+    "docs/api/06-api-design.md": [],
+    "docs/api/API_DOCUMENTATION_FE.md": [],
+    "docs/engineering/08-non-functional-requirements.md": [],
+    "docs/engineering/09-backend-project-structure.md": [],
+    "docs/openapi-current.json": [],
+    "gradle/wrapper/gradle-wrapper.jar": [],
+    "gradle/wrapper/gradle-wrapper.properties": [],
+    "gradlew": [],
+    "mvnw": [],
+    "src/main/java/com/vocabverse/ai/.gitkeep": []
+  }
+}

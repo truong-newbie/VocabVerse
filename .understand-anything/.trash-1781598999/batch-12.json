@@ -1,0 +1,1101 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "type": "file",
+      "name": "TypingController.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "summary": "TypingController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 7 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:TypingController",
+      "type": "class",
+      "name": "TypingController",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "lineRange": [
+        21,
+        53
+      ],
+      "summary": "TypingController định nghĩa cấu trúc hoặc hành vi chính trong TypingController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong TypingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:getSessionDetail",
+      "type": "function",
+      "name": "getSessionDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "lineRange": [
+        35,
+        38
+      ],
+      "summary": "getSessionDetail triển khai một thao tác đáng chú ý trong TypingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:getSessionQuestions",
+      "type": "function",
+      "name": "getSessionQuestions",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "getSessionQuestions triển khai một thao tác đáng chú ý trong TypingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:submitAnswer",
+      "type": "function",
+      "name": "submitAnswer",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "lineRange": [
+        45,
+        52
+      ],
+      "summary": "submitAnswer triển khai một thao tác đáng chú ý trong TypingController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "type": "file",
+      "name": "CreateTypingSessionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "summary": "CreateTypingSessionRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "type": "file",
+      "name": "SubmitTypingAnswerRequest.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "summary": "SubmitTypingAnswerRequest.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "type": "file",
+      "name": "TypingAnswerResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "summary": "TypingAnswerResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "type": "file",
+      "name": "TypingQuestionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "summary": "TypingQuestionResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "type": "file",
+      "name": "TypingSessionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "summary": "TypingSessionResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "type": "file",
+      "name": "TypingQuestionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "summary": "TypingQuestionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java:TypingQuestionEntity",
+      "type": "class",
+      "name": "TypingQuestionEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "lineRange": [
+        24,
+        71
+      ],
+      "summary": "TypingQuestionEntity định nghĩa cấu trúc hoặc hành vi chính trong TypingQuestionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "type": "file",
+      "name": "TypingSessionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "summary": "TypingSessionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java:TypingSessionEntity",
+      "type": "class",
+      "name": "TypingSessionEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "lineRange": [
+        26,
+        78
+      ],
+      "summary": "TypingSessionEntity định nghĩa cấu trúc hoặc hành vi chính trong TypingSessionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "type": "file",
+      "name": "TypingSessionSource.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "summary": "TypingSessionSource.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "type": "file",
+      "name": "TypingSessionStatus.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "summary": "TypingSessionStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "type": "file",
+      "name": "TypingMapper.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "summary": "TypingMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java:TypingMapper",
+      "type": "class",
+      "name": "TypingMapper",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "lineRange": [
+        10,
+        19
+      ],
+      "summary": "TypingMapper định nghĩa cấu trúc hoặc hành vi chính trong TypingMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "type": "file",
+      "name": "TypingQuestionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "summary": "TypingQuestionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java:TypingQuestionRepository",
+      "type": "class",
+      "name": "TypingQuestionRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "TypingQuestionRepository định nghĩa cấu trúc hoặc hành vi chính trong TypingQuestionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "type": "file",
+      "name": "TypingSessionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "summary": "TypingSessionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java:TypingSessionRepository",
+      "type": "class",
+      "name": "TypingSessionRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "TypingSessionRepository định nghĩa cấu trúc hoặc hành vi chính trong TypingSessionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "type": "file",
+      "name": "TypingService.java",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "summary": "TypingService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 13 function, 27 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:TypingService",
+      "type": "class",
+      "name": "TypingService",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        42,
+        264
+      ],
+      "summary": "TypingService định nghĩa cấu trúc hoặc hành vi chính trong TypingService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        56,
+        92
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:getSessionDetail",
+      "type": "function",
+      "name": "getSessionDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        94,
+        97
+      ],
+      "summary": "getSessionDetail triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:getSessionQuestions",
+      "type": "function",
+      "name": "getSessionQuestions",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        99,
+        106
+      ],
+      "summary": "getSessionQuestions triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:submitAnswer",
+      "type": "function",
+      "name": "submitAnswer",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        108,
+        159
+      ],
+      "summary": "submitAnswer triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:resolveCollection",
+      "type": "function",
+      "name": "resolveCollection",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        171,
+        180
+      ],
+      "summary": "resolveCollection triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:resolveSessionVocabularies",
+      "type": "function",
+      "name": "resolveSessionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        182,
+        201
+      ],
+      "summary": "resolveSessionVocabularies triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:calculateSimilarityScore",
+      "type": "function",
+      "name": "calculateSimilarityScore",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        227,
+        238
+      ],
+      "summary": "calculateSimilarityScore triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:levenshteinDistance",
+      "type": "function",
+      "name": "levenshteinDistance",
+      "filePath": "src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "lineRange": [
+        240,
+        263
+      ],
+      "summary": "levenshteinDistance triển khai một thao tác đáng chú ý trong TypingService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:TypingController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:TypingController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:getSessionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:getSessionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:getSessionQuestions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:getSessionQuestions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:submitAnswer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java:submitAnswer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/controller/TypingController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java:TypingQuestionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java:TypingQuestionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java:TypingSessionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java:TypingSessionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java:TypingMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java:TypingMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java:TypingQuestionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java:TypingQuestionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java:TypingSessionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java:TypingSessionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:TypingService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:TypingService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:getSessionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:getSessionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:getSessionQuestions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:getSessionQuestions",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:submitAnswer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:submitAnswer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:resolveCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:resolveSessionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:calculateSimilarityScore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/typing/service/TypingService.java:levenshteinDistance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/request/CreateTypingSessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/request/SubmitTypingAnswerRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingAnswerResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingQuestionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/dto/response/TypingSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingQuestionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/entity/TypingSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/mapper/TypingMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingQuestionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/typing/repository/TypingSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/typing/service/TypingService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

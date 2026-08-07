@@ -1,0 +1,970 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "fileCategory": "config",
+      "totalLines": 52,
+      "nonEmptyLines": 44,
+      "definitions": [
+        {
+          "name": "SPRING_PROFILES_ACTIVE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 1,
+          "endLine": 1
+        },
+        {
+          "name": "POSTGRES_DB",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 3,
+          "endLine": 3
+        },
+        {
+          "name": "POSTGRES_USER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 4,
+          "endLine": 4
+        },
+        {
+          "name": "POSTGRES_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 5,
+          "endLine": 5
+        },
+        {
+          "name": "DATABASE_URL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 6,
+          "endLine": 6
+        },
+        {
+          "name": "DATABASE_USERNAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 7,
+          "endLine": 7
+        },
+        {
+          "name": "DATABASE_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 8,
+          "endLine": 8
+        },
+        {
+          "name": "REDIS_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 10,
+          "endLine": 10
+        },
+        {
+          "name": "REDIS_PORT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 11,
+          "endLine": 11
+        },
+        {
+          "name": "REDIS_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 12,
+          "endLine": 12
+        },
+        {
+          "name": "RABBITMQ_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 14,
+          "endLine": 14
+        },
+        {
+          "name": "RABBITMQ_PORT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 15,
+          "endLine": 15
+        },
+        {
+          "name": "RABBITMQ_DEFAULT_USER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 16,
+          "endLine": 16
+        },
+        {
+          "name": "RABBITMQ_DEFAULT_PASS",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 17,
+          "endLine": 17
+        },
+        {
+          "name": "RABBITMQ_USERNAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 18,
+          "endLine": 18
+        },
+        {
+          "name": "RABBITMQ_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 19,
+          "endLine": 19
+        },
+        {
+          "name": "JWT_SECRET",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 21,
+          "endLine": 21
+        },
+        {
+          "name": "JWT_ACCESS_TOKEN_EXPIRATION",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 22,
+          "endLine": 22
+        },
+        {
+          "name": "JWT_REFRESH_TOKEN_EXPIRATION_DAYS",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 23,
+          "endLine": 23
+        },
+        {
+          "name": "GROQ_API_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 25,
+          "endLine": 25
+        },
+        {
+          "name": "GEMINI_API_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 26,
+          "endLine": 26
+        },
+        {
+          "name": "AI_NORMALIZE_TRIAL_DAILY_LIMIT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 27,
+          "endLine": 27
+        },
+        {
+          "name": "DICTIONARY_API_BASE_URL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 28,
+          "endLine": 28
+        },
+        {
+          "name": "MAIL_HOST",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 30,
+          "endLine": 30
+        },
+        {
+          "name": "MAIL_PORT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 31,
+          "endLine": 31
+        },
+        {
+          "name": "MAIL_USERNAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 32,
+          "endLine": 32
+        },
+        {
+          "name": "MAIL_PASSWORD",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 33,
+          "endLine": 33
+        },
+        {
+          "name": "MAIL_HEALTH_ENABLED",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 34,
+          "endLine": 34
+        },
+        {
+          "name": "NOTIFICATION_EMAIL_LISTENER_ENABLED",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 35,
+          "endLine": 35
+        },
+        {
+          "name": "NOTIFICATION_REVIEW_LINK",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 36,
+          "endLine": 36
+        },
+        {
+          "name": "MAX_UPLOAD_FILE_SIZE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 37,
+          "endLine": 37
+        },
+        {
+          "name": "MAX_UPLOAD_REQUEST_SIZE",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 38,
+          "endLine": 38
+        },
+        {
+          "name": "STORAGE_ENDPOINT",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 40,
+          "endLine": 40
+        },
+        {
+          "name": "STORAGE_ACCESS_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 41,
+          "endLine": 41
+        },
+        {
+          "name": "STORAGE_SECRET_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 42,
+          "endLine": 42
+        },
+        {
+          "name": "STORAGE_BUCKET",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 43,
+          "endLine": 43
+        },
+        {
+          "name": "CLOUDINARY_CLOUD_NAME",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 44,
+          "endLine": 44
+        },
+        {
+          "name": "CLOUDINARY_API_KEY",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 45,
+          "endLine": 45
+        },
+        {
+          "name": "CLOUDINARY_API_SECRET",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 46,
+          "endLine": 46
+        },
+        {
+          "name": "CLOUDINARY_UPLOAD_FOLDER",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 47,
+          "endLine": 47
+        },
+        {
+          "name": "SHADOWING_AI_SUBTITLE_ENABLED",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 48,
+          "endLine": 48
+        },
+        {
+          "name": "SHADOWING_AI_TRANSCRIPTION_MODEL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 49,
+          "endLine": 49
+        },
+        {
+          "name": "SHADOWING_AI_TRANSLATION_MODEL",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 50,
+          "endLine": 50
+        },
+        {
+          "name": "APP_CORS_ALLOWED_ORIGINS",
+          "kind": "variable",
+          "fields": [],
+          "startLine": 52,
+          "endLine": 52
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "definitionCount": 44
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 173,
+      "nonEmptyLines": 131,
+      "sections": [
+        {
+          "heading": "VocabVerse Backend",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Tech Stack",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Main API Modules",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Environment Variables",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Run Locally",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "Run Tests",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "Run With Docker",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "Swagger",
+          "level": 2,
+          "line": 147
+        },
+        {
+          "heading": "Production Notes",
+          "level": 2,
+          "line": 167
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "Sm2.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1193,
+      "nonEmptyLines": 867,
+      "sections": [
+        {
+          "heading": "Plan triển khai Sm2Scheduler cho VocabVerse",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Mục tiêu",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "2. Phạm vi phase SM-2",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "3. Code hiện tại cần hiểu trước khi làm",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "4. Thiết kế dữ liệu",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "4.1. Thêm enum scheduler type",
+          "level": 3,
+          "line": 71
+        },
+        {
+          "heading": "4.2. Update collection_review_settings",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "4.3. Migration DB",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "4.4. Có nên thêm field vào learning_progress không?",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "5. API contract",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "5.1. Update request DTO",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "5.2. Update response DTO",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "5.3. FE behavior đề xuất",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "6. Refactor scheduler architecture",
+          "level": 2,
+          "line": 303
+        },
+        {
+          "heading": "6.1. Tạo output object cho scheduler",
+          "level": 3,
+          "line": 305
+        },
+        {
+          "heading": "6.2. Tạo interface mới",
+          "level": 3,
+          "line": 345
+        },
+        {
+          "heading": "6.3. Scheduler resolver",
+          "level": 3,
+          "line": 378
+        },
+        {
+          "heading": "7. FixedIntervalScheduler",
+          "level": 2,
+          "line": 411
+        },
+        {
+          "heading": "7.1. Mục tiêu",
+          "level": 3,
+          "line": 413
+        },
+        {
+          "heading": "7.2. Implementation đề xuất",
+          "level": 3,
+          "line": 425
+        },
+        {
+          "heading": "8. Sm2Scheduler",
+          "level": 2,
+          "line": 453
+        },
+        {
+          "heading": "8.1. Thuật toán SM-2 đơn giản",
+          "level": 3,
+          "line": 455
+        },
+        {
+          "heading": "8.2. Điều chỉnh thực dụng cho app",
+          "level": 3,
+          "line": 506
+        },
+        {
+          "heading": "8.3. Hard/Easy adjustment",
+          "level": 3,
+          "line": 531
+        },
+        {
+          "heading": "8.4. Status mapping",
+          "level": 3,
+          "line": 551
+        },
+        {
+          "heading": "8.5. Max interval",
+          "level": 3,
+          "line": 568
+        },
+        {
+          "heading": "8.6. Rounding",
+          "level": 3,
+          "line": 584
+        },
+        {
+          "heading": "8.7. Implementation file",
+          "level": 3,
+          "line": 604
+        },
+        {
+          "heading": "9. Update ReviewService",
+          "level": 2,
+          "line": 672
+        },
+        {
+          "heading": "9.1. Current flow",
+          "level": 3,
+          "line": 674
+        },
+        {
+          "heading": "9.2. Flow mới",
+          "level": 3,
+          "line": 687
+        },
+        {
+          "heading": "9.3. Tách resolve setting",
+          "level": 3,
+          "line": 706
+        },
+        {
+          "heading": "9.4. Apply schedule result",
+          "level": 3,
+          "line": 725
+        },
+        {
+          "heading": "9.5. Backward compatibility",
+          "level": 3,
+          "line": 746
+        },
+        {
+          "heading": "10. Update reset schedule",
+          "level": 2,
+          "line": 765
+        },
+        {
+          "heading": "11. ErrorCode cần thêm",
+          "level": 2,
+          "line": 802
+        },
+        {
+          "heading": "12. Unit tests",
+          "level": 2,
+          "line": 823
+        },
+        {
+          "heading": "12.1. Sm2SchedulerTest",
+          "level": 3,
+          "line": 825
+        },
+        {
+          "heading": "12.2. FixedIntervalSchedulerTest",
+          "level": 3,
+          "line": 953
+        },
+        {
+          "heading": "12.3. ReviewSchedulerResolverTest",
+          "level": 3,
+          "line": 962
+        },
+        {
+          "heading": "13. Service/integration tests",
+          "level": 2,
+          "line": 970
+        },
+        {
+          "heading": "13.1. CollectionReviewSettingServiceTest",
+          "level": 3,
+          "line": 972
+        },
+        {
+          "heading": "13.2. ReviewServiceTest",
+          "level": 3,
+          "line": 981
+        },
+        {
+          "heading": "14. API test thủ công",
+          "level": 2,
+          "line": 1008
+        },
+        {
+          "heading": "14.1. Lấy setting",
+          "level": 3,
+          "line": 1010
+        },
+        {
+          "heading": "14.2. Update sang SM2",
+          "level": 3,
+          "line": 1028
+        },
+        {
+          "heading": "14.3. Update sang FSRS khi chưa support",
+          "level": 3,
+          "line": 1051
+        },
+        {
+          "heading": "14.4. Submit review bằng SM2",
+          "level": 3,
+          "line": 1074
+        },
+        {
+          "heading": "15. Acceptance criteria",
+          "level": 2,
+          "line": 1112
+        },
+        {
+          "heading": "16. Checklist triển khai cho AI/dev",
+          "level": 2,
+          "line": 1126
+        },
+        {
+          "heading": "17. Ghi chú cho phase FSRS sau này",
+          "level": 2,
+          "line": 1168
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 51
+      }
+    },
+    {
+      "path": "VocabVerse.postman_collection.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 1658,
+      "nonEmptyLines": 1658,
+      "sections": [
+        {
+          "heading": "info",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "auth",
+          "level": 1,
+          "line": 7
+        },
+        {
+          "heading": "variable",
+          "level": 1,
+          "line": 17
+        },
+        {
+          "heading": "item",
+          "level": 1,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "build.gradle",
+      "language": "gradle",
+      "fileCategory": "config",
+      "totalLines": 54,
+      "nonEmptyLines": 44,
+      "metrics": {}
+    },
+    {
+      "path": "fsrs.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1007,
+      "nonEmptyLines": 734,
+      "sections": [
+        {
+          "heading": "Plan triển khai FsrsScheduler cho VocabVerse",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Mục tiêu",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "2. Tổng quan FSRS",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "3. Phạm vi phase FSRS",
+          "level": 2,
+          "line": 63
+        },
+        {
+          "heading": "4. Thuật toán đề xuất",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "Option A: Implement FSRS simplified",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "Option B: Dùng library FSRS Java nếu có",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "5. Rating mapping",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "6. DB changes",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "6.1. Add FSRS fields to learning_progress",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "6.2. Add FSRS settings to collection_review_settings",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "7. Entity changes",
+          "level": 2,
+          "line": 206
+        },
+        {
+          "heading": "7.1. LearningProgressEntity",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "7.2. CollectionReviewSettingEntity",
+          "level": 3,
+          "line": 229
+        },
+        {
+          "heading": "8. DTO/API changes",
+          "level": 2,
+          "line": 254
+        },
+        {
+          "heading": "8.1. UpdateCollectionReviewSettingRequest",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "8.2. CollectionReviewSettingResponse",
+          "level": 3,
+          "line": 281
+        },
+        {
+          "heading": "8.3. Enable FSRS update",
+          "level": 3,
+          "line": 303
+        },
+        {
+          "heading": "9. Scheduler result changes",
+          "level": 2,
+          "line": 346
+        },
+        {
+          "heading": "10. FsrsScheduler design",
+          "level": 2,
+          "line": 407
+        },
+        {
+          "heading": "11. FSRS simplified formula",
+          "level": 2,
+          "line": 466
+        },
+        {
+          "heading": "11.1. Memory state record",
+          "level": 3,
+          "line": 468
+        },
+        {
+          "heading": "11.2. Initialize state",
+          "level": 3,
+          "line": 480
+        },
+        {
+          "heading": "11.3. Calculate retrievability",
+          "level": 3,
+          "line": 507
+        },
+        {
+          "heading": "11.4. Update difficulty",
+          "level": 3,
+          "line": 545
+        },
+        {
+          "heading": "11.5. Update stability",
+          "level": 3,
+          "line": 569
+        },
+        {
+          "heading": "11.6. Calculate interval",
+          "level": 3,
+          "line": 614
+        },
+        {
+          "heading": "12. Status mapping",
+          "level": 2,
+          "line": 653
+        },
+        {
+          "heading": "13. Reset schedule behavior",
+          "level": 2,
+          "line": 665
+        },
+        {
+          "heading": "14. ReviewService changes",
+          "level": 2,
+          "line": 694
+        },
+        {
+          "heading": "15. Learning progress response",
+          "level": 2,
+          "line": 710
+        },
+        {
+          "heading": "16. Tests",
+          "level": 2,
+          "line": 735
+        },
+        {
+          "heading": "16.1. FsrsSchedulerTest",
+          "level": 3,
+          "line": 737
+        },
+        {
+          "heading": "16.2. ReviewSchedulerResolverTest",
+          "level": 3,
+          "line": 839
+        },
+        {
+          "heading": "16.3. CollectionReviewSettingServiceTest",
+          "level": 3,
+          "line": 845
+        },
+        {
+          "heading": "16.4. ReviewServiceTest",
+          "level": 3,
+          "line": 856
+        },
+        {
+          "heading": "17. API examples",
+          "level": 2,
+          "line": 868
+        },
+        {
+          "heading": "17.1. Enable FSRS",
+          "level": 3,
+          "line": 870
+        },
+        {
+          "heading": "17.2. Submit review",
+          "level": 3,
+          "line": 897
+        },
+        {
+          "heading": "18. FE impact",
+          "level": 2,
+          "line": 924
+        },
+        {
+          "heading": "19. Acceptance criteria",
+          "level": 2,
+          "line": 952
+        },
+        {
+          "heading": "20. Implementation checklist",
+          "level": 2,
+          "line": 969
+        },
+        {
+          "heading": "21. Notes for future improvement",
+          "level": 2,
+          "line": 998
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 43
+      }
+    },
+    {
+      "path": "gradlew.bat",
+      "language": "batch",
+      "fileCategory": "script",
+      "totalLines": 93,
+      "nonEmptyLines": 72,
+      "metrics": {}
+    },
+    {
+      "path": "mvnw.cmd",
+      "language": "batch",
+      "fileCategory": "script",
+      "totalLines": 189,
+      "nonEmptyLines": 165,
+      "metrics": {}
+    },
+    {
+      "path": "pom.xml",
+      "language": "xml",
+      "fileCategory": "config",
+      "totalLines": 154,
+      "nonEmptyLines": 146,
+      "metrics": {}
+    },
+    {
+      "path": "settings.gradle",
+      "language": "gradle",
+      "fileCategory": "config",
+      "totalLines": 15,
+      "nonEmptyLines": 13,
+      "metrics": {}
+    }
+  ]
+}

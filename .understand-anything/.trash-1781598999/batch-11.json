@@ -1,0 +1,1067 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "type": "file",
+      "name": "FlashcardController.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "summary": "FlashcardController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 7 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:FlashcardController",
+      "type": "class",
+      "name": "FlashcardController",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "lineRange": [
+        21,
+        53
+      ],
+      "summary": "FlashcardController định nghĩa cấu trúc hoặc hành vi chính trong FlashcardController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "lineRange": [
+        28,
+        33
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong FlashcardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:getSessionDetail",
+      "type": "function",
+      "name": "getSessionDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "lineRange": [
+        35,
+        38
+      ],
+      "summary": "getSessionDetail triển khai một thao tác đáng chú ý trong FlashcardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:getSessionCards",
+      "type": "function",
+      "name": "getSessionCards",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "getSessionCards triển khai một thao tác đáng chú ý trong FlashcardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:submitAnswer",
+      "type": "function",
+      "name": "submitAnswer",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "lineRange": [
+        45,
+        52
+      ],
+      "summary": "submitAnswer triển khai một thao tác đáng chú ý trong FlashcardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+      "type": "file",
+      "name": "CreateFlashcardSessionRequest.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+      "summary": "CreateFlashcardSessionRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+      "type": "file",
+      "name": "SubmitFlashcardAnswerRequest.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+      "summary": "SubmitFlashcardAnswerRequest.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "type": "file",
+      "name": "FlashcardAnswerResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "summary": "FlashcardAnswerResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "type": "file",
+      "name": "FlashcardCardResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "summary": "FlashcardCardResponse.java là file mã nguồn java trong VocabVerse, gồm 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "type": "file",
+      "name": "FlashcardSessionResponse.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "summary": "FlashcardSessionResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "type": "file",
+      "name": "FlashcardSessionEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "summary": "FlashcardSessionEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java:FlashcardSessionEntity",
+      "type": "class",
+      "name": "FlashcardSessionEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "lineRange": [
+        26,
+        75
+      ],
+      "summary": "FlashcardSessionEntity định nghĩa cấu trúc hoặc hành vi chính trong FlashcardSessionEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "type": "file",
+      "name": "FlashcardSessionItemEntity.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "summary": "FlashcardSessionItemEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java:FlashcardSessionItemEntity",
+      "type": "class",
+      "name": "FlashcardSessionItemEntity",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "lineRange": [
+        27,
+        69
+      ],
+      "summary": "FlashcardSessionItemEntity định nghĩa cấu trúc hoặc hành vi chính trong FlashcardSessionItemEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+      "type": "file",
+      "name": "FlashcardSessionSource.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+      "summary": "FlashcardSessionSource.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "type": "file",
+      "name": "FlashcardSessionStatus.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "summary": "FlashcardSessionStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "type": "file",
+      "name": "FlashcardMapper.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "summary": "FlashcardMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java:FlashcardMapper",
+      "type": "class",
+      "name": "FlashcardMapper",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "lineRange": [
+        10,
+        24
+      ],
+      "summary": "FlashcardMapper định nghĩa cấu trúc hoặc hành vi chính trong FlashcardMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "type": "file",
+      "name": "FlashcardSessionItemRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "summary": "FlashcardSessionItemRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java:FlashcardSessionItemRepository",
+      "type": "class",
+      "name": "FlashcardSessionItemRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "FlashcardSessionItemRepository định nghĩa cấu trúc hoặc hành vi chính trong FlashcardSessionItemRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "type": "file",
+      "name": "FlashcardSessionRepository.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "summary": "FlashcardSessionRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java:FlashcardSessionRepository",
+      "type": "class",
+      "name": "FlashcardSessionRepository",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "lineRange": [
+        9,
+        14
+      ],
+      "summary": "FlashcardSessionRepository định nghĩa cấu trúc hoặc hành vi chính trong FlashcardSessionRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "type": "file",
+      "name": "FlashcardService.java",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "summary": "FlashcardService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 26 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:FlashcardService",
+      "type": "class",
+      "name": "FlashcardService",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        38,
+        196
+      ],
+      "summary": "FlashcardService định nghĩa cấu trúc hoặc hành vi chính trong FlashcardService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:createSession",
+      "type": "function",
+      "name": "createSession",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        52,
+        85
+      ],
+      "summary": "createSession triển khai một thao tác đáng chú ý trong FlashcardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:getSessionDetail",
+      "type": "function",
+      "name": "getSessionDetail",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        87,
+        91
+      ],
+      "summary": "getSessionDetail triển khai một thao tác đáng chú ý trong FlashcardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:getSessionCards",
+      "type": "function",
+      "name": "getSessionCards",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        93,
+        100
+      ],
+      "summary": "getSessionCards triển khai một thao tác đáng chú ý trong FlashcardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:submitAnswer",
+      "type": "function",
+      "name": "submitAnswer",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        102,
+        143
+      ],
+      "summary": "submitAnswer triển khai một thao tác đáng chú ý trong FlashcardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:resolveCollection",
+      "type": "function",
+      "name": "resolveCollection",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        145,
+        154
+      ],
+      "summary": "resolveCollection triển khai một thao tác đáng chú ý trong FlashcardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:resolveSessionVocabularies",
+      "type": "function",
+      "name": "resolveSessionVocabularies",
+      "filePath": "src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "lineRange": [
+        156,
+        175
+      ],
+      "summary": "resolveSessionVocabularies triển khai một thao tác đáng chú ý trong FlashcardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:FlashcardController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:FlashcardController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:getSessionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:getSessionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:getSessionCards",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:getSessionCards",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:submitAnswer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java:submitAnswer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/controller/FlashcardController.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java:FlashcardSessionEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java:FlashcardSessionEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java:FlashcardSessionItemEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java:FlashcardSessionItemEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "target": "file:src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java:FlashcardMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java:FlashcardMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java:FlashcardSessionItemRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java:FlashcardSessionItemRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java:FlashcardSessionRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java:FlashcardSessionRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:FlashcardService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "class:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:FlashcardService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:createSession",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:createSession",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:getSessionDetail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:getSessionDetail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:getSessionCards",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:getSessionCards",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:submitAnswer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:submitAnswer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:resolveCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "function:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java:resolveSessionVocabularies",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/CreateFlashcardSessionRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/request/SubmitFlashcardAnswerRequest.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardAnswerResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardCardResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/dto/response/FlashcardSessionResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionItemEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionSource.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/entity/FlashcardSessionStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/mapper/FlashcardMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionItemRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/flashcard/repository/FlashcardSessionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/learning/flashcard/service/FlashcardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

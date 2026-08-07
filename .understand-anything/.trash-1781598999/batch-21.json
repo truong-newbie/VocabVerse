@@ -1,0 +1,305 @@
+{
+  "nodes": [
+    {
+      "id": "file:.gitattributes",
+      "type": "file",
+      "name": ".gitattributes",
+      "filePath": ".gitattributes",
+      "summary": ".gitattributes là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.gradle/9.3.0/checksums/md5-checksums.bin",
+      "type": "file",
+      "name": "md5-checksums.bin",
+      "filePath": ".gradle/9.3.0/checksums/md5-checksums.bin",
+      "summary": "md5-checksums.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.gradle/9.3.0/checksums/sha1-checksums.bin",
+      "type": "file",
+      "name": "sha1-checksums.bin",
+      "filePath": ".gradle/9.3.0/checksums/sha1-checksums.bin",
+      "summary": "sha1-checksums.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.gradle/9.3.0/executionHistory/executionHistory.bin",
+      "type": "file",
+      "name": "executionHistory.bin",
+      "filePath": ".gradle/9.3.0/executionHistory/executionHistory.bin",
+      "summary": "executionHistory.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:.gradle/9.3.0/fileChanges/last-build.bin",
+      "type": "file",
+      "name": "last-build.bin",
+      "filePath": ".gradle/9.3.0/fileChanges/last-build.bin",
+      "summary": "last-build.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.gradle/9.3.0/fileHashes/fileHashes.bin",
+      "type": "file",
+      "name": "fileHashes.bin",
+      "filePath": ".gradle/9.3.0/fileHashes/fileHashes.bin",
+      "summary": "fileHashes.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:.gradle/9.3.0/fileHashes/resourceHashesCache.bin",
+      "type": "file",
+      "name": "resourceHashesCache.bin",
+      "filePath": ".gradle/9.3.0/fileHashes/resourceHashesCache.bin",
+      "summary": "resourceHashesCache.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:.gradle/9.3.0/gc.properties",
+      "type": "config",
+      "name": "gc.properties",
+      "filePath": ".gradle/9.3.0/gc.properties",
+      "summary": "gc.properties là file cấu hình properties trong VocabVerse.",
+      "tags": [
+        "properties",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.gradle/buildOutputCleanup/cache.properties",
+      "type": "config",
+      "name": "cache.properties",
+      "filePath": ".gradle/buildOutputCleanup/cache.properties",
+      "summary": "cache.properties là file cấu hình properties trong VocabVerse.",
+      "tags": [
+        "properties",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.gradle/buildOutputCleanup/outputFiles.bin",
+      "type": "file",
+      "name": "outputFiles.bin",
+      "filePath": ".gradle/buildOutputCleanup/outputFiles.bin",
+      "summary": "outputFiles.bin là file mã nguồn bin trong VocabVerse.",
+      "tags": [
+        "bin",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.gradle/file-system.probe",
+      "type": "file",
+      "name": "file-system.probe",
+      "filePath": ".gradle/file-system.probe",
+      "summary": "file-system.probe là file mã nguồn probe trong VocabVerse.",
+      "tags": [
+        "probe",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.gradle/vcs-1/gc.properties",
+      "type": "config",
+      "name": "gc.properties",
+      "filePath": ".gradle/vcs-1/gc.properties",
+      "summary": "gc.properties là file cấu hình properties trong VocabVerse.",
+      "tags": [
+        "properties",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.mvn/wrapper/maven-wrapper.properties",
+      "type": "config",
+      "name": "maven-wrapper.properties",
+      "filePath": ".mvn/wrapper/maven-wrapper.properties",
+      "summary": "maven-wrapper.properties là file cấu hình properties trong VocabVerse.",
+      "tags": [
+        "properties",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "filePath": ".understand-anything/.understandignore",
+      "summary": ".understandignore là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:.understand-anything/config.json",
+      "type": "config",
+      "name": "config.json",
+      "filePath": ".understand-anything/config.json",
+      "summary": "config.json là file cấu hình json trong VocabVerse.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:docs/api/06-api-design.md",
+      "type": "document",
+      "name": "06-api-design.md",
+      "filePath": "docs/api/06-api-design.md",
+      "summary": "06-api-design.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/api/API_DOCUMENTATION_FE.md",
+      "type": "document",
+      "name": "API_DOCUMENTATION_FE.md",
+      "filePath": "docs/api/API_DOCUMENTATION_FE.md",
+      "summary": "API_DOCUMENTATION_FE.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/engineering/08-non-functional-requirements.md",
+      "type": "document",
+      "name": "08-non-functional-requirements.md",
+      "filePath": "docs/engineering/08-non-functional-requirements.md",
+      "summary": "08-non-functional-requirements.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/engineering/09-backend-project-structure.md",
+      "type": "document",
+      "name": "09-backend-project-structure.md",
+      "filePath": "docs/engineering/09-backend-project-structure.md",
+      "summary": "09-backend-project-structure.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:docs/openapi-current.json",
+      "type": "config",
+      "name": "openapi-current.json",
+      "filePath": "docs/openapi-current.json",
+      "summary": "openapi-current.json là file cấu hình json trong VocabVerse.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:gradle/wrapper/gradle-wrapper.jar",
+      "type": "file",
+      "name": "gradle-wrapper.jar",
+      "filePath": "gradle/wrapper/gradle-wrapper.jar",
+      "summary": "gradle-wrapper.jar là file mã nguồn jar trong VocabVerse.",
+      "tags": [
+        "jar",
+        "code"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:gradle/wrapper/gradle-wrapper.properties",
+      "type": "config",
+      "name": "gradle-wrapper.properties",
+      "filePath": "gradle/wrapper/gradle-wrapper.properties",
+      "summary": "gradle-wrapper.properties là file cấu hình properties trong VocabVerse.",
+      "tags": [
+        "properties",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:gradlew",
+      "type": "file",
+      "name": "gradlew",
+      "filePath": "gradlew",
+      "summary": "gradlew là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:mvnw",
+      "type": "file",
+      "name": "mvnw",
+      "filePath": "mvnw",
+      "summary": "mvnw là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/ai/.gitkeep",
+      "type": "file",
+      "name": ".gitkeep",
+      "filePath": "src/main/java/com/vocabverse/ai/.gitkeep",
+      "summary": ".gitkeep là file mã nguồn unknown trong VocabVerse.",
+      "tags": [
+        "unknown",
+        "code"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

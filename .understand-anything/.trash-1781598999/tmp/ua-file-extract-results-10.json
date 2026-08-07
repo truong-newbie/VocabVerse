@@ -1,0 +1,1946 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 15,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 55,
+      "functions": [
+        {
+          "name": "bulkCreateVocabularies",
+          "startLine": 30,
+          "endLine": 36,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "addVocabularyToCollection",
+          "startLine": 38,
+          "endLine": 44,
+          "params": [
+            "collectionId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "removeVocabularyFromCollection",
+          "startLine": 46,
+          "endLine": 53,
+          "params": [
+            "collectionId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "getCollectionVocabularies",
+          "startLine": 55,
+          "endLine": 61,
+          "params": [
+            "collectionId",
+            "pageable"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "CollectionVocabularyController",
+          "startLine": 22,
+          "endLine": 62,
+          "methods": [
+            "bulkCreateVocabularies",
+            "addVocabularyToCollection",
+            "removeVocabularyFromCollection",
+            "getCollectionVocabularies"
+          ],
+          "properties": [
+            "vocabularyService",
+            "bulkVocabularyService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "bulkCreateVocabularies",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "addVocabularyToCollection",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "removeVocabularyFromCollection",
+          "line": 46,
+          "isDefault": false
+        },
+        {
+          "name": "getCollectionVocabularies",
+          "line": 55,
+          "isDefault": false
+        },
+        {
+          "name": "CollectionVocabularyController",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "bulkCreateVocabularies",
+          "callee": "ApiResponse.success",
+          "lineNumber": 35
+        },
+        {
+          "caller": "bulkCreateVocabularies",
+          "callee": "bulkVocabularyService.bulkCreate",
+          "lineNumber": 35
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 43
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "vocabularyService.addVocabularyToCollection",
+          "lineNumber": 43
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "vocabularyService.removeVocabularyFromCollection",
+          "lineNumber": 51
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "ApiResponse.success",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "ApiResponse.success",
+          "lineNumber": 60
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "vocabularyService.getCollectionVocabularies",
+          "lineNumber": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 7,
+        "exportCount": 5,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 54,
+      "functions": [
+        {
+          "name": "createVocabulary",
+          "startLine": 30,
+          "endLine": 35,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getMyVocabularies",
+          "startLine": 37,
+          "endLine": 42,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getVocabularyDetail",
+          "startLine": 44,
+          "endLine": 47,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "updateVocabulary",
+          "startLine": 49,
+          "endLine": 55,
+          "params": [
+            "id",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteVocabulary",
+          "startLine": 57,
+          "endLine": 61,
+          "params": [
+            "id"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VocabularyController",
+          "startLine": 23,
+          "endLine": 62,
+          "methods": [
+            "createVocabulary",
+            "getMyVocabularies",
+            "getVocabularyDetail",
+            "updateVocabulary",
+            "deleteVocabulary"
+          ],
+          "properties": [
+            "vocabularyService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createVocabulary",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getMyVocabularies",
+          "line": 37,
+          "isDefault": false
+        },
+        {
+          "name": "getVocabularyDetail",
+          "line": 44,
+          "isDefault": false
+        },
+        {
+          "name": "updateVocabulary",
+          "line": 49,
+          "isDefault": false
+        },
+        {
+          "name": "deleteVocabulary",
+          "line": 57,
+          "isDefault": false
+        },
+        {
+          "name": "VocabularyController",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createVocabulary",
+          "callee": "ApiResponse.success",
+          "lineNumber": 34
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabularyService.createVocabulary",
+          "lineNumber": 34
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "ApiResponse.success",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "vocabularyService.getMyVocabularies",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getVocabularyDetail",
+          "callee": "ApiResponse.success",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getVocabularyDetail",
+          "callee": "vocabularyService.getVocabularyDetail",
+          "lineNumber": 46
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "ApiResponse.success",
+          "lineNumber": 54
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "vocabularyService.updateVocabulary",
+          "lineNumber": 54
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "vocabularyService.deleteVocabulary",
+          "lineNumber": 59
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "ApiResponse.success",
+          "lineNumber": 60
+        }
+      ],
+      "metrics": {
+        "importCount": 6,
+        "exportCount": 6,
+        "functionCount": 5,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 38,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 24,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 24,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "classes": [
+        {
+          "name": "VocabularyExample",
+          "startLine": 8,
+          "endLine": 16,
+          "methods": [],
+          "properties": [
+            "en",
+            "vi"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VocabularyExample",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 29,
+      "classes": [
+        {
+          "name": "VocabularyMapper",
+          "startLine": 11,
+          "endLine": 34,
+          "methods": [
+            "toEntity",
+            "toResponse",
+            "updateEntity"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VocabularyMapper",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 192,
+      "nonEmptyLines": 171,
+      "functions": [
+        {
+          "name": "bulkCreate",
+          "startLine": 48,
+          "endLine": 99,
+          "params": [
+            "collectionId",
+            "request"
+          ]
+        },
+        {
+          "name": "toVocabulary",
+          "startLine": 101,
+          "endLine": 124,
+          "params": [
+            "item",
+            "user",
+            "normalizedTerm"
+          ]
+        },
+        {
+          "name": "validateItem",
+          "startLine": 126,
+          "endLine": 158,
+          "params": [
+            "item"
+          ]
+        },
+        {
+          "name": "lengthExceeds",
+          "startLine": 160,
+          "endLine": 162,
+          "params": [
+            "value",
+            "maxLength"
+          ]
+        },
+        {
+          "name": "isBlank",
+          "startLine": 164,
+          "endLine": 166,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "normalize",
+          "startLine": 168,
+          "endLine": 170,
+          "params": [
+            "word"
+          ]
+        },
+        {
+          "name": "trimToNull",
+          "startLine": 172,
+          "endLine": 177,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 179,
+          "endLine": 183,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 185,
+          "endLine": 191,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "BulkVocabularyService",
+          "startLine": 31,
+          "endLine": 192,
+          "methods": [
+            "bulkCreate",
+            "toVocabulary",
+            "validateItem",
+            "lengthExceeds",
+            "isBlank",
+            "normalize",
+            "trimToNull",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "TERM_MAX_LENGTH",
+            "MEANING_MAX_LENGTH",
+            "VIETNAMESE_MEANING_MAX_LENGTH",
+            "PRONUNCIATION_MAX_LENGTH",
+            "PART_OF_SPEECH_MAX_LENGTH",
+            "EXAMPLE_MAX_LENGTH",
+            "NOTE_MAX_LENGTH",
+            "vocabularyRepository",
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "bulkCreate",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "BulkVocabularyService",
+          "line": 31,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "bulkCreate",
+          "callee": "getCurrentUser",
+          "lineNumber": 50
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(collectionId, user.getId()).orElseThrow",
+          "lineNumber": 51
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 51
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "user.getId",
+          "lineNumber": 51
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new BusinessException",
+          "lineNumber": 52
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items",
+          "lineNumber": 54
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items().isEmpty",
+          "lineNumber": 54
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items",
+          "lineNumber": 54
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new BusinessException",
+          "lineNumber": 55
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new ArrayList<>",
+          "lineNumber": 58
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new LinkedHashSet<>",
+          "lineNumber": 59
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items().size",
+          "lineNumber": 62
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items",
+          "lineNumber": 62
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items().get",
+          "lineNumber": 64
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "request.items",
+          "lineNumber": 64
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "validateItem",
+          "lineNumber": 65
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "item.term",
+          "lineNumber": 66
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "failedItems.add",
+          "lineNumber": 68
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new BulkCreateVocabularyFailedItemResponse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "normalize",
+          "lineNumber": 72
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "importedTerms.add",
+          "lineNumber": 73
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collectionVocabularyRepository.existsByCollectionIdAndVocabularyNormalizedWordAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 74
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "failedItems.add",
+          "lineNumber": 79
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new BulkCreateVocabularyFailedItemResponse",
+          "lineNumber": 79
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "vocabularyRepository.save",
+          "lineNumber": 83
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "toVocabulary",
+          "lineNumber": 83
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collectionVocabularyRepository.save",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection)\r\n                    .vocabulary(vocabulary)\r\n                    .addedBy(user)\r\n                    .position(0).build",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection)\r\n                    .vocabulary(vocabulary)\r\n                    .addedBy(user).position",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection)\r\n                    .vocabulary(vocabulary).addedBy",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection).vocabulary",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "CollectionVocabularyEntity.builder().collection",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "CollectionVocabularyEntity.builder",
+          "lineNumber": 84
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collection.setTotalWords",
+          "lineNumber": 94
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collection.getTotalWords",
+          "lineNumber": 94
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "collectionRepository.save",
+          "lineNumber": 95
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "new BulkCreateVocabularyResponse",
+          "lineNumber": 98
+        },
+        {
+          "caller": "bulkCreate",
+          "callee": "failedItems.size",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "trimToNull",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.exampleSentence",
+          "lineNumber": 106
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "List.of",
+          "lineNumber": 108
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "List.of",
+          "lineNumber": 109
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "new VocabularyExample",
+          "lineNumber": 109
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech()))\r\n                .meaningEn(item.meaning().trim())\r\n                .meaningVi(trimToNull(item.vietnameseMeaning()))\r\n                .examples(examples)\r\n                .synonyms(List.of())\r\n                .antonyms(List.of())\r\n                .source(VocabularySource.MANUAL).build",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech()))\r\n                .meaningEn(item.meaning().trim())\r\n                .meaningVi(trimToNull(item.vietnameseMeaning()))\r\n                .examples(examples)\r\n                .synonyms(List.of())\r\n                .antonyms(List.of()).source",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech()))\r\n                .meaningEn(item.meaning().trim())\r\n                .meaningVi(trimToNull(item.vietnameseMeaning()))\r\n                .examples(examples)\r\n                .synonyms(List.of()).antonyms",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech()))\r\n                .meaningEn(item.meaning().trim())\r\n                .meaningVi(trimToNull(item.vietnameseMeaning()))\r\n                .examples(examples).synonyms",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech()))\r\n                .meaningEn(item.meaning().trim())\r\n                .meaningVi(trimToNull(item.vietnameseMeaning())).examples",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech()))\r\n                .meaningEn(item.meaning().trim()).meaningVi",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation()))\r\n                .partOfSpeech(trimToNull(item.partOfSpeech())).meaningEn",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm)\r\n                .phonetic(trimToNull(item.pronunciation())).partOfSpeech",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim())\r\n                .normalizedWord(normalizedTerm).phonetic",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user)\r\n                .word(item.term().trim()).normalizedWord",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder()\r\n                .owner(user).word",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder().owner",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "VocabularyEntity.builder",
+          "lineNumber": 111
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.term().trim",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.term",
+          "lineNumber": 113
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "trimToNull",
+          "lineNumber": 115
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.pronunciation",
+          "lineNumber": 115
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "trimToNull",
+          "lineNumber": 116
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.partOfSpeech",
+          "lineNumber": 116
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.meaning().trim",
+          "lineNumber": 117
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.meaning",
+          "lineNumber": 117
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "trimToNull",
+          "lineNumber": 118
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "item.vietnameseMeaning",
+          "lineNumber": 118
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "List.of",
+          "lineNumber": 120
+        },
+        {
+          "caller": "toVocabulary",
+          "callee": "List.of",
+          "lineNumber": 121
+        },
+        {
+          "caller": "validateItem",
+          "callee": "isBlank",
+          "lineNumber": 130
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.term",
+          "lineNumber": 130
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.term().trim().length",
+          "lineNumber": 133
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.term().trim",
+          "lineNumber": 133
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.term",
+          "lineNumber": 133
+        },
+        {
+          "caller": "validateItem",
+          "callee": "isBlank",
+          "lineNumber": 136
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.meaning",
+          "lineNumber": 136
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.meaning().trim().length",
+          "lineNumber": 139
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.meaning().trim",
+          "lineNumber": 139
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.meaning",
+          "lineNumber": 139
+        },
+        {
+          "caller": "validateItem",
+          "callee": "lengthExceeds",
+          "lineNumber": 142
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.vietnameseMeaning",
+          "lineNumber": 142
+        },
+        {
+          "caller": "validateItem",
+          "callee": "lengthExceeds",
+          "lineNumber": 145
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.pronunciation",
+          "lineNumber": 145
+        },
+        {
+          "caller": "validateItem",
+          "callee": "lengthExceeds",
+          "lineNumber": 148
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.partOfSpeech",
+          "lineNumber": 148
+        },
+        {
+          "caller": "validateItem",
+          "callee": "lengthExceeds",
+          "lineNumber": 151
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.exampleSentence",
+          "lineNumber": 151
+        },
+        {
+          "caller": "validateItem",
+          "callee": "lengthExceeds",
+          "lineNumber": 154
+        },
+        {
+          "caller": "validateItem",
+          "callee": "item.note",
+          "lineNumber": 154
+        },
+        {
+          "caller": "lengthExceeds",
+          "callee": "value.trim().length",
+          "lineNumber": 161
+        },
+        {
+          "caller": "lengthExceeds",
+          "callee": "value.trim",
+          "lineNumber": 161
+        },
+        {
+          "caller": "isBlank",
+          "callee": "value.trim().isBlank",
+          "lineNumber": 165
+        },
+        {
+          "caller": "isBlank",
+          "callee": "value.trim",
+          "lineNumber": 165
+        },
+        {
+          "caller": "normalize",
+          "callee": "word.trim().toLowerCase",
+          "lineNumber": 169
+        },
+        {
+          "caller": "normalize",
+          "callee": "word.trim",
+          "lineNumber": 169
+        },
+        {
+          "caller": "trimToNull",
+          "callee": "value.trim().isBlank",
+          "lineNumber": 173
+        },
+        {
+          "caller": "trimToNull",
+          "callee": "value.trim",
+          "lineNumber": 173
+        },
+        {
+          "caller": "trimToNull",
+          "callee": "value.trim",
+          "lineNumber": 176
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 180
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 181
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 181
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 182
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 186
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 186
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 187
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 188
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 190
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 2,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 223,
+      "nonEmptyLines": 187,
+      "functions": [
+        {
+          "name": "createVocabulary",
+          "startLine": 42,
+          "endLine": 54,
+          "params": [
+            "request"
+          ]
+        },
+        {
+          "name": "getMyVocabularies",
+          "startLine": 56,
+          "endLine": 64,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getVocabularyDetail",
+          "startLine": 66,
+          "endLine": 69,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "updateVocabulary",
+          "startLine": 71,
+          "endLine": 79,
+          "params": [
+            "id",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteVocabulary",
+          "startLine": 81,
+          "endLine": 92,
+          "params": [
+            "id"
+          ]
+        },
+        {
+          "name": "addVocabularyToCollection",
+          "startLine": 94,
+          "endLine": 118,
+          "params": [
+            "collectionId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "removeVocabularyFromCollection",
+          "startLine": 120,
+          "endLine": 134,
+          "params": [
+            "collectionId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "getCollectionVocabularies",
+          "startLine": 136,
+          "endLine": 147,
+          "params": [
+            "collectionId",
+            "pageable"
+          ]
+        },
+        {
+          "name": "attachToCollections",
+          "startLine": 149,
+          "endLine": 170,
+          "params": [
+            "vocabulary",
+            "collectionIds",
+            "owner"
+          ]
+        },
+        {
+          "name": "getOwnedCollection",
+          "startLine": 172,
+          "endLine": 175,
+          "params": [
+            "collectionId",
+            "ownerId"
+          ]
+        },
+        {
+          "name": "getOwnedVocabulary",
+          "startLine": 177,
+          "endLine": 179,
+          "params": [
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "getOwnedVocabulary",
+          "startLine": 181,
+          "endLine": 184,
+          "params": [
+            "vocabularyId",
+            "ownerId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 186,
+          "endLine": 190,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 192,
+          "endLine": 198,
+          "params": []
+        },
+        {
+          "name": "normalizeWord",
+          "startLine": 200,
+          "endLine": 202,
+          "params": [
+            "word"
+          ]
+        },
+        {
+          "name": "incrementTotalWords",
+          "startLine": 204,
+          "endLine": 207,
+          "params": [
+            "collection"
+          ]
+        },
+        {
+          "name": "decrementTotalWords",
+          "startLine": 209,
+          "endLine": 212,
+          "params": [
+            "collection"
+          ]
+        },
+        {
+          "name": "toPageResponse",
+          "startLine": 214,
+          "endLine": 222,
+          "params": [
+            "page"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "VocabularyService",
+          "startLine": 32,
+          "endLine": 223,
+          "methods": [
+            "createVocabulary",
+            "getMyVocabularies",
+            "getVocabularyDetail",
+            "updateVocabulary",
+            "deleteVocabulary",
+            "addVocabularyToCollection",
+            "removeVocabularyFromCollection",
+            "getCollectionVocabularies",
+            "attachToCollections",
+            "getOwnedCollection",
+            "getOwnedVocabulary",
+            "getOwnedVocabulary",
+            "getCurrentUser",
+            "getAuthenticatedEmail",
+            "normalizeWord",
+            "incrementTotalWords",
+            "decrementTotalWords",
+            "toPageResponse"
+          ],
+          "properties": [
+            "vocabularyRepository",
+            "collectionRepository",
+            "collectionVocabularyRepository",
+            "userRepository",
+            "vocabularyMapper"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "createVocabulary",
+          "line": 42,
+          "isDefault": false
+        },
+        {
+          "name": "getMyVocabularies",
+          "line": 56,
+          "isDefault": false
+        },
+        {
+          "name": "getVocabularyDetail",
+          "line": 66,
+          "isDefault": false
+        },
+        {
+          "name": "updateVocabulary",
+          "line": 71,
+          "isDefault": false
+        },
+        {
+          "name": "deleteVocabulary",
+          "line": 81,
+          "isDefault": false
+        },
+        {
+          "name": "addVocabularyToCollection",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "removeVocabularyFromCollection",
+          "line": 120,
+          "isDefault": false
+        },
+        {
+          "name": "getCollectionVocabularies",
+          "line": 136,
+          "isDefault": false
+        },
+        {
+          "name": "VocabularyService",
+          "line": 32,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "createVocabulary",
+          "callee": "getCurrentUser",
+          "lineNumber": 44
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabularyMapper.toEntity",
+          "lineNumber": 45
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabulary.setOwner",
+          "lineNumber": 46
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabulary.setNormalizedWord",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "normalizeWord",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "request.word",
+          "lineNumber": 47
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabulary.setSource",
+          "lineNumber": 48
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabularyRepository.save",
+          "lineNumber": 50
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "attachToCollections",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "request.collectionIds",
+          "lineNumber": 51
+        },
+        {
+          "caller": "createVocabulary",
+          "callee": "vocabularyMapper.toResponse",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "getCurrentUser",
+          "lineNumber": 58
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "vocabularyRepository\r\n                .findAllByOwnerIdAndDeletedAtIsNull(ownerId, pageable).map",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "vocabularyRepository.findAllByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 59
+        },
+        {
+          "caller": "getMyVocabularies",
+          "callee": "toPageResponse",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getVocabularyDetail",
+          "callee": "vocabularyMapper.toResponse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getVocabularyDetail",
+          "callee": "getOwnedVocabulary",
+          "lineNumber": 68
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "getOwnedVocabulary",
+          "lineNumber": 73
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "vocabularyMapper.updateEntity",
+          "lineNumber": 75
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "vocabulary.setNormalizedWord",
+          "lineNumber": 76
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "normalizeWord",
+          "lineNumber": 76
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "request.word",
+          "lineNumber": 76
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "vocabularyMapper.toResponse",
+          "lineNumber": 78
+        },
+        {
+          "caller": "updateVocabulary",
+          "callee": "vocabularyRepository.save",
+          "lineNumber": 78
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "getOwnedVocabulary",
+          "lineNumber": 83
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "collectionVocabularyRepository.findAllByVocabularyId",
+          "lineNumber": 84
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "decrementTotalWords",
+          "lineNumber": 86
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "relation.getCollection",
+          "lineNumber": 86
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "collectionVocabularyRepository.deleteAll",
+          "lineNumber": 88
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "vocabulary.setDeletedAt",
+          "lineNumber": 90
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 90
+        },
+        {
+          "caller": "deleteVocabulary",
+          "callee": "vocabularyRepository.save",
+          "lineNumber": 91
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "getCurrentUser",
+          "lineNumber": 96
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "getOwnedCollection",
+          "lineNumber": 97
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "currentUser.getId",
+          "lineNumber": 97
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "getOwnedVocabulary",
+          "lineNumber": 98
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "currentUser.getId",
+          "lineNumber": 98
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "collectionVocabularyRepository.existsByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 100
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 105
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                .collection(collection)\r\n                .vocabulary(vocabulary)\r\n                .addedBy(currentUser)\r\n                .position(0).build",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                .collection(collection)\r\n                .vocabulary(vocabulary)\r\n                .addedBy(currentUser).position",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                .collection(collection)\r\n                .vocabulary(vocabulary).addedBy",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                .collection(collection).vocabulary",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "CollectionVocabularyEntity.builder().collection",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "CollectionVocabularyEntity.builder",
+          "lineNumber": 108
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "collectionVocabularyRepository.save",
+          "lineNumber": 114
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "incrementTotalWords",
+          "lineNumber": 115
+        },
+        {
+          "caller": "addVocabularyToCollection",
+          "callee": "vocabularyMapper.toResponse",
+          "lineNumber": 117
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "getCurrentUser",
+          "lineNumber": 122
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "getOwnedCollection",
+          "lineNumber": 123
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "currentUser.getId",
+          "lineNumber": 123
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "collectionVocabularyRepository\r\n                .findByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(\r\n                        collectionId,\r\n                        vocabularyId\r\n                ).orElseThrow",
+          "lineNumber": 125
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "collectionVocabularyRepository.findByCollectionIdAndVocabularyIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 125
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 130
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "collectionVocabularyRepository.delete",
+          "lineNumber": 132
+        },
+        {
+          "caller": "removeVocabularyFromCollection",
+          "callee": "decrementTotalWords",
+          "lineNumber": 133
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "getCurrentUser",
+          "lineNumber": 138
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "getOwnedCollection",
+          "lineNumber": 139
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collectionId, pageable)\r\n                .map(CollectionVocabularyEntity::getVocabulary).map",
+          "lineNumber": 141
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "collectionVocabularyRepository\r\n                .findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull(collectionId, pageable).map",
+          "lineNumber": 141
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "collectionVocabularyRepository.findAllByCollectionIdAndCollectionDeletedAtIsNullAndVocabularyDeletedAtIsNull",
+          "lineNumber": 141
+        },
+        {
+          "caller": "getCollectionVocabularies",
+          "callee": "toPageResponse",
+          "lineNumber": 146
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "collectionIds.isEmpty",
+          "lineNumber": 150
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "collectionRepository.findAllByIdInAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 154
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "owner.getId",
+          "lineNumber": 155
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "collections.size",
+          "lineNumber": 156
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "collectionIds.size",
+          "lineNumber": 156
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "new BusinessException",
+          "lineNumber": 157
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection)\r\n                    .vocabulary(vocabulary)\r\n                    .addedBy(owner)\r\n                    .position(0).build",
+          "lineNumber": 161
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection)\r\n                    .vocabulary(vocabulary)\r\n                    .addedBy(owner).position",
+          "lineNumber": 161
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection)\r\n                    .vocabulary(vocabulary).addedBy",
+          "lineNumber": 161
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "CollectionVocabularyEntity.builder()\r\n                    .collection(collection).vocabulary",
+          "lineNumber": 161
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "CollectionVocabularyEntity.builder().collection",
+          "lineNumber": 161
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "CollectionVocabularyEntity.builder",
+          "lineNumber": 161
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "collectionVocabularyRepository.save",
+          "lineNumber": 167
+        },
+        {
+          "caller": "attachToCollections",
+          "callee": "incrementTotalWords",
+          "lineNumber": 168
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull(collectionId, ownerId).orElseThrow",
+          "lineNumber": 173
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "collectionRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 173
+        },
+        {
+          "caller": "getOwnedCollection",
+          "callee": "new BusinessException",
+          "lineNumber": 174
+        },
+        {
+          "caller": "getOwnedVocabulary",
+          "callee": "getOwnedVocabulary",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getOwnedVocabulary",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getOwnedVocabulary",
+          "callee": "getCurrentUser",
+          "lineNumber": 178
+        },
+        {
+          "caller": "getOwnedVocabulary",
+          "callee": "vocabularyRepository.findByIdAndOwnerIdAndDeletedAtIsNull(vocabularyId, ownerId).orElseThrow",
+          "lineNumber": 182
+        },
+        {
+          "caller": "getOwnedVocabulary",
+          "callee": "vocabularyRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 182
+        },
+        {
+          "caller": "getOwnedVocabulary",
+          "callee": "new BusinessException",
+          "lineNumber": 183
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 187
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 188
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 188
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 189
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 193
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 193
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 194
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 195
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 197
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "word.trim().toLowerCase",
+          "lineNumber": 201
+        },
+        {
+          "caller": "normalizeWord",
+          "callee": "word.trim",
+          "lineNumber": 201
+        },
+        {
+          "caller": "incrementTotalWords",
+          "callee": "collection.setTotalWords",
+          "lineNumber": 205
+        },
+        {
+          "caller": "incrementTotalWords",
+          "callee": "collection.getTotalWords",
+          "lineNumber": 205
+        },
+        {
+          "caller": "incrementTotalWords",
+          "callee": "collectionRepository.save",
+          "lineNumber": 206
+        },
+        {
+          "caller": "decrementTotalWords",
+          "callee": "collection.setTotalWords",
+          "lineNumber": 210
+        },
+        {
+          "caller": "decrementTotalWords",
+          "callee": "Math.max",
+          "lineNumber": 210
+        },
+        {
+          "caller": "decrementTotalWords",
+          "callee": "collection.getTotalWords",
+          "lineNumber": 210
+        },
+        {
+          "caller": "decrementTotalWords",
+          "callee": "collectionRepository.save",
+          "lineNumber": 211
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "new VocabularyPageResponse",
+          "lineNumber": 215
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getContent",
+          "lineNumber": 216
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getNumber",
+          "lineNumber": 217
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getSize",
+          "lineNumber": 218
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalElements",
+          "lineNumber": 219
+        },
+        {
+          "caller": "toPageResponse",
+          "callee": "page.getTotalPages",
+          "lineNumber": 220
+        }
+      ],
+      "metrics": {
+        "importCount": 16,
+        "exportCount": 9,
+        "functionCount": 18,
+        "classCount": 1
+      }
+    }
+  ]
+}

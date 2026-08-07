@@ -1,0 +1,248 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "language": "java",
+      "sizeLines": 58,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "language": "java",
+      "sizeLines": 66,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "language": "java",
+      "sizeLines": 75,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java",
+      "language": "java",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java",
+      "language": "java",
+      "sizeLines": 79,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java",
+      "language": "java",
+      "sizeLines": 189,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/roleplay/controller/RoleplayController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java": [
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java": [],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java": [
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java": [],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java": [],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java": [
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java": [],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java": [],
+    "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java": [
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java": [],
+    "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java": [
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java": [],
+    "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java": [
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java",
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/enums/RoleplayDifficulty.java": [],
+    "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java": [],
+    "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java": [],
+    "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java": [
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java": [
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java": [
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java": [
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java": [
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/service/RoleplayAiService.java": [
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayCorrection.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "src/main/java/com/vocabverse/roleplay/prompt/RoleplayPromptBuilder.java"
+    ],
+    "src/main/java/com/vocabverse/roleplay/service/RoleplayService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/roleplay/dto/request/CreateRoleplaySessionRequest.java",
+      "src/main/java/com/vocabverse/roleplay/dto/request/SendRoleplayMessageRequest.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReply.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiReport.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayAiScenario.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayMessageResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplayReportResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionPageResponse.java",
+      "src/main/java/com/vocabverse/roleplay/dto/response/RoleplaySessionResponse.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayMessageEntity.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplayReportEntity.java",
+      "src/main/java/com/vocabverse/roleplay/entity/RoleplaySessionEntity.java",
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplayMessageSender.java",
+      "src/main/java/com/vocabverse/roleplay/enums/RoleplaySessionStatus.java",
+      "src/main/java/com/vocabverse/roleplay/mapper/RoleplayMapper.java",
+      "src/main/java/com/vocabverse/roleplay/repository/RoleplayMessageRepository.java",
+      "src/main/java/com/vocabverse/roleplay/repository/RoleplayReportRepository.java",
+      "src/main/java/com/vocabverse/roleplay/repository/RoleplaySessionRepository.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ]
+  }
+}

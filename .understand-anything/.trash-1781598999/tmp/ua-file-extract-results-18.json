@@ -1,0 +1,820 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "docs/architecture/04_database_design.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1075,
+      "nonEmptyLines": 794,
+      "sections": [
+        {
+          "heading": "04-database-design.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "THIẾT KẾ CƠ SỞ DỮ LIỆU",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. THÔNG TIN TÀI LIỆU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. MỤC TIÊU THIẾT KẾ DATABASE",
+          "level": 1,
+          "line": 24
+        },
+        {
+          "heading": "3. NGUYÊN TẮC THIẾT KẾ",
+          "level": 1,
+          "line": 45
+        },
+        {
+          "heading": "3.1 UUID Primary Key",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "3.2 Audit Columns",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "3.3 Soft Delete",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "3.4 Enum Strategy",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "4. ERD TỔNG QUAN",
+          "level": 1,
+          "line": 108
+        },
+        {
+          "heading": "5. DANH SÁCH BẢNG",
+          "level": 1,
+          "line": 134
+        },
+        {
+          "heading": "5.1 users",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "5.2 collections",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "5.3 vocabularies",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "5.4 collection_vocabularies",
+          "level": 2,
+          "line": 268
+        },
+        {
+          "heading": "6. LEARNING PROGRESS",
+          "level": 1,
+          "line": 292
+        },
+        {
+          "heading": "6.1 flashcard_progress",
+          "level": 2,
+          "line": 294
+        },
+        {
+          "heading": "6.2 quiz_sessions",
+          "level": 2,
+          "line": 327
+        },
+        {
+          "heading": "6.3 quiz_answers",
+          "level": 2,
+          "line": 356
+        },
+        {
+          "heading": "6.4 typing_sessions",
+          "level": 2,
+          "line": 375
+        },
+        {
+          "heading": "6.5 typing_answers",
+          "level": 2,
+          "line": 394
+        },
+        {
+          "heading": "7. SPACED REPETITION",
+          "level": 1,
+          "line": 411
+        },
+        {
+          "heading": "7.1 review_schedules",
+          "level": 2,
+          "line": 413
+        },
+        {
+          "heading": "7.2 review_sessions",
+          "level": 2,
+          "line": 441
+        },
+        {
+          "heading": "8. NOTIFICATION",
+          "level": 1,
+          "line": 471
+        },
+        {
+          "heading": "8.1 notification_preferences",
+          "level": 2,
+          "line": 473
+        },
+        {
+          "heading": "8.2 notification_logs",
+          "level": 2,
+          "line": 492
+        },
+        {
+          "heading": "9. SHADOWING",
+          "level": 1,
+          "line": 528
+        },
+        {
+          "heading": "9.1 shadowing_videos",
+          "level": 2,
+          "line": 530
+        },
+        {
+          "heading": "9.2 shadowing_lines",
+          "level": 2,
+          "line": 577
+        },
+        {
+          "heading": "9.3 shadowing_progress",
+          "level": 2,
+          "line": 598
+        },
+        {
+          "heading": "10. AI ROLEPLAY",
+          "level": 1,
+          "line": 619
+        },
+        {
+          "heading": "10.1 roleplay_sessions",
+          "level": 2,
+          "line": 621
+        },
+        {
+          "heading": "10.2 roleplay_messages",
+          "level": 2,
+          "line": 658
+        },
+        {
+          "heading": "11. AI IMPORT / NORMALIZATION",
+          "level": 1,
+          "line": 696
+        },
+        {
+          "heading": "11.1 ai_import_jobs",
+          "level": 2,
+          "line": 698
+        },
+        {
+          "heading": "12. PDF EXPORT",
+          "level": 1,
+          "line": 736
+        },
+        {
+          "heading": "12.1 export_jobs",
+          "level": 2,
+          "line": 738
+        },
+        {
+          "heading": "13. INDEX STRATEGY",
+          "level": 1,
+          "line": 772
+        },
+        {
+          "heading": "13.1 users",
+          "level": 2,
+          "line": 774
+        },
+        {
+          "heading": "13.2 collections",
+          "level": 2,
+          "line": 783
+        },
+        {
+          "heading": "13.3 vocabularies",
+          "level": 2,
+          "line": 794
+        },
+        {
+          "heading": "13.4 collection_vocabularies",
+          "level": 2,
+          "line": 804
+        },
+        {
+          "heading": "13.5 review",
+          "level": 2,
+          "line": 813
+        },
+        {
+          "heading": "13.6 shadowing",
+          "level": 2,
+          "line": 822
+        },
+        {
+          "heading": "13.7 roleplay",
+          "level": 2,
+          "line": 831
+        },
+        {
+          "heading": "14. UNIQUE CONSTRAINTS",
+          "level": 1,
+          "line": 840
+        },
+        {
+          "heading": "15. QUY TẮC XÓA DỮ LIỆU",
+          "level": 1,
+          "line": 853
+        },
+        {
+          "heading": "15.1 User xóa collection",
+          "level": 2,
+          "line": 855
+        },
+        {
+          "heading": "15.2 User xóa một từ khỏi collection",
+          "level": 2,
+          "line": 867
+        },
+        {
+          "heading": "15.3 Admin xóa shadowing video",
+          "level": 2,
+          "line": 883
+        },
+        {
+          "heading": "16. BUSINESS RULES LIÊN QUAN DATABASE",
+          "level": 1,
+          "line": 891
+        },
+        {
+          "heading": "DBR-001",
+          "level": 2,
+          "line": 893
+        },
+        {
+          "heading": "DBR-002",
+          "level": 2,
+          "line": 899
+        },
+        {
+          "heading": "DBR-003",
+          "level": 2,
+          "line": 905
+        },
+        {
+          "heading": "DBR-004",
+          "level": 2,
+          "line": 911
+        },
+        {
+          "heading": "DBR-005",
+          "level": 2,
+          "line": 917
+        },
+        {
+          "heading": "DBR-006",
+          "level": 2,
+          "line": 927
+        },
+        {
+          "heading": "DBR-007",
+          "level": 2,
+          "line": 933
+        },
+        {
+          "heading": "17. GỢI Ý ENTITY MAPPING CHO SPRING BOOT",
+          "level": 1,
+          "line": 939
+        },
+        {
+          "heading": "UserEntity",
+          "level": 2,
+          "line": 941
+        },
+        {
+          "heading": "CollectionEntity",
+          "level": 2,
+          "line": 964
+        },
+        {
+          "heading": "VocabularyEntity",
+          "level": 2,
+          "line": 987
+        },
+        {
+          "heading": "18. MIGRATION STRATEGY",
+          "level": 1,
+          "line": 1012
+        },
+        {
+          "heading": "19. DỮ LIỆU MẪU",
+          "level": 1,
+          "line": 1035
+        },
+        {
+          "heading": "Admin Collection",
+          "level": 2,
+          "line": 1037
+        },
+        {
+          "heading": "20. KẾT LUẬN",
+          "level": 1,
+          "line": 1062
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 68
+      }
+    },
+    {
+      "path": "docs/architecture/05-system-architecture.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 1026,
+      "nonEmptyLines": 756,
+      "sections": [
+        {
+          "heading": "05-system-architecture.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "THIẾT KẾ KIẾN TRÚC HỆ THỐNG",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Dự án",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "1. THÔNG TIN TÀI LIỆU",
+          "level": 1,
+          "line": 11
+        },
+        {
+          "heading": "2. MỤC TIÊU KIẾN TRÚC",
+          "level": 1,
+          "line": 26
+        },
+        {
+          "heading": "3. KIẾN TRÚC TỔNG QUAN",
+          "level": 1,
+          "line": 41
+        },
+        {
+          "heading": "4. PHONG CÁCH KIẾN TRÚC",
+          "level": 1,
+          "line": 71
+        },
+        {
+          "heading": "4.1 Giai đoạn MVP",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "4.2 Giai đoạn Scale",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "5. THÀNH PHẦN HỆ THỐNG",
+          "level": 1,
+          "line": 122
+        },
+        {
+          "heading": "5.1 Frontend",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "5.2 Backend API",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "5.3 PostgreSQL",
+          "level": 2,
+          "line": 180
+        },
+        {
+          "heading": "5.4 Redis",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "5.5 RabbitMQ",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "5.6 Async Worker",
+          "level": 2,
+          "line": 246
+        },
+        {
+          "heading": "5.7 AI Provider",
+          "level": 2,
+          "line": 279
+        },
+        {
+          "heading": "5.8 Dictionary Provider",
+          "level": 2,
+          "line": 309
+        },
+        {
+          "heading": "5.9 File Storage",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "6. BACKEND MODULE STRUCTURE",
+          "level": 1,
+          "line": 356
+        },
+        {
+          "heading": "7. FRONTEND STRUCTURE",
+          "level": 1,
+          "line": 395
+        },
+        {
+          "heading": "8. LUỒNG XỬ LÝ CHÍNH",
+          "level": 1,
+          "line": 430
+        },
+        {
+          "heading": "8.1 Luồng đăng nhập",
+          "level": 1,
+          "line": 432
+        },
+        {
+          "heading": "8.2 Luồng tra từ",
+          "level": 1,
+          "line": 450
+        },
+        {
+          "heading": "8.3 Luồng import từ vựng bằng AI",
+          "level": 1,
+          "line": 473
+        },
+        {
+          "heading": "8.4 Luồng bật spaced repetition",
+          "level": 1,
+          "line": 501
+        },
+        {
+          "heading": "8.5 Luồng shadowing video",
+          "level": 1,
+          "line": 521
+        },
+        {
+          "heading": "8.6 Luồng AI roleplay",
+          "level": 1,
+          "line": 543
+        },
+        {
+          "heading": "8.7 Luồng export PDF",
+          "level": 1,
+          "line": 565
+        },
+        {
+          "heading": "9. API GATEWAY",
+          "level": 1,
+          "line": 587
+        },
+        {
+          "heading": "10. AUTHENTICATION & AUTHORIZATION",
+          "level": 1,
+          "line": 607
+        },
+        {
+          "heading": "10.1 Authentication",
+          "level": 2,
+          "line": 609
+        },
+        {
+          "heading": "10.2 Authorization",
+          "level": 2,
+          "line": 632
+        },
+        {
+          "heading": "11. ASYNC PROCESSING DESIGN",
+          "level": 1,
+          "line": 650
+        },
+        {
+          "heading": "Khi nào dùng async?",
+          "level": 2,
+          "line": 652
+        },
+        {
+          "heading": "Message format",
+          "level": 2,
+          "line": 672
+        },
+        {
+          "heading": "12. SCHEDULER DESIGN",
+          "level": 1,
+          "line": 685
+        },
+        {
+          "heading": "Jobs",
+          "level": 2,
+          "line": 689
+        },
+        {
+          "heading": "DailyReviewNotificationJob",
+          "level": 2,
+          "line": 700
+        },
+        {
+          "heading": "13. CACHING STRATEGY",
+          "level": 1,
+          "line": 720
+        },
+        {
+          "heading": "Cache dictionary",
+          "level": 2,
+          "line": 722
+        },
+        {
+          "heading": "Cache public collection",
+          "level": 2,
+          "line": 731
+        },
+        {
+          "heading": "Cache dashboard",
+          "level": 2,
+          "line": 740
+        },
+        {
+          "heading": "14. RATE LIMITING",
+          "level": 1,
+          "line": 749
+        },
+        {
+          "heading": "AI Normalize",
+          "level": 2,
+          "line": 753
+        },
+        {
+          "heading": "Roleplay",
+          "level": 2,
+          "line": 759
+        },
+        {
+          "heading": "Dictionary Search",
+          "level": 2,
+          "line": 765
+        },
+        {
+          "heading": "15. OBSERVABILITY",
+          "level": 1,
+          "line": 775
+        },
+        {
+          "heading": "Logging",
+          "level": 2,
+          "line": 777
+        },
+        {
+          "heading": "Monitoring",
+          "level": 2,
+          "line": 792
+        },
+        {
+          "heading": "Error Tracking",
+          "level": 2,
+          "line": 808
+        },
+        {
+          "heading": "16. SECURITY DESIGN",
+          "level": 1,
+          "line": 818
+        },
+        {
+          "heading": "Password",
+          "level": 2,
+          "line": 820
+        },
+        {
+          "heading": "API Security",
+          "level": 2,
+          "line": 830
+        },
+        {
+          "heading": "File Upload Security",
+          "level": 2,
+          "line": 841
+        },
+        {
+          "heading": "AI Security",
+          "level": 2,
+          "line": 853
+        },
+        {
+          "heading": "17. DEPLOYMENT ARCHITECTURE",
+          "level": 1,
+          "line": 865
+        },
+        {
+          "heading": "MVP Deployment",
+          "level": 2,
+          "line": 867
+        },
+        {
+          "heading": "Docker Compose Local",
+          "level": 2,
+          "line": 880
+        },
+        {
+          "heading": "18. ENVIRONMENT",
+          "level": 1,
+          "line": 894
+        },
+        {
+          "heading": "19. CONFIGURATION",
+          "level": 1,
+          "line": 905
+        },
+        {
+          "heading": "20. SCALING PLAN",
+          "level": 1,
+          "line": 927
+        },
+        {
+          "heading": "Giai đoạn 1",
+          "level": 2,
+          "line": 929
+        },
+        {
+          "heading": "Giai đoạn 2",
+          "level": 2,
+          "line": 935
+        },
+        {
+          "heading": "Giai đoạn 3",
+          "level": 2,
+          "line": 946
+        },
+        {
+          "heading": "21. RỦI RO KIẾN TRÚC",
+          "level": 1,
+          "line": 960
+        },
+        {
+          "heading": "Rủi ro 1",
+          "level": 2,
+          "line": 962
+        },
+        {
+          "heading": "Rủi ro 2",
+          "level": 2,
+          "line": 974
+        },
+        {
+          "heading": "Rủi ro 3",
+          "level": 2,
+          "line": 986
+        },
+        {
+          "heading": "Rủi ro 4",
+          "level": 2,
+          "line": 997
+        },
+        {
+          "heading": "22. KẾT LUẬN",
+          "level": 1,
+          "line": 1009
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 71
+      }
+    },
+    {
+      "path": "docs/architecture/12-erd-diagram.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 147,
+      "nonEmptyLines": 107,
+      "sections": [
+        {
+          "heading": "12-erd-diagram.md",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "ENTITY RELATIONSHIP DIAGRAM",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "Tổng quan",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Vocabulary Knowledge Graph",
+          "level": 1,
+          "line": 39
+        },
+        {
+          "heading": "Shadowing",
+          "level": 1,
+          "line": 65
+        },
+        {
+          "heading": "Roleplay",
+          "level": 1,
+          "line": 75
+        },
+        {
+          "heading": "AI",
+          "level": 1,
+          "line": 85
+        },
+        {
+          "heading": "Cardinality",
+          "level": 1,
+          "line": 97
+        },
+        {
+          "heading": "User → Collection",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "Collection → Vocabulary",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "User → Review Schedule",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "Review Schedule → Review Session",
+          "level": 2,
+          "line": 123
+        },
+        {
+          "heading": "User → Roleplay Session",
+          "level": 2,
+          "line": 131
+        },
+        {
+          "heading": "Roleplay Session → Message",
+          "level": 2,
+          "line": 139
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    }
+  ]
+}

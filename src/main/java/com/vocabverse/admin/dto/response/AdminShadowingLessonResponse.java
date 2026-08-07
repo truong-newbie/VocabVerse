@@ -8,7 +8,6 @@ import java.util.UUID;
 public record AdminShadowingLessonResponse(
         UUID id,
         ShadowingLessonSource source,
-        ShadowingLessonSource sourceType,
         ShadowingLessonStatus status,
         String title,
         String description,

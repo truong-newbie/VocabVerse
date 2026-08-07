@@ -1,0 +1,1745 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "type": "file",
+      "name": "AdminNotificationController.java",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "summary": "AdminNotificationController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 4 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:AdminNotificationController",
+      "type": "class",
+      "name": "AdminNotificationController",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "lineRange": [
+        15,
+        34
+      ],
+      "summary": "AdminNotificationController định nghĩa cấu trúc hoặc hành vi chính trong AdminNotificationController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:listNotifications",
+      "type": "function",
+      "name": "listNotifications",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "lineRange": [
+        23,
+        28
+      ],
+      "summary": "listNotifications triển khai một thao tác đáng chú ý trong AdminNotificationController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:getStats",
+      "type": "function",
+      "name": "getStats",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "lineRange": [
+        30,
+        33
+      ],
+      "summary": "getStats triển khai một thao tác đáng chú ý trong AdminNotificationController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "type": "file",
+      "name": "AdminNotificationLogResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "summary": "AdminNotificationLogResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "type": "file",
+      "name": "AdminNotificationPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "summary": "AdminNotificationPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "type": "file",
+      "name": "AdminNotificationStatsResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "summary": "AdminNotificationStatsResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "type": "file",
+      "name": "AdminNotificationService.java",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "summary": "AdminNotificationService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function, 6 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:AdminNotificationService",
+      "type": "class",
+      "name": "AdminNotificationService",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "lineRange": [
+        17,
+        71
+      ],
+      "summary": "AdminNotificationService định nghĩa cấu trúc hoặc hành vi chính trong AdminNotificationService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:listNotifications",
+      "type": "function",
+      "name": "listNotifications",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "lineRange": [
+        23,
+        40
+      ],
+      "summary": "listNotifications triển khai một thao tác đáng chú ý trong AdminNotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:getStats",
+      "type": "function",
+      "name": "getStats",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "lineRange": [
+        42,
+        59
+      ],
+      "summary": "getStats triển khai một thao tác đáng chú ý trong AdminNotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:toLogResponse",
+      "type": "function",
+      "name": "toLogResponse",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "lineRange": [
+        61,
+        70
+      ],
+      "summary": "toLogResponse triển khai một thao tác đáng chú ý trong AdminNotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "type": "file",
+      "name": "RabbitMqConfig.java",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "summary": "RabbitMqConfig.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 function.",
+      "tags": [
+        "java",
+        "code",
+        "config",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:RabbitMqConfig",
+      "type": "class",
+      "name": "RabbitMqConfig",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        15,
+        62
+      ],
+      "summary": "RabbitMqConfig định nghĩa cấu trúc hoặc hành vi chính trong RabbitMqConfig.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:vocabverseExchange",
+      "type": "function",
+      "name": "vocabverseExchange",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        22,
+        25
+      ],
+      "summary": "vocabverseExchange triển khai một thao tác đáng chú ý trong RabbitMqConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:notificationEmailQueue",
+      "type": "function",
+      "name": "notificationEmailQueue",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        27,
+        30
+      ],
+      "summary": "notificationEmailQueue triển khai một thao tác đáng chú ý trong RabbitMqConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:notificationEmailBinding",
+      "type": "function",
+      "name": "notificationEmailBinding",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        32,
+        38
+      ],
+      "summary": "notificationEmailBinding triển khai một thao tác đáng chú ý trong RabbitMqConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:jsonMessageConverter",
+      "type": "function",
+      "name": "jsonMessageConverter",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        40,
+        43
+      ],
+      "summary": "jsonMessageConverter triển khai một thao tác đáng chú ý trong RabbitMqConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:rabbitTemplate",
+      "type": "function",
+      "name": "rabbitTemplate",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        45,
+        50
+      ],
+      "summary": "rabbitTemplate triển khai một thao tác đáng chú ý trong RabbitMqConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:rabbitListenerContainerFactory",
+      "type": "function",
+      "name": "rabbitListenerContainerFactory",
+      "filePath": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "lineRange": [
+        52,
+        61
+      ],
+      "summary": "rabbitListenerContainerFactory triển khai một thao tác đáng chú ý trong RabbitMqConfig.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "type": "file",
+      "name": "NotificationConsumer.java",
+      "filePath": "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "summary": "NotificationConsumer.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java:NotificationConsumer",
+      "type": "class",
+      "name": "NotificationConsumer",
+      "filePath": "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "lineRange": [
+        10,
+        23
+      ],
+      "summary": "NotificationConsumer định nghĩa cấu trúc hoặc hành vi chính trong NotificationConsumer.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java:consumeReviewDueEvent",
+      "type": "function",
+      "name": "consumeReviewDueEvent",
+      "filePath": "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "lineRange": [
+        16,
+        22
+      ],
+      "summary": "consumeReviewDueEvent triển khai một thao tác đáng chú ý trong NotificationConsumer.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "type": "file",
+      "name": "ReviewDueEvent.java",
+      "filePath": "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "summary": "ReviewDueEvent.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "type": "file",
+      "name": "NotificationProducer.java",
+      "filePath": "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "summary": "NotificationProducer.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/async/producer/NotificationProducer.java:NotificationProducer",
+      "type": "class",
+      "name": "NotificationProducer",
+      "filePath": "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "lineRange": [
+        9,
+        22
+      ],
+      "summary": "NotificationProducer định nghĩa cấu trúc hoặc hành vi chính trong NotificationProducer.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/async/producer/NotificationProducer.java:publishReviewDueEvent",
+      "type": "function",
+      "name": "publishReviewDueEvent",
+      "filePath": "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "lineRange": [
+        15,
+        21
+      ],
+      "summary": "publishReviewDueEvent triển khai một thao tác đáng chú ý trong NotificationProducer.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "type": "file",
+      "name": "NotificationController.java",
+      "filePath": "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "summary": "NotificationController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/controller/NotificationController.java:NotificationController",
+      "type": "class",
+      "name": "NotificationController",
+      "filePath": "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "lineRange": [
+        13,
+        33
+      ],
+      "summary": "NotificationController định nghĩa cấu trúc hoặc hành vi chính trong NotificationController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/controller/NotificationController.java:getNotifications",
+      "type": "function",
+      "name": "getNotifications",
+      "filePath": "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "lineRange": [
+        20,
+        25
+      ],
+      "summary": "getNotifications triển khai một thao tác đáng chú ý trong NotificationController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/controller/NotificationController.java:getNotificationHistory",
+      "type": "function",
+      "name": "getNotificationHistory",
+      "filePath": "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "lineRange": [
+        27,
+        32
+      ],
+      "summary": "getNotificationHistory triển khai một thao tác đáng chú ý trong NotificationController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "type": "file",
+      "name": "NotificationPageResponse.java",
+      "filePath": "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "summary": "NotificationPageResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "type": "file",
+      "name": "NotificationResponse.java",
+      "filePath": "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "summary": "NotificationResponse.java là file mã nguồn java trong VocabVerse, gồm 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "type": "file",
+      "name": "EmailService.java",
+      "filePath": "src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "summary": "EmailService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/email/EmailService.java:EmailService",
+      "type": "class",
+      "name": "EmailService",
+      "filePath": "src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "lineRange": [
+        8,
+        34
+      ],
+      "summary": "EmailService định nghĩa cấu trúc hoặc hành vi chính trong EmailService.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/email/EmailService.java:sendReviewDueEmail",
+      "type": "function",
+      "name": "sendReviewDueEmail",
+      "filePath": "src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "lineRange": [
+        17,
+        33
+      ],
+      "summary": "sendReviewDueEmail triển khai một thao tác đáng chú ý trong EmailService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "type": "file",
+      "name": "NotificationEntity.java",
+      "filePath": "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "summary": "NotificationEntity.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 import.",
+      "tags": [
+        "java",
+        "code",
+        "entity",
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java:NotificationEntity",
+      "type": "class",
+      "name": "NotificationEntity",
+      "filePath": "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "lineRange": [
+        25,
+        61
+      ],
+      "summary": "NotificationEntity định nghĩa cấu trúc hoặc hành vi chính trong NotificationEntity.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "type": "file",
+      "name": "NotificationStatus.java",
+      "filePath": "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "summary": "NotificationStatus.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "type": "file",
+      "name": "NotificationType.java",
+      "filePath": "src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "summary": "NotificationType.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "entity"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "type": "file",
+      "name": "NotificationMapper.java",
+      "filePath": "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "summary": "NotificationMapper.java là file mã nguồn java trong VocabVerse, gồm 1 class, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "mapper",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java:NotificationMapper",
+      "type": "class",
+      "name": "NotificationMapper",
+      "filePath": "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "lineRange": [
+        7,
+        11
+      ],
+      "summary": "NotificationMapper định nghĩa cấu trúc hoặc hành vi chính trong NotificationMapper.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "type": "file",
+      "name": "NotificationRepository.java",
+      "filePath": "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "summary": "NotificationRepository.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "repository",
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java:NotificationRepository",
+      "type": "class",
+      "name": "NotificationRepository",
+      "filePath": "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "lineRange": [
+        13,
+        33
+      ],
+      "summary": "NotificationRepository định nghĩa cấu trúc hoặc hành vi chính trong NotificationRepository.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "type": "file",
+      "name": "ReviewDueScheduler.java",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "summary": "ReviewDueScheduler.java là file mã nguồn java trong VocabVerse, gồm 1 class, 6 function, 9 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:ReviewDueScheduler",
+      "type": "class",
+      "name": "ReviewDueScheduler",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "lineRange": [
+        22,
+        103
+      ],
+      "summary": "ReviewDueScheduler định nghĩa cấu trúc hoặc hành vi chính trong ReviewDueScheduler.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:publishReviewDueNotifications",
+      "type": "function",
+      "name": "publishReviewDueNotifications",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "lineRange": [
+        32,
+        43
+      ],
+      "summary": "publishReviewDueNotifications triển khai một thao tác đáng chú ý trong ReviewDueScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:isNotificationAllowed",
+      "type": "function",
+      "name": "isNotificationAllowed",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "lineRange": [
+        52,
+        72
+      ],
+      "summary": "isNotificationAllowed triển khai một thao tác đáng chú ý trong ReviewDueScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:isReminderTimeMatched",
+      "type": "function",
+      "name": "isReminderTimeMatched",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "lineRange": [
+        74,
+        87
+      ],
+      "summary": "isReminderTimeMatched triển khai một thao tác đáng chú ý trong ReviewDueScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:resolveZoneId",
+      "type": "function",
+      "name": "resolveZoneId",
+      "filePath": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "lineRange": [
+        89,
+        98
+      ],
+      "summary": "resolveZoneId triển khai một thao tác đáng chú ý trong ReviewDueScheduler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "type": "file",
+      "name": "NotificationService.java",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "summary": "NotificationService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 8 function, 12 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/notification/service/NotificationService.java:NotificationService",
+      "type": "class",
+      "name": "NotificationService",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "lineRange": [
+        29,
+        144
+      ],
+      "summary": "NotificationService định nghĩa cấu trúc hoặc hành vi chính trong NotificationService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:createPendingReviewDueNotification",
+      "type": "function",
+      "name": "createPendingReviewDueNotification",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "lineRange": [
+        38,
+        71
+      ],
+      "summary": "createPendingReviewDueNotification triển khai một thao tác đáng chú ý trong NotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:sendReviewDueEmail",
+      "type": "function",
+      "name": "sendReviewDueEmail",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "lineRange": [
+        73,
+        90
+      ],
+      "summary": "sendReviewDueEmail triển khai một thao tác đáng chú ý trong NotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:getNotifications",
+      "type": "function",
+      "name": "getNotifications",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "lineRange": [
+        92,
+        97
+      ],
+      "summary": "getNotifications triển khai một thao tác đáng chú ý trong NotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:getNotificationHistory",
+      "type": "function",
+      "name": "getNotificationHistory",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "lineRange": [
+        99,
+        108
+      ],
+      "summary": "getNotificationHistory triển khai một thao tác đáng chú ý trong NotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:existsReviewDueNotificationForDate",
+      "type": "function",
+      "name": "existsReviewDueNotificationForDate",
+      "filePath": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "lineRange": [
+        110,
+        119
+      ],
+      "summary": "existsReviewDueNotificationForDate triển khai một thao tác đáng chú ý trong NotificationService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:AdminNotificationController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:AdminNotificationController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:listNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:listNotifications",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:getStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java:getStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:AdminNotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:AdminNotificationService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:listNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:listNotifications",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:getStats",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:getStats",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java:toLogResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "class:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:RabbitMqConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "class:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:RabbitMqConfig",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:vocabverseExchange",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:vocabverseExchange",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:notificationEmailQueue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:notificationEmailQueue",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:notificationEmailBinding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:notificationEmailBinding",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:jsonMessageConverter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:jsonMessageConverter",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:rabbitTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:rabbitTemplate",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:rabbitListenerContainerFactory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "target": "function:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java:rabbitListenerContainerFactory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "class:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java:NotificationConsumer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "class:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java:NotificationConsumer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "function:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java:consumeReviewDueEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "function:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java:consumeReviewDueEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "file:src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "target": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "target": "class:src/main/java/com/vocabverse/async/producer/NotificationProducer.java:NotificationProducer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "target": "class:src/main/java/com/vocabverse/async/producer/NotificationProducer.java:NotificationProducer",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "target": "function:src/main/java/com/vocabverse/async/producer/NotificationProducer.java:publishReviewDueEvent",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "target": "function:src/main/java/com/vocabverse/async/producer/NotificationProducer.java:publishReviewDueEvent",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "target": "file:src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "target": "file:src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "class:src/main/java/com/vocabverse/notification/controller/NotificationController.java:NotificationController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "class:src/main/java/com/vocabverse/notification/controller/NotificationController.java:NotificationController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/notification/controller/NotificationController.java:getNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/notification/controller/NotificationController.java:getNotifications",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/notification/controller/NotificationController.java:getNotificationHistory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "function:src/main/java/com/vocabverse/notification/controller/NotificationController.java:getNotificationHistory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "target": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "target": "class:src/main/java/com/vocabverse/notification/email/EmailService.java:EmailService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "target": "class:src/main/java/com/vocabverse/notification/email/EmailService.java:EmailService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/email/EmailService.java:sendReviewDueEmail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/email/EmailService.java:sendReviewDueEmail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "target": "file:src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "target": "class:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java:NotificationEntity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "target": "class:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java:NotificationEntity",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "target": "class:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java:NotificationMapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "target": "class:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java:NotificationMapper",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "target": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "target": "class:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java:NotificationRepository",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "target": "class:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java:NotificationRepository",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:ReviewDueScheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "class:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:ReviewDueScheduler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:publishReviewDueNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:publishReviewDueNotifications",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:isNotificationAllowed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:isReminderTimeMatched",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "function:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java:resolveZoneId",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "class:src/main/java/com/vocabverse/notification/service/NotificationService.java:NotificationService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "class:src/main/java/com/vocabverse/notification/service/NotificationService.java:NotificationService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:createPendingReviewDueNotification",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:createPendingReviewDueNotification",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:sendReviewDueEmail",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:sendReviewDueEmail",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:getNotifications",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:getNotifications",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:getNotificationHistory",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:getNotificationHistory",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "function:src/main/java/com/vocabverse/notification/service/NotificationService.java:existsReviewDueNotificationForDate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

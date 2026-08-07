@@ -19,4 +19,15 @@ public interface ShadowingLessonRepository extends JpaRepository<ShadowingLesson
             ShadowingLessonStatus status,
             Pageable pageable
     );
+
+    Page<ShadowingLessonEntity> findBySourceInAndStatusOrderByCreatedAtDesc(
+            java.util.List<ShadowingLessonSource> sources,
+            ShadowingLessonStatus status,
+            Pageable pageable
+    );
+
+    Page<ShadowingLessonEntity> findBySourceInOrderByCreatedAtDesc(
+            java.util.List<ShadowingLessonSource> sources,
+            Pageable pageable
+    );
 }

@@ -1,0 +1,1303 @@
+{
+  "nodes": [
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "type": "file",
+      "name": "AdminDashboardController.java",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "summary": "AdminDashboardController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java:AdminDashboardController",
+      "type": "class",
+      "name": "AdminDashboardController",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "lineRange": [
+        12,
+        24
+      ],
+      "summary": "AdminDashboardController định nghĩa cấu trúc hoặc hành vi chính trong AdminDashboardController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java:getDashboard",
+      "type": "function",
+      "name": "getDashboard",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "lineRange": [
+        20,
+        23
+      ],
+      "summary": "getDashboard triển khai một thao tác đáng chú ý trong AdminDashboardController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "type": "file",
+      "name": "AdminSystemController.java",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "summary": "AdminSystemController.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "controller",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java:AdminSystemController",
+      "type": "class",
+      "name": "AdminSystemController",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "lineRange": [
+        12,
+        24
+      ],
+      "summary": "AdminSystemController định nghĩa cấu trúc hoặc hành vi chính trong AdminSystemController.java.",
+      "tags": [
+        "java",
+        "class",
+        "controller"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java:getHealth",
+      "type": "function",
+      "name": "getHealth",
+      "filePath": "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "lineRange": [
+        20,
+        23
+      ],
+      "summary": "getHealth triển khai một thao tác đáng chú ý trong AdminSystemController.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "type": "file",
+      "name": "AdminDashboardResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "summary": "AdminDashboardResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+      "type": "file",
+      "name": "AdminHealthComponentResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+      "summary": "AdminHealthComponentResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "type": "file",
+      "name": "AdminSystemHealthResponse.java",
+      "filePath": "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "summary": "AdminSystemHealthResponse.java là file mã nguồn java trong VocabVerse.",
+      "tags": [
+        "java",
+        "code",
+        "dto"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "type": "file",
+      "name": "AdminDashboardService.java",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "summary": "AdminDashboardService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 1 function, 8 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java:AdminDashboardService",
+      "type": "class",
+      "name": "AdminDashboardService",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "lineRange": [
+        17,
+        43
+      ],
+      "summary": "AdminDashboardService định nghĩa cấu trúc hoặc hành vi chính trong AdminDashboardService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java:getDashboard",
+      "type": "function",
+      "name": "getDashboard",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "lineRange": [
+        27,
+        42
+      ],
+      "summary": "getDashboard triển khai một thao tác đáng chú ý trong AdminDashboardService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "type": "file",
+      "name": "AdminSystemService.java",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "summary": "AdminSystemService.java là file mã nguồn java trong VocabVerse, gồm 1 class, 4 function, 2 import.",
+      "tags": [
+        "java",
+        "code",
+        "service",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/admin/service/AdminSystemService.java:AdminSystemService",
+      "type": "class",
+      "name": "AdminSystemService",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "lineRange": [
+        12,
+        53
+      ],
+      "summary": "AdminSystemService định nghĩa cấu trúc hoặc hành vi chính trong AdminSystemService.java.",
+      "tags": [
+        "java",
+        "class",
+        "service"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/admin/service/AdminSystemService.java:getHealth",
+      "type": "function",
+      "name": "getHealth",
+      "filePath": "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "lineRange": [
+        20,
+        26
+      ],
+      "summary": "getHealth triển khai một thao tác đáng chú ý trong AdminSystemService.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "type": "file",
+      "name": "GlobalExceptionHandler.java",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "summary": "GlobalExceptionHandler.java là file mã nguồn java trong VocabVerse, gồm 1 class, 9 function, 3 import.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:GlobalExceptionHandler",
+      "type": "class",
+      "name": "GlobalExceptionHandler",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        18,
+        103
+      ],
+      "summary": "GlobalExceptionHandler định nghĩa cấu trúc hoặc hành vi chính trong GlobalExceptionHandler.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleBaseException",
+      "type": "function",
+      "name": "handleBaseException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        21,
+        27
+      ],
+      "summary": "handleBaseException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleValidationException",
+      "type": "function",
+      "name": "handleValidationException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        29,
+        46
+      ],
+      "summary": "handleValidationException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleHttpMessageNotReadableException",
+      "type": "function",
+      "name": "handleHttpMessageNotReadableException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        48,
+        54
+      ],
+      "summary": "handleHttpMessageNotReadableException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMethodArgumentTypeMismatchException",
+      "type": "function",
+      "name": "handleMethodArgumentTypeMismatchException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        56,
+        62
+      ],
+      "summary": "handleMethodArgumentTypeMismatchException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMaxUploadSizeExceededException",
+      "type": "function",
+      "name": "handleMaxUploadSizeExceededException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        64,
+        70
+      ],
+      "summary": "handleMaxUploadSizeExceededException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMultipartException",
+      "type": "function",
+      "name": "handleMultipartException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        72,
+        78
+      ],
+      "summary": "handleMultipartException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMissingServletRequestPartException",
+      "type": "function",
+      "name": "handleMissingServletRequestPartException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        80,
+        86
+      ],
+      "summary": "handleMissingServletRequestPartException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleAccessDeniedException",
+      "type": "function",
+      "name": "handleAccessDeniedException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        88,
+        94
+      ],
+      "summary": "handleAccessDeniedException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleException",
+      "type": "function",
+      "name": "handleException",
+      "filePath": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "lineRange": [
+        96,
+        102
+      ],
+      "summary": "handleException triển khai một thao tác đáng chú ý trong GlobalExceptionHandler.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "file",
+      "name": "ApiResponse.java",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "summary": "ApiResponse.java là file mã nguồn java trong VocabVerse, gồm 1 class, 10 function.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/response/ApiResponse.java:ApiResponse",
+      "type": "class",
+      "name": "ApiResponse",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        7,
+        65
+      ],
+      "summary": "ApiResponse định nghĩa cấu trúc hoặc hành vi chính trong ApiResponse.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:ApiResponse",
+      "type": "function",
+      "name": "ApiResponse",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        16,
+        22
+      ],
+      "summary": "ApiResponse triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:success",
+      "type": "function",
+      "name": "success",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        24,
+        26
+      ],
+      "summary": "success triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:success",
+      "type": "function",
+      "name": "success",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        28,
+        30
+      ],
+      "summary": "success triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:error",
+      "type": "function",
+      "name": "error",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        32,
+        34
+      ],
+      "summary": "error triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:error",
+      "type": "function",
+      "name": "error",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        36,
+        44
+      ],
+      "summary": "error triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:isSuccess",
+      "type": "function",
+      "name": "isSuccess",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        46,
+        48
+      ],
+      "summary": "isSuccess triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getMessage",
+      "type": "function",
+      "name": "getMessage",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        50,
+        52
+      ],
+      "summary": "getMessage triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getData",
+      "type": "function",
+      "name": "getData",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        54,
+        56
+      ],
+      "summary": "getData triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getErrorCode",
+      "type": "function",
+      "name": "getErrorCode",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        58,
+        60
+      ],
+      "summary": "getErrorCode triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getErrors",
+      "type": "function",
+      "name": "getErrors",
+      "filePath": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "lineRange": [
+        62,
+        64
+      ],
+      "summary": "getErrors triển khai một thao tác đáng chú ý trong ApiResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "type": "file",
+      "name": "FieldErrorResponse.java",
+      "filePath": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "summary": "FieldErrorResponse.java là file mã nguồn java trong VocabVerse, gồm 1 class, 3 function.",
+      "tags": [
+        "java",
+        "code",
+        "class",
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:FieldErrorResponse",
+      "type": "class",
+      "name": "FieldErrorResponse",
+      "filePath": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "lineRange": [
+        3,
+        20
+      ],
+      "summary": "FieldErrorResponse định nghĩa cấu trúc hoặc hành vi chính trong FieldErrorResponse.java.",
+      "tags": [
+        "java",
+        "class",
+        "domain"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:FieldErrorResponse",
+      "type": "function",
+      "name": "FieldErrorResponse",
+      "filePath": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "lineRange": [
+        8,
+        11
+      ],
+      "summary": "FieldErrorResponse triển khai một thao tác đáng chú ý trong FieldErrorResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:getField",
+      "type": "function",
+      "name": "getField",
+      "filePath": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "lineRange": [
+        13,
+        15
+      ],
+      "summary": "getField triển khai một thao tác đáng chú ý trong FieldErrorResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:getMessage",
+      "type": "function",
+      "name": "getMessage",
+      "filePath": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "lineRange": [
+        17,
+        19
+      ],
+      "summary": "getMessage triển khai một thao tác đáng chú ý trong FieldErrorResponse.java.",
+      "tags": [
+        "function",
+        "java",
+        "application"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java:AdminDashboardController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java:AdminDashboardController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java:getDashboard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java:getDashboard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java:AdminSystemController",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "class:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java:AdminSystemController",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java:getHealth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "function:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java:getHealth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java:AdminDashboardService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java:AdminDashboardService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java:getDashboard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java:getDashboard",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "target": "file:src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminSystemService.java:AdminSystemService",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "target": "class:src/main/java/com/vocabverse/admin/service/AdminSystemService.java:AdminSystemService",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminSystemService.java:getHealth",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "target": "function:src/main/java/com/vocabverse/admin/service/AdminSystemService.java:getHealth",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "target": "file:src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "class:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:GlobalExceptionHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "class:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:GlobalExceptionHandler",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleBaseException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleBaseException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleValidationException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleValidationException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleHttpMessageNotReadableException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleHttpMessageNotReadableException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMethodArgumentTypeMismatchException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMethodArgumentTypeMismatchException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMaxUploadSizeExceededException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMaxUploadSizeExceededException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMultipartException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMultipartException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMissingServletRequestPartException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleMissingServletRequestPartException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleAccessDeniedException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleAccessDeniedException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleException",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "function:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java:handleException",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "file:src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "target": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "class:src/main/java/com/vocabverse/common/response/ApiResponse.java:ApiResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "class:src/main/java/com/vocabverse/common/response/ApiResponse.java:ApiResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:ApiResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:ApiResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:success",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:success",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:success",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:success",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:error",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:error",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:isSuccess",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:isSuccess",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getData",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getData",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getErrorCode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getErrorCode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getErrors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/ApiResponse.java:getErrors",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "class:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:FieldErrorResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "class:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:FieldErrorResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:FieldErrorResponse",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:FieldErrorResponse",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:getField",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:getField",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:getMessage",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "target": "function:src/main/java/com/vocabverse/common/response/FieldErrorResponse.java:getMessage",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    }
+  ]
+}

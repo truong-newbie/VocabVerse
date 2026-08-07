@@ -1,0 +1,42 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "docs/ai/13-prompt-engineering-design.md",
+      "language": "markdown",
+      "sizeLines": 605,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/ai/AI_RULES.md",
+      "language": "markdown",
+      "sizeLines": 292,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/ai/ARCHITECTURE_LOCK.md",
+      "language": "markdown",
+      "sizeLines": 130,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/ai/BUSINESS_RULES.md",
+      "language": "markdown",
+      "sizeLines": 148,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/ai/TASK_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 127,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/ai/13-prompt-engineering-design.md": [],
+    "docs/ai/AI_RULES.md": [],
+    "docs/ai/ARCHITECTURE_LOCK.md": [],
+    "docs/ai/BUSINESS_RULES.md": [],
+    "docs/ai/TASK_TEMPLATE.md": []
+  }
+}

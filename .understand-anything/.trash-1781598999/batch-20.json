@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "config:src/main/resources/application-dev.yml",
+      "type": "config",
+      "name": "application-dev.yml",
+      "filePath": "src/main/resources/application-dev.yml",
+      "summary": "application-dev.yml là file cấu hình yaml trong VocabVerse.",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/main/resources/application-local.yml",
+      "type": "config",
+      "name": "application-local.yml",
+      "filePath": "src/main/resources/application-local.yml",
+      "summary": "application-local.yml là file cấu hình yaml trong VocabVerse.",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/main/resources/application-prod.yml",
+      "type": "config",
+      "name": "application-prod.yml",
+      "filePath": "src/main/resources/application-prod.yml",
+      "summary": "application-prod.yml là file cấu hình yaml trong VocabVerse.",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/main/resources/application-staging.yml",
+      "type": "config",
+      "name": "application-staging.yml",
+      "filePath": "src/main/resources/application-staging.yml",
+      "summary": "application-staging.yml là file cấu hình yaml trong VocabVerse.",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:src/main/resources/application.yml",
+      "type": "config",
+      "name": "application.yml",
+      "filePath": "src/main/resources/application.yml",
+      "summary": "application.yml là file cấu hình yaml trong VocabVerse.",
+      "tags": [
+        "yaml",
+        "config"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

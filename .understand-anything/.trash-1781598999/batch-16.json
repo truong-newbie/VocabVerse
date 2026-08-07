@@ -1,0 +1,124 @@
+{
+  "nodes": [
+    {
+      "id": "config:.env.example",
+      "type": "config",
+      "name": ".env.example",
+      "filePath": ".env.example",
+      "summary": ".env.example là file cấu hình config trong VocabVerse.",
+      "tags": [
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "README.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:Sm2.md",
+      "type": "document",
+      "name": "Sm2.md",
+      "filePath": "Sm2.md",
+      "summary": "Sm2.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:VocabVerse.postman_collection.json",
+      "type": "config",
+      "name": "VocabVerse.postman_collection.json",
+      "filePath": "VocabVerse.postman_collection.json",
+      "summary": "VocabVerse.postman_collection.json là file cấu hình json trong VocabVerse.",
+      "tags": [
+        "json",
+        "config"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:build.gradle",
+      "type": "config",
+      "name": "build.gradle",
+      "filePath": "build.gradle",
+      "summary": "build.gradle là file cấu hình gradle trong VocabVerse.",
+      "tags": [
+        "gradle",
+        "config"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:fsrs.md",
+      "type": "document",
+      "name": "fsrs.md",
+      "filePath": "fsrs.md",
+      "summary": "fsrs.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:gradlew.bat",
+      "type": "file",
+      "name": "gradlew.bat",
+      "filePath": "gradlew.bat",
+      "summary": "gradlew.bat là file script batch trong VocabVerse.",
+      "tags": [
+        "batch",
+        "script"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:mvnw.cmd",
+      "type": "file",
+      "name": "mvnw.cmd",
+      "filePath": "mvnw.cmd",
+      "summary": "mvnw.cmd là file script batch trong VocabVerse.",
+      "tags": [
+        "batch",
+        "script"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "config:pom.xml",
+      "type": "config",
+      "name": "pom.xml",
+      "filePath": "pom.xml",
+      "summary": "pom.xml là file cấu hình xml trong VocabVerse.",
+      "tags": [
+        "xml",
+        "config"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "config:settings.gradle",
+      "type": "config",
+      "name": "settings.gradle",
+      "filePath": "settings.gradle",
+      "summary": "settings.gradle là file cấu hình gradle trong VocabVerse.",
+      "tags": [
+        "gradle",
+        "config"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

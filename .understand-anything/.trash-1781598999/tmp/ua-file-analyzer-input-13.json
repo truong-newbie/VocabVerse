@@ -1,0 +1,101 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java",
+      "language": "java",
+      "sizeLines": 24,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "language": "java",
+      "sizeLines": 13,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+      "language": "java",
+      "sizeLines": 6,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "language": "java",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "language": "java",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java",
+      "language": "java",
+      "sizeLines": 20,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/admin/controller/AdminDashboardController.java": [
+      "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/admin/controller/AdminSystemController.java": [
+      "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java",
+      "src/main/java/com/vocabverse/admin/service/AdminSystemService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java": [],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java": [],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java": [],
+    "src/main/java/com/vocabverse/admin/service/AdminDashboardService.java": [
+      "src/main/java/com/vocabverse/admin/dto/response/AdminDashboardResponse.java",
+      "src/main/java/com/vocabverse/collection/enums/CollectionVisibility.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "src/main/java/com/vocabverse/user/entity/UserStatus.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/admin/service/AdminSystemService.java": [
+      "src/main/java/com/vocabverse/admin/dto/response/AdminHealthComponentResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminSystemHealthResponse.java"
+    ],
+    "src/main/java/com/vocabverse/common/exception/GlobalExceptionHandler.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java"
+    ],
+    "src/main/java/com/vocabverse/common/response/ApiResponse.java": [],
+    "src/main/java/com/vocabverse/common/response/FieldErrorResponse.java": []
+  }
+}

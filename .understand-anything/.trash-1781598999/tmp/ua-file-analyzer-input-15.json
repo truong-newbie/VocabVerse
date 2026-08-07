@@ -1,0 +1,140 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/resources/db/migration/V10__create_notifications_table.sql",
+      "language": "sql",
+      "sizeLines": 17,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V11__create_roleplay_tables.sql",
+      "language": "sql",
+      "sizeLines": 39,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V12__create_collection_review_settings_table.sql",
+      "language": "sql",
+      "sizeLines": 20,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V13__create_admin_shadowing_tables.sql",
+      "language": "sql",
+      "sizeLines": 27,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V14__alter_shadowing_lessons_admin_contract.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V15__shadowing_cloudinary_subtitles.sql",
+      "language": "sql",
+      "sizeLines": 20,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V16__add_review_scheduler_type.sql",
+      "language": "sql",
+      "sizeLines": 6,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V17__add_sm2_progress_fields.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V18__add_fsrs_progress_fields.sql",
+      "language": "sql",
+      "sizeLines": 4,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V19__add_fsrs_review_settings.sql",
+      "language": "sql",
+      "sizeLines": 3,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V1__create_users_table.sql",
+      "language": "sql",
+      "sizeLines": 16,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V2__create_refresh_tokens_table.sql",
+      "language": "sql",
+      "sizeLines": 11,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V3__create_collections_table.sql",
+      "language": "sql",
+      "sizeLines": 17,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V4__create_vocabularies_table.sql",
+      "language": "sql",
+      "sizeLines": 35,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V5__create_learning_progress_table.sql",
+      "language": "sql",
+      "sizeLines": 19,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V6__create_review_history_table.sql",
+      "language": "sql",
+      "sizeLines": 15,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V7__create_flashcard_tables.sql",
+      "language": "sql",
+      "sizeLines": 31,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V8__create_quiz_tables.sql",
+      "language": "sql",
+      "sizeLines": 35,
+      "fileCategory": "data"
+    },
+    {
+      "path": "src/main/resources/db/migration/V9__create_typing_tables.sql",
+      "language": "sql",
+      "sizeLines": 34,
+      "fileCategory": "data"
+    }
+  ],
+  "batchImportData": {
+    "src/main/resources/db/migration/V10__create_notifications_table.sql": [],
+    "src/main/resources/db/migration/V11__create_roleplay_tables.sql": [],
+    "src/main/resources/db/migration/V12__create_collection_review_settings_table.sql": [],
+    "src/main/resources/db/migration/V13__create_admin_shadowing_tables.sql": [],
+    "src/main/resources/db/migration/V14__alter_shadowing_lessons_admin_contract.sql": [],
+    "src/main/resources/db/migration/V15__shadowing_cloudinary_subtitles.sql": [],
+    "src/main/resources/db/migration/V16__add_review_scheduler_type.sql": [],
+    "src/main/resources/db/migration/V17__add_sm2_progress_fields.sql": [],
+    "src/main/resources/db/migration/V18__add_fsrs_progress_fields.sql": [],
+    "src/main/resources/db/migration/V19__add_fsrs_review_settings.sql": [],
+    "src/main/resources/db/migration/V1__create_users_table.sql": [],
+    "src/main/resources/db/migration/V2__create_refresh_tokens_table.sql": [],
+    "src/main/resources/db/migration/V3__create_collections_table.sql": [],
+    "src/main/resources/db/migration/V4__create_vocabularies_table.sql": [],
+    "src/main/resources/db/migration/V5__create_learning_progress_table.sql": [],
+    "src/main/resources/db/migration/V6__create_review_history_table.sql": [],
+    "src/main/resources/db/migration/V7__create_flashcard_tables.sql": [],
+    "src/main/resources/db/migration/V8__create_quiz_tables.sql": [],
+    "src/main/resources/db/migration/V9__create_typing_tables.sql": []
+  }
+}

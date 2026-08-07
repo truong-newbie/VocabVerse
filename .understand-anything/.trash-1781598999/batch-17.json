@@ -1,0 +1,65 @@
+{
+  "nodes": [
+    {
+      "id": "document:docs/ai/13-prompt-engineering-design.md",
+      "type": "document",
+      "name": "13-prompt-engineering-design.md",
+      "filePath": "docs/ai/13-prompt-engineering-design.md",
+      "summary": "13-prompt-engineering-design.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/ai/AI_RULES.md",
+      "type": "document",
+      "name": "AI_RULES.md",
+      "filePath": "docs/ai/AI_RULES.md",
+      "summary": "AI_RULES.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "document:docs/ai/ARCHITECTURE_LOCK.md",
+      "type": "document",
+      "name": "ARCHITECTURE_LOCK.md",
+      "filePath": "docs/ai/ARCHITECTURE_LOCK.md",
+      "summary": "ARCHITECTURE_LOCK.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/ai/BUSINESS_RULES.md",
+      "type": "document",
+      "name": "BUSINESS_RULES.md",
+      "filePath": "docs/ai/BUSINESS_RULES.md",
+      "summary": "BUSINESS_RULES.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:docs/ai/TASK_TEMPLATE.md",
+      "type": "document",
+      "name": "TASK_TEMPLATE.md",
+      "filePath": "docs/ai/TASK_TEMPLATE.md",
+      "summary": "TASK_TEMPLATE.md là file tài liệu markdown trong VocabVerse.",
+      "tags": [
+        "markdown",
+        "docs"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": []
+}

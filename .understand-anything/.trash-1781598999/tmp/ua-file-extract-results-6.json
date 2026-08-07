@@ -1,0 +1,4340 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 24,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewDuePageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewHistoryResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 17,
+      "nonEmptyLines": 15,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewStatisticsResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 9,
+      "nonEmptyLines": 8,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/dto/response/ReviewSubmitResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/entity/ReviewHistoryEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 64,
+      "nonEmptyLines": 54,
+      "classes": [
+        {
+          "name": "ReviewHistoryEntity",
+          "startLine": 25,
+          "endLine": 64,
+          "methods": [],
+          "properties": [
+            "id",
+            "user",
+            "vocabulary",
+            "result",
+            "reviewedAt",
+            "nextReviewAt",
+            "previousStatus",
+            "newStatus"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReviewHistoryEntity",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/entity/ReviewResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/repository/ReviewHistoryRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 21,
+      "classes": [
+        {
+          "name": "ReviewHistoryRepository",
+          "startLine": 13,
+          "endLine": 26,
+          "methods": [
+            "findAllByUserIdOrderByReviewedAtDesc",
+            "countByUserIdAndReviewedAtBetween",
+            "findReviewedAtByUserIdOrderByReviewedAtDesc"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReviewHistoryRepository",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/service/ReviewService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 233,
+      "nonEmptyLines": 209,
+      "functions": [
+        {
+          "name": "submitReview",
+          "startLine": 54,
+          "endLine": 73,
+          "params": [
+            "vocabularyId",
+            "result"
+          ]
+        },
+        {
+          "name": "getTodayReviews",
+          "startLine": 75,
+          "endLine": 88,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getReviewHistory",
+          "startLine": 90,
+          "endLine": 103,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "initializeProgress",
+          "startLine": 105,
+          "endLine": 122,
+          "params": [
+            "user",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "findEnabledReviewSetting",
+          "startLine": 124,
+          "endLine": 133,
+          "params": [
+            "userId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "resolveSchedulerType",
+          "startLine": 135,
+          "endLine": 140,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "applyScheduleResult",
+          "startLine": 142,
+          "endLine": 158,
+          "params": [
+            "progress",
+            "schedule",
+            "reviewedAt"
+          ]
+        },
+        {
+          "name": "createReviewHistory",
+          "startLine": 160,
+          "endLine": 177,
+          "params": [
+            "progress",
+            "result",
+            "reviewedAt",
+            "previousStatus"
+          ]
+        },
+        {
+          "name": "toDueItemResponse",
+          "startLine": 179,
+          "endLine": 193,
+          "params": [
+            "userId",
+            "progress"
+          ]
+        },
+        {
+          "name": "toHistoryResponse",
+          "startLine": 195,
+          "endLine": 206,
+          "params": [
+            "history"
+          ]
+        },
+        {
+          "name": "firstExampleSentence",
+          "startLine": 208,
+          "endLine": 213,
+          "params": [
+            "vocabulary"
+          ]
+        },
+        {
+          "name": "firstCollectionName",
+          "startLine": 215,
+          "endLine": 218,
+          "params": [
+            "userId",
+            "vocabularyId"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 220,
+          "endLine": 224,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 226,
+          "endLine": 232,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReviewService",
+          "startLine": 40,
+          "endLine": 233,
+          "methods": [
+            "submitReview",
+            "getTodayReviews",
+            "getReviewHistory",
+            "initializeProgress",
+            "findEnabledReviewSetting",
+            "resolveSchedulerType",
+            "applyScheduleResult",
+            "createReviewHistory",
+            "toDueItemResponse",
+            "toHistoryResponse",
+            "firstExampleSentence",
+            "firstCollectionName",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "DEFAULT_EASE_FACTOR",
+            "learningProgressRepository",
+            "reviewHistoryRepository",
+            "vocabularyRepository",
+            "collectionVocabularyRepository",
+            "collectionReviewSettingRepository",
+            "userRepository",
+            "reviewSchedulerResolver"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "submitReview",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "getTodayReviews",
+          "line": 75,
+          "isDefault": false
+        },
+        {
+          "name": "getReviewHistory",
+          "line": 90,
+          "isDefault": false
+        },
+        {
+          "name": "ReviewService",
+          "line": 40,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "submitReview",
+          "callee": "getCurrentUser",
+          "lineNumber": 56
+        },
+        {
+          "caller": "submitReview",
+          "callee": "initializeProgress",
+          "lineNumber": 57
+        },
+        {
+          "caller": "submitReview",
+          "callee": "progress.getStatus",
+          "lineNumber": 58
+        },
+        {
+          "caller": "submitReview",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 59
+        },
+        {
+          "caller": "submitReview",
+          "callee": "findEnabledReviewSetting",
+          "lineNumber": 61
+        },
+        {
+          "caller": "submitReview",
+          "callee": "user.getId",
+          "lineNumber": 61
+        },
+        {
+          "caller": "submitReview",
+          "callee": "reviewSchedulerResolver.resolve",
+          "lineNumber": 62
+        },
+        {
+          "caller": "submitReview",
+          "callee": "resolveSchedulerType",
+          "lineNumber": 62
+        },
+        {
+          "caller": "submitReview",
+          "callee": "scheduler.schedule",
+          "lineNumber": 63
+        },
+        {
+          "caller": "submitReview",
+          "callee": "setting.orElse",
+          "lineNumber": 63
+        },
+        {
+          "caller": "submitReview",
+          "callee": "applyScheduleResult",
+          "lineNumber": 64
+        },
+        {
+          "caller": "submitReview",
+          "callee": "learningProgressRepository.save",
+          "lineNumber": 65
+        },
+        {
+          "caller": "submitReview",
+          "callee": "createReviewHistory",
+          "lineNumber": 66
+        },
+        {
+          "caller": "submitReview",
+          "callee": "new ReviewSubmitResponse",
+          "lineNumber": 68
+        },
+        {
+          "caller": "submitReview",
+          "callee": "progress.getStatus",
+          "lineNumber": 69
+        },
+        {
+          "caller": "submitReview",
+          "callee": "progress.getNextReviewAt",
+          "lineNumber": 70
+        },
+        {
+          "caller": "submitReview",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 71
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "getCurrentUser",
+          "lineNumber": 77
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 78
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "LocalDateTime.now",
+          "lineNumber": 79
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "new ReviewDuePageResponse",
+          "lineNumber": 81
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "duePage.map(progress -> toDueItemResponse(userId, progress)).getContent",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "duePage.map",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "toDueItemResponse",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "duePage.getNumber",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "duePage.getSize",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "duePage.getTotalElements",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getTodayReviews",
+          "callee": "duePage.getTotalPages",
+          "lineNumber": 86
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "getCurrentUser().getId",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "getCurrentUser",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "reviewHistoryRepository.findAllByUserIdOrderByReviewedAtDesc",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "new ReviewHistoryPageResponse",
+          "lineNumber": 96
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "historyPage.map(this::toHistoryResponse).getContent",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "historyPage.map",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "historyPage.getNumber",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "historyPage.getSize",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "historyPage.getTotalElements",
+          "lineNumber": 100
+        },
+        {
+          "caller": "getReviewHistory",
+          "callee": "historyPage.getTotalPages",
+          "lineNumber": 101
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "vocabularyRepository\r\n                .findByIdAndOwnerIdAndDeletedAtIsNull(vocabularyId, user.getId()).orElseThrow",
+          "lineNumber": 106
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "vocabularyRepository.findByIdAndOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 106
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "user.getId",
+          "lineNumber": 107
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "new BusinessException",
+          "lineNumber": 108
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressRepository\r\n                .findByUserIdAndVocabularyId(user.getId(), vocabularyId).orElseGet",
+          "lineNumber": 110
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressRepository.findByUserIdAndVocabularyId",
+          "lineNumber": 110
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "user.getId",
+          "lineNumber": 111
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "learningProgressRepository.save",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .status(LearningStatus.NEW)\r\n                        .repetitionCount(0)\r\n                        .easeFactor(DEFAULT_EASE_FACTOR)\r\n                        .lastIntervalDays(0)\r\n                        .lapseCount(0)\r\n                        .reviewCount(0).build",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .status(LearningStatus.NEW)\r\n                        .repetitionCount(0)\r\n                        .easeFactor(DEFAULT_EASE_FACTOR)\r\n                        .lastIntervalDays(0)\r\n                        .lapseCount(0).reviewCount",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .status(LearningStatus.NEW)\r\n                        .repetitionCount(0)\r\n                        .easeFactor(DEFAULT_EASE_FACTOR)\r\n                        .lastIntervalDays(0).lapseCount",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .status(LearningStatus.NEW)\r\n                        .repetitionCount(0)\r\n                        .easeFactor(DEFAULT_EASE_FACTOR).lastIntervalDays",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .status(LearningStatus.NEW)\r\n                        .repetitionCount(0).easeFactor",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary)\r\n                        .status(LearningStatus.NEW).repetitionCount",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user)\r\n                        .vocabulary(vocabulary).status",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder()\r\n                        .user(user).vocabulary",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder().user",
+          "lineNumber": 112
+        },
+        {
+          "caller": "initializeProgress",
+          "callee": "LearningProgressEntity.builder",
+          "lineNumber": 112
+        },
+        {
+          "caller": "findEnabledReviewSetting",
+          "callee": "collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId",
+          "lineNumber": 125
+        },
+        {
+          "caller": "findEnabledReviewSetting",
+          "callee": "collectionIds.isEmpty",
+          "lineNumber": 129
+        },
+        {
+          "caller": "findEnabledReviewSetting",
+          "callee": "Optional.empty",
+          "lineNumber": 130
+        },
+        {
+          "caller": "findEnabledReviewSetting",
+          "callee": "collectionReviewSettingRepository.findFirstByUserIdAndCollectionIdInAndEnabledTrue",
+          "lineNumber": 132
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.isEmpty",
+          "lineNumber": 136
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.get().getSchedulerType",
+          "lineNumber": 136
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.get",
+          "lineNumber": 136
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.get().getSchedulerType",
+          "lineNumber": 139
+        },
+        {
+          "caller": "resolveSchedulerType",
+          "callee": "setting.get",
+          "lineNumber": 139
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setStatus",
+          "lineNumber": 147
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.status",
+          "lineNumber": 147
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setRepetitionCount",
+          "lineNumber": 148
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.repetitionCount",
+          "lineNumber": 148
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setEaseFactor",
+          "lineNumber": 149
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.easeFactor",
+          "lineNumber": 149
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setLastIntervalDays",
+          "lineNumber": 150
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.lastIntervalDays",
+          "lineNumber": 150
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setLapseCount",
+          "lineNumber": 151
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.lapseCount",
+          "lineNumber": 151
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setReviewCount",
+          "lineNumber": 152
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.reviewCount",
+          "lineNumber": 152
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setFsrsDifficulty",
+          "lineNumber": 153
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.fsrsDifficulty",
+          "lineNumber": 153
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setFsrsStability",
+          "lineNumber": 154
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.fsrsStability",
+          "lineNumber": 154
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setFsrsRetrievability",
+          "lineNumber": 155
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.fsrsRetrievability",
+          "lineNumber": 155
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setLastReviewedAt",
+          "lineNumber": 156
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "progress.setNextReviewAt",
+          "lineNumber": 157
+        },
+        {
+          "caller": "applyScheduleResult",
+          "callee": "schedule.nextReviewAt",
+          "lineNumber": 157
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser())\r\n                .vocabulary(progress.getVocabulary())\r\n                .result(result)\r\n                .reviewedAt(reviewedAt)\r\n                .nextReviewAt(progress.getNextReviewAt())\r\n                .previousStatus(previousStatus)\r\n                .newStatus(progress.getStatus()).build",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser())\r\n                .vocabulary(progress.getVocabulary())\r\n                .result(result)\r\n                .reviewedAt(reviewedAt)\r\n                .nextReviewAt(progress.getNextReviewAt())\r\n                .previousStatus(previousStatus).newStatus",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser())\r\n                .vocabulary(progress.getVocabulary())\r\n                .result(result)\r\n                .reviewedAt(reviewedAt)\r\n                .nextReviewAt(progress.getNextReviewAt()).previousStatus",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser())\r\n                .vocabulary(progress.getVocabulary())\r\n                .result(result)\r\n                .reviewedAt(reviewedAt).nextReviewAt",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser())\r\n                .vocabulary(progress.getVocabulary())\r\n                .result(result).reviewedAt",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser())\r\n                .vocabulary(progress.getVocabulary()).result",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder()\r\n                .user(progress.getUser()).vocabulary",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder().user",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "ReviewHistoryEntity.builder",
+          "lineNumber": 166
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "progress.getUser",
+          "lineNumber": 167
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "progress.getVocabulary",
+          "lineNumber": 168
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "progress.getNextReviewAt",
+          "lineNumber": 171
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "progress.getStatus",
+          "lineNumber": 173
+        },
+        {
+          "caller": "createReviewHistory",
+          "callee": "reviewHistoryRepository.save",
+          "lineNumber": 176
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getVocabulary",
+          "lineNumber": 180
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "new ReviewDueItemResponse",
+          "lineNumber": 181
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 182
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 183
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getMeaningEn",
+          "lineNumber": 184
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getMeaningVi",
+          "lineNumber": 185
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getPartOfSpeech",
+          "lineNumber": 186
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "firstExampleSentence",
+          "lineNumber": 187
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getStatus",
+          "lineNumber": 188
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getNextReviewAt",
+          "lineNumber": 189
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 190
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "firstCollectionName",
+          "lineNumber": 191
+        },
+        {
+          "caller": "toDueItemResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 191
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getVocabulary",
+          "lineNumber": 196
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "new ReviewHistoryResponse",
+          "lineNumber": 197
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "vocabulary.getId",
+          "lineNumber": 198
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "vocabulary.getWord",
+          "lineNumber": 199
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getResult",
+          "lineNumber": 200
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getReviewedAt",
+          "lineNumber": 201
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getNextReviewAt",
+          "lineNumber": 202
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getPreviousStatus",
+          "lineNumber": 203
+        },
+        {
+          "caller": "toHistoryResponse",
+          "callee": "history.getNewStatus",
+          "lineNumber": 204
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 209
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples().isEmpty",
+          "lineNumber": 209
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 209
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples().get(0).getEn",
+          "lineNumber": 212
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples().get",
+          "lineNumber": 212
+        },
+        {
+          "caller": "firstExampleSentence",
+          "callee": "vocabulary.getExamples",
+          "lineNumber": 212
+        },
+        {
+          "caller": "firstCollectionName",
+          "callee": "collectionVocabularyRepository.findOwnedCollectionTitlesByVocabularyId",
+          "lineNumber": 216
+        },
+        {
+          "caller": "firstCollectionName",
+          "callee": "titles.isEmpty",
+          "lineNumber": 217
+        },
+        {
+          "caller": "firstCollectionName",
+          "callee": "titles.get",
+          "lineNumber": 217
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 221
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 222
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 222
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 223
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 227
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 227
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 228
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 229
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 231
+        }
+      ],
+      "metrics": {
+        "importCount": 24,
+        "exportCount": 4,
+        "functionCount": 14,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/service/ReviewStatisticsService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 103,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "getCurrentUserStats",
+          "startLine": 38,
+          "endLine": 51,
+          "params": []
+        },
+        {
+          "name": "countEnabledDueWords",
+          "startLine": 53,
+          "endLine": 58,
+          "params": [
+            "userId",
+            "endOfToday"
+          ]
+        },
+        {
+          "name": "isReviewEnabled",
+          "startLine": 60,
+          "endLine": 73,
+          "params": [
+            "progress"
+          ]
+        },
+        {
+          "name": "calculateCurrentStreak",
+          "startLine": 75,
+          "endLine": 88,
+          "params": [
+            "userId",
+            "today"
+          ]
+        },
+        {
+          "name": "getCurrentUser",
+          "startLine": 90,
+          "endLine": 94,
+          "params": []
+        },
+        {
+          "name": "getAuthenticatedEmail",
+          "startLine": 96,
+          "endLine": 102,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "ReviewStatisticsService",
+          "startLine": 27,
+          "endLine": 103,
+          "methods": [
+            "getCurrentUserStats",
+            "countEnabledDueWords",
+            "isReviewEnabled",
+            "calculateCurrentStreak",
+            "getCurrentUser",
+            "getAuthenticatedEmail"
+          ],
+          "properties": [
+            "learningProgressRepository",
+            "reviewHistoryRepository",
+            "vocabularyRepository",
+            "collectionVocabularyRepository",
+            "collectionReviewSettingRepository",
+            "userRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "getCurrentUserStats",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "ReviewStatisticsService",
+          "line": 27,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "getCurrentUser",
+          "lineNumber": 40
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "LocalDate.now",
+          "lineNumber": 41
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "today.atStartOfDay",
+          "lineNumber": 42
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "today.plusDays(1).atStartOfDay().minusNanos",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "today.plusDays(1).atStartOfDay",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "today.plusDays",
+          "lineNumber": 43
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "new ReviewStatisticsResponse",
+          "lineNumber": 45
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "countEnabledDueWords",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "user.getId",
+          "lineNumber": 46
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "reviewHistoryRepository.countByUserIdAndReviewedAtBetween",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "user.getId",
+          "lineNumber": 47
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "calculateCurrentStreak",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "user.getId",
+          "lineNumber": 48
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "vocabularyRepository.countByOwnerIdAndDeletedAtIsNull",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getCurrentUserStats",
+          "callee": "user.getId",
+          "lineNumber": 49
+        },
+        {
+          "caller": "countEnabledDueWords",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual(userId, endOfToday)\r\n                .stream()\r\n                .filter(this::isReviewEnabled).count",
+          "lineNumber": 54
+        },
+        {
+          "caller": "countEnabledDueWords",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual(userId, endOfToday)\r\n                .stream().filter",
+          "lineNumber": 54
+        },
+        {
+          "caller": "countEnabledDueWords",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual(userId, endOfToday).stream",
+          "lineNumber": 54
+        },
+        {
+          "caller": "countEnabledDueWords",
+          "callee": "learningProgressRepository.findAllByUserIdAndNextReviewAtLessThanEqual",
+          "lineNumber": 54
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "collectionVocabularyRepository.findOwnedCollectionIdsByVocabularyId",
+          "lineNumber": 61
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "progress.getUser().getId",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "progress.getUser",
+          "lineNumber": 62
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "progress.getVocabulary().getId",
+          "lineNumber": 63
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "progress.getVocabulary",
+          "lineNumber": 63
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "collectionIds.isEmpty",
+          "lineNumber": 65
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "collectionReviewSettingRepository.findAllByUserIdAndCollectionIdIn",
+          "lineNumber": 68
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "progress.getUser().getId",
+          "lineNumber": 69
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "progress.getUser",
+          "lineNumber": 69
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "settings.isEmpty",
+          "lineNumber": 72
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "settings.stream().anyMatch",
+          "lineNumber": 72
+        },
+        {
+          "caller": "isReviewEnabled",
+          "callee": "settings.stream",
+          "lineNumber": 72
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "new HashSet<>",
+          "lineNumber": 76
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "reviewHistoryRepository\r\n                .findReviewedAtByUserIdOrderByReviewedAtDesc(userId)\r\n                .stream()\r\n                .map(LocalDateTime::toLocalDate).toList",
+          "lineNumber": 76
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "reviewHistoryRepository\r\n                .findReviewedAtByUserIdOrderByReviewedAtDesc(userId)\r\n                .stream().map",
+          "lineNumber": 76
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "reviewHistoryRepository\r\n                .findReviewedAtByUserIdOrderByReviewedAtDesc(userId).stream",
+          "lineNumber": 76
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "reviewHistoryRepository.findReviewedAtByUserIdOrderByReviewedAtDesc",
+          "lineNumber": 76
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "reviewDates.contains",
+          "lineNumber": 81
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "today.minusDays",
+          "lineNumber": 81
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "reviewDates.contains",
+          "lineNumber": 83
+        },
+        {
+          "caller": "calculateCurrentStreak",
+          "callee": "cursor.minusDays",
+          "lineNumber": 85
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "getAuthenticatedEmail",
+          "lineNumber": 91
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail(email).orElseThrow",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 92
+        },
+        {
+          "caller": "getCurrentUser",
+          "callee": "new BusinessException",
+          "lineNumber": 93
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 97
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 98
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "new BusinessException",
+          "lineNumber": 99
+        },
+        {
+          "caller": "getAuthenticatedEmail",
+          "callee": "authentication.getName",
+          "lineNumber": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 2,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/FixedIntervalScheduler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "type",
+          "startLine": 15,
+          "endLine": 18,
+          "params": []
+        },
+        {
+          "name": "schedule",
+          "startLine": 20,
+          "endLine": 45,
+          "params": [
+            "progress",
+            "result",
+            "reviewedAt",
+            "setting"
+          ]
+        },
+        {
+          "name": "calculateRepetitionCount",
+          "startLine": 47,
+          "endLine": 52,
+          "params": [
+            "progress",
+            "result"
+          ]
+        },
+        {
+          "name": "resolveStatus",
+          "startLine": 54,
+          "endLine": 62,
+          "params": [
+            "result",
+            "repetitionCount"
+          ]
+        },
+        {
+          "name": "resolveCollectionIntervalDays",
+          "startLine": 64,
+          "endLine": 78,
+          "params": [
+            "setting",
+            "repetitionCount",
+            "result"
+          ]
+        },
+        {
+          "name": "resolveDefaultIntervalDays",
+          "startLine": 80,
+          "endLine": 97,
+          "params": [
+            "repetitionCount",
+            "result"
+          ]
+        },
+        {
+          "name": "resolveEaseFactor",
+          "startLine": 99,
+          "endLine": 101,
+          "params": [
+            "progress"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FixedIntervalScheduler",
+          "startLine": 12,
+          "endLine": 102,
+          "methods": [
+            "type",
+            "schedule",
+            "calculateRepetitionCount",
+            "resolveStatus",
+            "resolveCollectionIntervalDays",
+            "resolveDefaultIntervalDays",
+            "resolveEaseFactor"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "type",
+          "line": 15,
+          "isDefault": false
+        },
+        {
+          "name": "schedule",
+          "line": 20,
+          "isDefault": false
+        },
+        {
+          "name": "FixedIntervalScheduler",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "schedule",
+          "callee": "calculateRepetitionCount",
+          "lineNumber": 27
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveStatus",
+          "lineNumber": 28
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveDefaultIntervalDays",
+          "lineNumber": 30
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveCollectionIntervalDays",
+          "lineNumber": 31
+        },
+        {
+          "caller": "schedule",
+          "callee": "new ReviewScheduleResult",
+          "lineNumber": 33
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveEaseFactor",
+          "lineNumber": 36
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getLapseCount",
+          "lineNumber": 38
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getReviewCount",
+          "lineNumber": 39
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getFsrsDifficulty",
+          "lineNumber": 40
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getFsrsStability",
+          "lineNumber": 41
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getFsrsRetrievability",
+          "lineNumber": 42
+        },
+        {
+          "caller": "schedule",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 43
+        },
+        {
+          "caller": "calculateRepetitionCount",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 51
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "setting.getIntervalsJson",
+          "lineNumber": 69
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "intervals.isEmpty",
+          "lineNumber": 70
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "intervals.get",
+          "lineNumber": 74
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "Math.max",
+          "lineNumber": 76
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "intervals.get",
+          "lineNumber": 77
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 77
+        },
+        {
+          "caller": "resolveCollectionIntervalDays",
+          "callee": "intervals.size",
+          "lineNumber": 77
+        },
+        {
+          "caller": "resolveDefaultIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 84
+        },
+        {
+          "caller": "resolveDefaultIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 90
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "progress.getEaseFactor",
+          "lineNumber": 100
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 100
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "progress.getEaseFactor",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/FsrsScheduler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 174,
+      "nonEmptyLines": 154,
+      "functions": [
+        {
+          "name": "type",
+          "startLine": 24,
+          "endLine": 27,
+          "params": []
+        },
+        {
+          "name": "schedule",
+          "startLine": 29,
+          "endLine": 58,
+          "params": [
+            "progress",
+            "result",
+            "reviewedAt",
+            "setting"
+          ]
+        },
+        {
+          "name": "initializeOrLoad",
+          "startLine": 60,
+          "endLine": 70,
+          "params": [
+            "progress",
+            "result"
+          ]
+        },
+        {
+          "name": "calculateRetrievability",
+          "startLine": 72,
+          "endLine": 83,
+          "params": [
+            "progress",
+            "reviewedAt",
+            "stability"
+          ]
+        },
+        {
+          "name": "updateMemoryState",
+          "startLine": 85,
+          "endLine": 104,
+          "params": [
+            "current",
+            "result",
+            "retrievability"
+          ]
+        },
+        {
+          "name": "difficultyModifier",
+          "startLine": 106,
+          "endLine": 113,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "calculateIntervalDays",
+          "startLine": 115,
+          "endLine": 123,
+          "params": [
+            "stability",
+            "desiredRetention",
+            "maxIntervalDays"
+          ]
+        },
+        {
+          "name": "calculateRepetitionCount",
+          "startLine": 125,
+          "endLine": 130,
+          "params": [
+            "progress",
+            "result"
+          ]
+        },
+        {
+          "name": "resolveStatus",
+          "startLine": 132,
+          "endLine": 140,
+          "params": [
+            "result",
+            "repetitionCount"
+          ]
+        },
+        {
+          "name": "resolveDesiredRetention",
+          "startLine": 142,
+          "endLine": 147,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "resolveMaxIntervalDays",
+          "startLine": 149,
+          "endLine": 154,
+          "params": [
+            "setting"
+          ]
+        },
+        {
+          "name": "resolveEaseFactor",
+          "startLine": 156,
+          "endLine": 158,
+          "params": [
+            "progress"
+          ]
+        },
+        {
+          "name": "state",
+          "startLine": 160,
+          "endLine": 162,
+          "params": [
+            "difficulty",
+            "stability"
+          ]
+        },
+        {
+          "name": "scaled",
+          "startLine": 164,
+          "endLine": 166,
+          "params": [
+            "value",
+            "scale"
+          ]
+        },
+        {
+          "name": "clamp",
+          "startLine": 168,
+          "endLine": 170,
+          "params": [
+            "value",
+            "min",
+            "max"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FsrsScheduler",
+          "startLine": 13,
+          "endLine": 174,
+          "methods": [
+            "type",
+            "schedule",
+            "initializeOrLoad",
+            "calculateRetrievability",
+            "updateMemoryState",
+            "difficultyModifier",
+            "calculateIntervalDays",
+            "calculateRepetitionCount",
+            "resolveStatus",
+            "resolveDesiredRetention",
+            "resolveMaxIntervalDays",
+            "resolveEaseFactor",
+            "state",
+            "scaled",
+            "clamp"
+          ],
+          "properties": [
+            "DEFAULT_EASE_FACTOR",
+            "DEFAULT_DESIRED_RETENTION",
+            "DEFAULT_MAX_INTERVAL_DAYS",
+            "MIN_DIFFICULTY",
+            "MAX_DIFFICULTY",
+            "MIN_STABILITY",
+            "MAX_STABILITY"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "type",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "schedule",
+          "line": 29,
+          "isDefault": false
+        },
+        {
+          "name": "FsrsScheduler",
+          "line": 13,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "schedule",
+          "callee": "resolveDesiredRetention",
+          "lineNumber": 36
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveMaxIntervalDays",
+          "lineNumber": 37
+        },
+        {
+          "caller": "schedule",
+          "callee": "initializeOrLoad",
+          "lineNumber": 38
+        },
+        {
+          "caller": "schedule",
+          "callee": "calculateRetrievability",
+          "lineNumber": 39
+        },
+        {
+          "caller": "schedule",
+          "callee": "current.stability",
+          "lineNumber": 39
+        },
+        {
+          "caller": "schedule",
+          "callee": "updateMemoryState",
+          "lineNumber": 40
+        },
+        {
+          "caller": "schedule",
+          "callee": "calculateIntervalDays",
+          "lineNumber": 41
+        },
+        {
+          "caller": "schedule",
+          "callee": "next.stability",
+          "lineNumber": 41
+        },
+        {
+          "caller": "schedule",
+          "callee": "calculateRepetitionCount",
+          "lineNumber": 42
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getLapseCount",
+          "lineNumber": 43
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getReviewCount",
+          "lineNumber": 44
+        },
+        {
+          "caller": "schedule",
+          "callee": "new ReviewScheduleResult",
+          "lineNumber": 46
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveStatus",
+          "lineNumber": 47
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveEaseFactor",
+          "lineNumber": 49
+        },
+        {
+          "caller": "schedule",
+          "callee": "next.difficulty",
+          "lineNumber": 53
+        },
+        {
+          "caller": "schedule",
+          "callee": "next.stability",
+          "lineNumber": 54
+        },
+        {
+          "caller": "schedule",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 56
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "progress.getFsrsDifficulty",
+          "lineNumber": 61
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "progress.getFsrsStability",
+          "lineNumber": 61
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "new FsrsMemoryState",
+          "lineNumber": 62
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "progress.getFsrsDifficulty",
+          "lineNumber": 62
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "progress.getFsrsStability",
+          "lineNumber": 62
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "state",
+          "lineNumber": 65
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "state",
+          "lineNumber": 66
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "state",
+          "lineNumber": 67
+        },
+        {
+          "caller": "initializeOrLoad",
+          "callee": "state",
+          "lineNumber": 68
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "progress.getLastReviewedAt",
+          "lineNumber": 77
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "stability.signum",
+          "lineNumber": 77
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "BigDecimal.ONE.setScale",
+          "lineNumber": 78
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "Math.max",
+          "lineNumber": 80
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "ChronoUnit.DAYS.between",
+          "lineNumber": 80
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "progress.getLastReviewedAt",
+          "lineNumber": 80
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "Math.pow",
+          "lineNumber": 81
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "stability.doubleValue",
+          "lineNumber": 81
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "BigDecimal.valueOf(clamp(value, 0.0, 1.0)).setScale",
+          "lineNumber": 82
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 82
+        },
+        {
+          "caller": "calculateRetrievability",
+          "callee": "clamp",
+          "lineNumber": 82
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "current.difficulty().doubleValue",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "current.difficulty",
+          "lineNumber": 90
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "clamp",
+          "lineNumber": 91
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "difficultyModifier",
+          "lineNumber": 91
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "current.stability().doubleValue",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "current.stability",
+          "lineNumber": 92
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "retrievability.doubleValue",
+          "lineNumber": 93
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "Math.max",
+          "lineNumber": 95
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "new FsrsMemoryState",
+          "lineNumber": 100
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "scaled",
+          "lineNumber": 101
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "clamp",
+          "lineNumber": 101
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "scaled",
+          "lineNumber": 102
+        },
+        {
+          "caller": "updateMemoryState",
+          "callee": "clamp",
+          "lineNumber": 102
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "stability.doubleValue",
+          "lineNumber": 120
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "desiredRetention.doubleValue",
+          "lineNumber": 120
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.max",
+          "lineNumber": 121
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.round",
+          "lineNumber": 121
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 122
+        },
+        {
+          "caller": "calculateRepetitionCount",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 129
+        },
+        {
+          "caller": "resolveDesiredRetention",
+          "callee": "setting.getFsrsDesiredRetention",
+          "lineNumber": 143
+        },
+        {
+          "caller": "resolveDesiredRetention",
+          "callee": "setting.getFsrsDesiredRetention",
+          "lineNumber": 146
+        },
+        {
+          "caller": "resolveMaxIntervalDays",
+          "callee": "setting.getFsrsMaxIntervalDays",
+          "lineNumber": 150
+        },
+        {
+          "caller": "resolveMaxIntervalDays",
+          "callee": "setting.getFsrsMaxIntervalDays",
+          "lineNumber": 153
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "progress.getEaseFactor",
+          "lineNumber": 157
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "progress.getEaseFactor",
+          "lineNumber": 157
+        },
+        {
+          "caller": "state",
+          "callee": "new FsrsMemoryState",
+          "lineNumber": 161
+        },
+        {
+          "caller": "state",
+          "callee": "new BigDecimal",
+          "lineNumber": 161
+        },
+        {
+          "caller": "state",
+          "callee": "new BigDecimal",
+          "lineNumber": 161
+        },
+        {
+          "caller": "scaled",
+          "callee": "BigDecimal.valueOf(value).setScale",
+          "lineNumber": 165
+        },
+        {
+          "caller": "scaled",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 165
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.max",
+          "lineNumber": 169
+        },
+        {
+          "caller": "clamp",
+          "callee": "Math.min",
+          "lineNumber": 169
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 15,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/ReviewIntervalStrategy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "classes": [
+        {
+          "name": "ReviewIntervalStrategy",
+          "startLine": 7,
+          "endLine": 10,
+          "methods": [
+            "calculateNextReviewDate"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReviewIntervalStrategy",
+          "line": 7,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/ReviewScheduleResult.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/ReviewScheduler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 14,
+      "classes": [
+        {
+          "name": "ReviewScheduler",
+          "startLine": 8,
+          "endLine": 18,
+          "methods": [
+            "type",
+            "schedule"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ReviewScheduler",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerType.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 7,
+      "nonEmptyLines": 6,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/SimpleReviewIntervalStrategy.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 39,
+      "nonEmptyLines": 35,
+      "functions": [
+        {
+          "name": "calculateNextReviewDate",
+          "startLine": 11,
+          "endLine": 18,
+          "params": [
+            "progress",
+            "result",
+            "reviewedAt"
+          ]
+        },
+        {
+          "name": "resolveIntervalDays",
+          "startLine": 20,
+          "endLine": 38,
+          "params": [
+            "progress",
+            "result"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "SimpleReviewIntervalStrategy",
+          "startLine": 8,
+          "endLine": 39,
+          "methods": [
+            "calculateNextReviewDate",
+            "resolveIntervalDays"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "calculateNextReviewDate",
+          "line": 11,
+          "isDefault": false
+        },
+        {
+          "name": "SimpleReviewIntervalStrategy",
+          "line": 8,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "calculateNextReviewDate",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 17
+        },
+        {
+          "caller": "calculateNextReviewDate",
+          "callee": "resolveIntervalDays",
+          "lineNumber": 17
+        },
+        {
+          "caller": "resolveIntervalDays",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 21
+        },
+        {
+          "caller": "resolveIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 25
+        },
+        {
+          "caller": "resolveIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 31
+        }
+      ],
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 2,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/Sm2Scheduler.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 104,
+      "nonEmptyLines": 92,
+      "functions": [
+        {
+          "name": "type",
+          "startLine": 19,
+          "endLine": 22,
+          "params": []
+        },
+        {
+          "name": "schedule",
+          "startLine": 24,
+          "endLine": 59,
+          "params": [
+            "progress",
+            "result",
+            "reviewedAt",
+            "setting"
+          ]
+        },
+        {
+          "name": "toQuality",
+          "startLine": 61,
+          "endLine": 68,
+          "params": [
+            "result"
+          ]
+        },
+        {
+          "name": "calculateEaseFactor",
+          "startLine": 70,
+          "endLine": 76,
+          "params": [
+            "oldEaseFactor",
+            "quality"
+          ]
+        },
+        {
+          "name": "calculateIntervalDays",
+          "startLine": 78,
+          "endLine": 89,
+          "params": [
+            "repetitionCount",
+            "lastIntervalDays",
+            "easeFactor"
+          ]
+        },
+        {
+          "name": "resolveStatus",
+          "startLine": 91,
+          "endLine": 99,
+          "params": [
+            "result",
+            "repetitionCount"
+          ]
+        },
+        {
+          "name": "resolveEaseFactor",
+          "startLine": 101,
+          "endLine": 103,
+          "params": [
+            "progress"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Sm2Scheduler",
+          "startLine": 12,
+          "endLine": 104,
+          "methods": [
+            "type",
+            "schedule",
+            "toQuality",
+            "calculateEaseFactor",
+            "calculateIntervalDays",
+            "resolveStatus",
+            "resolveEaseFactor"
+          ],
+          "properties": [
+            "DEFAULT_EASE_FACTOR",
+            "MIN_EASE_FACTOR",
+            "MAX_INTERVAL_DAYS"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "type",
+          "line": 19,
+          "isDefault": false
+        },
+        {
+          "name": "schedule",
+          "line": 24,
+          "isDefault": false
+        },
+        {
+          "name": "Sm2Scheduler",
+          "line": 12,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "schedule",
+          "callee": "toQuality",
+          "lineNumber": 31
+        },
+        {
+          "caller": "schedule",
+          "callee": "calculateEaseFactor",
+          "lineNumber": 32
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveEaseFactor",
+          "lineNumber": 32
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getReviewCount",
+          "lineNumber": 33
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getLapseCount",
+          "lineNumber": 34
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getRepetitionCount",
+          "lineNumber": 43
+        },
+        {
+          "caller": "schedule",
+          "callee": "calculateIntervalDays",
+          "lineNumber": 44
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getLastIntervalDays",
+          "lineNumber": 44
+        },
+        {
+          "caller": "schedule",
+          "callee": "new ReviewScheduleResult",
+          "lineNumber": 47
+        },
+        {
+          "caller": "schedule",
+          "callee": "resolveStatus",
+          "lineNumber": 48
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getFsrsDifficulty",
+          "lineNumber": 54
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getFsrsStability",
+          "lineNumber": 55
+        },
+        {
+          "caller": "schedule",
+          "callee": "progress.getFsrsRetrievability",
+          "lineNumber": 56
+        },
+        {
+          "caller": "schedule",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 57
+        },
+        {
+          "caller": "calculateEaseFactor",
+          "callee": "oldEaseFactor.doubleValue",
+          "lineNumber": 72
+        },
+        {
+          "caller": "calculateEaseFactor",
+          "callee": "BigDecimal.valueOf(newEaseFactor).setScale",
+          "lineNumber": 74
+        },
+        {
+          "caller": "calculateEaseFactor",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 74
+        },
+        {
+          "caller": "calculateEaseFactor",
+          "callee": "roundedEaseFactor.max",
+          "lineNumber": 75
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.max",
+          "lineNumber": 85
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.round",
+          "lineNumber": 86
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "easeFactor.doubleValue",
+          "lineNumber": 86
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.max",
+          "lineNumber": 88
+        },
+        {
+          "caller": "calculateIntervalDays",
+          "callee": "Math.min",
+          "lineNumber": 88
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "progress.getEaseFactor",
+          "lineNumber": 102
+        },
+        {
+          "caller": "resolveEaseFactor",
+          "callee": "progress.getEaseFactor",
+          "lineNumber": 102
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 7,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 93,
+      "nonEmptyLines": 75,
+      "classes": [
+        {
+          "name": "VocabularyEntity",
+          "startLine": 28,
+          "endLine": 93,
+          "methods": [],
+          "properties": [
+            "id",
+            "word",
+            "normalizedWord",
+            "phonetic",
+            "audioUrl",
+            "partOfSpeech",
+            "meaningVi",
+            "meaningEn",
+            "synonyms",
+            "antonyms",
+            "examples",
+            "source",
+            "owner",
+            "createdAt",
+            "updatedAt",
+            "deletedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "VocabularyEntity",
+          "line": 28,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 15,
+      "classes": [
+        {
+          "name": "VocabularyRepository",
+          "startLine": 11,
+          "endLine": 22,
+          "methods": [
+            "findAllByOwnerIdAndDeletedAtIsNull",
+            "findAllByOwnerIdAndDeletedAtIsNull",
+            "findByIdAndOwnerIdAndDeletedAtIsNull",
+            "countByOwnerIdAndDeletedAtIsNull",
+            "countByDeletedAtIsNull"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "VocabularyRepository",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/VocabVerseApplicationTests.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 114,
+      "nonEmptyLines": 87,
+      "functions": [
+        {
+          "name": "contextLoads",
+          "startLine": 111,
+          "endLine": 113,
+          "params": []
+        }
+      ],
+      "classes": [
+        {
+          "name": "VocabVerseApplicationTests",
+          "startLine": 31,
+          "endLine": 114,
+          "methods": [
+            "contextLoads"
+          ],
+          "properties": [
+            "userRepository",
+            "refreshTokenRepository",
+            "collectionRepository",
+            "collectionReviewSettingRepository",
+            "vocabularyRepository",
+            "collectionVocabularyRepository",
+            "learningProgressRepository",
+            "reviewHistoryRepository",
+            "flashcardSessionRepository",
+            "flashcardSessionItemRepository",
+            "quizSessionRepository",
+            "quizQuestionRepository",
+            "typingSessionRepository",
+            "typingQuestionRepository",
+            "notificationRepository",
+            "roleplaySessionRepository",
+            "roleplayMessageRepository",
+            "roleplayReportRepository",
+            "publicCollectionModerationRepository",
+            "shadowingLessonRepository",
+            "shadowingLessonSubtitleRepository",
+            "dataSource",
+            "stringRedisTemplate",
+            "connectionFactory"
+          ]
+        }
+      ],
+      "metrics": {
+        "importCount": 21,
+        "exportCount": 0,
+        "functionCount": 1,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/review/strategy/FixedIntervalSchedulerTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 89,
+      "nonEmptyLines": 71,
+      "functions": [
+        {
+          "name": "againUsesFirstCollectionInterval",
+          "startLine": 18,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "startLine": 32,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "defaultRuleIsUsedWhenSettingIsMissing",
+          "startLine": 46,
+          "endLine": 56,
+          "params": []
+        },
+        {
+          "name": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "startLine": 58,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "progress",
+          "startLine": 73,
+          "endLine": 81,
+          "params": [
+            "repetitionCount"
+          ]
+        },
+        {
+          "name": "setting",
+          "startLine": 83,
+          "endLine": 88,
+          "params": [
+            "intervals"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FixedIntervalSchedulerTest",
+          "startLine": 14,
+          "endLine": 89,
+          "methods": [
+            "againUsesFirstCollectionInterval",
+            "goodUsesCollectionIntervalByNewRepetitionCount",
+            "defaultRuleIsUsedWhenSettingIsMissing",
+            "easyAtFifthRepetitionMarksVocabularyMastered",
+            "progress",
+            "setting"
+          ],
+          "properties": [
+            "scheduler"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 20
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "progress",
+          "lineNumber": 21
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "setting",
+          "lineNumber": 22
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "List.of",
+          "lineNumber": 22
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "scheduler.schedule",
+          "lineNumber": 24
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat(result.repetitionCount()).isZero",
+          "lineNumber": 26
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat",
+          "lineNumber": 26
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "result.repetitionCount",
+          "lineNumber": 26
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 27
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat",
+          "lineNumber": 27
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "result.status",
+          "lineNumber": 27
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 28
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat",
+          "lineNumber": 28
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 28
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 29
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "assertThat",
+          "lineNumber": 29
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 29
+        },
+        {
+          "caller": "againUsesFirstCollectionInterval",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 29
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "progress",
+          "lineNumber": 35
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "setting",
+          "lineNumber": 36
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "List.of",
+          "lineNumber": 36
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "scheduler.schedule",
+          "lineNumber": 38
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 40
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat",
+          "lineNumber": 40
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "result.repetitionCount",
+          "lineNumber": 40
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 41
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat",
+          "lineNumber": 41
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "result.status",
+          "lineNumber": 41
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 42
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat",
+          "lineNumber": 42
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 42
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 43
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "assertThat",
+          "lineNumber": 43
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 43
+        },
+        {
+          "caller": "goodUsesCollectionIntervalByNewRepetitionCount",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 43
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 48
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "progress",
+          "lineNumber": 49
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "scheduler.schedule",
+          "lineNumber": 51
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 53
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "assertThat",
+          "lineNumber": 53
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "result.repetitionCount",
+          "lineNumber": 53
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 54
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "assertThat",
+          "lineNumber": 54
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 54
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 55
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "assertThat",
+          "lineNumber": 55
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 55
+        },
+        {
+          "caller": "defaultRuleIsUsedWhenSettingIsMissing",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 55
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "progress",
+          "lineNumber": 60
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "scheduler.schedule",
+          "lineNumber": 62
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 65
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 69
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "assertThat",
+          "lineNumber": 69
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "result.repetitionCount",
+          "lineNumber": 69
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 70
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "assertThat",
+          "lineNumber": 70
+        },
+        {
+          "caller": "easyAtFifthRepetitionMarksVocabularyMastered",
+          "callee": "result.status",
+          "lineNumber": 70
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(0)\r\n                .reviewCount(0).build",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(0).reviewCount",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0).lapseCount",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50)).lastIntervalDays",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount).easeFactor",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder().repetitionCount",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder",
+          "lineNumber": 74
+        },
+        {
+          "caller": "progress",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 76
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                .intervalsJson(intervals)\r\n                .schedulerType(ReviewSchedulerType.FIXED_INTERVAL).build",
+          "lineNumber": 84
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                .intervalsJson(intervals).schedulerType",
+          "lineNumber": 84
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder().intervalsJson",
+          "lineNumber": 84
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder",
+          "lineNumber": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/review/strategy/FsrsSchedulerTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 117,
+      "nonEmptyLines": 99,
+      "functions": [
+        {
+          "name": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "startLine": 17,
+          "endLine": 31,
+          "params": []
+        },
+        {
+          "name": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "startLine": 33,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "againIncrementsLapseAndResetsRepetition",
+          "startLine": 46,
+          "endLine": 61,
+          "params": []
+        },
+        {
+          "name": "desiredRetentionAndMaxIntervalAffectInterval",
+          "startLine": 63,
+          "endLine": 89,
+          "params": []
+        },
+        {
+          "name": "setting",
+          "startLine": 91,
+          "endLine": 97,
+          "params": [
+            "desiredRetention",
+            "maxIntervalDays"
+          ]
+        },
+        {
+          "name": "progress",
+          "startLine": 99,
+          "endLine": 116,
+          "params": [
+            "difficulty",
+            "stability",
+            "repetitionCount",
+            "lapseCount",
+            "lastReviewedAt"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "FsrsSchedulerTest",
+          "startLine": 13,
+          "endLine": 117,
+          "methods": [
+            "newCardGoodInitializesMemoryStateAndSchedulesReview",
+            "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+            "againIncrementsLapseAndResetsRepetition",
+            "desiredRetentionAndMaxIntervalAffectInterval",
+            "setting",
+            "progress"
+          ],
+          "properties": [
+            "scheduler"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 19
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "progress",
+          "lineNumber": 20
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "scheduler.schedule",
+          "lineNumber": 22
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "setting",
+          "lineNumber": 22
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 24
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 24
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.status",
+          "lineNumber": 24
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 25
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 25
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.repetitionCount",
+          "lineNumber": 25
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.fsrsDifficulty()).isEqualByComparingTo",
+          "lineNumber": 26
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 26
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.fsrsDifficulty",
+          "lineNumber": 26
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.fsrsStability()).isEqualByComparingTo",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.fsrsStability",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.fsrsRetrievability()).isEqualByComparingTo",
+          "lineNumber": 28
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 28
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.fsrsRetrievability",
+          "lineNumber": 28
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 30
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "assertThat",
+          "lineNumber": 30
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 30
+        },
+        {
+          "caller": "newCardGoodInitializesMemoryStateAndSchedulesReview",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 30
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 35
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "progress",
+          "lineNumber": 36
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "reviewedAt.minusDays",
+          "lineNumber": 36
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "scheduler.schedule",
+          "lineNumber": 38
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "setting",
+          "lineNumber": 38
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat(result.fsrsDifficulty()).isLessThan",
+          "lineNumber": 40
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 40
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "result.fsrsDifficulty",
+          "lineNumber": 40
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "progress.getFsrsDifficulty",
+          "lineNumber": 40
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat(result.fsrsStability()).isGreaterThan",
+          "lineNumber": 41
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 41
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "result.fsrsStability",
+          "lineNumber": 41
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "progress.getFsrsStability",
+          "lineNumber": 41
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat(result.fsrsRetrievability()).isEqualByComparingTo",
+          "lineNumber": 42
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 42
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "result.fsrsRetrievability",
+          "lineNumber": 42
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 43
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 43
+        },
+        {
+          "caller": "existingEasyReviewIncreasesStabilityAndCanMasterVocabulary",
+          "callee": "result.status",
+          "lineNumber": 43
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "progress",
+          "lineNumber": 48
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 48
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "scheduler.schedule",
+          "lineNumber": 50
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 53
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "setting",
+          "lineNumber": 54
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat(result.repetitionCount()).isZero",
+          "lineNumber": 57
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat",
+          "lineNumber": 57
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "result.repetitionCount",
+          "lineNumber": 57
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat(result.lapseCount()).isEqualTo",
+          "lineNumber": 58
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat",
+          "lineNumber": 58
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "result.lapseCount",
+          "lineNumber": 58
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat(result.fsrsDifficulty()).isGreaterThan",
+          "lineNumber": 59
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat",
+          "lineNumber": 59
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "result.fsrsDifficulty",
+          "lineNumber": 59
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "progress.getFsrsDifficulty",
+          "lineNumber": 59
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat(result.fsrsStability()).isLessThan",
+          "lineNumber": 60
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "assertThat",
+          "lineNumber": 60
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "result.fsrsStability",
+          "lineNumber": 60
+        },
+        {
+          "caller": "againIncrementsLapseAndResetsRepetition",
+          "callee": "progress.getFsrsStability",
+          "lineNumber": 60
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 65
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "progress",
+          "lineNumber": 66
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "scheduler.schedule",
+          "lineNumber": 68
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "setting",
+          "lineNumber": 72
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "scheduler.schedule",
+          "lineNumber": 74
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "setting",
+          "lineNumber": 78
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "scheduler.schedule",
+          "lineNumber": 80
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "setting",
+          "lineNumber": 84
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "assertThat(lowRetention.lastIntervalDays()).isGreaterThan",
+          "lineNumber": 87
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "assertThat",
+          "lineNumber": 87
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "lowRetention.lastIntervalDays",
+          "lineNumber": 87
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "highRetention.lastIntervalDays",
+          "lineNumber": 87
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "assertThat(clamped.lastIntervalDays()).isEqualTo",
+          "lineNumber": 88
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "assertThat",
+          "lineNumber": 88
+        },
+        {
+          "caller": "desiredRetentionAndMaxIntervalAffectInterval",
+          "callee": "clamped.lastIntervalDays",
+          "lineNumber": 88
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                .schedulerType(ReviewSchedulerType.FSRS)\r\n                .fsrsDesiredRetention(new BigDecimal(desiredRetention))\r\n                .fsrsMaxIntervalDays(maxIntervalDays).build",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                .schedulerType(ReviewSchedulerType.FSRS)\r\n                .fsrsDesiredRetention(new BigDecimal(desiredRetention)).fsrsMaxIntervalDays",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder()\r\n                .schedulerType(ReviewSchedulerType.FSRS).fsrsDesiredRetention",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder().schedulerType",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setting",
+          "callee": "CollectionReviewSettingEntity.builder",
+          "lineNumber": 92
+        },
+        {
+          "caller": "setting",
+          "callee": "new BigDecimal",
+          "lineNumber": 94
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(lapseCount)\r\n                .reviewCount(repetitionCount)\r\n                .fsrsDifficulty(difficulty == null ? null : new BigDecimal(difficulty))\r\n                .fsrsStability(stability == null ? null : new BigDecimal(stability))\r\n                .lastReviewedAt(lastReviewedAt).build",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(lapseCount)\r\n                .reviewCount(repetitionCount)\r\n                .fsrsDifficulty(difficulty == null ? null : new BigDecimal(difficulty))\r\n                .fsrsStability(stability == null ? null : new BigDecimal(stability)).lastReviewedAt",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(lapseCount)\r\n                .reviewCount(repetitionCount)\r\n                .fsrsDifficulty(difficulty == null ? null : new BigDecimal(difficulty)).fsrsStability",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(lapseCount)\r\n                .reviewCount(repetitionCount).fsrsDifficulty",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0)\r\n                .lapseCount(lapseCount).reviewCount",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50))\r\n                .lastIntervalDays(0).lapseCount",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .easeFactor(BigDecimal.valueOf(2.50)).lastIntervalDays",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount).easeFactor",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder().repetitionCount",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder",
+          "lineNumber": 106
+        },
+        {
+          "caller": "progress",
+          "callee": "BigDecimal.valueOf",
+          "lineNumber": 108
+        },
+        {
+          "caller": "progress",
+          "callee": "new BigDecimal",
+          "lineNumber": 112
+        },
+        {
+          "caller": "progress",
+          "callee": "new BigDecimal",
+          "lineNumber": 113
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 0,
+        "functionCount": 6,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/test/java/com/vocabverse/review/strategy/Sm2SchedulerTest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 130,
+      "nonEmptyLines": 104,
+      "functions": [
+        {
+          "name": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "startLine": 16,
+          "endLine": 30,
+          "params": []
+        },
+        {
+          "name": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "startLine": 32,
+          "endLine": 44,
+          "params": []
+        },
+        {
+          "name": "secondGoodReviewSchedulesSixDays",
+          "startLine": 46,
+          "endLine": 57,
+          "params": []
+        },
+        {
+          "name": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "startLine": 59,
+          "endLine": 71,
+          "params": []
+        },
+        {
+          "name": "hardReviewReducesEaseFactor",
+          "startLine": 73,
+          "endLine": 85,
+          "params": []
+        },
+        {
+          "name": "easeFactorNeverDropsBelowMinimum",
+          "startLine": 87,
+          "endLine": 99,
+          "params": []
+        },
+        {
+          "name": "intervalIsClampedToMaxInterval",
+          "startLine": 101,
+          "endLine": 113,
+          "params": []
+        },
+        {
+          "name": "progress",
+          "startLine": 115,
+          "endLine": 129,
+          "params": [
+            "repetitionCount",
+            "lastIntervalDays",
+            "easeFactor",
+            "lapseCount",
+            "reviewCount"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "Sm2SchedulerTest",
+          "startLine": 12,
+          "endLine": 130,
+          "methods": [
+            "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+            "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+            "secondGoodReviewSchedulesSixDays",
+            "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+            "hardReviewReducesEaseFactor",
+            "easeFactorNeverDropsBelowMinimum",
+            "intervalIsClampedToMaxInterval",
+            "progress"
+          ],
+          "properties": [
+            "scheduler"
+          ]
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 18
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "progress",
+          "lineNumber": 19
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "scheduler.schedule",
+          "lineNumber": 21
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.repetitionCount()).isZero",
+          "lineNumber": 23
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 23
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.repetitionCount",
+          "lineNumber": 23
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 24
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 24
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 24
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 25
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 25
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.status",
+          "lineNumber": 25
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.easeFactor()).isEqualByComparingTo",
+          "lineNumber": 26
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 26
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.easeFactor",
+          "lineNumber": 26
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.lapseCount()).isEqualTo",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.lapseCount",
+          "lineNumber": 27
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.reviewCount()).isEqualTo",
+          "lineNumber": 28
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 28
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.reviewCount",
+          "lineNumber": 28
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "assertThat",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardAgainResetsRepetitionAndSchedulesTomorrow",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 29
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 34
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "progress",
+          "lineNumber": 35
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "scheduler.schedule",
+          "lineNumber": 37
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 39
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat",
+          "lineNumber": 39
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "result.repetitionCount",
+          "lineNumber": 39
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 40
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat",
+          "lineNumber": 40
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 40
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 41
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat",
+          "lineNumber": 41
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "result.status",
+          "lineNumber": 41
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat(result.easeFactor()).isEqualByComparingTo",
+          "lineNumber": 42
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat",
+          "lineNumber": 42
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "result.easeFactor",
+          "lineNumber": 42
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 43
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "assertThat",
+          "lineNumber": 43
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 43
+        },
+        {
+          "caller": "newCardGoodSchedulesOneDayWithDefaultEaseFactor",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 43
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 48
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "progress",
+          "lineNumber": 49
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "scheduler.schedule",
+          "lineNumber": 51
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 53
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat",
+          "lineNumber": 53
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "result.repetitionCount",
+          "lineNumber": 53
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 54
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat",
+          "lineNumber": 54
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 54
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 55
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat",
+          "lineNumber": 55
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "result.status",
+          "lineNumber": 55
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 56
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "assertThat",
+          "lineNumber": 56
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 56
+        },
+        {
+          "caller": "secondGoodReviewSchedulesSixDays",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 56
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 61
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "progress",
+          "lineNumber": 62
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "scheduler.schedule",
+          "lineNumber": 64
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat(result.repetitionCount()).isEqualTo",
+          "lineNumber": 66
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 66
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "result.repetitionCount",
+          "lineNumber": 66
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat(result.easeFactor()).isEqualByComparingTo",
+          "lineNumber": 67
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 67
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "result.easeFactor",
+          "lineNumber": 67
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 68
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 68
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 68
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat(result.status()).isEqualTo",
+          "lineNumber": 69
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 69
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "result.status",
+          "lineNumber": 69
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat(result.nextReviewAt()).isEqualTo",
+          "lineNumber": 70
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "assertThat",
+          "lineNumber": 70
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "result.nextReviewAt",
+          "lineNumber": 70
+        },
+        {
+          "caller": "matureEasyReviewIncreasesEaseFactorAndCanMasterVocabulary",
+          "callee": "reviewedAt.plusDays",
+          "lineNumber": 70
+        },
+        {
+          "caller": "hardReviewReducesEaseFactor",
+          "callee": "progress",
+          "lineNumber": 75
+        },
+        {
+          "caller": "hardReviewReducesEaseFactor",
+          "callee": "scheduler.schedule",
+          "lineNumber": 77
+        },
+        {
+          "caller": "hardReviewReducesEaseFactor",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 80
+        },
+        {
+          "caller": "hardReviewReducesEaseFactor",
+          "callee": "assertThat(result.easeFactor()).isEqualByComparingTo",
+          "lineNumber": 84
+        },
+        {
+          "caller": "hardReviewReducesEaseFactor",
+          "callee": "assertThat",
+          "lineNumber": 84
+        },
+        {
+          "caller": "hardReviewReducesEaseFactor",
+          "callee": "result.easeFactor",
+          "lineNumber": 84
+        },
+        {
+          "caller": "easeFactorNeverDropsBelowMinimum",
+          "callee": "progress",
+          "lineNumber": 89
+        },
+        {
+          "caller": "easeFactorNeverDropsBelowMinimum",
+          "callee": "scheduler.schedule",
+          "lineNumber": 91
+        },
+        {
+          "caller": "easeFactorNeverDropsBelowMinimum",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 94
+        },
+        {
+          "caller": "easeFactorNeverDropsBelowMinimum",
+          "callee": "assertThat(result.easeFactor()).isEqualByComparingTo",
+          "lineNumber": 98
+        },
+        {
+          "caller": "easeFactorNeverDropsBelowMinimum",
+          "callee": "assertThat",
+          "lineNumber": 98
+        },
+        {
+          "caller": "easeFactorNeverDropsBelowMinimum",
+          "callee": "result.easeFactor",
+          "lineNumber": 98
+        },
+        {
+          "caller": "intervalIsClampedToMaxInterval",
+          "callee": "progress",
+          "lineNumber": 103
+        },
+        {
+          "caller": "intervalIsClampedToMaxInterval",
+          "callee": "scheduler.schedule",
+          "lineNumber": 105
+        },
+        {
+          "caller": "intervalIsClampedToMaxInterval",
+          "callee": "LocalDateTime.of",
+          "lineNumber": 108
+        },
+        {
+          "caller": "intervalIsClampedToMaxInterval",
+          "callee": "assertThat(result.lastIntervalDays()).isEqualTo",
+          "lineNumber": 112
+        },
+        {
+          "caller": "intervalIsClampedToMaxInterval",
+          "callee": "assertThat",
+          "lineNumber": 112
+        },
+        {
+          "caller": "intervalIsClampedToMaxInterval",
+          "callee": "result.lastIntervalDays",
+          "lineNumber": 112
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .lastIntervalDays(lastIntervalDays)\r\n                .easeFactor(new BigDecimal(easeFactor))\r\n                .lapseCount(lapseCount)\r\n                .reviewCount(reviewCount).build",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .lastIntervalDays(lastIntervalDays)\r\n                .easeFactor(new BigDecimal(easeFactor))\r\n                .lapseCount(lapseCount).reviewCount",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .lastIntervalDays(lastIntervalDays)\r\n                .easeFactor(new BigDecimal(easeFactor)).lapseCount",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount)\r\n                .lastIntervalDays(lastIntervalDays).easeFactor",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder()\r\n                .repetitionCount(repetitionCount).lastIntervalDays",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder().repetitionCount",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "LearningProgressEntity.builder",
+          "lineNumber": 122
+        },
+        {
+          "caller": "progress",
+          "callee": "new BigDecimal",
+          "lineNumber": 125
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 0,
+        "functionCount": 8,
+        "classCount": 1
+      }
+    }
+  ]
+}

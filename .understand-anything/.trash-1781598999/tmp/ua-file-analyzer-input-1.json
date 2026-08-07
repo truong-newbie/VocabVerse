@@ -1,0 +1,310 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "language": "java",
+      "sizeLines": 101,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java",
+      "language": "java",
+      "sizeLines": 45,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "language": "java",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "language": "java",
+      "sizeLines": 17,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "language": "java",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "language": "java",
+      "sizeLines": 200,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "language": "java",
+      "sizeLines": 53,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "language": "java",
+      "sizeLines": 49,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "language": "java",
+      "sizeLines": 170,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "language": "java",
+      "sizeLines": 319,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/BaseException.java",
+      "language": "java",
+      "sizeLines": 27,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "language": "java",
+      "sizeLines": 18,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java",
+      "language": "java",
+      "sizeLines": 147,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java",
+      "language": "java",
+      "sizeLines": 133,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java",
+      "language": "java",
+      "sizeLines": 84,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java",
+      "language": "java",
+      "sizeLines": 28,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java",
+      "language": "java",
+      "sizeLines": 120,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java",
+      "language": "java",
+      "sizeLines": 67,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java",
+      "language": "java",
+      "sizeLines": 60,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java",
+      "language": "java",
+      "sizeLines": 93,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/ai/client/AiClient.java": [
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java"
+    ],
+    "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ],
+    "src/main/java/com/vocabverse/ai/client/LocalFallbackAiClient.java": [
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java"
+    ],
+    "src/main/java/com/vocabverse/ai/controller/AiVocabularyController.java": [
+      "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "src/main/java/com/vocabverse/ai/dto/response/AiNormalizeQuotaResponse.java",
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "src/main/java/com/vocabverse/ai/service/AiNormalizeQuotaService.java",
+      "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java": [],
+    "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java": [],
+    "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java": [],
+    "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java": [],
+    "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java": [],
+    "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java": [
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java"
+    ],
+    "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java": [
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyItemResponse.java",
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ],
+    "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java": [],
+    "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java": [],
+    "src/main/java/com/vocabverse/ai/service/AiVocabularyService.java": [
+      "src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "src/main/java/com/vocabverse/ai/client/GroqVocabularyClient.java",
+      "src/main/java/com/vocabverse/ai/dto/request/NormalizeBulkVocabularyRequest.java",
+      "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeBulkVocabularyResponse.java",
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "src/main/java/com/vocabverse/ai/parser/BulkVocabularyJsonParser.java",
+      "src/main/java/com/vocabverse/ai/parser/VocabularyNormalizeJsonParser.java",
+      "src/main/java/com/vocabverse/ai/prompt/BulkVocabularyNormalizePromptBuilder.java",
+      "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ],
+    "src/main/java/com/vocabverse/common/constant/ErrorCode.java": [],
+    "src/main/java/com/vocabverse/common/exception/BaseException.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java"
+    ],
+    "src/main/java/com/vocabverse/common/exception/BusinessException.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java"
+    ],
+    "src/main/java/com/vocabverse/dictionary/controller/DictionaryController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java"
+    ],
+    "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java": [],
+    "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java": [],
+    "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java": [],
+    "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryDefinitionResponse.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java"
+    ],
+    "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java": [
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java"
+    ],
+    "src/main/java/com/vocabverse/dictionary/provider/DictionaryProviderImpl.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "src/main/java/com/vocabverse/dictionary/mapper/DictionaryMapper.java"
+    ],
+    "src/main/java/com/vocabverse/dictionary/service/DictionaryService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java"
+    ],
+    "src/main/java/com/vocabverse/review/strategy/ReviewSchedulerResolver.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ],
+    "src/main/java/com/vocabverse/shadowing/service/CloudinaryVideoStorageService.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ],
+    "src/test/java/com/vocabverse/ai/service/AiVocabularyServiceTest.java": [
+      "src/main/java/com/vocabverse/ai/client/AiClient.java",
+      "src/main/java/com/vocabverse/ai/dto/request/NormalizeVocabularyRequest.java",
+      "src/main/java/com/vocabverse/ai/dto/response/NormalizeVocabularyResponse.java",
+      "src/main/java/com/vocabverse/ai/prompt/VocabularyNormalizePromptBuilder.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ],
+    "src/test/java/com/vocabverse/dictionary/mapper/DictionaryMapperTest.java": [
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java"
+    ],
+    "src/test/java/com/vocabverse/dictionary/service/DictionaryServiceTest.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryMeaningResponse.java",
+      "src/main/java/com/vocabverse/dictionary/dto/response/DictionaryWordResponse.java",
+      "src/main/java/com/vocabverse/dictionary/provider/DictionaryProvider.java"
+    ],
+    "src/test/java/com/vocabverse/review/strategy/ReviewSchedulerResolverTest.java": [
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java"
+    ]
+  }
+}

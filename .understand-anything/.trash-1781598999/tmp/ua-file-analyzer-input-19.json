@@ -1,0 +1,28 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "docs/product/01_Product_Overview.md",
+      "language": "markdown",
+      "sizeLines": 459,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/product/02_prd.md",
+      "language": "markdown",
+      "sizeLines": 774,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "docs/product/03_srs.md",
+      "language": "markdown",
+      "sizeLines": 767,
+      "fileCategory": "docs"
+    }
+  ],
+  "batchImportData": {
+    "docs/product/01_Product_Overview.md": [],
+    "docs/product/02_prd.md": [],
+    "docs/product/03_srs.md": []
+  }
+}

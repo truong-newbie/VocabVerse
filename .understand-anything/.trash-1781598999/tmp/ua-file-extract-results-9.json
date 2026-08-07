@@ -1,0 +1,3234 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 19,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminShadowingController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 90,
+      "functions": [
+        {
+          "name": "uploadLesson",
+          "startLine": 38,
+          "endLine": 45,
+          "params": [
+            "file",
+            "title",
+            "description"
+          ]
+        },
+        {
+          "name": "getLessonStatus",
+          "startLine": 47,
+          "endLine": 50,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "listLessons",
+          "startLine": 52,
+          "endLine": 57,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "listSubtitles",
+          "startLine": 59,
+          "endLine": 62,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "createSubtitle",
+          "startLine": 64,
+          "endLine": 70,
+          "params": [
+            "lessonId",
+            "request"
+          ]
+        },
+        {
+          "name": "importSubtitles",
+          "startLine": 72,
+          "endLine": 78,
+          "params": [
+            "lessonId",
+            "request"
+          ]
+        },
+        {
+          "name": "generateAiSubtitles",
+          "startLine": 80,
+          "endLine": 83,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "updateSubtitle",
+          "startLine": 85,
+          "endLine": 92,
+          "params": [
+            "lessonId",
+            "subtitleId",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteSubtitle",
+          "startLine": 94,
+          "endLine": 101,
+          "params": [
+            "lessonId",
+            "subtitleId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminShadowingController",
+          "startLine": 30,
+          "endLine": 102,
+          "methods": [
+            "uploadLesson",
+            "getLessonStatus",
+            "listLessons",
+            "listSubtitles",
+            "createSubtitle",
+            "importSubtitles",
+            "generateAiSubtitles",
+            "updateSubtitle",
+            "deleteSubtitle"
+          ],
+          "properties": [
+            "adminShadowingService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "uploadLesson",
+          "line": 38,
+          "isDefault": false
+        },
+        {
+          "name": "getLessonStatus",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "listLessons",
+          "line": 52,
+          "isDefault": false
+        },
+        {
+          "name": "listSubtitles",
+          "line": 59,
+          "isDefault": false
+        },
+        {
+          "name": "createSubtitle",
+          "line": 64,
+          "isDefault": false
+        },
+        {
+          "name": "importSubtitles",
+          "line": 72,
+          "isDefault": false
+        },
+        {
+          "name": "generateAiSubtitles",
+          "line": 80,
+          "isDefault": false
+        },
+        {
+          "name": "updateSubtitle",
+          "line": 85,
+          "isDefault": false
+        },
+        {
+          "name": "deleteSubtitle",
+          "line": 94,
+          "isDefault": false
+        },
+        {
+          "name": "AdminShadowingController",
+          "line": 30,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "uploadLesson",
+          "callee": "ApiResponse.success",
+          "lineNumber": 44
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "adminShadowingService.uploadLesson",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "ApiResponse.success",
+          "lineNumber": 49
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "adminShadowingService.getLessonStatus",
+          "lineNumber": 49
+        },
+        {
+          "caller": "listLessons",
+          "callee": "ApiResponse.success",
+          "lineNumber": 56
+        },
+        {
+          "caller": "listLessons",
+          "callee": "adminShadowingService.listLessons",
+          "lineNumber": 56
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "ApiResponse.success",
+          "lineNumber": 61
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "adminShadowingService.listSubtitles",
+          "lineNumber": 61
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ApiResponse.success",
+          "lineNumber": 69
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "adminShadowingService.createSubtitle",
+          "lineNumber": 69
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ApiResponse.success",
+          "lineNumber": 77
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "adminShadowingService.importSubtitles",
+          "lineNumber": 77
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ApiResponse.success",
+          "lineNumber": 82
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "adminShadowingService.generateAiSubtitles",
+          "lineNumber": 82
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "ApiResponse.success",
+          "lineNumber": 91
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "adminShadowingService.updateSubtitle",
+          "lineNumber": 91
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "adminShadowingService.deleteSubtitle",
+          "lineNumber": 99
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "ApiResponse.success",
+          "lineNumber": 100
+        }
+      ],
+      "metrics": {
+        "importCount": 8,
+        "exportCount": 10,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminImportShadowingSubtitlesRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/request/AdminUpsertShadowingSubtitleRequest.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 20,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 29,
+      "nonEmptyLines": 27,
+      "metrics": {
+        "importCount": 2,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminShadowingLessonStatusResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminShadowingService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 308,
+      "nonEmptyLines": 279,
+      "functions": [
+        {
+          "name": "uploadLesson",
+          "startLine": 48,
+          "endLine": 76,
+          "params": [
+            "file",
+            "title",
+            "description"
+          ]
+        },
+        {
+          "name": "getLessonStatus",
+          "startLine": 78,
+          "endLine": 87,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "listLessons",
+          "startLine": 89,
+          "endLine": 101,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "listSubtitles",
+          "startLine": 103,
+          "endLine": 110,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "createSubtitle",
+          "startLine": 112,
+          "endLine": 129,
+          "params": [
+            "lessonId",
+            "request"
+          ]
+        },
+        {
+          "name": "importSubtitles",
+          "startLine": 131,
+          "endLine": 157,
+          "params": [
+            "lessonId",
+            "request"
+          ]
+        },
+        {
+          "name": "updateSubtitle",
+          "startLine": 159,
+          "endLine": 178,
+          "params": [
+            "lessonId",
+            "subtitleId",
+            "request"
+          ]
+        },
+        {
+          "name": "deleteSubtitle",
+          "startLine": 180,
+          "endLine": 186,
+          "params": [
+            "lessonId",
+            "subtitleId"
+          ]
+        },
+        {
+          "name": "generateAiSubtitles",
+          "startLine": 188,
+          "endLine": 225,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "findUploadLesson",
+          "startLine": 227,
+          "endLine": 234,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "getCurrentAdmin",
+          "startLine": 236,
+          "endLine": 243,
+          "params": []
+        },
+        {
+          "name": "isMp4",
+          "startLine": 245,
+          "endLine": 250,
+          "params": [
+            "file"
+          ]
+        },
+        {
+          "name": "toResponse",
+          "startLine": 252,
+          "endLine": 274,
+          "params": [
+            "lesson"
+          ]
+        },
+        {
+          "name": "toSubtitleResponse",
+          "startLine": 276,
+          "endLine": 285,
+          "params": [
+            "subtitle"
+          ]
+        },
+        {
+          "name": "validateSubtitleTime",
+          "startLine": 287,
+          "endLine": 291,
+          "params": [
+            "startTimeMs",
+            "endTimeMs"
+          ]
+        },
+        {
+          "name": "trimToNull",
+          "startLine": 293,
+          "endLine": 295,
+          "params": [
+            "value"
+          ]
+        },
+        {
+          "name": "resolveStatusMessage",
+          "startLine": 297,
+          "endLine": 307,
+          "params": [
+            "lesson"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "AdminShadowingService",
+          "startLine": 36,
+          "endLine": 308,
+          "methods": [
+            "uploadLesson",
+            "getLessonStatus",
+            "listLessons",
+            "listSubtitles",
+            "createSubtitle",
+            "importSubtitles",
+            "updateSubtitle",
+            "deleteSubtitle",
+            "generateAiSubtitles",
+            "findUploadLesson",
+            "getCurrentAdmin",
+            "isMp4",
+            "toResponse",
+            "toSubtitleResponse",
+            "validateSubtitleTime",
+            "trimToNull",
+            "resolveStatusMessage"
+          ],
+          "properties": [
+            "COMPLETED_PROGRESS",
+            "shadowingLessonRepository",
+            "subtitleRepository",
+            "userRepository",
+            "cloudinaryVideoStorageService",
+            "shadowingAiSubtitleService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "uploadLesson",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "getLessonStatus",
+          "line": 78,
+          "isDefault": false
+        },
+        {
+          "name": "listLessons",
+          "line": 89,
+          "isDefault": false
+        },
+        {
+          "name": "listSubtitles",
+          "line": 103,
+          "isDefault": false
+        },
+        {
+          "name": "createSubtitle",
+          "line": 112,
+          "isDefault": false
+        },
+        {
+          "name": "importSubtitles",
+          "line": 131,
+          "isDefault": false
+        },
+        {
+          "name": "updateSubtitle",
+          "line": 159,
+          "isDefault": false
+        },
+        {
+          "name": "deleteSubtitle",
+          "line": 180,
+          "isDefault": false
+        },
+        {
+          "name": "generateAiSubtitles",
+          "line": 188,
+          "isDefault": false
+        },
+        {
+          "name": "AdminShadowingService",
+          "line": 36,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "uploadLesson",
+          "callee": "file.isEmpty",
+          "lineNumber": 50
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "new BusinessException",
+          "lineNumber": 51
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "isMp4",
+          "lineNumber": 53
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "new BusinessException",
+          "lineNumber": 54
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "cloudinaryVideoStorageService.uploadMp4",
+          "lineNumber": 57
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl())\r\n                .storageProvider(uploadResult.storageProvider())\r\n                .contentType(file.getContentType())\r\n                .fileSize(file.getSize())\r\n                .duration(uploadResult.duration())\r\n                .progress(COMPLETED_PROGRESS)\r\n                .createdBy(getCurrentAdmin()).build",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl())\r\n                .storageProvider(uploadResult.storageProvider())\r\n                .contentType(file.getContentType())\r\n                .fileSize(file.getSize())\r\n                .duration(uploadResult.duration())\r\n                .progress(COMPLETED_PROGRESS).createdBy",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl())\r\n                .storageProvider(uploadResult.storageProvider())\r\n                .contentType(file.getContentType())\r\n                .fileSize(file.getSize())\r\n                .duration(uploadResult.duration()).progress",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl())\r\n                .storageProvider(uploadResult.storageProvider())\r\n                .contentType(file.getContentType())\r\n                .fileSize(file.getSize()).duration",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl())\r\n                .storageProvider(uploadResult.storageProvider())\r\n                .contentType(file.getContentType()).fileSize",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl())\r\n                .storageProvider(uploadResult.storageProvider()).contentType",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl())\r\n                .thumbnailUrl(uploadResult.thumbnailUrl()).storageProvider",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId())\r\n                .videoUrl(uploadResult.videoUrl()).thumbnailUrl",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename())\r\n                .cloudinaryPublicId(uploadResult.publicId()).videoUrl",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description))\r\n                .originalFilename(file.getOriginalFilename()).cloudinaryPublicId",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim())\r\n                .description(trimToNull(description)).originalFilename",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED)\r\n                .title(trimToNull(title) == null ? file.getOriginalFilename() : title.trim()).description",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD)\r\n                .status(ShadowingLessonStatus.COMPLETED).title",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder()\r\n                .source(ShadowingLessonSource.UPLOAD).status",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder().source",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "ShadowingLessonEntity.builder",
+          "lineNumber": 58
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "trimToNull",
+          "lineNumber": 61
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "file.getOriginalFilename",
+          "lineNumber": 61
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "title.trim",
+          "lineNumber": 61
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "trimToNull",
+          "lineNumber": 62
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "file.getOriginalFilename",
+          "lineNumber": 63
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "uploadResult.publicId",
+          "lineNumber": 64
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "uploadResult.videoUrl",
+          "lineNumber": 65
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "uploadResult.thumbnailUrl",
+          "lineNumber": 66
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "uploadResult.storageProvider",
+          "lineNumber": 67
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "file.getContentType",
+          "lineNumber": 68
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "file.getSize",
+          "lineNumber": 69
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "uploadResult.duration",
+          "lineNumber": 70
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "getCurrentAdmin",
+          "lineNumber": 72
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "toResponse",
+          "lineNumber": 75
+        },
+        {
+          "caller": "uploadLesson",
+          "callee": "shadowingLessonRepository.save",
+          "lineNumber": 75
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "findUploadLesson",
+          "lineNumber": 80
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "new AdminShadowingLessonStatusResponse",
+          "lineNumber": 81
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "lesson.getId",
+          "lineNumber": 82
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "lesson.getStatus",
+          "lineNumber": 83
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "lesson.getProgress",
+          "lineNumber": 84
+        },
+        {
+          "caller": "getLessonStatus",
+          "callee": "resolveStatusMessage",
+          "lineNumber": 85
+        },
+        {
+          "caller": "listLessons",
+          "callee": "shadowingLessonRepository\r\n                .findBySourceOrderByCreatedAtDesc(ShadowingLessonSource.UPLOAD, pageable).map",
+          "lineNumber": 91
+        },
+        {
+          "caller": "listLessons",
+          "callee": "shadowingLessonRepository.findBySourceOrderByCreatedAtDesc",
+          "lineNumber": 91
+        },
+        {
+          "caller": "listLessons",
+          "callee": "new AdminPageResponse<>",
+          "lineNumber": 94
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getContent",
+          "lineNumber": 95
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getNumber",
+          "lineNumber": 96
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getSize",
+          "lineNumber": 97
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getTotalElements",
+          "lineNumber": 98
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getTotalPages",
+          "lineNumber": 99
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "findUploadLesson",
+          "lineNumber": 105
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "subtitleRepository.findByLessonIdOrderByOrderIndexAscStartTimeMsAsc(lessonId)\r\n                .stream()\r\n                .map(this::toSubtitleResponse).toList",
+          "lineNumber": 106
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "subtitleRepository.findByLessonIdOrderByOrderIndexAscStartTimeMsAsc(lessonId)\r\n                .stream().map",
+          "lineNumber": 106
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "subtitleRepository.findByLessonIdOrderByOrderIndexAscStartTimeMsAsc(lessonId).stream",
+          "lineNumber": 106
+        },
+        {
+          "caller": "listSubtitles",
+          "callee": "subtitleRepository.findByLessonIdOrderByOrderIndexAscStartTimeMsAsc",
+          "lineNumber": 106
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "findUploadLesson",
+          "lineNumber": 114
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "validateSubtitleTime",
+          "lineNumber": 115
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.startTimeMs",
+          "lineNumber": 115
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.endTimeMs",
+          "lineNumber": 115
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.orderIndex",
+          "lineNumber": 116
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "subtitleRepository.countByLessonId",
+          "lineNumber": 117
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.orderIndex",
+          "lineNumber": 118
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                .lesson(lesson)\r\n                .startTimeMs(request.startTimeMs())\r\n                .endTimeMs(request.endTimeMs())\r\n                .englishText(request.englishText().trim())\r\n                .vietnameseText(trimToNull(request.vietnameseText()))\r\n                .orderIndex(orderIndex).build",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                .lesson(lesson)\r\n                .startTimeMs(request.startTimeMs())\r\n                .endTimeMs(request.endTimeMs())\r\n                .englishText(request.englishText().trim())\r\n                .vietnameseText(trimToNull(request.vietnameseText())).orderIndex",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                .lesson(lesson)\r\n                .startTimeMs(request.startTimeMs())\r\n                .endTimeMs(request.endTimeMs())\r\n                .englishText(request.englishText().trim()).vietnameseText",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                .lesson(lesson)\r\n                .startTimeMs(request.startTimeMs())\r\n                .endTimeMs(request.endTimeMs()).englishText",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                .lesson(lesson)\r\n                .startTimeMs(request.startTimeMs()).endTimeMs",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                .lesson(lesson).startTimeMs",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder().lesson",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "ShadowingLessonSubtitleEntity.builder",
+          "lineNumber": 120
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.startTimeMs",
+          "lineNumber": 122
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.endTimeMs",
+          "lineNumber": 123
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.englishText().trim",
+          "lineNumber": 124
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.englishText",
+          "lineNumber": 124
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "trimToNull",
+          "lineNumber": 125
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "request.vietnameseText",
+          "lineNumber": 125
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "toSubtitleResponse",
+          "lineNumber": 128
+        },
+        {
+          "caller": "createSubtitle",
+          "callee": "subtitleRepository.save",
+          "lineNumber": 128
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "findUploadLesson",
+          "lineNumber": 133
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "Boolean.TRUE.equals",
+          "lineNumber": 134
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "request.replaceExisting",
+          "lineNumber": 134
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitleRepository.deleteByLessonId",
+          "lineNumber": 135
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitleRepository.countByLessonId",
+          "lineNumber": 138
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "new ArrayList<>",
+          "lineNumber": 139
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "request.items().size",
+          "lineNumber": 140
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "request.items",
+          "lineNumber": 140
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "request.items().get",
+          "lineNumber": 141
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "request.items",
+          "lineNumber": 141
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "validateSubtitleTime",
+          "lineNumber": 142
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.startTimeMs",
+          "lineNumber": 142
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.endTimeMs",
+          "lineNumber": 142
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitles.add",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                    .lesson(lesson)\r\n                    .startTimeMs(item.startTimeMs())\r\n                    .endTimeMs(item.endTimeMs())\r\n                    .englishText(item.englishText().trim())\r\n                    .vietnameseText(trimToNull(item.vietnameseText()))\r\n                    .orderIndex(item.orderIndex() == null ? nextOrderIndex + index : item.orderIndex()).build",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                    .lesson(lesson)\r\n                    .startTimeMs(item.startTimeMs())\r\n                    .endTimeMs(item.endTimeMs())\r\n                    .englishText(item.englishText().trim())\r\n                    .vietnameseText(trimToNull(item.vietnameseText())).orderIndex",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                    .lesson(lesson)\r\n                    .startTimeMs(item.startTimeMs())\r\n                    .endTimeMs(item.endTimeMs())\r\n                    .englishText(item.englishText().trim()).vietnameseText",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                    .lesson(lesson)\r\n                    .startTimeMs(item.startTimeMs())\r\n                    .endTimeMs(item.endTimeMs()).englishText",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                    .lesson(lesson)\r\n                    .startTimeMs(item.startTimeMs()).endTimeMs",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                    .lesson(lesson).startTimeMs",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder().lesson",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder",
+          "lineNumber": 143
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.startTimeMs",
+          "lineNumber": 145
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.endTimeMs",
+          "lineNumber": 146
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.englishText().trim",
+          "lineNumber": 147
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.englishText",
+          "lineNumber": 147
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "trimToNull",
+          "lineNumber": 148
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.vietnameseText",
+          "lineNumber": 148
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.orderIndex",
+          "lineNumber": 149
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "item.orderIndex",
+          "lineNumber": 149
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitleRepository.saveAll(subtitles)\r\n                .stream()\r\n                .map(this::toSubtitleResponse).toList",
+          "lineNumber": 153
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitleRepository.saveAll(subtitles)\r\n                .stream().map",
+          "lineNumber": 153
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitleRepository.saveAll(subtitles).stream",
+          "lineNumber": 153
+        },
+        {
+          "caller": "importSubtitles",
+          "callee": "subtitleRepository.saveAll",
+          "lineNumber": 153
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "findUploadLesson",
+          "lineNumber": 165
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "validateSubtitleTime",
+          "lineNumber": 166
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.startTimeMs",
+          "lineNumber": 166
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.endTimeMs",
+          "lineNumber": 166
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitleRepository.findByIdAndLessonId(subtitleId, lessonId).orElseThrow",
+          "lineNumber": 167
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitleRepository.findByIdAndLessonId",
+          "lineNumber": 167
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "new BusinessException",
+          "lineNumber": 168
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitle.setStartTimeMs",
+          "lineNumber": 170
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.startTimeMs",
+          "lineNumber": 170
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitle.setEndTimeMs",
+          "lineNumber": 171
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.endTimeMs",
+          "lineNumber": 171
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitle.setEnglishText",
+          "lineNumber": 172
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.englishText().trim",
+          "lineNumber": 172
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.englishText",
+          "lineNumber": 172
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitle.setVietnameseText",
+          "lineNumber": 173
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "trimToNull",
+          "lineNumber": 173
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.vietnameseText",
+          "lineNumber": 173
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.orderIndex",
+          "lineNumber": 174
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitle.setOrderIndex",
+          "lineNumber": 175
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "request.orderIndex",
+          "lineNumber": 175
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "toSubtitleResponse",
+          "lineNumber": 177
+        },
+        {
+          "caller": "updateSubtitle",
+          "callee": "subtitleRepository.save",
+          "lineNumber": 177
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "findUploadLesson",
+          "lineNumber": 182
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "subtitleRepository.findByIdAndLessonId(subtitleId, lessonId).orElseThrow",
+          "lineNumber": 183
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "subtitleRepository.findByIdAndLessonId",
+          "lineNumber": 183
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "new BusinessException",
+          "lineNumber": 184
+        },
+        {
+          "caller": "deleteSubtitle",
+          "callee": "subtitleRepository.delete",
+          "lineNumber": 185
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "findUploadLesson",
+          "lineNumber": 190
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setStatus",
+          "lineNumber": 191
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setProgress",
+          "lineNumber": 192
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setErrorMessage",
+          "lineNumber": 193
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "shadowingLessonRepository.save",
+          "lineNumber": 194
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "shadowingAiSubtitleService.generateSubtitles",
+          "lineNumber": 197
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "subtitleRepository.deleteByLessonId",
+          "lineNumber": 198
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "generatedSubtitles.stream()\r\n                    .map(item -> ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson)\r\n                            .startTimeMs(item.startTimeMs())\r\n                            .endTimeMs(item.endTimeMs())\r\n                            .englishText(item.englishText())\r\n                            .vietnameseText(trimToNull(item.vietnameseText()))\r\n                            .orderIndex(item.orderIndex())\r\n                            .build()).toList",
+          "lineNumber": 199
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "generatedSubtitles.stream().map",
+          "lineNumber": 199
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "generatedSubtitles.stream",
+          "lineNumber": 199
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson)\r\n                            .startTimeMs(item.startTimeMs())\r\n                            .endTimeMs(item.endTimeMs())\r\n                            .englishText(item.englishText())\r\n                            .vietnameseText(trimToNull(item.vietnameseText()))\r\n                            .orderIndex(item.orderIndex()).build",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson)\r\n                            .startTimeMs(item.startTimeMs())\r\n                            .endTimeMs(item.endTimeMs())\r\n                            .englishText(item.englishText())\r\n                            .vietnameseText(trimToNull(item.vietnameseText())).orderIndex",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson)\r\n                            .startTimeMs(item.startTimeMs())\r\n                            .endTimeMs(item.endTimeMs())\r\n                            .englishText(item.englishText()).vietnameseText",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson)\r\n                            .startTimeMs(item.startTimeMs())\r\n                            .endTimeMs(item.endTimeMs()).englishText",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson)\r\n                            .startTimeMs(item.startTimeMs()).endTimeMs",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder()\r\n                            .lesson(lesson).startTimeMs",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder().lesson",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "ShadowingLessonSubtitleEntity.builder",
+          "lineNumber": 200
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "item.startTimeMs",
+          "lineNumber": 202
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "item.endTimeMs",
+          "lineNumber": 203
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "item.englishText",
+          "lineNumber": 204
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "trimToNull",
+          "lineNumber": 205
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "item.vietnameseText",
+          "lineNumber": 205
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "item.orderIndex",
+          "lineNumber": 206
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "subtitleRepository.saveAll(subtitles)\r\n                    .stream()\r\n                    .map(this::toSubtitleResponse).toList",
+          "lineNumber": 209
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "subtitleRepository.saveAll(subtitles)\r\n                    .stream().map",
+          "lineNumber": 209
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "subtitleRepository.saveAll(subtitles).stream",
+          "lineNumber": 209
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "subtitleRepository.saveAll",
+          "lineNumber": 209
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setStatus",
+          "lineNumber": 214
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setProgress",
+          "lineNumber": 215
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "shadowingLessonRepository.save",
+          "lineNumber": 216
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setStatus",
+          "lineNumber": 219
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setProgress",
+          "lineNumber": 220
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "lesson.setErrorMessage",
+          "lineNumber": 221
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "exception.getMessage",
+          "lineNumber": 221
+        },
+        {
+          "caller": "generateAiSubtitles",
+          "callee": "shadowingLessonRepository.save",
+          "lineNumber": 222
+        },
+        {
+          "caller": "findUploadLesson",
+          "callee": "shadowingLessonRepository.findById(lessonId).orElseThrow",
+          "lineNumber": 228
+        },
+        {
+          "caller": "findUploadLesson",
+          "callee": "shadowingLessonRepository.findById",
+          "lineNumber": 228
+        },
+        {
+          "caller": "findUploadLesson",
+          "callee": "new BusinessException",
+          "lineNumber": 229
+        },
+        {
+          "caller": "findUploadLesson",
+          "callee": "lesson.getSource",
+          "lineNumber": 230
+        },
+        {
+          "caller": "findUploadLesson",
+          "callee": "new BusinessException",
+          "lineNumber": 231
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "SecurityContextHolder.getContext().getAuthentication",
+          "lineNumber": 237
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "SecurityContextHolder.getContext",
+          "lineNumber": 237
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "authentication.isAuthenticated",
+          "lineNumber": 238
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "new BusinessException",
+          "lineNumber": 239
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "userRepository.findByEmail(authentication.getName()).orElseThrow",
+          "lineNumber": 241
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "userRepository.findByEmail",
+          "lineNumber": 241
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "authentication.getName",
+          "lineNumber": 241
+        },
+        {
+          "caller": "getCurrentAdmin",
+          "callee": "new BusinessException",
+          "lineNumber": 242
+        },
+        {
+          "caller": "isMp4",
+          "callee": "file.getContentType",
+          "lineNumber": 246
+        },
+        {
+          "caller": "isMp4",
+          "callee": "file.getOriginalFilename",
+          "lineNumber": 247
+        },
+        {
+          "caller": "isMp4",
+          "callee": "\"video/mp4\".equalsIgnoreCase",
+          "lineNumber": 248
+        },
+        {
+          "caller": "isMp4",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 249
+        },
+        {
+          "caller": "isMp4",
+          "callee": "filename.toLowerCase().endsWith",
+          "lineNumber": 249
+        },
+        {
+          "caller": "isMp4",
+          "callee": "filename.toLowerCase",
+          "lineNumber": 249
+        },
+        {
+          "caller": "toResponse",
+          "callee": "new AdminShadowingLessonResponse",
+          "lineNumber": 253
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getId",
+          "lineNumber": 254
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getSource",
+          "lineNumber": 255
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getSource",
+          "lineNumber": 256
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getStatus",
+          "lineNumber": 257
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getTitle",
+          "lineNumber": 258
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getDescription",
+          "lineNumber": 259
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getOriginalFilename",
+          "lineNumber": 260
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getVideoUrl",
+          "lineNumber": 261
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getThumbnailUrl",
+          "lineNumber": 262
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getCloudinaryPublicId",
+          "lineNumber": 263
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getStorageProvider",
+          "lineNumber": 264
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getContentType",
+          "lineNumber": 265
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getFileSize",
+          "lineNumber": 266
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getDuration",
+          "lineNumber": 267
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getProgress",
+          "lineNumber": 268
+        },
+        {
+          "caller": "toResponse",
+          "callee": "subtitleRepository.countByLessonId",
+          "lineNumber": 269
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getId",
+          "lineNumber": 269
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getErrorMessage",
+          "lineNumber": 270
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getCreatedAt",
+          "lineNumber": 271
+        },
+        {
+          "caller": "toResponse",
+          "callee": "lesson.getUpdatedAt",
+          "lineNumber": 272
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "new ShadowingSubtitleResponse",
+          "lineNumber": 277
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getId",
+          "lineNumber": 278
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getStartTimeMs",
+          "lineNumber": 279
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getEndTimeMs",
+          "lineNumber": 280
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getEnglishText",
+          "lineNumber": 281
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getVietnameseText",
+          "lineNumber": 282
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getOrderIndex",
+          "lineNumber": 283
+        },
+        {
+          "caller": "validateSubtitleTime",
+          "callee": "new BusinessException",
+          "lineNumber": 289
+        },
+        {
+          "caller": "trimToNull",
+          "callee": "value.trim().isBlank",
+          "lineNumber": 294
+        },
+        {
+          "caller": "trimToNull",
+          "callee": "value.trim",
+          "lineNumber": 294
+        },
+        {
+          "caller": "trimToNull",
+          "callee": "value.trim",
+          "lineNumber": 294
+        },
+        {
+          "caller": "resolveStatusMessage",
+          "callee": "lesson.getErrorMessage",
+          "lineNumber": 298
+        },
+        {
+          "caller": "resolveStatusMessage",
+          "callee": "lesson.getErrorMessage().isBlank",
+          "lineNumber": 298
+        },
+        {
+          "caller": "resolveStatusMessage",
+          "callee": "lesson.getErrorMessage",
+          "lineNumber": 298
+        },
+        {
+          "caller": "resolveStatusMessage",
+          "callee": "lesson.getErrorMessage",
+          "lineNumber": 299
+        },
+        {
+          "caller": "resolveStatusMessage",
+          "callee": "lesson.getStatus",
+          "lineNumber": 301
+        }
+      ],
+      "metrics": {
+        "importCount": 18,
+        "exportCount": 10,
+        "functionCount": 17,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/controller/ShadowingLessonController.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 34,
+      "nonEmptyLines": 29,
+      "functions": [
+        {
+          "name": "listLessons",
+          "startLine": 23,
+          "endLine": 28,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getLesson",
+          "startLine": 30,
+          "endLine": 33,
+          "params": [
+            "lessonId"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ShadowingLessonController",
+          "startLine": 16,
+          "endLine": 34,
+          "methods": [
+            "listLessons",
+            "getLesson"
+          ],
+          "properties": [
+            "shadowingLessonService"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listLessons",
+          "line": 23,
+          "isDefault": false
+        },
+        {
+          "name": "getLesson",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "ShadowingLessonController",
+          "line": 16,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listLessons",
+          "callee": "ApiResponse.success",
+          "lineNumber": 27
+        },
+        {
+          "caller": "listLessons",
+          "callee": "shadowingLessonService.listLessons",
+          "lineNumber": 27
+        },
+        {
+          "caller": "getLesson",
+          "callee": "ApiResponse.success",
+          "lineNumber": 32
+        },
+        {
+          "caller": "getLesson",
+          "callee": "shadowingLessonService.getLesson",
+          "lineNumber": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 4,
+        "exportCount": 3,
+        "functionCount": 2,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonDetailResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 21,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonPageResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingLessonSummaryResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 17,
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/dto/response/ShadowingSubtitleResponse.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 13,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 97,
+      "nonEmptyLines": 76,
+      "classes": [
+        {
+          "name": "ShadowingLessonEntity",
+          "startLine": 25,
+          "endLine": 97,
+          "methods": [],
+          "properties": [
+            "id",
+            "source",
+            "status",
+            "title",
+            "description",
+            "originalFilename",
+            "youtubeUrl",
+            "cloudinaryPublicId",
+            "videoUrl",
+            "thumbnailUrl",
+            "storageProvider",
+            "contentType",
+            "fileSize",
+            "duration",
+            "progress",
+            "errorMessage",
+            "createdBy",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShadowingLessonEntity",
+          "line": 25,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSource.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 6,
+      "nonEmptyLines": 5,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonStatus.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/entity/ShadowingLessonSubtitleEntity.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 62,
+      "nonEmptyLines": 51,
+      "classes": [
+        {
+          "name": "ShadowingLessonSubtitleEntity",
+          "startLine": 22,
+          "endLine": 62,
+          "methods": [],
+          "properties": [
+            "id",
+            "lesson",
+            "startTimeMs",
+            "endTimeMs",
+            "englishText",
+            "vietnameseText",
+            "orderIndex",
+            "createdAt",
+            "updatedAt"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShadowingLessonSubtitleEntity",
+          "line": 22,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "classes": [
+        {
+          "name": "ShadowingLessonRepository",
+          "startLine": 11,
+          "endLine": 22,
+          "methods": [
+            "findAllByOrderByCreatedAtDesc",
+            "findBySourceOrderByCreatedAtDesc",
+            "findBySourceAndStatusOrderByCreatedAtDesc"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShadowingLessonRepository",
+          "line": 11,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/repository/ShadowingLessonSubtitleRepository.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 18,
+      "nonEmptyLines": 12,
+      "classes": [
+        {
+          "name": "ShadowingLessonSubtitleRepository",
+          "startLine": 9,
+          "endLine": 18,
+          "methods": [
+            "findByLessonIdOrderByOrderIndexAscStartTimeMsAsc",
+            "findByIdAndLessonId",
+            "countByLessonId",
+            "deleteByLessonId"
+          ],
+          "properties": []
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShadowingLessonSubtitleRepository",
+          "line": 9,
+          "isDefault": false
+        }
+      ],
+      "metrics": {
+        "importCount": 1,
+        "exportCount": 1,
+        "functionCount": 0,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/ShadowingAiSubtitleService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 254,
+      "nonEmptyLines": 225,
+      "functions": [
+        {
+          "name": "ShadowingAiSubtitleService",
+          "startLine": 47,
+          "endLine": 52,
+          "params": [
+            "objectMapper"
+          ]
+        },
+        {
+          "name": "generateSubtitles",
+          "startLine": 54,
+          "endLine": 70,
+          "params": [
+            "lesson"
+          ]
+        },
+        {
+          "name": "assertAvailable",
+          "startLine": 72,
+          "endLine": 82,
+          "params": [
+            "lesson"
+          ]
+        },
+        {
+          "name": "transcribe",
+          "startLine": 84,
+          "endLine": 139,
+          "params": [
+            "videoUrl"
+          ]
+        },
+        {
+          "name": "translate",
+          "startLine": 141,
+          "endLine": 207,
+          "params": [
+            "segments"
+          ]
+        },
+        {
+          "name": "mapAiError",
+          "startLine": 209,
+          "endLine": 214,
+          "params": [
+            "statusCode",
+            "message"
+          ]
+        },
+        {
+          "name": "multipartBody",
+          "startLine": 216,
+          "endLine": 224,
+          "params": [
+            "boundary",
+            "fields"
+          ]
+        },
+        {
+          "name": "secondsToMs",
+          "startLine": 226,
+          "endLine": 228,
+          "params": [
+            "seconds"
+          ]
+        },
+        {
+          "name": "stripCodeFence",
+          "startLine": 230,
+          "endLine": 237,
+          "params": [
+            "value"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ShadowingAiSubtitleService",
+          "startLine": 26,
+          "endLine": 254,
+          "methods": [
+            "ShadowingAiSubtitleService",
+            "generateSubtitles",
+            "assertAvailable",
+            "transcribe",
+            "translate",
+            "mapAiError",
+            "multipartBody",
+            "secondsToMs",
+            "stripCodeFence"
+          ],
+          "properties": [
+            "GROQ_TRANSCRIPTIONS_URI",
+            "GROQ_CHAT_COMPLETIONS_URI",
+            "objectMapper",
+            "httpClient",
+            "groqApiKey",
+            "enabled",
+            "transcriptionModel",
+            "translationModel"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "ShadowingAiSubtitleService",
+          "line": 47,
+          "isDefault": false
+        },
+        {
+          "name": "generateSubtitles",
+          "line": 54,
+          "isDefault": false
+        },
+        {
+          "name": "ShadowingAiSubtitleService",
+          "line": 26,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "ShadowingAiSubtitleService",
+          "callee": "HttpClient.newBuilder()\r\n                .connectTimeout(Duration.ofSeconds(10)).build",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ShadowingAiSubtitleService",
+          "callee": "HttpClient.newBuilder().connectTimeout",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ShadowingAiSubtitleService",
+          "callee": "HttpClient.newBuilder",
+          "lineNumber": 49
+        },
+        {
+          "caller": "ShadowingAiSubtitleService",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 50
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "assertAvailable",
+          "lineNumber": 55
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "transcribe",
+          "lineNumber": 56
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "lesson.getVideoUrl",
+          "lineNumber": 56
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "translate",
+          "lineNumber": 57
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "new ArrayList<>",
+          "lineNumber": 58
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "segments.size",
+          "lineNumber": 59
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "segments.get",
+          "lineNumber": 60
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "subtitles.add",
+          "lineNumber": 61
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "new GeneratedSubtitle",
+          "lineNumber": 61
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "segment.startTimeMs",
+          "lineNumber": 62
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "segment.endTimeMs",
+          "lineNumber": 63
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "segment.englishText",
+          "lineNumber": 64
+        },
+        {
+          "caller": "generateSubtitles",
+          "callee": "translations.get",
+          "lineNumber": 65
+        },
+        {
+          "caller": "assertAvailable",
+          "callee": "new BusinessException",
+          "lineNumber": 74
+        },
+        {
+          "caller": "assertAvailable",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 76
+        },
+        {
+          "caller": "assertAvailable",
+          "callee": "new BusinessException",
+          "lineNumber": 77
+        },
+        {
+          "caller": "assertAvailable",
+          "callee": "StringUtils.hasText",
+          "lineNumber": 79
+        },
+        {
+          "caller": "assertAvailable",
+          "callee": "lesson.getVideoUrl",
+          "lineNumber": 79
+        },
+        {
+          "caller": "assertAvailable",
+          "callee": "new BusinessException",
+          "lineNumber": 80
+        },
+        {
+          "caller": "transcribe",
+          "callee": "UUID.randomUUID",
+          "lineNumber": 85
+        },
+        {
+          "caller": "transcribe",
+          "callee": "multipartBody",
+          "lineNumber": 86
+        },
+        {
+          "caller": "transcribe",
+          "callee": "Map.of",
+          "lineNumber": 86
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.newBuilder(GROQ_TRANSCRIPTIONS_URI)\r\n                .timeout(Duration.ofSeconds(120))\r\n                .header(\"Authorization\", \"Bearer \" + groqApiKey.trim())\r\n                .header(\"Content-Type\", \"multipart/form-data; boundary=\" + boundary)\r\n                .POST(HttpRequest.BodyPublishers.ofString(body, StandardCharsets.UTF_8)).build",
+          "lineNumber": 95
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.newBuilder(GROQ_TRANSCRIPTIONS_URI)\r\n                .timeout(Duration.ofSeconds(120))\r\n                .header(\"Authorization\", \"Bearer \" + groqApiKey.trim())\r\n                .header(\"Content-Type\", \"multipart/form-data; boundary=\" + boundary).POST",
+          "lineNumber": 95
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.newBuilder(GROQ_TRANSCRIPTIONS_URI)\r\n                .timeout(Duration.ofSeconds(120))\r\n                .header(\"Authorization\", \"Bearer \" + groqApiKey.trim()).header",
+          "lineNumber": 95
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.newBuilder(GROQ_TRANSCRIPTIONS_URI)\r\n                .timeout(Duration.ofSeconds(120)).header",
+          "lineNumber": 95
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.newBuilder(GROQ_TRANSCRIPTIONS_URI).timeout",
+          "lineNumber": 95
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.newBuilder",
+          "lineNumber": 95
+        },
+        {
+          "caller": "transcribe",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 96
+        },
+        {
+          "caller": "transcribe",
+          "callee": "groqApiKey.trim",
+          "lineNumber": 97
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpRequest.BodyPublishers.ofString",
+          "lineNumber": 99
+        },
+        {
+          "caller": "transcribe",
+          "callee": "httpClient.send",
+          "lineNumber": 103
+        },
+        {
+          "caller": "transcribe",
+          "callee": "HttpResponse.BodyHandlers.ofString",
+          "lineNumber": 103
+        },
+        {
+          "caller": "transcribe",
+          "callee": "response.statusCode",
+          "lineNumber": 104
+        },
+        {
+          "caller": "transcribe",
+          "callee": "response.statusCode",
+          "lineNumber": 104
+        },
+        {
+          "caller": "transcribe",
+          "callee": "mapAiError",
+          "lineNumber": 105
+        },
+        {
+          "caller": "transcribe",
+          "callee": "response.statusCode",
+          "lineNumber": 105
+        },
+        {
+          "caller": "transcribe",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 108
+        },
+        {
+          "caller": "transcribe",
+          "callee": "response.body",
+          "lineNumber": 108
+        },
+        {
+          "caller": "transcribe",
+          "callee": "root.path",
+          "lineNumber": 109
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentsNode.isArray",
+          "lineNumber": 110
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentsNode.isEmpty",
+          "lineNumber": 110
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new BusinessException",
+          "lineNumber": 111
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new ArrayList<>",
+          "lineNumber": 114
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path(\"text\").asText(\"\").trim",
+          "lineNumber": 116
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path(\"text\").asText",
+          "lineNumber": 116
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path",
+          "lineNumber": 116
+        },
+        {
+          "caller": "transcribe",
+          "callee": "text.isBlank",
+          "lineNumber": 117
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segments.add",
+          "lineNumber": 118
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new TranscriptSegment",
+          "lineNumber": 118
+        },
+        {
+          "caller": "transcribe",
+          "callee": "secondsToMs",
+          "lineNumber": 119
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path(\"start\").asDouble",
+          "lineNumber": 119
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path",
+          "lineNumber": 119
+        },
+        {
+          "caller": "transcribe",
+          "callee": "secondsToMs",
+          "lineNumber": 120
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path(\"end\").asDouble",
+          "lineNumber": 120
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segmentNode.path",
+          "lineNumber": 120
+        },
+        {
+          "caller": "transcribe",
+          "callee": "segments.isEmpty",
+          "lineNumber": 125
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new BusinessException",
+          "lineNumber": 126
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new BusinessException",
+          "lineNumber": 132
+        },
+        {
+          "caller": "transcribe",
+          "callee": "ErrorCode.AI_TIMEOUT.getMessage",
+          "lineNumber": 132
+        },
+        {
+          "caller": "transcribe",
+          "callee": "Thread.currentThread().interrupt",
+          "lineNumber": 134
+        },
+        {
+          "caller": "transcribe",
+          "callee": "Thread.currentThread",
+          "lineNumber": 134
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new BusinessException",
+          "lineNumber": 135
+        },
+        {
+          "caller": "transcribe",
+          "callee": "ErrorCode.AI_PROCESSING_FAILED.getMessage",
+          "lineNumber": 135
+        },
+        {
+          "caller": "transcribe",
+          "callee": "new BusinessException",
+          "lineNumber": 137
+        },
+        {
+          "caller": "transcribe",
+          "callee": "ErrorCode.AI_RESPONSE_INVALID.getMessage",
+          "lineNumber": 137
+        },
+        {
+          "caller": "translate",
+          "callee": "new ArrayList<>",
+          "lineNumber": 143
+        },
+        {
+          "caller": "translate",
+          "callee": "segments.size",
+          "lineNumber": 144
+        },
+        {
+          "caller": "translate",
+          "callee": "new LinkedHashMap<>",
+          "lineNumber": 145
+        },
+        {
+          "caller": "translate",
+          "callee": "item.put",
+          "lineNumber": 146
+        },
+        {
+          "caller": "translate",
+          "callee": "item.put",
+          "lineNumber": 147
+        },
+        {
+          "caller": "translate",
+          "callee": "segments.get(index).englishText",
+          "lineNumber": 147
+        },
+        {
+          "caller": "translate",
+          "callee": "segments.get",
+          "lineNumber": 147
+        },
+        {
+          "caller": "translate",
+          "callee": "items.add",
+          "lineNumber": 148
+        },
+        {
+          "caller": "translate",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 158
+        },
+        {
+          "caller": "translate",
+          "callee": "objectMapper.writeValueAsString",
+          "lineNumber": 160
+        },
+        {
+          "caller": "translate",
+          "callee": "Map.of",
+          "lineNumber": 160
+        },
+        {
+          "caller": "translate",
+          "callee": "List.of",
+          "lineNumber": 163
+        },
+        {
+          "caller": "translate",
+          "callee": "Map.of",
+          "lineNumber": 163
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.newBuilder(GROQ_CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(60))\r\n                    .header(\"Authorization\", \"Bearer \" + groqApiKey.trim())\r\n                    .header(\"Content-Type\", \"application/json\")\r\n                    .POST(HttpRequest.BodyPublishers.ofString(requestBody, StandardCharsets.UTF_8)).build",
+          "lineNumber": 169
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.newBuilder(GROQ_CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(60))\r\n                    .header(\"Authorization\", \"Bearer \" + groqApiKey.trim())\r\n                    .header(\"Content-Type\", \"application/json\").POST",
+          "lineNumber": 169
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.newBuilder(GROQ_CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(60))\r\n                    .header(\"Authorization\", \"Bearer \" + groqApiKey.trim()).header",
+          "lineNumber": 169
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.newBuilder(GROQ_CHAT_COMPLETIONS_URI)\r\n                    .timeout(Duration.ofSeconds(60)).header",
+          "lineNumber": 169
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.newBuilder(GROQ_CHAT_COMPLETIONS_URI).timeout",
+          "lineNumber": 169
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.newBuilder",
+          "lineNumber": 169
+        },
+        {
+          "caller": "translate",
+          "callee": "Duration.ofSeconds",
+          "lineNumber": 170
+        },
+        {
+          "caller": "translate",
+          "callee": "groqApiKey.trim",
+          "lineNumber": 171
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpRequest.BodyPublishers.ofString",
+          "lineNumber": 173
+        },
+        {
+          "caller": "translate",
+          "callee": "httpClient.send",
+          "lineNumber": 176
+        },
+        {
+          "caller": "translate",
+          "callee": "HttpResponse.BodyHandlers.ofString",
+          "lineNumber": 176
+        },
+        {
+          "caller": "translate",
+          "callee": "response.statusCode",
+          "lineNumber": 177
+        },
+        {
+          "caller": "translate",
+          "callee": "response.statusCode",
+          "lineNumber": 177
+        },
+        {
+          "caller": "translate",
+          "callee": "mapAiError",
+          "lineNumber": 178
+        },
+        {
+          "caller": "translate",
+          "callee": "response.statusCode",
+          "lineNumber": 178
+        },
+        {
+          "caller": "translate",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 181
+        },
+        {
+          "caller": "translate",
+          "callee": "response.body",
+          "lineNumber": 181
+        },
+        {
+          "caller": "translate",
+          "callee": "root.path(\"choices\").path(0).path(\"message\").path(\"content\").asText",
+          "lineNumber": 182
+        },
+        {
+          "caller": "translate",
+          "callee": "root.path(\"choices\").path(0).path(\"message\").path",
+          "lineNumber": 182
+        },
+        {
+          "caller": "translate",
+          "callee": "root.path(\"choices\").path(0).path",
+          "lineNumber": 182
+        },
+        {
+          "caller": "translate",
+          "callee": "root.path(\"choices\").path",
+          "lineNumber": 182
+        },
+        {
+          "caller": "translate",
+          "callee": "root.path",
+          "lineNumber": 182
+        },
+        {
+          "caller": "translate",
+          "callee": "objectMapper.readTree",
+          "lineNumber": 183
+        },
+        {
+          "caller": "translate",
+          "callee": "stripCodeFence",
+          "lineNumber": 183
+        },
+        {
+          "caller": "translate",
+          "callee": "translationRoot.isArray",
+          "lineNumber": 184
+        },
+        {
+          "caller": "translate",
+          "callee": "translationRoot.path",
+          "lineNumber": 184
+        },
+        {
+          "caller": "translate",
+          "callee": "itemsNode.isArray",
+          "lineNumber": 185
+        },
+        {
+          "caller": "translate",
+          "callee": "new BusinessException",
+          "lineNumber": 186
+        },
+        {
+          "caller": "translate",
+          "callee": "new HashMap<>",
+          "lineNumber": 189
+        },
+        {
+          "caller": "translate",
+          "callee": "translations.put",
+          "lineNumber": 191
+        },
+        {
+          "caller": "translate",
+          "callee": "itemNode.path(\"index\").asInt",
+          "lineNumber": 192
+        },
+        {
+          "caller": "translate",
+          "callee": "itemNode.path",
+          "lineNumber": 192
+        },
+        {
+          "caller": "translate",
+          "callee": "itemNode.path(\"vietnameseText\").asText",
+          "lineNumber": 193
+        },
+        {
+          "caller": "translate",
+          "callee": "itemNode.path",
+          "lineNumber": 193
+        },
+        {
+          "caller": "translate",
+          "callee": "new BusinessException",
+          "lineNumber": 200
+        },
+        {
+          "caller": "translate",
+          "callee": "ErrorCode.AI_TIMEOUT.getMessage",
+          "lineNumber": 200
+        },
+        {
+          "caller": "translate",
+          "callee": "Thread.currentThread().interrupt",
+          "lineNumber": 202
+        },
+        {
+          "caller": "translate",
+          "callee": "Thread.currentThread",
+          "lineNumber": 202
+        },
+        {
+          "caller": "translate",
+          "callee": "new BusinessException",
+          "lineNumber": 203
+        },
+        {
+          "caller": "translate",
+          "callee": "ErrorCode.AI_PROCESSING_FAILED.getMessage",
+          "lineNumber": 203
+        },
+        {
+          "caller": "translate",
+          "callee": "new BusinessException",
+          "lineNumber": 205
+        },
+        {
+          "caller": "translate",
+          "callee": "ErrorCode.AI_RESPONSE_INVALID.getMessage",
+          "lineNumber": 205
+        },
+        {
+          "caller": "mapAiError",
+          "callee": "new BusinessException",
+          "lineNumber": 211
+        },
+        {
+          "caller": "mapAiError",
+          "callee": "new BusinessException",
+          "lineNumber": 213
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "new StringBuilder",
+          "lineNumber": 217
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "fields.forEach",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append(boundary).append(\"\\r\\n\")\r\n                .append(\"Content-Disposition: form-data; name=\\\"\").append(name).append(\"\\\"\\r\\n\\r\\n\")\r\n                .append(value).append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append(boundary).append(\"\\r\\n\")\r\n                .append(\"Content-Disposition: form-data; name=\\\"\").append(name).append(\"\\\"\\r\\n\\r\\n\").append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append(boundary).append(\"\\r\\n\")\r\n                .append(\"Content-Disposition: form-data; name=\\\"\").append(name).append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append(boundary).append(\"\\r\\n\")\r\n                .append(\"Content-Disposition: form-data; name=\\\"\").append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append(boundary).append(\"\\r\\n\").append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append(boundary).append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder\r\n                .append(\"--\").append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder.append",
+          "lineNumber": 218
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder.append(\"--\").append(boundary).append",
+          "lineNumber": 222
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder.append(\"--\").append",
+          "lineNumber": 222
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder.append",
+          "lineNumber": 222
+        },
+        {
+          "caller": "multipartBody",
+          "callee": "builder.toString",
+          "lineNumber": 223
+        },
+        {
+          "caller": "secondsToMs",
+          "callee": "Math.max",
+          "lineNumber": 227
+        },
+        {
+          "caller": "secondsToMs",
+          "callee": "Math.round",
+          "lineNumber": 227
+        },
+        {
+          "caller": "stripCodeFence",
+          "callee": "value.trim",
+          "lineNumber": 231
+        },
+        {
+          "caller": "stripCodeFence",
+          "callee": "trimmed.startsWith",
+          "lineNumber": 232
+        },
+        {
+          "caller": "stripCodeFence",
+          "callee": "trimmed.replaceFirst",
+          "lineNumber": 233
+        },
+        {
+          "caller": "stripCodeFence",
+          "callee": "trimmed.replaceFirst",
+          "lineNumber": 234
+        },
+        {
+          "caller": "stripCodeFence",
+          "callee": "trimmed.trim",
+          "lineNumber": 236
+        }
+      ],
+      "metrics": {
+        "importCount": 3,
+        "exportCount": 3,
+        "functionCount": 9,
+        "classCount": 1
+      }
+    },
+    {
+      "path": "src/main/java/com/vocabverse/shadowing/service/ShadowingLessonService.java",
+      "language": "java",
+      "fileCategory": "code",
+      "totalLines": 102,
+      "nonEmptyLines": 93,
+      "functions": [
+        {
+          "name": "listLessons",
+          "startLine": 30,
+          "endLine": 46,
+          "params": [
+            "pageable"
+          ]
+        },
+        {
+          "name": "getLesson",
+          "startLine": 48,
+          "endLine": 75,
+          "params": [
+            "lessonId"
+          ]
+        },
+        {
+          "name": "toSummaryResponse",
+          "startLine": 77,
+          "endLine": 90,
+          "params": [
+            "lesson"
+          ]
+        },
+        {
+          "name": "toSubtitleResponse",
+          "startLine": 92,
+          "endLine": 101,
+          "params": [
+            "subtitle"
+          ]
+        }
+      ],
+      "classes": [
+        {
+          "name": "ShadowingLessonService",
+          "startLine": 23,
+          "endLine": 102,
+          "methods": [
+            "listLessons",
+            "getLesson",
+            "toSummaryResponse",
+            "toSubtitleResponse"
+          ],
+          "properties": [
+            "shadowingLessonRepository",
+            "subtitleRepository"
+          ]
+        }
+      ],
+      "exports": [
+        {
+          "name": "listLessons",
+          "line": 30,
+          "isDefault": false
+        },
+        {
+          "name": "getLesson",
+          "line": 48,
+          "isDefault": false
+        },
+        {
+          "name": "ShadowingLessonService",
+          "line": 23,
+          "isDefault": false
+        }
+      ],
+      "callGraph": [
+        {
+          "caller": "listLessons",
+          "callee": "shadowingLessonRepository\r\n                .findBySourceAndStatusOrderByCreatedAtDesc(\r\n                        ShadowingLessonSource.UPLOAD,\r\n                        ShadowingLessonStatus.COMPLETED,\r\n                        pageable\r\n                ).map",
+          "lineNumber": 32
+        },
+        {
+          "caller": "listLessons",
+          "callee": "shadowingLessonRepository.findBySourceAndStatusOrderByCreatedAtDesc",
+          "lineNumber": 32
+        },
+        {
+          "caller": "listLessons",
+          "callee": "new ShadowingLessonPageResponse",
+          "lineNumber": 39
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getContent",
+          "lineNumber": 40
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getNumber",
+          "lineNumber": 41
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getSize",
+          "lineNumber": 42
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getTotalElements",
+          "lineNumber": 43
+        },
+        {
+          "caller": "listLessons",
+          "callee": "page.getTotalPages",
+          "lineNumber": 44
+        },
+        {
+          "caller": "getLesson",
+          "callee": "shadowingLessonRepository.findById(lessonId).orElseThrow",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getLesson",
+          "callee": "shadowingLessonRepository.findById",
+          "lineNumber": 50
+        },
+        {
+          "caller": "getLesson",
+          "callee": "new BusinessException",
+          "lineNumber": 51
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getSource",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getStatus",
+          "lineNumber": 52
+        },
+        {
+          "caller": "getLesson",
+          "callee": "new BusinessException",
+          "lineNumber": 53
+        },
+        {
+          "caller": "getLesson",
+          "callee": "subtitleRepository\r\n                .findByLessonIdOrderByOrderIndexAscStartTimeMsAsc(lessonId)\r\n                .stream()\r\n                .map(this::toSubtitleResponse).toList",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getLesson",
+          "callee": "subtitleRepository\r\n                .findByLessonIdOrderByOrderIndexAscStartTimeMsAsc(lessonId)\r\n                .stream().map",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getLesson",
+          "callee": "subtitleRepository\r\n                .findByLessonIdOrderByOrderIndexAscStartTimeMsAsc(lessonId).stream",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getLesson",
+          "callee": "subtitleRepository.findByLessonIdOrderByOrderIndexAscStartTimeMsAsc",
+          "lineNumber": 56
+        },
+        {
+          "caller": "getLesson",
+          "callee": "new ShadowingLessonDetailResponse",
+          "lineNumber": 62
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getId",
+          "lineNumber": 63
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getStatus",
+          "lineNumber": 64
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getTitle",
+          "lineNumber": 65
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getDescription",
+          "lineNumber": 66
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getVideoUrl",
+          "lineNumber": 67
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getThumbnailUrl",
+          "lineNumber": 68
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getDuration",
+          "lineNumber": 69
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getProgress",
+          "lineNumber": 70
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getCreatedAt",
+          "lineNumber": 72
+        },
+        {
+          "caller": "getLesson",
+          "callee": "lesson.getUpdatedAt",
+          "lineNumber": 73
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "new ShadowingLessonSummaryResponse",
+          "lineNumber": 78
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getId",
+          "lineNumber": 79
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getStatus",
+          "lineNumber": 80
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getTitle",
+          "lineNumber": 81
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getDescription",
+          "lineNumber": 82
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getVideoUrl",
+          "lineNumber": 83
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getThumbnailUrl",
+          "lineNumber": 84
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getDuration",
+          "lineNumber": 85
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "subtitleRepository.countByLessonId",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getId",
+          "lineNumber": 86
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getCreatedAt",
+          "lineNumber": 87
+        },
+        {
+          "caller": "toSummaryResponse",
+          "callee": "lesson.getUpdatedAt",
+          "lineNumber": 88
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "new ShadowingSubtitleResponse",
+          "lineNumber": 93
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getId",
+          "lineNumber": 94
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getStartTimeMs",
+          "lineNumber": 95
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getEndTimeMs",
+          "lineNumber": 96
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getEnglishText",
+          "lineNumber": 97
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getVietnameseText",
+          "lineNumber": 98
+        },
+        {
+          "caller": "toSubtitleResponse",
+          "callee": "subtitle.getOrderIndex",
+          "lineNumber": 99
+        }
+      ],
+      "metrics": {
+        "importCount": 12,
+        "exportCount": 3,
+        "functionCount": 4,
+        "classCount": 1
+      }
+    }
+  ]
+}

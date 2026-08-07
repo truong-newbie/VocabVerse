@@ -1,0 +1,77 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": ".env.example",
+      "language": "config",
+      "sizeLines": 52,
+      "fileCategory": "config"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 173,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "Sm2.md",
+      "language": "markdown",
+      "sizeLines": 1193,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "VocabVerse.postman_collection.json",
+      "language": "json",
+      "sizeLines": 1658,
+      "fileCategory": "config"
+    },
+    {
+      "path": "build.gradle",
+      "language": "gradle",
+      "sizeLines": 54,
+      "fileCategory": "config"
+    },
+    {
+      "path": "fsrs.md",
+      "language": "markdown",
+      "sizeLines": 1007,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "gradlew.bat",
+      "language": "batch",
+      "sizeLines": 93,
+      "fileCategory": "script"
+    },
+    {
+      "path": "mvnw.cmd",
+      "language": "batch",
+      "sizeLines": 189,
+      "fileCategory": "script"
+    },
+    {
+      "path": "pom.xml",
+      "language": "xml",
+      "sizeLines": 154,
+      "fileCategory": "config"
+    },
+    {
+      "path": "settings.gradle",
+      "language": "gradle",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    }
+  ],
+  "batchImportData": {
+    ".env.example": [],
+    "README.md": [],
+    "Sm2.md": [],
+    "VocabVerse.postman_collection.json": [],
+    "build.gradle": [],
+    "fsrs.md": [],
+    "gradlew.bat": [],
+    "mvnw.cmd": [],
+    "pom.xml": [],
+    "settings.gradle": []
+  }
+}

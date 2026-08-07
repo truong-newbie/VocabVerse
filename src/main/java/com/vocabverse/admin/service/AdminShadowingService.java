@@ -1,5 +1,6 @@
 package com.vocabverse.admin.service;
 
+import com.vocabverse.admin.dto.request.AdminImportFromYouTubeRequest;
 import com.vocabverse.admin.dto.request.AdminImportShadowingSubtitlesRequest;
 import com.vocabverse.admin.dto.request.AdminUpsertShadowingSubtitleRequest;
 import com.vocabverse.admin.dto.response.AdminPageResponse;
@@ -18,8 +19,12 @@ import com.vocabverse.shadowing.service.CloudinaryVideoStorageService;
 import com.vocabverse.shadowing.service.CloudinaryVideoStorageService.CloudinaryUploadResult;
 import com.vocabverse.shadowing.service.ShadowingAiSubtitleService;
 import com.vocabverse.shadowing.service.ShadowingAiSubtitleService.GeneratedSubtitle;
+import com.vocabverse.shadowing.service.YouTubeDownloadService;
+import com.vocabverse.shadowing.service.YouTubeDownloadService.DownloadResult;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -44,6 +49,7 @@ public class AdminShadowingService {
     private final UserRepository userRepository;
     private final CloudinaryVideoStorageService cloudinaryVideoStorageService;
     private final ShadowingAiSubtitleService shadowingAiSubtitleService;
+    private final YouTubeDownloadService youTubeDownloadService;
 
     @Transactional
     public AdminShadowingLessonResponse uploadLesson(MultipartFile file, String title, String description) {
@@ -75,6 +81,37 @@ public class AdminShadowingService {
         return toResponse(shadowingLessonRepository.save(lesson));
     }
 
+    @Transactional
+    public AdminShadowingLessonResponse importFromYouTube(AdminImportFromYouTubeRequest request) {
+        DownloadResult download = youTubeDownloadService.downloadAudio(request.youtubeUrl());
+
+        CloudinaryUploadResult uploadResult;
+        try {
+            java.nio.file.Path tempAudio = download.audioFile();
+            uploadResult = cloudinaryVideoStorageService.uploadAudio(tempAudio.toFile(),
+                    download.title() != null ? download.title() : "youtube-import");
+        } finally {
+            cleanupQuietly(download.audioFile());
+        }
+
+        ShadowingLessonEntity lesson = ShadowingLessonEntity.builder()
+                .source(ShadowingLessonSource.YOUTUBE)
+                .status(ShadowingLessonStatus.PROCESSING)
+                .title(trimToNull(request.title()) != null ? request.title() : download.title())
+                .description(trimToNull(request.description()))
+                .youtubeUrl(request.youtubeUrl())
+                .cloudinaryPublicId(uploadResult.publicId())
+                .videoUrl(uploadResult.videoUrl())
+                .thumbnailUrl(uploadResult.thumbnailUrl())
+                .storageProvider(uploadResult.storageProvider())
+                .duration(download.duration())
+                .progress(25)
+                .createdBy(getCurrentAdmin())
+                .build();
+
+        return toResponse(shadowingLessonRepository.save(lesson));
+    }
+
     @Transactional(readOnly = true)
     public AdminShadowingLessonStatusResponse getLessonStatus(UUID lessonId) {
         ShadowingLessonEntity lesson = findUploadLesson(lessonId);
@@ -89,7 +126,7 @@ public class AdminShadowingService {
     @Transactional(readOnly = true)
     public AdminPageResponse<AdminShadowingLessonResponse> listLessons(Pageable pageable) {
         Page<AdminShadowingLessonResponse> page = shadowingLessonRepository
-                .findBySourceOrderByCreatedAtDesc(ShadowingLessonSource.UPLOAD, pageable)
+                .findBySourceInOrderByCreatedAtDesc(List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE), pageable)
                 .map(this::toResponse);
         return new AdminPageResponse<>(
                 page.getContent(),
@@ -216,8 +253,8 @@ public class AdminShadowingService {
             shadowingLessonRepository.save(lesson);
             return responses;
         } catch (BusinessException exception) {
-            lesson.setStatus(ShadowingLessonStatus.COMPLETED);
-            lesson.setProgress(COMPLETED_PROGRESS);
+            lesson.setStatus(ShadowingLessonStatus.FAILED);
+            lesson.setProgress(0);
             lesson.setErrorMessage(exception.getMessage());
             shadowingLessonRepository.save(lesson);
             throw exception;
@@ -227,7 +264,7 @@ public class AdminShadowingService {
     private ShadowingLessonEntity findUploadLesson(UUID lessonId) {
         ShadowingLessonEntity lesson = shadowingLessonRepository.findById(lessonId)
                 .orElseThrow(() -> new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND));
-        if (lesson.getSource() != ShadowingLessonSource.UPLOAD) {
+        if (lesson.getSource() != ShadowingLessonSource.UPLOAD && lesson.getSource() != ShadowingLessonSource.YOUTUBE) {
             throw new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND);
         }
         return lesson;
@@ -252,7 +289,6 @@ public class AdminShadowingService {
     private AdminShadowingLessonResponse toResponse(ShadowingLessonEntity lesson) {
         return new AdminShadowingLessonResponse(
                 lesson.getId(),
-                lesson.getSource(),
                 lesson.getSource(),
                 lesson.getStatus(),
                 lesson.getTitle(),
@@ -292,6 +328,15 @@ public class AdminShadowingService {
 
     private String trimToNull(String value) {
         return value == null || value.trim().isBlank() ? null : value.trim();
+    }
+
+    private void cleanupQuietly(java.nio.file.Path file) {
+        if (file != null) {
+            try {
+                Files.deleteIfExists(file);
+            } catch (java.io.IOException ignored) {
+            }
+        }
     }
 
     private String resolveStatusMessage(ShadowingLessonEntity lesson) {

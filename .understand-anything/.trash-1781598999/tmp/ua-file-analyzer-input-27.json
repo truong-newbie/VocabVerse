@@ -1,0 +1,105 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/user/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/user/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/controller/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/exception/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/mapper/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/repository/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/service/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/specification/.gitkeep",
+      "language": "unknown",
+      "sizeLines": 0,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/VocabVerseApplication.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/user/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/user/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/controller/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/dto/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/entity/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/exception/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/mapper/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/repository/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/service/.gitkeep": [],
+    "src/main/java/com/vocabverse/vocabulary/specification/.gitkeep": [],
+    "src/main/java/com/vocabverse/VocabVerseApplication.java": []
+  }
+}

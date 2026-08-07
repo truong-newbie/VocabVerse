@@ -1,0 +1,210 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "language": "java",
+      "sizeLines": 71,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java",
+      "language": "java",
+      "sizeLines": 23,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "language": "java",
+      "sizeLines": 14,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "language": "java",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/controller/NotificationController.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "language": "java",
+      "sizeLines": 61,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "language": "java",
+      "sizeLines": 7,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "language": "java",
+      "sizeLines": 5,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "language": "java",
+      "sizeLines": 11,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "language": "java",
+      "sizeLines": 33,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java",
+      "language": "java",
+      "sizeLines": 103,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "language": "java",
+      "sizeLines": 144,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/admin/controller/AdminNotificationController.java": [
+      "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java",
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java": [
+      "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationType.java"
+    ],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java": [],
+    "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java": [],
+    "src/main/java/com/vocabverse/admin/service/AdminNotificationService.java": [
+      "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationLogResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationPageResponse.java",
+      "src/main/java/com/vocabverse/admin/dto/response/AdminNotificationStatsResponse.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java"
+    ],
+    "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java": [],
+    "src/main/java/com/vocabverse/async/consumer/NotificationConsumer.java": [
+      "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "src/main/java/com/vocabverse/notification/service/NotificationService.java"
+    ],
+    "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java": [],
+    "src/main/java/com/vocabverse/async/producer/NotificationProducer.java": [
+      "src/main/java/com/vocabverse/async/config/RabbitMqConfig.java",
+      "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java"
+    ],
+    "src/main/java/com/vocabverse/notification/controller/NotificationController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "src/main/java/com/vocabverse/notification/service/NotificationService.java"
+    ],
+    "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java": [],
+    "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java": [
+      "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationType.java"
+    ],
+    "src/main/java/com/vocabverse/notification/email/EmailService.java": [
+      "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java"
+    ],
+    "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java": [
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java"
+    ],
+    "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java": [],
+    "src/main/java/com/vocabverse/notification/entity/NotificationType.java": [],
+    "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java": [
+      "src/main/java/com/vocabverse/notification/dto/response/NotificationResponse.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java"
+    ],
+    "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java": [
+      "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationType.java"
+    ],
+    "src/main/java/com/vocabverse/notification/scheduler/ReviewDueScheduler.java": [
+      "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "src/main/java/com/vocabverse/async/producer/NotificationProducer.java",
+      "src/main/java/com/vocabverse/collection/entity/CollectionReviewSettingEntity.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionReviewSettingRepository.java",
+      "src/main/java/com/vocabverse/learning/progress/entity/LearningProgressEntity.java",
+      "src/main/java/com/vocabverse/learning/progress/repository/LearningProgressRepository.java",
+      "src/main/java/com/vocabverse/notification/service/NotificationService.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/notification/service/NotificationService.java": [
+      "src/main/java/com/vocabverse/async/event/ReviewDueEvent.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/notification/dto/response/NotificationPageResponse.java",
+      "src/main/java/com/vocabverse/notification/email/EmailService.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationEntity.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationStatus.java",
+      "src/main/java/com/vocabverse/notification/entity/NotificationType.java",
+      "src/main/java/com/vocabverse/notification/mapper/NotificationMapper.java",
+      "src/main/java/com/vocabverse/notification/repository/NotificationRepository.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java"
+    ]
+  }
+}

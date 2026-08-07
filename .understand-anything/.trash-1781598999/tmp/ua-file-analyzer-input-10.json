@@ -1,0 +1,173 @@
+{
+  "projectRoot": "C:\\Users\\DELL\\Downloads\\VocavVerse_Project\\VocabVerse",
+  "batchFiles": [
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java",
+      "language": "java",
+      "sizeLines": 62,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "language": "java",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+      "language": "java",
+      "sizeLines": 8,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "language": "java",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "language": "java",
+      "sizeLines": 12,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "language": "java",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "language": "java",
+      "sizeLines": 16,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "language": "java",
+      "sizeLines": 9,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "language": "java",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "language": "java",
+      "sizeLines": 192,
+      "fileCategory": "code"
+    },
+    {
+      "path": "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java",
+      "language": "java",
+      "sizeLines": 223,
+      "fileCategory": "code"
+    }
+  ],
+  "batchImportData": {
+    "src/main/java/com/vocabverse/vocabulary/controller/CollectionVocabularyController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java",
+      "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/controller/VocabularyController.java": [
+      "src/main/java/com/vocabverse/common/response/ApiResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java": [],
+    "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java": [],
+    "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java": [
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java": [
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java": [],
+    "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java": [],
+    "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java": [],
+    "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java": [
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java": [],
+    "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java": [],
+    "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java": [
+      "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/service/BulkVocabularyService.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyItemRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/BulkCreateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyFailedItemResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/BulkCreateVocabularyResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyExample.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ],
+    "src/main/java/com/vocabverse/vocabulary/service/VocabularyService.java": [
+      "src/main/java/com/vocabverse/collection/entity/CollectionEntity.java",
+      "src/main/java/com/vocabverse/collection/repository/CollectionRepository.java",
+      "src/main/java/com/vocabverse/common/constant/ErrorCode.java",
+      "src/main/java/com/vocabverse/common/exception/BusinessException.java",
+      "src/main/java/com/vocabverse/user/entity/UserEntity.java",
+      "src/main/java/com/vocabverse/user/repository/UserRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/CreateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/request/UpdateVocabularyRequest.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyPageResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/dto/response/VocabularyResponse.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/CollectionVocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularyEntity.java",
+      "src/main/java/com/vocabverse/vocabulary/entity/VocabularySource.java",
+      "src/main/java/com/vocabverse/vocabulary/mapper/VocabularyMapper.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/CollectionVocabularyRepository.java",
+      "src/main/java/com/vocabverse/vocabulary/repository/VocabularyRepository.java"
+    ]
+  }
+}
