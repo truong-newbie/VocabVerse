@@ -2,6 +2,7 @@ package com.vocabverse.admin.controller;
 
 import com.vocabverse.admin.dto.request.AdminImportFromYouTubeRequest;
 import com.vocabverse.admin.dto.request.AdminImportShadowingSubtitlesRequest;
+import com.vocabverse.admin.dto.request.AdminUpdateShadowingLessonRequest;
 import com.vocabverse.admin.dto.request.AdminUpsertShadowingSubtitleRequest;
 import com.vocabverse.admin.dto.response.AdminPageResponse;
 import com.vocabverse.admin.dto.response.AdminShadowingLessonResponse;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -62,6 +64,20 @@ public class AdminShadowingController {
             @PageableDefault(page = 0, size = 20) Pageable pageable
     ) {
         return ApiResponse.success(adminShadowingService.listLessons(pageable));
+    }
+
+    @PatchMapping("/{lessonId}")
+    public ApiResponse<AdminShadowingLessonResponse> updateLesson(
+            @PathVariable UUID lessonId,
+            @Valid @RequestBody AdminUpdateShadowingLessonRequest request
+    ) {
+        return ApiResponse.success(adminShadowingService.updateLesson(lessonId, request));
+    }
+
+    @DeleteMapping("/{lessonId}")
+    public ApiResponse<Void> deleteLesson(@PathVariable UUID lessonId) {
+        adminShadowingService.deleteLesson(lessonId);
+        return ApiResponse.success("Delete shadowing lesson successfully", null);
     }
 
     @GetMapping("/{lessonId}/subtitles")

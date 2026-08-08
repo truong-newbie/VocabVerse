@@ -2,6 +2,7 @@ package com.vocabverse.admin.service;
 
 import com.vocabverse.admin.dto.request.AdminImportFromYouTubeRequest;
 import com.vocabverse.admin.dto.request.AdminImportShadowingSubtitlesRequest;
+import com.vocabverse.admin.dto.request.AdminUpdateShadowingLessonRequest;
 import com.vocabverse.admin.dto.request.AdminUpsertShadowingSubtitleRequest;
 import com.vocabverse.admin.dto.response.AdminPageResponse;
 import com.vocabverse.admin.dto.response.AdminShadowingLessonResponse;
@@ -25,6 +26,7 @@ import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -126,7 +128,10 @@ public class AdminShadowingService {
     @Transactional(readOnly = true)
     public AdminPageResponse<AdminShadowingLessonResponse> listLessons(Pageable pageable) {
         Page<AdminShadowingLessonResponse> page = shadowingLessonRepository
-                .findBySourceInOrderByCreatedAtDesc(List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE), pageable)
+                .findBySourceInAndDeletedAtIsNullOrderByCreatedAtDesc(
+                        List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE),
+                        pageable
+                )
                 .map(this::toResponse);
         return new AdminPageResponse<>(
                 page.getContent(),
@@ -135,6 +140,29 @@ public class AdminShadowingService {
                 page.getTotalElements(),
                 page.getTotalPages()
         );
+    }
+
+    @Transactional
+    public AdminShadowingLessonResponse updateLesson(UUID lessonId, AdminUpdateShadowingLessonRequest request) {
+        ShadowingLessonEntity lesson = findUploadLesson(lessonId);
+        if (request.title() != null) {
+            String title = trimToNull(request.title());
+            if (title == null) {
+                throw new BusinessException(ErrorCode.INVALID_INPUT, "Lesson title must not be blank");
+            }
+            lesson.setTitle(title);
+        }
+        if (request.description() != null) {
+            lesson.setDescription(trimToNull(request.description()));
+        }
+        return toResponse(shadowingLessonRepository.save(lesson));
+    }
+
+    @Transactional
+    public void deleteLesson(UUID lessonId) {
+        ShadowingLessonEntity lesson = findUploadLesson(lessonId);
+        lesson.setDeletedAt(LocalDateTime.now());
+        shadowingLessonRepository.save(lesson);
     }
 
     @Transactional(readOnly = true)
@@ -262,7 +290,7 @@ public class AdminShadowingService {
     }
 
     private ShadowingLessonEntity findUploadLesson(UUID lessonId) {
-        ShadowingLessonEntity lesson = shadowingLessonRepository.findById(lessonId)
+        ShadowingLessonEntity lesson = shadowingLessonRepository.findByIdAndDeletedAtIsNull(lessonId)
                 .orElseThrow(() -> new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND));
         if (lesson.getSource() != ShadowingLessonSource.UPLOAD && lesson.getSource() != ShadowingLessonSource.YOUTUBE) {
             throw new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND);

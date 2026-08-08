@@ -101,10 +101,20 @@ management:
   health:
     mail:
       enabled: ${MAIL_HEALTH_ENABLED:false}
+#youtube:         use when run local
+#  download:
+#    yt-dlp-path: python -m yt_dlp
+#
+#audio:
+#  extractor:
+#    ffmpeg-path: C:\\Users\\DELL\\AppData\\Local\\ffmpegio\\ffmpeg-downloader\\ffmpeg\\bin\\ffmpeg.exe
+
+
+#use when run internet
 youtube:
   download:
-    yt-dlp-path: python -m yt_dlp
+    yt-dlp-path: ${YT_DLP_PATH:yt-dlp}
 
 audio:
   extractor:
-    ffmpeg-path: C:\\Users\\DELL\\AppData\\Local\\ffmpegio\\ffmpeg-downloader\\ffmpeg\\bin\\ffmpeg.exe
+    ffmpeg-path: ${FFMPEG_PATH:ffmpeg}
