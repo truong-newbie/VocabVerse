@@ -35,7 +35,7 @@ public class AdminDashboardService {
                 collectionRepository.countByDeletedAtIsNull(),
                 collectionRepository.countByVisibilityAndDeletedAtIsNull(CollectionVisibility.PUBLIC),
                 vocabularyRepository.countByDeletedAtIsNull(),
-                shadowingLessonRepository.count(),
+                shadowingLessonRepository.countByDeletedAtIsNull(),
                 learningProgressRepository.countDueReviewsUntil(endOfDay),
                 userRepository.countByCreatedAtBetween(startOfDay, endOfDay)
         );

@@ -3,6 +3,8 @@ package com.vocabverse.shadowing.repository;
 import com.vocabverse.shadowing.entity.ShadowingLessonEntity;
 import com.vocabverse.shadowing.entity.ShadowingLessonSource;
 import com.vocabverse.shadowing.entity.ShadowingLessonStatus;
+import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -21,13 +23,28 @@ public interface ShadowingLessonRepository extends JpaRepository<ShadowingLesson
     );
 
     Page<ShadowingLessonEntity> findBySourceInAndStatusOrderByCreatedAtDesc(
-            java.util.List<ShadowingLessonSource> sources,
+            List<ShadowingLessonSource> sources,
             ShadowingLessonStatus status,
             Pageable pageable
     );
 
     Page<ShadowingLessonEntity> findBySourceInOrderByCreatedAtDesc(
-            java.util.List<ShadowingLessonSource> sources,
+            List<ShadowingLessonSource> sources,
             Pageable pageable
     );
+
+    Optional<ShadowingLessonEntity> findByIdAndDeletedAtIsNull(UUID id);
+
+    Page<ShadowingLessonEntity> findBySourceInAndDeletedAtIsNullOrderByCreatedAtDesc(
+            List<ShadowingLessonSource> sources,
+            Pageable pageable
+    );
+
+    Page<ShadowingLessonEntity> findBySourceInAndStatusAndDeletedAtIsNullOrderByCreatedAtDesc(
+            List<ShadowingLessonSource> sources,
+            ShadowingLessonStatus status,
+            Pageable pageable
+    );
+
+    long countByDeletedAtIsNull();
 }

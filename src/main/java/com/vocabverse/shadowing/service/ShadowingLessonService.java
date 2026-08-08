@@ -30,7 +30,7 @@ public class ShadowingLessonService {
     @Transactional(readOnly = true)
     public ShadowingLessonPageResponse listLessons(Pageable pageable) {
         Page<ShadowingLessonSummaryResponse> page = shadowingLessonRepository
-                .findBySourceInAndStatusOrderByCreatedAtDesc(
+                .findBySourceInAndStatusAndDeletedAtIsNullOrderByCreatedAtDesc(
                         List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE),
                         ShadowingLessonStatus.COMPLETED,
                         pageable
@@ -47,7 +47,7 @@ public class ShadowingLessonService {
 
     @Transactional(readOnly = true)
     public ShadowingLessonDetailResponse getLesson(UUID lessonId) {
-        ShadowingLessonEntity lesson = shadowingLessonRepository.findById(lessonId)
+        ShadowingLessonEntity lesson = shadowingLessonRepository.findByIdAndDeletedAtIsNull(lessonId)
                 .orElseThrow(() -> new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND));
         if (lesson.getStatus() != ShadowingLessonStatus.COMPLETED) {
             throw new BusinessException(ErrorCode.SHADOWING_LESSON_NOT_FOUND);
