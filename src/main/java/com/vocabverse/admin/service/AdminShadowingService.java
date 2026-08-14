@@ -18,8 +18,7 @@ import com.vocabverse.shadowing.repository.ShadowingLessonRepository;
 import com.vocabverse.shadowing.repository.ShadowingLessonSubtitleRepository;
 import com.vocabverse.shadowing.service.CloudinaryVideoStorageService;
 import com.vocabverse.shadowing.service.CloudinaryVideoStorageService.CloudinaryUploadResult;
-import com.vocabverse.shadowing.service.ShadowingAiSubtitleService;
-import com.vocabverse.shadowing.service.ShadowingAiSubtitleService.GeneratedSubtitle;
+import com.vocabverse.shadowing.service.ShadowingSubtitleGenerationService;
 import com.vocabverse.shadowing.service.YouTubeDownloadService;
 import com.vocabverse.shadowing.service.YouTubeDownloadService.DownloadResult;
 import com.vocabverse.user.entity.UserEntity;
@@ -50,7 +49,7 @@ public class AdminShadowingService {
     private final ShadowingLessonSubtitleRepository subtitleRepository;
     private final UserRepository userRepository;
     private final CloudinaryVideoStorageService cloudinaryVideoStorageService;
-    private final ShadowingAiSubtitleService shadowingAiSubtitleService;
+    private final ShadowingSubtitleGenerationService shadowingSubtitleGenerationService;
     private final YouTubeDownloadService youTubeDownloadService;
 
     @Transactional
@@ -106,6 +105,7 @@ public class AdminShadowingService {
                 .videoUrl(uploadResult.videoUrl())
                 .thumbnailUrl(uploadResult.thumbnailUrl())
                 .storageProvider(uploadResult.storageProvider())
+                .contentType("audio/m4a")
                 .duration(download.duration())
                 .progress(25)
                 .createdBy(getCurrentAdmin())
@@ -251,42 +251,29 @@ public class AdminShadowingService {
     }
 
     @Transactional
-    public List<ShadowingSubtitleResponse> generateAiSubtitles(UUID lessonId) {
+    public AdminShadowingLessonStatusResponse generateAiSubtitles(UUID lessonId) {
         ShadowingLessonEntity lesson = findUploadLesson(lessonId);
-        lesson.setStatus(ShadowingLessonStatus.PROCESSING);
-        lesson.setProgress(50);
-        lesson.setErrorMessage(null);
-        shadowingLessonRepository.save(lesson);
-
-        try {
-            List<GeneratedSubtitle> generatedSubtitles = shadowingAiSubtitleService.generateSubtitles(lesson);
-            subtitleRepository.deleteByLessonId(lessonId);
-            List<ShadowingLessonSubtitleEntity> subtitles = generatedSubtitles.stream()
-                    .map(item -> ShadowingLessonSubtitleEntity.builder()
-                            .lesson(lesson)
-                            .startTimeMs(item.startTimeMs())
-                            .endTimeMs(item.endTimeMs())
-                            .englishText(item.englishText())
-                            .vietnameseText(trimToNull(item.vietnameseText()))
-                            .orderIndex(item.orderIndex())
-                            .build())
-                    .toList();
-            List<ShadowingSubtitleResponse> responses = subtitleRepository.saveAll(subtitles)
-                    .stream()
-                    .map(this::toSubtitleResponse)
-                    .toList();
-
-            lesson.setStatus(ShadowingLessonStatus.COMPLETED);
-            lesson.setProgress(COMPLETED_PROGRESS);
-            shadowingLessonRepository.save(lesson);
-            return responses;
-        } catch (BusinessException exception) {
-            lesson.setStatus(ShadowingLessonStatus.FAILED);
-            lesson.setProgress(0);
-            lesson.setErrorMessage(exception.getMessage());
-            shadowingLessonRepository.save(lesson);
-            throw exception;
+        if (lesson.getStatus() == ShadowingLessonStatus.PROCESSING) {
+            return new AdminShadowingLessonStatusResponse(
+                    lesson.getId(),
+                    lesson.getStatus(),
+                    lesson.getProgress(),
+                    resolveStatusMessage(lesson)
+            );
         }
+
+        lesson.setStatus(ShadowingLessonStatus.PROCESSING);
+        lesson.setProgress(10);
+        lesson.setErrorMessage(null);
+        ShadowingLessonEntity savedLesson = shadowingLessonRepository.save(lesson);
+        shadowingSubtitleGenerationService.generateSubtitlesAsync(savedLesson.getId());
+
+        return new AdminShadowingLessonStatusResponse(
+                savedLesson.getId(),
+                savedLesson.getStatus(),
+                savedLesson.getProgress(),
+                "AI subtitle generation started"
+        );
     }
 
     private ShadowingLessonEntity findUploadLesson(UUID lessonId) {
@@ -322,7 +309,8 @@ public class AdminShadowingService {
                 lesson.getTitle(),
                 lesson.getDescription(),
                 lesson.getOriginalFilename(),
-                lesson.getVideoUrl(),
+                resolveVideoUrl(lesson),
+                resolveAudioUrl(lesson),
                 lesson.getThumbnailUrl(),
                 lesson.getCloudinaryPublicId(),
                 lesson.getStorageProvider(),
@@ -356,6 +344,14 @@ public class AdminShadowingService {
 
     private String trimToNull(String value) {
         return value == null || value.trim().isBlank() ? null : value.trim();
+    }
+
+    private String resolveVideoUrl(ShadowingLessonEntity lesson) {
+        return lesson.getSource() == ShadowingLessonSource.UPLOAD ? lesson.getVideoUrl() : null;
+    }
+
+    private String resolveAudioUrl(ShadowingLessonEntity lesson) {
+        return lesson.getSource() == ShadowingLessonSource.YOUTUBE ? lesson.getVideoUrl() : null;
     }
 
     private void cleanupQuietly(java.nio.file.Path file) {

@@ -30,6 +30,7 @@ public class ShadowingAiSubtitleService {
 
     private static final URI GROQ_TRANSCRIPTIONS_URI = URI.create("https://api.groq.com/openai/v1/audio/transcriptions");
     private static final URI GROQ_CHAT_COMPLETIONS_URI = URI.create("https://api.groq.com/openai/v1/chat/completions");
+    private static final int TRANSLATION_BATCH_SIZE = 40;
 
     private final ObjectMapper objectMapper;
     private final HttpClient httpClient;
@@ -140,11 +141,20 @@ public class ShadowingAiSubtitleService {
     }
 
     private Map<Integer, String> translate(List<TranscriptSegment> segments) {
+        Map<Integer, String> translations = new HashMap<>();
+        for (int start = 0; start < segments.size(); start += TRANSLATION_BATCH_SIZE) {
+            int end = Math.min(start + TRANSLATION_BATCH_SIZE, segments.size());
+            translations.putAll(translateBatch(segments.subList(start, end), start));
+        }
+        return translations;
+    }
+
+    private Map<Integer, String> translateBatch(List<TranscriptSegment> segments, int offset) {
         try {
             List<Map<String, Object>> items = new ArrayList<>();
             for (int index = 0; index < segments.size(); index++) {
                 Map<String, Object> item = new LinkedHashMap<>();
-                item.put("index", index);
+                item.put("index", offset + index);
                 item.put("englishText", segments.get(index).englishText());
                 items.add(item);
             }
@@ -174,27 +184,7 @@ public class ShadowingAiSubtitleService {
                     .POST(HttpRequest.BodyPublishers.ofString(requestBody, StandardCharsets.UTF_8))
                     .build();
 
-            HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
-            if (response.statusCode() < 200 || response.statusCode() >= 300) {
-                throw mapAiError(response.statusCode(), "Groq translation failed");
-            }
-
-            JsonNode root = objectMapper.readTree(response.body());
-            String content = root.path("choices").path(0).path("message").path("content").asText("");
-            JsonNode translationRoot = objectMapper.readTree(stripCodeFence(content));
-            JsonNode itemsNode = translationRoot.isArray() ? translationRoot : translationRoot.path("items");
-            if (!itemsNode.isArray()) {
-                throw new BusinessException(ErrorCode.AI_RESPONSE_INVALID, "Groq translation response is not a JSON array");
-            }
-
-            Map<Integer, String> translations = new HashMap<>();
-            for (JsonNode itemNode : itemsNode) {
-                translations.put(
-                        itemNode.path("index").asInt(),
-                        itemNode.path("vietnameseText").asText(null)
-                );
-            }
-            return translations;
+            return sendTranslationRequestWithRetry(request);
         } catch (BusinessException exception) {
             throw exception;
         } catch (HttpTimeoutException exception) {
@@ -205,6 +195,41 @@ public class ShadowingAiSubtitleService {
         } catch (IOException exception) {
             throw new BusinessException(ErrorCode.AI_RESPONSE_INVALID, ErrorCode.AI_RESPONSE_INVALID.getMessage(), exception);
         }
+    }
+
+    private Map<Integer, String> sendTranslationRequestWithRetry(HttpRequest request) throws IOException, InterruptedException {
+        try {
+            return sendTranslationRequest(request);
+        } catch (BusinessException exception) {
+            if (exception.getErrorCode() != ErrorCode.AI_RESPONSE_INVALID) {
+                throw exception;
+            }
+            return sendTranslationRequest(request);
+        }
+    }
+
+    private Map<Integer, String> sendTranslationRequest(HttpRequest request) throws IOException, InterruptedException {
+        HttpResponse<String> response = httpClient.send(request, HttpResponse.BodyHandlers.ofString());
+        if (response.statusCode() < 200 || response.statusCode() >= 300) {
+            throw mapAiError(response.statusCode(), "Groq translation failed");
+        }
+
+        JsonNode root = objectMapper.readTree(response.body());
+        String content = root.path("choices").path(0).path("message").path("content").asText("");
+        JsonNode translationRoot = objectMapper.readTree(stripCodeFence(content));
+        JsonNode itemsNode = translationRoot.isArray() ? translationRoot : translationRoot.path("items");
+        if (!itemsNode.isArray()) {
+            throw new BusinessException(ErrorCode.AI_RESPONSE_INVALID, "Groq translation response is not a JSON array");
+        }
+
+        Map<Integer, String> translations = new HashMap<>();
+        for (JsonNode itemNode : itemsNode) {
+            translations.put(
+                    itemNode.path("index").asInt(),
+                    itemNode.path("vietnameseText").asText(null)
+            );
+        }
+        return translations;
     }
 
     private BusinessException mapAiError(int statusCode, String message) {

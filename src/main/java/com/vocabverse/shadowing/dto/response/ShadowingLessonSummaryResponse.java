@@ -12,6 +12,7 @@ public record ShadowingLessonSummaryResponse(
         String title,
         String description,
         String videoUrl,
+        String audioUrl,
         String thumbnailUrl,
         String duration,
         int subtitleCount,
