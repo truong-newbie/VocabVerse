@@ -60,6 +60,21 @@ public class RoleplayReportEntity {
     @Column(name = "overall_score", nullable = false)
     private int overallScore;
 
+    @Column(name = "grammar_score")
+    private Integer grammarScore;
+
+    @Column(name = "vocabulary_score")
+    private Integer vocabularyScore;
+
+    @Column(name = "relevance_score")
+    private Integer relevanceScore;
+
+    @Column(name = "fluency_score")
+    private Integer fluencyScore;
+
+    @Column(name = "interaction_score")
+    private Integer interactionScore;
+
     @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;

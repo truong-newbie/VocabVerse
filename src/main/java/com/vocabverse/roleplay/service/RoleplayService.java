@@ -23,16 +23,20 @@ import com.vocabverse.roleplay.repository.RoleplaySessionRepository;
 import com.vocabverse.user.entity.UserEntity;
 import com.vocabverse.user.repository.UserRepository;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionTemplate;
 
 @Service
 @RequiredArgsConstructor
@@ -43,34 +47,43 @@ public class RoleplayService {
     private final RoleplayReportRepository roleplayReportRepository;
     private final UserRepository userRepository;
     private final RoleplayAiService roleplayAiService;
+    private final RoleplayLanguageValidator roleplayLanguageValidator;
+    private final RoleplayQuotaService roleplayQuotaService;
     private final RoleplayMapper roleplayMapper;
+    private final TransactionTemplate transactionTemplate;
 
-    @Transactional
     public RoleplaySessionResponse createSession(CreateRoleplaySessionRequest request) {
-        UserEntity user = getCurrentUser();
+        String currentEmail = getAuthenticatedEmail();
+        UserEntity currentUser = userRepository.findByEmail(currentEmail)
+                .orElseThrow(() -> new BusinessException(ErrorCode.USER_NOT_FOUND));
+        roleplayQuotaService.assertCanCreateSession(currentUser.getId());
         RoleplayAiScenario aiScenario = roleplayAiService.startSession(
                 request.topic().trim(),
                 request.difficulty().name(),
                 request.persona().trim()
         );
 
-        RoleplaySessionEntity session = roleplaySessionRepository.save(RoleplaySessionEntity.builder()
-                .user(user)
-                .topic(request.topic().trim())
-                .difficulty(request.difficulty())
-                .persona(request.persona().trim())
-                .scenario(aiScenario.scenario())
-                .status(RoleplaySessionStatus.IN_PROGRESS)
-                .startedAt(LocalDateTime.now())
-                .build());
+        return transactionTemplate.execute(status -> {
+            UserEntity user = userRepository.findById(currentUser.getId())
+                    .orElseThrow(() -> new BusinessException(ErrorCode.USER_NOT_FOUND));
+            RoleplaySessionEntity session = roleplaySessionRepository.save(RoleplaySessionEntity.builder()
+                    .user(user)
+                    .topic(request.topic().trim())
+                    .difficulty(request.difficulty())
+                    .persona(request.persona().trim())
+                    .scenario(aiScenario.scenario())
+                    .status(RoleplaySessionStatus.IN_PROGRESS)
+                    .startedAt(LocalDateTime.now())
+                    .build());
 
-        RoleplayMessageEntity openingMessage = roleplayMessageRepository.save(RoleplayMessageEntity.builder()
-                .session(session)
-                .sender(RoleplayMessageSender.AI)
-                .content(aiScenario.firstMessage())
-                .build());
+            RoleplayMessageEntity openingMessage = roleplayMessageRepository.save(RoleplayMessageEntity.builder()
+                    .session(session)
+                    .sender(RoleplayMessageSender.AI)
+                    .content(aiScenario.firstMessage())
+                    .build());
 
-        return toSessionResponse(session, List.of(openingMessage), null);
+            return toSessionResponse(session, List.of(openingMessage), null);
+        });
     }
 
     @Transactional(readOnly = true)
@@ -93,34 +106,42 @@ public class RoleplayService {
         );
     }
 
-    @Transactional
     public RoleplayMessageResponse sendMessage(UUID sessionId, SendRoleplayMessageRequest request) {
+        UUID userId = getCurrentUser().getId();
         RoleplaySessionEntity session = getOwnedSession(sessionId);
         if (session.getStatus() == RoleplaySessionStatus.COMPLETED) {
             throw new BusinessException(ErrorCode.ROLEPLAY_SESSION_COMPLETED);
         }
 
         String userMessageText = request.message().trim();
-        roleplayMessageRepository.save(RoleplayMessageEntity.builder()
-                .session(session)
-                .sender(RoleplayMessageSender.USER)
-                .content(userMessageText)
-                .build());
+        roleplayLanguageValidator.validateEnglishMessage(userMessageText);
+        roleplayQuotaService.assertCanSendMessage(userId);
 
-        List<RoleplayMessageEntity> messages = roleplayMessageRepository.findAllBySessionIdOrderByCreatedAtAsc(sessionId);
+        transactionTemplate.executeWithoutResult(status -> {
+            RoleplaySessionEntity managedSession = getOwnedSession(sessionId);
+            roleplayMessageRepository.save(RoleplayMessageEntity.builder()
+                    .session(managedSession)
+                    .sender(RoleplayMessageSender.USER)
+                    .content(userMessageText)
+                    .build());
+        });
+
+        List<RoleplayMessageEntity> messages = getRecentMessagesForAi(sessionId);
         RoleplayAiReply aiReply = roleplayAiService.reply(session, messages, userMessageText);
 
-        RoleplayMessageEntity aiMessage = roleplayMessageRepository.save(RoleplayMessageEntity.builder()
-                .session(session)
-                .sender(RoleplayMessageSender.AI)
-                .content(aiReply.reply())
-                .correction(aiReply.correction())
-                .build());
+        return transactionTemplate.execute(status -> {
+            RoleplaySessionEntity managedSession = getOwnedSession(sessionId);
+            RoleplayMessageEntity aiMessage = roleplayMessageRepository.save(RoleplayMessageEntity.builder()
+                    .session(managedSession)
+                    .sender(RoleplayMessageSender.AI)
+                    .content(aiReply.reply())
+                    .correction(aiReply.correction())
+                    .build());
 
-        return roleplayMapper.toMessageResponse(aiMessage);
+            return roleplayMapper.toMessageResponse(aiMessage);
+        });
     }
 
-    @Transactional
     public RoleplayReportResponse endSession(UUID sessionId) {
         RoleplaySessionEntity session = getOwnedSession(sessionId);
         Optional<RoleplayReportEntity> existingReport = roleplayReportRepository.findBySessionId(session.getId());
@@ -131,21 +152,35 @@ public class RoleplayService {
         List<RoleplayMessageEntity> messages = roleplayMessageRepository.findAllBySessionIdOrderByCreatedAtAsc(session.getId());
         RoleplayAiReport aiReport = roleplayAiService.report(session, messages);
 
-        session.setStatus(RoleplaySessionStatus.COMPLETED);
-        session.setEndedAt(LocalDateTime.now());
-        roleplaySessionRepository.save(session);
+        return transactionTemplate.execute(status -> {
+            RoleplaySessionEntity managedSession = getOwnedSession(sessionId);
+            Optional<RoleplayReportEntity> reportCreatedWhileAiWasRunning = roleplayReportRepository
+                    .findBySessionId(managedSession.getId());
+            if (reportCreatedWhileAiWasRunning.isPresent()) {
+                return roleplayMapper.toReportResponse(reportCreatedWhileAiWasRunning.get());
+            }
 
-        RoleplayReportEntity report = roleplayReportRepository.save(RoleplayReportEntity.builder()
-                .session(session)
-                .summary(aiReport.summary())
-                .strengths(aiReport.strengths())
-                .weaknesses(aiReport.weaknesses())
-                .suggestedVocabulary(aiReport.suggestedVocabulary())
-                .grammarFeedback(aiReport.grammarFeedback())
-                .overallScore(aiReport.overallScore())
-                .build());
+            managedSession.setStatus(RoleplaySessionStatus.COMPLETED);
+            managedSession.setEndedAt(LocalDateTime.now());
+            roleplaySessionRepository.save(managedSession);
 
-        return roleplayMapper.toReportResponse(report);
+            RoleplayReportEntity report = roleplayReportRepository.save(RoleplayReportEntity.builder()
+                    .session(managedSession)
+                    .summary(aiReport.summary())
+                    .strengths(aiReport.strengths())
+                    .weaknesses(aiReport.weaknesses())
+                    .suggestedVocabulary(aiReport.suggestedVocabulary())
+                    .grammarFeedback(aiReport.grammarFeedback())
+                    .overallScore(aiReport.overallScore())
+                    .grammarScore(aiReport.grammarScore())
+                    .vocabularyScore(aiReport.vocabularyScore())
+                    .relevanceScore(aiReport.relevanceScore())
+                    .fluencyScore(aiReport.fluencyScore())
+                    .interactionScore(aiReport.interactionScore())
+                    .build());
+
+            return roleplayMapper.toReportResponse(report);
+        });
     }
 
     private RoleplaySessionResponse toSessionResponse(RoleplaySessionEntity session) {
@@ -171,6 +206,16 @@ public class RoleplayService {
         UUID userId = getCurrentUser().getId();
         return roleplaySessionRepository.findByIdAndUserId(sessionId, userId)
                 .orElseThrow(() -> new BusinessException(ErrorCode.ROLEPLAY_SESSION_NOT_FOUND));
+    }
+
+    private List<RoleplayMessageEntity> getRecentMessagesForAi(UUID sessionId) {
+        List<RoleplayMessageEntity> newestFirst = roleplayMessageRepository.findBySessionIdOrderByCreatedAtDesc(
+                sessionId,
+                PageRequest.of(0, 16)
+        );
+        List<RoleplayMessageEntity> chronological = new ArrayList<>(newestFirst);
+        Collections.reverse(chronological);
+        return chronological;
     }
 
     private UserEntity getCurrentUser() {

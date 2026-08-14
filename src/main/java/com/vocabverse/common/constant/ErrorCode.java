@@ -224,6 +224,11 @@ public enum ErrorCode {
             "Roleplay session is already completed",
             HttpStatus.CONFLICT
     ),
+    ROLEPLAY_DAILY_LIMIT_REACHED(
+            "ROLEPLAY_DAILY_LIMIT_REACHED",
+            "Daily roleplay limit reached",
+            HttpStatus.TOO_MANY_REQUESTS
+    ),
     ADMIN_LAST_ADMIN_REMOVAL_NOT_ALLOWED(
             "ADMIN_LAST_ADMIN_REMOVAL_NOT_ALLOWED",
             "Cannot remove the last admin",

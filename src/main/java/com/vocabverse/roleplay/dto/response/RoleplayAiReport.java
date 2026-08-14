@@ -8,6 +8,11 @@ public record RoleplayAiReport(
         List<String> weaknesses,
         List<String> suggestedVocabulary,
         String grammarFeedback,
-        int overallScore
+        int overallScore,
+        int grammarScore,
+        int vocabularyScore,
+        int relevanceScore,
+        int fluencyScore,
+        int interactionScore
 ) {
 }
