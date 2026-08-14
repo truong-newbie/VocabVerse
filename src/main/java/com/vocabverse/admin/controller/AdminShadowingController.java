@@ -102,7 +102,7 @@ public class AdminShadowingController {
     }
 
     @PostMapping("/{lessonId}/subtitles/generate-ai")
-    public ApiResponse<List<ShadowingSubtitleResponse>> generateAiSubtitles(@PathVariable UUID lessonId) {
+    public ApiResponse<AdminShadowingLessonStatusResponse> generateAiSubtitles(@PathVariable UUID lessonId) {
         return ApiResponse.success(adminShadowingService.generateAiSubtitles(lessonId));
     }
 

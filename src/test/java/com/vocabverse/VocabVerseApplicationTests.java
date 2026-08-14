@@ -27,6 +27,7 @@ import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.transaction.support.TransactionTemplate;
 
 @SpringBootTest(properties = {
         "spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration,"
@@ -107,6 +108,9 @@ class VocabVerseApplicationTests {
 
     @MockBean
     private ConnectionFactory connectionFactory;
+
+    @MockBean
+    private TransactionTemplate transactionTemplate;
 
     @Test
     void contextLoads() {

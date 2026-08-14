@@ -68,7 +68,8 @@ public class ShadowingLessonService {
                 lesson.getStatus(),
                 lesson.getTitle(),
                 lesson.getDescription(),
-                lesson.getVideoUrl(),
+                resolveVideoUrl(lesson),
+                resolveAudioUrl(lesson),
                 lesson.getThumbnailUrl(),
                 lesson.getDuration(),
                 lesson.getProgress(),
@@ -85,7 +86,8 @@ public class ShadowingLessonService {
                 lesson.getStatus(),
                 lesson.getTitle(),
                 lesson.getDescription(),
-                lesson.getVideoUrl(),
+                resolveVideoUrl(lesson),
+                resolveAudioUrl(lesson),
                 lesson.getThumbnailUrl(),
                 lesson.getDuration(),
                 subtitleRepository.countByLessonId(lesson.getId()),
@@ -103,5 +105,13 @@ public class ShadowingLessonService {
                 subtitle.getVietnameseText(),
                 subtitle.getOrderIndex()
         );
+    }
+
+    private String resolveVideoUrl(ShadowingLessonEntity lesson) {
+        return lesson.getSource() == ShadowingLessonSource.UPLOAD ? lesson.getVideoUrl() : null;
+    }
+
+    private String resolveAudioUrl(ShadowingLessonEntity lesson) {
+        return lesson.getSource() == ShadowingLessonSource.YOUTUBE ? lesson.getVideoUrl() : null;
     }
 }

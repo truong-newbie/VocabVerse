@@ -13,6 +13,7 @@ public record AdminShadowingLessonResponse(
         String description,
         String originalFilename,
         String videoUrl,
+        String audioUrl,
         String thumbnailUrl,
         String cloudinaryPublicId,
         String storageProvider,

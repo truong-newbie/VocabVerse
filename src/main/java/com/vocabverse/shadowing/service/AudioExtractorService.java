@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 public class AudioExtractorService {
 
     private static final Logger log = LoggerFactory.getLogger(AudioExtractorService.class);
+    private static final Duration FFMPEG_TIMEOUT = Duration.ofMinutes(10);
 
     @Value("${audio.extractor.ffmpeg-path:ffmpeg}")
     private String ffmpegPath;
@@ -102,14 +103,21 @@ public class AudioExtractorService {
                     outputFile.toString()
             );
             pb.redirectErrorStream(true);
+            pb.redirectOutput(ProcessBuilder.Redirect.DISCARD);
 
             Process process = pb.start();
 
-            int exitCode = process.waitFor();
-            if (exitCode != 0) {
-                String output = new String(process.getInputStream().readAllBytes());
+            boolean finished = process.waitFor(FFMPEG_TIMEOUT.toSeconds(), java.util.concurrent.TimeUnit.SECONDS);
+            if (!finished) {
+                process.destroyForcibly();
                 throw new BusinessException(ErrorCode.VIDEO_PROCESSING_FAILED,
-                        "FFmpeg exited with code " + exitCode + ": " + output);
+                        "FFmpeg process timed out after " + FFMPEG_TIMEOUT);
+            }
+
+            int exitCode = process.exitValue();
+            if (exitCode != 0) {
+                throw new BusinessException(ErrorCode.VIDEO_PROCESSING_FAILED,
+                        "FFmpeg exited with code " + exitCode);
             }
         } catch (InterruptedException exception) {
             Thread.currentThread().interrupt();
