@@ -79,6 +79,13 @@ shadowing:
       transcription-model: ${SHADOWING_AI_TRANSCRIPTION_MODEL:whisper-large-v3-turbo}
       translation-model: ${SHADOWING_AI_TRANSLATION_MODEL:llama-3.1-8b-instant}
 
+roleplay:
+  ai:
+    model: ${ROLEPLAY_AI_MODEL:${ai.groq.model:llama-3.1-8b-instant}}
+  quota:
+    daily-session-limit: ${ROLEPLAY_DAILY_SESSION_LIMIT:10}
+    daily-message-limit: ${ROLEPLAY_DAILY_MESSAGE_LIMIT:80}
+
 notification:
   review-link: ${NOTIFICATION_REVIEW_LINK:/reviews/today}
   email:

@@ -13,6 +13,11 @@ public record RoleplayReportResponse(
         List<String> suggestedVocabulary,
         String grammarFeedback,
         int overallScore,
+        Integer grammarScore,
+        Integer vocabularyScore,
+        Integer relevanceScore,
+        Integer fluencyScore,
+        Integer interactionScore,
         LocalDateTime createdAt
 ) {
 }
