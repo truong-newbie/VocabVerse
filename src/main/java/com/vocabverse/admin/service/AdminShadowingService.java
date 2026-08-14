@@ -28,7 +28,9 @@ import java.nio.file.Files;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -127,14 +129,16 @@ public class AdminShadowingService {
 
     @Transactional(readOnly = true)
     public AdminPageResponse<AdminShadowingLessonResponse> listLessons(Pageable pageable) {
-        Page<AdminShadowingLessonResponse> page = shadowingLessonRepository
+        Page<ShadowingLessonEntity> page = shadowingLessonRepository
                 .findBySourceInAndDeletedAtIsNullOrderByCreatedAtDesc(
                         List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE),
                         pageable
-                )
-                .map(this::toResponse);
+                );
+        Map<UUID, Integer> subtitleCounts = loadSubtitleCounts(page.getContent());
         return new AdminPageResponse<>(
-                page.getContent(),
+                page.getContent().stream()
+                        .map(lesson -> toResponse(lesson, subtitleCounts.getOrDefault(lesson.getId(), 0)))
+                        .toList(),
                 page.getNumber(),
                 page.getSize(),
                 page.getTotalElements(),
@@ -302,6 +306,10 @@ public class AdminShadowingService {
     }
 
     private AdminShadowingLessonResponse toResponse(ShadowingLessonEntity lesson) {
+        return toResponse(lesson, subtitleRepository.countByLessonId(lesson.getId()));
+    }
+
+    private AdminShadowingLessonResponse toResponse(ShadowingLessonEntity lesson, int subtitleCount) {
         return new AdminShadowingLessonResponse(
                 lesson.getId(),
                 lesson.getSource(),
@@ -318,11 +326,30 @@ public class AdminShadowingService {
                 lesson.getFileSize(),
                 lesson.getDuration(),
                 lesson.getProgress(),
-                subtitleRepository.countByLessonId(lesson.getId()),
+                subtitleCount,
                 lesson.getErrorMessage(),
                 lesson.getCreatedAt(),
                 lesson.getUpdatedAt()
         );
+    }
+
+    private Map<UUID, Integer> loadSubtitleCounts(List<ShadowingLessonEntity> lessons) {
+        if (lessons.isEmpty()) {
+            return Map.of();
+        }
+        List<UUID> lessonIds = lessons.stream()
+                .map(ShadowingLessonEntity::getId)
+                .toList();
+        return subtitleRepository.countByLessonIds(lessonIds)
+                .stream()
+                .collect(Collectors.toMap(
+                        ShadowingLessonSubtitleRepository.LessonSubtitleCount::getLessonId,
+                        count -> safeSubtitleCount(count.getSubtitleCount())
+                ));
+    }
+
+    private int safeSubtitleCount(long value) {
+        return value > Integer.MAX_VALUE ? Integer.MAX_VALUE : (int) value;
     }
 
     private ShadowingSubtitleResponse toSubtitleResponse(ShadowingLessonSubtitleEntity subtitle) {

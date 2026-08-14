@@ -13,7 +13,9 @@ import com.vocabverse.shadowing.entity.ShadowingLessonSubtitleEntity;
 import com.vocabverse.shadowing.repository.ShadowingLessonRepository;
 import com.vocabverse.shadowing.repository.ShadowingLessonSubtitleRepository;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -29,15 +31,17 @@ public class ShadowingLessonService {
 
     @Transactional(readOnly = true)
     public ShadowingLessonPageResponse listLessons(Pageable pageable) {
-        Page<ShadowingLessonSummaryResponse> page = shadowingLessonRepository
+        Page<ShadowingLessonEntity> page = shadowingLessonRepository
                 .findBySourceInAndStatusAndDeletedAtIsNullOrderByCreatedAtDesc(
                         List.of(ShadowingLessonSource.UPLOAD, ShadowingLessonSource.YOUTUBE),
                         ShadowingLessonStatus.COMPLETED,
                         pageable
-                )
-                .map(this::toSummaryResponse);
+                );
+        Map<UUID, Integer> subtitleCounts = loadSubtitleCounts(page.getContent());
         return new ShadowingLessonPageResponse(
-                page.getContent(),
+                page.getContent().stream()
+                        .map(lesson -> toSummaryResponse(lesson, subtitleCounts.getOrDefault(lesson.getId(), 0)))
+                        .toList(),
                 page.getNumber(),
                 page.getSize(),
                 page.getTotalElements(),
@@ -79,7 +83,7 @@ public class ShadowingLessonService {
         );
     }
 
-    private ShadowingLessonSummaryResponse toSummaryResponse(ShadowingLessonEntity lesson) {
+    private ShadowingLessonSummaryResponse toSummaryResponse(ShadowingLessonEntity lesson, int subtitleCount) {
         return new ShadowingLessonSummaryResponse(
                 lesson.getId(),
                 lesson.getSource(),
@@ -90,7 +94,7 @@ public class ShadowingLessonService {
                 resolveAudioUrl(lesson),
                 lesson.getThumbnailUrl(),
                 lesson.getDuration(),
-                subtitleRepository.countByLessonId(lesson.getId()),
+                subtitleCount,
                 lesson.getCreatedAt(),
                 lesson.getUpdatedAt()
         );
@@ -113,5 +117,24 @@ public class ShadowingLessonService {
 
     private String resolveAudioUrl(ShadowingLessonEntity lesson) {
         return lesson.getSource() == ShadowingLessonSource.YOUTUBE ? lesson.getVideoUrl() : null;
+    }
+
+    private Map<UUID, Integer> loadSubtitleCounts(List<ShadowingLessonEntity> lessons) {
+        if (lessons.isEmpty()) {
+            return Map.of();
+        }
+        List<UUID> lessonIds = lessons.stream()
+                .map(ShadowingLessonEntity::getId)
+                .toList();
+        return subtitleRepository.countByLessonIds(lessonIds)
+                .stream()
+                .collect(Collectors.toMap(
+                        ShadowingLessonSubtitleRepository.LessonSubtitleCount::getLessonId,
+                        count -> safeSubtitleCount(count.getSubtitleCount())
+                ));
+    }
+
+    private int safeSubtitleCount(long value) {
+        return value > Integer.MAX_VALUE ? Integer.MAX_VALUE : (int) value;
     }
 }
