@@ -77,11 +77,11 @@ shadowing:
     subtitle:
       enabled: ${SHADOWING_AI_SUBTITLE_ENABLED:true}
       transcription-model: ${SHADOWING_AI_TRANSCRIPTION_MODEL:whisper-large-v3-turbo}
-      translation-model: ${SHADOWING_AI_TRANSLATION_MODEL:llama-3.1-8b-instant}
+      translation-model: ${SHADOWING_AI_TRANSLATION_MODEL:openai/gpt-oss-20b}
 
 roleplay:
   ai:
-    model: ${ROLEPLAY_AI_MODEL:${ai.groq.model:llama-3.1-8b-instant}}
+    model: ${ROLEPLAY_AI_MODEL:${ai.groq.model:openai/gpt-oss-20b}}
   quota:
     daily-session-limit: ${ROLEPLAY_DAILY_SESSION_LIMIT:10}
     daily-message-limit: ${ROLEPLAY_DAILY_MESSAGE_LIMIT:80}
