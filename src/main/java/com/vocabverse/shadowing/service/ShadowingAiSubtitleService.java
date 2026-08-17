@@ -45,7 +45,7 @@ public class ShadowingAiSubtitleService {
     @Value("${shadowing.ai.subtitle.transcription-model:whisper-large-v3-turbo}")
     private String transcriptionModel;
 
-    @Value("${shadowing.ai.subtitle.translation-model:llama-3.1-8b-instant}")
+    @Value("${shadowing.ai.subtitle.translation-model:openai/gpt-oss-20b}")
     private String translationModel;
 
     public ShadowingAiSubtitleService(ObjectMapper objectMapper, AudioExtractorService audioExtractorService) {
@@ -161,9 +161,8 @@ public class ShadowingAiSubtitleService {
 
             String prompt = """
                     Translate the following English shadowing subtitle segments to Vietnamese.
-                    Return JSON only as an array of objects with exactly:
-                    index: number
-                    vietnameseText: string
+                    Return a JSON object only with exactly this shape:
+                    {"items":[{"index":0,"vietnameseText":"..."}]}
                     Keep the same index values. Do not add markdown.
                     Segments:
                     """ + objectMapper.writeValueAsString(items);
@@ -171,6 +170,7 @@ public class ShadowingAiSubtitleService {
             String requestBody = objectMapper.writeValueAsString(Map.of(
                     "model", translationModel,
                     "temperature", 0.1,
+                    "response_format", Map.of("type", "json_object"),
                     "messages", List.of(Map.of(
                             "role", "user",
                             "content", prompt
